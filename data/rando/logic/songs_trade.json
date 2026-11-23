@@ -1,0 +1,114 @@
+{
+ "_about": "Logic for the songs/trade plugin (tools/rando/parity/songs_trade.py). Removed: OoTR's two Lon Lon Ranch tower (silo) cows, which the remake doesn't have: its level files place Lon Lon Ranch cows only at the stable (HyruleField Child_Static 2139721051512122393 and 5665703420335364217, Adult_Dynamic 6142142215325798939 and 14685178647961621150, all within 4 units of (-85.7, 150.7, 206.6)), which this plugin pairs with OoTR's LLR Stables Left/Right Cow; the tower holds only crates and the heart piece. Guide: zeldacentral.com remake side quests (cow list: the ranch stable's cows, no silo cows) and its Lon Lon Ranch chapter (the tower is a crate storeroom). Adult trade (tools/rando/parity/_songs_trade_adult.py): Anju trades Cojiro only after Talon left Kakariko, which needs Epona (shuffle off; with the shuffle the plugin lets her trade once Talon is awake); the carpenter boss stands behind a rock pile that needs the Megaton Hammer; the Lost Woods stump shows the son only from Anju's Cojiro trade until his own trade, and Fado only after it. Gerudo card (shuffle_gerudo_card): the remake's fortress guards, gatekeeper, Training Ground keeper and horseback archery follow SageOfSpirit > Step01, which the card scene at the last rescue sets (SageOfSpirit:Event146), not the card in the pouch (IsGet.Item_Token_Gerudo only removes a sneak area): with the card shuffled every use of the card item also needs the carpenters freed ('Remake Carpenters Freed', at the card location, OoTR's own rule there). The helper takes the item's name so every OoTR rule naming it follows; the quoted name inside is the item itself. Removed: Market Bombchu Bowling Bomb (OoTR's fourth, rotating prize, which OoTR itself never shuffles: ItemPool.py places its Bomb (1)): the remake's alley gives only its bombchus, the bomb bag, the heart piece and then a red rupee (MiniGame_BombchuBowling Event309, 304/306, 143, 81; no bomb prize in the flow; guides: zeldacentral.com remake mini-games page, finalboss.io remake bombchu bowling page). Song spots (other-randos study): every lesson makes Link play the song back, and a lesson with no ocarina froze in game (Clawshot, Minuet); a spot holding another item now plays the lesson back too (parity/songs_trade.py PLAYBACK). So all 12 song spots also need an ocarina Link can play at that age: 'Ocarina and (is_child or (Ocarina, 2))' (the adult can't play the Fairy Ocarina, read from the files; with the default Door of Time the adult has the Ocarina of Time anyway). shuffle_ocarinas is on by default. Song from Ocarina of Time (logic work): the drawbridge escape also needs remake_zelda_escape_ready (story.json helper and _why): the story plugin's stone check now waits for Impa's lesson. GF Cow (my rule: remake-only content belongs in the shuffle and the logic): the remake's own cow, Animal_Cow_GerudoFortress (GerudoFortress_Adult_Static #11341244778524449886 at (58.2, 115.0, 56.3), adult only), stands by the horseback archery stable (Land_Gerudo_HorsebackArcheryShed_*, Animal_Horse_Archery, the range's Npc_Gerudo_003_Adult links it), past the guard on the way to horseback archery (Npc_Gerudo_004: the card, as the Gerudo Fortress Decoration 4/5 signs on that way and OoTR's GF HBA spots). It is OoTR-style location GF Cow (type NPC, vanilla Milk, so OoTR's ItemPool shuffles it with shuffle_cows like its other cows), region Gerudo Fortress: is_adult and Gerudo_Membership_Card and can_play(Eponas_Song). The plugin gives its item in Cow_GiveMilk_gerudo's adult branch (data/rando/songs_trade_cows.json 'gf'). Ocarina age (settled from the files): UI/Pouch/PouchTable OcarinaArray gives the Fairy Ocarina (Pa_Ocarina_00) only IsUsableChild and the Ocarina of Time (Pa_Ocarina_01) IsUsableChild and IsUsableAdult, the flags that make the Deku Stick, Slingshot and Boomerang child-only; so an adult plays only with the Ocarina of Time, and OoTR's can_play, can_play_ocarina and can_play_item take Ocarina and (is_child or (Ocarina, 2)) in place of Ocarina (OoTR's glitch branches and note rule kept). Every OoTR song rule plays through them.",
+ "regions": {
+  "LLR Tower": {
+   "locations": {
+    "LLR Tower Left Cow": null,
+    "LLR Tower Right Cow": null
+   }
+  },
+  "Kakariko Village": {
+   "events": {
+    "Cojiro Access": "is_adult and at_day and 'Wake Up Adult Talon' and (adult_trade_shuffle or Epona)"
+   },
+   "locations": {
+    "Sheik in Kakariko": "(is_adult and Forest_Medallion and Fire_Medallion and Water_Medallion) and Ocarina and (is_child or (Ocarina, 2))"
+   }
+  },
+  "GV Fortress Side": {
+   "events": {
+    "Broken Sword Access": "is_adult and (('Poachers Saw Access' and not adult_trade_shuffle) or Poachers_Saw) and can_use(Megaton_Hammer)"
+   }
+  },
+  "Lost Woods": {
+   "locations": {
+    "LW Trade Cojiro": "'Odd Mushroom Access' and (not adult_trade_shuffle or 'Cojiro Access')",
+    "LW Trade Odd Potion": "'Poachers Saw Access' and (not adult_trade_shuffle or ('Odd Mushroom Access' and 'Cojiro Access'))"
+   }
+  },
+  "Hideout 1 Torch Jail": {
+   "events": {
+    "Remake Carpenters Freed": "can_finish_GerudoFortress"
+   }
+  },
+  "Market Bombchu Bowling": {
+   "locations": {
+    "Market Bombchu Bowling Bomb": null
+   }
+  },
+  "Sacred Forest Meadow": {
+   "locations": {
+    "Song from Saria": "(is_child and at('HC Garden Skippable Locations', is_child)) and Ocarina and (is_child or (Ocarina, 2))",
+    "Sheik in Forest": "(is_adult) and Ocarina and (is_child or (Ocarina, 2))"
+   }
+  },
+  "Hyrule Field": {
+   "locations": {
+    "Song from Ocarina of Time": "(is_child and has_all_stones and remake_zelda_escape_ready) and Ocarina and (is_child or (Ocarina, 2))"
+   }
+  },
+  "Desert Colossus From Spirit Lobby": {
+   "locations": {
+    "Sheik at Colossus": "Ocarina and (is_child or (Ocarina, 2))"
+   }
+  },
+  "Beyond Door of Time": {
+   "locations": {
+    "Sheik at Temple": "(Forest_Medallion and is_adult) and Ocarina and (is_child or (Ocarina, 2))"
+   }
+  },
+  "HC Garden Skippable Locations": {
+   "locations": {
+    "Song from Impa": "Ocarina and (is_child or (Ocarina, 2))"
+   }
+  },
+  "Kak Windmill": {
+   "locations": {
+    "Song from Windmill": "(is_adult and Ocarina) and Ocarina and (is_child or (Ocarina, 2))"
+   }
+  },
+  "Graveyard Royal Familys Tomb": {
+   "locations": {
+    "Song from Royal Familys Tomb": "(is_adult or Slingshot or Boomerang or Sticks or has_explosives or Kokiri_Sword) and Ocarina and (is_child or (Ocarina, 2))"
+   }
+  },
+  "DMC Central Nearby": {
+   "locations": {
+    "Sheik in Crater": "(is_adult) and Ocarina and (is_child or (Ocarina, 2))"
+   }
+  },
+  "Lon Lon Ranch": {
+   "locations": {
+    "Song from Malon": "(is_child and Ocarina and at_day and (skip_child_zelda or at('Hyrule Castle Grounds', is_child and (Weird_Egg or Chicken)))) and Ocarina and (is_child or (Ocarina, 2))"
+   }
+  },
+  "Ice Cavern End": {
+   "locations": {
+    "Sheik in Ice Cavern": "(is_adult or Slingshot or Sticks or Kokiri_Sword or can_use(Dins_Fire)) and Ocarina and (is_child or (Ocarina, 2))"
+   }
+  },
+  "Gerudo Fortress": {
+   "locations": {
+    "GF Cow": "is_adult and Gerudo_Membership_Card and can_play(Eponas_Song)"
+   }
+  }
+ },
+ "helpers": {
+  "Gerudo_Membership_Card": "'Gerudo Membership Card' and (not shuffle_gerudo_card or 'Remake Carpenters Freed')",
+  "can_play(song)": "((Ocarina and (is_child or (Ocarina, 2))) or can_oi) and song and (not shuffle_individual_ocarina_notes or has_all_notes_for_song(song))",
+  "can_play_ocarina(song)": "(Ocarina and (is_child or (Ocarina, 2))) and song and (not shuffle_individual_ocarina_notes or has_all_notes_for_song(song))",
+  "can_play_item(song)": "((Ocarina and (is_child or (Ocarina, 2))) or can_oi_with_item) and song and (not shuffle_individual_ocarina_notes or has_all_notes_for_song(song))"
+ },
+ "new_locations": {
+  "GF Cow": {
+   "type": "NPC",
+   "vanilla_item": "Milk",
+   "filter_tags": [
+    "Gerudo's Fortress",
+    "Cows"
+   ],
+   "scene": 93,
+   "default": null
+  }
+ }
+}

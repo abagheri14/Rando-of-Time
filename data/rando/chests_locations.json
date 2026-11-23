@@ -1,0 +1,452 @@
+{
+ "_about": "Chest locations tools/rando/parity/chests.py brings into play beyond data/rando/chest_map.json. 'new': remake-only chests added as new OoTR locations (data/rando/logic/chests.json holds the same names, regions and rules; every rule is at least as strict as the files show). 'also': further remake chests that are the same location (another layout's copy, or the other outcome of one puzzle): they get the same reward; with 'share_flag' the copies take the main chest's instance hash so one opening counts for both. 'paired': existing OoTR locations chest_map leaves vanilla (or that aren't chests in OoTR), optionally with a stricter 'rule'. 'absent': OoTR chests the remake doesn't have (proven from the files), put in OoTR's disabled set by the plugin. 'not_checks': remake chests that are not one-time locations (repeatable payouts, dungeon chests owned elsewhere, non-chests). 'blockers': chests that stay as they are, with the evidence.",
+ "new": {
+  "DMC Hammer Grotto Chest": {
+   "remake": "DeathMountainCrater/chest/9128916506605227251",
+   "region": "DMC Hammer Grotto",
+   "rule": "True",
+   "vanilla_item": "Rupees (50)",
+   "scene": 62,
+   "tags": [
+    "Death Mountain Crater",
+    "Grottos",
+    "Chests"
+   ],
+   "confidence": "medium",
+   "why": "DMC has two grottos: the A_03 one under a bombable rock (Obj_BrokenRock_A_01, entrance -17,125,53) holds the paired DMC Upper Grotto Chest; the other (I_03, entrance -51,117,0) is under a hammer rock (Obj_BrokenRock_A_02 + iron-rock fragments) like OoT's hammer grotto, and holds this chest (appears after two Dinolfos). The region's entrance needs the hammer (adult)."
+  },
+  "Colossus Grotto Chest": {
+   "remake": "DesertColossus/chest/1186167733408299582",
+   "region": "Colossus Grotto",
+   "rule": "has_explosives",
+   "vanilla_item": "Rupees (50)",
+   "scene": 62,
+   "tags": [
+    "Desert Colossus",
+    "Grottos",
+    "Chests"
+   ],
+   "confidence": "medium",
+   "why": "Colossus' only grotto (F_02 base, entrance -116,94,-27) is under Obj_LiftRock_B_01 (silver rock), as OoT's Colossus Grotto (can_use(Silver_Gauntlets)). Its chest appears after the Beamos and Skullwalltulas (DesertColossus_SecretHole_AppearTreasureBox); a Beamos needs explosives."
+  },
+  "GV Octorok Grotto Chest": {
+   "remake": "GerudoValley/chest/6463521162691873710",
+   "region": "GV Octorok Grotto",
+   "rule": "True",
+   "vanilla_item": "Deku Seeds (30)",
+   "scene": 62,
+   "tags": [
+    "Gerudo Valley",
+    "Grottos",
+    "Chests"
+   ],
+   "confidence": "medium",
+   "why": "GV's E_01 grotto (entrance 11.5,90.5,36.5, under Obj_LiftRock_B_01 = OoT's silver rock) has flowing water and three Octoroks: OoT's Octorok grotto. The chest stands in it."
+  },
+  "GV Storms Grotto Lens Chest": {
+   "remake": "GerudoValley/chest/18413589940135955604",
+   "region": "GV Storms Grotto",
+   "rule": "can_use(Lens_of_Truth)",
+   "vanilla_item": "Rupees (20)",
+   "scene": 62,
+   "tags": [
+    "Gerudo Valley",
+    "Grottos",
+    "Chests"
+   ],
+   "confidence": "high",
+   "why": "GV's Song of Storms grotto (F_02 base, entrance -45,101,-29 behind FldObj_AirWall_HidingHoleCover + EventProxyRequestActor, as OoT's storms grotto behind the carpenters' tent) holds two GlassTruth (invisible) chests on one spot, one per layout (adult 18413589940135955604, child 6205043616869463865, separate save flags in vanilla). Both get the same reward and the child copy takes the adult copy's instance hash, so the item comes once. Invisible chest: Lens of Truth (tricks off).",
+   "also": [
+    "GerudoValley/chest/6205043616869463865"
+   ],
+   "share_flag": true
+  },
+  "Fire Temple Scarecrow Ledge Second Chest": {
+   "remake": "FireTemple/chest/15073195886628236505",
+   "region": "Fire Temple Boulder Maze Upper",
+   "rule": "can_use(Scarecrow) or (logic_fire_scarecrow and Longshot)",
+   "vanilla_item": "Rupees (20)",
+   "scene": 4,
+   "tags": [
+    "Fire Temple",
+    "Vanilla Dungeons",
+    "Chests"
+   ],
+   "confidence": "medium",
+   "why": "Three small chests 1.7-2 units apart on the scarecrow ledge (room 8), each with its own map-icon anchor; the third is the paired Fire Temple Scarecrow Chest. Same rule as that chest."
+  },
+  "Fire Temple Scarecrow Ledge Third Chest": {
+   "remake": "FireTemple/chest/17001858340376096722",
+   "region": "Fire Temple Boulder Maze Upper",
+   "rule": "can_use(Scarecrow) or (logic_fire_scarecrow and Longshot)",
+   "vanilla_item": "Rupees (20)",
+   "scene": 4,
+   "tags": [
+    "Fire Temple",
+    "Vanilla Dungeons",
+    "Chests"
+   ],
+   "confidence": "medium",
+   "why": "See Fire Temple Scarecrow Ledge Second Chest."
+  },
+  "GC Maze Fourth Chest": {
+   "remake": "GoronCity/chest/4402942101476009858",
+   "region": "Goron City",
+   "rule": "can_use(Megaton_Hammer) or (has_explosives and can_use(Silver_Gauntlets))",
+   "vanilla_item": "Rupees (20)",
+   "scene": 98,
+   "tags": [
+    "Goron City",
+    "Chests"
+   ],
+   "confidence": "high (collision mesh + in-game reports)",
+   "why": "One of four GC maze chests (z 2.0, -2.3, -5.2, -8.4) walled in by brown (bombs or hammer), bronze (Obj_BrokenRock_A_02, hammer only) and silver rocks. Fourth 4402942101476009858 (-48.4,113.68,1.95): the south strip of bronze rocks (hammer) or, through the silver boulders, bombs + Silver Gauntlets. The game-files index's earlier 'bombs or hammer' read the bronze rocks as bombable (actor index Bomb 100); bomb damage travels by chemistry, which A_02 lacks, and OotrR/Kaepora saw the hammer open it. collision mesh (tools/reach.py, `python tools/reach.py verify` passing; NavGrid over x -51..-12, z -12..12 at 0.25 m from the upper Goron City floor (-20,115,-3), standing on rock tops not allowed, a route counted only where it never narrows below the age's CctRadius: adult 0.35, child 0.23 m). Rocks by actor: Obj_BrokenRock_A_01 brown = bombs or hammer; Obj_BrokenRock_A_02 bronze = hammer only (ChemicalRef Dummy, fact table; drops_regions_o2 review); Obj_LiftRock_B_01 silver = Silver Gauntlets. Results (adult): nothing -> no chest; bombs -> Left, Center; hammer -> Left, Center, Fourth; Silver Gauntlets alone -> none; bombs + silver -> all four; hammer + silver -> all four. Child: bombs -> Left, Center (narrowest gap on the way 0.57 m half-width). This reproduces every in-game report: Kaepora (all rocks reset: hammer alone opens Center, Left and Fourth, not Right; Silver alone none; bombs + Silver all four; a child with bombchus Center and Left) and Robophill via OotrR (Left/Center maze rocks, Fourth a hammer rock)."
+  },
+  "Dodongos Cavern Lobby Wall Crack Chest": {
+   "remake": "DodongoCavern/chest/8607798771661947511",
+   "region": "Dodongos Cavern Lobby",
+   "rule": "can_blast_or_smash",
+   "vanilla_item": "Rupees (5)",
+   "scene": 1,
+   "tags": [
+    "Dodongo's Cavern",
+    "Vanilla Dungeons",
+    "Chests"
+   ],
+   "confidence": "medium-high",
+   "why": "Room 1 (lobby) chest 7.4 units behind a WallCrack (bombable wall)."
+  },
+  "Dodongos Cavern Lower Lizalfos Chest": {
+   "remake": "DodongoCavern/chest/7764016096998075927",
+   "region": "Dodongos Cavern Lower Right Side",
+   "rule": "is_adult or Sticks or Slingshot or Bombs or Kokiri_Sword",
+   "vanilla_item": "Rupees (20)",
+   "scene": 1,
+   "tags": [
+    "Dodongo's Cavern",
+    "Vanilla Dungeons",
+    "Chests"
+   ],
+   "confidence": "medium",
+   "why": "NoBake chest on a pedestal that appears when the first Lizalfos pair is beaten (EventRequestActor DodongoCavern_Gimmick_DefeatLizalfos01, room 5). OoTR's lower Lizalfos fight is in Lower Right Side; the rule is OoTR's own for beating the Lizalfos (Upper Lizalfos -> Far Bridge)."
+  },
+  "Dodongos Cavern Upper Lizalfos Chest": {
+   "remake": "DodongoCavern/chest/850464708089653824",
+   "region": "Dodongos Cavern Upper Lizalfos",
+   "rule": "is_adult or Sticks or Slingshot or Bombs or Kokiri_Sword",
+   "vanilla_item": "Deku Seeds (30)",
+   "scene": 1,
+   "tags": [
+    "Dodongo's Cavern",
+    "Vanilla Dungeons",
+    "Chests"
+   ],
+   "confidence": "medium",
+   "why": "NoBake chest that appears when the second Lizalfos pair is beaten (DodongoCavern_Gimmick_DefeatLizalfos02, room 16)."
+  },
+  "Dodongos Cavern Bomb Bag Room Shield Chest": {
+   "remake": "DodongoCavern/chest/11582649900854566065",
+   "region": "Dodongos Cavern Far Bridge",
+   "rule": "True",
+   "vanilla_item": "Deku Shield",
+   "scene": 1,
+   "tags": [
+    "Dodongo's Cavern",
+    "Vanilla Dungeons",
+    "Chests"
+   ],
+   "confidence": "medium",
+   "why": "Second Deku Shield chest (Obj_TBox_A_06, 'Deku Shield unless owned') in the bomb bag room 13, 14.8 units from the Bomb Bag chest (Far Bridge, rule True)."
+  },
+  "Ice Cavern Push Block Room Chest": {
+   "remake": "IceCavern/chest/4128092231168513176",
+   "region": "Ice Cavern Behind Ice Walls",
+   "rule": "can_play(Song_of_Time)",
+   "vanilla_item": "Rupees (20)",
+   "scene": 9,
+   "tags": [
+    "Ice Cavern",
+    "Vanilla Dungeons",
+    "Chests"
+   ],
+   "confidence": "medium",
+   "why": "Room 8 is OoT's push-block room (: push block 5 -> 8), whose OoTR region is Behind Ice Walls. The chest stands among Song of Time blocks and a Song of Time sign."
+  },
+  "Jabu Jabus Belly Before Boss Chest": {
+   "remake": "InsideJabuJabuBelly/chest/3609242017501283521",
+   "region": "Jabu Jabus Belly Before Boss",
+   "rule": "True",
+   "vanilla_item": "Rupees (20)",
+   "scene": 2,
+   "tags": [
+    "Jabu Jabu's Belly",
+    "Vanilla Dungeons",
+    "Chests"
+   ],
+   "confidence": "medium",
+   "why": "Room 13 chest among pots whose drop tables are Drop_ResourceSupply_BeforeBoss_*: the room before Barinade."
+  },
+  "ZF Scarecrow Ledge Chest": {
+   "remake": "ZoraFountain/chest/15055117029957340138",
+   "region": "Zoras Fountain",
+   "rule": "is_adult and can_use(Scarecrow) and can_use(Longshot)",
+   "vanilla_item": "Rupees (50)",
+   "scene": 89,
+   "tags": [
+    "Zora's Fountain",
+    "Chests"
+   ],
+   "confidence": "medium (rule deliberately stricter)",
+   "why": "Adult-layout chest 4.7 units from a scarecrow spot (Obj_ScarecrowMarker_B_00 + Npc_Pierre_CallOcarina): reached by hookshotting Pierre. Longshot added in case the plain hookshot is short."
+  },
+  "LH Grotto Chest": {
+   "remake": "HyruleField/chest/6900843020594897860",
+   "region": "LH Grotto",
+   "rule": "(can_use(Dins_Fire) and (can_use(Sticks) or can_use(Bow))) or can_use(Fire_Arrows)",
+   "vanilla_item": "Rupees (20)",
+   "scene": 62,
+   "tags": [
+    "Lake Hylia",
+    "Grottos",
+    "Chests"
+   ],
+   "confidence": "high",
+   "why": "Lake Hylia's grotto under the gravestone by the owl (Obj_Tombstone_A_03 at -204.7,137.7,455.5, OoT's LH Grotto; interior stored in the Hyrule Field level). The remake replaced its three scrubs with four timed torches (Obj_CandleStick_TimeExtinguish_A_01): logic module HidingHole_Level_Hole_30 ANDs the four 'Burning' outputs into Gimmick_TreasureBoxAppear_Magic (TreasureBoxAppear:Magic), which drops in this NoBake chest and sets LakeHylia_secretHole_appearTreasureBox. No torch starts lit, so Deku Sticks can't carry a flame: Din's Fire or Fire Arrows (OoTR has_fire_source). Din's Fire lights only three of the four 15-second candles in game (Clawshot): the fourth takes a Deku Stick (child) or an arrow (adult) through a lit one, or Fire Arrows do all four."
+  },
+  "GC Grotto Chest": {
+   "remake": "GoronCity/chest/10944569637726152230",
+   "also": [
+    "GoronCity/chest/9159710900681116662"
+   ],
+   "region": "GC Grotto",
+   "rule": "True",
+   "vanilla_item": "Rupees (50)",
+   "scene": 62,
+   "tags": [
+    "Goron City",
+    "Grottos",
+    "Chests"
+   ],
+   "confidence": "high",
+   "why": "Goron City's only grotto (I_03 base, entrance -42.2,112.7,29.3 between hookshot targets Obj_HookShotTarget_A_01/_A_03: OoT's GC Grotto Platform) holds a signboard puzzle instead of OoT's three scrubs (SignboardWood.msbt SignboardHole__00: cut only the right signs; cut wrong and you are disqualified but still get a small prize). Logic module HidingHole_Level_Hole_17 has two Gimmick_TreasureBoxAppear_Magic modules: clear (GoronCity_secretHole_AppearTreasureBox_clear) and fail (..._faild, then OutOfService). The purple chest is the prize, the green one the consolation;; both hold the item, and the puzzle's guards are swapped (chests.py GC_PUZZLE: the clear trigger now waits on 'faild', the fail trigger on 'clear'), so after one outcome the other can never happen: one prize per file. Decoded: clear trigger = AND(right signs cut, NOT(this visit's outcome OR clear), in grotto); fail trigger = AND(a wrong sign cut, NOT(this visit's outcome OR faild), in grotto): in vanilla a fail is followed by a clear on a later visit, and a clear by a fail. GC Grotto is adult-only in OoTR, and an adult always has a sword."
+  },
+  "GF Crate Grotto Chest": {
+   "remake": "GerudoFortress/chest/16619432200060282313",
+   "region": "GF Entrances Behind Crates",
+   "rule": "is_adult and can_break_crate",
+   "vanilla_item": "Rupees (20)",
+   "scene": 62,
+   "tags": [
+    "Gerudo's Fortress",
+    "Grottos",
+    "Chests"
+   ],
+   "confidence": "high",
+   "why": "Gerudo Fortress' only grotto (F_02 base, entrance 33.2,112.6,-67.8) is under a crate (Obj_BrokenBox_A_01, two more beside it): break it, drop in. Inside: pots, three flying pots and this plain chest (no appear event). Adult layout only. OoTR's GF Storms Grotto (a fairy fountain behind the crates) has no remake counterpart; this crate grotto is in the same 'behind the crates' area."
+  },
+  "SFM Storms Grotto Chest": {
+   "remake": "SacredForestMeadow/chest/1764383515296652106",
+   "region": "SFM Storms Grotto",
+   "rule": "can_play(Song_of_Time)",
+   "vanilla_item": "Deku Seeds (30)",
+   "scene": 62,
+   "tags": [
+    "Sacred Forest Meadow",
+    "Forest Area",
+    "Grottos",
+    "Chests"
+   ],
+   "confidence": "high (rule at least as strict)",
+   "why": "SFM's grotto by the Minuet plaza near the temple stairs (entrance 1.3,114.4,-85.5, OoT's SFM storms grotto spot; the remake has a hole cover Land_SacredForest_HidingHoleCover_A_02 there with no event proxy) holds a gossip stone and this chest behind a column of four Song of Time blocks (Obj_SongOfTimeBlock_A_01, sign Obj_SongOfTimeSign_A_01 isOnceOnly/isSaveGameData). The lid's pack parent is Land_HidingHoleCover_BrokenBomb_Base (bombs or hammer, CrackStoneObject damage rates), not a storm lid, so the region's entrance is can_open_bomb_grotto (data/rando/logic/audit_overworld.json); the chest itself needs the Song of Time."
+  },
+  "GV Storms Grotto Chest": {
+   "remake": "GerudoValley/chest/17750686910716887133",
+   "region": "GV Storms Grotto",
+   "rule": "True",
+   "vanilla_item": "Rupee (1)",
+   "scene": 62,
+   "tags": [
+    "Gerudo Valley",
+    "Grottos",
+    "Chests"
+   ],
+   "confidence": "high",
+   "why": "Visible NoBake chest beside the invisible one in GV's storms grotto; nothing links to it, no presence condition; one instance hash in both layouts (one save flag)."
+  },
+  "LLR Tower Chest": {
+   "remake": "HyruleField/chest/17445672702269453589",
+   "region": "LLR Tower",
+   "rule": "can_use(Hookshot)",
+   "vanilla_item": "Deku Seeds (30)",
+   "scene": 76,
+   "tags": [
+    "Lon Lon Ranch",
+    "Chests"
+   ],
+   "confidence": "high (reached in game by three projects: adult Hookshot onto the vines)",
+   "why": "Inside the Lon Lon Ranch silo beside the crawlspace (child layout: FldObj_AirWall_CrawlHole + CrawlAnchor at -152.5,150.9,267 and the silo's Obj_Heart_Piece = LLR Freestanding PoH 5 units away; adult layout: EventRequestActor Field_TunnelTooSmall). One hash in both layouts. Same route as OoTR's LLR Freestanding PoH (is_child). the chest stands at y 162.0, 11 units above the ruin floor; OotrR says only the adult Hookshot reaches it, ours said the child. Neither is proven, so until an in-game check the rule asks for both routes: the silo reached as a child and as an adult with the Hookshot (here: one hash, opened once for both ages). Whichever is real, the player has it; the chest still takes any item. Settled in game (: Kaepora, Br00ty's tracker and Clawshot all reached it as adult with the Hookshot onto the vines): can_use(Hookshot), as chests.json."
+  },
+  "HF Fairy Note 04 Chest": {
+   "remake": "HyruleField/chest/9891111455604007674",
+   "region": "Hyrule Field",
+   "rule": "is_adult",
+   "vanilla_item": "Rupees (20)",
+   "scene": 81,
+   "tags": [
+    "Hyrule Field",
+    "Chests"
+   ],
+   "confidence": "high",
+   "why": "Plain chest on open ground beside the remake's Fairy Note HrlField_Note_04 (the note stands at the same spot in the child layout, so the ground is walkable); adult layout only, no presence condition or appear event."
+  },
+  "HF Fairy Note 08 Chest": {
+   "remake": "HyruleField/chest/1163740567397714729",
+   "region": "Hyrule Field",
+   "rule": "is_adult",
+   "vanilla_item": "Rupees (20)",
+   "scene": 81,
+   "tags": [
+    "Hyrule Field",
+    "Chests"
+   ],
+   "confidence": "high",
+   "why": "Same as HF Fairy Note 04 Chest, beside HrlField_Note_08 (south field)."
+  },
+  "LH Fairy Note 06 Chest": {
+   "remake": "HyruleField/chest/17023457248274633121",
+   "region": "Lake Hylia",
+   "rule": "is_adult and 'Water Temple Clear'",
+   "vanilla_item": "Rupees (20)",
+   "scene": 87,
+   "tags": [
+    "Lake Hylia",
+    "Chests"
+   ],
+   "confidence": "high",
+   "why": "Same as HF Fairy Note 04 Chest, beside HrlField_Note_06 and two pots on the Lake Hylia shore. needs the lake refilled (Clawshot, played; the chest sits at the full lake's surface, data/rando/logic/chests.json _why)."
+  },
+  "HF Fairy Note 11 Chest": {
+   "remake": "HyruleField/chest/2967378296224661060",
+   "region": "Hyrule Field",
+   "rule": "is_child and at('Hyrule Field', is_adult)",
+   "vanilla_item": "Piece of Heart",
+   "scene": 81,
+   "tags": [
+    "Hyrule Field",
+    "Chests"
+   ],
+   "confidence": "high",
+   "why": "Obj_TBox_A_01_memo11 under a rock outcrop (west field, -213.3,133.5,138.7), both layouts, one hash. Its scene HrlField_Note_11_Treaurebox:Talk opens it only for a child (EventQueryPlayerIsChild, case 0 only) who has read Fairy Note 11 (HaveReadHrlField_Note11, set by HrlField_Note_11:Talk); the note stands beside it in the adult layout only. RPGSite's remake walkthrough: read the note as an adult, return as a child for Heart Piece #34."
+  },
+  "KF Bridge Ledge Chest": {
+   "remake": "KokiriForest/chest/4349272251343787229",
+   "also": [
+    "LostWood/chest/17479747339356189279"
+   ],
+   "share_flag": true,
+   "region": "Lost Woods",
+   "rule": "is_adult and here(can_plant_bean)",
+   "vanilla_item": "Rupees (50)",
+   "scene": 91,
+   "tags": [
+    "Lost Woods",
+    "Forest Area",
+    "Chests"
+   ],
+   "confidence": "high (bean platform route from the files)",
+   "why": "Purple-rupee chest on a rock ledge by the Lost Woods bridge, placed twice where the two levels overlap: KokiriForest/chest/4349272251343787229 at (-132.2,123.9,-16.0) and LostWood/chest/17479747339356189279 at (-49.4,104.5,71.9), the same spot (offset +82.8,-19.4,+87.9 between the levels; the stick-pouch scrub and GOSSIP_LOST_WOOD_02 sit at the same offset); both copies get the item and the Lost Woods copy takes the Kokiri Forest copy's instance hash, so it comes once. Route: Lost Woods' bridge bean patch (Obj_SmallFarm_A_01 at LW (-33.2,99.9,31.4), the bean bud at KF (-116.1,119.3,-56.4)) grows the adult-only bean platform Obj_SmallFarm_A_03 (Presence: not Sequence_IsChildhood; MoveSpeed 6), which rides rail 9352059764763180778 up to DestinationAnchor (-46.6,104.9,72.8), 2.8 units from the chest at its height, and back: OoTR's 'Lost Woods' bean (here(can_plant_bean), adult). Other routes (Longshot, Hover Boots) need collision the project can't read, so they are not counted. OoTR's 'LW Near Shortcuts Grotto Chest' was paired with the Lost Woods copy before; that grotto holds only grass (absent)."
+  },
+  "Kak Windmill Top Chest": {
+   "remake": "KakarikoVillage/chest/11929552275106311978",
+   "also": [
+    "KakarikoVillage/chest/13080955777249750889"
+   ],
+   "share_flag": true,
+   "region": "Kakariko Village",
+   "rule": "is_adult and can_use(Longshot) and can_use(Hover_Boots)",
+   "vanilla_item": "Rupees (50)",
+   "scene": 82,
+   "tags": [
+    "Kakariko Village",
+    "Chests"
+   ],
+   "confidence": "high (rule covers every route the placements allow)",
+   "why": "Purple-rupee chest high on the windmill (5.6,130.2,41.4), adult layouts only (copy in the Adult_Alternative layout takes this chest's hash, one save flag). Collision: Phive/Shape/Dcc/<Land model>__Physical/__StairStep/__StairSlope/__Airwall.bphsh.zs are a 'Phive' container around a Havok tagfile (TAG0, SDKV20250200, DATA); the surfaces are Havok compressed-mesh shapes the project has no reader for, and the navmeshes (Phive/NavMesh/*.bphnm.zs) are Havok too. So the rule is the one that holds for every route the placements allow: within 45 units the gadgets are ladders (Land_Kakariko_Ladder_A_06 by the windmill, A_01/A_04/A_10), climbable ivy (Land_Kakariko_IvyClimbable_A_01, ProceduralIvy) and Cuccos (one at the chest's height), all usable without items; no hookshot target, bean spot, rock or crawl hole. RPGSite's remake walkthrough: ladder to the ledge behind the windmill, Cucco glide to the blue roof. Every route is terrain, ladders, ivy or a Cucco: an adult with the Longshot and Hover Boots covers them all."
+  },
+  "HF Redead Grotto Chest": {
+   "remake": "HyruleField/chest/5755485285664292988",
+   "region": "Hyrule Field",
+   "rule": "can_open_storm_grotto and (is_adult or Sticks or Kokiri_Sword or can_use(Dins_Fire))",
+   "vanilla_item": "Rupees (50)",
+   "scene": 62,
+   "tags": [
+    "Hyrule Field",
+    "Grottos",
+    "Chests"
+   ],
+   "confidence": "high",
+   "why": "Hyrule Field's grotto by the Kakariko stairs (HidingHole_Entry_01 at (165.4,155.4,36.3) -> anchors (163.3,155.7,27.4)/(163.3,139.1,27.4), both layouts) is closed by a Song of Storms lid (Land_Kokiri_HidingHoleCover_A_01, pack parent Land_HidingHoleCover_DisappearSrom_Base, Obj_Invincible life; EventProxyRequestActor; logic HidingHole_Level_Hole_05 -> Gimmick_Ocarina_Appearance_01_7e8b, ActorLogicHidingHoleCoverDisappearSrom; Dm_SY_Ocarina makes SongOfTheStormSensorActor for melody 5). Inside: two Enemy_ReDead_AlwaysRespawn and this NoBake purple-rupee chest, dropped in by KakarikoVillage_TreasureBoxAppear. It is OoT's ReDead room, moved: OoTR's Kak Redead Grotto entrance (Kakariko's bomb lid) now leads to a beehive room without a chest, so 'Kak Redead Grotto Chest' is absent and this chest is its own location. Rule: the storm grotto (OoTR's can_open_storm_grotto, Stone of Agony convention kept) and OoTR's own ReDead rule for the Kak Redead Grotto chest."
+  }
+ },
+ "paired": {
+  "Spirit Temple First Mirror Left Chest": {
+   "remake": "SpiritTemple/chest/876108895472176682",
+   "kind": "a04"
+  },
+  "Gerudo Training Ground Heavy Block Fourth Chest": {
+   "remake": "GerudoTrainingGround/chest/7881496104962067240",
+   "kind": "a04"
+  },
+  "Ganons Castle Water Trial Left Chest": {
+   "remake": "InsideGanonCastle/chest/3253191540272036329",
+   "kind": "a04"
+  },
+  "Ganons Castle Light Trial Second Left Chest": {
+   "remake": "InsideGanonCastle/chest/17726220643880970879",
+   "kind": "a04"
+  },
+  "Ganons Castle Light Trial First Right Chest": {
+   "remake": "InsideGanonCastle/chest/5732331492537302993",
+   "kind": "a04"
+  },
+  "Ganons Castle Light Trial Third Right Chest": {
+   "remake": "InsideGanonCastle/chest/11406545451127340703",
+   "kind": "a04"
+  },
+  "Market Treasure Chest Game Reward": {
+   "remake": "Market/chest/16881481538337649070",
+   "kind": "tcg_reward"
+  },
+  "Graveyard Dampe Race Freestanding PoH": {
+   "remake": "Graveyard/chest/5534919361313859554",
+   "kind": "dampe_poh"
+  },
+  "GV Crate Freestanding PoH": {
+   "remake": "GerudoValley/chest/15856256242099990922",
+   "kind": "freestanding_chest",
+   "rule": "is_child",
+   "why": "OoT's two GV hearts are the waterfall PoH (the remake keeps it freestanding: Obj_GerudoValley_Heart_Piece behind the waterfall, drops plugin) and the crate PoH on the lower ledge; the remake's only other GV heart is this big chest on that ledge (-9.5,90.4,35.0, the octorok grotto ledge's height, a child-layout Cucco at -8.7,90.4,26.5). RPGSite: use a Cucco to jump into the ravine left of the suspension bridge and fly southwest to the chest with Heart Piece #15. Rule: the child Cucco route (OoTR's region also allows the Longshot, not confirmed in the remake)."
+  }
+ },
+ "absent": {
+  "HF Near Market Grotto Chest": "Every grotto entrance in the Hyrule Field level (HidingHole_Entry_01 EventRequestActor -> its HidingHole_HoleEntrance anchor, both layouts) was followed to its interior: business scrub, tektites, fairy fountain, ReDeads + chest (Kak Redead Grotto), cow + gossip stone (cow grotto), Gold Skulltula, gossip stone + GS + Skullwalltulas, gossip stone + loose rupees, three scrubs (LLR, child only), timed torches + chest under the Lake Hylia gravestone (LH Grotto). OoT's three generic HF grottos (chest + gossip stone) became the two gossip-stone grottos without a chest; no HF grotto chest is left for any of the three.",
+  "HF Open Grotto Chest": "See HF Near Market Grotto Chest.",
+  "HF Southeast Grotto Chest": "See HF Near Market Grotto Chest.",
+  "DMT Storms Grotto Chest": "Death Mountain Trail's Song of Storms grotto (Land_Kokiri_HidingHoleCover_A_01 + EventProxyRequestActor inside OoT's ring of rocks, entrance -1.6,120.2,-26.1) holds Baby Dodongos, bomb flowers and loose rupees: no chest, no gossip stone. DMT's only chest is the DMT Chest.",
+  "Graveyard Royal Familys Tomb Chest": "The tomb is part of the Graveyard level (x 49..150: fog RoyalFamilyTomb_*, SoundSetting Area_Graveyard_InsideRoyalFamilyTomb, anchor Dm_MelodyGet_Sun_Child); its first room opens by RoyalFamilyTomb_00_EnemyAnnihilation_Clear. The level's six chests are Dampe's race goal (4), the shield grave and the heart piece grave: none in the tomb.",
+  "LW Near Shortcuts Grotto Chest": "Lost Woods' boulder grotto in front of the Goron City shortcut (Obj_BrokenRock_A_01 at (27.8,100.0,-28.3); HidingHole_Entry_01 -> DestinationAnchor (27.8,83.3,-28.3)) holds only grass; the other boulder grotto (20.5,-75.7) holds the scrubs. Lost Woods' only chest is the bridge-ledge chest, which is 'KF Bridge Ledge Chest' (the same spot as its Kokiri Forest copy).",
+  "Kak Redead Grotto Chest": "OoTR's Kak Redead Grotto entrance is Kakariko's bomb-lid hole by the House of Skulltula (Land_Kakariko_HidingHoleCover_A_01, BrokenBomb; entry (-21.1,102.9,63.5) -> anchor (-20.0,87.9,66.0), all three layouts): its room holds a gossip stone, a fairy, a pond and seven beehives, no chest. The ReDead room and its chest are behind Hyrule Field's Song of Storms lid by the Kakariko stairs: 'HF Redead Grotto Chest'."
+ },
+ "not_checks": {
+  "Market/chest/6781536951709667179": "Treasure Chest Game repeat prize (red rupees): exists only after the first clear (logic module MiniGame_SequentialChoiceTreasure_cbde: Logic_Create <- MiniGame_ChoiceTreasure_IsClear), IsEnableRepeatOpen, respawned whenever the challenge returns to 'Ready': a payout for every later win, not a one-time location.",
+  "Graveyard/chest/234006393181394602": "Dampe's race repeat payout (red rupees): DampeRace_TreasureBoxRupeeHigh sets Minigame_DampeRace_TreasureBoxState AppearRupee after a later fast finish and TreasureBoxStateReset clears it: repeatable, not a one-time location.",
+  "Graveyard/chest/4322670163630771947": "Dampe's race repeat payout (blue rupees, DampeRace_TreasureBoxRupeeLow / AppearRupeeLow): repeatable, as above.",
+  "DreamWorld/*": "10 boss-rush gold-rupee chests (BossRushIntervalRoom_Static, all at 0,0.2,-6.5) with IsEnableRepeatOpen: a payout re-closed on every run. DreamWorld is reachable from a normal save (sleeping in a bed: LinkSleepInBed, Npc_Dream:BossRush, StartPos ReturnFromDreamWorld in Hyrule Field, Gerudo Valley and Kakariko), so it is not title-menu only, but these are not one-time locations. remake_boss_rush_chests not built: the ten chests are one prefab copied ten times on one spot in BossRushIntervalRoom_Static (same SRTHash, no Presence, no links); which one exists is decided at run time by nine logic roots (BossRushIntervalRoom_*.logic.root.ainb) from DreamWorld_BossRushBossCount and DreamWorld_BossRush_Mode, so no placement says which boss a chest follows, and a rule per chest can't be read.",
+  "HyruleField/chest/3691276324234689811": "not a chest (a TBox_Rupee_Red item actor at y=8)",
+  "GerudoTrainingGround/chest/11754783663699171680": "dungeon chest",
+  "InsideGanonCastle/chest/15320975652699461295": "dungeon chest",
+  "WaterTemple/chest/16424266294822218796": "dungeon chest"
+ },
+ "blockers": {},
+ "tcg_rooms": "The ten Treasure Chest Game room chests and the salesman are in play with shuffle_tcgkeys 'remove' (tools/rando/parity/_chests_tcg.py ROOMS: Top = key row z 9.7, Bottom = rupee row z 15.7, rooms from the counter inwards). With 'vanilla' OoTR itself disables them; the keyed modes are a blocker."
+}

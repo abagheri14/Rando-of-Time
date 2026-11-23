@@ -1,0 +1,1842 @@
+{
+ "Animal_Fish_Blue": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Animal_Insect": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Armor_Adult_AgonyStone": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Adult_Default_Head": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Adult_Gauntlet_Gold": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Adult_Gauntlet_Silver": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Adult_GlassTruth": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Adult_Goron": {
+  "pouch_category": "Armor",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Adult_HeavyBoot": {
+  "pouch_category": "Boot",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Adult_HoverBoot": {
+  "pouch_category": "Boot",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Adult_Normal": {
+  "pouch_category": "Armor",
+  "pouch_get_type": "Small"
+ },
+ "Armor_Adult_Zora": {
+  "pouch_category": "Armor",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Child_AgonyStone": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Child_Default_Head": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Child_Gauntlet_Goron": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Child_GlassTruth": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Child_Mask_Amiibo0": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Child_Mask_Amiibo1": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Child_Mask_Bunny": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Child_Mask_Gerudo": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Child_Mask_Goron": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Child_Mask_Keaton": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Child_Mask_Skull": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Child_Mask_Spooky": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Child_Mask_Truth": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Child_Mask_Zora": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Armor_GlassTruth": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Armor_Mask_Base": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Item_AgonyStone": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_AlarmCucco": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_Arrow_Fire": {
+  "pouch_category": "Bow",
+  "pouch_get_type": "Large"
+ },
+ "Item_Arrow_Ice": {
+  "pouch_category": "Bow",
+  "pouch_get_type": "Large"
+ },
+ "Item_Arrow_Light": {
+  "pouch_category": "Bow",
+  "pouch_get_type": "Large"
+ },
+ "Item_Arrow_Normal": {
+  "pouch_category": "Arrow",
+  "pouch_get_type": "Small"
+ },
+ "Item_Bomb": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Item_BombBag_Large": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_BombBag_Medium": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_BombBag_Small": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_BombBundle_Small": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Item_Bombchu": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_BombchuBundle_Large": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_BombchuBundle_Medium": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_BombchuBundle_Small": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_Boomerang": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_Bottle": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_Bottle_BigPoe": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_Bottle_BlueFire": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_Bottle_BluePotion": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_Bottle_Bug": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_Bottle_Fairy": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_Bottle_Fish": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_Bottle_GreenPotion": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_Bottle_HalfMilk": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_Bottle_Letter": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_Bottle_Milk": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_Bottle_Poe": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_Bottle_RedPotion": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_BrokenSword": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_BulletBag_Large": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_BulletBag_Medium": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_BulletBag_Small": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_ClaimCheck": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_CojiroCucco": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_DekuNut": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Item_DekuSeed": {
+  "pouch_category": "Arrow",
+  "pouch_get_type": "Small"
+ },
+ "Item_DekuStick": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Item_DekuStickBundle_Small": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Item_DinFire": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Heart"
+ },
+ "Item_Dungeon_BossKey": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Dungeon_Compass": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Dungeon_Map": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Dungeon_SmallKey": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_EventObject_Base": {
+  "pouch_category": "Weapon",
+  "pouch_get_type": "Small"
+ },
+ "Item_EyeDrop": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_EyeballFrog": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_FairyBless_DefenseDouble": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Heart"
+ },
+ "Item_FairyBless_MP": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Heart"
+ },
+ "Item_FairyBless_MPDouble": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Heart"
+ },
+ "Item_FaroreWind": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Heart"
+ },
+ "Item_FishingRod": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Item_Gauntlet_Gold": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Gauntlet_Goron": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Gauntlet_Silver": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_GlassTruth": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Item_Hammer": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_Hat_FishingPondOwner": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Item_HeavyBoot": {
+  "pouch_category": "Boot",
+  "pouch_get_type": "Large"
+ },
+ "Item_Hookshot": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_HoverBoot": {
+  "pouch_category": "Boot",
+  "pouch_get_type": "Large"
+ },
+ "Item_Longshot": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_MagicBean": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Item_Mask_Bunny": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Item_Mask_Gerudo": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Item_Mask_Goron": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Item_Mask_Keaton": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Item_Mask_Skull": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Item_Mask_Spooky": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Item_Mask_Truth": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Item_Mask_Zora": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Item_Medal_Fire": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Medal_Fire_ImportantMenu": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Item_Medal_Forest": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Medal_Forest_ImportantMenu": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Item_Medal_Light": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Medal_Light_ImportantMenu": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Item_Medal_Shadow": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Medal_Shadow_ImportantMenu": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Item_Medal_Spirit": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Medal_Spirit_ImportantMenu": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Item_Medal_Water": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Medal_Water_ImportantMenu": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Item_Melody_EponaSong": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Small"
+ },
+ "Item_Melody_FireBolero": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Small"
+ },
+ "Item_Melody_ForestMinuet": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Small"
+ },
+ "Item_Melody_LightPrelude": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Small"
+ },
+ "Item_Melody_SariaSong": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Small"
+ },
+ "Item_Melody_ScarecrowSong": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Small"
+ },
+ "Item_Melody_ShadowNocturne": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Small"
+ },
+ "Item_Melody_SpiritRequiem": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Small"
+ },
+ "Item_Melody_StormSong": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Small"
+ },
+ "Item_Melody_SunSong": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Small"
+ },
+ "Item_Melody_TimeSong": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Small"
+ },
+ "Item_Melody_WaterSerenade": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Small"
+ },
+ "Item_Melody_ZeldaLullaby": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Small"
+ },
+ "Item_NayruLove": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Heart"
+ },
+ "Item_NutBag_Large": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_NutBag_Medium": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_NutBag_Small": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Ocarina_Fairy": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Small"
+ },
+ "Item_Ocarina_Fairy_Holder": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Item_Ocarina_Time": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Ocarina_Time_Holder": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Item_OddMushroom": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_OddPowder": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_OrnamentalBottle_Milk": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Item_PoacherSaw": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_PocketCucco": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_PocketEgg": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_Prescription": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_Quiver_Large": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Quiver_Medium": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Quiver_Small": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Range_Bow": {
+  "pouch_category": "Bow",
+  "pouch_get_type": "Large"
+ },
+ "Item_Range_SlingShot": {
+  "pouch_category": "Bow",
+  "pouch_get_type": "Large"
+ },
+ "Item_Scale_Gold": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Scale_Silver": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_ScrubBusinessSeed": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Item_Shield_Mirror": {
+  "pouch_category": "Shield",
+  "pouch_get_type": "Large"
+ },
+ "Item_StickBag_Large": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_StickBag_Medium": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_StickBag_Small": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Stone_Fire": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Stone_Fire_ImportantMenu": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Item_Stone_Forest": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Stone_Forest_ImportantMenu": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Item_Stone_Water": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Stone_Water_ImportantMenu": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Item_Sword_Biggoron": {
+  "pouch_category": "Weapon",
+  "pouch_get_type": "Large"
+ },
+ "Item_Sword_BrokenGiant": {
+  "pouch_category": "Weapon",
+  "pouch_get_type": "Large"
+ },
+ "Item_Sword_Giant": {
+  "pouch_category": "Weapon",
+  "pouch_get_type": "Large"
+ },
+ "Item_Sword_Kokiri": {
+  "pouch_category": "Weapon",
+  "pouch_get_type": "Large"
+ },
+ "Item_Token_Gerudo": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Token_Gold": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Medium"
+ },
+ "Item_Wallet_Large": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_Wallet_Medium": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Item_WeirdEgg": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Item_ZeldaLetter": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "NormalArrow": {
+  "pouch_category": "Arrow",
+  "pouch_get_type": "Small"
+ },
+ "Npc_Hylia_ImperialSoldier_Bomb": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Armor_Adult_Normal": {
+  "pouch_category": "Armor",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Armor_Goron": {
+  "pouch_category": "Armor",
+  "pouch_get_type": "Large"
+ },
+ "Obj_Armor_Zora": {
+  "pouch_category": "Armor",
+  "pouch_get_type": "Large"
+ },
+ "Obj_ArrowBundle_Large": {
+  "pouch_category": "Arrow",
+  "pouch_get_type": "Small"
+ },
+ "Obj_ArrowBundle_Medium": {
+  "pouch_category": "Arrow",
+  "pouch_get_type": "Small"
+ },
+ "Obj_ArrowBundle_Small": {
+  "pouch_category": "Arrow",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Arrow_Fire": {
+  "pouch_category": "Bow",
+  "pouch_get_type": "Large"
+ },
+ "Obj_BlueFire_A_01": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Obj_BlueFire_A_03": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Obj_BlueFire_A_04": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Obj_BlueFire_A_05": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Obj_BlueFire_A_06": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Bomb": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Obj_BombFlower_A_01": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Obj_BombFlower_A_04": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Obj_BombFlower_Fruit_For_Break_Obj_DeathMtTrail_BrokenRock_A_01": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Obj_Bombchu": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Obj_Bottle_Letter": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Obj_DekuNut": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Obj_DekuSeed": {
+  "pouch_category": "Arrow",
+  "pouch_get_type": "Small"
+ },
+ "Obj_DekuStick": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Deku_MoveFloor_A_01": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Obj_Deku_MoveFloor_A_02": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Obj_Dungeon_SmallKey": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Obj_Dungeon_SmallKey_GerudoFortress_01": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Obj_Dungeon_SmallKey_GerudoFortress_02": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Obj_Dungeon_SmallKey_GerudoFortress_03": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Obj_Dungeon_SmallKey_GerudoFortress_04": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Obj_Fairy": {
+  "pouch_category": "CureItem",
+  "pouch_get_type": "Small"
+ },
+ "Obj_FairySpirit": {
+  "pouch_category": "CureItem",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Fairy_FromButterfly": {
+  "pouch_category": "CureItem",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Fairy_HidingHole_FairyFountain": {
+  "pouch_category": "CureItem",
+  "pouch_get_type": "Small"
+ },
+ "Obj_GerudoValley_Heart_Piece": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Medium"
+ },
+ "Obj_Heart": {
+  "pouch_category": "CureItem",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Heart_Container": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Heart"
+ },
+ "Obj_Heart_InWater": {
+  "pouch_category": "CureItem",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Heart_Piece": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Medium"
+ },
+ "Obj_Heart_Piece_Digging_Hole": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Medium"
+ },
+ "Obj_Heart_Piece_MiniGame": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Medium"
+ },
+ "Obj_Heart_Shootable": {
+  "pouch_category": "CureItem",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Item_Base": {
+  "pouch_category": "Weapon",
+  "pouch_get_type": "Small"
+ },
+ "Obj_MagicJar_Large": {
+  "pouch_category": "CureItem",
+  "pouch_get_type": "Small"
+ },
+ "Obj_MagicJar_Small": {
+  "pouch_category": "CureItem",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Mask_Amiibo0": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Obj_Mask_Amiibo1": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Obj_MiniGame_ChoiceTreasure_HitPrize": {
+  "pouch_category": "Rupee",
+  "pouch_get_type": "Small"
+ },
+ "Obj_MiniGame_SmallKey": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Medium"
+ },
+ "Obj_Ocarina_Time": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Obj_RupeeToken_Silver": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Obj_Rupee_Blue": {
+  "pouch_category": "Rupee",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Rupee_Gold": {
+  "pouch_category": "Rupee",
+  "pouch_get_type": "Medium"
+ },
+ "Obj_Rupee_Green": {
+  "pouch_category": "Rupee",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Rupee_Purple": {
+  "pouch_category": "Rupee",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Rupee_Red": {
+  "pouch_category": "Rupee",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Rupee_Silver": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Obj_ScrubBusinessSeed": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Shield_Deku": {
+  "pouch_category": "Shield",
+  "pouch_get_type": "Large"
+ },
+ "Obj_Shield_Hylian": {
+  "pouch_category": "Shield",
+  "pouch_get_type": "Large"
+ },
+ "Obj_SinkingLure": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Obj_Spirit_Poe": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Spirit_PoeFlat": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Spirit_PoeFlat_Event": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Spirit_PoeHyrule": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Spirit_PoeSharp": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Spirit_PoeSharp_Event": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Spirit_Poe_Big": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Obj_Token_Gold": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Medium"
+ },
+ "Pouch_AlarmCoucco": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Amiibo": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Pouch_Arrow_Fire": {
+  "pouch_category": "Bow",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Arrow_Ice": {
+  "pouch_category": "Bow",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Arrow_Light": {
+  "pouch_category": "Bow",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Arrow_Normal": {
+  "pouch_category": "Arrow",
+  "pouch_get_type": "Small"
+ },
+ "Pouch_Bomb": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Pouch_BombBag_Large": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_BombBag_Medium": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_BombBag_Small": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Bombchu": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Boomerang": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Bottle": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Bottle_BigPoe": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Bottle_BlueFire": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Bottle_BluePotion": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Bottle_Bug": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Bottle_Fairy": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Bottle_Fish": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Bottle_GreenPotion": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Bottle_HalfMilk": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Bottle_Letter": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Bottle_Milk": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Bottle_Poe": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Bottle_RedPotion": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_BrokenSword": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_BulletBag_Large": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_BulletBag_Medium": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_BulletBag_Small": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_ClaimCheck": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_CojiroCucco": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_DekuNut": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Pouch_DekuStick": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Pouch_DinFire": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Heart"
+ },
+ "Pouch_EyeDrop": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_EyeballFrog": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_FairyBless_DefenseDouble": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Heart"
+ },
+ "Pouch_FairyBless_MP": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Heart"
+ },
+ "Pouch_FairyBless_MPDouble": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Heart"
+ },
+ "Pouch_FaroreWind": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Heart"
+ },
+ "Pouch_Gauntlet_Gold": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Gauntlet_Goron": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Gauntlet_Silver": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Hammer": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Heart_Piece": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Medium"
+ },
+ "Pouch_Hookshot": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Item_Base": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Pouch_Longshot": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_MagicBean": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Pouch_NayruLove": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Heart"
+ },
+ "Pouch_NutBag_Large": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_NutBag_Medium": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_NutBag_Small": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Ocarina_Fairy": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Small"
+ },
+ "Pouch_Ocarina_Time": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_OddMushroom": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_OddPowder": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_PoacherSaw": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_PocketCucco": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_PocketEgg": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Prescription": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Quiver_Large": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Quiver_Medium": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Quiver_Small": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Range_BowAndArrow_Fire": {
+  "pouch_category": "Bow",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Range_BowAndArrow_Ice": {
+  "pouch_category": "Bow",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Range_BowAndArrow_Light": {
+  "pouch_category": "Bow",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Range_BowAndArrow_Normal": {
+  "pouch_category": "Arrow",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Range_SlingShot": {
+  "pouch_category": "Bow",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Scale_Gold": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Scale_Silver": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_ScrubBusinessSeed": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Pouch_StickBag_Large": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_StickBag_Medium": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_StickBag_Small": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Token_Gerudo": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Token_Gold": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Medium"
+ },
+ "Pouch_Wallet_Large": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Wallet_Medium": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_Wallet_Small": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_WeirdEgg": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Pouch_ZeldaLetter": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Shootable_DekuSeed": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Shootable_ScrubBusinessSees": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Shop_Armor_Goron": {
+  "pouch_category": "Armor",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Armor_Zora": {
+  "pouch_category": "Armor",
+  "pouch_get_type": "Large"
+ },
+ "Shop_ArrowBundle_01": {
+  "pouch_category": "Arrow",
+  "pouch_get_type": "Small"
+ },
+ "Shop_ArrowBundle_02": {
+  "pouch_category": "Arrow",
+  "pouch_get_type": "Small"
+ },
+ "Shop_ArrowBundle_03": {
+  "pouch_category": "Arrow",
+  "pouch_get_type": "Small"
+ },
+ "Shop_Board_Base": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Shop_Board_Bundle_03": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Shop_Board_Bundle_05": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Shop_Board_Bundle_08": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Shop_Board_Bundle_10": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Shop_Board_Bundle_15": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Shop_Board_Bundle_20": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Shop_Board_Bundle_30": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Shop_Board_Bundle_50": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Shop_Board_SoldOut": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Shop_BombBundle_01": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Shop_BombBundle_02": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Shop_BombBundle_03": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Shop_BombBundle_04": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Shop_BombchuBundle_01": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Shop_BombchuBundle_02": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Shop_BombchuBundle_03": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Shop_BombchuBundle_04": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Shop_BombchuBundle_05": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Shop_BombchuBundle_06": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Shop_BombchuBundle_07": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Shop_BombchuBundle_08": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Bottle_BlueFire": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Bottle_Bug": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Bottle_Fairy": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Bottle_Fish": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Bottle_GreenPotion": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Bottle_HalfMilk": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Bottle_Poe": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Bottle_RedPotion": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Shop_DekuNutBundle_01": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Shop_DekuNutBundle_02": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Shop_DekuSeedBundle_01": {
+  "pouch_category": "Arrow",
+  "pouch_get_type": "Small"
+ },
+ "Shop_DekuSeedBundle_02": {
+  "pouch_category": "Arrow",
+  "pouch_get_type": "Small"
+ },
+ "Shop_DekuStick": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Shop_DekuStickBundle_Medium": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Shop_Heart": {
+  "pouch_category": "CureItem",
+  "pouch_get_type": "Small"
+ },
+ "Shop_Heart_Bundle": {
+  "pouch_category": "CureItem",
+  "pouch_get_type": "Small"
+ },
+ "Shop_Item_Base": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Shop_MagicJar_Small": {
+  "pouch_category": "CureItem",
+  "pouch_get_type": "Small"
+ },
+ "Shop_Mask_Bunny": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Mask_Gerudo": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Mask_Goron": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Mask_Keaton": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Mask_Skull": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Mask_Spooky": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Mask_Truth": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Mask_Zora": {
+  "pouch_category": "HeadArmor",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Sword_Giant": {
+  "pouch_category": "Weapon",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Weapon_Shield_Deku": {
+  "pouch_category": "Shield",
+  "pouch_get_type": "Large"
+ },
+ "Shop_Weapon_Shield_Hylian": {
+  "pouch_category": "Shield",
+  "pouch_get_type": "Large"
+ },
+ "TBox_ArrowBundle_Large": {
+  "pouch_category": "Arrow",
+  "pouch_get_type": "Small"
+ },
+ "TBox_ArrowBundle_Medium": {
+  "pouch_category": "Arrow",
+  "pouch_get_type": "Small"
+ },
+ "TBox_ArrowBundle_Small": {
+  "pouch_category": "Arrow",
+  "pouch_get_type": "Small"
+ },
+ "TBox_DekuNutBundle": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "TBox_DekuSeedBundle": {
+  "pouch_category": "Arrow",
+  "pouch_get_type": "Small"
+ },
+ "TBox_Rupee_Blue": {
+  "pouch_category": "Rupee",
+  "pouch_get_type": "Small"
+ },
+ "TBox_Rupee_Gold": {
+  "pouch_category": "Rupee",
+  "pouch_get_type": "Medium"
+ },
+ "TBox_Rupee_Green": {
+  "pouch_category": "Rupee",
+  "pouch_get_type": "Small"
+ },
+ "TBox_Rupee_Purple": {
+  "pouch_category": "Rupee",
+  "pouch_get_type": "Small"
+ },
+ "TBox_Rupee_Red": {
+  "pouch_category": "Rupee",
+  "pouch_get_type": "Small"
+ },
+ "TBox_Shield_Deku": {
+  "pouch_category": "Shield",
+  "pouch_get_type": "Large"
+ },
+ "TBox_Shield_Hylian": {
+  "pouch_category": "Shield",
+  "pouch_get_type": "Large"
+ },
+ "Tbox_MagicJar_Large": {
+  "pouch_category": "CureItem",
+  "pouch_get_type": "Small"
+ },
+ "Weapon_Base": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_Boomerang": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Bottle": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Bottle_BigPoe": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Bottle_BlueFire": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Bottle_BluePotion": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Bottle_Bug": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Bottle_Fairy": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Bottle_Fish": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Bottle_GreenPotion": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Bottle_HalfMilk": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Bottle_Letter": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Bottle_Milk": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Bottle_Poe": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Bottle_RedPotion": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_DekuStick": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Weapon_FishingLine": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_FishingRod": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Small"
+ },
+ "Weapon_GhostPicturePerformer_Poe_Amy_Torch": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_GhostPicturePerformer_Poe_Beth_Torch": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_GhostPicturePerformer_Poe_Joelle_Torch": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_GhostPicturePerformer_Poe_Meg_Torch": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_Hammer": {
+  "pouch_category": "Material",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Lsheath_059": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_Lsword_Base": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_Lsword_Metal_Base": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_Lure": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Small"
+ },
+ "Weapon_PoeBigCantera": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeBigCantera_Dictionary": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeCantera": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeCantera_Dictionary": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeFlatCantera": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeFlatCantera_Dictionary": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeHyrule": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeHyrule_Dictionary": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeSharpCantera": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeSharpCantera_Dictionary": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeSistersTorch": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeSisters_Amy_Torch": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeSisters_Amy_Torch_Dictionary": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeSisters_Beth_Torch": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeSisters_Beth_Torch_Dictionary": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeSisters_Joelle_Torch": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeSisters_Joelle_Torch_Dictionary": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeSisters_Meg_Torch": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeSisters_Meg_Torch_Dictionary": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_PoeWeaponBase": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_Quiver_001": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_Range_Bow": {
+  "pouch_category": "Bow",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Range_Bow_MiniGame_HitTarget": {
+  "pouch_category": "Bow",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Range_Hookshot": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_Range_Longshot": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_Range_SlingShot": {
+  "pouch_category": "Bow",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Range_SlingShot_MiniGame_HitTarget": {
+  "pouch_category": "Bow",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Sheath_070": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_Sheath_DarkLinkSword": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_Sheath_Kokiri": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_Shield_DarkLinkShield": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_Shield_Deku": {
+  "pouch_category": "Shield",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Shield_Hylian": {
+  "pouch_category": "Shield",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Shield_Mirror": {
+  "pouch_category": "Shield",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_SinkingLure": {
+  "pouch_category": "KeyItem",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Sword_Base": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_Sword_Biggoron": {
+  "pouch_category": "Weapon",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Sword_BrokenGiant": {
+  "pouch_category": "Weapon",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Sword_DarkLinkSword": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_Sword_Giant": {
+  "pouch_category": "Weapon",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Sword_Kokiri": {
+  "pouch_category": "Weapon",
+  "pouch_get_type": "Large"
+ },
+ "Weapon_Sword_Master": {
+  "pouch_category": "Weapon",
+  "pouch_get_type": "Small"
+ },
+ "Weapon_Sword_Metal_Base": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ },
+ "Weapon_Sword_Wood_Base": {
+  "pouch_category": null,
+  "pouch_get_type": null
+ }
+}

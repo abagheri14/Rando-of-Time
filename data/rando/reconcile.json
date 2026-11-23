@@ -1,0 +1,2962 @@
+{
+ "_about": "OoTR <-> remake location reconciliation (chests, small keys, boss keys). confidence high = pinned by room contents/position; medium/low = treat conservatively. 'remake' is a data/rewards.json id or 'absent'.",
+ "pairs": {
+  "Deku Tree Basement Chest": {
+   "remake": "InsideTheDekuTree/chest/12889104996486369065",
+   "confidence": "high",
+   "evidence": "room 4 chest at y=79.4, the only chest on the basement level (lobby floor y~100); the slingshot and compass rooms each hold their own second chest",
+   "ootr_vanilla": "Recovery Heart",
+   "ootr_region": "Deku Tree Basement",
+   "remake_item": "Item_DekuStickBundle_Small",
+   "remake_where": "Obj_TBox_A_01 @ [-10.4, 79.4, -12.6] room 4",
+   "chest_map": {
+    "mode": "group",
+    "remake": "InsideTheDekuTree/chest/11368028582977069031"
+   },
+   "changes_chest_map": true
+  },
+  "Deku Tree Compass Room Side Chest": {
+   "remake": "InsideTheDekuTree/chest/11368028582977069031",
+   "confidence": "high",
+   "evidence": "room 3, same room as the Compass chest (exact pair); the only other chest in room 3",
+   "ootr_vanilla": "Recovery Heart",
+   "ootr_region": "Deku Tree Lobby",
+   "remake_item": "TBox_DekuNutBundle",
+   "remake_where": "Obj_TBox_A_01 @ [-65.2, 125.6, 0.0] room 3",
+   "chest_map": {
+    "mode": "group",
+    "remake": "InsideTheDekuTree/chest/12889104996486369065"
+   },
+   "changes_chest_map": true
+  },
+  "Deku Tree Slingshot Room Side Chest": {
+   "remake": "InsideTheDekuTree/chest/13027331340815880287",
+   "confidence": "high",
+   "evidence": "room 2, same room as the Slingshot chest (exact pair); the only other chest in room 2",
+   "ootr_vanilla": "Recovery Heart",
+   "ootr_region": "Deku Tree Slingshot Room",
+   "remake_item": "TBox_DekuNutBundle",
+   "remake_where": "Obj_TBox_A_01 @ [-42.9, 116.2, 19.3] room 2",
+   "chest_map": {
+    "mode": "group",
+    "remake": "InsideTheDekuTree/chest/13027331340815880287"
+   },
+   "changes_chest_map": false
+  },
+  "Dodongos Cavern End of Bridge Chest": {
+   "remake": "DodongoCavern/chest/7524527082521156886",
+   "confidence": "medium",
+   "evidence": "room 1 (lobby) upper level y=113.3: Obj_TBox_A_06 Deku Shield right beside a WallCrack (bomb to reveal = can_blast_or_smash). The second A_06 shield chest (bomb bag room 13) is a remake addition",
+   "ootr_vanilla": "Deku Shield",
+   "ootr_region": "Dodongos Cavern Far Bridge",
+   "remake_item": "TBox_Shield_Deku",
+   "remake_where": "Obj_TBox_A_06 @ [-20.8, 113.3, -36.5] room 1",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Dodongos Cavern Boss Room Chest": {
+   "remake": "absent",
+   "confidence": "medium",
+   "evidence": "King Dodongo's room (remake room 22: boss, heart container, warp, bomb flowers) has no chest. chest_map's pair (room 10 seeds chest by a WallCrack) is in the bomb-flower staircase room",
+   "ootr_vanilla": "Bombs (5)",
+   "ootr_region": "King Dodongo Boss Room",
+   "chest_map": {
+    "mode": "full",
+    "remake": "DodongoCavern/chest/12253889300578348965"
+   },
+   "changes_chest_map": true
+  },
+  "Dodongos Cavern Bomb Flower Platform Chest": {
+   "remake": "DodongoCavern/chest/12253889300578348965",
+   "confidence": "medium",
+   "evidence": "room 10: 16 bomb flowers + broken staircase (the staircase climb), chest high at y=116. The ootr_match 'exact' chest (room 5, NoBake on a pedestal, spawned by DodongoCavern_Gimmick_DefeatLizalfos01) is a remake Lizalfos reward",
+   "ootr_vanilla": "Rupees (20)",
+   "ootr_region": "Dodongos Cavern Climb",
+   "remake_item": "Item_ScrubBusinessSeed",
+   "remake_where": "Obj_TBox_A_01 @ [-49.0, 116.0, -63.9] room 10",
+   "chest_map": {
+    "mode": "full",
+    "remake": "DodongoCavern/chest/7764016096998075927"
+   },
+   "changes_chest_map": true
+  },
+  "Forest Temple First Room Chest": {
+   "remake": "ForestTemple/chest/1171460703078800858",
+   "confidence": "high",
+   "evidence": "room 0 (entrance courtyard with Wolfos), the only chest; small key on both sides",
+   "ootr_vanilla": "Small Key (Forest Temple)",
+   "ootr_region": "Forest Temple Lobby",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [-9.9, 117.5, 64.4] room 0",
+   "chest_map": {
+    "mode": "group",
+    "remake": "ForestTemple/chest/1171460703078800858"
+   },
+   "changes_chest_map": false
+  },
+  "Forest Temple First Stalfos Chest": {
+   "remake": "ForestTemple/chest/14776684749746592758",
+   "confidence": "high",
+   "evidence": "room 4: 2 Stalfos + EnemyCounter, NoBake key chest; directly below the Bow chest's 3-Stalfos room 17 (OoT room 6 holds both fights)",
+   "ootr_vanilla": "Small Key (Forest Temple)",
+   "ootr_region": "Forest Temple Central Area",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [0.0, 105.8, -62.8] room 4",
+   "chest_map": {
+    "mode": "group",
+    "remake": "ForestTemple/chest/14776684749746592758"
+   },
+   "changes_chest_map": false
+  },
+  "Forest Temple Well Chest": {
+   "remake": "ForestTemple/chest/6449977980406424425",
+   "confidence": "high",
+   "evidence": "room 15 at y=88, the bottom of the well beside the east courtyard (room 14); small key on both sides",
+   "ootr_vanilla": "Small Key (Forest Temple)",
+   "ootr_region": "Forest Temple Outdoors High Balconies",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [16.4, 88.0, -42.6] room 15",
+   "chest_map": {
+    "mode": "group",
+    "remake": "ForestTemple/chest/7535137041266964235"
+   },
+   "changes_chest_map": true
+  },
+  "Forest Temple Red Poe Chest": {
+   "remake": "ForestTemple/chest/3433400840978782007",
+   "confidence": "high",
+   "evidence": "room 16: Enemy_Poe_Joelle (red Poe) + her painting + NoBake key chest",
+   "ootr_vanilla": "Small Key (Forest Temple)",
+   "ootr_region": "Forest Temple Bow Region",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [-17.1, 114.8, -63.6] room 16",
+   "chest_map": {
+    "mode": "group",
+    "remake": "ForestTemple/chest/6449977980406424425"
+   },
+   "changes_chest_map": true
+  },
+  "Forest Temple Floormaster Chest": {
+   "remake": "ForestTemple/chest/7535137041266964235",
+   "confidence": "high",
+   "evidence": "room 22: Enemy_Floormaster + EnemyCounter + NoBake key chest",
+   "ootr_vanilla": "Small Key (Forest Temple)",
+   "ootr_region": "Forest Temple Outside Upper Ledge",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [-70.2, 107.1, -26.5] room 22",
+   "chest_map": {
+    "mode": "group",
+    "remake": "ForestTemple/chest/3433400840978782007"
+   },
+   "changes_chest_map": true
+  },
+  "Forest Temple Eye Switch Chest": {
+   "remake": "ForestTemple/chest/15920957434854338961",
+   "confidence": "high",
+   "evidence": "rooms 7/8: block-push room (MovableBox on 1F and 2F) with Obj_EyeSwitch_A_02 and a NoBake chest (purple rupee). chest_map's unique-item pair (large arrows) is the basement chest",
+   "ootr_vanilla": "Arrows (30)",
+   "ootr_region": "Forest Temple Block Push Room",
+   "remake_item": "TBox_Rupee_Purple",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [-52.8, 115.0, 4.2] room 8",
+   "chest_map": {
+    "mode": "full",
+    "remake": "ForestTemple/chest/9038700938965170329"
+   },
+   "changes_chest_map": true
+  },
+  "Forest Temple Falling Ceiling Room Chest": {
+   "remake": "ForestTemple/chest/15117164073907033527",
+   "confidence": "high",
+   "evidence": "room 24: Obj_ForestTemple_FallingCeiling + Skulltulas + floor switch. The chest has no Drop__DropActor (default contents)",
+   "ootr_vanilla": "Arrows (10)",
+   "ootr_region": "Forest Temple Falling Room",
+   "remake_item": null,
+   "remake_where": "Obj_TBox_A_01 @ [56.0, 104.0, -22.8] room 24",
+   "chest_map": {
+    "mode": "group",
+    "remake": "ForestTemple/chest/15920957434854338961"
+   },
+   "changes_chest_map": true
+  },
+  "Forest Temple Basement Chest": {
+   "remake": "ForestTemple/chest/9038700938965170329",
+   "confidence": "high",
+   "evidence": "room 27: basement with the rotating walls (PivotedFloor), boss-door lock and pre-boss pots; holds TBox_ArrowBundle_Large (OoT: arrows 5)",
+   "ootr_vanilla": "Arrows (5)",
+   "ootr_region": "Forest Temple Basement",
+   "remake_item": "TBox_ArrowBundle_Large",
+   "remake_where": "Obj_TBox_A_01 @ [-16.3, 60.7, 12.6] room 27",
+   "chest_map": {
+    "mode": "group",
+    "remake": "ForestTemple/chest/15117164073907033527"
+   },
+   "changes_chest_map": true
+  },
+  "Forest Temple Raised Island Courtyard Chest": {
+   "remake": "ForestTemple/chest/3174893090599461927",
+   "confidence": "medium",
+   "evidence": "east courtyard (room 14: Octorok, Deku Babas, GS) chest at y=101.4 beside a hookshot target and the door toward the falling-ceiling room; holds the remake's Map",
+   "ootr_vanilla": "Recovery Heart",
+   "ootr_region": "Forest Temple NE Outdoors",
+   "remake_item": "Item_Dungeon_Map",
+   "remake_where": "Obj_TBox_A_02 @ [38.8, 101.4, -35.7] room 14",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Forest Temple Map Chest": {
+   "remake": "absent",
+   "confidence": "medium",
+   "evidence": "OoT's map chest is in the Blue Bubble room between the courtyard balconies; the remake's Blue Bubble rooms (3, 21) have no chest and the Map is in the east-courtyard chest",
+   "ootr_vanilla": "Map (Forest Temple)",
+   "ootr_region": "Forest Temple Outdoors High Balconies",
+   "chest_map": {
+    "mode": "full",
+    "remake": "ForestTemple/chest/3174893090599461927"
+   },
+   "changes_chest_map": true
+  },
+  "Fire Temple Near Boss Chest": {
+   "remake": "FireTemple/chest/5634724236470386190",
+   "confidence": "high",
+   "evidence": "room 2 = OoT room 2 (near-boss lava room with Darunia and the boss door; pot counts match), Goron 005 cage",
+   "ootr_vanilla": "Small Key (Fire Temple)",
+   "ootr_region": "Fire Temple Near Boss",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [-39.2, 105.0, 24.6] room 2",
+   "chest_map": {
+    "mode": "group",
+    "remake": "FireTemple/chest/9634924691849556346"
+   },
+   "changes_chest_map": true
+  },
+  "Fire Temple Big Lava Room Lower Open Door Chest": {
+   "remake": "FireTemple/chest/3949488292768750868",
+   "confidence": "high",
+   "evidence": "room 1 = OoT big lava room (pot counts match), lower level, Goron 001 cage",
+   "ootr_vanilla": "Small Key (Fire Temple)",
+   "ootr_region": "Fire Temple Big Lava Room",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [34.2, 105.3, -46.5] room 1",
+   "chest_map": {
+    "mode": "group",
+    "remake": "FireTemple/chest/12567412825200613393"
+   },
+   "changes_chest_map": true
+  },
+  "Fire Temple Big Lava Room Blocked Door Chest": {
+   "remake": "FireTemple/chest/1705064956286753527",
+   "confidence": "high",
+   "evidence": "room 22 off the big lava room behind Obj_FireTemple_CrackWall (bombable = has_explosives), Goron 003 cage",
+   "ootr_vanilla": "Small Key (Fire Temple)",
+   "ootr_region": "Fire Temple Big Lava Room",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [39.4, 105.3, 51.2] room 22",
+   "chest_map": {
+    "mode": "group",
+    "remake": "FireTemple/chest/10521366928524045067"
+   },
+   "changes_chest_map": true
+  },
+  "Fire Temple Boulder Maze Lower Chest": {
+   "remake": "FireTemple/chest/12567412825200613393",
+   "confidence": "high",
+   "evidence": "room 5 = OoT boulder maze (MQ 'Lizalfos maze' is room 5), maze floor y=147 near the entry, Goron 007 cage",
+   "ootr_vanilla": "Small Key (Fire Temple)",
+   "ootr_region": "Fire Temple Boulder Maze Lower",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [48.5, 147.0, -43.4] room 5",
+   "chest_map": {
+    "mode": "group",
+    "remake": "FireTemple/chest/12945617941305968586"
+   },
+   "changes_chest_map": true
+  },
+  "Fire Temple Boulder Maze Upper Chest": {
+   "remake": "FireTemple/chest/9634924691849556346",
+   "confidence": "medium",
+   "evidence": "room 5 raised level y=150.5 (torch slugs, cracked floor), Goron 008 cage",
+   "ootr_vanilla": "Small Key (Fire Temple)",
+   "ootr_region": "Fire Temple Boulder Maze Upper",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [46.6, 150.5, 33.4] room 5",
+   "chest_map": {
+    "mode": "group",
+    "remake": "FireTemple/chest/3949488292768750868"
+   },
+   "changes_chest_map": true
+  },
+  "Fire Temple Boulder Maze Shortcut Chest": {
+   "remake": "FireTemple/chest/16785682308850448108",
+   "confidence": "high",
+   "evidence": "room 4 = MQ 'Shortcut Room' (Fire room numbers match OoT), below the boulder maze's Obj_FireTemple_CrackFloor; Goron 002 cage, only chest in the room",
+   "ootr_vanilla": "Small Key (Fire Temple)",
+   "ootr_region": "Fire Temple Boulder Maze Upper",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [77.4, 141.1, 0.2] room 4",
+   "chest_map": {
+    "mode": "group",
+    "remake": "FireTemple/chest/16785682308850448108"
+   },
+   "changes_chest_map": false
+  },
+  "Fire Temple Boulder Maze Side Room Chest": {
+   "remake": "FireTemple/chest/3688520809244472975",
+   "confidence": "low",
+   "evidence": "remaining boulder-maze chest: room 5 lower level, north end, no Goron; holds the Map and has GetEventName FireTemple_GetCompass. Same OoTR region and rule as the Lower chest",
+   "ootr_vanilla": "Small Key (Fire Temple)",
+   "ootr_region": "Fire Temple Boulder Maze Lower",
+   "remake_item": "Item_Dungeon_Map",
+   "remake_where": "Obj_TBox_A_02 @ [58.2, 147.1, 40.6] room 5",
+   "chest_map": {
+    "mode": "group",
+    "remake": "FireTemple/chest/1705064956286753527"
+   },
+   "changes_chest_map": true
+  },
+  "Fire Temple Compass Chest": {
+   "remake": "FireTemple/chest/12945617941305968586",
+   "confidence": "medium",
+   "evidence": "room 10 = OoT flame maze (pots match, 40 fire-wall traps): Goron 004 cage behind the 7th-key door; the remake puts a small key here",
+   "ootr_vanilla": "Compass (Fire Temple)",
+   "ootr_region": "Fire Temple Flame Maze",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [-17.1, 147.0, -31.1] room 10",
+   "chest_map": {
+    "mode": "full",
+    "remake": "FireTemple/chest/16713240760352215634"
+   },
+   "changes_chest_map": true
+  },
+  "Fire Temple Map Chest": {
+   "remake": "FireTemple/chest/16713240760352215634",
+   "confidence": "high",
+   "evidence": "room 16 = OoT moving-fire room (3 hearts), chest right behind the shutter opened by the narrow-path room's eye switch (Bow or 6 keys). GetEventName FireTemple_GetMap, but it holds the Compass",
+   "ootr_vanilla": "Map (Fire Temple)",
+   "ootr_region": "Fire Temple Narrow Path Room",
+   "remake_item": "Item_Dungeon_Compass",
+   "remake_where": "Obj_TBox_A_02 @ [34.1, 147.1, -5.7] room 16",
+   "chest_map": {
+    "mode": "full",
+    "remake": "FireTemple/chest/3688520809244472975"
+   },
+   "changes_chest_map": true
+  },
+  "Fire Temple Highest Goron Chest": {
+   "remake": "FireTemple/chest/10521366928524045067",
+   "confidence": "high",
+   "evidence": "room 11: Song of Time block + hammer (rusted) switch + Goron 009 cage = OoTR rule Megaton_Hammer and Song_of_Time",
+   "ootr_vanilla": "Small Key (Fire Temple)",
+   "ootr_region": "Fire Temple Upper",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [-37.8, 145.2, -0.6] room 11",
+   "chest_map": {
+    "mode": "group",
+    "remake": "FireTemple/chest/5634724236470386190"
+   },
+   "changes_chest_map": true
+  },
+  "Fire Temple Flare Dancer Chest": {
+   "remake": "FireTemple/chest/8757492004108970488",
+   "confidence": "high",
+   "evidence": "room 3: Flare Dancer + EnemyCounter, NoBake chest spawned by FocusOnGimmick_FireTemple_FlareDancer02 (boss key loop)",
+   "ootr_vanilla": "Bombs (10)",
+   "ootr_region": "Fire Temple Lower Locked Door",
+   "remake_item": "TBox_Rupee_Red",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [-7.0, 102.0, -33.3] room 3",
+   "chest_map": {
+    "mode": "group",
+    "remake": "FireTemple/chest/15073195886628236505"
+   },
+   "changes_chest_map": true
+  },
+  "Fire Temple Scarecrow Chest": {
+   "remake": "FireTemple/chest/862385681502746018",
+   "confidence": "medium",
+   "evidence": "room 8 at the top (y=194) with hookshot targets and a GS (OoT GS Scarecrow Climb/Top = rooms 7/8); three chests stacked on one spot (purple + 2 red), the other two are remake additions",
+   "ootr_vanilla": "Rupees (200)",
+   "ootr_region": "Fire Temple Boulder Maze Upper",
+   "remake_item": "TBox_Rupee_Purple",
+   "remake_where": "Obj_TBox_A_01 @ [31.4, 194.4, -10.2] room 8",
+   "chest_map": {
+    "mode": "group",
+    "remake": "FireTemple/chest/17001858340376096722"
+   },
+   "changes_chest_map": true
+  },
+  "Water Temple Torches Chest": {
+   "remake": "WaterTemple/chest/18099019250896853049",
+   "confidence": "high",
+   "evidence": "room 18 = OoT room 18 (MQ compass room behind the L1 torch gate): one lit + two timed torches in room 17 open the shutter to it; small key on both sides",
+   "ootr_vanilla": "Small Key (Water Temple)",
+   "ootr_region": "Water Temple Lowered Water Levels",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [43.8, 100.0, -4.5] room 18",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Water Temple Central Pillar Chest": {
+   "remake": "WaterTemple/chest/11682974908842171598",
+   "confidence": "high",
+   "evidence": "room 2 = OoT room 2 (below the central pillar): underwater crystal switch (hookshot) and gate in front of the chest; holds a red rupee in the remake",
+   "ootr_vanilla": "Small Key (Water Temple)",
+   "ootr_region": "Water Temple Middle Water Level",
+   "remake_item": "TBox_Rupee_Red",
+   "remake_where": "Obj_TBox_A_01 @ [12.0, 92.7, -4.5] room 2",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Water Temple Central Bow Target Chest": {
+   "remake": "WaterTemple/chest/3693930347660122883",
+   "confidence": "high",
+   "evidence": "room 20 = OoT room 20 ('Central Bow Target Pot'), push block (strength) + hookshot targets; small key on both sides",
+   "ootr_vanilla": "Small Key (Water Temple)",
+   "ootr_region": "Water Temple Central Bow Target",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [-1.2, 112.0, -51.8] room 20",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Water Temple Dragon Chest": {
+   "remake": "WaterTemple/chest/2503861086004941173",
+   "confidence": "high",
+   "evidence": "room 8 = MQ 'Dragon Statue' room 8: west 1F block (strength), underwater crystal switch and gate, Shell Blades; small key on both sides",
+   "ootr_vanilla": "Small Key (Water Temple)",
+   "ootr_region": "Water Temple Dragon Statue",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [-44.0, 102.3, -19.5] room 8",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Water Temple Cracked Wall Chest": {
+   "remake": "absent",
+   "confidence": "medium",
+   "evidence": "the cracked wall (room 17, mid height) opens into room 25, a copy of the room-18 model holding Shell Blades, a GS and pots but no chest",
+   "ootr_vanilla": "Small Key (Water Temple)",
+   "ootr_region": "Water Temple Cracked Wall",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": false
+  },
+  "Water Temple River Chest": {
+   "remake": "absent",
+   "confidence": "medium",
+   "evidence": "river room 21 = OoT 21 (river rail, eye switch, GS River) has no chest",
+   "ootr_vanilla": "Small Key (Water Temple)",
+   "ootr_region": "Water Temple River",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": false
+  },
+  "Water Temple Compass Chest": {
+   "remake": "WaterTemple/chest/16490222392193949581",
+   "confidence": "medium",
+   "evidence": "OoT's compass is in OoT room 4 (OoTR's 'Near Compass' pots, room 4, share its rule); remake room 4 (Land model Room04, entered from the east shaft, hookshot target, water spout, raised chest) holds a small key, and the remake's Compass chest is in room 3 (OoT's south basement / GS Behind Gate room). Alternative: keep the item pair with room 3",
+   "ootr_vanilla": "Compass (Water Temple)",
+   "ootr_region": "Water Temple Dive",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [56.9, 118.4, -28.1] room 4",
+   "chest_map": {
+    "mode": "full",
+    "remake": "WaterTemple/chest/16424266294822218796"
+   },
+   "changes_chest_map": true
+  },
+  "Shadow Temple Early Silver Rupee Chest": {
+   "remake": "ShadowTemple/chest/1111717451118505545",
+   "confidence": "high",
+   "evidence": "room 6 = OoT room 6 (scythe-shortcut silver rupees, rotating blade); small key on both sides",
+   "ootr_vanilla": "Small Key (Shadow Temple)",
+   "ootr_region": "Shadow Temple First Beamos",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [98.9, 87.2, -25.7] room 6",
+   "chest_map": {
+    "mode": "group",
+    "remake": "ShadowTemple/chest/169081039115821925"
+   },
+   "changes_chest_map": true
+  },
+  "Shadow Temple Invisible Blades Visible Chest": {
+   "remake": "ShadowTemple/chest/10344372963276519235",
+   "confidence": "high",
+   "evidence": "room 31, alcove of room 10 (invisible spinning scythe RotateBlade_GlassTruth, Like Like): a visible and an invisible chest plus the GS",
+   "ootr_vanilla": "Rupees (5)",
+   "ootr_region": "Shadow Temple Huge Pit",
+   "remake_item": "TBox_Rupee_Red",
+   "remake_where": "Obj_TBox_A_01 @ [177.8, 60.9, 95.2] room 31",
+   "chest_map": {
+    "mode": "group",
+    "remake": "ShadowTemple/chest/8858270325665149688"
+   },
+   "changes_chest_map": true
+  },
+  "Shadow Temple Invisible Blades Invisible Chest": {
+   "remake": "ShadowTemple/chest/3718790579351798247",
+   "confidence": "high",
+   "evidence": "room 31: the Obj_TBox_GlassTruth (lens-only) chest next to the visible one",
+   "ootr_vanilla": "Arrows (30)",
+   "ootr_region": "Shadow Temple Huge Pit",
+   "remake_item": "TBox_Rupee_Red",
+   "remake_where": "Obj_TBox_GlassTruth_A_01 @ [177.8, 60.9, 98.6] room 31",
+   "chest_map": {
+    "mode": "group",
+    "remake": "ShadowTemple/chest/5681107746948738726"
+   },
+   "changes_chest_map": true
+  },
+  "Shadow Temple Falling Spikes Lower Chest": {
+   "remake": "ShadowTemple/chest/8858270325665149688",
+   "confidence": "medium",
+   "evidence": "room 11: falling ceilings, push block; lower chest y=56.4",
+   "ootr_vanilla": "Arrows (10)",
+   "ootr_region": "Shadow Temple Falling Spikes",
+   "remake_item": "TBox_Rupee_Red",
+   "remake_where": "Obj_TBox_A_01 @ [21.1, 56.4, 98.4] room 11",
+   "chest_map": {
+    "mode": "group",
+    "remake": "ShadowTemple/chest/12345747231768877602"
+   },
+   "changes_chest_map": true
+  },
+  "Shadow Temple Falling Spikes Switch Chest": {
+   "remake": "ShadowTemple/chest/5781953901224064730",
+   "confidence": "medium",
+   "evidence": "room 11 upper level y=63.5, its only upper chest; small key on both sides",
+   "ootr_vanilla": "Small Key (Shadow Temple)",
+   "ootr_region": "Shadow Temple Falling Spikes",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [-1.5, 63.5, 98.6] room 11",
+   "chest_map": {
+    "mode": "group",
+    "remake": "ShadowTemple/chest/17902550525792072472"
+   },
+   "changes_chest_map": true
+  },
+  "Shadow Temple Falling Spikes Upper Chest": {
+   "remake": "absent",
+   "confidence": "medium",
+   "evidence": "room 11 has two chests (one lower, one upper); OoT has two on the upper level",
+   "ootr_vanilla": "Rupees (5)",
+   "ootr_region": "Shadow Temple Falling Spikes",
+   "chest_map": {
+    "mode": "group",
+    "remake": "ShadowTemple/chest/3718790579351798247"
+   },
+   "changes_chest_map": true
+  },
+  "Shadow Temple Invisible Spikes Chest": {
+   "remake": "absent",
+   "confidence": "medium",
+   "evidence": "invisible-spikes room 12 (silver rupees, 2 ReDeads, hookshot targets) has no chest or enemy counter",
+   "ootr_vanilla": "Rupees (5)",
+   "ootr_region": "Shadow Temple Invisible Spikes",
+   "chest_map": {
+    "mode": "group",
+    "remake": "ShadowTemple/chest/9852624243105848451"
+   },
+   "changes_chest_map": true
+  },
+  "Shadow Temple Wind Hint Chest": {
+   "remake": "ShadowTemple/chest/12345747231768877602",
+   "confidence": "medium",
+   "evidence": "room 15 beside the fan room 14: 2 ReDeads + EnemyCounter + GlassTruth (invisible) chest",
+   "ootr_vanilla": "Arrows (10)",
+   "ootr_region": "Shadow Temple Wind Tunnel",
+   "remake_item": "Item_ScrubBusinessSeed",
+   "remake_where": "Obj_TBox_GlassTruth_A_01 @ [128.0, 52.0, 10.5] room 15",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Shadow Temple After Wind Enemy Chest": {
+   "remake": "ShadowTemple/chest/5681107746948738726",
+   "confidence": "high",
+   "evidence": "room 16 (flying pots + pots, OoT 'After Wind' pots): 2 Gibdos, NoBake chest",
+   "ootr_vanilla": "Rupees (5)",
+   "ootr_region": "Shadow Temple After Wind",
+   "remake_item": "TBox_Rupee_Green",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [101.2, 52.1, -17.6] room 16",
+   "chest_map": {
+    "mode": "group",
+    "remake": "ShadowTemple/chest/10344372963276519235"
+   },
+   "changes_chest_map": true
+  },
+  "Shadow Temple After Wind Hidden Chest": {
+   "remake": "ShadowTemple/chest/169081039115821925",
+   "confidence": "high",
+   "evidence": "room 16: GlassTruth chest beside a WallCrack (has_explosives); small key on both sides",
+   "ootr_vanilla": "Small Key (Shadow Temple)",
+   "ootr_region": "Shadow Temple After Wind",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_GlassTruth_A_01 @ [118.4, 52.1, -17.7] room 16",
+   "chest_map": {
+    "mode": "group",
+    "remake": "ShadowTemple/chest/1111717451118505545"
+   },
+   "changes_chest_map": true
+  },
+  "Shadow Temple Invisible Floormaster Chest": {
+   "remake": "ShadowTemple/chest/17902550525792072472",
+   "confidence": "high",
+   "evidence": "room 21: Enemy_Floormaster_Truth (invisible) + EnemyCounter + NoBake key chest",
+   "ootr_vanilla": "Small Key (Shadow Temple)",
+   "ootr_region": "Shadow Temple Beyond Boat",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [-181.9, 41.4, -12.6] room 21",
+   "chest_map": {
+    "mode": "group",
+    "remake": "ShadowTemple/chest/5781953901224064730"
+   },
+   "changes_chest_map": true
+  },
+  "Shadow Temple Spike Walls Left Chest": {
+   "remake": "ShadowTemple/chest/9852624243105848451",
+   "confidence": "high",
+   "evidence": "room 19: spike walls (SpikeBoard x2) beside the boss key chest (exact pair)",
+   "ootr_vanilla": "Rupees (5)",
+   "ootr_region": "Shadow Temple Beyond Boat",
+   "remake_item": "Tbox_MagicJar_Large",
+   "remake_where": "Obj_TBox_A_01 @ [-190.1, 41.3, -69.4] room 19",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Spirit Temple Child Bridge Chest": {
+   "remake": "SpiritTemple/chest/5309180490719879013",
+   "confidence": "high",
+   "evidence": "room 2: child Stalfos, Green Bubbles, flying pots, net; Obj_TBox_A_06 Deku Shield (red rupee if already owned)",
+   "ootr_vanilla": "Deku Shield",
+   "ootr_region": "Child Spirit Temple Beyond Metal Bridges",
+   "remake_item": "TBox_Shield_Deku",
+   "remake_where": "Obj_TBox_A_06 @ [-56.0, 104.7, -67.6] room 2",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Spirit Temple Child Early Torches Chest": {
+   "remake": "SpiritTemple/chest/5703423643219134246",
+   "confidence": "high",
+   "evidence": "room 4: silver rupees + torches + NoBake key chest (OoT room 2 silver rupees)",
+   "ootr_vanilla": "Small Key (Spirit Temple)",
+   "ootr_region": "Child Spirit Temple Beyond Metal Bridges",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [-15.3, 104.7, -60.2] room 4",
+   "chest_map": {
+    "mode": "group",
+    "remake": "SpiritTemple/chest/12042193296697281461"
+   },
+   "changes_chest_map": true
+  },
+  "Spirit Temple Child Climb East Chest": {
+   "remake": "absent",
+   "confidence": "medium",
+   "evidence": "child climb room 6 (Lizalfos, sun switch) holds only the bombchu chest (Child Climb North, exact pair); no second Deku Shield chest anywhere in the temple",
+   "ootr_vanilla": "Deku Shield",
+   "ootr_region": "Child Spirit Temple Climb",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": false
+  },
+  "Spirit Temple Early Adult Right Chest": {
+   "remake": "SpiritTemple/chest/4277978357934400600",
+   "confidence": "high",
+   "evidence": "room 16 off the adult boulder room 15 (silver rupees, rolling rocks, SoT blocks, GS Boulder Room); small key on both sides",
+   "ootr_vanilla": "Small Key (Spirit Temple)",
+   "ootr_region": "Spirit Temple Boulder Room",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [48.9, 100.3, -78.0] room 16",
+   "chest_map": {
+    "mode": "group",
+    "remake": "SpiritTemple/chest/17407066694905911064"
+   },
+   "changes_chest_map": true
+  },
+  "Spirit Temple Sun Block Room Chest": {
+   "remake": "SpiritTemple/chest/17407066694905911064",
+   "confidence": "high",
+   "evidence": "room 9: sun blocks (MovableBox x5), sun switches, silver rupees, NoBake key chest",
+   "ootr_vanilla": "Small Key (Spirit Temple)",
+   "ootr_region": "Spirit Temple Central Chamber",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [-61.2, 132.8, -27.7] room 9",
+   "chest_map": {
+    "mode": "group",
+    "remake": "SpiritTemple/chest/5703423643219134246"
+   },
+   "changes_chest_map": true
+  },
+  "Spirit Temple Statue Room Hand Chest": {
+   "remake": "SpiritTemple/chest/2203243501006528435",
+   "confidence": "medium",
+   "evidence": "statue room 7 (Map chest room, boss door), raised NoBake key chest at y=124.8",
+   "ootr_vanilla": "Small Key (Spirit Temple)",
+   "ootr_region": "Adult Spirit Temple Climb",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [-10.9, 124.8, -60.6] room 7",
+   "chest_map": {
+    "mode": "group",
+    "remake": "SpiritTemple/chest/4277978357934400600"
+   },
+   "changes_chest_map": true
+  },
+  "Spirit Temple Statue Room Northeast Chest": {
+   "remake": "absent",
+   "confidence": "medium",
+   "evidence": "statue room 7 has only the Map and hand chests",
+   "ootr_vanilla": "Rupees (5)",
+   "ootr_region": "Adult Spirit Temple Climb",
+   "chest_map": {
+    "mode": "group",
+    "remake": "SpiritTemple/chest/876108895472176682"
+   },
+   "changes_chest_map": true
+  },
+  "Spirit Temple Near Four Armos Chest": {
+   "remake": "SpiritTemple/chest/12042193296697281461",
+   "confidence": "high",
+   "evidence": "room 26, closed alcove of the Armos room 22 (respawning Armos, sun switch); small key on both sides",
+   "ootr_vanilla": "Small Key (Spirit Temple)",
+   "ootr_region": "Spirit Temple Beyond Anubis Room",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [55.8, 130.9, -50.0] room 26",
+   "chest_map": {
+    "mode": "group",
+    "remake": "SpiritTemple/chest/2203243501006528435"
+   },
+   "changes_chest_map": true
+  },
+  "Spirit Temple First Mirror Left Chest": {
+   "remake": "SpiritTemple/chest/876108895472176682",
+   "confidence": "high",
+   "evidence": "room 18 (first rotating mirror, sun switches): Obj_TBox_A_04 = the remake's ice-trap chest (OoT: Ice Trap)",
+   "ootr_vanilla": "Ice Trap",
+   "ootr_region": "Adult Spirit Temple Climb",
+   "remake_item": null,
+   "remake_where": "Obj_TBox_A_04 @ [29.6, 119.2, -41.8] room 18",
+   "chest_map": {
+    "mode": "group",
+    "remake": "DesertColossus/chest/1186167733408299582"
+   },
+   "changes_chest_map": true
+  },
+  "Spirit Temple First Mirror Right Chest": {
+   "remake": "SpiritTemple/chest/12909857529499414969",
+   "confidence": "high",
+   "evidence": "room 18: the other chest (NoBake). chest_map paired First Mirror Left with a Desert Colossus secret-hole chest",
+   "ootr_vanilla": "Recovery Heart",
+   "ootr_region": "Adult Spirit Temple Climb",
+   "remake_item": "Item_BombBundle_Small",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [43.4, 119.2, -47.5] room 18",
+   "chest_map": {
+    "mode": "group",
+    "remake": "SpiritTemple/chest/12909857529499414969"
+   },
+   "changes_chest_map": false
+  },
+  "Spirit Temple Hallway Left Invisible Chest": {
+   "remake": "SpiritTemple/chest/9143177002861777924",
+   "confidence": "high",
+   "evidence": "room 23 corridor between the Armos room and the Iron Knuckle: two GlassTruth chests; left/right order unverified but same region and rule",
+   "ootr_vanilla": "Recovery Heart",
+   "ootr_region": "Spirit Temple Beyond Anubis Room",
+   "remake_item": "TBox_Rupee_Red",
+   "remake_where": "Obj_TBox_GlassTruth_A_01 @ [53.7, 132.1, 4.7] room 23",
+   "chest_map": {
+    "mode": "group",
+    "remake": "SpiritTemple/chest/13828480906010430010"
+   },
+   "changes_chest_map": true
+  },
+  "Spirit Temple Hallway Right Invisible Chest": {
+   "remake": "SpiritTemple/chest/14040210993541550542",
+   "confidence": "high",
+   "evidence": "room 23: the second GlassTruth chest",
+   "ootr_vanilla": "Recovery Heart",
+   "ootr_region": "Spirit Temple Beyond Anubis Room",
+   "remake_item": "TBox_Rupee_Red",
+   "remake_where": "Obj_TBox_GlassTruth_A_01 @ [58.0, 132.1, 4.7] room 23",
+   "chest_map": {
+    "mode": "group",
+    "remake": "SpiritTemple/chest/14040210993541550542"
+   },
+   "changes_chest_map": false
+  },
+  "Spirit Temple Topmost Chest": {
+   "remake": "SpiritTemple/chest/13828480906010430010",
+   "confidence": "high",
+   "evidence": "room 31, highest room (y~158): mirrors, sun switch, Dinolfos, White Bubbles; NoBake chest",
+   "ootr_vanilla": "Bombs (20)",
+   "ootr_region": "Spirit Temple Big Mirror Room",
+   "remake_item": "Item_BombBundle_Small",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [-25.4, 158.2, -51.3] room 31",
+   "chest_map": {
+    "mode": "group",
+    "remake": "SpiritTemple/chest/9143177002861777924"
+   },
+   "changes_chest_map": true
+  },
+  "Bottom of the Well Front Left Fake Wall Chest": {
+   "remake": "BottomOfTheWell/chest/8975637636514249074",
+   "confidence": "medium",
+   "evidence": "two symmetric small rooms at the front of the central block (Land_Well_Room_A_07 at x=-11 and x=+11.5); left (-x, facing in from the +z entrance) holds a red rupee in the remake",
+   "ootr_vanilla": "Small Key (Bottom of the Well)",
+   "ootr_region": "Bottom of the Well Behind Fake Walls",
+   "remake_item": "TBox_Rupee_Red",
+   "remake_where": "Obj_TBox_A_01 @ [-11.0, 100.0, -5.4] room 1",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Bottom of the Well Right Bottom Fake Wall Chest": {
+   "remake": "BottomOfTheWell/chest/8397646530660039355",
+   "confidence": "medium",
+   "evidence": "the right (+x) front room; the remake's only BotW key chest",
+   "ootr_vanilla": "Small Key (Bottom of the Well)",
+   "ootr_region": "Bottom of the Well Behind Fake Walls",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [10.6, 100.0, -4.5] room 1",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Bottom of the Well Center Skulltula Chest": {
+   "remake": "BottomOfTheWell/chest/631709185320708287",
+   "confidence": "medium",
+   "evidence": "central block east side (12,100,-11), mirror of the compass chest, Skulltula above",
+   "ootr_vanilla": "Deku Nuts (5)",
+   "ootr_region": "Bottom of the Well Behind Fake Walls",
+   "remake_item": "TBox_Rupee_Blue",
+   "remake_where": "Obj_TBox_A_01 @ [12.0, 100.0, -11.1] room 1",
+   "chest_map": {
+    "mode": "group",
+    "remake": "BottomOfTheWell/chest/11718708984125260282"
+   },
+   "changes_chest_map": true
+  },
+  "Bottom of the Well Back Left Bombable Chest": {
+   "remake": "BottomOfTheWell/chest/10905582354954996284",
+   "confidence": "medium",
+   "evidence": "back-left (-29.6,-37) by a face relief and a Lens-of-Truth floor; the remake's well has no bombable walls",
+   "ootr_vanilla": "Deku Nuts (10)",
+   "ootr_region": "Bottom of the Well Behind Fake Walls",
+   "remake_item": "TBox_Rupee_Red",
+   "remake_where": "Obj_TBox_A_01 @ [-29.6, 100.0, -37.0] room 1",
+   "chest_map": {
+    "mode": "group",
+    "remake": "BottomOfTheWell/chest/10905582354954996284"
+   },
+   "changes_chest_map": false
+  },
+  "Bottom of the Well Invisible Chest": {
+   "remake": "BottomOfTheWell/chest/11718708984125260282",
+   "confidence": "high",
+   "evidence": "room 2 behind the Lullaby triforce: the dungeon's only GlassTruth (invisible) chest",
+   "ootr_vanilla": "Rupees (200)",
+   "ootr_region": "Bottom of the Well Main Area",
+   "remake_item": "TBox_Rupee_Purple",
+   "remake_where": "Obj_TBox_GlassTruth_A_01 @ [0.0, 105.8, -77.1] room 2",
+   "chest_map": {
+    "mode": "group",
+    "remake": "BottomOfTheWell/chest/5429815628949128345"
+   },
+   "changes_chest_map": true
+  },
+  "Bottom of the Well Underwater Front Chest": {
+   "remake": "BottomOfTheWell/chest/5429815628949128345",
+   "confidence": "medium",
+   "evidence": "front centre at y=96.2, below the water plane at y=99.6",
+   "ootr_vanilla": "Bombs (10)",
+   "ootr_region": "Bottom of the Well Main Area",
+   "remake_item": "TBox_Rupee_Blue",
+   "remake_where": "Obj_TBox_A_01 @ [-0.2, 96.2, -5.0] room 1",
+   "chest_map": {
+    "mode": "group",
+    "remake": "BottomOfTheWell/chest/6064359710907908886"
+   },
+   "changes_chest_map": true
+  },
+  "Bottom of the Well Underwater Left Chest": {
+   "remake": "BottomOfTheWell/chest/12988877782812797760",
+   "confidence": "low",
+   "evidence": "chest at y=97.8 in a pit with a ladder (but on the right side, x=+19.9)",
+   "ootr_vanilla": "Recovery Heart",
+   "ootr_region": "Bottom of the Well Main Area",
+   "remake_item": "TBox_Rupee_Blue",
+   "remake_where": "Obj_TBox_A_01 @ [19.9, 97.8, -18.6] room 1",
+   "chest_map": {
+    "mode": "group",
+    "remake": "BottomOfTheWell/chest/631709185320708287"
+   },
+   "changes_chest_map": true
+  },
+  "Bottom of the Well Front Center Bombable Chest": {
+   "remake": "BottomOfTheWell/chest/6064359710907908886",
+   "confidence": "low",
+   "evidence": "leftover: room 11 at the far back behind a gate and an invisible (lens) floor; access likely differs from OoT's explosives rule",
+   "ootr_vanilla": "Bombchus (10)",
+   "ootr_region": "Bottom of the Well Main Area",
+   "remake_item": "Item_ScrubBusinessSeed",
+   "remake_where": "Obj_TBox_A_01 @ [0.0, 102.2, -100.5] room 11",
+   "chest_map": {
+    "mode": "group",
+    "remake": "BottomOfTheWell/chest/12988877782812797760"
+   },
+   "changes_chest_map": true
+  },
+  "Bottom of the Well Like Like Chest": {
+   "remake": "absent",
+   "confidence": "medium",
+   "evidence": "Like Like room 7 (Like Like, GS Like Like Cage, pots) has no chest; no Hylian Shield chest in the remake's well",
+   "ootr_vanilla": "Hylian Shield",
+   "ootr_region": "Bottom of the Well Behind Locked Doors",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": false
+  },
+  "Gerudo Training Ground Lobby Left Chest": {
+   "remake": "GerudoTrainingGround/chest/11182647876438515984",
+   "confidence": "medium",
+   "evidence": "lobby room 0, left (-x): GlassTruth chest (needs the Lens in the remake), no Drop__DropActor",
+   "ootr_vanilla": "Rupees (5)",
+   "ootr_region": "Gerudo Training Ground Lobby",
+   "remake_item": null,
+   "remake_where": "Obj_TBox_GlassTruth_A_01 @ [-7.6, 99.5, -11.4] room 0",
+   "chest_map": {
+    "mode": "group",
+    "remake": "GerudoTrainingGround/chest/4519534997122863169"
+   },
+   "changes_chest_map": true
+  },
+  "Gerudo Training Ground Lobby Right Chest": {
+   "remake": "GerudoTrainingGround/chest/2436665354602612279",
+   "confidence": "medium",
+   "evidence": "lobby room 0, right: NoBake chest dropped by GerudoTrainingGround_00_FallTreasureBox (eye switch)",
+   "ootr_vanilla": "Arrows (10)",
+   "ootr_region": "Gerudo Training Ground Lobby",
+   "remake_item": "TBox_Rupee_Blue",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [4.1, 99.5, -11.4] room 0",
+   "chest_map": {
+    "mode": "group",
+    "remake": "GerudoTrainingGround/chest/3750231902048775592"
+   },
+   "changes_chest_map": true
+  },
+  "Gerudo Training Ground Stalfos Chest": {
+   "remake": "GerudoTrainingGround/chest/13501407288943710656",
+   "confidence": "high",
+   "evidence": "room 1: 4 Stalfos + EnemyCounter, NoBake key chest",
+   "ootr_vanilla": "Small Key (Gerudo Training Ground)",
+   "ootr_region": "Gerudo Training Ground Lobby",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [-50.3, 98.1, -15.6] room 1",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Gerudo Training Ground Beamos Chest": {
+   "remake": "GerudoTrainingGround/chest/4709724720801091788",
+   "confidence": "high",
+   "evidence": "room 7 = OoT room 7 (Beamos hearts): Beamos + Dinolfos, NoBake key chest",
+   "ootr_vanilla": "Small Key (Gerudo Training Ground)",
+   "ootr_region": "Gerudo Training Ground Lobby",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [44.4, 98.7, -5.4] room 7",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Gerudo Training Ground Before Heavy Block Chest": {
+   "remake": "GerudoTrainingGround/chest/4519534997122863169",
+   "confidence": "high",
+   "evidence": "room 3: Wolfos fight + heavy block (MovableBox_A_04), chest appears via GerudoTrainingGround_03_AppaerTreasureBox",
+   "ootr_vanilla": "Arrows (30)",
+   "ootr_region": "Gerudo Training Ground Heavy Block Room",
+   "remake_item": "TBox_Rupee_Blue",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [-55.1, 104.0, -90.3] room 3",
+   "chest_map": {
+    "mode": "group",
+    "remake": "GerudoTrainingGround/chest/10743352138513225188"
+   },
+   "changes_chest_map": true
+  },
+  "Gerudo Training Ground Heavy Block First Chest": {
+   "remake": "GerudoTrainingGround/chest/6897789835137994741",
+   "confidence": "medium",
+   "evidence": "Like Like room 10 (3 Like Likes, behind the heavy block); same OoTR region and rule as the other heavy-block chests, order unknown",
+   "ootr_vanilla": "Rupees (200)",
+   "ootr_region": "Gerudo Training Ground Like Like Room",
+   "remake_item": "TBox_Rupee_Red",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [-42.2, 104.2, -123.6] room 10",
+   "chest_map": {
+    "mode": "group",
+    "remake": "GerudoTrainingGround/chest/11683433230229591151"
+   },
+   "changes_chest_map": true
+  },
+  "Gerudo Training Ground Heavy Block Second Chest": {
+   "remake": "GerudoTrainingGround/chest/3750231902048775592",
+   "confidence": "medium",
+   "evidence": "room 10, see Heavy Block First",
+   "ootr_vanilla": "Rupees (5)",
+   "ootr_region": "Gerudo Training Ground Like Like Room",
+   "remake_item": "Item_BombBundle_Small",
+   "remake_where": "Obj_TBox_A_01 @ [-39.5, 103.5, -130.8] room 10",
+   "chest_map": {
+    "mode": "group",
+    "remake": "GerudoTrainingGround/chest/2436665354602612279"
+   },
+   "changes_chest_map": true
+  },
+  "Gerudo Training Ground Heavy Block Third Chest": {
+   "remake": "GerudoTrainingGround/chest/5329807728555596183",
+   "confidence": "medium",
+   "evidence": "room 10: the GlassTruth key chest (OoT: small key)",
+   "ootr_vanilla": "Small Key (Gerudo Training Ground)",
+   "ootr_region": "Gerudo Training Ground Like Like Room",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_GlassTruth_A_01 @ [-42.1, 104.2, -137.7] room 10",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Gerudo Training Ground Heavy Block Fourth Chest": {
+   "remake": "GerudoTrainingGround/chest/7881496104962067240",
+   "confidence": "high",
+   "evidence": "room 10: Obj_TBox_A_04 ice-trap chest (TrapTreasureBoxOpen); OoT: Ice Trap",
+   "ootr_vanilla": "Ice Trap",
+   "ootr_region": "Gerudo Training Ground Like Like Room",
+   "remake_item": null,
+   "remake_where": "Obj_TBox_A_04 @ [-45.6, 104.7, -145.9] room 10",
+   "chest_map": {
+    "mode": "group",
+    "remake": "GerudoTrainingGround/chest/11754783663699171680"
+   },
+   "changes_chest_map": true
+  },
+  "Gerudo Training Ground Eye Statue Chest": {
+   "remake": "GerudoTrainingGround/chest/11563468890171962383",
+   "confidence": "medium",
+   "evidence": "room 4 = OoT room 4 (Eye Statue wonderitem): chest at the lower level beside the stone statue",
+   "ootr_vanilla": "Small Key (Gerudo Training Ground)",
+   "ootr_region": "Gerudo Training Ground Eye Statue Lower",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [-2.3, 96.3, -77.3] room 4",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Gerudo Training Ground Near Scarecrow Chest": {
+   "remake": "GerudoTrainingGround/chest/9911316961118170383",
+   "confidence": "low",
+   "evidence": "room 4 has one chest; candidate: key chest on the maze's upper level (y=105) next to the shutter from room 4's upper floor (scarecrow marker)",
+   "ootr_vanilla": "Small Key (Gerudo Training Ground)",
+   "ootr_region": "Gerudo Training Ground Eye Statue Upper",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [-1.5, 105.0, -48.0] room 8",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Gerudo Training Ground Hidden Ceiling Chest": {
+   "remake": "GerudoTrainingGround/chest/4320448574091221496",
+   "confidence": "low",
+   "evidence": "the other key chest on the maze's upper level (y=105, ceiling height)",
+   "ootr_vanilla": "Small Key (Gerudo Training Ground)",
+   "ootr_region": "Gerudo Training Ground Lobby",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [-1.8, 105.0, -37.9] room 8",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Gerudo Training Ground Hammer Room Clear Chest": {
+   "remake": "GerudoTrainingGround/chest/4961588221597286817",
+   "confidence": "high",
+   "evidence": "room 5 = OoT room 5 (hammer pillars, eye switches): NoBake A_06 chest (arrows if Bow) spawned by GerudoTrainingGround_05_AppaerTreasureBox",
+   "ootr_vanilla": "Arrows (10)",
+   "ootr_region": "Gerudo Training Ground Hammer Room",
+   "remake_item": null,
+   "remake_where": "Obj_TBox_A_06_NoBake @ [43.5, 98.0, -90.9] room 5",
+   "chest_map": {
+    "mode": "group",
+    "remake": "GerudoTrainingGround/chest/11182647876438515984"
+   },
+   "changes_chest_map": true
+  },
+  "Gerudo Training Ground Hammer Room Switch Chest": {
+   "remake": "GerudoTrainingGround/chest/4372363658229299619",
+   "confidence": "high",
+   "evidence": "room 5: the plain key chest",
+   "ootr_vanilla": "Small Key (Gerudo Training Ground)",
+   "ootr_region": "Gerudo Training Ground Hammer Room",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [43.3, 98.4, -82.4] room 5",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Gerudo Training Ground Underwater Silver Rupee Chest": {
+   "remake": "GerudoTrainingGround/chest/3717705376223508790",
+   "confidence": "high",
+   "evidence": "room 9 = OoT room 9 (underwater silver rupees, Shell Blades, SoT blocks): NoBake key chest",
+   "ootr_vanilla": "Small Key (Gerudo Training Ground)",
+   "ootr_region": "Gerudo Training Ground Water Room",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [78.5, 94.0, -43.9] room 9",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Gerudo Training Ground Maze Path Second Chest": {
+   "remake": "GerudoTrainingGround/chest/8186301369655588602",
+   "confidence": "low",
+   "evidence": "maze room 8, south-west red-rupee chest (OoT: 20 rupees); number of doors in front of it not verified",
+   "ootr_vanilla": "Rupees (20)",
+   "ootr_region": "Gerudo Training Ground Lobby",
+   "remake_item": "TBox_Rupee_Red",
+   "remake_where": "Obj_TBox_A_01 @ [-13.2, 98.0, -60.5] room 8",
+   "chest_map": {
+    "mode": "group",
+    "remake": "GerudoTrainingGround/chest/4961588221597286817"
+   },
+   "changes_chest_map": true
+  },
+  "Gerudo Training Ground Maze Path Third Chest": {
+   "remake": "GerudoTrainingGround/chest/10743352138513225188",
+   "confidence": "low",
+   "evidence": "maze south-west A_06 chest (no room index; arrows if Bow); number of doors not verified",
+   "ootr_vanilla": "Arrows (30)",
+   "ootr_region": "Gerudo Training Ground Lobby",
+   "remake_item": "TBox_Rupee_Red",
+   "remake_where": "Obj_TBox_A_06 @ [-9.0, 98.0, -60.0] room None",
+   "chest_map": {
+    "mode": "group",
+    "remake": "GerudoTrainingGround/chest/6897789835137994741"
+   },
+   "changes_chest_map": true
+  },
+  "Gerudo Training Ground Maze Right Side Chest": {
+   "remake": "GerudoTrainingGround/chest/11683433230229591151",
+   "confidence": "low",
+   "evidence": "maze east side A_06 chest (arrows if Bow), near the Maze Right Central bombchu chest",
+   "ootr_vanilla": "Arrows (30)",
+   "ootr_region": "Gerudo Training Ground Central Maze Right",
+   "remake_item": "TBox_Rupee_Red",
+   "remake_where": "Obj_TBox_A_06 @ [10.2, 98.0, -50.5] room 8",
+   "chest_map": {
+    "mode": "group",
+    "remake": "GerudoTrainingGround/chest/7881496104962067240"
+   },
+   "changes_chest_map": true
+  },
+  "Gerudo Training Ground Freestanding Key": {
+   "remake": "GerudoTrainingGround/chest/1883068192328530224",
+   "confidence": "low",
+   "evidence": "the remake GTG has no freestanding key (9 key chests for 9 locks); candidate: east-side maze key chest beside the Maze Right chests",
+   "ootr_vanilla": "Small Key (Gerudo Training Ground)",
+   "ootr_region": "Gerudo Training Ground Central Maze Right",
+   "remake_item": "Item_Dungeon_SmallKey",
+   "remake_where": "Obj_TBox_A_01 @ [22.8, 98.0, -45.6] room 8"
+  },
+  "Ganons Castle Forest Trial Chest": {
+   "remake": "InsideGanonCastle/chest/16913531450403950487",
+   "confidence": "high",
+   "evidence": "room 2: Wolfos + timed torches (first forest-trial room; fans in room 3), NoBake chest",
+   "ootr_vanilla": "Rupees (5)",
+   "ootr_region": "Ganons Castle Forest Trial",
+   "remake_item": "TBox_ArrowBundle_Medium",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [25.3, 103.0, 23.7] room 2",
+   "chest_map": {
+    "mode": "group",
+    "remake": "InsideGanonCastle/chest/1029712040059298120"
+   },
+   "changes_chest_map": true
+  },
+  "Ganons Castle Water Trial Left Chest": {
+   "remake": "InsideGanonCastle/chest/3253191540272036329",
+   "confidence": "high",
+   "evidence": "room 5 (Freezards, icicles, red ice): Obj_TBox_A_04 ice-trap chest",
+   "ootr_vanilla": "Ice Trap",
+   "ootr_region": "Ganons Castle Water Trial",
+   "remake_item": null,
+   "remake_where": "Obj_TBox_A_04 @ [56.3, 99.5, -26.8] room 5",
+   "chest_map": {
+    "mode": "group",
+    "remake": "InsideGanonCastle/chest/4733634471038136588"
+   },
+   "changes_chest_map": true
+  },
+  "Ganons Castle Water Trial Right Chest": {
+   "remake": "InsideGanonCastle/chest/14404733996390762670",
+   "confidence": "high",
+   "evidence": "room 5: the other water-trial chest (bombchus in the remake). chest_map paired it with Spirit Trial Crystal Switch",
+   "ootr_vanilla": "Recovery Heart",
+   "ootr_region": "Ganons Castle Water Trial",
+   "remake_item": "Item_BombchuBundle_Small",
+   "remake_where": "Obj_TBox_A_01 @ [56.4, 99.5, -15.2] room 5",
+   "chest_map": {
+    "mode": "group",
+    "remake": "InsideGanonCastle/chest/5732331492537302993"
+   },
+   "changes_chest_map": true
+  },
+  "Ganons Castle Shadow Trial Front Chest": {
+   "remake": "InsideGanonCastle/chest/18277713685010400796",
+   "confidence": "high",
+   "evidence": "room 8 (shadow trial: invisible floors, Like Like): chest at the front; gold gauntlets chest at the far end",
+   "ootr_vanilla": "Rupees (5)",
+   "ootr_region": "Ganons Castle Shadow Trial",
+   "remake_item": "TBox_ArrowBundle_Medium",
+   "remake_where": "Obj_TBox_A_01 @ [12.6, 103.9, -65.9] room 8",
+   "chest_map": {
+    "mode": "group",
+    "remake": "InsideGanonCastle/chest/7461796063704896255"
+   },
+   "changes_chest_map": true
+  },
+  "Ganons Castle Spirit Trial Crystal Switch Chest": {
+   "remake": "InsideGanonCastle/chest/7899179288432849355",
+   "confidence": "medium",
+   "evidence": "room 17 (second spirit-trial room: crystal switch, sun switches): NoBake chest (InsideGanonCastle_Dungeon_AppaerTreasureBox)",
+   "ootr_vanilla": "Bombchus (20)",
+   "ootr_region": "Ganons Castle Spirit Trial Second Room Front",
+   "remake_item": "Item_ScrubBusinessSeed",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [-38.0, 104.0, 13.3] room 17",
+   "chest_map": {
+    "mode": "full",
+    "remake": "InsideGanonCastle/chest/14404733996390762670"
+   },
+   "changes_chest_map": true
+  },
+  "Ganons Castle Spirit Trial Invisible Chest": {
+   "remake": "absent",
+   "confidence": "medium",
+   "evidence": "spirit-trial rooms 16/17 contain no GlassTruth chest",
+   "ootr_vanilla": "Arrows (10)",
+   "ootr_region": "Ganons Castle Spirit Trial Second Room Back",
+   "chest_map": {
+    "mode": "group",
+    "remake": "InsideGanonCastle/chest/18277713685010400796"
+   },
+   "changes_chest_map": true
+  },
+  "Ganons Castle Light Trial First Left Chest": {
+   "remake": "InsideGanonCastle/chest/1029712040059298120",
+   "confidence": "high",
+   "evidence": "room 12, 3x2 grid entered from +x: left row (z~-16) = blue, ice, blue = OoT 5r/ice/heart; first = nearest the door",
+   "ootr_vanilla": "Rupees (5)",
+   "ootr_region": "Ganons Castle Light Trial",
+   "remake_item": "TBox_Rupee_Blue",
+   "remake_where": "Obj_TBox_A_01 @ [-36.0, 99.7, -16.5] room 12",
+   "chest_map": {
+    "mode": "group",
+    "remake": "InsideGanonCastle/chest/14046623154429024571"
+   },
+   "changes_chest_map": true
+  },
+  "Ganons Castle Light Trial Second Left Chest": {
+   "remake": "InsideGanonCastle/chest/17726220643880970879",
+   "confidence": "high",
+   "evidence": "room 12 left row middle, Obj_TBox_A_04 ice trap",
+   "ootr_vanilla": "Ice Trap",
+   "ootr_region": "Ganons Castle Light Trial",
+   "remake_item": null,
+   "remake_where": "Obj_TBox_A_04 @ [-40.6, 99.7, -14.6] room 12",
+   "chest_map": {
+    "mode": "group",
+    "remake": "InsideGanonCastle/chest/14962432460641118089"
+   },
+   "changes_chest_map": true
+  },
+  "Ganons Castle Light Trial Third Left Chest": {
+   "remake": "InsideGanonCastle/chest/7461796063704896255",
+   "confidence": "high",
+   "evidence": "room 12 left row far",
+   "ootr_vanilla": "Recovery Heart",
+   "ootr_region": "Ganons Castle Light Trial",
+   "remake_item": "TBox_Rupee_Blue",
+   "remake_where": "Obj_TBox_A_01 @ [-45.1, 99.7, -16.6] room 12",
+   "chest_map": {
+    "mode": "group",
+    "remake": "InsideGanonCastle/chest/17726220643880970879"
+   },
+   "changes_chest_map": true
+  },
+  "Ganons Castle Light Trial First Right Chest": {
+   "remake": "InsideGanonCastle/chest/5732331492537302993",
+   "confidence": "high",
+   "evidence": "room 12 right row (z~-26) near, Obj_TBox_A_04 ice trap; right row = ice, blue, ice = OoT ice/arrows/ice",
+   "ootr_vanilla": "Ice Trap",
+   "ootr_region": "Ganons Castle Light Trial",
+   "remake_item": null,
+   "remake_where": "Obj_TBox_A_04 @ [-35.8, 99.7, -25.5] room 12",
+   "chest_map": {
+    "mode": "group",
+    "remake": "InsideGanonCastle/chest/11406545451127340703"
+   },
+   "changes_chest_map": true
+  },
+  "Ganons Castle Light Trial Second Right Chest": {
+   "remake": "InsideGanonCastle/chest/14046623154429024571",
+   "confidence": "high",
+   "evidence": "room 12 right row middle",
+   "ootr_vanilla": "Arrows (30)",
+   "ootr_region": "Ganons Castle Light Trial",
+   "remake_item": "TBox_Rupee_Blue",
+   "remake_where": "Obj_TBox_A_01 @ [-40.6, 99.7, -27.3] room 12",
+   "chest_map": {
+    "mode": "group",
+    "remake": "InsideGanonCastle/chest/16913531450403950487"
+   },
+   "changes_chest_map": true
+  },
+  "Ganons Castle Light Trial Third Right Chest": {
+   "remake": "InsideGanonCastle/chest/11406545451127340703",
+   "confidence": "high",
+   "evidence": "room 12 right row far, Obj_TBox_A_04 ice trap",
+   "ootr_vanilla": "Ice Trap",
+   "ootr_region": "Ganons Castle Light Trial",
+   "remake_item": null,
+   "remake_where": "Obj_TBox_A_04 @ [-45.1, 99.7, -25.5] room 12",
+   "chest_map": {
+    "mode": "group",
+    "remake": "InsideGanonCastle/chest/3253191540272036329"
+   },
+   "changes_chest_map": true
+  },
+  "Ganons Castle Light Trial Invisible Enemies Chest": {
+   "remake": "InsideGanonCastle/chest/14962432460641118089",
+   "confidence": "high",
+   "evidence": "room 12 centre: NoBake chest spawned after the invisible Keese/Skulltula (EnemyCounter); red rupee in the remake (OoT: small key)",
+   "ootr_vanilla": "Small Key (Ganons Castle)",
+   "ootr_region": "Ganons Castle Light Trial",
+   "remake_item": "TBox_Rupee_Red",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [-40.4, 99.9, -21.0] room 12",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Ganons Castle Light Trial Lullaby Chest": {
+   "remake": "InsideGanonCastle/chest/4733634471038136588",
+   "confidence": "medium",
+   "evidence": "room 13: NoBake chest beside Obj_TriForcePoint_A_12 (Zelda's Lullaby); green rupee in the remake (OoT: small key)",
+   "ootr_vanilla": "Small Key (Ganons Castle)",
+   "ootr_region": "Ganons Castle Light Trial",
+   "remake_item": "TBox_Rupee_Green",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [-52.2, 100.0, -25.5] room 13",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "KF Midos Top Left Chest": {
+   "remake": "KokiriForest/chest/12786193094758345086",
+   "confidence": "medium",
+   "evidence": "Mido's house: the four chests at (-53.2..-49.3, 112.3, -42.1..-40.9) (GetEventName KokiriForest_TreasureBox_NaviChatOff); same region and rule, so the order does not matter for logic",
+   "ootr_vanilla": "Rupees (5)",
+   "ootr_region": "KF Midos House",
+   "remake_item": "TBox_Rupee_Blue",
+   "remake_where": "Obj_TBox_A_01 @ [-53.2, 112.3, -42.1] room None",
+   "chest_map": {
+    "mode": "group",
+    "remake": "KokiriForest/chest/12786193094758345086"
+   },
+   "changes_chest_map": false
+  },
+  "KF Midos Top Right Chest": {
+   "remake": "KokiriForest/chest/10831981390482426294",
+   "confidence": "medium",
+   "evidence": "Mido's house, see Top Left",
+   "ootr_vanilla": "Rupees (5)",
+   "ootr_region": "KF Midos House",
+   "remake_item": "TBox_Rupee_Green",
+   "remake_where": "Obj_TBox_A_01 @ [-50.3, 112.3, -42.0] room None",
+   "chest_map": {
+    "mode": "group",
+    "remake": "KokiriForest/chest/4349272251343787229"
+   },
+   "changes_chest_map": true
+  },
+  "KF Midos Bottom Left Chest": {
+   "remake": "KokiriForest/chest/4555665598794293658",
+   "confidence": "medium",
+   "evidence": "Mido's house, see Top Left (chest_map put KF Storms Grotto on this chest)",
+   "ootr_vanilla": "Rupee (1)",
+   "ootr_region": "KF Midos House",
+   "remake_item": "TBox_Rupee_Blue",
+   "remake_where": "Obj_TBox_A_01 @ [-54.2, 112.3, -40.9] room None",
+   "chest_map": {
+    "mode": "full",
+    "remake": "KokiriForest/chest/10831981390482426294"
+   },
+   "changes_chest_map": true
+  },
+  "KF Midos Bottom Right Chest": {
+   "remake": "KokiriForest/chest/9725242744547055868",
+   "confidence": "medium",
+   "evidence": "Mido's house, see Top Left (chest_map put this OoTR chest in a Deku-scrub grotto)",
+   "ootr_vanilla": "Recovery Heart",
+   "ootr_region": "KF Midos House",
+   "remake_item": "TBox_Rupee_Blue",
+   "remake_where": "Obj_TBox_A_01 @ [-49.3, 112.3, -40.9] room None",
+   "chest_map": {
+    "mode": "full",
+    "remake": "KokiriForest/chest/14818888396401495482"
+   },
+   "changes_chest_map": true
+  },
+  "KF Storms Grotto Chest": {
+   "remake": "KokiriForest/chest/14818888396401495482",
+   "confidence": "high",
+   "evidence": "traced: Kokiri Forest's only grotto (HidingHole_Entry_01 EventRequestActor at (-50.6,122.4,-60.5) -> its DestinationAnchor HidingHole_HoleEntrance at (-51.9,107.5,-62.8)) is behind a Song of Storms cover (FldObj_AirWall_HidingHoleCover + EventProxyRequestActor + HidingHoleCoverDisappearStrom_SafePosition), OoT's KF Storms Grotto spot; its interior holds the Deku Scrub brothers (Scrub_Deku_Brothers_Manager, DefeatedOrder) and this NoBake chest, linked from scrub 'One' (appears when the three are beaten). The former pair 4349272251343787229 is not in a grotto: it stands on a rock ledge (y=123.9, floor 114.6) by the Lost Woods bridge beside GOSSIP_LOST_WOOD_02 and the stick-pouch business scrub.",
+   "ootr_vanilla": "Rupees (20)",
+   "ootr_region": "KF Storms Grotto",
+   "remake_item": "TBox_Rupee_Green",
+   "remake_where": "Obj_TBox_A_01_NoBake @ [-70.8, 103.6, -63.4] room None",
+   "chest_map": {
+    "mode": "group",
+    "remake": "KokiriForest/chest/4555665598794293658"
+   },
+   "changes_chest_map": true
+  },
+  "Kak Open Grotto Chest": {
+   "remake": "KakarikoVillage/chest/12902291359202819102",
+   "confidence": "medium",
+   "evidence": "Kakariko grotto (Land_HidingHole_Base_B_01) with its gossip stone 6 units from the chest",
+   "ootr_vanilla": "Rupees (20)",
+   "ootr_region": "Kak Open Grotto",
+   "remake_item": "TBox_Rupee_Blue",
+   "remake_where": "Obj_TBox_A_01 @ [-41.7, 79.7, 11.4] room None",
+   "chest_map": {
+    "mode": "group",
+    "remake": "KakarikoVillage/chest/11929552275106311978"
+   },
+   "changes_chest_map": true
+  },
+  "Kak Redead Grotto Chest": {
+   "remake": "absent",
+   "confidence": "high",
+   "evidence": "every grotto entrance was followed (HidingHole_Entry_01 EventRequestActor -> its HidingHole_HoleEntrance DestinationAnchor) to its interior (audit_overworld; grotto table). OoTR's Kak Redead Grotto is the bomb-lid hole by the House of Skulltula (Land_Kakariko_HidingHoleCover_A_01, pack parent Land_HidingHoleCover_BrokenBomb_Base; entry (-21.1,102.9,63.5) -> anchor (-20.0,87.9,66.0), all three layouts; the gossip-stone and drops passes put that grotto's stone and beehives there): its room holds a gossip stone, a fairy, a pond and seven beehives, no chest and no ReDeads. The ReDead room with chest 5755485285664292988 lies under Hyrule Field's Song of Storms lid by the Kakariko stairs (Land_Kokiri_HidingHoleCover_A_01 + EventProxyRequestActor at (163.3,155.7,27.4)): a different entrance in another level, so that chest is the new location 'HF Redead Grotto Chest' (chests_locations 'new').",
+   "ootr_vanilla": "Rupees (200)",
+   "ootr_region": "Kak Redead Grotto",
+   "remake_item": null,
+   "remake_where": "no chest behind Kakariko's bomb lid; the ReDead chest is Obj_TBox_A_01_NoBake @ [152.2, 136.0, 16.7] under the Hyrule Field storm lid",
+   "chest_map": {
+    "mode": "group",
+    "remake": "KakarikoVillage/chest/12902291359202819102"
+   },
+   "changes_chest_map": true
+  },
+  "HF Near Market Grotto Chest": {
+   "remake": "absent",
+   "confidence": "medium",
+   "evidence": "the remake's Hyrule Field generic grottos (gossip stones at (52,126,340) and (173,138,182)) hold a GS + crates and loose rupees, no chest; the field's other chests stand beside HrlField_Note markers (a remake treasure-note feature)",
+   "ootr_vanilla": "Rupees (5)",
+   "ootr_region": "HF Near Market Grotto",
+   "chest_map": {
+    "mode": "group",
+    "remake": "HyruleField/chest/1163740567397714729"
+   },
+   "changes_chest_map": true
+  },
+  "HF Open Grotto Chest": {
+   "remake": "absent",
+   "confidence": "medium",
+   "evidence": "see HF Near Market Grotto Chest",
+   "ootr_vanilla": "Rupees (5)",
+   "ootr_region": "HF Open Grotto",
+   "chest_map": {
+    "mode": "group",
+    "remake": "HyruleField/chest/17023457248274633121"
+   },
+   "changes_chest_map": true
+  },
+  "HF Southeast Grotto Chest": {
+   "remake": "absent",
+   "confidence": "medium",
+   "evidence": "see HF Near Market Grotto Chest",
+   "ootr_vanilla": "Rupees (20)",
+   "ootr_region": "HF Southeast Grotto",
+   "chest_map": {
+    "mode": "group",
+    "remake": "HyruleField/chest/17445672702269453589"
+   },
+   "changes_chest_map": true
+  },
+  "DMT Storms Grotto Chest": {
+   "remake": "absent",
+   "confidence": "medium",
+   "evidence": "Death Mountain Trail has one chest (the DMT Chest behind a WallCrack, exact pair); its grottos are a cow grotto with a gossip stone and an I_03 grotto with Baby Dodongos, neither with a chest",
+   "ootr_vanilla": "Rupees (200)",
+   "ootr_region": "DMT Storms Grotto",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": false
+  },
+  "Graveyard Heart Piece Grave Chest": {
+   "remake": "Graveyard/chest/9622128545943056087",
+   "confidence": "medium",
+   "evidence": "underground altar room with an Obj_TBox_A_02 Piece of Heart (the other HP chest is Dampe's race reward); note that the remake's Hylian Shield chest stands next to a ReDead",
+   "ootr_vanilla": "Piece of Heart",
+   "ootr_region": "Graveyard Heart Piece Grave",
+   "remake_item": "Obj_Heart_Piece",
+   "remake_where": "Obj_TBox_A_02 @ [21.4, 85.8, 39.3] room None",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Graveyard Royal Familys Tomb Chest": {
+   "remake": "absent",
+   "confidence": "medium",
+   "evidence": "no Graveyard chest besides Dampe's race goal (4 chests on one spot), the HP grave and the shield grave; chest_map paired it with a Dampe race chest",
+   "ootr_vanilla": "Bombs (5)",
+   "ootr_region": "Graveyard Royal Familys Tomb",
+   "chest_map": {
+    "mode": "full",
+    "remake": "Graveyard/chest/234006393181394602"
+   },
+   "changes_chest_map": true
+  },
+  "GC Maze Center Chest": {
+   "remake": "GoronCity/chest/14647422914070455120",
+   "confidence": "high",
+   "evidence": "the maze's four chests (z 2.0, -2.3, -5.2, -8.4) are walled in by brown (Obj_BrokenRock_A_01), iron (Obj_BrokenRock_A_02) and silver (Obj_LiftRock_B_01) rocks; which rock blocks which chest depends on collision not readable here, so all four take one rule that clears every rock type (data/rando/logic/chests.json: Megaton Hammer and Silver Gauntlets); with one rule the pairing inside the maze can't matter to logic",
+   "ootr_vanilla": "Rupees (50)",
+   "ootr_region": "Goron City",
+   "remake_item": "TBox_Rupee_Blue",
+   "remake_where": "Obj_TBox_A_01 @ [-47.4, 113.7, -5.2] room None",
+   "chest_map": {
+    "mode": "full",
+    "remake": "GoronCity/chest/10944569637726152230"
+   },
+   "changes_chest_map": true
+  },
+  "Market Treasure Chest Game Room 1 Top": {
+   "remake": "Market/chest/1775586642693927992",
+   "confidence": "high",
+   "evidence": "minigame key chests in a row; the one at x=-118.9 runs OpenLastHitTreasureBox, so rooms count from x=-74.9",
+   "ootr_vanilla": "Small Key (Treasure Chest Game)",
+   "ootr_region": "Market Treasure Chest Game",
+   "remake_item": "Obj_MiniGame_SmallKey",
+   "remake_where": "Obj_HrlCity_Shop_TBox_A_01 @ [-74.9, 97.9, 9.7] room None",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Market Treasure Chest Game Room 2 Top": {
+   "remake": "Market/chest/5350594583391365806",
+   "confidence": "high",
+   "evidence": "see Room 1 Top",
+   "ootr_vanilla": "Small Key (Treasure Chest Game)",
+   "ootr_region": "Market Treasure Chest Game",
+   "remake_item": "Obj_MiniGame_SmallKey",
+   "remake_where": "Obj_HrlCity_Shop_TBox_A_01 @ [-85.9, 97.9, 9.7] room None",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Market Treasure Chest Game Room 3 Top": {
+   "remake": "Market/chest/12763522142548402103",
+   "confidence": "high",
+   "evidence": "see Room 1 Top",
+   "ootr_vanilla": "Small Key (Treasure Chest Game)",
+   "ootr_region": "Market Treasure Chest Game",
+   "remake_item": "Obj_MiniGame_SmallKey",
+   "remake_where": "Obj_HrlCity_Shop_TBox_A_01 @ [-96.9, 97.9, 9.7] room None",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Market Treasure Chest Game Room 4 Top": {
+   "remake": "Market/chest/6478285350658826847",
+   "confidence": "high",
+   "evidence": "see Room 1 Top",
+   "ootr_vanilla": "Small Key (Treasure Chest Game)",
+   "ootr_region": "Market Treasure Chest Game",
+   "remake_item": "Obj_MiniGame_SmallKey",
+   "remake_where": "Obj_HrlCity_Shop_TBox_A_01 @ [-107.9, 97.9, 9.7] room None",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Market Treasure Chest Game Room 5 Top": {
+   "remake": "Market/chest/18239509117326156183",
+   "confidence": "high",
+   "evidence": "OpenLastHitTreasureBox",
+   "ootr_vanilla": "Small Key (Treasure Chest Game)",
+   "ootr_region": "Market Treasure Chest Game",
+   "remake_item": "Obj_MiniGame_SmallKey",
+   "remake_where": "Obj_HrlCity_Shop_TBox_A_01 @ [-118.9, 97.9, 9.7] room None",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Market Treasure Chest Game Room 1 Bottom": {
+   "remake": "Market/chest/7390716194495618474",
+   "confidence": "medium",
+   "evidence": "miss chest in the same column as Room 1 Top",
+   "ootr_vanilla": "Rupee (Treasure Chest Game) (1)",
+   "ootr_region": "Market Treasure Chest Game",
+   "remake_item": "TBox_Rupee_Green",
+   "remake_where": "Obj_HrlCity_Shop_TBox_A_01 @ [-74.9, 97.9, 15.7] room None",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Market Treasure Chest Game Room 2 Bottom": {
+   "remake": "Market/chest/12114077686306649660",
+   "confidence": "medium",
+   "evidence": "miss chest, Room 2 column",
+   "ootr_vanilla": "Rupee (Treasure Chest Game) (1)",
+   "ootr_region": "Market Treasure Chest Game",
+   "remake_item": "TBox_Rupee_Green",
+   "remake_where": "Obj_HrlCity_Shop_TBox_A_01 @ [-85.9, 97.9, 15.7] room None",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Market Treasure Chest Game Room 3 Bottom": {
+   "remake": "Market/chest/9591654059707200528",
+   "confidence": "medium",
+   "evidence": "miss chest, Room 3 column",
+   "ootr_vanilla": "Rupees (Treasure Chest Game) (5)",
+   "ootr_region": "Market Treasure Chest Game",
+   "remake_item": "TBox_Rupee_Green",
+   "remake_where": "Obj_HrlCity_Shop_TBox_A_01 @ [-96.9, 97.9, 15.7] room None",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Market Treasure Chest Game Room 4 Bottom": {
+   "remake": "Market/chest/13633455645485504369",
+   "confidence": "medium",
+   "evidence": "miss chest, Room 4 column",
+   "ootr_vanilla": "Rupees (Treasure Chest Game) (5)",
+   "ootr_region": "Market Treasure Chest Game",
+   "remake_item": "TBox_Rupee_Blue",
+   "remake_where": "Obj_HrlCity_Shop_TBox_A_01 @ [-107.9, 97.9, 15.7] room None",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Market Treasure Chest Game Room 5 Bottom": {
+   "remake": "Market/chest/15659683110284072977",
+   "confidence": "medium",
+   "evidence": "miss chest, Room 5 column",
+   "ootr_vanilla": "Rupees (Treasure Chest Game) (20)",
+   "ootr_region": "Market Treasure Chest Game",
+   "remake_item": "TBox_Rupee_Blue",
+   "remake_where": "Obj_HrlCity_Shop_TBox_A_01 @ [-118.9, 97.9, 15.7] room None",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Market Treasure Chest Game Reward": {
+   "remake": "Market/chest/16881481538337649070",
+   "confidence": "high",
+   "evidence": "Obj_HrlCity_Shop_TBox_A_02 holding the Piece of Heart (OpenClearTreasureBox); a second A_02 on the same spot holds a red rupee (repeat reward)",
+   "ootr_vanilla": "Piece of Heart (Treasure Chest Game)",
+   "ootr_region": "Market Treasure Chest Game",
+   "remake_item": "Obj_Heart_Piece",
+   "remake_where": "Obj_HrlCity_Shop_TBox_A_02 @ [-131.6, 97.9, 12.7] room None",
+   "chest_map": {
+    "mode": "vanilla",
+    "remake": null
+   },
+   "changes_chest_map": true
+  },
+  "Forest Temple Boss Key Chest": {
+   "remake": "ForestTemple/chest/5306318520835485827",
+   "confidence": "high",
+   "evidence": "big chest rotated 90 degrees (the room reached through the straightened hall); the only boss key",
+   "ootr_vanilla": "Boss Key (Forest Temple)",
+   "ootr_region": "Forest Temple Straightened Hall",
+   "remake_item": "Item_Dungeon_BossKey",
+   "remake_where": "Obj_TBox_A_03_NoBake @ [-49.5, 129.5, -63.7] room None",
+   "chest_map": {
+    "mode": "full",
+    "remake": "ForestTemple/chest/5306318520835485827"
+   },
+   "changes_chest_map": false
+  },
+  "Fire Temple Boss Key Chest": {
+   "remake": "FireTemple/chest/14060099092170010696",
+   "confidence": "high",
+   "evidence": "room 17 at the end of the boss key loop: Goron 010 cage + hammer switch",
+   "ootr_vanilla": "Boss Key (Fire Temple)",
+   "ootr_region": "Fire Temple Lower Locked Door",
+   "remake_item": "Item_Dungeon_BossKey",
+   "remake_where": "Obj_TBox_A_03 @ [-5.1, 100.9, -8.7] room 17",
+   "chest_map": {
+    "mode": "full",
+    "remake": "FireTemple/chest/14060099092170010696"
+   },
+   "changes_chest_map": false
+  },
+  "Water Temple Boss Key Chest": {
+   "remake": "WaterTemple/chest/10378828369334876242",
+   "confidence": "high",
+   "evidence": "room 15 (water spouts), which merges OoT rooms 15/16 (Land models Room15 and Room16 overlap)",
+   "ootr_vanilla": "Boss Key (Water Temple)",
+   "ootr_region": "Water Temple Boss Key Chest Room",
+   "remake_item": "Item_Dungeon_BossKey",
+   "remake_where": "Obj_TBox_A_03 @ [33.1, 103.7, -81.5] room 15",
+   "chest_map": {
+    "mode": "full",
+    "remake": "WaterTemple/chest/10378828369334876242"
+   },
+   "changes_chest_map": false
+  },
+  "Shadow Temple Boss Key Chest": {
+   "remake": "ShadowTemple/chest/9221365632831348137",
+   "confidence": "high",
+   "evidence": "room 19 spike-walls room (Din's Fire) beside the Spike Walls Left chest",
+   "ootr_vanilla": "Boss Key (Shadow Temple)",
+   "ootr_region": "Shadow Temple Beyond Boat",
+   "remake_item": "Item_Dungeon_BossKey",
+   "remake_where": "Obj_TBox_A_03 @ [-173.2, 41.4, -69.1] room 19",
+   "chest_map": {
+    "mode": "full",
+    "remake": "ShadowTemple/chest/9221365632831348137"
+   },
+   "changes_chest_map": false
+  },
+  "Spirit Temple Boss Key Chest": {
+   "remake": "SpiritTemple/chest/16272168033146555902",
+   "confidence": "high",
+   "evidence": "room 29: fake doors, eye switch, fire wall, hookshot target",
+   "ootr_vanilla": "Boss Key (Spirit Temple)",
+   "ootr_region": "Spirit Temple Big Mirror Room",
+   "remake_item": "Item_Dungeon_BossKey",
+   "remake_where": "Obj_TBox_A_03 @ [19.8, 151.0, -65.1] room 29",
+   "chest_map": {
+    "mode": "full",
+    "remake": "SpiritTemple/chest/16272168033146555902"
+   },
+   "changes_chest_map": false
+  },
+  "Ganons Tower Boss Key Chest": {
+   "remake": "InsideGanonCastle/chest/17092385671602176550",
+   "confidence": "high",
+   "evidence": "room 24: black and white Iron Knuckles + EnemyCounter, NoBake big chest",
+   "ootr_vanilla": "Boss Key (Ganons Castle)",
+   "ootr_region": "Ganons Castle Tower",
+   "remake_item": "Item_Dungeon_BossKey",
+   "remake_where": "Obj_TBox_A_03_NoBake @ [0.1, 149.7, -24.7] room 24",
+   "chest_map": {
+    "mode": "full",
+    "remake": "InsideGanonCastle/chest/17092385671602176550"
+   },
+   "changes_chest_map": false
+  },
+  "Bottom of the Well Freestanding Key": {
+   "remake": "BottomOfTheWell/freestanding/17649154319341333603",
+   "confidence": "high",
+   "evidence": "room 3: Gibdos + Keese + candles (the coffin room; OoT 'Coffin' hearts)",
+   "ootr_vanilla": "Small Key (Bottom of the Well)",
+   "ootr_region": "Bottom of the Well Main Area",
+   "remake_item": "Obj_Dungeon_SmallKey",
+   "remake_where": "Obj_Dungeon_SmallKey @ [-62.3, 100.9, -18.5] room 3"
+  },
+  "Shadow Temple Freestanding Key": {
+   "remake": "ShadowTemple/freestanding/12562389953863361839",
+   "confidence": "high",
+   "evidence": "room 13 beside room 12's invisible-spikes silver rupees: Obj_Dungeon_SmallKey with the giant skull pot (ShadowTemple_Gimmick_Focus_LargeJar_Key)",
+   "ootr_vanilla": "Small Key (Shadow Temple)",
+   "ootr_region": "Shadow Temple Invisible Spikes",
+   "remake_item": "Obj_Dungeon_SmallKey",
+   "remake_where": "Obj_Dungeon_SmallKey @ [28.1, 52.9, 33.1] room 13"
+  },
+  "Hideout 1 Torch Jail Gerudo Key": {
+   "remake": "GerudoFortress/drop/3350876166368957251",
+   "members": [
+    "GerudoFortress/drop/3350876166368957251",
+    "GerudoFortress/freestanding/14727159573379044362",
+    "GerudoFortress/freestanding/5126034700935231136"
+   ],
+   "confidence": "low",
+   "evidence": "jail with carpenter Npc_Hylia_013 and lock; key actor Obj_Dungeon_SmallKey_GerudoFortress_01 is placed twice (freestanding) and dropped by the guard Enemy_MiddleBoss_GerudoThief; all members must change together. Jail number = actor suffix (assumed, not checked against OoT's torch counts)",
+   "ootr_vanilla": "Small Key (Thieves Hideout)",
+   "ootr_region": "Hideout 1 Torch Jail",
+   "remake_item": "Obj_Dungeon_SmallKey_GerudoFortress_01"
+  },
+  "Hideout 2 Torches Jail Gerudo Key": {
+   "remake": "GerudoFortress/drop/3233425834948791513",
+   "members": [
+    "GerudoFortress/drop/3233425834948791513",
+    "GerudoFortress/freestanding/12946017077004046962",
+    "GerudoFortress/freestanding/5303541637929200213"
+   ],
+   "confidence": "low",
+   "evidence": "jail with carpenter Npc_Hylia_014 and lock; key actor Obj_Dungeon_SmallKey_GerudoFortress_02 is placed twice (freestanding) and dropped by the guard Enemy_MiddleBoss_GerudoThief_02; all members must change together. Jail number = actor suffix (assumed, not checked against OoT's torch counts)",
+   "ootr_vanilla": "Small Key (Thieves Hideout)",
+   "ootr_region": "Hideout 2 Torches Jail",
+   "remake_item": "Obj_Dungeon_SmallKey_GerudoFortress_02"
+  },
+  "Hideout 3 Torches Jail Gerudo Key": {
+   "remake": "GerudoFortress/freestanding/1406667554698159711",
+   "members": [
+    "GerudoFortress/freestanding/1406667554698159711",
+    "GerudoFortress/freestanding/7337789119684854050"
+   ],
+   "confidence": "low",
+   "evidence": "jail with carpenter Npc_Hylia_015 and lock; key actor Obj_Dungeon_SmallKey_GerudoFortress_03 is placed twice (freestanding) and (for this jail no catalogued drop) dropped by the guard; all members must change together. Jail number = actor suffix (assumed, not checked against OoT's torch counts)",
+   "ootr_vanilla": "Small Key (Thieves Hideout)",
+   "ootr_region": "Hideout 3 Torches Jail",
+   "remake_item": "Obj_Dungeon_SmallKey_GerudoFortress_03"
+  },
+  "Hideout 4 Torches Jail Gerudo Key": {
+   "remake": "GerudoFortress/drop/13730570727502202323",
+   "members": [
+    "GerudoFortress/drop/13730570727502202323",
+    "GerudoFortress/freestanding/10731814783987785199",
+    "GerudoFortress/freestanding/18396961731144479654"
+   ],
+   "confidence": "low",
+   "evidence": "jail with carpenter Npc_Hylia_016 and lock; key actor Obj_Dungeon_SmallKey_GerudoFortress_04 is placed twice (freestanding) and dropped by the guard Enemy_MiddleBoss_GerudoThief_04; all members must change together. Jail number = actor suffix (assumed, not checked against OoT's torch counts)",
+   "ootr_vanilla": "Small Key (Thieves Hideout)",
+   "ootr_region": "Hideout 4 Torches Jail",
+   "remake_item": "Obj_Dungeon_SmallKey_GerudoFortress_04"
+  },
+  "LW Near Shortcuts Grotto Chest": {
+   "remake": "absent",
+   "confidence": "high",
+   "evidence": "Lost Woods has two boulder grottos (Obj_BrokenRock_A_01): the one in front of the Goron City shortcut (entry -> anchor (27.8,83.3,-28.3)) holds only grass, the other (20.5,-75.7) the nut/seed scrubs (LW Scrubs Grotto); neither has a chest. The level's only chest, LostWood/chest/17479747339356189279 at (-49.4,104.5,71.9), is the bridge-ledge chest: the same spot as KokiriForest/chest/4349272251343787229 (offset +82.8,-19.4,+87.9 between the two levels; the stick-pouch scrub and GOSSIP_LOST_WOOD_02 sit at the same offset), so it is part of 'KF Bridge Ledge Chest' (chests_locations 'also' + share_flag).",
+   "ootr_vanilla": "Rupees (5)",
+   "ootr_region": "LW Near Shortcuts Grotto",
+   "chest_map": {
+    "mode": "full",
+    "remake": "LostWood/chest/17479747339356189279"
+   },
+   "changes_chest_map": true
+  }
+ },
+ "remake_only": [
+  {
+   "id": "DeathMountainCrater/chest/9128916506605227251",
+   "kind": "chest",
+   "area": "DeathMountainCrater",
+   "item": "TBox_Rupee_Purple",
+   "actor": "Obj_TBox_A_01_NoBake",
+   "room": null,
+   "pos": [
+    -66.8,
+    70.4,
+    4.7
+   ],
+   "note": "grotto (base I_03) with two Dinolfos, NoBake on pedestal"
+  },
+  {
+   "id": "DesertColossus/chest/1186167733408299582",
+   "kind": "chest",
+   "area": "DesertColossus",
+   "item": "TBox_Rupee_Purple",
+   "actor": "Obj_TBox_A_01_NoBake",
+   "room": null,
+   "pos": [
+    -129.5,
+    77.0,
+    -36.5
+   ],
+   "note": "secret hole with Beamos and Skullwalltulas (DesertColossus_SecretHole_AppearTreasureBox)"
+  },
+  {
+   "id": "DodongoCavern/chest/11582649900854566065",
+   "kind": "chest",
+   "area": "DodongoCavern",
+   "item": "TBox_Shield_Deku",
+   "actor": "Obj_TBox_A_06",
+   "room": 13,
+   "pos": [
+    43.0,
+    113.2,
+    -8.7
+   ],
+   "note": "second Deku Shield A_06 chest, bomb bag room 13"
+  },
+  {
+   "id": "DodongoCavern/chest/7764016096998075927",
+   "kind": "chest",
+   "area": "DodongoCavern",
+   "item": "TBox_Rupee_Red",
+   "actor": "Obj_TBox_A_01_NoBake",
+   "room": 5,
+   "pos": [
+    83.0,
+    100.6,
+    -55.6
+   ],
+   "note": "reward after the first Lizalfos fight (NoBake on pedestal)"
+  },
+  {
+   "id": "DodongoCavern/chest/850464708089653824",
+   "kind": "chest",
+   "area": "DodongoCavern",
+   "item": "Item_ScrubBusinessSeed",
+   "actor": "Obj_TBox_A_01_NoBake",
+   "room": 16,
+   "pos": [
+    92.5,
+    115.0,
+    -50.3
+   ],
+   "note": "reward after the second Lizalfos fight (NoBake on pedestal)"
+  },
+  {
+   "id": "DodongoCavern/chest/8607798771661947511",
+   "kind": "chest",
+   "area": "DodongoCavern",
+   "item": "TBox_Rupee_Blue",
+   "actor": "Obj_TBox_A_01",
+   "room": 1,
+   "pos": [
+    -30.1,
+    100.0,
+    -8.0
+   ],
+   "note": "lobby, behind a WallCrack (blue rupee)"
+  },
+  {
+   "id": "DreamWorld/chest/15858708076894317041",
+   "kind": "chest",
+   "area": "DreamWorld",
+   "item": "TBox_Rupee_Gold",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    0.0,
+    0.2,
+    -6.5
+   ],
+   "note": "boss rush mode (DreamWorld)"
+  },
+  {
+   "id": "DreamWorld/chest/2854211238375368215",
+   "kind": "chest",
+   "area": "DreamWorld",
+   "item": "TBox_Rupee_Gold",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    0.0,
+    0.2,
+    -6.5
+   ],
+   "note": "boss rush mode (DreamWorld)"
+  },
+  {
+   "id": "DreamWorld/chest/3522439980243161940",
+   "kind": "chest",
+   "area": "DreamWorld",
+   "item": "TBox_Rupee_Gold",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    0.0,
+    0.2,
+    -6.5
+   ],
+   "note": "boss rush mode (DreamWorld)"
+  },
+  {
+   "id": "DreamWorld/chest/4529748032854378492",
+   "kind": "chest",
+   "area": "DreamWorld",
+   "item": "TBox_Rupee_Gold",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    0.0,
+    0.2,
+    -6.5
+   ],
+   "note": "boss rush mode (DreamWorld)"
+  },
+  {
+   "id": "DreamWorld/chest/566103236844767323",
+   "kind": "chest",
+   "area": "DreamWorld",
+   "item": "TBox_Rupee_Gold",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    0.0,
+    0.2,
+    -6.5
+   ],
+   "note": "boss rush mode (DreamWorld)"
+  },
+  {
+   "id": "DreamWorld/chest/7234638808238324101",
+   "kind": "chest",
+   "area": "DreamWorld",
+   "item": "TBox_Rupee_Gold",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    0.0,
+    0.2,
+    -6.5
+   ],
+   "note": "boss rush mode (DreamWorld)"
+  },
+  {
+   "id": "DreamWorld/chest/7346745174625046398",
+   "kind": "chest",
+   "area": "DreamWorld",
+   "item": "TBox_Rupee_Gold",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    0.0,
+    0.2,
+    -6.5
+   ],
+   "note": "boss rush mode (DreamWorld)"
+  },
+  {
+   "id": "DreamWorld/chest/7458365564915336038",
+   "kind": "chest",
+   "area": "DreamWorld",
+   "item": "TBox_Rupee_Gold",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    0.0,
+    0.2,
+    -6.5
+   ],
+   "note": "boss rush mode (DreamWorld)"
+  },
+  {
+   "id": "DreamWorld/chest/7589985979641292928",
+   "kind": "chest",
+   "area": "DreamWorld",
+   "item": "TBox_Rupee_Gold",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    0.0,
+    0.2,
+    -6.5
+   ],
+   "note": "boss rush mode (DreamWorld)"
+  },
+  {
+   "id": "DreamWorld/chest/9947351236862205040",
+   "kind": "chest",
+   "area": "DreamWorld",
+   "item": "TBox_Rupee_Gold",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    0.0,
+    0.2,
+    -6.5
+   ],
+   "note": "boss rush mode (DreamWorld)"
+  },
+  {
+   "id": "FireTemple/chest/15073195886628236505",
+   "kind": "chest",
+   "area": "FireTemple",
+   "item": "TBox_Rupee_Red",
+   "actor": "Obj_TBox_A_01",
+   "room": 8,
+   "pos": [
+    31.7,
+    194.4,
+    -8.5
+   ],
+   "note": "one of three chests stacked on the scarecrow ledge (room 8)"
+  },
+  {
+   "id": "FireTemple/chest/17001858340376096722",
+   "kind": "chest",
+   "area": "FireTemple",
+   "item": "TBox_Rupee_Red",
+   "actor": "Obj_TBox_A_01",
+   "room": 8,
+   "pos": [
+    33.1,
+    194.4,
+    -9.9
+   ],
+   "note": "one of three chests stacked on the scarecrow ledge (room 8)"
+  },
+  {
+   "id": "GerudoFortress/chest/16619432200060282313",
+   "kind": "chest",
+   "area": "GerudoFortress",
+   "item": "TBox_Rupee_Red",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    15.0,
+    89.2,
+    -67.7
+   ],
+   "note": "grotto (base F_02) with flying pots"
+  },
+  {
+   "id": "GerudoTrainingGround/chest/11754783663699171680",
+   "kind": "chest",
+   "area": "GerudoTrainingGround",
+   "item": "Item_ScrubBusinessSeed",
+   "actor": "Obj_TBox_A_01_NoBake",
+   "room": 10,
+   "pos": [
+    -53.7,
+    103.5,
+    -131.8
+   ],
+   "note": "fifth chest of the Like Like room 10 (NoBake, falls from the ceiling)"
+  },
+  {
+   "id": "GerudoValley/chest/15856256242099990922",
+   "kind": "chest",
+   "area": "GerudoValley",
+   "item": "Obj_Heart_Piece",
+   "actor": "Obj_TBox_A_02",
+   "room": null,
+   "pos": [
+    -9.5,
+    90.4,
+    35.0
+   ],
+   "note": "Piece of Heart chest (OoT GV has two freestanding PoH: check the freestanding pairing)"
+  },
+  {
+   "id": "GerudoValley/chest/17750686910716887133",
+   "kind": "chest",
+   "area": "GerudoValley",
+   "item": "TBox_Rupee_Green",
+   "actor": "Obj_TBox_A_01_NoBake",
+   "room": null,
+   "pos": [
+    -47.3,
+    84.0,
+    -46.0
+   ],
+   "note": "grotto (base F_02) with pots, NoBake"
+  },
+  {
+   "id": "GerudoValley/chest/18413589940135955604",
+   "kind": "chest",
+   "area": "GerudoValley",
+   "item": "TBox_Rupee_Red",
+   "actor": "Obj_TBox_GlassTruth_A_01",
+   "room": null,
+   "pos": [
+    -43.3,
+    84.0,
+    -46.0
+   ],
+   "note": "grotto (base F_02) GlassTruth chest, adult layout (same spot as 6205043616869463865)"
+  },
+  {
+   "id": "GerudoValley/chest/6205043616869463865",
+   "kind": "chest",
+   "area": "GerudoValley",
+   "item": "TBox_Rupee_Red",
+   "actor": "Obj_TBox_GlassTruth_A_01",
+   "room": null,
+   "pos": [
+    -43.3,
+    84.0,
+    -46.0
+   ],
+   "note": "grotto (base F_02) GlassTruth chest, child layout"
+  },
+  {
+   "id": "GerudoValley/chest/6463521162691873710",
+   "kind": "chest",
+   "area": "GerudoValley",
+   "item": "Item_ScrubBusinessSeed",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    31.2,
+    -22.6,
+    37.0
+   ],
+   "note": "grotto (base E_01, wind)"
+  },
+  {
+   "id": "GoronCity/chest/10944569637726152230",
+   "kind": "chest",
+   "area": "GoronCity",
+   "item": "TBox_Rupee_Purple",
+   "actor": "Obj_TBox_A_01_NoBake",
+   "room": null,
+   "pos": [
+    -52.2,
+    94.8,
+    26.3
+   ],
+   "note": "grotto (base I_03) chest on a pedestal, NoBake"
+  },
+  {
+   "id": "GoronCity/chest/4402942101476009858",
+   "kind": "chest",
+   "area": "GoronCity",
+   "item": "TBox_Rupee_Red",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    -48.4,
+    113.7,
+    2.0
+   ],
+   "note": "fourth chest of the GC maze"
+  },
+  {
+   "id": "GoronCity/chest/9159710900681116662",
+   "kind": "chest",
+   "area": "GoronCity",
+   "item": "TBox_Rupee_Green",
+   "actor": "Obj_TBox_A_01_NoBake",
+   "room": null,
+   "pos": [
+    -52.2,
+    94.8,
+    32.0
+   ],
+   "note": "grotto (base I_03) chest on a pedestal, NoBake"
+  },
+  {
+   "id": "Graveyard/chest/234006393181394602",
+   "kind": "chest",
+   "area": "Graveyard",
+   "item": "TBox_Rupee_Red",
+   "actor": "Obj_TBox_A_01_NoBake",
+   "room": null,
+   "pos": [
+    -6.0,
+    82.5,
+    77.6
+   ],
+   "note": "Dampe race goal repeat reward (red rupee)"
+  },
+  {
+   "id": "Graveyard/chest/4322670163630771947",
+   "kind": "chest",
+   "area": "Graveyard",
+   "item": "TBox_Rupee_Blue",
+   "actor": "Obj_TBox_A_01_NoBake",
+   "room": null,
+   "pos": [
+    -6.0,
+    82.5,
+    77.6
+   ],
+   "note": "Dampe race goal repeat reward (blue rupee)"
+  },
+  {
+   "id": "Graveyard/chest/5534919361313859554",
+   "kind": "chest",
+   "area": "Graveyard",
+   "item": "Obj_Heart_Piece",
+   "actor": "Obj_TBox_A_02_NoBake",
+   "room": null,
+   "pos": [
+    -6.0,
+    82.5,
+    77.7
+   ],
+   "note": "Dampe race goal Piece of Heart chest = OoTR 'Graveyard Dampe Race Freestanding PoH' (not a chest in OoTR)"
+  },
+  {
+   "id": "HyruleField/chest/1163740567397714729",
+   "kind": "chest",
+   "area": "HyruleField",
+   "item": "TBox_Rupee_Red",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    -5.7,
+    146.2,
+    406.9
+   ],
+   "note": "field chest beside HrlField_Note_08 (treasure note)"
+  },
+  {
+   "id": "HyruleField/chest/17023457248274633121",
+   "kind": "chest",
+   "area": "HyruleField",
+   "item": "TBox_Rupee_Red",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    -297.4,
+    131.3,
+    558.1
+   ],
+   "note": "field chest beside HrlField_Note_06 (treasure note), Lake Hylia side"
+  },
+  {
+   "id": "HyruleField/chest/17445672702269453589",
+   "kind": "chest",
+   "area": "HyruleField",
+   "item": "Item_ScrubBusinessSeed",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    -151.9,
+    162.0,
+    265.3
+   ],
+   "note": "Lon Lon ruins crawlspace area with 2 GS"
+  },
+  {
+   "id": "HyruleField/chest/2967378296224661060",
+   "kind": "chest",
+   "area": "HyruleField",
+   "item": "Obj_Heart_Piece",
+   "actor": "Obj_TBox_A_01_memo11",
+   "room": null,
+   "pos": [
+    -213.3,
+    133.5,
+    138.7
+   ],
+   "note": "Obj_TBox_A_01_memo11 Piece of Heart beside HrlField_Note_11"
+  },
+  {
+   "id": "HyruleField/chest/3691276324234689811",
+   "kind": "chest",
+   "area": "HyruleField",
+   "item": null,
+   "actor": "TBox_Rupee_Red",
+   "room": null,
+   "pos": [
+    -371.5,
+    8.0,
+    -82.2
+   ],
+   "note": "not a chest: a TBox_Rupee_Red item actor placed at y=8"
+  },
+  {
+   "id": "HyruleField/chest/6900843020594897860",
+   "kind": "chest",
+   "area": "HyruleField",
+   "item": "TBox_Rupee_Red",
+   "actor": "Obj_TBox_A_01_NoBake",
+   "room": null,
+   "pos": [
+    -214.9,
+    98.0,
+    449.1
+   ],
+   "note": "grotto (base I_01) with timed torches, TreasureBoxAppear_Magic"
+  },
+  {
+   "id": "HyruleField/chest/9891111455604007674",
+   "kind": "chest",
+   "area": "HyruleField",
+   "item": "TBox_Rupee_Red",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    84.4,
+    152.6,
+    45.4
+   ],
+   "note": "field chest beside HrlField_Note_04 (treasure note)"
+  },
+  {
+   "id": "IceCavern/chest/4128092231168513176",
+   "kind": "chest",
+   "area": "IceCavern",
+   "item": "TBox_Rupee_Red",
+   "actor": "Obj_TBox_A_01",
+   "room": 8,
+   "pos": [
+    -53.1,
+    107.2,
+    -34.2
+   ],
+   "note": "room 8"
+  },
+  {
+   "id": "InsideGanonCastle/chest/15320975652699461295",
+   "kind": "chest",
+   "area": "InsideGanonCastle",
+   "item": "Item_Dungeon_SmallKey",
+   "actor": "Obj_TBox_GlassTruth_A_01",
+   "room": 13,
+   "pos": [
+    -52.2,
+    100.0,
+    -16.5
+   ],
+   "note": "light trial room 13 GlassTruth chest holding the remake's only Ganon's Castle small key"
+  },
+  {
+   "id": "InsideJabuJabuBelly/chest/3609242017501283521",
+   "kind": "chest",
+   "area": "InsideJabuJabuBelly",
+   "item": "TBox_Rupee_Red",
+   "actor": "Obj_TBox_A_01",
+   "room": 13,
+   "pos": [
+    -34.2,
+    82.5,
+    -52.0
+   ],
+   "note": "room 13 (OoT basement 2-Octorok room)"
+  },
+  {
+   "id": "KakarikoVillage/chest/11929552275106311978",
+   "kind": "chest",
+   "area": "KakarikoVillage",
+   "item": "TBox_Rupee_Purple",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    5.6,
+    130.2,
+    41.4
+   ],
+   "note": "high up (y=130) in the adult layout; same spot as 13080955777249750889 (adult alternative layout)"
+  },
+  {
+   "id": "KakarikoVillage/chest/13080955777249750889",
+   "kind": "chest",
+   "area": "KakarikoVillage",
+   "item": "TBox_Rupee_Purple",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    5.6,
+    130.2,
+    41.4
+   ],
+   "note": "same spot as 11929552275106311978 in the adult alternative layout"
+  },
+  {
+   "id": "KokiriForest/chest/14818888396401495482",
+   "kind": "chest",
+   "area": "KokiriForest",
+   "item": "TBox_Rupee_Green",
+   "actor": "Obj_TBox_A_01_NoBake",
+   "room": null,
+   "pos": [
+    -70.8,
+    103.6,
+    -63.4
+   ],
+   "note": "grotto with three Deku Scrub brothers, appears after they are beaten"
+  },
+  {
+   "id": "Market/chest/6781536951709667179",
+   "kind": "chest",
+   "area": "Market",
+   "item": "TBox_Rupee_Red",
+   "actor": "Obj_HrlCity_Shop_TBox_A_02",
+   "room": null,
+   "pos": [
+    -131.6,
+    97.9,
+    12.7
+   ],
+   "note": "treasure chest game clear reward, repeat (red rupee)"
+  },
+  {
+   "id": "SacredForestMeadow/chest/1764383515296652106",
+   "kind": "chest",
+   "area": "SacredForestMeadow",
+   "item": "Item_ScrubBusinessSeed",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    12.1,
+    96.0,
+    -73.8
+   ],
+   "note": "grotto (base A_01) with gossip stone"
+  },
+  {
+   "id": "WaterTemple/chest/16424266294822218796",
+   "kind": "chest",
+   "area": "WaterTemple",
+   "item": "Item_Dungeon_Compass",
+   "actor": "Obj_TBox_A_02",
+   "room": 3,
+   "pos": [
+    -68.3,
+    104.3,
+    20.1
+   ],
+   "note": "the remake's Compass chest in room 3 (OoT south basement); only remake-only if the Compass pair to room 4 is accepted"
+  },
+  {
+   "id": "ZoraFountain/chest/15055117029957340138",
+   "kind": "chest",
+   "area": "ZoraFountain",
+   "item": "TBox_Rupee_Purple",
+   "actor": "Obj_TBox_A_01",
+   "room": null,
+   "pos": [
+    33.0,
+    108.5,
+    1.7
+   ],
+   "note": "adult Zora's Fountain chest"
+  }
+ ],
+ "key_counts": {
+  "Forest Temple": {
+   "ootr": 5,
+   "remake": 5,
+   "remake_by_kind": {
+    "chest": 5
+   },
+   "ootr_boss_key": 1,
+   "remake_boss_key": 1,
+   "notes": "Same 5 places (First Room, First Stalfos, Well, Red Poe, Floormaster); 5 locked doors."
+  },
+  "Fire Temple": {
+   "ootr": 8,
+   "remake": 8,
+   "remake_by_kind": {
+    "chest": 8
+   },
+   "ootr_boss_key": 1,
+   "remake_boss_key": 1,
+   "notes": "8 both sides, 8 Goron cells with key chests; 7 of them are OoT key places, the 8th is the flame-maze cell where OoT has the Compass, and OoT's Boulder Maze Side Room place holds the Map (medium/low)."
+  },
+  "Water Temple": {
+   "ootr": 6,
+   "remake": 4,
+   "remake_by_kind": {
+    "chest": 4
+   },
+   "ootr_boss_key": 1,
+   "remake_boss_key": 1,
+   "notes": "Remake has 4 small keys for 4 locked doors (OoT 6/6). Keys at OoT's Torches, Dragon and Central Bow Target places plus OoT's compass room 4; OoT's Central Pillar chest holds a red rupee, Cracked Wall and River chests are gone."
+  },
+  "Shadow Temple": {
+   "ootr": 5,
+   "remake": 5,
+   "remake_by_kind": {
+    "chest": 4,
+    "freestanding": 1
+   },
+   "ootr_boss_key": 1,
+   "remake_boss_key": 1,
+   "notes": "Same 5 places (4 chests + the skull-pot freestanding key)."
+  },
+  "Spirit Temple": {
+   "ootr": 5,
+   "remake": 5,
+   "remake_by_kind": {
+    "chest": 5
+   },
+   "ootr_boss_key": 1,
+   "remake_boss_key": 1,
+   "notes": "Same 5 places (Child Early Torches, Sun Block, Early Adult Right, Statue Hand, Near Four Armos)."
+  },
+  "Bottom of the Well": {
+   "ootr": 3,
+   "remake": 2,
+   "remake_by_kind": {
+    "chest": 1,
+    "freestanding": 1
+   },
+   "ootr_boss_key": 0,
+   "remake_boss_key": 0,
+   "notes": "Remake has 2 keys for 2 locked doors (OoT 3): the coffin-room freestanding key and the right front fake-wall chest; the left front fake-wall chest holds a red rupee."
+  },
+  "Gerudo Training Ground": {
+   "ootr": 9,
+   "remake": 9,
+   "remake_by_kind": {
+    "chest": 9
+   },
+   "ootr_boss_key": 0,
+   "remake_boss_key": 0,
+   "notes": "9 both sides, but the remake's are all chests (no freestanding key) and 3 of them sit in the maze (one on its upper level), so 3 pairs (Freestanding, Near Scarecrow, Hidden Ceiling) are low."
+  },
+  "Ganons Castle": {
+   "ootr": 2,
+   "remake": 1,
+   "remake_by_kind": {
+    "chest": 1
+   },
+   "ootr_boss_key": 1,
+   "remake_boss_key": 1,
+   "notes": "Remake has 1 key for 1 locked door (light trial room 13 -> 14); OoT's Invisible Enemies and Lullaby chests hold rupees and the key is in a new GlassTruth chest beside the Lullaby chest."
+  },
+  "Thieves Hideout": {
+   "ootr": 4,
+   "remake": 4,
+   "remake_by_kind": {
+    "drop": 3,
+    "freestanding": 8
+   },
+   "ootr_boss_key": 0,
+   "remake_boss_key": 0,
+   "notes": "4 keys both sides; each remake key is one actor name placed up to 3 times (2 freestanding + the guard's drop; jail 3 has no catalogued drop)."
+  },
+  "Treasure Chest Game": {
+   "ootr": 5,
+   "remake": 5,
+   "remake_by_kind": {
+    "chest": 5
+   },
+   "ootr_boss_key": 0,
+   "remake_boss_key": 0,
+   "notes": "Minigame keys (Obj_MiniGame_SmallKey); kept vanilla."
+  },
+  "Deku Tree": {
+   "ootr": 0,
+   "remake": 0,
+   "notes": "no keys on either side"
+  },
+  "Dodongos Cavern": {
+   "ootr": 0,
+   "remake": 0,
+   "notes": "no keys on either side"
+  },
+  "Jabu Jabus Belly": {
+   "ootr": 0,
+   "remake": 0,
+   "notes": "no keys on either side"
+  },
+  "Ice Cavern": {
+   "ootr": 0,
+   "remake": 0,
+   "notes": "no keys on either side"
+  }
+ },
+ "room_numbers": {
+  "by_dungeon": {
+   "Fire Temple": "match OoT (rooms 1, 2, 4, 5, 10, 14, 16, 21 checked: pots, hearts, MQ room names)",
+   "Water Temple": "match OoT (2, 5, 7, 8, 10, 11, 14, 17, 18, 20, 21) except merges (15/16) and new rooms 23-25",
+   "Gerudo Training Ground": "match OoT (silver rupees 2, 6, 9; eye statue 4; hammer 5; Beamos 7; maze 8)",
+   "Jabu Jabus Belly": "mostly match (pot rooms 6, 13, 14)",
+   "Ice Cavern": "partly (silver rupees 3 match, 5 -> 8; map room 9 -> 5)",
+   "Shadow Temple": "renumbered except 6 and 9 (falling spikes 10 -> 11, invisible spikes 11 -> 12, invisible blades 16 -> 10/31, after wind 20 -> 16)",
+   "Spirit Temple": "renumbered (silver rupees 2 -> 4, 8 -> 9, 13 -> 15; central chamber 5 -> 7)",
+   "Forest Temple": "renumbered (stalfos room 6 split into 4 and 17, blue Poe 13 -> 18, well 9 -> 15)",
+   "Bottom of the Well": "renumbered (basement 1 -> 9, coffin room 2 -> 3, Fire Keese 3 -> 6)",
+   "Ganons Castle": "renumbered (trials ordered forest, water, shadow, fire, light, spirit = rooms 2-18)",
+   "Dodongos Cavern": "renumbered (pot rooms do not line up)",
+   "Deku Tree": "lobby 0 matches, others differ"
+  },
+  "certain_pair_checks": [
+   {
+    "dungeon": "Deku Tree",
+    "ootr": "Deku Tree Map Chest",
+    "remake_room": 0,
+    "ootr_room": 0,
+    "verdict": "agree",
+    "note": "lobby; OoTR lobby hearts are room 0"
+   },
+   {
+    "dungeon": "Deku Tree",
+    "ootr": "Deku Tree Compass Chest",
+    "remake_room": 3,
+    "ootr_room": 2,
+    "verdict": "differ",
+    "note": "OoTR MQ 'Compass Room' heart is room 2"
+   },
+   {
+    "dungeon": "Water Temple",
+    "ootr": "Water Temple Map Chest",
+    "remake_room": 17,
+    "ootr_room": 17,
+    "verdict": "agree",
+    "note": "east shaft with the low-water triforce and L1 torches (OoTR 'L1 Torch' pots room 17)"
+   },
+   {
+    "dungeon": "Water Temple",
+    "ootr": "Water Temple Longshot Chest",
+    "remake_room": 7,
+    "ootr_room": 7,
+    "verdict": "agree",
+    "note": "OoTR MQ 'After Dark Link' room 7"
+   },
+   {
+    "dungeon": "Water Temple",
+    "ootr": "Water Temple Boss Key Chest",
+    "remake_room": 15,
+    "ootr_room": 16,
+    "verdict": "near",
+    "note": "OoTR 'Boss Key' pots room 16; remake merges rooms 15/16 (overlapping Land models)"
+   },
+   {
+    "dungeon": "Water Temple",
+    "ootr": "Water Temple Compass Chest",
+    "remake_room": 3,
+    "ootr_room": 4,
+    "verdict": "differ",
+    "note": "OoTR 'Near Compass' pots (same rule) room 4; remake room 4 holds a key: item moved"
+   },
+   {
+    "dungeon": "Fire Temple",
+    "ootr": "Fire Temple Map Chest",
+    "remake_room": 5,
+    "ootr_room": 16,
+    "verdict": "differ",
+    "note": "map item is in room 5; OoT's map place (eye-switch gate from the narrow path) is remake room 16, which holds the Compass: items swapped"
+   },
+   {
+    "dungeon": "Fire Temple",
+    "ootr": "Fire Temple Compass Chest",
+    "remake_room": 16,
+    "ootr_room": 10,
+    "verdict": "differ",
+    "note": "OoT compass is in the flame maze (room 10); see Map"
+   },
+   {
+    "dungeon": "Fire Temple",
+    "ootr": "Fire Temple Boss Key Chest",
+    "remake_room": 17,
+    "ootr_room": null,
+    "verdict": "consistent",
+    "note": "end of the boss key loop (Goron cell + hammer switch)"
+   },
+   {
+    "dungeon": "Fire Temple",
+    "ootr": "Fire Temple Megaton Hammer Chest",
+    "remake_room": 13,
+    "ootr_room": null,
+    "verdict": "consistent",
+    "note": "top floor"
+   },
+   {
+    "dungeon": "Forest Temple",
+    "ootr": "Forest Temple Blue Poe Chest",
+    "remake_room": 18,
+    "ootr_room": 13,
+    "verdict": "differ",
+    "note": "OoTR 'Blue Poe Room' pot room 13"
+   },
+   {
+    "dungeon": "Forest Temple",
+    "ootr": "Forest Temple Bow Chest",
+    "remake_room": 17,
+    "ootr_room": 6,
+    "verdict": "differ",
+    "note": "OoTR 'Upper Stalfos' pot room 6 (remake splits it into rooms 4 and 17)"
+   },
+   {
+    "dungeon": "Forest Temple",
+    "ootr": "Forest Temple Eye Switch Chest",
+    "remake_room": 27,
+    "ootr_room": null,
+    "verdict": "wrong pair",
+    "note": "unique-item pair (large arrows) is the basement chest; the eye-switch chest is room 8"
+   },
+   {
+    "dungeon": "Forest Temple",
+    "ootr": "Forest Temple Map Chest",
+    "remake_room": 14,
+    "ootr_room": null,
+    "verdict": "item moved",
+    "note": "remake Map chest stands in the east courtyard"
+   },
+   {
+    "dungeon": "Shadow Temple",
+    "ootr": "Shadow Temple Map Chest",
+    "remake_room": 3,
+    "ootr_room": 1,
+    "verdict": "differ",
+    "note": "OoTR 'Map Chest Room' pot room 1"
+   },
+   {
+    "dungeon": "Shadow Temple",
+    "ootr": "Shadow Temple Boss Key Chest",
+    "remake_room": 19,
+    "ootr_room": 13,
+    "verdict": "differ",
+    "note": "OoTR 'Spike Walls' pot room 13"
+   },
+   {
+    "dungeon": "Spirit Temple",
+    "ootr": "Spirit Temple Map Chest",
+    "remake_room": 7,
+    "ootr_room": 5,
+    "verdict": "differ",
+    "note": "OoTR 'Central Chamber' pots room 5"
+   },
+   {
+    "dungeon": "Spirit Temple",
+    "ootr": "Spirit Temple Child Climb North Chest",
+    "remake_room": 6,
+    "ootr_room": 4,
+    "verdict": "differ",
+    "note": "OoTR 'Child Climb' pot room 4"
+   },
+   {
+    "dungeon": "Spirit Temple",
+    "ootr": "Spirit Temple Boss Key Chest",
+    "remake_room": 29,
+    "ootr_room": 25,
+    "verdict": "differ",
+    "note": "OoTR 'Big Mirror' pots room 25"
+   },
+   {
+    "dungeon": "Bottom of the Well",
+    "ootr": "Bottom of the Well Compass Chest",
+    "remake_room": 1,
+    "ootr_room": 1,
+    "verdict": "agree",
+    "note": "main room (OoTR centre-room rupees room 1)"
+   },
+   {
+    "dungeon": "Bottom of the Well",
+    "ootr": "Bottom of the Well Map Chest",
+    "remake_room": 9,
+    "ootr_room": 1,
+    "verdict": "differ",
+    "note": "OoTR basement silver rupees are room 1; remake basement is room 9"
+   },
+   {
+    "dungeon": "Bottom of the Well",
+    "ootr": "Bottom of the Well Fire Keese Chest",
+    "remake_room": 6,
+    "ootr_room": 3,
+    "verdict": "differ",
+    "note": "OoTR 'Fire Keese' pot room 3"
+   },
+   {
+    "dungeon": "Ice Cavern",
+    "ootr": "Ice Cavern Map Chest",
+    "remake_room": 5,
+    "ootr_room": 9,
+    "verdict": "differ",
+    "note": "OoTR 'Map Room' heart room 9"
+   },
+   {
+    "dungeon": "Gerudo Training Ground",
+    "ootr": "Gerudo Training Ground Maze Path Final Chest",
+    "remake_room": 8,
+    "ootr_room": 8,
+    "verdict": "agree",
+    "note": "maze (OoTR MQ maze crate room 8)"
+   },
+   {
+    "dungeon": "Gerudo Training Ground",
+    "ootr": "Gerudo Training Ground Maze Path First Chest",
+    "remake_room": 8,
+    "ootr_room": 8,
+    "verdict": "agree",
+    "note": "maze"
+   },
+   {
+    "dungeon": "Gerudo Training Ground",
+    "ootr": "Gerudo Training Ground Maze Right Central Chest",
+    "remake_room": 8,
+    "ootr_room": 8,
+    "verdict": "agree",
+    "note": "maze"
+   },
+   {
+    "dungeon": "Ganons Castle",
+    "ootr": "Ganons Castle Shadow Trial Golden Gauntlets Chest",
+    "remake_room": 8,
+    "ootr_room": 12,
+    "verdict": "differ",
+    "note": "OoTR shadow trial room 12"
+   },
+   {
+    "dungeon": "Ganons Castle",
+    "ootr": "Ganons Castle Spirit Trial Crystal Switch Chest",
+    "remake_room": 5,
+    "ootr_room": 17,
+    "verdict": "wrong pair",
+    "note": "unique-item (bombchu) pair is in the water trial (room 5)"
+   },
+   {
+    "dungeon": "Dodongos Cavern",
+    "ootr": "Dodongos Cavern Bomb Flower Platform Chest",
+    "remake_room": 5,
+    "ootr_room": null,
+    "verdict": "wrong pair",
+    "note": "'exact' pair is a remake Lizalfos reward chest"
+   }
+  ]
+ }
+}

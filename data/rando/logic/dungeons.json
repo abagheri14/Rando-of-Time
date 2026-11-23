@@ -1,0 +1,190 @@
+{
+ "_about": "The remake's dungeon doors, keys and chests in OoTR's logic (dungeons plugin; evidence per location). Every rule is at least as strict as the game. Water Temple: 4 locked doors, all off the main room: D1 the central pillar's 1F door (middle-water Triforce, Obj_WaterTemple_StoneTablet_A_03, and the pillar basement), D2 2F west (room 10: the geyser up to the high-water Triforce, StoneTablet_A_02), D3 3F west (falling platforms, Dark Link, Longshot), D4 1F north (north basement, boss key). 4 keys: Torches (room 18) and Dragon (room 8) need no door; Cracked Wall (room 4, behind the 2F east cracked wall: bombs, Iron Boots, the underwater switch and geyser lid) and Central Bow Target (room 20: the 2F north eye switch, Longshot, Iron Boots) need middle water. Door counts are OoTR-style worst cases (a door needs enough keys to open it even if every other locked door reachable without it took one first): with keys shuffled anywhere D1 needs 3 (D3 can be opened first from the floats at the starting high water, D4 with a Longshot found elsewhere; D2 needs middle water, which is behind D1) and D2, D3, D4 need all 4; with vanilla keys only D4 can be opened before D1 (it needs the Longshot), so D1 needs 2 and D2 3. The Map is in room 17 beside the low-water Triforce (StoneTablet_A_01), reached at the starting high water: no Raise_Water_Level (which needs keys here). The Compass is in room 3 behind the 1F south cracked wall (South Basement); the River chest does not exist. North basement (room 14): break the walls and push block 71436 onto switch 05458 to raise the water to the upper door; no Hover Boots or ledge route (dungeon audit). Bottom of the Well: 2 locked doors (the two inner Gold Skulltula rooms) and 2 keys; no bombable walls, no Like Like chest, no front-centre chest; the room-11 chest across a hidden pit behind the Lullaby crawlspace is new. Gerudo Training Ground: the maze is OoT's (7 locked doors on the left path to the Ice Arrows, 2 on the right), traced from its wall models, so OoTR's maze counts hold; the freestanding key is a chest in the right-hand maze room; the Like Like room's gate is opened by a Lens eye switch (Bow); its bomb chest is behind a cracked wall; the lobby's left chest is an invisible chest; the room's fifth chest falls from the ceiling when its eye switch is shot (GerudoTrainingGround_10_FallTreasureBox). Spirit Temple: the sun-block room's 5 silver rupees (room 9, counter 47443) open the door to the hall (room 10), its key door, the Silver Iron Knuckle and the child-side hand (DesertColossus exit 82023): the Silver Gauntlets chest and the hands need them; the child early-torches chest stands behind the fence (Obj_SpiritTemple_FallNet_B_01) its 5 silver rupees drop (its rule here is its one rule: room 1's east door reaches room 4's north part without room 2's Boomerang bridge, and the net bridges to the chest; the Boomerang for the spots only reached over that bridge is in audit_dungeons.json, G4). Ganon's Castle: 1 locked door (light trial room 13 -> boulder room 14) and 1 key, in a new invisible chest in room 13. Forest Temple: OoT's Map chest room has no chest. Proven absent (no chest in the remake's files there, none in the remake guides), so removed from logic: Dodongo's Cavern Boss Room, Shadow Temple Falling Spikes Upper (the room has two chests: the lower one and the upper key chest, OoTR's Switch chest, same rule as Upper) and Invisible Spikes, Spirit Temple Child Climb East and Statue Room Northeast, Ganon's Castle Spirit Trial Invisible, Bottom of the Well Like Like and Front Center Bombable, Water Temple River. Vanilla contents that differ from OoT: tools/rando/parity/dungeons.py (data/rando/dungeons_world.json vanilla_items).",
+ "helpers": {
+  "remake_water_middle_keys": "(Small_Key_Water_Temple, 3) or (shuffle_smallkeys == 'vanilla' and (Small_Key_Water_Temple, 2))",
+  "remake_water_raise_keys": "(Small_Key_Water_Temple, 4) or (shuffle_smallkeys == 'vanilla' and (Small_Key_Water_Temple, 3))"
+ },
+ "regions": {
+  "Water Temple Lobby": {
+   "events": {
+    "Raise Water Level": "((is_adult and (Hookshot or Hover_Boots or Bow)) or (has_fire_source_with_torch and can_use_projectile)) and remake_water_raise_keys and at('Water Temple Middle Water Level', True)"
+   },
+   "exits": {
+    "Water Temple Falling Platform Room": "Raise_Water_Level and (Small_Key_Water_Temple, 4)"
+   }
+  },
+  "Water Temple Dive": {
+   "locations": {
+    "Water Temple Map Chest": "True",
+    "Water Temple Compass Chest": null
+   }
+  },
+  "Water Temple Lowered Water Levels": {
+   "locations": {
+    "Water Temple GS Central Pillar": "remake_water_middle_keys and ((Longshot or (logic_water_central_gs_fw and Hookshot and can_use(Farores_Wind))) or (logic_water_central_gs_irons and Hookshot and Iron_Boots) or (logic_water_central_gs_fw and Child_Water_Temple and Boomerang and can_use(Farores_Wind) and Raise_Water_Level))"
+   },
+   "exits": {
+    "Water Temple Middle Water Level": "remake_water_middle_keys and Hookshot",
+    "Water Temple Central Bow Target": null
+   }
+  },
+  "Water Temple Middle Water Level": {
+   "locations": {
+    "Water Temple Central Pillar Chest": "remake_water_middle_keys and Iron_Boots and Zora_Tunic and Hookshot"
+   },
+   "exits": {
+    "Water Temple Central Bow Target": "Progressive_Strength_Upgrade and can_use(Bow) and can_use(Longshot) and can_use(Iron_Boots)"
+   }
+  },
+  "Water Temple Cracked Wall": {
+   "locations": {
+    "Water Temple Cracked Wall Chest": "has_explosives and can_use(Iron_Boots) and can_use(Hookshot) and (Zora_Tunic or logic_fewer_tunic_requirements)"
+   }
+  },
+  "Water Temple North Basement": {
+   "exits": {
+    "Water Temple Boss Key Chest Room": "(Small_Key_Water_Temple, 4) and (logic_water_bk_jump_dive or Iron_Boots) and has_explosives and Progressive_Strength_Upgrade"
+   }
+  },
+  "Water Temple Falling Platform Room": {
+   "exits": {
+    "Water Temple Dark Link Region": "can_use(Hookshot) and (Small_Key_Water_Temple, 4)"
+   }
+  },
+  "Water Temple River": {
+   "locations": {
+    "Water Temple River Chest": null
+   }
+  },
+  "Water Temple South Basement": {
+   "locations": {
+    "Water Temple Compass Chest": "can_use(Hookshot) and can_use(Iron_Boots) and (Zora_Tunic or logic_fewer_tunic_requirements)"
+   }
+  },
+  "Bottom of the Well Main Area": {
+   "locations": {
+    "Bottom of the Well Front Center Bombable Chest": null,
+    "Bottom of the Well Underwater Left Chest": "can_play(Zeldas_Lullaby) and (logic_lens_botw or can_use(Lens_of_Truth))",
+    "Bottom of the Well Hidden Pit Chest": "can_play(Zeldas_Lullaby) and (logic_lens_botw or can_use(Lens_of_Truth))"
+   }
+  },
+  "Bottom of the Well Behind Fake Walls": {
+   "exits": {
+    "Bottom of the Well Behind Locked Doors": "(Small_Key_Bottom_of_the_Well, 2)"
+   }
+  },
+  "Bottom of the Well Behind Locked Doors": {
+   "locations": {
+    "Bottom of the Well Like Like Chest": null
+   }
+  },
+  "Ganons Castle Light Trial": {
+   "locations": {
+    "Ganons Castle Light Trial Lullaby Chest": "can_play(Zeldas_Lullaby) and (logic_lens_castle or can_use(Lens_of_Truth))",
+    "Ganons Castle Light Trial Remake Key Chest": "logic_lens_castle or can_use(Lens_of_Truth)"
+   },
+   "exits": {
+    "Ganons Castle Light Trial Boulder Room": "(Small_Key_Ganons_Castle, 1) and (logic_lens_castle or can_use(Lens_of_Truth))"
+   }
+  },
+  "Ganons Castle Spirit Trial Second Room Back": {
+   "locations": {
+    "Ganons Castle Spirit Trial Invisible Chest": null
+   }
+  },
+  "King Dodongo Boss Room": {
+   "locations": {
+    "Dodongos Cavern Boss Room Chest": null
+   }
+  },
+  "Shadow Temple Falling Spikes": {
+   "locations": {
+    "Shadow Temple Falling Spikes Upper Chest": null
+   }
+  },
+  "Shadow Temple Invisible Spikes": {
+   "locations": {
+    "Shadow Temple Invisible Spikes Chest": null
+   }
+  },
+  "Child Spirit Temple Beyond Metal Bridges": {
+   "locations": {
+    "Spirit Temple Child Early Torches Chest": "(Sticks or can_use(Dins_Fire)) and (Silver_Rupee_Spirit_Temple_Child_Early_Torches, 5)"
+   }
+  },
+  "Spirit Temple Central Chamber": {
+   "locations": {
+    "Spirit Temple Silver Gauntlets Chest": "(Silver_Rupee_Spirit_Temple_Sun_Block, 5) and ((Small_Key_Spirit_Temple, 5) or (has_explosives and Longshot and (Small_Key_Spirit_Temple, 3)))"
+   },
+   "exits": {
+    "Desert Colossus Hands": "(Silver_Rupee_Spirit_Temple_Sun_Block, 5) and ((Small_Key_Spirit_Temple, 5) or (is_adult and has_explosives and (Small_Key_Spirit_Temple, 3)))"
+   }
+  },
+  "Child Spirit Temple Climb": {
+   "locations": {
+    "Spirit Temple Child Climb East Chest": null
+   }
+  },
+  "Adult Spirit Temple Climb": {
+   "locations": {
+    "Spirit Temple Statue Room Northeast Chest": null
+   }
+  },
+  "Forest Temple Outdoors High Balconies": {
+   "locations": {
+    "Forest Temple Map Chest": null
+   }
+  },
+  "Gerudo Training Ground Lobby": {
+   "locations": {
+    "Gerudo Training Ground Lobby Left Chest": "logic_lens_gtg or can_use(Lens_of_Truth)"
+   }
+  },
+  "Gerudo Training Ground Eye Statue Upper": {
+   "exits": {
+    "Gerudo Training Ground Like Like Room": "Silver_Gauntlets and can_use(Bow) and (logic_lens_gtg or can_use(Lens_of_Truth))"
+   }
+  },
+  "Gerudo Training Ground Like Like Room": {
+   "locations": {
+    "Gerudo Training Ground Heavy Block Second Chest": "has_explosives",
+    "Gerudo Training Ground Like Like Room Eye Switch Chest": "can_use(Bow)"
+   }
+  }
+ },
+ "new_locations": {
+  "Ganons Castle Light Trial Remake Key Chest": {
+   "type": "Chest",
+   "vanilla_item": "Small Key (Ganons Castle)",
+   "scene": 13,
+   "default": null,
+   "filter_tags": [
+    "Ganons Castle",
+    "Vanilla Dungeons",
+    "Chests"
+   ]
+  },
+  "Bottom of the Well Hidden Pit Chest": {
+   "type": "Chest",
+   "vanilla_item": "Deku Seeds (30)",
+   "scene": 8,
+   "default": null,
+   "filter_tags": [
+    "Bottom of the Well",
+    "Vanilla Dungeons",
+    "Chests"
+   ]
+  },
+  "Gerudo Training Ground Like Like Room Eye Switch Chest": {
+   "type": "Chest",
+   "vanilla_item": "Deku Seeds (30)",
+   "scene": 11,
+   "default": null,
+   "filter_tags": [
+    "Gerudo Training Ground",
+    "Vanilla Dungeons",
+    "Chests"
+   ]
+  }
+ }
+}

@@ -1,0 +1,6818 @@
+{
+ "_about": "Built by tools/rando/parity/_appearance_build.py from the game files. Which item holders can show a look per placement (tint), with the evidence; chest pedestals with the chest on them; pot types per level; chest types per level and every retypable chest spot (types its settings allow, pedestal, nearest object for the room check, appear settings). Read by tools/rando/parity/appearance.py.",
+ "romfs": "E:/LongshotLauncher-data/builds/rc/romfs",
+ "tint_keys": [
+  "GameModelController_GeneralInstanceParam0",
+  "GameModelController_GeneralInstanceParam1",
+  "GameModelController_GeneralInstanceParam2"
+ ],
+ "tint_graphs": {
+  "3461558507": [
+   "Obj_CandleStick_A_01",
+   "Obj_FireTemple_HammerSlipPillar_A_01",
+   "Obj_LiftRock_A_01",
+   "Obj_LiftRock_A_03",
+   "Obj_SpiritTemple_MovableBox_A_01"
+  ],
+  "3497286359": [
+   "Obj_BrokenBox_A_01"
+  ]
+ },
+ "actors": {
+  "Enemy_FlyingPot_IceCavern": {
+   "kind": "flying_pot",
+   "declares": [],
+   "model": "Model/Enemy_FlyingPot.Enemy_FlyingPot.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_BrackFade",
+     "albedo": [],
+     "graphs": [
+      "3746338257"
+     ]
+    },
+    {
+     "material": "Mt_Pot_A",
+     "albedo": [
+      "Rock_Pot_A_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [
+    "Work/Model/Enemy/Enemy_FlyingPot/output/Enemy_FlyingPot_Color.fmab"
+   ],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable, Enemy_CrazyFloorTile_CustomPerceptionRadius, Enemy_CrazyFloorTile_PreOmenTime, Enemy_CrazyFloorTile_PreWaitTime, Enemy_MaterialType, IsCheckHidingHoleAsDungeonRoom, IsDungeonRoomCheckDisable, IsEnterLandBattleOnInitialization, IsForceChangeRecommendationTarget, IsIntendedForEventAppear, IsNotSleepAtNightForSomeTimeAfterCreate, IsSoundAlarmOnDiscoverBattleTarget, IsSpringOutAppear, IsStartForceBattle, Role)"
+  },
+  "Enemy_FlyingPot_ShadowTemple": {
+   "kind": "flying_pot",
+   "declares": [],
+   "model": "Model/Enemy_FlyingPot.Enemy_FlyingPot.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_BrackFade",
+     "albedo": [],
+     "graphs": [
+      "3746338257"
+     ]
+    },
+    {
+     "material": "Mt_Pot_A",
+     "albedo": [
+      "Rock_Pot_A_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [
+    "Work/Model/Enemy/Enemy_FlyingPot/output/Enemy_FlyingPot_Color.fmab"
+   ],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable, Enemy_CrazyFloorTile_CustomPerceptionRadius, Enemy_CrazyFloorTile_PreOmenTime, Enemy_CrazyFloorTile_PreWaitTime, Enemy_MaterialType, IsCheckHidingHoleAsDungeonRoom, IsDungeonRoomCheckDisable, IsEnterLandBattleOnInitialization, IsForceChangeRecommendationTarget, IsIntendedForEventAppear, IsNotSleepAtNightForSomeTimeAfterCreate, IsSoundAlarmOnDiscoverBattleTarget, IsSpringOutAppear, IsStartForceBattle, Role)"
+  },
+  "Enemy_FlyingPot_SpiritTemple": {
+   "kind": "flying_pot",
+   "declares": [],
+   "model": "Model/Enemy_FlyingPot.Enemy_FlyingPot.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_BrackFade",
+     "albedo": [],
+     "graphs": [
+      "3746338257"
+     ]
+    },
+    {
+     "material": "Mt_Pot_A",
+     "albedo": [
+      "Rock_Pot_A_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [
+    "Work/Model/Enemy/Enemy_FlyingPot/output/Enemy_FlyingPot_Color.fmab"
+   ],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable, Enemy_CrazyFloorTile_CustomPerceptionRadius, Enemy_CrazyFloorTile_PreOmenTime, Enemy_CrazyFloorTile_PreWaitTime, Enemy_MaterialType, IsCheckHidingHoleAsDungeonRoom, IsDungeonRoomCheckDisable, IsEnterLandBattleOnInitialization, IsForceChangeRecommendationTarget, IsIntendedForEventAppear, IsNotSleepAtNightForSomeTimeAfterCreate, IsSoundAlarmOnDiscoverBattleTarget, IsSpringOutAppear, IsStartForceBattle, Role)"
+  },
+  "Obj_BrokenBox_A_01": {
+   "kind": "crate",
+   "declares": [
+    "GameModelController_GeneralInstanceParam0",
+    "GameModelController_GeneralInstanceParam1",
+    "GameModelController_GeneralInstanceParam2",
+    "GameModelController_GeneralInstanceParam3"
+   ],
+   "model": "Model/Obj_BrokenBox_A.Obj_BrokenBox_A_04.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Obj_BrokenBox_A_04",
+     "albedo": [
+      "Obj_BrokenBox_A_04_Alb"
+     ],
+     "graphs": [
+      "3497286359"
+     ]
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {
+    "(0.7, 0.7, 0.7)": 1,
+    "(1.75, 1.75, 1.75)": 13
+   },
+   "tint": "proven"
+  },
+  "Obj_BrokenBox_A_03": {
+   "kind": "crate",
+   "declares": [
+    "GameModelController_GeneralInstanceParam0",
+    "GameModelController_GeneralInstanceParam1",
+    "GameModelController_GeneralInstanceParam2",
+    "GameModelController_GeneralInstanceParam3"
+   ],
+   "model": "Model/Obj_BrokenBox_A.Obj_BrokenBox_A_03.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Stone_BrokenBox_A",
+     "albedo": [
+      "Stone_BrokenBox_A_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "declared",
+   "why": "declares the colour keys, but no material builds its albedo from an expression graph"
+  },
+  "Obj_BrokenRock_A_01": {
+   "kind": "rock_bombable",
+   "declares": [
+    "GameModelController_GeneralInstanceParam0",
+    "GameModelController_GeneralInstanceParam1",
+    "GameModelController_GeneralInstanceParam2",
+    "GameModelController_GeneralInstanceParam3"
+   ],
+   "model": "Model/Obj_BrokenRock_A.Obj_BrokenRock_A_01.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Obj_BrokenRock_A_01_A",
+     "albedo": [
+      "Obj_BrokenRock_A_01_A_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "declared",
+   "why": "declares the colour keys, but no material builds its albedo from an expression graph"
+  },
+  "Obj_BrokenRock_A_02": {
+   "kind": "rock_bombable",
+   "declares": [
+    "GameModelController_GeneralInstanceParam0",
+    "GameModelController_GeneralInstanceParam1",
+    "GameModelController_GeneralInstanceParam2",
+    "GameModelController_GeneralInstanceParam3"
+   ],
+   "model": "Model/Obj_BrokenRock_A.Obj_BrokenRock_A_02.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Obj_BrokenRock_A_02_A",
+     "albedo": [
+      "Obj_BrokenRock_A_02_A_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "declared",
+   "why": "declares the colour keys, but no material builds its albedo from an expression graph"
+  },
+  "Obj_Gerudo_CowBoneDecoration_B_01": {
+   "kind": "gerudo_decoration",
+   "declares": [],
+   "model": "Model/Obj_Gerudo_CowBoneDecoration_A.Obj_Gerudo_CowBoneDecoration_B_01.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Obj_Gerudo_CowBoneDecoration_A_01",
+     "albedo": [
+      "Obj_Gerudo_CowBoneDecoration_A_01_Alb"
+     ],
+     "graphs": []
+    },
+    {
+     "material": "Mt_Obj_Gerudo_CowBoneFeather_A_01",
+     "albedo": [
+      "Obj_Gerudo_CowBoneFeather_A_01_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable)"
+  },
+  "Obj_Gerudo_CowBoneDecoration_B_02": {
+   "kind": "gerudo_decoration",
+   "declares": [],
+   "model": "Model/Obj_Gerudo_CowBoneDecoration_A.Obj_Gerudo_CowBoneDecoration_B_02.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Obj_Gerudo_CowBoneDecoration_A_01",
+     "albedo": [
+      "Obj_Gerudo_CowBoneDecoration_A_01_Alb"
+     ],
+     "graphs": []
+    },
+    {
+     "material": "Mt_Obj_Gerudo_CowBoneFeather_A_01",
+     "albedo": [
+      "Obj_Gerudo_CowBoneFeather_A_01_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable)"
+  },
+  "Obj_Gerudo_CowBoneDecoration_B_03": {
+   "kind": "gerudo_decoration",
+   "declares": [],
+   "model": "Model/Obj_Gerudo_CowBoneDecoration_A.Obj_Gerudo_CowBoneDecoration_B_03.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Obj_Gerudo_CowBoneDecoration_A_01",
+     "albedo": [
+      "Obj_Gerudo_CowBoneDecoration_A_01_Alb"
+     ],
+     "graphs": []
+    },
+    {
+     "material": "Mt_Obj_Gerudo_CowBoneFeather_A_01",
+     "albedo": [
+      "Obj_Gerudo_CowBoneFeather_A_01_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable)"
+  },
+  "Obj_Gerudo_PalmFruit_A_01": {
+   "kind": "palm_fruit",
+   "declares": [],
+   "model": "Model/Obj_Gerudo_PalmFruit_A.Obj_Gerudo_PalmFruit_A_01.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Obj_Gerudo_PalmFruit_A_01",
+     "albedo": [
+      "Tree_Gerudo_PalmFruit_A_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only BindBone, Drop__DropActor, Drop__DropTable)"
+  },
+  "Obj_Kokiri_Beehive_A_01": {
+   "kind": "beehive",
+   "declares": [],
+   "model": "Model/Obj_Kokiri_Beehive_A.Obj_Kokiri_Beehive_A_01.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Obj_HidingHole_Beehive_A",
+     "albedo": [
+      "Obj_HidingHole_Beehive_A_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable)"
+  },
+  "Obj_LiftRock_A_01": {
+   "kind": "rock_liftable",
+   "declares": [
+    "GameModelController_GeneralInstanceParam0",
+    "GameModelController_GeneralInstanceParam1",
+    "GameModelController_GeneralInstanceParam2",
+    "GameModelController_GeneralInstanceParam3"
+   ],
+   "model": "Model/Obj_Rock_A.Obj_LiftRock_A_01.bfres.zs",
+   "materials": [
+    {
+     "material": "MT_Rock_LiftRock_A_01",
+     "albedo": [
+      "MT_Rock_LiftRock_A_01_Alb"
+     ],
+     "graphs": [
+      "3461558507"
+     ]
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {
+    "(1.819, 1.469, 1.196)": 21,
+    "(1.269, 0.919, 0.646)": 13,
+    "(1.0, 0.852, 0.618)": 12
+   },
+   "tint": "proven"
+  },
+  "Obj_LiftRock_A_03": {
+   "kind": "rock_liftable",
+   "declares": [
+    "GameModelController_GeneralInstanceParam0",
+    "GameModelController_GeneralInstanceParam1",
+    "GameModelController_GeneralInstanceParam2",
+    "GameModelController_GeneralInstanceParam3"
+   ],
+   "model": "Model/Obj_Rock_A.Obj_LiftRock_A_01.bfres.zs",
+   "materials": [
+    {
+     "material": "MT_Rock_LiftRock_A_01",
+     "albedo": [
+      "MT_Rock_LiftRock_A_01_Alb"
+     ],
+     "graphs": [
+      "3461558507"
+     ]
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {
+    "(1.269, 0.919, 0.646)": 4,
+    "(1.0, 0.852, 0.618)": 2
+   },
+   "tint": "proven"
+  },
+  "Obj_Plant_Grass_A_01": {
+   "kind": "grass",
+   "declares": [],
+   "model": "Model/Obj_Plant_A.Obj_Plant_Grass_A_02.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Obj_Plant_A_BillBoard",
+     "albedo": [
+      "Obj_Plant_A_BillBoard_Alb"
+     ],
+     "graphs": [
+      "1142539819"
+     ]
+    },
+    {
+     "material": "Mt_Plant_Grass_A_02",
+     "albedo": [
+      "Plant_LiftGrass_A_02_Alb"
+     ],
+     "graphs": [
+      "1142539819"
+     ]
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable)"
+  },
+  "Obj_Plant_Grass_A_03": {
+   "kind": "grass",
+   "declares": [],
+   "model": "Model/Obj_Plant_A.Obj_Plant_Grass_A_02.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Obj_Plant_A_BillBoard",
+     "albedo": [
+      "Obj_Plant_A_BillBoard_Alb"
+     ],
+     "graphs": [
+      "1142539819"
+     ]
+    },
+    {
+     "material": "Mt_Plant_Grass_A_02",
+     "albedo": [
+      "Plant_LiftGrass_A_02_Alb"
+     ],
+     "graphs": [
+      "1142539819"
+     ]
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable)"
+  },
+  "Obj_Pot_A_01": {
+   "kind": "pot",
+   "declares": [],
+   "model": "Model/Obj_Pot_A.Obj_Pot_A_01.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_BrackFade",
+     "albedo": [],
+     "graphs": [
+      "3746338257"
+     ]
+    },
+    {
+     "material": "Mt_Pot_A",
+     "albedo": [
+      "Rock_Pot_A_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable)"
+  },
+  "Obj_Pot_A_02": {
+   "kind": "pot",
+   "declares": [],
+   "model": "Model/Obj_Pot_A.Obj_Pot_A_02.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_BrackFade",
+     "albedo": [],
+     "graphs": [
+      "3746338257"
+     ]
+    },
+    {
+     "material": "Mt_Pot_A_02",
+     "albedo": [
+      "Rock_Pot_A_02_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable)"
+  },
+  "Obj_Pot_A_03": {
+   "kind": "pot",
+   "declares": [],
+   "model": "Model/Obj_Pot_A.Obj_Pot_A_03.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_BrackFade",
+     "albedo": [],
+     "graphs": [
+      "3746338257"
+     ]
+    },
+    {
+     "material": "Mt_Pot_A_03",
+     "albedo": [
+      "Rock_Pot_A_03_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable)"
+  },
+  "Obj_Pot_A_04": {
+   "kind": "pot",
+   "declares": [],
+   "model": "Model/Obj_Pot_A.Obj_Pot_A_04.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_AbissBottom",
+     "albedo": [],
+     "graphs": []
+    },
+    {
+     "material": "Mt_BrackFade",
+     "albedo": [],
+     "graphs": [
+      "3746338257"
+     ]
+    },
+    {
+     "material": "Mt_Pot_A_04",
+     "albedo": [
+      "Rock_Pot_A_04_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable)"
+  },
+  "Obj_Pot_A_05": {
+   "kind": "pot",
+   "declares": [],
+   "model": "Model/Obj_Pot_A.Obj_Pot_A_05.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_BrackFade",
+     "albedo": [],
+     "graphs": [
+      "3746338257"
+     ]
+    },
+    {
+     "material": "Mt_Pot_A_05",
+     "albedo": [
+      "Rock_Pot_A_05_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable)"
+  },
+  "Obj_Pot_A_06": {
+   "kind": "pot",
+   "declares": [],
+   "model": "Model/Obj_Pot_A.Obj_Pot_A_06.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_BrackFade",
+     "albedo": [],
+     "graphs": [
+      "3746338257"
+     ]
+    },
+    {
+     "material": "Mt_Pot_A_06",
+     "albedo": [
+      "Rock_Pot_A_06_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable)"
+  },
+  "Obj_Pot_A_07": {
+   "kind": "pot",
+   "declares": [],
+   "model": "Model/Obj_Pot_A.Obj_Pot_A_07.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_BrackFade",
+     "albedo": [],
+     "graphs": [
+      "3746338257"
+     ]
+    },
+    {
+     "material": "Mt_Rock_Pot_A_07",
+     "albedo": [
+      "Rock_Pot_A_07_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable)"
+  },
+  "Obj_Pot_A_08": {
+   "kind": "pot",
+   "declares": [],
+   "model": "Model/Obj_Pot_A.Obj_Pot_A_08.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_AbissBottom",
+     "albedo": [],
+     "graphs": []
+    },
+    {
+     "material": "Mt_BrackFade",
+     "albedo": [],
+     "graphs": [
+      "3746338257"
+     ]
+    },
+    {
+     "material": "Mt_Rock_Pot_A_08",
+     "albedo": [
+      "Rock_Pot_A_08_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable)"
+  },
+  "Obj_TBoxPedestal_A_01": {
+   "kind": "chest_pedestal",
+   "declares": [
+    "GameModelController_GeneralInstanceParam0",
+    "GameModelController_GeneralInstanceParam1",
+    "GameModelController_GeneralInstanceParam2",
+    "GameModelController_GeneralInstanceParam3"
+   ],
+   "model": "Model/Obj_TBoxPedestal_A.Obj_TBoxPedestal_A_01.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Stone_TBoxPedestal_A",
+     "albedo": [
+      "Stone_TBoxPedestal_A_Alb"
+     ],
+     "graphs": [
+      "3461558507"
+     ]
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "proven"
+  },
+  "Obj_TBoxPedestal_A_02": {
+   "kind": "chest_pedestal",
+   "declares": [
+    "GameModelController_GeneralInstanceParam0",
+    "GameModelController_GeneralInstanceParam1",
+    "GameModelController_GeneralInstanceParam2",
+    "GameModelController_GeneralInstanceParam3"
+   ],
+   "model": "Model/Obj_TBoxPedestal_A.Obj_TBoxPedestal_A_01.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Stone_TBoxPedestal_A",
+     "albedo": [
+      "Stone_TBoxPedestal_A_Alb"
+     ],
+     "graphs": [
+      "3461558507"
+     ]
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "proven"
+  },
+  "Obj_TBox_A_01": {
+   "kind": "chest",
+   "declares": [],
+   "model": "Model/Obj_TBox_A.Obj_TBox_A_01.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Obj_TBox_A_01",
+     "albedo": [
+      "Mt_Obj_TBox_A_01_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable, FloorNumber, GetEventName, IsEnableRepeatOpen, IsForceMapIconFloor, IsGeneratedByAmiibo, MimicTexture, SpawnType)"
+  },
+  "Obj_TBox_A_01_NoBake": {
+   "kind": "chest",
+   "declares": [],
+   "model": "Model/Obj_TBox_A.Obj_TBox_A_01.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Obj_TBox_A_01",
+     "albedo": [
+      "Mt_Obj_TBox_A_01_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable, FloorNumber, GetEventName, IsEnableRepeatOpen, IsForceMapIconFloor, IsGeneratedByAmiibo, MimicTexture, SpawnType)"
+  },
+  "Obj_TBox_A_02": {
+   "kind": "chest",
+   "declares": [],
+   "model": "Model/Obj_TBox_A.Obj_TBox_A_02.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Obj_TBox_A_02",
+     "albedo": [
+      "Mt_Obj_TBox_A_02_Alb.00"
+     ],
+     "graphs": [
+      "1465659032"
+     ]
+    }
+   ],
+   "model_variation": [
+    "Work/Model/Map/Obj/Obj_TBox_A_02_Animation/output/Obj_TBox_A_02_Color.fmab"
+   ],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable, FloorNumber, GetEventName, IsEnableRepeatOpen, IsForceMapIconFloor, IsGeneratedByAmiibo, MimicTexture, SpawnType)"
+  },
+  "Obj_TBox_A_02_NoBake": {
+   "kind": "chest",
+   "declares": [],
+   "model": "Model/Obj_TBox_A.Obj_TBox_A_02.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Obj_TBox_A_02",
+     "albedo": [
+      "Mt_Obj_TBox_A_02_Alb.00"
+     ],
+     "graphs": [
+      "1465659032"
+     ]
+    }
+   ],
+   "model_variation": [
+    "Work/Model/Map/Obj/Obj_TBox_A_02_Animation/output/Obj_TBox_A_02_Color.fmab"
+   ],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable, FloorNumber, GetEventName, IsEnableRepeatOpen, IsForceMapIconFloor, IsGeneratedByAmiibo, MimicTexture, SpawnType)"
+  },
+  "Obj_TBox_A_03": {
+   "kind": "chest",
+   "declares": [],
+   "model": "Model/Obj_TBox_A_03.Obj_TBox_A_03.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Body",
+     "albedo": [
+      "Obj_TBox_A_03_Body_Alb"
+     ],
+     "graphs": [
+      "827568227"
+     ]
+    },
+    {
+     "material": "Mt_BoxSpecular",
+     "albedo": [],
+     "graphs": [
+      "1851876593"
+     ]
+    },
+    {
+     "material": "Mt_Jewelry",
+     "albedo": [],
+     "graphs": [
+      "4100422131"
+     ]
+    },
+    {
+     "material": "Mt_Panel",
+     "albedo": [
+      "Obj_TBox_A_03_Panel_Alb"
+     ],
+     "graphs": [
+      "712282805"
+     ]
+    },
+    {
+     "material": "Mt_Velvet_A",
+     "albedo": [
+      "Obj_TBox_A_03_Body_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable, FloorNumber, GetEventName, IsEnableRepeatOpen, IsForceMapIconFloor, IsGeneratedByAmiibo, MimicTexture, SpawnType)"
+  },
+  "Obj_TBox_A_03_NoBake": {
+   "kind": "chest",
+   "declares": [],
+   "model": "Model/Obj_TBox_A_03.Obj_TBox_A_03.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Body",
+     "albedo": [
+      "Obj_TBox_A_03_Body_Alb"
+     ],
+     "graphs": [
+      "827568227"
+     ]
+    },
+    {
+     "material": "Mt_BoxSpecular",
+     "albedo": [],
+     "graphs": [
+      "1851876593"
+     ]
+    },
+    {
+     "material": "Mt_Jewelry",
+     "albedo": [],
+     "graphs": [
+      "4100422131"
+     ]
+    },
+    {
+     "material": "Mt_Panel",
+     "albedo": [
+      "Obj_TBox_A_03_Panel_Alb"
+     ],
+     "graphs": [
+      "712282805"
+     ]
+    },
+    {
+     "material": "Mt_Velvet_A",
+     "albedo": [
+      "Obj_TBox_A_03_Body_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable, FloorNumber, GetEventName, IsEnableRepeatOpen, IsForceMapIconFloor, IsGeneratedByAmiibo, MimicTexture, SpawnType)"
+  },
+  "Obj_TBox_A_04": {
+   "kind": "chest",
+   "declares": [],
+   "model": "Model/Obj_TBox_A.Obj_TBox_A_01.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Obj_TBox_A_01",
+     "albedo": [
+      "Mt_Obj_TBox_A_01_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable, GetEventName, IsGeneratedByAmiibo, MimicTexture, SerenityDistance, SpawnType)"
+  },
+  "Obj_TBox_A_06": {
+   "kind": "chest",
+   "declares": [],
+   "model": "Model/Obj_TBox_A.Obj_TBox_A_01.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Obj_TBox_A_01",
+     "albedo": [
+      "Mt_Obj_TBox_A_01_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__CheckActor, Drop__CheckCondition, Drop__DropActor, Drop__DropActor_Substitute, Drop__DropTable, FloorNumber, GetEventName, IsEnableRepeatOpen, IsForceMapIconFloor, IsGeneratedByAmiibo, MimicTexture, SpawnType)"
+  },
+  "Obj_TBox_A_06_NoBake": {
+   "kind": "chest",
+   "declares": [],
+   "model": "Model/Obj_TBox_A.Obj_TBox_A_01.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Obj_TBox_A_01",
+     "albedo": [
+      "Mt_Obj_TBox_A_01_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__CheckActor, Drop__CheckCondition, Drop__DropActor, Drop__DropActor_Substitute, Drop__DropTable, FloorNumber, GetEventName, IsEnableRepeatOpen, IsForceMapIconFloor, IsGeneratedByAmiibo, MimicTexture, SpawnType)"
+  },
+  "Obj_TBox_GlassTruth_A_01": {
+   "kind": "chest",
+   "declares": [],
+   "model": "Model/Obj_TBox_A.Obj_TBox_A_01.bfres.zs",
+   "materials": [
+    {
+     "material": "Mt_Obj_TBox_A_01",
+     "albedo": [
+      "Mt_Obj_TBox_A_01_Alb"
+     ],
+     "graphs": []
+    }
+   ],
+   "model_variation": [],
+   "vanilla_tints": {},
+   "tint": "none",
+   "why": "no per-placement look setting (its actor pack declares only Drop__DropActor, Drop__DropTable, FloorNumber, GetEventName, IsEnableRepeatOpen, IsForceMapIconFloor, IsGeneratedByAmiibo, MimicTexture, SpawnType)"
+  }
+ },
+ "pedestals": [
+  {
+   "file": "Banc/BottomOfTheWell/BottomOfTheWell_Static.bcett.byml.zs",
+   "hash": "6526443282225623134",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "16654774376625985726",
+   "chest_file": "Banc/BottomOfTheWell/BottomOfTheWell_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_02_NoBake",
+   "distance": 0.1
+  },
+  {
+   "file": "Banc/DeathMountainCrater/DeathMountainCrater_Adult_Static.bcett.byml.zs",
+   "hash": "4599152808206208162",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "9128916506605227251",
+   "chest_file": "Banc/DeathMountainCrater/DeathMountainCrater_Adult_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/DeathMountainCrater/DeathMountainCrater_Child_Static.bcett.byml.zs",
+   "hash": "9170873077733347689",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "9128916506605227251",
+   "chest_file": "Banc/DeathMountainCrater/DeathMountainCrater_Child_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/DodongoCavern/DodongoCavern_Static.bcett.byml.zs",
+   "hash": "15931811879296912987",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "7764016096998075927",
+   "chest_file": "Banc/DodongoCavern/DodongoCavern_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/DodongoCavern/DodongoCavern_Static.bcett.byml.zs",
+   "hash": "5280930368506156294",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "850464708089653824",
+   "chest_file": "Banc/DodongoCavern/DodongoCavern_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/DreamWorld/DeadHandStage_Dynamic.bcett.byml.zs",
+   "hash": "2103315962929361062",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest": null,
+   "why": "no chest stands on it in this level (boss-rush rooms, an adult-only Zora's Domain pedestal)"
+  },
+  {
+   "file": "Banc/DreamWorld/DinolfosStage_Dynamic.bcett.byml.zs",
+   "hash": "17888992313096290362",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest": null,
+   "why": "no chest stands on it in this level (boss-rush rooms, an adult-only Zora's Domain pedestal)"
+  },
+  {
+   "file": "Banc/DreamWorld/LizalfosStage_Dynamic.bcett.byml.zs",
+   "hash": "15225646499921115981",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest": null,
+   "why": "no chest stands on it in this level (boss-rush rooms, an adult-only Zora's Domain pedestal)"
+  },
+  {
+   "file": "Banc/ForestTemple/ForestTemple_Static.bcett.byml.zs",
+   "hash": "12120577770044495063",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "7535137041266964235",
+   "chest_file": "Banc/ForestTemple/ForestTemple_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/GoronCity/GoronCity_Adult_Static.bcett.byml.zs",
+   "hash": "16890067290620103901",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "9159710900681116662",
+   "chest_file": "Banc/GoronCity/GoronCity_Adult_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/GoronCity/GoronCity_Adult_Static.bcett.byml.zs",
+   "hash": "609679042679204601",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "10944569637726152230",
+   "chest_file": "Banc/GoronCity/GoronCity_Adult_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/GoronCity/GoronCity_Child_Static.bcett.byml.zs",
+   "hash": "5385175813780153793",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "9159710900681116662",
+   "chest_file": "Banc/GoronCity/GoronCity_Child_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/GoronCity/GoronCity_Child_Static.bcett.byml.zs",
+   "hash": "6351121982910907141",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "10944569637726152230",
+   "chest_file": "Banc/GoronCity/GoronCity_Child_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/HyruleField/HyruleField_Adult_Static.bcett.byml.zs",
+   "hash": "8572885190556169642",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "5755485285664292988",
+   "chest_file": "Banc/HyruleField/HyruleField_Adult_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/HyruleField/HyruleField_Adult_Static.bcett.byml.zs",
+   "hash": "6994173614967142258",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "6900843020594897860",
+   "chest_file": "Banc/HyruleField/HyruleField_Adult_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/HyruleField/HyruleField_Child_Static.bcett.byml.zs",
+   "hash": "9866237063244934812",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "5755485285664292988",
+   "chest_file": "Banc/HyruleField/HyruleField_Child_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/HyruleField/HyruleField_Child_Static.bcett.byml.zs",
+   "hash": "11524254814599249396",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "6900843020594897860",
+   "chest_file": "Banc/HyruleField/HyruleField_Child_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/InsideGanonCastle/InsideGanonCastle_Dynamic.bcett.byml.zs",
+   "hash": "698840496760385297",
+   "actor": "Obj_TBoxPedestal_A_02",
+   "chest_hash": "17657623307936361670",
+   "chest_file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_02_NoBake",
+   "distance": 0.406
+  },
+  {
+   "file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+   "hash": "1126144942590021579",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "16913531450403950487",
+   "chest_file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+   "hash": "136401125416377306",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "14962432460641118089",
+   "chest_file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+   "hash": "9493925957927188983",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "7899179288432849355",
+   "chest_file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/SacredForestMeadow/SacredForestMeadow_Adult_Static.bcett.byml.zs",
+   "hash": "87261292483825904",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "7995233962349162969",
+   "chest_file": "Banc/SacredForestMeadow/SacredForestMeadow_Adult_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/SacredForestMeadow/SacredForestMeadow_Child_Static.bcett.byml.zs",
+   "hash": "5787704546487142332",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "7995233962349162969",
+   "chest_file": "Banc/SacredForestMeadow/SacredForestMeadow_Child_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/ShadowTemple/ShadowTemple_Dynamic.bcett.byml.zs",
+   "hash": "9111788260929327016",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "169081039115821925",
+   "chest_file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_GlassTruth_A_01",
+   "distance": 0.057
+  },
+  {
+   "file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+   "hash": "17046209233791291306",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "13528903653876646082",
+   "chest_file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_02_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+   "hash": "2648369127767918183",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "14535080241831873137",
+   "chest_file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_02_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+   "hash": "7878505172861527899",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "1733372171176975157",
+   "chest_file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_02_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+   "hash": "13437196444246747812",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "5681107746948738726",
+   "chest_file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+   "hash": "6401067755442866394",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "17902550525792072472",
+   "chest_file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_01_NoBake",
+   "distance": 0.0
+  },
+  {
+   "file": "Banc/ZoraDomain/ZoraDomain_Adult_Alternative_Dynamic.bcett.byml.zs",
+   "hash": "16047392948284101550",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest": null,
+   "why": "no chest stands on it in this level (boss-rush rooms, an adult-only Zora's Domain pedestal)"
+  },
+  {
+   "file": "Banc/ZoraDomain/ZoraDomain_Adult_Dynamic.bcett.byml.zs",
+   "hash": "4299087199244694477",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest": null,
+   "why": "no chest stands on it in this level (boss-rush rooms, an adult-only Zora's Domain pedestal)"
+  },
+  {
+   "file": "Banc/ZoraDomain/ZoraDomain_Child_Static.bcett.byml.zs",
+   "hash": "9684540737202836654",
+   "actor": "Obj_TBoxPedestal_A_01",
+   "chest_hash": "3130048366421939233",
+   "chest_file": "Banc/ZoraDomain/ZoraDomain_Child_Static.bcett.byml.zs",
+   "chest_actor": "Obj_TBox_A_02_NoBake",
+   "distance": 0.0
+  }
+ ],
+ "pot_types_per_level": {
+  "BottomOfTheWell/BottomOfTheWell": {
+   "Obj_Pot_A_08": 42,
+   "Obj_Pot_A_08_Respawn": 2
+  },
+  "DeathMountainCrater/DeathMountainCrater_Adult": {
+   "Obj_Pot_A_03": 2
+  },
+  "DeathMountainCrater/DeathMountainCrater_Child": {
+   "Obj_Pot_A_03": 5
+  },
+  "DodongoCavern/DodongoCavern": {
+   "Obj_Pot_A_03": 37
+  },
+  "DreamWorld/EnemyMuseum": {
+   "Enemy_FlyingPot_Dictionary": 1,
+   "Enemy_FlyingPot_Dictionary_Undefeated": 1
+  },
+  "DreamWorld/GanondorfStage": {
+   "Obj_Pot_A_06": 12,
+   "Obj_Pot_A_06_Dream": 12
+  },
+  "DreamWorld/GerudoThiefStage": {
+   "Obj_Pot_A_05_Dream": 3
+  },
+  "DreamWorld/LizalfosStage": {
+   "Obj_Pot_A_03_Dream": 7
+  },
+  "FireTemple/FireTemple": {
+   "Obj_Pot_A_03": 18
+  },
+  "ForestTemple/ForestTemple": {
+   "Obj_Pot_A_02": 28,
+   "Obj_Pot_A_02_Respawn": 1
+  },
+  "GanonCastle/CrumblingGanonCastle": {
+   "Obj_Pot_A_06": 9
+  },
+  "GerudoFortress/GerudoFortress_Adult": {
+   "Obj_Pot_A_05": 15,
+   "Enemy_FlyingPot_SpiritTemple": 3
+  },
+  "GerudoTrainingGround/GerudoTrainingGround": {
+   "Obj_Pot_A_05_Respawn": 2
+  },
+  "GerudoValley/GerudoValley_Adult": {
+   "Obj_Pot_A_05": 4
+  },
+  "GerudoValley/GerudoValley_Child": {
+   "Obj_Pot_A_05": 4
+  },
+  "GoronCity/GoronCity_Adult": {
+   "Obj_Pot_A_03": 5
+  },
+  "GoronCity/GoronCity_Child": {
+   "Obj_Pot_A_03": 8
+  },
+  "HountedWasteland/HountedWasteland_Adult": {
+   "Obj_Pot_A_05": 4
+  },
+  "HountedWasteland/HountedWasteland_Child": {
+   "Obj_Pot_A_05": 4
+  },
+  "HyruleCastle/HyruleCastle": {
+   "Obj_Pot_A_01": 6
+  },
+  "HyruleField/HyruleField_Adult": {
+   "Obj_Pot_A_01": 2
+  },
+  "HyruleField/HyruleField_Child": {
+   "Obj_Pot_A_01": 9
+  },
+  "IceCavern/IceCavern": {
+   "Obj_Pot_A_04": 15,
+   "Enemy_FlyingPot_IceCavern": 2
+  },
+  "InsideGanonCastle/InsideGanonCastle": {
+   "Obj_Pot_A_06": 16,
+   "Obj_Pot_A_06_Dream": 12,
+   "Obj_Pot_A_07": 4,
+   "Obj_Pot_A_01": 19,
+   "Obj_Pot_A_04": 1
+  },
+  "InsideJabuJabuBelly/InsideJabuJabuBelly": {
+   "Obj_Pot_A_04": 19
+  },
+  "KakarikoVillage/KakarikoVillage_Adult": {
+   "Obj_Pot_A_08": 10
+  },
+  "KakarikoVillage/KakarikoVillage_Adult_Alternative": {
+   "Obj_Pot_A_08": 10
+  },
+  "KakarikoVillage/KakarikoVillage_Child": {
+   "Obj_Pot_A_08": 10
+  },
+  "KokiriForest/KokiriForest_Adult": {
+   "Obj_Pot_A_01": 4
+  },
+  "KokiriForest/KokiriForest_Child": {
+   "Obj_Pot_A_01": 4
+  },
+  "Market/Market_Adult": {
+   "Obj_Pot_A_01": 4
+  },
+  "Market/Market_Child": {
+   "Obj_Pot_A_01": 50
+  },
+  "ShadowTemple/ShadowTemple": {
+   "Obj_Pot_A_07": 60,
+   "Enemy_FlyingPot_ShadowTemple": 5,
+   "Obj_Pot_A_07_Respawn": 4
+  },
+  "SpiritTemple/SpiritTemple": {
+   "Enemy_FlyingPot_SpiritTemple": 13,
+   "Obj_Pot_A_05": 30,
+   "Obj_Pot_A_05_Respawn": 1
+  },
+  "WaterTemple/WaterTemple": {
+   "Obj_Pot_A_04": 24
+  },
+  "ZoraDomain/ZoraDomain_Adult_Alternative": {
+   "Obj_Pot_A_04": 5
+  },
+  "ZoraDomain/ZoraDomain_Child": {
+   "Obj_Pot_A_04": 5
+  },
+  "ZoraFountain/ZoraFountain_Adult": {
+   "Obj_Pot_A_04": 2
+  },
+  "ZoraFountain/ZoraFountain_Child": {
+   "Obj_Pot_A_04": 6
+  },
+  "ZoraRiver/ZoraRiver_Adult": {
+   "Obj_Pot_A_04": 4
+  },
+  "ZoraRiver/ZoraRiver_Child": {
+   "Obj_Pot_A_04": 4
+  }
+ },
+ "chest_body_boxes": {
+  "Obj_TBox_A_01": {
+   "min": [
+    -0.364,
+    0.0,
+    -0.283
+   ],
+   "max": [
+    0.364,
+    0.378,
+    0.283
+   ]
+  },
+  "Obj_TBox_A_02": {
+   "min": [
+    -0.64,
+    -0.02,
+    -0.507
+   ],
+   "max": [
+    0.64,
+    0.626,
+    0.507
+   ]
+  }
+ },
+ "chest_types_per_level": {
+  "BottomOfTheWell/BottomOfTheWell": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_02",
+   "Obj_TBox_A_02_NoBake",
+   "Obj_TBox_A_06",
+   "Obj_TBox_GlassTruth_A_01"
+  ],
+  "DeathMountainCrater/DeathMountainCrater_Adult": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake"
+  ],
+  "DeathMountainCrater/DeathMountainCrater_Child": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake"
+  ],
+  "DeathMountainTrail/DeathMountainTrail_Adult": [
+   "Obj_TBox_A_01"
+  ],
+  "DeathMountainTrail/DeathMountainTrail_Child": [
+   "Obj_TBox_A_01"
+  ],
+  "DesertColossus/DesertColossus_Adult": [
+   "Obj_TBox_A_01_NoBake",
+   "Obj_TBox_A_02",
+   "Obj_TBox_A_02_NoBake"
+  ],
+  "DesertColossus/DesertColossus_Child": [
+   "Obj_TBox_A_01_NoBake",
+   "Obj_TBox_A_02",
+   "Obj_TBox_A_02_NoBake"
+  ],
+  "DodongoCavern/DodongoCavern": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake",
+   "Obj_TBox_A_02",
+   "Obj_TBox_A_06"
+  ],
+  "DreamWorld/BossRushIntervalRoom": [
+   "Obj_TBox_A_01"
+  ],
+  "FireTemple/FireTemple": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake",
+   "Obj_TBox_A_02",
+   "Obj_TBox_A_03"
+  ],
+  "ForestTemple/ForestTemple": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake",
+   "Obj_TBox_A_02",
+   "Obj_TBox_A_02_NoBake",
+   "Obj_TBox_A_03_NoBake"
+  ],
+  "GerudoFortress/GerudoFortress_Adult": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_02"
+  ],
+  "GerudoTrainingGround/GerudoTrainingGround": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake",
+   "Obj_TBox_A_02",
+   "Obj_TBox_A_04",
+   "Obj_TBox_A_06",
+   "Obj_TBox_A_06_NoBake",
+   "Obj_TBox_GlassTruth_A_01"
+  ],
+  "GerudoValley/GerudoValley_Adult": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake",
+   "Obj_TBox_A_02",
+   "Obj_TBox_GlassTruth_A_01"
+  ],
+  "GerudoValley/GerudoValley_Child": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake",
+   "Obj_TBox_A_02",
+   "Obj_TBox_GlassTruth_A_01"
+  ],
+  "GoronCity/GoronCity_Adult": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake"
+  ],
+  "GoronCity/GoronCity_Child": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake"
+  ],
+  "Graveyard/Graveyard_Adult": [
+   "Obj_TBox_A_01_NoBake",
+   "Obj_TBox_A_02",
+   "Obj_TBox_A_02_NoBake",
+   "Obj_TBox_A_06"
+  ],
+  "Graveyard/Graveyard_Child": [
+   "Obj_TBox_A_02",
+   "Obj_TBox_A_06"
+  ],
+  "HountedWasteland/HountedWasteland_Adult": [
+   "Obj_TBox_A_01_NoBake"
+  ],
+  "HountedWasteland/HountedWasteland_Child": [
+   "Obj_TBox_A_01_NoBake"
+  ],
+  "HyruleField/HyruleField_Adult": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake",
+   "Obj_TBox_A_01_memo11"
+  ],
+  "HyruleField/HyruleField_Child": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake",
+   "Obj_TBox_A_01_memo11"
+  ],
+  "IceCavern/IceCavern": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_02",
+   "Obj_TBox_A_02_NoBake"
+  ],
+  "InsideGanonCastle/InsideGanonCastle": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake",
+   "Obj_TBox_A_02_NoBake",
+   "Obj_TBox_A_03_NoBake",
+   "Obj_TBox_A_04",
+   "Obj_TBox_GlassTruth_A_01"
+  ],
+  "InsideJabuJabuBelly/InsideJabuJabuBelly": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_02",
+   "Obj_TBox_A_02_NoBake"
+  ],
+  "InsideTheDekuTree/InsideTheDekuTree": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_02"
+  ],
+  "KakarikoVillage/KakarikoVillage_Adult": [
+   "Obj_TBox_A_01"
+  ],
+  "KakarikoVillage/KakarikoVillage_Adult_Alternative": [
+   "Obj_TBox_A_01"
+  ],
+  "KakarikoVillage/KakarikoVillage_Child": [
+   "Obj_TBox_A_01"
+  ],
+  "KokiriForest/KokiriForest_Adult": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake",
+   "Obj_TBox_A_02"
+  ],
+  "KokiriForest/KokiriForest_Child": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake",
+   "Obj_TBox_A_02"
+  ],
+  "LostWood/LostWood_Adult": [
+   "Obj_TBox_A_01"
+  ],
+  "LostWood/LostWood_Child": [
+   "Obj_TBox_A_01"
+  ],
+  "Market/Market_Child": [
+   "Obj_HrlCity_Shop_TBox_A_01",
+   "Obj_HrlCity_Shop_TBox_A_02"
+  ],
+  "SacredForestMeadow/SacredForestMeadow_Adult": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake"
+  ],
+  "SacredForestMeadow/SacredForestMeadow_Child": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake"
+  ],
+  "ShadowTemple/ShadowTemple": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake",
+   "Obj_TBox_A_02_NoBake",
+   "Obj_TBox_A_03",
+   "Obj_TBox_GlassTruth_A_01"
+  ],
+  "SpiritTemple/SpiritTemple": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake",
+   "Obj_TBox_A_02_NoBake",
+   "Obj_TBox_A_03",
+   "Obj_TBox_A_04",
+   "Obj_TBox_A_06",
+   "Obj_TBox_GlassTruth_A_01"
+  ],
+  "WaterTemple/WaterTemple": [
+   "Obj_TBox_A_01",
+   "Obj_TBox_A_01_NoBake",
+   "Obj_TBox_A_02",
+   "Obj_TBox_A_03"
+  ],
+  "ZoraDomain/ZoraDomain_Child": [
+   "Obj_TBox_A_02_NoBake"
+  ],
+  "ZoraFountain/ZoraFountain_Adult": [
+   "Obj_TBox_A_01"
+  ],
+  "ZoraRiver/ZoraRiver_Adult": [
+   "Obj_TBox_A_01"
+  ],
+  "ZoraRiver/ZoraRiver_Child": [
+   "Obj_TBox_A_01"
+  ]
+ },
+ "chest_spots": {
+  "631709185320708287": [
+   {
+    "file": "Banc/BottomOfTheWell/BottomOfTheWell_Dynamic.bcett.byml.zs",
+    "level": "BottomOfTheWell/BottomOfTheWell",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "14911602953212243797": [
+   {
+    "file": "Banc/BottomOfTheWell/BottomOfTheWell_Dynamic.bcett.byml.zs",
+    "level": "BottomOfTheWell/BottomOfTheWell",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "8397646530660039355": [
+   {
+    "file": "Banc/BottomOfTheWell/BottomOfTheWell_Dynamic.bcett.byml.zs",
+    "level": "BottomOfTheWell/BottomOfTheWell",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "8975637636514249074": [
+   {
+    "file": "Banc/BottomOfTheWell/BottomOfTheWell_Dynamic.bcett.byml.zs",
+    "level": "BottomOfTheWell/BottomOfTheWell",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "10905582354954996284": [
+   {
+    "file": "Banc/BottomOfTheWell/BottomOfTheWell_Dynamic.bcett.byml.zs",
+    "level": "BottomOfTheWell/BottomOfTheWell",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "5429815628949128345": [
+   {
+    "file": "Banc/BottomOfTheWell/BottomOfTheWell_Dynamic.bcett.byml.zs",
+    "level": "BottomOfTheWell/BottomOfTheWell",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "12988877782812797760": [
+   {
+    "file": "Banc/BottomOfTheWell/BottomOfTheWell_Dynamic.bcett.byml.zs",
+    "level": "BottomOfTheWell/BottomOfTheWell",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "11718708984125260282": [
+   {
+    "file": "Banc/BottomOfTheWell/BottomOfTheWell_Dynamic.bcett.byml.zs",
+    "level": "BottomOfTheWell/BottomOfTheWell",
+    "actor": "Obj_TBox_GlassTruth_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "9466613428674883506": [
+   {
+    "file": "Banc/BottomOfTheWell/BottomOfTheWell_Dynamic.bcett.byml.zs",
+    "level": "BottomOfTheWell/BottomOfTheWell",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "6064359710907908886": [
+   {
+    "file": "Banc/BottomOfTheWell/BottomOfTheWell_Dynamic.bcett.byml.zs",
+    "level": "BottomOfTheWell/BottomOfTheWell",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "16654774376625985726": [
+   {
+    "file": "Banc/BottomOfTheWell/BottomOfTheWell_Static.bcett.byml.zs",
+    "level": "BottomOfTheWell/BottomOfTheWell",
+    "actor": "Obj_TBox_A_02_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "1158729434763801603": [
+   {
+    "file": "Banc/DeathMountainCrater/DeathMountainCrater_Adult_Dynamic.bcett.byml.zs",
+    "level": "DeathMountainCrater/DeathMountainCrater_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/DeathMountainCrater/DeathMountainCrater_Child_Dynamic.bcett.byml.zs",
+    "level": "DeathMountainCrater/DeathMountainCrater_Child",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "9128916506605227251": [
+   {
+    "file": "Banc/DeathMountainCrater/DeathMountainCrater_Adult_Static.bcett.byml.zs",
+    "level": "DeathMountainCrater/DeathMountainCrater_Adult",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/DeathMountainCrater/DeathMountainCrater_Child_Static.bcett.byml.zs",
+    "level": "DeathMountainCrater/DeathMountainCrater_Child",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "9809508929088891725": [
+   {
+    "file": "Banc/DeathMountainTrail/DeathMountainTrail_Adult_Dynamic.bcett.byml.zs",
+    "level": "DeathMountainTrail/DeathMountainTrail_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/DeathMountainTrail/DeathMountainTrail_Child_Dynamic.bcett.byml.zs",
+    "level": "DeathMountainTrail/DeathMountainTrail_Child",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "2490063409521505179": [
+   {
+    "file": "Banc/DesertColossus/DesertColossus_Adult_Static.bcett.byml.zs",
+    "level": "DesertColossus/DesertColossus_Adult",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": true
+   },
+   {
+    "file": "Banc/DesertColossus/DesertColossus_Child_Static.bcett.byml.zs",
+    "level": "DesertColossus/DesertColossus_Child",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "10012167258643363548": [
+   {
+    "file": "Banc/DesertColossus/DesertColossus_Adult_Static.bcett.byml.zs",
+    "level": "DesertColossus/DesertColossus_Adult",
+    "actor": "Obj_TBox_A_02_NoBake",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": true
+   },
+   {
+    "file": "Banc/DesertColossus/DesertColossus_Child_Static.bcett.byml.zs",
+    "level": "DesertColossus/DesertColossus_Child",
+    "actor": "Obj_TBox_A_02_NoBake",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "1186167733408299582": [
+   {
+    "file": "Banc/DesertColossus/DesertColossus_Adult_Static.bcett.byml.zs",
+    "level": "DesertColossus/DesertColossus_Adult",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/DesertColossus/DesertColossus_Child_Static.bcett.byml.zs",
+    "level": "DesertColossus/DesertColossus_Child",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "8291119063305855945": [
+   {
+    "file": "Banc/DodongoCavern/DodongoCavern_Dynamic.bcett.byml.zs",
+    "level": "DodongoCavern/DodongoCavern",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "8607798771661947511": [
+   {
+    "file": "Banc/DodongoCavern/DodongoCavern_Dynamic.bcett.byml.zs",
+    "level": "DodongoCavern/DodongoCavern",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "12253889300578348965": [
+   {
+    "file": "Banc/DodongoCavern/DodongoCavern_Dynamic.bcett.byml.zs",
+    "level": "DodongoCavern/DodongoCavern",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "7764016096998075927": [
+   {
+    "file": "Banc/DodongoCavern/DodongoCavern_Static.bcett.byml.zs",
+    "level": "DodongoCavern/DodongoCavern",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "17531994809974271603": [
+   {
+    "file": "Banc/DodongoCavern/DodongoCavern_Static.bcett.byml.zs",
+    "level": "DodongoCavern/DodongoCavern",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "12161709650443144121": [
+   {
+    "file": "Banc/DodongoCavern/DodongoCavern_Static.bcett.byml.zs",
+    "level": "DodongoCavern/DodongoCavern",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "850464708089653824": [
+   {
+    "file": "Banc/DodongoCavern/DodongoCavern_Static.bcett.byml.zs",
+    "level": "DodongoCavern/DodongoCavern",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "7589985979641292928": [
+   {
+    "file": "Banc/DreamWorld/BossRushIntervalRoom_Static.bcett.byml.zs",
+    "level": "DreamWorld/BossRushIntervalRoom",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor",
+     "IsEnableRepeatOpen"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_TBox_A_01",
+     0.0
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "7234638808238324101": [
+   {
+    "file": "Banc/DreamWorld/BossRushIntervalRoom_Static.bcett.byml.zs",
+    "level": "DreamWorld/BossRushIntervalRoom",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor",
+     "IsEnableRepeatOpen"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_TBox_A_01",
+     0.0
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "15858708076894317041": [
+   {
+    "file": "Banc/DreamWorld/BossRushIntervalRoom_Static.bcett.byml.zs",
+    "level": "DreamWorld/BossRushIntervalRoom",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor",
+     "IsEnableRepeatOpen"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_TBox_A_01",
+     0.0
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "4529748032854378492": [
+   {
+    "file": "Banc/DreamWorld/BossRushIntervalRoom_Static.bcett.byml.zs",
+    "level": "DreamWorld/BossRushIntervalRoom",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor",
+     "IsEnableRepeatOpen"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_TBox_A_01",
+     0.0
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "566103236844767323": [
+   {
+    "file": "Banc/DreamWorld/BossRushIntervalRoom_Static.bcett.byml.zs",
+    "level": "DreamWorld/BossRushIntervalRoom",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor",
+     "IsEnableRepeatOpen"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_TBox_A_01",
+     0.0
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "3522439980243161940": [
+   {
+    "file": "Banc/DreamWorld/BossRushIntervalRoom_Static.bcett.byml.zs",
+    "level": "DreamWorld/BossRushIntervalRoom",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor",
+     "IsEnableRepeatOpen"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_TBox_A_01",
+     0.0
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "7346745174625046398": [
+   {
+    "file": "Banc/DreamWorld/BossRushIntervalRoom_Static.bcett.byml.zs",
+    "level": "DreamWorld/BossRushIntervalRoom",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor",
+     "IsEnableRepeatOpen"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_TBox_A_01",
+     0.0
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "7458365564915336038": [
+   {
+    "file": "Banc/DreamWorld/BossRushIntervalRoom_Static.bcett.byml.zs",
+    "level": "DreamWorld/BossRushIntervalRoom",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor",
+     "IsEnableRepeatOpen"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_TBox_A_01",
+     0.0
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "2854211238375368215": [
+   {
+    "file": "Banc/DreamWorld/BossRushIntervalRoom_Static.bcett.byml.zs",
+    "level": "DreamWorld/BossRushIntervalRoom",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor",
+     "IsEnableRepeatOpen"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_TBox_A_01",
+     0.0
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "9947351236862205040": [
+   {
+    "file": "Banc/DreamWorld/BossRushIntervalRoom_Static.bcett.byml.zs",
+    "level": "DreamWorld/BossRushIntervalRoom",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor",
+     "IsEnableRepeatOpen"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_TBox_A_01",
+     0.0
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "3688520809244472975": [
+   {
+    "file": "Banc/FireTemple/FireTemple_Dynamic.bcett.byml.zs",
+    "level": "FireTemple/FireTemple",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "12945617941305968586": [
+   {
+    "file": "Banc/FireTemple/FireTemple_Static.bcett.byml.zs",
+    "level": "FireTemple/FireTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "8757492004108970488": [
+   {
+    "file": "Banc/FireTemple/FireTemple_Static.bcett.byml.zs",
+    "level": "FireTemple/FireTemple",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "SpawnType"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_FireWall_A_03",
+     0.0
+    ],
+    "spawn_type": 1,
+    "linked": false
+   }
+  ],
+  "16785682308850448108": [
+   {
+    "file": "Banc/FireTemple/FireTemple_Static.bcett.byml.zs",
+    "level": "FireTemple/FireTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "5634724236470386190": [
+   {
+    "file": "Banc/FireTemple/FireTemple_Static.bcett.byml.zs",
+    "level": "FireTemple/FireTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "3949488292768750868": [
+   {
+    "file": "Banc/FireTemple/FireTemple_Static.bcett.byml.zs",
+    "level": "FireTemple/FireTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "10521366928524045067": [
+   {
+    "file": "Banc/FireTemple/FireTemple_Static.bcett.byml.zs",
+    "level": "FireTemple/FireTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "16713240760352215634": [
+   {
+    "file": "Banc/FireTemple/FireTemple_Static.bcett.byml.zs",
+    "level": "FireTemple/FireTemple",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "14060099092170010696": [
+   {
+    "file": "Banc/FireTemple/FireTemple_Static.bcett.byml.zs",
+    "level": "FireTemple/FireTemple",
+    "actor": "Obj_TBox_A_03",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "862385681502746018": [
+   {
+    "file": "Banc/FireTemple/FireTemple_Static.bcett.byml.zs",
+    "level": "FireTemple/FireTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "17001858340376096722": [
+   {
+    "file": "Banc/FireTemple/FireTemple_Static.bcett.byml.zs",
+    "level": "FireTemple/FireTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "15073195886628236505": [
+   {
+    "file": "Banc/FireTemple/FireTemple_Static.bcett.byml.zs",
+    "level": "FireTemple/FireTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "1705064956286753527": [
+   {
+    "file": "Banc/FireTemple/FireTemple_Static.bcett.byml.zs",
+    "level": "FireTemple/FireTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Npc_Goron_003_Adult_FireTemple",
+     0.71
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "9634924691849556346": [
+   {
+    "file": "Banc/FireTemple/FireTemple_Static.bcett.byml.zs",
+    "level": "FireTemple/FireTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "12567412825200613393": [
+   {
+    "file": "Banc/FireTemple/FireTemple_Static.bcett.byml.zs",
+    "level": "FireTemple/FireTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "12083259659219538030": [
+   {
+    "file": "Banc/FireTemple/FireTemple_Static.bcett.byml.zs",
+    "level": "FireTemple/FireTemple",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "15117164073907033527": [
+   {
+    "file": "Banc/ForestTemple/ForestTemple_Dynamic.bcett.byml.zs",
+    "level": "ForestTemple/ForestTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "9038700938965170329": [
+   {
+    "file": "Banc/ForestTemple/ForestTemple_Dynamic.bcett.byml.zs",
+    "level": "ForestTemple/ForestTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "7535137041266964235": [
+   {
+    "file": "Banc/ForestTemple/ForestTemple_Static.bcett.byml.zs",
+    "level": "ForestTemple/ForestTemple",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "6948525240950728236": [
+   {
+    "file": "Banc/ForestTemple/ForestTemple_Static.bcett.byml.zs",
+    "level": "ForestTemple/ForestTemple",
+    "actor": "Obj_TBox_A_02_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "11082303891540711688": [
+   {
+    "file": "Banc/ForestTemple/ForestTemple_Static.bcett.byml.zs",
+    "level": "ForestTemple/ForestTemple",
+    "actor": "Obj_TBox_A_02_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "14776684749746592758": [
+   {
+    "file": "Banc/ForestTemple/ForestTemple_Static.bcett.byml.zs",
+    "level": "ForestTemple/ForestTemple",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "3433400840978782007": [
+   {
+    "file": "Banc/ForestTemple/ForestTemple_Static.bcett.byml.zs",
+    "level": "ForestTemple/ForestTemple",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "6449977980406424425": [
+   {
+    "file": "Banc/ForestTemple/ForestTemple_Static.bcett.byml.zs",
+    "level": "ForestTemple/ForestTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "1171460703078800858": [
+   {
+    "file": "Banc/ForestTemple/ForestTemple_Static.bcett.byml.zs",
+    "level": "ForestTemple/ForestTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "3174893090599461927": [
+   {
+    "file": "Banc/ForestTemple/ForestTemple_Static.bcett.byml.zs",
+    "level": "ForestTemple/ForestTemple",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "5306318520835485827": [
+   {
+    "file": "Banc/ForestTemple/ForestTemple_Static.bcett.byml.zs",
+    "level": "ForestTemple/ForestTemple",
+    "actor": "Obj_TBox_A_03_NoBake",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "15920957434854338961": [
+   {
+    "file": "Banc/ForestTemple/ForestTemple_Static.bcett.byml.zs",
+    "level": "ForestTemple/ForestTemple",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "SpawnType"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": 1,
+    "linked": false
+   }
+  ],
+  "16619432200060282313": [
+   {
+    "file": "Banc/GerudoFortress/GerudoFortress_Adult_Static.bcett.byml.zs",
+    "level": "GerudoFortress/GerudoFortress_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "12343753510713797715": [
+   {
+    "file": "Banc/GerudoFortress/GerudoFortress_Adult_Static.bcett.byml.zs",
+    "level": "GerudoFortress/GerudoFortress_Adult",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "11182647876438515984": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Dynamic.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_GlassTruth_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "1883068192328530224": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Dynamic.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "4519534997122863169": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Static.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "SpawnType"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": 1,
+    "linked": false
+   }
+  ],
+  "11563468890171962383": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Static.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "SpawnType"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": 1,
+    "linked": false
+   }
+  ],
+  "3717705376223508790": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Static.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "SpawnType"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": 1,
+    "linked": false
+   }
+  ],
+  "2436665354602612279": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Static.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "SpawnType"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": 1,
+    "linked": false
+   }
+  ],
+  "5329807728555596183": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Static.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_GlassTruth_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "3750231902048775592": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Static.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "6897789835137994741": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Static.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "SpawnType"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": 1,
+    "linked": false
+   }
+  ],
+  "11754783663699171680": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Static.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "SpawnType"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": 1,
+    "linked": false
+   }
+  ],
+  "4709724720801091788": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Static.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "SpawnType"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": 1,
+    "linked": false
+   }
+  ],
+  "4372363658229299619": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Static.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_FireWall_A_01",
+     0.0
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "4320448574091221496": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Static.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "8186301369655588602": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Static.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "1941083939696166170": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Static.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "196331300747102419": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Static.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "10696620323243142689": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Static.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "9911316961118170383": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Static.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "13501407288943710656": [
+   {
+    "file": "Banc/GerudoTrainingGround/GerudoTrainingGround_Static.bcett.byml.zs",
+    "level": "GerudoTrainingGround/GerudoTrainingGround",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "SpawnType"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": 1,
+    "linked": false
+   }
+  ],
+  "6463521162691873710": [
+   {
+    "file": "Banc/GerudoValley/GerudoValley_Adult_Dynamic.bcett.byml.zs",
+    "level": "GerudoValley/GerudoValley_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/GerudoValley/GerudoValley_Child_Dynamic.bcett.byml.zs",
+    "level": "GerudoValley/GerudoValley_Child",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "17750686910716887133": [
+   {
+    "file": "Banc/GerudoValley/GerudoValley_Adult_Dynamic.bcett.byml.zs",
+    "level": "GerudoValley/GerudoValley_Adult",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_Pot_A_05",
+     0.8
+    ],
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/GerudoValley/GerudoValley_Child_Dynamic.bcett.byml.zs",
+    "level": "GerudoValley/GerudoValley_Child",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_Pot_A_05",
+     0.8
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "18413589940135955604": [
+   {
+    "file": "Banc/GerudoValley/GerudoValley_Adult_Dynamic.bcett.byml.zs",
+    "level": "GerudoValley/GerudoValley_Adult",
+    "actor": "Obj_TBox_GlassTruth_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_Pot_A_05",
+     0.8
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "13612880783193811229": [
+   {
+    "file": "Banc/GerudoValley/GerudoValley_Adult_Dynamic.bcett.byml.zs",
+    "level": "GerudoValley/GerudoValley_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_Common_Fragment_BrokenIronRock_A_02",
+     0.98
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "15856256242099990922": [
+   {
+    "file": "Banc/GerudoValley/GerudoValley_Adult_Static.bcett.byml.zs",
+    "level": "GerudoValley/GerudoValley_Adult",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/GerudoValley/GerudoValley_Child_Static.bcett.byml.zs",
+    "level": "GerudoValley/GerudoValley_Child",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "6205043616869463865": [
+   {
+    "file": "Banc/GerudoValley/GerudoValley_Child_Dynamic.bcett.byml.zs",
+    "level": "GerudoValley/GerudoValley_Child",
+    "actor": "Obj_TBox_GlassTruth_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_Pot_A_05",
+     0.8
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "4402942101476009858": [
+   {
+    "file": "Banc/GoronCity/GoronCity_Adult_Dynamic.bcett.byml.zs",
+    "level": "GoronCity/GoronCity_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/GoronCity/GoronCity_Child_Dynamic.bcett.byml.zs",
+    "level": "GoronCity/GoronCity_Child",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "1176975953041865014": [
+   {
+    "file": "Banc/GoronCity/GoronCity_Adult_Dynamic.bcett.byml.zs",
+    "level": "GoronCity/GoronCity_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/GoronCity/GoronCity_Child_Dynamic.bcett.byml.zs",
+    "level": "GoronCity/GoronCity_Child",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "14647422914070455120": [
+   {
+    "file": "Banc/GoronCity/GoronCity_Adult_Dynamic.bcett.byml.zs",
+    "level": "GoronCity/GoronCity_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/GoronCity/GoronCity_Child_Dynamic.bcett.byml.zs",
+    "level": "GoronCity/GoronCity_Child",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "3870071239709713434": [
+   {
+    "file": "Banc/GoronCity/GoronCity_Adult_Dynamic.bcett.byml.zs",
+    "level": "GoronCity/GoronCity_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/GoronCity/GoronCity_Child_Dynamic.bcett.byml.zs",
+    "level": "GoronCity/GoronCity_Child",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "9159710900681116662": [
+   {
+    "file": "Banc/GoronCity/GoronCity_Adult_Static.bcett.byml.zs",
+    "level": "GoronCity/GoronCity_Adult",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/GoronCity/GoronCity_Child_Static.bcett.byml.zs",
+    "level": "GoronCity/GoronCity_Child",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "10944569637726152230": [
+   {
+    "file": "Banc/GoronCity/GoronCity_Adult_Static.bcett.byml.zs",
+    "level": "GoronCity/GoronCity_Adult",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/GoronCity/GoronCity_Child_Static.bcett.byml.zs",
+    "level": "GoronCity/GoronCity_Child",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "9622128545943056087": [
+   {
+    "file": "Banc/Graveyard/Graveyard_Adult_Static.bcett.byml.zs",
+    "level": "Graveyard/Graveyard_Adult",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/Graveyard/Graveyard_Child_Static.bcett.byml.zs",
+    "level": "Graveyard/Graveyard_Child",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "16041366920820397198": [
+   {
+    "file": "Banc/Graveyard/Graveyard_Adult_Static.bcett.byml.zs",
+    "level": "Graveyard/Graveyard_Adult",
+    "actor": "Obj_TBox_A_02_NoBake",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_TBox_A_02_NoBake",
+     0.0
+    ],
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "5534919361313859554": [
+   {
+    "file": "Banc/Graveyard/Graveyard_Adult_Static.bcett.byml.zs",
+    "level": "Graveyard/Graveyard_Adult",
+    "actor": "Obj_TBox_A_02_NoBake",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_TBox_A_02_NoBake",
+     0.0
+    ],
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "234006393181394602": [
+   {
+    "file": "Banc/Graveyard/Graveyard_Adult_Static.bcett.byml.zs",
+    "level": "Graveyard/Graveyard_Adult",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_TBox_A_01_NoBake",
+     0.0
+    ],
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "4322670163630771947": [
+   {
+    "file": "Banc/Graveyard/Graveyard_Adult_Static.bcett.byml.zs",
+    "level": "Graveyard/Graveyard_Adult",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_TBox_A_01_NoBake",
+     0.0
+    ],
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "8825521833684392638": [
+   {
+    "file": "Banc/HountedWasteland/HountedWasteland_Adult_Static.bcett.byml.zs",
+    "level": "HountedWasteland/HountedWasteland_Adult",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor",
+     "SpawnType"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": 1,
+    "linked": false
+   },
+   {
+    "file": "Banc/HountedWasteland/HountedWasteland_Child_Static.bcett.byml.zs",
+    "level": "HountedWasteland/HountedWasteland_Child",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor",
+     "SpawnType"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": 1,
+    "linked": false
+   }
+  ],
+  "17445672702269453589": [
+   {
+    "file": "Banc/HyruleField/HyruleField_Adult_Dynamic.bcett.byml.zs",
+    "level": "HyruleField/HyruleField_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/HyruleField/HyruleField_Child_Dynamic.bcett.byml.zs",
+    "level": "HyruleField/HyruleField_Child",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "9891111455604007674": [
+   {
+    "file": "Banc/HyruleField/HyruleField_Adult_Dynamic.bcett.byml.zs",
+    "level": "HyruleField/HyruleField_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "1163740567397714729": [
+   {
+    "file": "Banc/HyruleField/HyruleField_Adult_Dynamic.bcett.byml.zs",
+    "level": "HyruleField/HyruleField_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "17023457248274633121": [
+   {
+    "file": "Banc/HyruleField/HyruleField_Adult_Dynamic.bcett.byml.zs",
+    "level": "HyruleField/HyruleField_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "5755485285664292988": [
+   {
+    "file": "Banc/HyruleField/HyruleField_Adult_Static.bcett.byml.zs",
+    "level": "HyruleField/HyruleField_Adult",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/HyruleField/HyruleField_Child_Static.bcett.byml.zs",
+    "level": "HyruleField/HyruleField_Child",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "6900843020594897860": [
+   {
+    "file": "Banc/HyruleField/HyruleField_Adult_Static.bcett.byml.zs",
+    "level": "HyruleField/HyruleField_Adult",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/HyruleField/HyruleField_Child_Static.bcett.byml.zs",
+    "level": "HyruleField/HyruleField_Child",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "4128092231168513176": [
+   {
+    "file": "Banc/IceCavern/IceCavern_Dynamic.bcett.byml.zs",
+    "level": "IceCavern/IceCavern",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "11498802739257120175": [
+   {
+    "file": "Banc/IceCavern/IceCavern_Static.bcett.byml.zs",
+    "level": "IceCavern/IceCavern",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_RedIce_A_01",
+     0.19
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "13542013937093159888": [
+   {
+    "file": "Banc/IceCavern/IceCavern_Static.bcett.byml.zs",
+    "level": "IceCavern/IceCavern",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "6859289214373847284": [
+   {
+    "file": "Banc/IceCavern/IceCavern_Static.bcett.byml.zs",
+    "level": "IceCavern/IceCavern",
+    "actor": "Obj_TBox_A_02_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_IceCave_TBoxPedestal_A_01",
+     0.0
+    ],
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "18277713685010400796": [
+   {
+    "file": "Banc/InsideGanonCastle/InsideGanonCastle_Dynamic.bcett.byml.zs",
+    "level": "InsideGanonCastle/InsideGanonCastle",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "14404733996390762670": [
+   {
+    "file": "Banc/InsideGanonCastle/InsideGanonCastle_Dynamic.bcett.byml.zs",
+    "level": "InsideGanonCastle/InsideGanonCastle",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "1029712040059298120": [
+   {
+    "file": "Banc/InsideGanonCastle/InsideGanonCastle_Dynamic.bcett.byml.zs",
+    "level": "InsideGanonCastle/InsideGanonCastle",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "14046623154429024571": [
+   {
+    "file": "Banc/InsideGanonCastle/InsideGanonCastle_Dynamic.bcett.byml.zs",
+    "level": "InsideGanonCastle/InsideGanonCastle",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "7461796063704896255": [
+   {
+    "file": "Banc/InsideGanonCastle/InsideGanonCastle_Dynamic.bcett.byml.zs",
+    "level": "InsideGanonCastle/InsideGanonCastle",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "15320975652699461295": [
+   {
+    "file": "Banc/InsideGanonCastle/InsideGanonCastle_Dynamic.bcett.byml.zs",
+    "level": "InsideGanonCastle/InsideGanonCastle",
+    "actor": "Obj_TBox_GlassTruth_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "17657623307936361670": [
+   {
+    "file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+    "level": "InsideGanonCastle/InsideGanonCastle",
+    "actor": "Obj_TBox_A_02_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "16913531450403950487": [
+   {
+    "file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+    "level": "InsideGanonCastle/InsideGanonCastle",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "14962432460641118089": [
+   {
+    "file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+    "level": "InsideGanonCastle/InsideGanonCastle",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "4733634471038136588": [
+   {
+    "file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+    "level": "InsideGanonCastle/InsideGanonCastle",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "7899179288432849355": [
+   {
+    "file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+    "level": "InsideGanonCastle/InsideGanonCastle",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "17092385671602176550": [
+   {
+    "file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+    "level": "InsideGanonCastle/InsideGanonCastle",
+    "actor": "Obj_TBox_A_03_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "5527401621172639818": [
+   {
+    "file": "Banc/InsideJabuJabuBelly/InsideJabuJabuBelly_Static.bcett.byml.zs",
+    "level": "InsideJabuJabuBelly/InsideJabuJabuBelly",
+    "actor": "Obj_TBox_A_02_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "3510516276638146208": [
+   {
+    "file": "Banc/InsideJabuJabuBelly/InsideJabuJabuBelly_Static.bcett.byml.zs",
+    "level": "InsideJabuJabuBelly/InsideJabuJabuBelly",
+    "actor": "Obj_TBox_A_02_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "3609242017501283521": [
+   {
+    "file": "Banc/InsideJabuJabuBelly/InsideJabuJabuBelly_Static.bcett.byml.zs",
+    "level": "InsideJabuJabuBelly/InsideJabuJabuBelly",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "14933854942830098290": [
+   {
+    "file": "Banc/InsideJabuJabuBelly/InsideJabuJabuBelly_Static.bcett.byml.zs",
+    "level": "InsideJabuJabuBelly/InsideJabuJabuBelly",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "11368028582977069031": [
+   {
+    "file": "Banc/InsideTheDekuTree/InsideTheDekuTree_Dynamic.bcett.byml.zs",
+    "level": "InsideTheDekuTree/InsideTheDekuTree",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "12889104996486369065": [
+   {
+    "file": "Banc/InsideTheDekuTree/InsideTheDekuTree_Dynamic.bcett.byml.zs",
+    "level": "InsideTheDekuTree/InsideTheDekuTree",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "9284193025315608699": [
+   {
+    "file": "Banc/InsideTheDekuTree/InsideTheDekuTree_Static.bcett.byml.zs",
+    "level": "InsideTheDekuTree/InsideTheDekuTree",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "8579518566955184384": [
+   {
+    "file": "Banc/InsideTheDekuTree/InsideTheDekuTree_Static.bcett.byml.zs",
+    "level": "InsideTheDekuTree/InsideTheDekuTree",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "13027331340815880287": [
+   {
+    "file": "Banc/InsideTheDekuTree/InsideTheDekuTree_Static.bcett.byml.zs",
+    "level": "InsideTheDekuTree/InsideTheDekuTree",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "821372075822700622": [
+   {
+    "file": "Banc/InsideTheDekuTree/InsideTheDekuTree_Static.bcett.byml.zs",
+    "level": "InsideTheDekuTree/InsideTheDekuTree",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "12902291359202819102": [
+   {
+    "file": "Banc/KakarikoVillage/KakarikoVillage_Adult_Alternative_Dynamic.bcett.byml.zs",
+    "level": "KakarikoVillage/KakarikoVillage_Adult_Alternative",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/KakarikoVillage/KakarikoVillage_Adult_Dynamic.bcett.byml.zs",
+    "level": "KakarikoVillage/KakarikoVillage_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/KakarikoVillage/KakarikoVillage_Child_Dynamic.bcett.byml.zs",
+    "level": "KakarikoVillage/KakarikoVillage_Child",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "13080955777249750889": [
+   {
+    "file": "Banc/KakarikoVillage/KakarikoVillage_Adult_Alternative_Dynamic.bcett.byml.zs",
+    "level": "KakarikoVillage/KakarikoVillage_Adult_Alternative",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "11929552275106311978": [
+   {
+    "file": "Banc/KakarikoVillage/KakarikoVillage_Adult_Dynamic.bcett.byml.zs",
+    "level": "KakarikoVillage/KakarikoVillage_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "4349272251343787229": [
+   {
+    "file": "Banc/KokiriForest/KokiriForest_Adult_Dynamic.bcett.byml.zs",
+    "level": "KokiriForest/KokiriForest_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/KokiriForest/KokiriForest_Child_Dynamic.bcett.byml.zs",
+    "level": "KokiriForest/KokiriForest_Child",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "10831981390482426294": [
+   {
+    "file": "Banc/KokiriForest/KokiriForest_Adult_Dynamic.bcett.byml.zs",
+    "level": "KokiriForest/KokiriForest_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/KokiriForest/KokiriForest_Child_Dynamic.bcett.byml.zs",
+    "level": "KokiriForest/KokiriForest_Child",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "4555665598794293658": [
+   {
+    "file": "Banc/KokiriForest/KokiriForest_Adult_Dynamic.bcett.byml.zs",
+    "level": "KokiriForest/KokiriForest_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/KokiriForest/KokiriForest_Child_Dynamic.bcett.byml.zs",
+    "level": "KokiriForest/KokiriForest_Child",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "9725242744547055868": [
+   {
+    "file": "Banc/KokiriForest/KokiriForest_Adult_Dynamic.bcett.byml.zs",
+    "level": "KokiriForest/KokiriForest_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/KokiriForest/KokiriForest_Child_Dynamic.bcett.byml.zs",
+    "level": "KokiriForest/KokiriForest_Child",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "12786193094758345086": [
+   {
+    "file": "Banc/KokiriForest/KokiriForest_Adult_Dynamic.bcett.byml.zs",
+    "level": "KokiriForest/KokiriForest_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/KokiriForest/KokiriForest_Child_Dynamic.bcett.byml.zs",
+    "level": "KokiriForest/KokiriForest_Child",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "16757992849254467386": [
+   {
+    "file": "Banc/KokiriForest/KokiriForest_Adult_Dynamic.bcett.byml.zs",
+    "level": "KokiriForest/KokiriForest_Adult",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/KokiriForest/KokiriForest_Child_Dynamic.bcett.byml.zs",
+    "level": "KokiriForest/KokiriForest_Child",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "14818888396401495482": [
+   {
+    "file": "Banc/KokiriForest/KokiriForest_Adult_Static.bcett.byml.zs",
+    "level": "KokiriForest/KokiriForest_Adult",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/KokiriForest/KokiriForest_Child_Static.bcett.byml.zs",
+    "level": "KokiriForest/KokiriForest_Child",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "17479747339356189279": [
+   {
+    "file": "Banc/LostWood/LostWood_Adult_Dynamic.bcett.byml.zs",
+    "level": "LostWood/LostWood_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/LostWood/LostWood_Child_Dynamic.bcett.byml.zs",
+    "level": "LostWood/LostWood_Child",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "1764383515296652106": [
+   {
+    "file": "Banc/SacredForestMeadow/SacredForestMeadow_Adult_Dynamic.bcett.byml.zs",
+    "level": "SacredForestMeadow/SacredForestMeadow_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/SacredForestMeadow/SacredForestMeadow_Child_Dynamic.bcett.byml.zs",
+    "level": "SacredForestMeadow/SacredForestMeadow_Child",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "7995233962349162969": [
+   {
+    "file": "Banc/SacredForestMeadow/SacredForestMeadow_Adult_Static.bcett.byml.zs",
+    "level": "SacredForestMeadow/SacredForestMeadow_Adult",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/SacredForestMeadow/SacredForestMeadow_Child_Static.bcett.byml.zs",
+    "level": "SacredForestMeadow/SacredForestMeadow_Child",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "8858270325665149688": [
+   {
+    "file": "Banc/ShadowTemple/ShadowTemple_Dynamic.bcett.byml.zs",
+    "level": "ShadowTemple/ShadowTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "12345747231768877602": [
+   {
+    "file": "Banc/ShadowTemple/ShadowTemple_Dynamic.bcett.byml.zs",
+    "level": "ShadowTemple/ShadowTemple",
+    "actor": "Obj_TBox_GlassTruth_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "9852624243105848451": [
+   {
+    "file": "Banc/ShadowTemple/ShadowTemple_Dynamic.bcett.byml.zs",
+    "level": "ShadowTemple/ShadowTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "13528903653876646082": [
+   {
+    "file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+    "level": "ShadowTemple/ShadowTemple",
+    "actor": "Obj_TBox_A_02_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "14535080241831873137": [
+   {
+    "file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+    "level": "ShadowTemple/ShadowTemple",
+    "actor": "Obj_TBox_A_02_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "1733372171176975157": [
+   {
+    "file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+    "level": "ShadowTemple/ShadowTemple",
+    "actor": "Obj_TBox_A_02_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "1111717451118505545": [
+   {
+    "file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+    "level": "ShadowTemple/ShadowTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "5781953901224064730": [
+   {
+    "file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+    "level": "ShadowTemple/ShadowTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "10344372963276519235": [
+   {
+    "file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+    "level": "ShadowTemple/ShadowTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "3718790579351798247": [
+   {
+    "file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+    "level": "ShadowTemple/ShadowTemple",
+    "actor": "Obj_TBox_GlassTruth_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "169081039115821925": [
+   {
+    "file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+    "level": "ShadowTemple/ShadowTemple",
+    "actor": "Obj_TBox_GlassTruth_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "5681107746948738726": [
+   {
+    "file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+    "level": "ShadowTemple/ShadowTemple",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "17902550525792072472": [
+   {
+    "file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+    "level": "ShadowTemple/ShadowTemple",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "9221365632831348137": [
+   {
+    "file": "Banc/ShadowTemple/ShadowTemple_Static.bcett.byml.zs",
+    "level": "ShadowTemple/ShadowTemple",
+    "actor": "Obj_TBox_A_03",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "5703423643219134246": [
+   {
+    "file": "Banc/SpiritTemple/SpiritTemple_Static.bcett.byml.zs",
+    "level": "SpiritTemple/SpiritTemple",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "SpawnType"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": 1,
+    "linked": false
+   }
+  ],
+  "1501288453962537671": [
+   {
+    "file": "Banc/SpiritTemple/SpiritTemple_Static.bcett.byml.zs",
+    "level": "SpiritTemple/SpiritTemple",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "SpawnType"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": 1,
+    "linked": false
+   }
+  ],
+  "13852283723126411131": [
+   {
+    "file": "Banc/SpiritTemple/SpiritTemple_Static.bcett.byml.zs",
+    "level": "SpiritTemple/SpiritTemple",
+    "actor": "Obj_TBox_A_02_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "2203243501006528435": [
+   {
+    "file": "Banc/SpiritTemple/SpiritTemple_Static.bcett.byml.zs",
+    "level": "SpiritTemple/SpiritTemple",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "SpawnType"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": 1,
+    "linked": false
+   }
+  ],
+  "17407066694905911064": [
+   {
+    "file": "Banc/SpiritTemple/SpiritTemple_Static.bcett.byml.zs",
+    "level": "SpiritTemple/SpiritTemple",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "15633505270333176438": [
+   {
+    "file": "Banc/SpiritTemple/SpiritTemple_Static.bcett.byml.zs",
+    "level": "SpiritTemple/SpiritTemple",
+    "actor": "Obj_TBox_A_02_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "4277978357934400600": [
+   {
+    "file": "Banc/SpiritTemple/SpiritTemple_Static.bcett.byml.zs",
+    "level": "SpiritTemple/SpiritTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "12909857529499414969": [
+   {
+    "file": "Banc/SpiritTemple/SpiritTemple_Static.bcett.byml.zs",
+    "level": "SpiritTemple/SpiritTemple",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "SpawnType"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": 1,
+    "linked": false
+   }
+  ],
+  "14040210993541550542": [
+   {
+    "file": "Banc/SpiritTemple/SpiritTemple_Static.bcett.byml.zs",
+    "level": "SpiritTemple/SpiritTemple",
+    "actor": "Obj_TBox_GlassTruth_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "9143177002861777924": [
+   {
+    "file": "Banc/SpiritTemple/SpiritTemple_Static.bcett.byml.zs",
+    "level": "SpiritTemple/SpiritTemple",
+    "actor": "Obj_TBox_GlassTruth_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "12042193296697281461": [
+   {
+    "file": "Banc/SpiritTemple/SpiritTemple_Static.bcett.byml.zs",
+    "level": "SpiritTemple/SpiritTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "16272168033146555902": [
+   {
+    "file": "Banc/SpiritTemple/SpiritTemple_Static.bcett.byml.zs",
+    "level": "SpiritTemple/SpiritTemple",
+    "actor": "Obj_TBox_A_03",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_FireWall_A_02",
+     0.0
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "13828480906010430010": [
+   {
+    "file": "Banc/SpiritTemple/SpiritTemple_Static.bcett.byml.zs",
+    "level": "SpiritTemple/SpiritTemple",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "16384925224245172970": [
+   {
+    "file": "Banc/WaterTemple/WaterTemple_Static.bcett.byml.zs",
+    "level": "WaterTemple/WaterTemple",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "18099019250896853049": [
+   {
+    "file": "Banc/WaterTemple/WaterTemple_Static.bcett.byml.zs",
+    "level": "WaterTemple/WaterTemple",
+    "actor": "Obj_TBox_A_01_NoBake",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_WaterTemple_WaterPlane_A_01",
+     0.27
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "16490222392193949581": [
+   {
+    "file": "Banc/WaterTemple/WaterTemple_Static.bcett.byml.zs",
+    "level": "WaterTemple/WaterTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "FloorNumber",
+     "IsForceMapIconFloor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "3693930347660122883": [
+   {
+    "file": "Banc/WaterTemple/WaterTemple_Static.bcett.byml.zs",
+    "level": "WaterTemple/WaterTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "16424266294822218796": [
+   {
+    "file": "Banc/WaterTemple/WaterTemple_Static.bcett.byml.zs",
+    "level": "WaterTemple/WaterTemple",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "11682974908842171598": [
+   {
+    "file": "Banc/WaterTemple/WaterTemple_Static.bcett.byml.zs",
+    "level": "WaterTemple/WaterTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "18059711820131847165": [
+   {
+    "file": "Banc/WaterTemple/WaterTemple_Static.bcett.byml.zs",
+    "level": "WaterTemple/WaterTemple",
+    "actor": "Obj_TBox_A_02",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": true
+   }
+  ],
+  "2503861086004941173": [
+   {
+    "file": "Banc/WaterTemple/WaterTemple_Static.bcett.byml.zs",
+    "level": "WaterTemple/WaterTemple",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "10378828369334876242": [
+   {
+    "file": "Banc/WaterTemple/WaterTemple_Static.bcett.byml.zs",
+    "level": "WaterTemple/WaterTemple",
+    "actor": "Obj_TBox_A_03",
+    "dynamic": [
+     "DefaultDungeonRoomIndex",
+     "Drop__DropActor",
+     "GetEventName"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": [
+     "Obj_WaterTemple_WaterPlane_A_01",
+     0.16
+    ],
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "3130048366421939233": [
+   {
+    "file": "Banc/ZoraDomain/ZoraDomain_Child_Static.bcett.byml.zs",
+    "level": "ZoraDomain/ZoraDomain_Child",
+    "actor": "Obj_TBox_A_02_NoBake",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": true,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "15055117029957340138": [
+   {
+    "file": "Banc/ZoraFountain/ZoraFountain_Adult_Dynamic.bcett.byml.zs",
+    "level": "ZoraFountain/ZoraFountain_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ],
+  "8838426083116998768": [
+   {
+    "file": "Banc/ZoraRiver/ZoraRiver_Adult_Dynamic.bcett.byml.zs",
+    "level": "ZoraRiver/ZoraRiver_Adult",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   },
+   {
+    "file": "Banc/ZoraRiver/ZoraRiver_Child_Dynamic.bcett.byml.zs",
+    "level": "ZoraRiver/ZoraRiver_Child",
+    "actor": "Obj_TBox_A_01",
+    "dynamic": [
+     "Drop__DropActor"
+    ],
+    "accepted_by": [
+     "Obj_TBox_A_01",
+     "Obj_TBox_A_01_NoBake",
+     "Obj_TBox_A_02",
+     "Obj_TBox_A_02_NoBake",
+     "Obj_TBox_A_03",
+     "Obj_TBox_A_03_NoBake",
+     "Obj_TBox_GlassTruth_A_01"
+    ],
+    "pedestal": false,
+    "blocked_by": null,
+    "spawn_type": null,
+    "linked": false
+   }
+  ]
+ }
+}

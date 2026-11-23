@@ -1,0 +1,1895 @@
+{
+ "KokiriForest": {
+  "objects": {
+   "6226476025750490375": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "12317452644253046635": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Adult copy of the 3 hearts on top of Saria's house (child copies = KF Top of Sarias Recovery Heart 1-3, Kokiri Forest, no item); same roof spot (y=117.6); adult reaches on foot what child reaches here"
+   },
+   "1214219023609128151": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Adult copy of the 3 hearts on top of Saria's house (child copies = KF Top of Sarias Recovery Heart 1-3, Kokiri Forest, no item); same roof spot (y=117.6); adult reaches on foot what child reaches here"
+   },
+   "15227875255265438204": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Adult copy of the 3 hearts on top of Saria's house (child copies = KF Top of Sarias Recovery Heart 1-3, Kokiri Forest, no item); same roof spot (y=117.6); adult reaches on foot what child reaches here"
+   },
+   "13833126295519757344": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "11881247981246911148": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "591443488390566560": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "15770142332975255876": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "15115104996046978489": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "8686048425858269244": {
+    "region": "Kokiri Forest",
+    "rule": "is_adult and (here(can_plant_bean) or Hover_Boots)",
+    "confidence": "high",
+    "why": "Adult green rupee in the same floating ring (x 20.8-22.3, y 117, z -13..-14.5) as the 7 paired KF Bean Platform rupees; the remake ring has 8 green + 1 red, this is one of the 2 extra greens; bean-platform rule reused"
+   },
+   "10327775662812412709": {
+    "region": "Kokiri Forest",
+    "rule": "is_adult and (here(can_plant_bean) or Hover_Boots)",
+    "confidence": "high",
+    "why": "Adult green rupee in the same floating ring (x 20.8-22.3, y 117, z -13..-14.5) as the 7 paired KF Bean Platform rupees; the remake ring has 8 green + 1 red, this is one of the 2 extra greens; bean-platform rule reused"
+   },
+   "5675403228854574159": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido; the adult copy exists only once Phantom Ganon is beaten: KokiriForest_Common_Level_All_01_6aaf Obj_LiftRock_A_01_4079: Logic_Delete <- AND(Adulthood, SageOfForest_IsBefore_Step08); SageOfForest_IsBefore_Step08 is a saved Bool set false only by SageOfForest.bfevfl ForestTemple_SageOfForest_PhantomGanonDefeat (Event64), i.e. when Phantom Ganon is beaten. STOPGAP: a story-state gate on a check is not OoTR-style object shuffle; the game fix Logic 6 keeps the adult ring always present, then the rule is True again (the child copy at the same spot is always there); the game fix keeps this adult copy always present (its Logic_Delete gate is gone), as the child copy at the same spot: True (the entry-6 stopgap is gone)"
+   },
+   "13164882936498639212": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido; the adult copy exists only once Phantom Ganon is beaten: KokiriForest_Common_Level_All_01_6aaf Obj_LiftRock_A_01_ab49: Logic_Delete <- AND(Adulthood, SageOfForest_IsBefore_Step08); SageOfForest_IsBefore_Step08 is a saved Bool set false only by SageOfForest.bfevfl ForestTemple_SageOfForest_PhantomGanonDefeat (Event64), i.e. when Phantom Ganon is beaten. STOPGAP: a story-state gate on a check is not OoTR-style object shuffle; the game fix Logic 6 keeps the adult ring always present, then the rule is True again (the child copy at the same spot is always there); the game fix keeps this adult copy always present (its Logic_Delete gate is gone), as the child copy at the same spot: True (the entry-6 stopgap is gone)"
+   },
+   "5853846732169153879": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido; the adult copy exists only once Phantom Ganon is beaten: KokiriForest_Common_Level_All_01_6aaf Obj_LiftRock_A_01_e464: Logic_Delete <- AND(Adulthood, SageOfForest_IsBefore_Step08); SageOfForest_IsBefore_Step08 is a saved Bool set false only by SageOfForest.bfevfl ForestTemple_SageOfForest_PhantomGanonDefeat (Event64), i.e. when Phantom Ganon is beaten. STOPGAP: a story-state gate on a check is not OoTR-style object shuffle; the game fix Logic 6 keeps the adult ring always present, then the rule is True again (the child copy at the same spot is always there); the game fix keeps this adult copy always present (its Logic_Delete gate is gone), as the child copy at the same spot: True (the entry-6 stopgap is gone)"
+   },
+   "10656348214587939196": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido; the adult copy exists only once Phantom Ganon is beaten: KokiriForest_Common_Level_All_01_6aaf Obj_LiftRock_A_01_6b1c: Logic_Delete <- AND(Adulthood, SageOfForest_IsBefore_Step08); SageOfForest_IsBefore_Step08 is a saved Bool set false only by SageOfForest.bfevfl ForestTemple_SageOfForest_PhantomGanonDefeat (Event64), i.e. when Phantom Ganon is beaten. STOPGAP: a story-state gate on a check is not OoTR-style object shuffle; the game fix Logic 6 keeps the adult ring always present, then the rule is True again (the child copy at the same spot is always there); the game fix keeps this adult copy always present (its Logic_Delete gate is gone), as the child copy at the same spot: True (the entry-6 stopgap is gone)"
+   },
+   "6890402875059286502": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in the village: behind the shop (z=-35), on the path up to the Lost Woods gate (-37,116,-40) or by the Kokiri at (-4,110.7,7); all x<26 (Mido's gate at x=25.8), none near the LW bridge (x=-114)"
+   },
+   "8931631613049749371": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido; the adult copy exists only once Phantom Ganon is beaten: KokiriForest_Common_Level_All_01_6aaf Obj_LiftRock_A_01_79ff: Logic_Delete <- AND(Adulthood, SageOfForest_IsBefore_Step08); SageOfForest_IsBefore_Step08 is a saved Bool set false only by SageOfForest.bfevfl ForestTemple_SageOfForest_PhantomGanonDefeat (Event64), i.e. when Phantom Ganon is beaten. STOPGAP: a story-state gate on a check is not OoTR-style object shuffle; the game fix Logic 6 keeps the adult ring always present, then the rule is True again (the child copy at the same spot is always there); the game fix keeps this adult copy always present (its Logic_Delete gate is gone), as the child copy at the same spot: True (the entry-6 stopgap is gone)"
+   },
+   "15388836867476865988": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido; the adult copy exists only once Phantom Ganon is beaten: KokiriForest_Common_Level_All_01_6aaf Obj_LiftRock_A_01_4151: Logic_Delete <- AND(Adulthood, SageOfForest_IsBefore_Step08); SageOfForest_IsBefore_Step08 is a saved Bool set false only by SageOfForest.bfevfl ForestTemple_SageOfForest_PhantomGanonDefeat (Event64), i.e. when Phantom Ganon is beaten. STOPGAP: a story-state gate on a check is not OoTR-style object shuffle; the game fix Logic 6 keeps the adult ring always present, then the rule is True again (the child copy at the same spot is always there); the game fix keeps this adult copy always present (its Logic_Delete gate is gone), as the child copy at the same spot: True (the entry-6 stopgap is gone)"
+   },
+   "4350448546553475237": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in the village: behind the shop (z=-35), on the path up to the Lost Woods gate (-37,116,-40) or by the Kokiri at (-4,110.7,7); all x<26 (Mido's gate at x=25.8), none near the LW bridge (x=-114)"
+   },
+   "802407974539353270": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido; the adult copy exists only once Phantom Ganon is beaten: KokiriForest_Common_Level_All_01_6aaf Obj_LiftRock_A_01_f107: Logic_Delete <- AND(Adulthood, SageOfForest_IsBefore_Step08); SageOfForest_IsBefore_Step08 is a saved Bool set false only by SageOfForest.bfevfl ForestTemple_SageOfForest_PhantomGanonDefeat (Event64), i.e. when Phantom Ganon is beaten. STOPGAP: a story-state gate on a check is not OoTR-style object shuffle; the game fix Logic 6 keeps the adult ring always present, then the rule is True again (the child copy at the same spot is always there); the game fix keeps this adult copy always present (its Logic_Delete gate is gone), as the child copy at the same spot: True (the entry-6 stopgap is gone)"
+   },
+   "2657789777104100407": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido; the adult copy exists only once Phantom Ganon is beaten: KokiriForest_Common_Level_All_01_6aaf Obj_LiftRock_A_01_b129: Logic_Delete <- AND(Adulthood, SageOfForest_IsBefore_Step08); SageOfForest_IsBefore_Step08 is a saved Bool set false only by SageOfForest.bfevfl ForestTemple_SageOfForest_PhantomGanonDefeat (Event64), i.e. when Phantom Ganon is beaten. STOPGAP: a story-state gate on a check is not OoTR-style object shuffle; the game fix Logic 6 keeps the adult ring always present, then the rule is True again (the child copy at the same spot is always there); the game fix keeps this adult copy always present (its Logic_Delete gate is gone), as the child copy at the same spot: True (the entry-6 stopgap is gone)"
+   },
+   "13009491718918701905": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in the village: behind the shop (z=-35), on the path up to the Lost Woods gate (-37,116,-40) or by the Kokiri at (-4,110.7,7); all x<26 (Mido's gate at x=25.8), none near the LW bridge (x=-114)"
+   },
+   "6674340586234083423": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in the village: behind the shop (z=-35), on the path up to the Lost Woods gate (-37,116,-40) or by the Kokiri at (-4,110.7,7); all x<26 (Mido's gate at x=25.8), none near the LW bridge (x=-114)"
+   },
+   "15188778840589944684": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in the village: behind the shop (z=-35), on the path up to the Lost Woods gate (-37,116,-40) or by the Kokiri at (-4,110.7,7); all x<26 (Mido's gate at x=25.8), none near the LW bridge (x=-114)"
+   },
+   "12216364986168177616": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in the village: behind the shop (z=-35), on the path up to the Lost Woods gate (-37,116,-40) or by the Kokiri at (-4,110.7,7); all x<26 (Mido's gate at x=25.8), none near the LW bridge (x=-114)"
+   },
+   "6438251486637186433": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in the village: behind the shop (z=-35), on the path up to the Lost Woods gate (-37,116,-40) or by the Kokiri at (-4,110.7,7); all x<26 (Mido's gate at x=25.8), none near the LW bridge (x=-114)"
+   },
+   "5648900055318470269": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in the village: behind the shop (z=-35), on the path up to the Lost Woods gate (-37,116,-40) or by the Kokiri at (-4,110.7,7); all x<26 (Mido's gate at x=25.8), none near the LW bridge (x=-114)"
+   },
+   "5190570933151534141": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in the village: behind the shop (z=-35), on the path up to the Lost Woods gate (-37,116,-40) or by the Kokiri at (-4,110.7,7); all x<26 (Mido's gate at x=25.8), none near the LW bridge (x=-114)"
+   },
+   "4738397009648900238": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido; the adult copy exists only BEFORE Phantom Ganon is beaten: KokiriForest_Common_Level_All_01_6aaf Obj_LiftRock_A_01_b2db: Logic_Create <- AND(Adulthood, SageOfForest_IsBefore_Step08); SageOfForest_IsBefore_Step08 is a saved Bool set false only by SageOfForest.bfevfl ForestTemple_SageOfForest_PhantomGanonDefeat (Event64), i.e. when Phantom Ganon is beaten. Missable, and logic can't say 'before': False (junk only) as a STOPGAP until the game fix; the game fix makes this one (_b2db) an adult's always: its Logic_Create reads Adulthood alone; its collision hull is 0.19 m from _b129 and 0.40 m from _f107, so it stays on its own spot. True (the entry-6 stopgap is gone; its child copy is never created, as before)"
+   },
+   "5556420768102851394": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "9810178254940844962": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "9296345993092817586": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "7313645087345190627": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "14765439090025621259": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "15339892171811522074": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "2056926167552020049": {
+    "region": "Kokiri Forest",
+    "rule": "can_dive",
+    "confidence": "medium",
+    "why": "Child blue rupee in the village stream about 2.1-2.2 units under the water surface (Land_Kokiri_WaterPlane_A_01/A_02 at y=109.2-109.7, ripple effects, octorok nearby); dive required (stricter than OoTR's is_child surface rupees)"
+   },
+   "4490005694725260163": {
+    "region": "Kokiri Forest",
+    "rule": "can_dive",
+    "confidence": "medium",
+    "why": "Child blue rupee in the village stream about 2.1-2.2 units under the water surface (Land_Kokiri_WaterPlane_A_01/A_02 at y=109.2-109.7, ripple effects, octorok nearby); dive required (stricter than OoTR's is_child surface rupees)"
+   },
+   "1564209214895161222": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Child rupee in the village west of the shop (stream bank, at or above the water surface, or on Fado's raised platform Land_Kokiri_Cliff_G_05 beside Npc_Kokiri_Fado_Child); x<26 = village side of Mido (25.5,0.9); paired with an OoTR KF freestanding of the same rule (is_child)"
+   },
+   "6079532033038180376": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Child rupee in the village west of the shop (stream bank, at or above the water surface, or on Fado's raised platform Land_Kokiri_Cliff_G_05 beside Npc_Kokiri_Fado_Child); x<26 = village side of Mido (25.5,0.9); paired with an OoTR KF freestanding of the same rule (is_child)"
+   },
+   "11219803099333988363": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Child rupee in the village west of the shop (stream bank, at or above the water surface, or on Fado's raised platform Land_Kokiri_Cliff_G_05 beside Npc_Kokiri_Fado_Child); x<26 = village side of Mido (25.5,0.9); paired with an OoTR KF freestanding of the same rule (is_child)"
+   },
+   "14381003020707329822": {
+    "region": "KF Kokiri Shop",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Inside the Kokiri shop (next to Shop_DekuStick / Shop_Board actors and Land_Kokiri_House_Inside_D_*, shopkeeper at (-2.1,-25.3)), floor level at the back of the shop. OoTR's KF Shop Wonderitem (rule True) is in the same room; wonder items are handled globally, this may be its remake form"
+   },
+   "13321954940214063371": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "16857565298886773615": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "13002777795600434992": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "17186151219195818834": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "2882450735448834595": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in the village: behind the shop (z=-35), on the path up to the Lost Woods gate (-37,116,-40) or by the Kokiri at (-4,110.7,7); all x<26 (Mido's gate at x=25.8), none near the LW bridge (x=-114)"
+   },
+   "6429280567576879719": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "4182932136190668163": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "1640513490125741145": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in the village: behind the shop (z=-35), on the path up to the Lost Woods gate (-37,116,-40) or by the Kokiri at (-4,110.7,7); all x<26 (Mido's gate at x=25.8), none near the LW bridge (x=-114)"
+   },
+   "7243630621233515413": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "8795160036094865435": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido"
+   },
+   "11400416564850751157": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in the village: behind the shop (z=-35), on the path up to the Lost Woods gate (-37,116,-40) or by the Kokiri at (-4,110.7,7); all x<26 (Mido's gate at x=25.8), none near the LW bridge (x=-114)"
+   },
+   "3535150139081827459": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in the village: behind the shop (z=-35), on the path up to the Lost Woods gate (-37,116,-40) or by the Kokiri at (-4,110.7,7); all x<26 (Mido's gate at x=25.8), none near the LW bridge (x=-114)"
+   },
+   "10951624736530275630": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in the village: behind the shop (z=-35), on the path up to the Lost Woods gate (-37,116,-40) or by the Kokiri at (-4,110.7,7); all x<26 (Mido's gate at x=25.8), none near the LW bridge (x=-114)"
+   },
+   "11271184709488608562": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in the village: behind the shop (z=-35), on the path up to the Lost Woods gate (-37,116,-40) or by the Kokiri at (-4,110.7,7); all x<26 (Mido's gate at x=25.8), none near the LW bridge (x=-114)"
+   },
+   "1106450200910772173": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in the village: behind the shop (z=-35), on the path up to the Lost Woods gate (-37,116,-40) or by the Kokiri at (-4,110.7,7); all x<26 (Mido's gate at x=25.8), none near the LW bridge (x=-114)"
+   },
+   "13297194429826823773": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in the village: behind the shop (z=-35), on the path up to the Lost Woods gate (-37,116,-40) or by the Kokiri at (-4,110.7,7); all x<26 (Mido's gate at x=25.8), none near the LW bridge (x=-114)"
+   },
+   "4460159811813955992": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in the village: behind the shop (z=-35), on the path up to the Lost Woods gate (-37,116,-40) or by the Kokiri at (-4,110.7,7); all x<26 (Mido's gate at x=25.8), none near the LW bridge (x=-114)"
+   },
+   "2661037609348760452": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in the village: rock garden in front of Mido's house door (-51,-33.8), west of Mido's house, east of the Know-It-All house or on the slope behind Saria's house; all on the village side of Mido; exists only once Queen Gohma is beaten: KokiriForest_Child_Level_All_02_6960 Obj_LiftRock_A_01_0de2: Logic_Create <- Get_StoneOfForest_IsCompleted_Exp, Logic_Delete <- NOT it; Get_StoneOfForest goes Complete in Dm_SY_BancChange_EscapeDungeon Warp_Kokiri (the blue warp), and tools/rando/world_settings.py ties the stone to 'Defeat Queen Gohma'. STOPGAP: the game fix makes it always present; then True; the game fix always creates it (KokiriForest_Child_Level_All_02_6960 _0de2): True (the entry-6 stopgap is gone)"
+   }
+  },
+  "pairs": [
+   {
+    "ootr": [
+     "KF Behind Midos Blue Rupee"
+    ],
+    "hashes": [
+     "1564209214895161222"
+    ],
+    "why": "Kokiri Forest child blue rupee on Fado's raised platform; same kind, region and rule (is_child); the remake moved KF's loose rupees, so the OoT spot detail differs"
+   },
+   {
+    "ootr": [
+     "KF End of Bridge Blue Rupee"
+    ],
+    "hashes": [
+     "6079532033038180376"
+    ],
+    "why": "Kokiri Forest child blue rupee on the stream bank west of the shop, above the water; same kind, region and rule (is_child)"
+   },
+   {
+    "ootr": [
+     "KF Grass Near Ramp Green Rupee 1"
+    ],
+    "hashes": [
+     "11219803099333988363"
+    ],
+    "why": "Kokiri Forest child green rupee on the stream bank west of the shop (0.6 above the water); same kind, region and rule (is_child)"
+   }
+  ],
+  "absent": {
+   "KF Grass Near Ramp Green Rupee 2": "KF child files hold 6 unpaired loose rupees: 3 paired above, 2 in the stream under water (need a dive, so OoTR's is_child rule would be too loose) and 1 inside the shop (other region); none left for this location",
+   "KF Grass Near Midos Green Rupee 1": "KF child files hold 6 unpaired loose rupees: 3 paired above, 2 in the stream under water (need a dive, so OoTR's is_child rule would be too loose) and 1 inside the shop (other region); none left for this location",
+   "KF Grass Near Midos Green Rupee 2": "KF child files hold 6 unpaired loose rupees: 3 paired above, 2 in the stream under water (need a dive, so OoTR's is_child rule would be too loose) and 1 inside the shop (other region); none left for this location",
+   "KF Links House Pot": "KF level files hold 8 Obj_Pot_A_01 (Know-It-All and Twins houses, child + adult copies, all paired); Link's house (Land_Kokiri_House_Outside_A_00 (-44.7,15.6)) has none",
+   "KF Storms Grotto Beehive 1": "no Obj_Kokiri_Beehive_A_01 in any level file of this area; all 21 remake beehives sit in one Kakariko grotto room (the bomb hole near the House of Skulltula)",
+   "KF Storms Grotto Beehive 2": "no Obj_Kokiri_Beehive_A_01 in any level file of this area; all 21 remake beehives sit in one Kakariko grotto room (the bomb hole near the House of Skulltula)"
+  },
+  "excluded": {
+   "6257885313885825332": "Obj_LiftRock_A_02: no GameData flag and the actor does not declare Drop__DropActor (drop_objects.csv gmd_flag=no_flag), so it cannot hold a one-time item; an Obj_LiftRock_A_01 sits at the same spot and is assigned",
+   "4164292104786619976": "Obj_LiftRock_A_01 (was Kokiri Forest Rock 8), never exists: the child layout's copy of an adult-only rock. KokiriForest_Common_Level_All_01_6aaf Obj_LiftRock_A_01_39ec: Logic_Create <- AND(Adulthood, SageOfForest_IsBefore_Step08), and the child layout (KokiriForest_Child_Static) is only loaded for the child, so it is never created and can never hold an item",
+   "13219695470225186387": "Obj_LiftRock_A_01 (was Kokiri Forest Rock 13), never exists: the child layout's copy of an adult-only rock. KokiriForest_Common_Level_All_01_6aaf Obj_LiftRock_A_01_f726: Logic_Create <- AND(Adulthood, SageOfForest_IsBefore_Step08), and the child layout (KokiriForest_Child_Static) is only loaded for the child, so it is never created and can never hold an item",
+   "16780156705177292663": "Obj_LiftRock_A_01 (was Kokiri Forest Rock 21), never exists: the child layout's copy of an adult-only rock. KokiriForest_Common_Level_All_01_6aaf Obj_LiftRock_A_01_1345: Logic_Create <- AND(Adulthood, SageOfForest_IsBefore_Step08), and the child layout (KokiriForest_Child_Static) is only loaded for the child, so it is never created and can never hold an item",
+   "12045642716728132811": "Obj_LiftRock_A_01 (was Kokiri Forest Rock 26), never exists: the child layout's copy of an adult-only rock. KokiriForest_Common_Level_All_01_6aaf Obj_LiftRock_A_01_b2db: Logic_Create <- AND(Adulthood, SageOfForest_IsBefore_Step08), and the child layout (KokiriForest_Child_Static) is only loaded for the child, so it is never created and can never hold an item",
+   "15732862253800965646": "Obj_LiftRock_A_01 (was Kokiri Forest Rock 7), never created any more: the game fix stops KokiriForest_Common_Level_All_01_6aaf Obj_LiftRock_A_01_39ec from appearing (it stood inside one of the ring's 8 rocks (collision hulls), in the adult layout before Phantom Ganon only); the adult ring is the child's 8 rocks plus Rock 27, always. Never created, so never a check (as its child copy)",
+   "5312950394209176374": "Obj_LiftRock_A_01 (was Kokiri Forest Rock 14), never created any more: the game fix stops KokiriForest_Common_Level_All_01_6aaf Obj_LiftRock_A_01_f726 from appearing (it stood inside one of the ring's 8 rocks (collision hulls), in the adult layout before Phantom Ganon only); the adult ring is the child's 8 rocks plus Rock 27, always. Never created, so never a check (as its child copy)",
+   "13817169663978116369": "Obj_LiftRock_A_01 (was Kokiri Forest Rock 20), never created any more: the game fix stops KokiriForest_Common_Level_All_01_6aaf Obj_LiftRock_A_01_1345 from appearing (it stood inside one of the ring's 8 rocks (collision hulls), in the adult layout before Phantom Ganon only); the adult ring is the child's 8 rocks plus Rock 27, always. Never created, so never a check (as its child copy)"
+  }
+ },
+ "LostWood": {
+  "objects": {
+   "9751605155924795623": {
+    "region": "LW Beyond Mido",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Boulder with nothing under it in clearing (48,-72), on the path past adult Mido (47.9,-28.8, blocking clearing (48,-24)'s north mouth) toward the SFM exit"
+   },
+   "12960902182455217518": {
+    "region": "Lost Woods",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Boulder covering grotto hole Land_HidingHole_Base_F_01 (27.8,-28.2) in clearing (24,-24) by the Goron City shortcut exit (24,110,-35.7); OoT's LW Near Shortcuts Grotto is under a boulder in front of the GC shortcut; this clearing is before adult Mido (47.9,-28.8)"
+   },
+   "105365569697370932": {
+    "region": "LW Near Shortcuts Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass (drops Animal_Insect) in the grotto room at y=82.9 (EftLoc_HideHole_ID302), about 15 units from the landing point under hole (27.8,-28.2) (HidingHole_Entry_01 -> DestinationAnchor (27.8,86.3,-28.3)); that hole is the boulder grotto in front of the GC shortcut = LW Near Shortcuts Grotto"
+   },
+   "16178671185680094683": {
+    "region": "LW Near Shortcuts Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass (drops Animal_Insect) in the grotto room at y=82.9 (EftLoc_HideHole_ID302), about 15 units from the landing point under hole (27.8,-28.2) (HidingHole_Entry_01 -> DestinationAnchor (27.8,86.3,-28.3)); that hole is the boulder grotto in front of the GC shortcut = LW Near Shortcuts Grotto"
+   },
+   "14799938113178843638": {
+    "region": "LW Near Shortcuts Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass (drops Animal_Insect) in the grotto room at y=82.9 (EftLoc_HideHole_ID302), about 15 units from the landing point under hole (27.8,-28.2) (HidingHole_Entry_01 -> DestinationAnchor (27.8,86.3,-28.3)); that hole is the boulder grotto in front of the GC shortcut = LW Near Shortcuts Grotto"
+   },
+   "2198102825223763053": {
+    "region": "LW Near Shortcuts Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass (drops Animal_Insect) in the grotto room at y=82.9 (EftLoc_HideHole_ID302), about 15 units from the landing point under hole (27.8,-28.2) (HidingHole_Entry_01 -> DestinationAnchor (27.8,86.3,-28.3)); that hole is the boulder grotto in front of the GC shortcut = LW Near Shortcuts Grotto"
+   },
+   "700813349264257115": {
+    "region": "LW Near Shortcuts Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass (drops Animal_Insect) in the grotto room at y=82.9 (EftLoc_HideHole_ID302), about 15 units from the landing point under hole (27.8,-28.2) (HidingHole_Entry_01 -> DestinationAnchor (27.8,86.3,-28.3)); that hole is the boulder grotto in front of the GC shortcut = LW Near Shortcuts Grotto"
+   },
+   "17993712008759335925": {
+    "region": "LW Near Shortcuts Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass (drops Animal_Insect) in the grotto room at y=82.9 (EftLoc_HideHole_ID302), about 15 units from the landing point under hole (27.8,-28.2) (HidingHole_Entry_01 -> DestinationAnchor (27.8,86.3,-28.3)); that hole is the boulder grotto in front of the GC shortcut = LW Near Shortcuts Grotto"
+   },
+   "14353012063098347569": {
+    "region": "LW Near Shortcuts Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass (drops Animal_Insect) in the grotto room at y=82.9 (EftLoc_HideHole_ID302), about 15 units from the landing point under hole (27.8,-28.2) (HidingHole_Entry_01 -> DestinationAnchor (27.8,86.3,-28.3)); that hole is the boulder grotto in front of the GC shortcut = LW Near Shortcuts Grotto"
+   },
+   "6371576460968048747": {
+    "region": "LW Near Shortcuts Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass (drops Animal_Insect) in the grotto room at y=82.9 (EftLoc_HideHole_ID302), about 15 units from the landing point under hole (27.8,-28.2) (HidingHole_Entry_01 -> DestinationAnchor (27.8,86.3,-28.3)); that hole is the boulder grotto in front of the GC shortcut = LW Near Shortcuts Grotto"
+   },
+   "16206638005430417269": {
+    "region": "LW Near Shortcuts Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass (drops Animal_Insect) in the grotto room at y=82.9 (EftLoc_HideHole_ID302), about 15 units from the landing point under hole (27.8,-28.2) (HidingHole_Entry_01 -> DestinationAnchor (27.8,86.3,-28.3)); that hole is the boulder grotto in front of the GC shortcut = LW Near Shortcuts Grotto"
+   },
+   "5207698098030997501": {
+    "region": "LW Beyond Mido",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Boulder covering grotto hole (20.5,-75.7) in clearing (24,-72) next to the SFM exit (24,-83.7); its room holds the 2 Business scrubs = LW Scrubs Grotto, entered from LW Beyond Mido"
+   },
+   "7412275398037840462": {
+    "region": "LW Near Shortcuts Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass (drops Animal_Insect) in the grotto room at y=82.9 (EftLoc_HideHole_ID302), about 15 units from the landing point under hole (27.8,-28.2) (HidingHole_Entry_01 -> DestinationAnchor (27.8,86.3,-28.3)); that hole is the boulder grotto in front of the GC shortcut = LW Near Shortcuts Grotto"
+   },
+   "4816761342260235661": {
+    "region": "LW Near Shortcuts Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass (drops Animal_Insect) in the grotto room at y=82.9 (EftLoc_HideHole_ID302), about 15 units from the landing point under hole (27.8,-28.2) (HidingHole_Entry_01 -> DestinationAnchor (27.8,86.3,-28.3)); that hole is the boulder grotto in front of the GC shortcut = LW Near Shortcuts Grotto"
+   },
+   "4453932386573032729": {
+    "region": "LW Near Shortcuts Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass (drops Animal_Insect) in the grotto room at y=82.9 (EftLoc_HideHole_ID302), about 15 units from the landing point under hole (27.8,-28.2) (HidingHole_Entry_01 -> DestinationAnchor (27.8,86.3,-28.3)); that hole is the boulder grotto in front of the GC shortcut = LW Near Shortcuts Grotto"
+   },
+   "5597448927131828918": {
+    "region": "LW Near Shortcuts Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass (drops Animal_Insect) in the grotto room at y=82.9 (EftLoc_HideHole_ID302), about 15 units from the landing point under hole (27.8,-28.2) (HidingHole_Entry_01 -> DestinationAnchor (27.8,86.3,-28.3)); that hole is the boulder grotto in front of the GC shortcut = LW Near Shortcuts Grotto"
+   },
+   "8957227260103329265": {
+    "region": "LW Near Shortcuts Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass (drops Animal_Insect) in the grotto room at y=82.9 (EftLoc_HideHole_ID302), about 15 units from the landing point under hole (27.8,-28.2) (HidingHole_Entry_01 -> DestinationAnchor (27.8,86.3,-28.3)); that hole is the boulder grotto in front of the GC shortcut = LW Near Shortcuts Grotto"
+   },
+   "5488835131617393219": {
+    "region": "LW Near Shortcuts Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass (drops Animal_Insect) in the grotto room at y=82.9 (EftLoc_HideHole_ID302), about 15 units from the landing point under hole (27.8,-28.2) (HidingHole_Entry_01 -> DestinationAnchor (27.8,86.3,-28.3)); that hole is the boulder grotto in front of the GC shortcut = LW Near Shortcuts Grotto"
+   },
+   "2822270749178751883": {
+    "region": "LW Near Shortcuts Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass (drops Animal_Insect) in the grotto room at y=82.9 (EftLoc_HideHole_ID302), about 15 units from the landing point under hole (27.8,-28.2) (HidingHole_Entry_01 -> DestinationAnchor (27.8,86.3,-28.3)); that hole is the boulder grotto in front of the GC shortcut = LW Near Shortcuts Grotto"
+   },
+   "12665247659442490400": {
+    "region": "LW Near Shortcuts Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass (drops Animal_Insect) in the grotto room at y=82.9 (EftLoc_HideHole_ID302), about 15 units from the landing point under hole (27.8,-28.2) (HidingHole_Entry_01 -> DestinationAnchor (27.8,86.3,-28.3)); that hole is the boulder grotto in front of the GC shortcut = LW Near Shortcuts Grotto"
+   },
+   "5007394544348392451": {
+    "region": "LW Near Shortcuts Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass (drops Animal_Insect) in the grotto room at y=82.9 (EftLoc_HideHole_ID302), about 15 units from the landing point under hole (27.8,-28.2) (HidingHole_Entry_01 -> DestinationAnchor (27.8,86.3,-28.3)); that hole is the boulder grotto in front of the GC shortcut = LW Near Shortcuts Grotto"
+   }
+  },
+  "pairs": [],
+  "absent": {
+   "LW Underwater Green Rupee 1": "No Obj_Rupee/Obj_Heart in any LostWood level file; the remake LW pond by the Zora's River gate (Obj_WaterPlane_A_01 (64.2,99,-25.8), Land_ZoraRiver_ConnectionGate_A_01) holds no pickups",
+   "LW Underwater Green Rupee 2": "No Obj_Rupee/Obj_Heart in any LostWood level file; the remake LW pond by the Zora's River gate (Obj_WaterPlane_A_01 (64.2,99,-25.8), Land_ZoraRiver_ConnectionGate_A_01) holds no pickups",
+   "LW Underwater Green Rupee 3": "No Obj_Rupee/Obj_Heart in any LostWood level file; the remake LW pond by the Zora's River gate (Obj_WaterPlane_A_01 (64.2,99,-25.8), Land_ZoraRiver_ConnectionGate_A_01) holds no pickups",
+   "LW Underwater Green Rupee 4": "No Obj_Rupee/Obj_Heart in any LostWood level file; the remake LW pond by the Zora's River gate (Obj_WaterPlane_A_01 (64.2,99,-25.8), Land_ZoraRiver_ConnectionGate_A_01) holds no pickups",
+   "LW Underwater Green Rupee 5": "No Obj_Rupee/Obj_Heart in any LostWood level file; the remake LW pond by the Zora's River gate (Obj_WaterPlane_A_01 (64.2,99,-25.8), Land_ZoraRiver_ConnectionGate_A_01) holds no pickups",
+   "LW Underwater Green Rupee 6": "No Obj_Rupee/Obj_Heart in any LostWood level file; the remake LW pond by the Zora's River gate (Obj_WaterPlane_A_01 (64.2,99,-25.8), Land_ZoraRiver_ConnectionGate_A_01) holds no pickups",
+   "LW Underwater Green Rupee 7": "No Obj_Rupee/Obj_Heart in any LostWood level file; the remake LW pond by the Zora's River gate (Obj_WaterPlane_A_01 (64.2,99,-25.8), Land_ZoraRiver_ConnectionGate_A_01) holds no pickups",
+   "LW Underwater Shortcut Green Rupee": "No Obj_Rupee/Obj_Heart in any LostWood level file; the remake LW pond by the Zora's River gate (Obj_WaterPlane_A_01 (64.2,99,-25.8), Land_ZoraRiver_ConnectionGate_A_01) holds no pickups",
+   "LW Under Boulder Blue Rupee": "The Beyond-Mido boulder (Obj_BrokenRock_A_01 (51.5,100,-75.5)) covers nothing and LostWood files have no rupees; the boulder itself is a new location",
+   "LW Near Shortcuts Grotto Beehive 1": "no Obj_Kokiri_Beehive_A_01 in any level file of this area; all 21 remake beehives sit in one Kakariko grotto room (the bomb hole near the House of Skulltula); the remake Near Shortcuts grotto room holds 9 grass tufts instead",
+   "LW Near Shortcuts Grotto Beehive 2": "no Obj_Kokiri_Beehive_A_01 in any level file of this area; all 21 remake beehives sit in one Kakariko grotto room (the bomb hole near the House of Skulltula); the remake Near Shortcuts grotto room holds 9 grass tufts instead",
+   "LW Scrubs Grotto Beehive": "no Obj_Kokiri_Beehive_A_01 in any level file of this area; all 21 remake beehives sit in one Kakariko grotto room (the bomb hole near the House of Skulltula); the scrubs grotto room under (20.5,-75.7) holds only the 2 Business scrubs"
+  },
+  "excluded": {}
+ },
+ "SacredForestMeadow": {
+  "objects": {
+   "1288408765345426328": {
+    "region": "Sacred Forest Meadow",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass past the gate (z<49.1): in the maze among Mad Scrubs/Moblins (z~38) or around the fairy-fountain hole (-4.2,1.9) = SFM Fairy Grotto entrance, which OoTR places in Sacred Forest Meadow"
+   },
+   "9129764610893735958": {
+    "region": "Sacred Forest Meadow",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass past the gate (z<49.1): in the maze among Mad Scrubs/Moblins (z~38) or around the fairy-fountain hole (-4.2,1.9) = SFM Fairy Grotto entrance, which OoTR places in Sacred Forest Meadow"
+   },
+   "5148317565845368467": {
+    "region": "Sacred Forest Meadow",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass past the gate (z<49.1): in the maze among Mad Scrubs/Moblins (z~38) or around the fairy-fountain hole (-4.2,1.9) = SFM Fairy Grotto entrance, which OoTR places in Sacred Forest Meadow"
+   },
+   "3897504282010392499": {
+    "region": "Sacred Forest Meadow",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass past the gate (z<49.1): in the maze among Mad Scrubs/Moblins (z~38) or around the fairy-fountain hole (-4.2,1.9) = SFM Fairy Grotto entrance, which OoTR places in Sacred Forest Meadow"
+   },
+   "15293421241716881989": {
+    "region": "SFM Entryway",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass ring at the Wolfos grotto hole (-1.6,51.2), z>49.1 = Lost Woods side of the gate Obj_SacredForest_SwitchShutter_A_02 (-7.1,100,49.1) where the child Wolfos and its EnemyCounter stand"
+   },
+   "17032648015876276563": {
+    "region": "SFM Entryway",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass ring at the Wolfos grotto hole (-1.6,51.2), z>49.1 = Lost Woods side of the gate Obj_SacredForest_SwitchShutter_A_02 (-7.1,100,49.1) where the child Wolfos and its EnemyCounter stand"
+   },
+   "9741567715578520992": {
+    "region": "SFM Entryway",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass ring at the Wolfos grotto hole (-1.6,51.2), z>49.1 = Lost Woods side of the gate Obj_SacredForest_SwitchShutter_A_02 (-7.1,100,49.1) where the child Wolfos and its EnemyCounter stand"
+   },
+   "6943274243219023180": {
+    "region": "Sacred Forest Meadow",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass past the gate (z<49.1): in the maze among Mad Scrubs/Moblins (z~38) or around the fairy-fountain hole (-4.2,1.9) = SFM Fairy Grotto entrance, which OoTR places in Sacred Forest Meadow"
+   },
+   "11584460719857891610": {
+    "region": "Sacred Forest Meadow",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass past the gate (z<49.1): in the maze among Mad Scrubs/Moblins (z~38) or around the fairy-fountain hole (-4.2,1.9) = SFM Fairy Grotto entrance, which OoTR places in Sacred Forest Meadow"
+   },
+   "9983734507820448325": {
+    "region": "Sacred Forest Meadow",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass past the gate (z<49.1): in the maze among Mad Scrubs/Moblins (z~38) or around the fairy-fountain hole (-4.2,1.9) = SFM Fairy Grotto entrance, which OoTR places in Sacred Forest Meadow"
+   },
+   "11169424749066888813": {
+    "region": "Sacred Forest Meadow",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass past the gate (z<49.1): in the maze among Mad Scrubs/Moblins (z~38) or around the fairy-fountain hole (-4.2,1.9) = SFM Fairy Grotto entrance, which OoTR places in Sacred Forest Meadow"
+   },
+   "2669182838975155515": {
+    "region": "SFM Entryway",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass ring at the Wolfos grotto hole (-1.6,51.2), z>49.1 = Lost Woods side of the gate Obj_SacredForest_SwitchShutter_A_02 (-7.1,100,49.1) where the child Wolfos and its EnemyCounter stand"
+   },
+   "3952888275772445673": {
+    "region": "SFM Entryway",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass ring at the Wolfos grotto hole (-1.6,51.2), z>49.1 = Lost Woods side of the gate Obj_SacredForest_SwitchShutter_A_02 (-7.1,100,49.1) where the child Wolfos and its EnemyCounter stand"
+   },
+   "18255407930372306012": {
+    "region": "SFM Entryway",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass ring at the Wolfos grotto hole (-1.6,51.2), z>49.1 = Lost Woods side of the gate Obj_SacredForest_SwitchShutter_A_02 (-7.1,100,49.1) where the child Wolfos and its EnemyCounter stand"
+   }
+  },
+  "pairs": [],
+  "absent": {
+   "SFM Storms Grotto Beehive": "no Obj_Kokiri_Beehive_A_01 in any level file of this area; all 21 remake beehives sit in one Kakariko grotto room (the bomb hole near the House of Skulltula)"
+  },
+  "excluded": {}
+ },
+ "HyruleField": {
+  "objects": {
+   "321976280272956796": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in open Hyrule Field (around the cow grotto hole, in the west river bed toward Gerudo Valley, or at the foot of the Kakariko stairs); surface level, outside the ranch and lake zones"
+   },
+   "5615843072514010626": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in open Hyrule Field (around the cow grotto hole, in the west river bed toward Gerudo Valley, or at the foot of the Kakariko stairs); surface level, outside the ranch and lake zones"
+   },
+   "10495799149339563142": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in open Hyrule Field (around the cow grotto hole, in the west river bed toward Gerudo Valley, or at the foot of the Kakariko stairs); surface level, outside the ranch and lake zones"
+   },
+   "12830501860874391361": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in open Hyrule Field (around the cow grotto hole, in the west river bed toward Gerudo Valley, or at the foot of the Kakariko stairs); surface level, outside the ranch and lake zones"
+   },
+   "4706627579492125828": {
+    "region": "HF Tektite Grotto",
+    "rule": "can_play(Song_of_Storms) and can_use(Iron_Boots) and can_bonk",
+    "confidence": "medium",
+    "why": "Region and lid confirmed (audit_overworld #16: Song of Storms lid Land_Kokiri_HidingHoleCover_A_01; tektite pool room). The three adult crates lie on the pool floor at y 120.5 under water whose surface is y ~128.5 (Animal_Fish_Blue at 128.23, Enemy_Tektite_Blue at 128.5): Iron Boots needed, as the region file says. Change only for safety: the crate is broken underwater by rolling into it (BrokenBox DamageParameters: the roll attribute 2444171816 adds 10000 damage), which is how OoTR's own underwater crate (LH GS Lab Crate) is opened (its deadly_bonks clause); bombs and the hammer are not usable underwater, so the can_blast_or_smash half of can_break_crate is unsafe here. Adding can_bonk changes nothing with default deadly_bonks; it closes the ohko-bonks hole. The child copies at the same spots stay excluded (no Iron Boots)."
+   },
+   "1921578605840057080": {
+    "region": "HF Tektite Grotto",
+    "rule": "can_play(Song_of_Storms) and can_use(Iron_Boots) and can_bonk",
+    "confidence": "medium",
+    "why": "Region and lid confirmed (audit_overworld #16: Song of Storms lid Land_Kokiri_HidingHoleCover_A_01; tektite pool room). The three adult crates lie on the pool floor at y 120.5 under water whose surface is y ~128.5 (Animal_Fish_Blue at 128.23, Enemy_Tektite_Blue at 128.5): Iron Boots needed, as the region file says. Change only for safety: the crate is broken underwater by rolling into it (BrokenBox DamageParameters: the roll attribute 2444171816 adds 10000 damage), which is how OoTR's own underwater crate (LH GS Lab Crate) is opened (its deadly_bonks clause); bombs and the hammer are not usable underwater, so the can_blast_or_smash half of can_break_crate is unsafe here. Adding can_bonk changes nothing with default deadly_bonks; it closes the ohko-bonks hole. The child copies at the same spots stay excluded (no Iron Boots)."
+   },
+   "13942975907881711341": {
+    "region": "HF Tektite Grotto",
+    "rule": "can_play(Song_of_Storms) and can_use(Iron_Boots) and can_bonk",
+    "confidence": "medium",
+    "why": "Region and lid confirmed (audit_overworld #16: Song of Storms lid Land_Kokiri_HidingHoleCover_A_01; tektite pool room). The three adult crates lie on the pool floor at y 120.5 under water whose surface is y ~128.5 (Animal_Fish_Blue at 128.23, Enemy_Tektite_Blue at 128.5): Iron Boots needed, as the region file says. Change only for safety: the crate is broken underwater by rolling into it (BrokenBox DamageParameters: the roll attribute 2444171816 adds 10000 damage), which is how OoTR's own underwater crate (LH GS Lab Crate) is opened (its deadly_bonks clause); bombs and the hammer are not usable underwater, so the can_blast_or_smash half of can_break_crate is unsafe here. Adding can_bonk changes nothing with default deadly_bonks; it closes the ohko-bonks hole. The child copies at the same spots stay excluded (no Iron Boots)."
+   },
+   "5620885265123329978": {
+    "region": "HF Southeast Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Rupee in a shallow pool (0.8 deep) in the generic grotto (gossip stone + fairy) under hole (179.8,190.5) in east Hyrule Field toward the KF bridge = OoT HF Southeast Grotto (boulder, generic) by position; the remake cover is bomb-type (BrokenBomb_Base), matching OoTR's here(can_blast_or_smash) entry"
+   },
+   "16437715071442568790": {
+    "region": "HF Southeast Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Rupee in a shallow pool (0.8 deep) in the generic grotto (gossip stone + fairy) under hole (179.8,190.5) in east Hyrule Field toward the KF bridge = OoT HF Southeast Grotto (boulder, generic) by position; the remake cover is bomb-type (BrokenBomb_Base), matching OoTR's here(can_blast_or_smash) entry"
+   },
+   "13785854691967032815": {
+    "region": "HF Southeast Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Rupee in a shallow pool (0.8 deep) in the generic grotto (gossip stone + fairy) under hole (179.8,190.5) in east Hyrule Field toward the KF bridge = OoT HF Southeast Grotto (boulder, generic) by position; the remake cover is bomb-type (BrokenBomb_Base), matching OoTR's here(can_blast_or_smash) entry"
+   },
+   "2314514470754031061": {
+    "region": "HF Southeast Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Rupee in a shallow pool (0.8 deep) in the generic grotto (gossip stone + fairy) under hole (179.8,190.5) in east Hyrule Field toward the KF bridge = OoT HF Southeast Grotto (boulder, generic) by position; the remake cover is bomb-type (BrokenBomb_Base), matching OoTR's here(can_blast_or_smash) entry"
+   },
+   "7268667473541116466": {
+    "region": "HF Southeast Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Rupee in a shallow pool (0.8 deep) in the generic grotto (gossip stone + fairy) under hole (179.8,190.5) in east Hyrule Field toward the KF bridge = OoT HF Southeast Grotto (boulder, generic) by position; the remake cover is bomb-type (BrokenBomb_Base), matching OoTR's here(can_blast_or_smash) entry"
+   },
+   "14398093248612909712": {
+    "region": "HF Southeast Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Rupee in a shallow pool (0.8 deep) in the generic grotto (gossip stone + fairy) under hole (179.8,190.5) in east Hyrule Field toward the KF bridge = OoT HF Southeast Grotto (boulder, generic) by position; the remake cover is bomb-type (BrokenBomb_Base), matching OoTR's here(can_blast_or_smash) entry"
+   },
+   "15135356131305809944": {
+    "region": "HF Southeast Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Rupee in a shallow pool (0.8 deep) in the generic grotto (gossip stone + fairy) under hole (179.8,190.5) in east Hyrule Field toward the KF bridge = OoT HF Southeast Grotto (boulder, generic) by position; the remake cover is bomb-type (BrokenBomb_Base), matching OoTR's here(can_blast_or_smash) entry"
+   },
+   "125530267563245847": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bomb boulder in west Hyrule Field near the Gerudo Valley entrance (one covers the cow grotto hole (-258.3,137.9)); surface level"
+   },
+   "5127423624846795718": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bomb boulder in west Hyrule Field near the Gerudo Valley entrance (one covers the cow grotto hole (-258.3,137.9)); surface level"
+   },
+   "9075422221887327651": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in open Hyrule Field (around the cow grotto hole, in the west river bed toward Gerudo Valley, or at the foot of the Kakariko stairs); surface level, outside the ranch and lake zones"
+   },
+   "9149464054892125753": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in open Hyrule Field (around the cow grotto hole, in the west river bed toward Gerudo Valley, or at the foot of the Kakariko stairs); surface level, outside the ranch and lake zones"
+   },
+   "17622124669395045653": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in open Hyrule Field (around the cow grotto hole, in the west river bed toward Gerudo Valley, or at the foot of the Kakariko stairs); surface level, outside the ranch and lake zones"
+   },
+   "9924885918140405518": {
+    "region": "LH Lab",
+    "rule": "(Progressive_Scale, 2) or can_use(Iron_Boots)",
+    "confidence": "high",
+    "why": "Rupee on the bottom of the lab dive tank (y=128.4, beside the GS crate; surface 137.5) = OoT's LH Lab Dive rupees; their rule reused"
+   },
+   "18417667443552316769": {
+    "region": "LH Lab",
+    "rule": "(Progressive_Scale, 2) or can_use(Iron_Boots)",
+    "confidence": "high",
+    "why": "Rupee on the bottom of the lab dive tank (y=128.4, beside the GS crate; surface 137.5) = OoT's LH Lab Dive rupees; their rule reused"
+   },
+   "10848757081092766316": {
+    "region": "Lake Hylia",
+    "rule": "can_use(Iron_Boots)",
+    "confidence": "medium",
+    "why": "Adult rupee at y=103.5 in front of the Water Temple gate (Obj_LakeHrl_SwitchShutter_A_01 / GatePillar at y=103) on the lake bottom, 9 units under the pool surface (Obj_LakeHrl_WaterPlane_A_04 at 112.5): Iron Boots (stricter than Golden Scale)"
+   },
+   "1586568880795558629": {
+    "region": "Lake Hylia",
+    "rule": "can_use(Iron_Boots)",
+    "confidence": "medium",
+    "why": "Adult rupee at y=103.5 in front of the Water Temple gate (Obj_LakeHrl_SwitchShutter_A_01 / GatePillar at y=103) on the lake bottom, 9 units under the pool surface (Obj_LakeHrl_WaterPlane_A_04 at 112.5): Iron Boots (stricter than Golden Scale)"
+   },
+   "4525337806931267688": {
+    "region": "Lake Hylia",
+    "rule": "can_use(Iron_Boots)",
+    "confidence": "medium",
+    "why": "Adult rupee at y=103.5 in front of the Water Temple gate (Obj_LakeHrl_SwitchShutter_A_01 / GatePillar at y=103) on the lake bottom, 9 units under the pool surface (Obj_LakeHrl_WaterPlane_A_04 at 112.5): Iron Boots (stricter than Golden Scale)"
+   },
+   "578077075299673958": {
+    "region": "Lake Hylia",
+    "rule": "can_use(Iron_Boots)",
+    "confidence": "medium",
+    "why": "Adult rupee at y=103.5 in front of the Water Temple gate (Obj_LakeHrl_SwitchShutter_A_01 / GatePillar at y=103) on the lake bottom, 9 units under the pool surface (Obj_LakeHrl_WaterPlane_A_04 at 112.5): Iron Boots (stricter than Golden Scale)"
+   },
+   "9989181491842997674": {
+    "region": "Lake Hylia",
+    "rule": "can_use(Iron_Boots)",
+    "confidence": "medium",
+    "why": "Adult rupee at y=103.5 in front of the Water Temple gate (Obj_LakeHrl_SwitchShutter_A_01 / GatePillar at y=103) on the lake bottom, 9 units under the pool surface (Obj_LakeHrl_WaterPlane_A_04 at 112.5): Iron Boots (stricter than Golden Scale)"
+   },
+   "14062454289055492415": {
+    "region": "Lake Hylia",
+    "rule": "can_use(Scarecrow) or 'Water Temple Clear'",
+    "confidence": "high",
+    "why": "settled (collision, adult lake drained: full-lake planes Obj_LakeHrl_WaterPlane_A_05/A_06 #2888466904342939283/#10949872875611029346 (y 130.78) exist only after HavePlayedEvent.Dm_LakeHrl_0020, played on the Water-sage arrival after Morpha (Dm_SY_BancChange_EscapeDungeon, SageOfWater_IsCompleted_Exp); before that only the y 112.5 pool A_04): the island tops (y 131.1-131.7) stand 7-14 above the drained bed (116-124) and no walk/drop/climb route from the shore reaches them. With the lake refilled Link swims to them (water 130.78, tops 0.3-0.9 above). Island Land_LakeHrl_Island_A_01 (-213,131,531) holds Pierre's spot SCARECROW_LAKE_HYLIA_02 (-211.75,131.29,529.59); its AreaCanCallPierre box (13x3x13 at -206.64,130.36,525.32) covers the shore, and from the shore spot (-205,131.1,523.5) the Hookshot line to Pierre is clear at 9.1 (range 10): can_use(Scarecrow) or 'Water Temple Clear' (as OoTR's LH Fishing Island)"
+   },
+   "12081469056021144650": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Crate at a HrlField_Note treasure-note spot in open Hyrule Field (with Enemy_Poe / HrlField_Note_02/09/10), surface level, outside Lon Lon Ranch and the Lake Hylia zone"
+   },
+   "4947448008209653397": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Crate at a HrlField_Note treasure-note spot in open Hyrule Field (with Enemy_Poe / HrlField_Note_02/09/10), surface level, outside Lon Lon Ranch and the Lake Hylia zone"
+   },
+   "1415353695595294309": {
+    "region": "HF Cow Grotto",
+    "rule": "has_fire_source",
+    "confidence": "high",
+    "why": "Grass beside the cow (Animal_Cow (-257.6,120.3,129.3)) in the cow grotto under the boulder-covered hole (-258.3,137.9) near Gerudo Valley; a spider web (Obj_InsideTheDekuTree_SpiderWeb_A_02 at z=132.1) separates it from the landing point, like the paired pots behind theirs; OoTR's cow-grotto rule reused"
+   },
+   "9816312395494594323": {
+    "region": "HF Cow Grotto",
+    "rule": "has_fire_source",
+    "confidence": "high",
+    "why": "Grass beside the cow (Animal_Cow (-257.6,120.3,129.3)) in the cow grotto under the boulder-covered hole (-258.3,137.9) near Gerudo Valley; a spider web (Obj_InsideTheDekuTree_SpiderWeb_A_02 at z=132.1) separates it from the landing point, like the paired pots behind theirs; OoTR's cow-grotto rule reused"
+   },
+   "15605814217953065995": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bomb boulder in west Hyrule Field near the Gerudo Valley entrance (one covers the cow grotto hole (-258.3,137.9)); surface level"
+   },
+   "1388174912867327163": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in open Hyrule Field at surface level (incl. the ring around grotto holes (39.9,342.3) and (-156.1,338.4)); outside the ranch (x -160..-20, z 175..305) and the Lake Hylia zone (z>390)"
+   },
+   "13369906429285452607": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in open Hyrule Field at surface level (incl. the ring around grotto holes (39.9,342.3) and (-156.1,338.4)); outside the ranch (x -160..-20, z 175..305) and the Lake Hylia zone (z>390)"
+   },
+   "1140483042709047538": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in open Hyrule Field at surface level (incl. the ring around grotto holes (39.9,342.3) and (-156.1,338.4)); outside the ranch (x -160..-20, z 175..305) and the Lake Hylia zone (z>390)"
+   },
+   "2746689496522958019": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in open Hyrule Field at surface level (incl. the ring around grotto holes (39.9,342.3) and (-156.1,338.4)); outside the ranch (x -160..-20, z 175..305) and the Lake Hylia zone (z>390)"
+   },
+   "7406907156349628304": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in open Hyrule Field at surface level (incl. the ring around grotto holes (39.9,342.3) and (-156.1,338.4)); outside the ranch (x -160..-20, z 175..305) and the Lake Hylia zone (z>390)"
+   },
+   "11168192012016841724": {
+    "region": "Lake Hylia",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Grass on a Lake Hylia island at lake-surface level: child copies anywhere (child swims); adult copies only on the warp-pad island (gossip stone (-192,131,523), stone tablet, Obj_LakeHrl_WarpPoint_A_01), which the two lake bridges (Land_LakeHrl_Bridge_A_01/A_02) link to the lab shore; not the fishing island (x -55..-103)"
+   },
+   "11068226974023171918": {
+    "region": "Lake Hylia",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Grass on a Lake Hylia island at lake-surface level: child copies anywhere (child swims); adult copies only on the warp-pad island (gossip stone (-192,131,523), stone tablet, Obj_LakeHrl_WarpPoint_A_01), which the two lake bridges (Land_LakeHrl_Bridge_A_01/A_02) link to the lab shore; not the fishing island (x -55..-103)"
+   },
+   "12554124099881313894": {
+    "region": "Lake Hylia",
+    "rule": "'Water Temple Clear'",
+    "confidence": "high",
+    "why": "settled (collision, adult lake drained: full-lake planes Obj_LakeHrl_WaterPlane_A_05/A_06 #2888466904342939283/#10949872875611029346 (y 130.78) exist only after HavePlayedEvent.Dm_LakeHrl_0020, played on the Water-sage arrival after Morpha (Dm_SY_BancChange_EscapeDungeon, SageOfWater_IsCompleted_Exp); before that only the y 112.5 pool A_04): the island tops (y 131.1-131.7) stand 7-14 above the drained bed (116-124) and no walk/drop/climb route from the shore reaches them. With the lake refilled Link swims to them (water 130.78, tops 0.3-0.9 above). Island Land_LakeHrl_Island_B_01 (-233,131,579) holds only the gossip stone GOSSIP_LAKE_HYLIA_03 (no Pierre spot, no hookshot or climb surface; the nearest other floor at y >= 129 is 15.6 from its centre): 'Water Temple Clear'"
+   },
+   "2768742205155026921": {
+    "region": "Lake Hylia",
+    "rule": "'Water Temple Clear'",
+    "confidence": "high",
+    "why": "settled (collision, adult lake drained: full-lake planes Obj_LakeHrl_WaterPlane_A_05/A_06 #2888466904342939283/#10949872875611029346 (y 130.78) exist only after HavePlayedEvent.Dm_LakeHrl_0020, played on the Water-sage arrival after Morpha (Dm_SY_BancChange_EscapeDungeon, SageOfWater_IsCompleted_Exp); before that only the y 112.5 pool A_04): the island tops (y 131.1-131.7) stand 7-14 above the drained bed (116-124) and no walk/drop/climb route from the shore reaches them. With the lake refilled Link swims to them (water 130.78, tops 0.3-0.9 above). Island Land_LakeHrl_Island_B_01 (-233,131,579) holds only the gossip stone GOSSIP_LAKE_HYLIA_03 (no Pierre spot, no hookshot or climb surface; the nearest other floor at y >= 129 is 15.6 from its centre): 'Water Temple Clear'"
+   },
+   "2276876878264572073": {
+    "region": "Lake Hylia",
+    "rule": "'Water Temple Clear'",
+    "confidence": "high",
+    "why": "settled (collision, adult lake drained: full-lake planes Obj_LakeHrl_WaterPlane_A_05/A_06 #2888466904342939283/#10949872875611029346 (y 130.78) exist only after HavePlayedEvent.Dm_LakeHrl_0020, played on the Water-sage arrival after Morpha (Dm_SY_BancChange_EscapeDungeon, SageOfWater_IsCompleted_Exp); before that only the y 112.5 pool A_04): the island tops (y 131.1-131.7) stand 7-14 above the drained bed (116-124) and no walk/drop/climb route from the shore reaches them. With the lake refilled Link swims to them (water 130.78, tops 0.3-0.9 above). Island Land_LakeHrl_Island_B_01 (-233,131,579) holds only the gossip stone GOSSIP_LAKE_HYLIA_03 (no Pierre spot, no hookshot or climb surface; the nearest other floor at y >= 129 is 15.6 from its centre): 'Water Temple Clear'"
+   },
+   "16274291912323313727": {
+    "region": "LH Lab",
+    "rule": "can_use(Iron_Boots) and can_bonk",
+    "confidence": "medium",
+    "why": "Crate at the bottom of the lab tank (y 128.46; surface Obj_LakeHrl_WaterPlane_A_08 at 137.52: 9 units) with the GS and its Obj_BrokenBox_A_06 sync twin at the same spot. Region LH Lab correct. As for the tektite crates: underwater only the roll breaks it (OoTR's LH GS Lab Crate rule carries the same deadly_bonks clause), so can_bonk is added; no effect with default settings."
+   },
+   "4948971738939676499": {
+    "region": "Lake Hylia",
+    "rule": "can_use(Scarecrow) or 'Water Temple Clear'",
+    "confidence": "high",
+    "why": "settled (collision, adult lake drained: full-lake planes Obj_LakeHrl_WaterPlane_A_05/A_06 #2888466904342939283/#10949872875611029346 (y 130.78) exist only after HavePlayedEvent.Dm_LakeHrl_0020, played on the Water-sage arrival after Morpha (Dm_SY_BancChange_EscapeDungeon, SageOfWater_IsCompleted_Exp); before that only the y 112.5 pool A_04): the island tops (y 131.1-131.7) stand 7-14 above the drained bed (116-124) and no walk/drop/climb route from the shore reaches them. With the lake refilled Link swims to them (water 130.78, tops 0.3-0.9 above). Island Land_LakeHrl_Island_A_01 (-213,131,531) holds Pierre's spot SCARECROW_LAKE_HYLIA_02 (-211.75,131.29,529.59); its AreaCanCallPierre box (13x3x13 at -206.64,130.36,525.32) covers the shore, and from the shore spot (-205,131.1,523.5) the Hookshot line to Pierre is clear at 9.1 (range 10): can_use(Scarecrow) or 'Water Temple Clear' (as OoTR's LH Fishing Island)"
+   },
+   "13907362561290610779": {
+    "region": "Lake Hylia",
+    "rule": "can_use(Scarecrow) or 'Water Temple Clear'",
+    "confidence": "high",
+    "why": "settled (collision, adult lake drained: full-lake planes Obj_LakeHrl_WaterPlane_A_05/A_06 #2888466904342939283/#10949872875611029346 (y 130.78) exist only after HavePlayedEvent.Dm_LakeHrl_0020, played on the Water-sage arrival after Morpha (Dm_SY_BancChange_EscapeDungeon, SageOfWater_IsCompleted_Exp); before that only the y 112.5 pool A_04): the island tops (y 131.1-131.7) stand 7-14 above the drained bed (116-124) and no walk/drop/climb route from the shore reaches them. With the lake refilled Link swims to them (water 130.78, tops 0.3-0.9 above). Island Land_LakeHrl_Island_A_01 (-213,131,531) holds Pierre's spot SCARECROW_LAKE_HYLIA_02 (-211.75,131.29,529.59); its AreaCanCallPierre box (13x3x13 at -206.64,130.36,525.32) covers the shore, and from the shore spot (-205,131.1,523.5) the Hookshot line to Pierre is clear at 9.1 (range 10): can_use(Scarecrow) or 'Water Temple Clear' (as OoTR's LH Fishing Island)"
+   },
+   "1031860467156401446": {
+    "region": "Lake Hylia",
+    "rule": "can_use(Scarecrow) or 'Water Temple Clear'",
+    "confidence": "high",
+    "why": "settled (collision, adult lake drained: full-lake planes Obj_LakeHrl_WaterPlane_A_05/A_06 #2888466904342939283/#10949872875611029346 (y 130.78) exist only after HavePlayedEvent.Dm_LakeHrl_0020, played on the Water-sage arrival after Morpha (Dm_SY_BancChange_EscapeDungeon, SageOfWater_IsCompleted_Exp); before that only the y 112.5 pool A_04): the island tops (y 131.1-131.7) stand 7-14 above the drained bed (116-124) and no walk/drop/climb route from the shore reaches them. With the lake refilled Link swims to them (water 130.78, tops 0.3-0.9 above). Island Land_LakeHrl_Island_A_01 (-213,131,531) holds Pierre's spot SCARECROW_LAKE_HYLIA_02 (-211.75,131.29,529.59); its AreaCanCallPierre box (13x3x13 at -206.64,130.36,525.32) covers the shore, and from the shore spot (-205,131.1,523.5) the Hookshot line to Pierre is clear at 9.1 (range 10): can_use(Scarecrow) or 'Water Temple Clear' (as OoTR's LH Fishing Island)"
+   },
+   "18423958765558734622": {
+    "region": "Lake Hylia",
+    "rule": "can_use(Scarecrow) or 'Water Temple Clear'",
+    "confidence": "high",
+    "why": "settled (collision, adult lake drained: full-lake planes Obj_LakeHrl_WaterPlane_A_05/A_06 #2888466904342939283/#10949872875611029346 (y 130.78) exist only after HavePlayedEvent.Dm_LakeHrl_0020, played on the Water-sage arrival after Morpha (Dm_SY_BancChange_EscapeDungeon, SageOfWater_IsCompleted_Exp); before that only the y 112.5 pool A_04): the island tops (y 131.1-131.7) stand 7-14 above the drained bed (116-124) and no walk/drop/climb route from the shore reaches them. With the lake refilled Link swims to them (water 130.78, tops 0.3-0.9 above). Island Land_LakeHrl_Island_A_01 (-213,131,531) holds Pierre's spot SCARECROW_LAKE_HYLIA_02 (-211.75,131.29,529.59); its AreaCanCallPierre box (13x3x13 at -206.64,130.36,525.32) covers the shore, and from the shore spot (-205,131.1,523.5) the Hookshot line to Pierre is clear at 9.1 (range 10): can_use(Scarecrow) or 'Water Temple Clear' (as OoTR's LH Fishing Island)"
+   },
+   "9279676533195108628": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in open Hyrule Field at surface level (incl. the ring around grotto holes (39.9,342.3) and (-156.1,338.4)); outside the ranch (x -160..-20, z 175..305) and the Lake Hylia zone (z>390)"
+   },
+   "2344173684202144129": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in open Hyrule Field at surface level (incl. the ring around grotto holes (39.9,342.3) and (-156.1,338.4)); outside the ranch (x -160..-20, z 175..305) and the Lake Hylia zone (z>390)"
+   },
+   "11631894770326169336": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in open Hyrule Field at surface level (incl. the ring around grotto holes (39.9,342.3) and (-156.1,338.4)); outside the ranch (x -160..-20, z 175..305) and the Lake Hylia zone (z>390)"
+   },
+   "12340005938488096890": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in open Hyrule Field at surface level (incl. the ring around grotto holes (39.9,342.3) and (-156.1,338.4)); outside the ranch (x -160..-20, z 175..305) and the Lake Hylia zone (z>390)"
+   },
+   "10444788187435815162": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in open Hyrule Field at surface level (incl. the ring around grotto holes (39.9,342.3) and (-156.1,338.4)); outside the ranch (x -160..-20, z 175..305) and the Lake Hylia zone (z>390)"
+   },
+   "14654205574115276454": {
+    "region": "HF Open Grotto",
+    "rule": "can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Crate (holds the grotto's adult Gold Skulltula) in the generic grotto (gossip stone + fairy) under hole (39.9,342.3) in south Hyrule Field; mapped to OoT's open generic grotto by position (the SE generic hole is (179.8,190.5)). The remake hole has Land_HrlField_HidingHoleCover_A_01 (parent Land_HidingHoleCover_BrokenBomb_Base) + FldObj_AirWall_HidingHoleCover, so blast/smash is added"
+   },
+   "11775162899811054217": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in open Hyrule Field (around the cow grotto hole, in the west river bed toward Gerudo Valley, or at the foot of the Kakariko stairs); surface level, outside the ranch and lake zones"
+   },
+   "16645699538870768077": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in open Hyrule Field (around the cow grotto hole, in the west river bed toward Gerudo Valley, or at the foot of the Kakariko stairs); surface level, outside the ranch and lake zones"
+   },
+   "6105291056585907279": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in open Hyrule Field (around the cow grotto hole, in the west river bed toward Gerudo Valley, or at the foot of the Kakariko stairs); surface level, outside the ranch and lake zones"
+   },
+   "3817329614376327303": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in open Hyrule Field (around the cow grotto hole, in the west river bed toward Gerudo Valley, or at the foot of the Kakariko stairs); surface level, outside the ranch and lake zones"
+   },
+   "14633400672259963744": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in open Hyrule Field (around the cow grotto hole, in the west river bed toward Gerudo Valley, or at the foot of the Kakariko stairs); surface level, outside the ranch and lake zones"
+   },
+   "220530141870229252": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in open Hyrule Field (around the cow grotto hole, in the west river bed toward Gerudo Valley, or at the foot of the Kakariko stairs); surface level, outside the ranch and lake zones"
+   },
+   "8033380555144713456": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in open Hyrule Field (around the cow grotto hole, in the west river bed toward Gerudo Valley, or at the foot of the Kakariko stairs); surface level, outside the ranch and lake zones"
+   },
+   "5236682125833187881": {
+    "region": "LLR Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Child pot at y=132.7 in the grotto room with the 3 Business scrubs (OoT LLR scrub grotto) under the child-only hole (-36.4,145.7,290.7) at the back of Lon Lon Ranch"
+   },
+   "1003681645323701836": {
+    "region": "LLR Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Child pot at y=132.7 in the grotto room with the 3 Business scrubs (OoT LLR scrub grotto) under the child-only hole (-36.4,145.7,290.7) at the back of Lon Lon Ranch"
+   },
+   "7629603093975129142": {
+    "region": "LLR Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Child pot at y=132.7 in the grotto room with the 3 Business scrubs (OoT LLR scrub grotto) under the child-only hole (-36.4,145.7,290.7) at the back of Lon Lon Ranch"
+   },
+   "3747825875636115828": {
+    "region": "LLR Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Child pot at y=132.7 in the grotto room with the 3 Business scrubs (OoT LLR scrub grotto) under the child-only hole (-36.4,145.7,290.7) at the back of Lon Lon Ranch"
+   },
+   "4115284299259285529": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Crate at a HrlField_Note treasure-note spot in open Hyrule Field (with Enemy_Poe / HrlField_Note_02/09/10), surface level, outside Lon Lon Ranch and the Lake Hylia zone"
+   },
+   "693126994387192480": {
+    "region": "Hyrule Field",
+    "rule": "can_dive",
+    "confidence": "medium",
+    "why": "Child rupee ring in a field pond in east Hyrule Field; rupees at y=153.5, water surface Obj_WaterPlane_Field_A_01 at 156.6 (3 units deep): dive required (stricter assumption)"
+   },
+   "8955407423151725378": {
+    "region": "Hyrule Field",
+    "rule": "can_dive",
+    "confidence": "medium",
+    "why": "Child rupee ring in a field pond in east Hyrule Field; rupees at y=153.5, water surface Obj_WaterPlane_Field_A_01 at 156.6 (3 units deep): dive required (stricter assumption)"
+   },
+   "629760094542173614": {
+    "region": "Hyrule Field",
+    "rule": "can_dive",
+    "confidence": "medium",
+    "why": "Child rupee ring in a field pond in east Hyrule Field; rupees at y=153.5, water surface Obj_WaterPlane_Field_A_01 at 156.6 (3 units deep): dive required (stricter assumption)"
+   },
+   "5355103373173124554": {
+    "region": "Hyrule Field",
+    "rule": "can_dive",
+    "confidence": "medium",
+    "why": "Child rupee ring in a field pond in east Hyrule Field; rupees at y=153.5, water surface Obj_WaterPlane_Field_A_01 at 156.6 (3 units deep): dive required (stricter assumption)"
+   },
+   "18080167579417541655": {
+    "region": "Hyrule Field",
+    "rule": "can_dive",
+    "confidence": "medium",
+    "why": "Child rupee ring in a field pond in east Hyrule Field; rupees at y=153.5, water surface Obj_WaterPlane_Field_A_01 at 156.6 (3 units deep): dive required (stricter assumption)"
+   },
+   "2067586981487636357": {
+    "region": "Hyrule Field",
+    "rule": "can_dive",
+    "confidence": "medium",
+    "why": "Child rupee ring in a field pond in east Hyrule Field; rupees at y=153.5, water surface Obj_WaterPlane_Field_A_01 at 156.6 (3 units deep): dive required (stricter assumption)"
+   },
+   "3689958676603857333": {
+    "region": "Hyrule Field",
+    "rule": "can_dive",
+    "confidence": "medium",
+    "why": "Child rupee ring in a field pond in east Hyrule Field; rupees at y=153.5, water surface Obj_WaterPlane_Field_A_01 at 156.6 (3 units deep): dive required (stricter assumption)"
+   },
+   "8235277831792843095": {
+    "region": "Hyrule Field",
+    "rule": "can_dive",
+    "confidence": "medium",
+    "why": "Child rupee ring in a field pond in east Hyrule Field; rupees at y=153.5, water surface Obj_WaterPlane_Field_A_01 at 156.6 (3 units deep): dive required (stricter assumption)"
+   },
+   "11917730692592781756": {
+    "region": "Hyrule Field",
+    "rule": "can_dive",
+    "confidence": "medium",
+    "why": "Child rupee ring in a field pond in east Hyrule Field; rupees at y=153.5, water surface Obj_WaterPlane_Field_A_01 at 156.6 (3 units deep): dive required (stricter assumption)"
+   },
+   "18118085020877564799": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in open Hyrule Field (around the cow grotto hole, in the west river bed toward Gerudo Valley, or at the foot of the Kakariko stairs); surface level, outside the ranch and lake zones"
+   },
+   "1388311011907432964": {
+    "region": "Lake Hylia",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Child pot at a HrlField_Note_06 treasure spot on the west shore of Lake Hylia (y=131.3, lake surface 130.8, pine cliffs behind); no item needed"
+   },
+   "16400245230574378269": {
+    "region": "Lake Hylia",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Child pot at a HrlField_Note_06 treasure spot on the west shore of Lake Hylia (y=131.3, lake surface 130.8, pine cliffs behind); no item needed"
+   },
+   "8977808724731648233": {
+    "region": "Lake Hylia",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Child pot at a HrlField_Note_06 treasure spot on the west shore of Lake Hylia (y=131.3, lake surface 130.8, pine cliffs behind); no item needed"
+   },
+   "16403770190582583828": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in open Hyrule Field (around the cow grotto hole, in the west river bed toward Gerudo Valley, or at the foot of the Kakariko stairs); surface level, outside the ranch and lake zones"
+   },
+   "8040993757853149095": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock in open Hyrule Field (around the cow grotto hole, in the west river bed toward Gerudo Valley, or at the foot of the Kakariko stairs); surface level, outside the ranch and lake zones"
+   },
+   "15386075207884711919": {
+    "region": "HF Cow Grotto",
+    "rule": "has_fire_source",
+    "confidence": "high",
+    "why": "Grass beside the cow (Animal_Cow (-257.6,120.3,129.3)) in the cow grotto under the boulder-covered hole (-258.3,137.9) near Gerudo Valley; a spider web (Obj_InsideTheDekuTree_SpiderWeb_A_02 at z=132.1) separates it from the landing point, like the paired pots behind theirs; OoTR's cow-grotto rule reused"
+   },
+   "2570611913323957485": {
+    "region": "HF Cow Grotto",
+    "rule": "has_fire_source",
+    "confidence": "high",
+    "why": "Grass beside the cow (Animal_Cow (-257.6,120.3,129.3)) in the cow grotto under the boulder-covered hole (-258.3,137.9) near Gerudo Valley; a spider web (Obj_InsideTheDekuTree_SpiderWeb_A_02 at z=132.1) separates it from the landing point, like the paired pots behind theirs; OoTR's cow-grotto rule reused"
+   },
+   "5269723470233996461": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in open Hyrule Field at surface level (incl. the ring around grotto holes (39.9,342.3) and (-156.1,338.4)); outside the ranch (x -160..-20, z 175..305) and the Lake Hylia zone (z>390)"
+   },
+   "1361616512535825301": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in open Hyrule Field at surface level (incl. the ring around grotto holes (39.9,342.3) and (-156.1,338.4)); outside the ranch (x -160..-20, z 175..305) and the Lake Hylia zone (z>390)"
+   },
+   "5968908134751131760": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in open Hyrule Field at surface level (incl. the ring around grotto holes (39.9,342.3) and (-156.1,338.4)); outside the ranch (x -160..-20, z 175..305) and the Lake Hylia zone (z>390)"
+   },
+   "11261275733557963781": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in open Hyrule Field at surface level (incl. the ring around grotto holes (39.9,342.3) and (-156.1,338.4)); outside the ranch (x -160..-20, z 175..305) and the Lake Hylia zone (z>390)"
+   },
+   "15914819269763159469": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in open Hyrule Field at surface level (incl. the ring around grotto holes (39.9,342.3) and (-156.1,338.4)); outside the ranch (x -160..-20, z 175..305) and the Lake Hylia zone (z>390)"
+   },
+   "3210871505869713729": {
+    "region": "Lake Hylia",
+    "rule": "Kokiri_Sword or Boomerang or has_explosives or can_use(Megaton_Hammer)",
+    "confidence": "high",
+    "why": "Region right: the child lake is always full (child planes A_05/A_06 at 130.78 have no Presence) and a child swims to both islands. Grass cutting: Obj_Plant_Grass_A_01/A_03 DamageParameters 'Plant_Grass' carry the exception 'デクの棒では刈れない' (Deku Sticks cannot cut it): rule 204148089 (the ignore-damage rule, the same one that makes Din's Fire only ignite grass and beehives) on the Deku Stick's attack attribute 3473086895. OoTR's can_cut_shrubs counts Sticks, so for a child copy the rule is ANDed with 'is_adult or Kokiri_Sword or Boomerang or has_explosives or can_use(Megaton_Hammer)' (better fixed once in drops.py CATEGORY['grass'] / ['grass_always_respawn'])."
+   },
+   "4849451237618976647": {
+    "region": "Lake Hylia",
+    "rule": "Kokiri_Sword or Boomerang or has_explosives or can_use(Megaton_Hammer)",
+    "confidence": "high",
+    "why": "Region right: the child lake is always full (child planes A_05/A_06 at 130.78 have no Presence) and a child swims to both islands. Grass cutting: Obj_Plant_Grass_A_01/A_03 DamageParameters 'Plant_Grass' carry the exception 'デクの棒では刈れない' (Deku Sticks cannot cut it): rule 204148089 (the ignore-damage rule, the same one that makes Din's Fire only ignite grass and beehives) on the Deku Stick's attack attribute 3473086895. OoTR's can_cut_shrubs counts Sticks, so for a child copy the rule is ANDed with 'is_adult or Kokiri_Sword or Boomerang or has_explosives or can_use(Megaton_Hammer)' (better fixed once in drops.py CATEGORY['grass'] / ['grass_always_respawn'])."
+   },
+   "1804603571840151022": {
+    "region": "Lake Hylia",
+    "rule": "Kokiri_Sword or Boomerang or has_explosives or can_use(Megaton_Hammer)",
+    "confidence": "high",
+    "why": "Region right: the child lake is always full (child planes A_05/A_06 at 130.78 have no Presence) and a child swims to both islands. Grass cutting: Obj_Plant_Grass_A_01/A_03 DamageParameters 'Plant_Grass' carry the exception 'デクの棒では刈れない' (Deku Sticks cannot cut it): rule 204148089 (the ignore-damage rule, the same one that makes Din's Fire only ignite grass and beehives) on the Deku Stick's attack attribute 3473086895. OoTR's can_cut_shrubs counts Sticks, so for a child copy the rule is ANDed with 'is_adult or Kokiri_Sword or Boomerang or has_explosives or can_use(Megaton_Hammer)' (better fixed once in drops.py CATEGORY['grass'] / ['grass_always_respawn'])."
+   },
+   "10016740363687289194": {
+    "region": "Lake Hylia",
+    "rule": "Kokiri_Sword or Boomerang or has_explosives or can_use(Megaton_Hammer)",
+    "confidence": "high",
+    "why": "Region right: the child lake is always full (child planes A_05/A_06 at 130.78 have no Presence) and a child swims to both islands. Grass cutting: Obj_Plant_Grass_A_01/A_03 DamageParameters 'Plant_Grass' carry the exception 'デクの棒では刈れない' (Deku Sticks cannot cut it): rule 204148089 (the ignore-damage rule, the same one that makes Din's Fire only ignite grass and beehives) on the Deku Stick's attack attribute 3473086895. OoTR's can_cut_shrubs counts Sticks, so for a child copy the rule is ANDed with 'is_adult or Kokiri_Sword or Boomerang or has_explosives or can_use(Megaton_Hammer)' (better fixed once in drops.py CATEGORY['grass'] / ['grass_always_respawn'])."
+   },
+   "4947234326749173851": {
+    "region": "Lake Hylia",
+    "rule": "Kokiri_Sword or Boomerang or has_explosives or can_use(Megaton_Hammer)",
+    "confidence": "high",
+    "why": "Region right: the child lake is always full (child planes A_05/A_06 at 130.78 have no Presence) and a child swims to both islands. Grass cutting: Obj_Plant_Grass_A_01/A_03 DamageParameters 'Plant_Grass' carry the exception 'デクの棒では刈れない' (Deku Sticks cannot cut it): rule 204148089 (the ignore-damage rule, the same one that makes Din's Fire only ignite grass and beehives) on the Deku Stick's attack attribute 3473086895. OoTR's can_cut_shrubs counts Sticks, so for a child copy the rule is ANDed with 'is_adult or Kokiri_Sword or Boomerang or has_explosives or can_use(Megaton_Hammer)' (better fixed once in drops.py CATEGORY['grass'] / ['grass_always_respawn'])."
+   },
+   "8976284932613239030": {
+    "region": "Lake Hylia",
+    "rule": "is_child and can_dive",
+    "confidence": "medium",
+    "why": "Child green rupee about 5.5 units under the lake surface (130.8) by the sunken Zora buildings near the Zora's Domain underwater entrance = OoT LH Underwater Green Rupee (dive)"
+   },
+   "10016653679204206712": {
+    "region": "Lake Hylia",
+    "rule": "is_child and can_dive",
+    "confidence": "medium",
+    "why": "Child green rupee about 5.5 units under the lake surface (130.8) by the sunken Zora buildings near the Zora's Domain underwater entrance = OoT LH Underwater Green Rupee (dive)"
+   },
+   "3749373667484950216": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in open Hyrule Field at surface level (incl. the ring around grotto holes (39.9,342.3) and (-156.1,338.4)); outside the ranch (x -160..-20, z 175..305) and the Lake Hylia zone (z>390)"
+   },
+   "15154370679873778361": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass in open Hyrule Field at surface level (incl. the ring around grotto holes (39.9,342.3) and (-156.1,338.4)); outside the ranch (x -160..-20, z 175..305) and the Lake Hylia zone (z>390)"
+   }
+  },
+  "pairs": [
+   {
+    "ootr": [
+     "LH Underwater Green Rupee 1"
+    ],
+    "hashes": [
+     "8976284932613239030"
+    ],
+    "why": "Child green rupee 5.5 under the Lake Hylia surface by the Zora ruins; OoTR rule is_child and can_dive fits"
+   },
+   {
+    "ootr": [
+     "LH Underwater Green Rupee 2"
+    ],
+    "hashes": [
+     "10016653679204206712"
+    ],
+    "why": "Second child underwater green rupee next to the first; is_child and can_dive"
+   },
+   {
+    "ootr": [
+     "LH Lab Dive Red Rupee 1"
+    ],
+    "hashes": [
+     "18417667443552316769"
+    ],
+    "why": "Red rupee on the bottom of the lab dive tank (one hash in both age files); same rule"
+   },
+   {
+    "ootr": [
+     "LH Lab Dive Red Rupee 2"
+    ],
+    "hashes": [
+     "9924885918140405518"
+    ],
+    "why": "Blue rupee on the bottom of the lab dive tank (one hash in both age files); same rule"
+   }
+  ],
+  "absent": {
+   "LLR Front Pot 1": "HyruleField files (which hold Lon Lon Ranch) contain only 11 pots: 4 in the LLR scrub grotto, 3 on the Lake Hylia shore, 4 cow-grotto copies; none in the ranch yard (x -160..-20, z 175..305)",
+   "LLR Front Pot 2": "HyruleField files (which hold Lon Lon Ranch) contain only 11 pots: 4 in the LLR scrub grotto, 3 on the Lake Hylia shore, 4 cow-grotto copies; none in the ranch yard (x -160..-20, z 175..305)",
+   "LLR Front Pot 3": "HyruleField files (which hold Lon Lon Ranch) contain only 11 pots: 4 in the LLR scrub grotto, 3 on the Lake Hylia shore, 4 cow-grotto copies; none in the ranch yard (x -160..-20, z 175..305)",
+   "LLR Front Pot 4": "HyruleField files (which hold Lon Lon Ranch) contain only 11 pots: 4 in the LLR scrub grotto, 3 on the Lake Hylia shore, 4 cow-grotto copies; none in the ranch yard (x -160..-20, z 175..305)",
+   "LLR Rain Shed Pot 1": "HyruleField files (which hold Lon Lon Ranch) contain only 11 pots: 4 in the LLR scrub grotto, 3 on the Lake Hylia shore, 4 cow-grotto copies; none in the ranch yard (x -160..-20, z 175..305)",
+   "LLR Rain Shed Pot 2": "HyruleField files (which hold Lon Lon Ranch) contain only 11 pots: 4 in the LLR scrub grotto, 3 on the Lake Hylia shore, 4 cow-grotto copies; none in the ranch yard (x -160..-20, z 175..305)",
+   "LLR Rain Shed Pot 3": "HyruleField files (which hold Lon Lon Ranch) contain only 11 pots: 4 in the LLR scrub grotto, 3 on the Lake Hylia shore, 4 cow-grotto copies; none in the ranch yard (x -160..-20, z 175..305)",
+   "LLR Talons House Pot 1": "Talon's house interior (Land_LonLon_Interior_A_*, x -48..-66, z 183..217) has no pot; the field's 11 pots are all elsewhere",
+   "LLR Talons House Pot 2": "Talon's house interior (Land_LonLon_Interior_A_*, x -48..-66, z 183..217) has no pot; the field's 11 pots are all elsewhere",
+   "LLR Talons House Pot 3": "Talon's house interior (Land_LonLon_Interior_A_*, x -48..-66, z 183..217) has no pot; the field's 11 pots are all elsewhere",
+   "LLR Child Crate": "No crate inside the ranch; HyruleField crates are at 3 field note spots, the Tektite grotto, the south generic grotto and the lake lab",
+   "HF Near Market Grotto Beehive 1": "no Obj_Kokiri_Beehive_A_01 in any level file of this area; all 21 remake beehives sit in one Kakariko grotto room (the bomb hole near the House of Skulltula)",
+   "HF Near Market Grotto Beehive 2": "no Obj_Kokiri_Beehive_A_01 in any level file of this area; all 21 remake beehives sit in one Kakariko grotto room (the bomb hole near the House of Skulltula)",
+   "HF Southeast Grotto Beehive 1": "no Obj_Kokiri_Beehive_A_01 in any level file of this area; all 21 remake beehives sit in one Kakariko grotto room (the bomb hole near the House of Skulltula)",
+   "HF Southeast Grotto Beehive 2": "no Obj_Kokiri_Beehive_A_01 in any level file of this area; all 21 remake beehives sit in one Kakariko grotto room (the bomb hole near the House of Skulltula)",
+   "HF Open Grotto Beehive 1": "no Obj_Kokiri_Beehive_A_01 in any level file of this area; all 21 remake beehives sit in one Kakariko grotto room (the bomb hole near the House of Skulltula)",
+   "HF Open Grotto Beehive 2": "no Obj_Kokiri_Beehive_A_01 in any level file of this area; all 21 remake beehives sit in one Kakariko grotto room (the bomb hole near the House of Skulltula)",
+   "HF Inside Fence Grotto Beehive": "no Obj_Kokiri_Beehive_A_01 in any level file of this area; all 21 remake beehives sit in one Kakariko grotto room (the bomb hole near the House of Skulltula)",
+   "LLR Grotto Beehive": "no Obj_Kokiri_Beehive_A_01 in any level file of this area; all 21 remake beehives sit in one Kakariko grotto room (the bomb hole near the House of Skulltula)",
+   "LH Grotto Beehive": "no Obj_Kokiri_Beehive_A_01 in any level file of this area; all 21 remake beehives sit in one Kakariko grotto room (the bomb hole near the House of Skulltula)",
+   "LH Underwater Near Shore Green Rupee": "Only 2 child loose rupees in Lake Hylia, both 5.5 units deep by the Zora ruins (paired with the dive rupees); none near the shore",
+   "LH Lab Dive Red Rupee 3": "The lab dive tank holds 2 rupees (red + blue, paired), not 3"
+  },
+  "excluded": {
+   "4345393372308040637": "Obj_BrokenBox_A_06 (cucco crate synced to the Obj_BrokenBox_A_01 at the same spot): no GameData flag and the actor does not declare Drop__DropActor (drop_objects.csv gmd_flag=no_flag), so it cannot hold a one-time item",
+   "4392858802949544986": "Obj_BrokenBox_A_06 (cucco crate synced to the Obj_BrokenBox_A_01 at the same spot): no GameData flag and the actor does not declare Drop__DropActor (drop_objects.csv gmd_flag=no_flag), so it cannot hold a one-time item",
+   "4293238463102171135": "Crate on the bottom of the Tektite grotto pool (y=120.5, water surface 128.5, fish at 128.2): a child cannot reach the bottom (no Iron Boots) and cannot break a crate while swimming; the adult copy at the same spot is assigned",
+   "7249046631724680605": "Crate on the bottom of the Tektite grotto pool (y=120.5, water surface 128.5, fish at 128.2): a child cannot reach the bottom (no Iron Boots) and cannot break a crate while swimming; the adult copy at the same spot is assigned",
+   "13505816572168486267": "Crate on the bottom of the Tektite grotto pool (y=120.5, water surface 128.5, fish at 128.2): a child cannot reach the bottom (no Iron Boots) and cannot break a crate while swimming; the adult copy at the same spot is assigned",
+   "3139014475176937354": "Child crate on the bottom of the Lake Hylia lab dive tank (y=128.4, tank surface 137.5): a child cannot use Iron Boots or break a crate while swimming"
+  }
+ },
+ "Market": {
+  "objects": {
+   "17535587547850276606": {
+    "region": "Market",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Child pot on the elevated walkway (y=104.6) over the bombchu-bowling building where Npc_Hylia_006 walks (AnchorAction1-3, door Obj_Door_A_05 at 104.5) = OoT's market balcony, which OoTR treats as reachable for child with no item (Market Daytime/Night Balcony Wonderitems)"
+   },
+   "10790097866069291961": {
+    "region": "Market Back Alley",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Child pot in the back alley (y~97-98, below the plaza's 100): outside the Dog Lady's house (Land_HrlCity_madamHouse, door (-51.1,23.9), Richard nearby) or between the alley houses House_E/House_F; not inside any house interior"
+   },
+   "7026635600153347152": {
+    "region": "Market Back Alley",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Child pot in the back alley (y~97-98, below the plaza's 100): outside the Dog Lady's house (Land_HrlCity_madamHouse, door (-51.1,23.9), Richard nearby) or between the alley houses House_E/House_F; not inside any house interior"
+   },
+   "13625579619088899452": {
+    "region": "Market Back Alley",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Child pot in the back alley (y~97-98, below the plaza's 100): outside the Dog Lady's house (Land_HrlCity_madamHouse, door (-51.1,23.9), Richard nearby) or between the alley houses House_E/House_F; not inside any house interior"
+   },
+   "14951295602089760727": {
+    "region": "Market Guard House",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Child crate in the guard-house pot room (Land_HrlCity_PotsRoom; 44 paired child pots, 4 paired crates) at the Market GS Guard House spot (17.4,58.4), i.e. the crate holding the guard-house skulltula; OoTR has no 5th guard-house crate"
+   },
+   "1023031635146699070": {
+    "region": "Market",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Child pot on the elevated walkway (y=104.6) over the bombchu-bowling building where Npc_Hylia_006 walks (AnchorAction1-3, door Obj_Door_A_05 at 104.5) = OoT's market balcony, which OoTR treats as reachable for child with no item (Market Daytime/Night Balcony Wonderitems)"
+   },
+   "12290558272066687065": {
+    "region": "Market",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Child pot on the elevated walkway (y=104.6) over the bombchu-bowling building where Npc_Hylia_006 walks (AnchorAction1-3, door Obj_Door_A_05 at 104.5) = OoT's market balcony, which OoTR treats as reachable for child with no item (Market Daytime/Night Balcony Wonderitems)"
+   }
+  },
+  "pairs": [],
+  "absent": {
+   "Market Guard House Adult Pot 5": "Market_Adult_Static holds only 4 guard-house pots (paired as Adult Pot 1-4); no other adult pot or crate in the Market level",
+   "Market Guard House Adult Pot 6": "Market_Adult_Static holds only 4 guard-house pots (paired as Adult Pot 1-4); no other adult pot or crate in the Market level",
+   "Market Guard House Adult Pot 7": "Market_Adult_Static holds only 4 guard-house pots (paired as Adult Pot 1-4); no other adult pot or crate in the Market level",
+   "Market Guard House Adult Pot 8": "Market_Adult_Static holds only 4 guard-house pots (paired as Adult Pot 1-4); no other adult pot or crate in the Market level",
+   "Market Guard House Adult Pot 9": "Market_Adult_Static holds only 4 guard-house pots (paired as Adult Pot 1-4); no other adult pot or crate in the Market level",
+   "Market Guard House Adult Pot 10": "Market_Adult_Static holds only 4 guard-house pots (paired as Adult Pot 1-4); no other adult pot or crate in the Market level",
+   "Market Guard House Adult Pot 11": "Market_Adult_Static holds only 4 guard-house pots (paired as Adult Pot 1-4); no other adult pot or crate in the Market level",
+   "Market Man in Green House Pot 1": "The back-alley houses (Land_HrlCity_House_Inside_E/F/G) contain no pots; the 3 back-alley pots stand outside in the alley and are new Market Back Alley locations",
+   "Market Man in Green House Pot 2": "The back-alley houses (Land_HrlCity_House_Inside_E/F/G) contain no pots; the 3 back-alley pots stand outside in the alley and are new Market Back Alley locations",
+   "Market Man in Green House Pot 3": "The back-alley houses (Land_HrlCity_House_Inside_E/F/G) contain no pots; the 3 back-alley pots stand outside in the alley and are new Market Back Alley locations",
+   "Market Dog Lady House Crate": "The Dog Lady's house (Land_HrlCity_madamHouse / House_Inside_G) has no crate; Market crates exist only in the guard house",
+   "Market Night Red Rupee Crate": "No crate on the market plaza in any Market file (day or night); all 6 Market crates are in the guard house",
+   "Market Night Green Rupee Crate 1": "No crate on the market plaza in any Market file (day or night); all 6 Market crates are in the guard house",
+   "Market Night Green Rupee Crate 2": "No crate on the market plaza in any Market file (day or night); all 6 Market crates are in the guard house",
+   "Market Night Green Rupee Crate 3": "No crate on the market plaza in any Market file (day or night); all 6 Market crates are in the guard house",
+   "Market Day Crate 1": "No crate on the market plaza in any Market file (day or night); all 6 Market crates are in the guard house",
+   "Market Day Crate 2": "No crate on the market plaza in any Market file (day or night); all 6 Market crates are in the guard house",
+   "Market Day Crate 3": "No crate on the market plaza in any Market file (day or night); all 6 Market crates are in the guard house",
+   "Market Day Crate 4": "No crate on the market plaza in any Market file (day or night); all 6 Market crates are in the guard house"
+  },
+  "excluded": {
+   "12007020335551548247": "Obj_BrokenBox_A_06 (cucco crate synced to the Obj_BrokenBox_A_01 at the same spot): no GameData flag and the actor does not declare Drop__DropActor (drop_objects.csv gmd_flag=no_flag), so it cannot hold a one-time item"
+  }
+ },
+ "HyruleCastle": {
+  "objects": {
+   "10059814395578920693": {
+    "region": "Hyrule Castle Grounds",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Pot just inside the castle gate (Obj_HrlCastle_SwitchShutter_A_01 (27.2,108,-55.5), guard Soldier_009 who stops the player) at y=108; reached as in OoT by climbing the vines by Malon and going round; OoTR keeps gate, moat and vines in Hyrule Castle Grounds"
+   },
+   "3850073398103270554": {
+    "region": "Hyrule Castle Grounds",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Pot just inside the castle gate (Obj_HrlCastle_SwitchShutter_A_01 (27.2,108,-55.5), guard Soldier_009 who stops the player) at y=108; reached as in OoT by climbing the vines by Malon and going round; OoTR keeps gate, moat and vines in Hyrule Castle Grounds"
+   },
+   "17403667611047276834": {
+    "region": "HC Garden",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Pot at y=128 by the castle's steel door (12.3,128,-132) guarded by Soldier_027, on the courtyard level (garden soldiers at y 126.8-130.7) above the moat (y~120); the stricter HC Garden is chosen over Hyrule Castle Grounds"
+   },
+   "14678650210325974267": {
+    "region": "HC Garden",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Pot at y=128 by the castle's steel door (12.3,128,-132) guarded by Soldier_027, on the courtyard level (garden soldiers at y 126.8-130.7) above the moat (y~120); the stricter HC Garden is chosen over Hyrule Castle Grounds"
+   },
+   "5507607260679107783": {
+    "region": "HC Garden",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Crate at y=130.6 deep in the castle courtyard stealth area among the garden soldiers (Soldier_021/024/025, z -160..-200) on the way to Zelda (5.1,127.8,-256.5); entered through the drain crawlhole by Talon"
+   },
+   "5862372604076992768": {
+    "region": "HC Garden",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Crate at y=130.6 deep in the castle courtyard stealth area among the garden soldiers (Soldier_021/024/025, z -160..-200) on the way to Zelda (5.1,127.8,-256.5); entered through the drain crawlhole by Talon"
+   }
+  },
+  "pairs": [],
+  "absent": {
+   "HC Storms Grotto Pot 3": "The storms grotto room under (35.9,-106.2) holds 2 pots (paired as Pot 1/2), a WallCrack, a gossip stone and a fairy; no 3rd/4th pot",
+   "HC Storms Grotto Pot 4": "The storms grotto room under (35.9,-106.2) holds 2 pots (paired as Pot 1/2), a WallCrack, a gossip stone and a fairy; no 3rd/4th pot"
+  },
+  "excluded": {}
+ },
+ "GanonCastle": {
+  "objects": {},
+  "pairs": [],
+  "absent": {},
+  "excluded": {
+   "1337254747199514230": "Escape-sequence pot in CrumblingGanonCastle (after Ganondorf, no OoTR region; the seed is decided by then) and Obj_Pot_A_06 there has no GameData flag (always respawns), so it cannot be a one-time location",
+   "16158747032522515754": "Escape-sequence pot in CrumblingGanonCastle (after Ganondorf, no OoTR region; the seed is decided by then) and Obj_Pot_A_06 there has no GameData flag (always respawns), so it cannot be a one-time location",
+   "7057323129962538362": "Escape-sequence pot in CrumblingGanonCastle (after Ganondorf, no OoTR region; the seed is decided by then) and Obj_Pot_A_06 there has no GameData flag (always respawns), so it cannot be a one-time location",
+   "2995876338500118652": "Escape-sequence pot in CrumblingGanonCastle (after Ganondorf, no OoTR region; the seed is decided by then) and Obj_Pot_A_06 there has no GameData flag (always respawns), so it cannot be a one-time location",
+   "15046736084248795685": "Escape-sequence pot in CrumblingGanonCastle (after Ganondorf, no OoTR region; the seed is decided by then) and Obj_Pot_A_06 there has no GameData flag (always respawns), so it cannot be a one-time location",
+   "5547511959614762973": "Escape-sequence pot in CrumblingGanonCastle (after Ganondorf, no OoTR region; the seed is decided by then) and Obj_Pot_A_06 there has no GameData flag (always respawns), so it cannot be a one-time location",
+   "10448158396041431760": "Escape-sequence pot in CrumblingGanonCastle (after Ganondorf, no OoTR region; the seed is decided by then) and Obj_Pot_A_06 there has no GameData flag (always respawns), so it cannot be a one-time location",
+   "7806434487081634021": "Escape-sequence pot in CrumblingGanonCastle (after Ganondorf, no OoTR region; the seed is decided by then) and Obj_Pot_A_06 there has no GameData flag (always respawns), so it cannot be a one-time location",
+   "13784984248963672668": "Escape-sequence pot in CrumblingGanonCastle (after Ganondorf, no OoTR region; the seed is decided by then) and Obj_Pot_A_06 there has no GameData flag (always respawns), so it cannot be a one-time location",
+   "13713923972504494620": "Obj_LiftRock_C_01 (outside Ganon's Castle): no GameData flag and the actor does not declare Drop__DropActor (drop_objects.csv gmd_flag=no_flag), so it cannot hold a one-time item"
+  }
+ },
+ "KakarikoVillage": {
+  "objects": {
+   "6233273780664277824": {
+    "region": "Kak Redead Grotto",
+    "rule": "'Defeat Phantom Ganon' and 'Defeat Volvagia' and 'Defeat Morpha'",
+    "confidence": "medium",
+    "why": "LAYOUT: Sequence_IsAlternative_KakarikoAdult (GameDataList BoolExp 2705876908) = NOT Sequence_IsChildhood AND SageOfShadow_Kakariko_Burning, and SageOfShadow_Kakariko_Burning (BoolExp 1813060025) = SageOfForest_IsCompleted_Exp AND SageOfFire_IsCompleted_Exp AND SageOfWater_IsCompleted_Exp; KakarikoVillage_Adult_Alternative's GameBancParam SoundSceneryName is '炎上直後のカカリコ村（大人）' (adult Kakariko right after the fire). Nothing switches it back. These hives are only in KakarikoVillage_Adult_Alternative: they exist only after Forest, Fire and Water sages are complete, which the is_adult rule does not ask. Add the gate. Loosen: Bow (Arrow damage 1.0 on Obj_Beehive)."
+   },
+   "11170096559973302143": {
+    "region": "Kak Redead Grotto",
+    "rule": "'Defeat Phantom Ganon' and 'Defeat Volvagia' and 'Defeat Morpha'",
+    "confidence": "medium",
+    "why": "LAYOUT: Sequence_IsAlternative_KakarikoAdult (GameDataList BoolExp 2705876908) = NOT Sequence_IsChildhood AND SageOfShadow_Kakariko_Burning, and SageOfShadow_Kakariko_Burning (BoolExp 1813060025) = SageOfForest_IsCompleted_Exp AND SageOfFire_IsCompleted_Exp AND SageOfWater_IsCompleted_Exp; KakarikoVillage_Adult_Alternative's GameBancParam SoundSceneryName is '炎上直後のカカリコ村（大人）' (adult Kakariko right after the fire). Nothing switches it back. These hives are only in KakarikoVillage_Adult_Alternative: they exist only after Forest, Fire and Water sages are complete, which the is_adult rule does not ask. Add the gate. Loosen: Bow (Arrow damage 1.0 on Obj_Beehive)."
+   },
+   "1202776697094645489": {
+    "region": "Kak Redead Grotto",
+    "rule": "'Defeat Phantom Ganon' and 'Defeat Volvagia' and 'Defeat Morpha'",
+    "confidence": "medium",
+    "why": "LAYOUT: Sequence_IsAlternative_KakarikoAdult (GameDataList BoolExp 2705876908) = NOT Sequence_IsChildhood AND SageOfShadow_Kakariko_Burning, and SageOfShadow_Kakariko_Burning (BoolExp 1813060025) = SageOfForest_IsCompleted_Exp AND SageOfFire_IsCompleted_Exp AND SageOfWater_IsCompleted_Exp; KakarikoVillage_Adult_Alternative's GameBancParam SoundSceneryName is '炎上直後のカカリコ村（大人）' (adult Kakariko right after the fire). Nothing switches it back. These hives are only in KakarikoVillage_Adult_Alternative: they exist only after Forest, Fire and Water sages are complete, which the is_adult rule does not ask. Add the gate. Loosen: Bow (Arrow damage 1.0 on Obj_Beehive)."
+   },
+   "13581472975735926379": {
+    "region": "Kak Redead Grotto",
+    "rule": "'Defeat Phantom Ganon' and 'Defeat Volvagia' and 'Defeat Morpha'",
+    "confidence": "medium",
+    "why": "LAYOUT: Sequence_IsAlternative_KakarikoAdult (GameDataList BoolExp 2705876908) = NOT Sequence_IsChildhood AND SageOfShadow_Kakariko_Burning, and SageOfShadow_Kakariko_Burning (BoolExp 1813060025) = SageOfForest_IsCompleted_Exp AND SageOfFire_IsCompleted_Exp AND SageOfWater_IsCompleted_Exp; KakarikoVillage_Adult_Alternative's GameBancParam SoundSceneryName is '炎上直後のカカリコ村（大人）' (adult Kakariko right after the fire). Nothing switches it back. These hives are only in KakarikoVillage_Adult_Alternative: they exist only after Forest, Fire and Water sages are complete, which the is_adult rule does not ask. Add the gate. Loosen: Bow (Arrow damage 1.0 on Obj_Beehive)."
+   },
+   "18024025553142632322": {
+    "region": "Kak Redead Grotto",
+    "rule": "'Defeat Phantom Ganon' and 'Defeat Volvagia' and 'Defeat Morpha'",
+    "confidence": "medium",
+    "why": "LAYOUT: Sequence_IsAlternative_KakarikoAdult (GameDataList BoolExp 2705876908) = NOT Sequence_IsChildhood AND SageOfShadow_Kakariko_Burning, and SageOfShadow_Kakariko_Burning (BoolExp 1813060025) = SageOfForest_IsCompleted_Exp AND SageOfFire_IsCompleted_Exp AND SageOfWater_IsCompleted_Exp; KakarikoVillage_Adult_Alternative's GameBancParam SoundSceneryName is '炎上直後のカカリコ村（大人）' (adult Kakariko right after the fire). Nothing switches it back. These hives are only in KakarikoVillage_Adult_Alternative: they exist only after Forest, Fire and Water sages are complete, which the is_adult rule does not ask. Add the gate. Loosen: Bow (Arrow damage 1.0 on Obj_Beehive)."
+   },
+   "4974669760799564503": {
+    "region": "Kak Redead Grotto",
+    "rule": "'Defeat Phantom Ganon' and 'Defeat Volvagia' and 'Defeat Morpha'",
+    "confidence": "medium",
+    "why": "LAYOUT: Sequence_IsAlternative_KakarikoAdult (GameDataList BoolExp 2705876908) = NOT Sequence_IsChildhood AND SageOfShadow_Kakariko_Burning, and SageOfShadow_Kakariko_Burning (BoolExp 1813060025) = SageOfForest_IsCompleted_Exp AND SageOfFire_IsCompleted_Exp AND SageOfWater_IsCompleted_Exp; KakarikoVillage_Adult_Alternative's GameBancParam SoundSceneryName is '炎上直後のカカリコ村（大人）' (adult Kakariko right after the fire). Nothing switches it back. These hives are only in KakarikoVillage_Adult_Alternative: they exist only after Forest, Fire and Water sages are complete, which the is_adult rule does not ask. Add the gate. Loosen: Bow (Arrow damage 1.0 on Obj_Beehive)."
+   },
+   "17138417389390636986": {
+    "region": "Kak Redead Grotto",
+    "rule": "'Defeat Phantom Ganon' and 'Defeat Volvagia' and 'Defeat Morpha'",
+    "confidence": "medium",
+    "why": "LAYOUT: Sequence_IsAlternative_KakarikoAdult (GameDataList BoolExp 2705876908) = NOT Sequence_IsChildhood AND SageOfShadow_Kakariko_Burning, and SageOfShadow_Kakariko_Burning (BoolExp 1813060025) = SageOfForest_IsCompleted_Exp AND SageOfFire_IsCompleted_Exp AND SageOfWater_IsCompleted_Exp; KakarikoVillage_Adult_Alternative's GameBancParam SoundSceneryName is '炎上直後のカカリコ村（大人）' (adult Kakariko right after the fire). Nothing switches it back. These hives are only in KakarikoVillage_Adult_Alternative: they exist only after Forest, Fire and Water sages are complete, which the is_adult rule does not ask. Add the gate. Loosen: Bow (Arrow damage 1.0 on Obj_Beehive)."
+   },
+   "1619904051930079553": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Adult copy of Kak Near Guards House Pot 1 (child copy paired, Kakariko Village) by the Death Mountain gate; for adult, Kakariko Village and Kak Behind Gate connect freely"
+   },
+   "13635177047804265751": {
+    "region": "Kak Backyard",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Adult copy of Kak Near Odd Medicine Building Pot 1/2 (child copies paired, Kak Backyard) at the Odd Medicine door (-21.9,103.6,30.2); adult enters the backyard freely"
+   },
+   "16610069774496468056": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass at ground level (y=104.9) west of Impa's house; same spot in child, adult and adult-alternative layouts"
+   },
+   "9430625341946461210": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Adult copy of Kak Near Impas House Pot 1 (child copy paired) at ground level (y=104.7) by Impa's house"
+   },
+   "1155385119688866072": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Adult copy of Kak Near Potion Shop Pot 1/2 (child copies paired) on the steps outside the potion shop door (-43.2,107.4,9.4)"
+   },
+   "5365536334971735242": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Adult copy of Kak Near Potion Shop Pot 1/2 (child copies paired) on the steps outside the potion shop door (-43.2,107.4,9.4)"
+   },
+   "3081295406367672138": {
+    "region": "Kak Backyard",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Adult copy of Kak Near Odd Medicine Building Pot 1/2 (child copies paired, Kak Backyard) at the Odd Medicine door (-21.9,103.6,30.2); adult enters the backyard freely"
+   },
+   "16338658219881018069": {
+    "region": "Kakariko Village",
+    "rule": "'Defeat Phantom Ganon' and 'Defeat Volvagia' and 'Defeat Morpha'",
+    "confidence": "medium",
+    "why": "LAYOUT: Sequence_IsAlternative_KakarikoAdult (GameDataList BoolExp 2705876908) = NOT Sequence_IsChildhood AND SageOfShadow_Kakariko_Burning, and SageOfShadow_Kakariko_Burning (BoolExp 1813060025) = SageOfForest_IsCompleted_Exp AND SageOfFire_IsCompleted_Exp AND SageOfWater_IsCompleted_Exp; KakarikoVillage_Adult_Alternative's GameBancParam SoundSceneryName is '炎上直後のカカリコ村（大人）' (adult Kakariko right after the fire). Nothing switches it back. Alternative-layout copies of the terrace pots: only after the three sages. Add the gate."
+   },
+   "9498246738218276037": {
+    "region": "Kakariko Village",
+    "rule": "'Defeat Phantom Ganon' and 'Defeat Volvagia' and 'Defeat Morpha'",
+    "confidence": "medium",
+    "why": "LAYOUT: Sequence_IsAlternative_KakarikoAdult (GameDataList BoolExp 2705876908) = NOT Sequence_IsChildhood AND SageOfShadow_Kakariko_Burning, and SageOfShadow_Kakariko_Burning (BoolExp 1813060025) = SageOfForest_IsCompleted_Exp AND SageOfFire_IsCompleted_Exp AND SageOfWater_IsCompleted_Exp; KakarikoVillage_Adult_Alternative's GameBancParam SoundSceneryName is '炎上直後のカカリコ村（大人）' (adult Kakariko right after the fire). Nothing switches it back. Alternative-layout copies of the terrace pots: only after the three sages. Add the gate."
+   },
+   "6202340199554483612": {
+    "region": "Kakariko Village",
+    "rule": "'Defeat Phantom Ganon' and 'Defeat Volvagia' and 'Defeat Morpha'",
+    "confidence": "medium",
+    "why": "LAYOUT: Sequence_IsAlternative_KakarikoAdult (GameDataList BoolExp 2705876908) = NOT Sequence_IsChildhood AND SageOfShadow_Kakariko_Burning, and SageOfShadow_Kakariko_Burning (BoolExp 1813060025) = SageOfForest_IsCompleted_Exp AND SageOfFire_IsCompleted_Exp AND SageOfWater_IsCompleted_Exp; KakarikoVillage_Adult_Alternative's GameBancParam SoundSceneryName is '炎上直後のカカリコ村（大人）' (adult Kakariko right after the fire). Nothing switches it back. Alternative-layout copies of the terrace pots: only after the three sages. Add the gate."
+   },
+   "13040976737240109424": {
+    "region": "Kakariko Village",
+    "rule": "'Defeat Phantom Ganon' and 'Defeat Volvagia' and 'Defeat Morpha'",
+    "confidence": "medium",
+    "why": "LAYOUT: Sequence_IsAlternative_KakarikoAdult (GameDataList BoolExp 2705876908) = NOT Sequence_IsChildhood AND SageOfShadow_Kakariko_Burning, and SageOfShadow_Kakariko_Burning (BoolExp 1813060025) = SageOfForest_IsCompleted_Exp AND SageOfFire_IsCompleted_Exp AND SageOfWater_IsCompleted_Exp; KakarikoVillage_Adult_Alternative's GameBancParam SoundSceneryName is '炎上直後のカカリコ村（大人）' (adult Kakariko right after the fire). Nothing switches it back. Alternative-layout copies of the terrace pots: only after the three sages. Add the gate."
+   },
+   "313487388078450371": {
+    "region": "Kak Redead Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Beehive hanging 3-5 above the floor (y 87.5-89, floor 83.2-84.5) in the grotto room (gossip stone, fairy, pond) under the bomb-lid hole (-20,66) near the House of Skulltula (Land_Kakariko_HidingHoleCover_A_01, BrokenBomb_Base) = OoTR's Kak Redead Grotto entrance (can_open_bomb_grotto); the same room in both adult layouts. Obj_Beehive takes Arrow damage (1.0, MaxLife 1): can_break_upper_beehive (Boomerang, Hookshot, Bow, Din's Fire, Bombchus trick) is at least as strict (whether a bomb reaches a hive this high is unmeasured, so the lower-hive rule is not used): medium. Pre-fire copy merged with its burned-layout twin (settled)"
+   },
+   "16799768758395032082": {
+    "region": "Kak Redead Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Beehive hanging 3-5 above the floor (y 87.5-89, floor 83.2-84.5) in the grotto room (gossip stone, fairy, pond) under the bomb-lid hole (-20,66) near the House of Skulltula (Land_Kakariko_HidingHoleCover_A_01, BrokenBomb_Base) = OoTR's Kak Redead Grotto entrance (can_open_bomb_grotto); the same room in both adult layouts. Obj_Beehive takes Arrow damage (1.0, MaxLife 1): can_break_upper_beehive (Boomerang, Hookshot, Bow, Din's Fire, Bombchus trick) is at least as strict (whether a bomb reaches a hive this high is unmeasured, so the lower-hive rule is not used): medium. Pre-fire copy merged with its burned-layout twin (settled)"
+   },
+   "7122842226382586963": {
+    "region": "Kak Redead Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Beehive hanging 3-5 above the floor (y 87.5-89, floor 83.2-84.5) in the grotto room (gossip stone, fairy, pond) under the bomb-lid hole (-20,66) near the House of Skulltula (Land_Kakariko_HidingHoleCover_A_01, BrokenBomb_Base) = OoTR's Kak Redead Grotto entrance (can_open_bomb_grotto); the same room in both adult layouts. Obj_Beehive takes Arrow damage (1.0, MaxLife 1): can_break_upper_beehive (Boomerang, Hookshot, Bow, Din's Fire, Bombchus trick) is at least as strict (whether a bomb reaches a hive this high is unmeasured, so the lower-hive rule is not used): medium. Pre-fire copy merged with its burned-layout twin (settled)"
+   },
+   "15194145214241428457": {
+    "region": "Kak Redead Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Beehive hanging 3-5 above the floor (y 87.5-89, floor 83.2-84.5) in the grotto room (gossip stone, fairy, pond) under the bomb-lid hole (-20,66) near the House of Skulltula (Land_Kakariko_HidingHoleCover_A_01, BrokenBomb_Base) = OoTR's Kak Redead Grotto entrance (can_open_bomb_grotto); the same room in both adult layouts. Obj_Beehive takes Arrow damage (1.0, MaxLife 1): can_break_upper_beehive (Boomerang, Hookshot, Bow, Din's Fire, Bombchus trick) is at least as strict (whether a bomb reaches a hive this high is unmeasured, so the lower-hive rule is not used): medium. Pre-fire copy merged with its burned-layout twin (settled)"
+   },
+   "10145298046756223872": {
+    "region": "Kak Redead Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Beehive hanging 3-5 above the floor (y 87.5-89, floor 83.2-84.5) in the grotto room (gossip stone, fairy, pond) under the bomb-lid hole (-20,66) near the House of Skulltula (Land_Kakariko_HidingHoleCover_A_01, BrokenBomb_Base) = OoTR's Kak Redead Grotto entrance (can_open_bomb_grotto); the same room in both adult layouts. Obj_Beehive takes Arrow damage (1.0, MaxLife 1): can_break_upper_beehive (Boomerang, Hookshot, Bow, Din's Fire, Bombchus trick) is at least as strict (whether a bomb reaches a hive this high is unmeasured, so the lower-hive rule is not used): medium. Pre-fire copy merged with its burned-layout twin (settled)"
+   },
+   "1653162402693744760": {
+    "region": "Kak Redead Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Beehive hanging 3-5 above the floor (y 87.5-89, floor 83.2-84.5) in the grotto room (gossip stone, fairy, pond) under the bomb-lid hole (-20,66) near the House of Skulltula (Land_Kakariko_HidingHoleCover_A_01, BrokenBomb_Base) = OoTR's Kak Redead Grotto entrance (can_open_bomb_grotto); the same room in both adult layouts. Obj_Beehive takes Arrow damage (1.0, MaxLife 1): can_break_upper_beehive (Boomerang, Hookshot, Bow, Din's Fire, Bombchus trick) is at least as strict (whether a bomb reaches a hive this high is unmeasured, so the lower-hive rule is not used): medium. Pre-fire copy merged with its burned-layout twin (settled)"
+   },
+   "11490165347466345300": {
+    "region": "Kak Redead Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Beehive hanging 3-5 above the floor (y 87.5-89, floor 83.2-84.5) in the grotto room (gossip stone, fairy, pond) under the bomb-lid hole (-20,66) near the House of Skulltula (Land_Kakariko_HidingHoleCover_A_01, BrokenBomb_Base) = OoTR's Kak Redead Grotto entrance (can_open_bomb_grotto); the same room in both adult layouts. Obj_Beehive takes Arrow damage (1.0, MaxLife 1): can_break_upper_beehive (Boomerang, Hookshot, Bow, Din's Fire, Bombchus trick) is at least as strict (whether a bomb reaches a hive this high is unmeasured, so the lower-hive rule is not used): medium. Pre-fire copy merged with its burned-layout twin (settled)"
+   },
+   "7213843677856822468": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Adult copy of Kak Near Guards House Pot 1 (child copy paired, Kakariko Village) by the Death Mountain gate; for adult, Kakariko Village and Kak Behind Gate connect freely"
+   },
+   "14889198299869016305": {
+    "region": "Kak Backyard",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Adult copy of Kak Near Odd Medicine Building Pot 1/2 (child copies paired, Kak Backyard) at the Odd Medicine door (-21.9,103.6,30.2); adult enters the backyard freely"
+   },
+   "601921676218178237": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass at ground level (y=104.9) west of Impa's house; same spot in child, adult and adult-alternative layouts"
+   },
+   "17332353328325691959": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Adult copy of Kak Near Impas House Pot 1 (child copy paired) at ground level (y=104.7) by Impa's house"
+   },
+   "7120300037202526714": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Adult copy of Kak Near Potion Shop Pot 1/2 (child copies paired) on the steps outside the potion shop door (-43.2,107.4,9.4)"
+   },
+   "4262639976510329423": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Adult copy of Kak Near Potion Shop Pot 1/2 (child copies paired) on the steps outside the potion shop door (-43.2,107.4,9.4)"
+   },
+   "6663933541925368008": {
+    "region": "Kak Backyard",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Adult copy of Kak Near Odd Medicine Building Pot 1/2 (child copies paired, Kak Backyard) at the Odd Medicine door (-21.9,103.6,30.2); adult enters the backyard freely"
+   },
+   "10132571390884605046": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Adult copy of the terrace pots by the guards' house / Impa's house (child copies paired: Kak Near Guards House Pot 2/3, Kak Near Impas House Pot 2/3, Kakariko Village) on the y 108.66 terrace; both adult layouts keep the terrace and its ladder Land_Kakariko_Ladder_A_03 (-46.3,105.3,92.3; Ladder tags y 106.45-107.56, LadderUp 108.8-108.96) from the y 104.6-104.9 ground. Pre-fire copy merged with its burned-layout twin (settled)"
+   },
+   "17417703929745359430": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Adult copy of the terrace pots by the guards' house / Impa's house (child copies paired: Kak Near Guards House Pot 2/3, Kak Near Impas House Pot 2/3, Kakariko Village) on the y 108.66 terrace; both adult layouts keep the terrace and its ladder Land_Kakariko_Ladder_A_03 (-46.3,105.3,92.3; Ladder tags y 106.45-107.56, LadderUp 108.8-108.96) from the y 104.6-104.9 ground. Pre-fire copy merged with its burned-layout twin (settled)"
+   },
+   "2664667477796335039": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Adult copy of the terrace pots by the guards' house / Impa's house (child copies paired: Kak Near Guards House Pot 2/3, Kak Near Impas House Pot 2/3, Kakariko Village) on the y 108.66 terrace; both adult layouts keep the terrace and its ladder Land_Kakariko_Ladder_A_03 (-46.3,105.3,92.3; Ladder tags y 106.45-107.56, LadderUp 108.8-108.96) from the y 104.6-104.9 ground. Pre-fire copy merged with its burned-layout twin (settled)"
+   },
+   "14020355262484604054": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Adult copy of the terrace pots by the guards' house / Impa's house (child copies paired: Kak Near Guards House Pot 2/3, Kak Near Impas House Pot 2/3, Kakariko Village) on the y 108.66 terrace; both adult layouts keep the terrace and its ladder Land_Kakariko_Ladder_A_03 (-46.3,105.3,92.3; Ladder tags y 106.45-107.56, LadderUp 108.8-108.96) from the y 104.6-104.9 ground. Pre-fire copy merged with its burned-layout twin (settled)"
+   },
+   "14822820938445509245": {
+    "region": "Kak Redead Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Beehive hanging 3-5 units above the floor (y 87.5-89, floor 83.2-84.5) in the grotto room (gossip stone, fairy, pond) under hole (-20,66) near the House of Skulltula (HidingHole_Entry_01 lands at (-20,84.6,66)). That hole is in Kakariko Village and closed by Land_Kakariko_HidingHoleCover_A_01 (BrokenBomb_Base = bomb) = OoTR's Kak Redead Grotto entrance (can_open_bomb_grotto); the remake put a generic room there (the Redead room is stored in Hyrule Field under the field's hole (163.3,27.4))"
+   },
+   "16372087067032602965": {
+    "region": "Kak Redead Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Beehive hanging 3-5 units above the floor (y 87.5-89, floor 83.2-84.5) in the grotto room (gossip stone, fairy, pond) under hole (-20,66) near the House of Skulltula (HidingHole_Entry_01 lands at (-20,84.6,66)). That hole is in Kakariko Village and closed by Land_Kakariko_HidingHoleCover_A_01 (BrokenBomb_Base = bomb) = OoTR's Kak Redead Grotto entrance (can_open_bomb_grotto); the remake put a generic room there (the Redead room is stored in Hyrule Field under the field's hole (163.3,27.4))"
+   },
+   "6909031777249284340": {
+    "region": "Kak Redead Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Beehive hanging 3-5 units above the floor (y 87.5-89, floor 83.2-84.5) in the grotto room (gossip stone, fairy, pond) under hole (-20,66) near the House of Skulltula (HidingHole_Entry_01 lands at (-20,84.6,66)). That hole is in Kakariko Village and closed by Land_Kakariko_HidingHoleCover_A_01 (BrokenBomb_Base = bomb) = OoTR's Kak Redead Grotto entrance (can_open_bomb_grotto); the remake put a generic room there (the Redead room is stored in Hyrule Field under the field's hole (163.3,27.4))"
+   },
+   "630435123241072803": {
+    "region": "Kak Redead Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Beehive hanging 3-5 units above the floor (y 87.5-89, floor 83.2-84.5) in the grotto room (gossip stone, fairy, pond) under hole (-20,66) near the House of Skulltula (HidingHole_Entry_01 lands at (-20,84.6,66)). That hole is in Kakariko Village and closed by Land_Kakariko_HidingHoleCover_A_01 (BrokenBomb_Base = bomb) = OoTR's Kak Redead Grotto entrance (can_open_bomb_grotto); the remake put a generic room there (the Redead room is stored in Hyrule Field under the field's hole (163.3,27.4))"
+   },
+   "13688624943009703242": {
+    "region": "Kak Redead Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Beehive hanging 3-5 units above the floor (y 87.5-89, floor 83.2-84.5) in the grotto room (gossip stone, fairy, pond) under hole (-20,66) near the House of Skulltula (HidingHole_Entry_01 lands at (-20,84.6,66)). That hole is in Kakariko Village and closed by Land_Kakariko_HidingHoleCover_A_01 (BrokenBomb_Base = bomb) = OoTR's Kak Redead Grotto entrance (can_open_bomb_grotto); the remake put a generic room there (the Redead room is stored in Hyrule Field under the field's hole (163.3,27.4))"
+   },
+   "15621232994617920561": {
+    "region": "Kak Redead Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Beehive hanging 3-5 units above the floor (y 87.5-89, floor 83.2-84.5) in the grotto room (gossip stone, fairy, pond) under hole (-20,66) near the House of Skulltula (HidingHole_Entry_01 lands at (-20,84.6,66)). That hole is in Kakariko Village and closed by Land_Kakariko_HidingHoleCover_A_01 (BrokenBomb_Base = bomb) = OoTR's Kak Redead Grotto entrance (can_open_bomb_grotto); the remake put a generic room there (the Redead room is stored in Hyrule Field under the field's hole (163.3,27.4))"
+   },
+   "15036633555144416666": {
+    "region": "Kak Redead Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Beehive hanging 3-5 units above the floor (y 87.5-89, floor 83.2-84.5) in the grotto room (gossip stone, fairy, pond) under hole (-20,66) near the House of Skulltula (HidingHole_Entry_01 lands at (-20,84.6,66)). That hole is in Kakariko Village and closed by Land_Kakariko_HidingHoleCover_A_01 (BrokenBomb_Base = bomb) = OoTR's Kak Redead Grotto entrance (can_open_bomb_grotto); the remake put a generic room there (the Redead room is stored in Hyrule Field under the field's hole (163.3,27.4))"
+   },
+   "610633925189690236": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Child crate next to the windmill door (Obj_Kakariko_Door_A_02 (-7.1,104.6,43.3)) on the windmill platform, village side of fence A_11; Kakariko Village like OoTR's Kak Child Crates"
+   },
+   "4733558664880481899": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Grass at ground level (y=104.9) west of Impa's house; same spot in child, adult and adult-alternative layouts"
+   }
+  },
+  "pairs": [
+   {
+    "ootr": [
+     "Kak Child Crate 1"
+    ],
+    "hashes": [
+     "610633925189690236"
+    ],
+    "why": "The only breakable child crate in Kakariko (Obj_BrokenBox_A_01 by the windmill door), Kakariko Village; OoTR rule is_child and can_break_crate"
+   }
+  ],
+  "absent": {
+   "Kak Near Potion Shop Pot 3": "Kakariko child files hold 10 pots, all paired; only 2 stand by the potion shop",
+   "Kak Adult Crate 1": "No crate in either adult Kakariko layout (Adult / Adult_Alternative files); the only Kakariko crates are 2 in child files",
+   "Kak Adult Crate 2": "No crate in either adult Kakariko layout (Adult / Adult_Alternative files); the only Kakariko crates are 2 in child files",
+   "Kak Adult Arrows Crate": "No crate in either adult Kakariko layout (Adult / Adult_Alternative files); the only Kakariko crates are 2 in child files",
+   "Kak Adult Crate 3": "No crate in either adult Kakariko layout (Adult / Adult_Alternative files); the only Kakariko crates are 2 in child files",
+   "Kak Adult Crate 4": "No crate in either adult Kakariko layout (Adult / Adult_Alternative files); the only Kakariko crates are 2 in child files",
+   "Kak Adult Crate 5": "No crate in either adult Kakariko layout (Adult / Adult_Alternative files); the only Kakariko crates are 2 in child files",
+   "Kak Adult Crate 6": "No crate in either adult Kakariko layout (Adult / Adult_Alternative files); the only Kakariko crates are 2 in child files",
+   "Kak Adult Crate 7": "No crate in either adult Kakariko layout (Adult / Adult_Alternative files); the only Kakariko crates are 2 in child files",
+   "Kak Adult Crate 8": "No crate in either adult Kakariko layout (Adult / Adult_Alternative files); the only Kakariko crates are 2 in child files",
+   "Kak Adult Backyard Crate 1": "No crate in either adult Kakariko layout (Adult / Adult_Alternative files); the only Kakariko crates are 2 in child files",
+   "Kak Adult Backyard Crate 2": "No crate in either adult Kakariko layout (Adult / Adult_Alternative files); the only Kakariko crates are 2 in child files",
+   "Kak Adult Red Rupee Crate": "No crate in either adult Kakariko layout (Adult / Adult_Alternative files); the only Kakariko crates are 2 in child files",
+   "Kak Adult Backyard Crate 3": "No crate in either adult Kakariko layout (Adult / Adult_Alternative files); the only Kakariko crates are 2 in child files",
+   "Kak Child Crate 2": "Kakariko child files hold one breakable crate (paired as Kak Child Crate 1) plus Anju's cucco crate Obj_BrokenBox_A_02 (no flag, no drop)",
+   "Kak Child Crate 3": "Kakariko child files hold one breakable crate (paired as Kak Child Crate 1) plus Anju's cucco crate Obj_BrokenBox_A_02 (no flag, no drop)",
+   "Kak Child Crate 4": "Kakariko child files hold one breakable crate (paired as Kak Child Crate 1) plus Anju's cucco crate Obj_BrokenBox_A_02 (no flag, no drop)",
+   "Kak Child Crate 5": "Kakariko child files hold one breakable crate (paired as Kak Child Crate 1) plus Anju's cucco crate Obj_BrokenBox_A_02 (no flag, no drop)",
+   "Kak Open Grotto Beehive 1": "The open grotto room (hole (-26.8,12.4) in the backyard) holds a chest, gossip stone and fairy, no beehive; the 21 Kakariko beehives are in the bomb-hole room (Kak Redead Grotto)",
+   "Kak Open Grotto Beehive 2": "The open grotto room (hole (-26.8,12.4) in the backyard) holds a chest, gossip stone and fairy, no beehive; the 21 Kakariko beehives are in the bomb-hole room (Kak Redead Grotto)"
+  },
+  "excluded": {
+   "16232663176504694868": "Obj_BrokenBox_A_02 (the crate Anju's cucco Animal_Cucco_CatchCucco sits in): no GameData flag and the actor does not declare Drop__DropActor (drop_objects.csv gmd_flag=no_flag), so it cannot hold a one-time item"
+  },
+  "merge": [
+   {
+    "hashes": [
+     "601921676218178237",
+     "16610069774496468056"
+    ],
+    "why": "one spot, two copies taking turns: #601921676218178237 in the pre-fire adult layout (KakarikoVillage_Adult_Static.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #16610069774496468056 in the burned layout (KakarikoVillage_Adult_Alternative_Static.bcett.byml.zs) after, same type Obj_Plant_Grass_A_01, 0.00 apart ([-59.37, 104.92, 98.54] / [-59.37, 104.92, 98.54]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   },
+   {
+    "hashes": [
+     "6663933541925368008",
+     "3081295406367672138"
+    ],
+    "why": "one spot, two copies taking turns: #6663933541925368008 in the pre-fire adult layout (KakarikoVillage_Adult_Static.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #3081295406367672138 in the burned layout (KakarikoVillage_Adult_Alternative_Static.bcett.byml.zs) after, same type Obj_Pot_A_08, 0.04 apart ([-17.5, 103.19, 30.72] / [-17.51, 103.21, 30.69]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   },
+   {
+    "hashes": [
+     "14889198299869016305",
+     "13635177047804265751"
+    ],
+    "why": "one spot, two copies taking turns: #14889198299869016305 in the pre-fire adult layout (KakarikoVillage_Adult_Static.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #13635177047804265751 in the burned layout (KakarikoVillage_Adult_Alternative_Static.bcett.byml.zs) after, same type Obj_Pot_A_08, 0.05 apart ([-16.58, 103.19, 30.72] / [-16.58, 103.24, 30.71]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   },
+   {
+    "hashes": [
+     "7213843677856822468",
+     "1619904051930079553"
+    ],
+    "why": "one spot, two copies taking turns: #7213843677856822468 in the pre-fire adult layout (KakarikoVillage_Adult_Dynamic.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #1619904051930079553 in the burned layout (KakarikoVillage_Adult_Alternative_Dynamic.bcett.byml.zs) after, same type Obj_Pot_A_08, 0.00 apart ([-56.92, 109.92, -16.01] / [-56.92, 109.92, -16.01]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   },
+   {
+    "hashes": [
+     "4262639976510329423",
+     "5365536334971735242"
+    ],
+    "why": "one spot, two copies taking turns: #4262639976510329423 in the pre-fire adult layout (KakarikoVillage_Adult_Static.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #5365536334971735242 in the burned layout (KakarikoVillage_Adult_Alternative_Static.bcett.byml.zs) after, same type Obj_Pot_A_08, 0.02 apart ([-43.09, 106.41, 12.43] / [-43.1, 106.4, 12.44]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   },
+   {
+    "hashes": [
+     "7120300037202526714",
+     "1155385119688866072"
+    ],
+    "why": "one spot, two copies taking turns: #7120300037202526714 in the pre-fire adult layout (KakarikoVillage_Adult_Static.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #1155385119688866072 in the burned layout (KakarikoVillage_Adult_Alternative_Static.bcett.byml.zs) after, same type Obj_Pot_A_08, 0.02 apart ([-42.17, 106.41, 12.62] / [-42.17, 106.39, 12.63]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   },
+   {
+    "hashes": [
+     "14020355262484604054",
+     "13040976737240109424"
+    ],
+    "why": "one spot, two copies taking turns: #14020355262484604054 in the pre-fire adult layout (KakarikoVillage_Adult_Static.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #13040976737240109424 in the burned layout (KakarikoVillage_Adult_Alternative_Static.bcett.byml.zs) after, same type Obj_Pot_A_08, 0.01 apart ([-46.74, 108.66, 89.55] / [-46.74, 108.67, 89.55]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   },
+   {
+    "hashes": [
+     "2664667477796335039",
+     "6202340199554483612"
+    ],
+    "why": "one spot, two copies taking turns: #2664667477796335039 in the pre-fire adult layout (KakarikoVillage_Adult_Static.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #6202340199554483612 in the burned layout (KakarikoVillage_Adult_Alternative_Static.bcett.byml.zs) after, same type Obj_Pot_A_08, 0.01 apart ([-47.65, 108.66, 90.11] / [-47.65, 108.67, 90.11]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   },
+   {
+    "hashes": [
+     "17417703929745359430",
+     "9498246738218276037"
+    ],
+    "why": "one spot, two copies taking turns: #17417703929745359430 in the pre-fire adult layout (KakarikoVillage_Adult_Static.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #9498246738218276037 in the burned layout (KakarikoVillage_Adult_Alternative_Static.bcett.byml.zs) after, same type Obj_Pot_A_08, 0.01 apart ([-52.5, 108.66, 92.9] / [-52.5, 108.67, 92.9]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   },
+   {
+    "hashes": [
+     "10132571390884605046",
+     "16338658219881018069"
+    ],
+    "why": "one spot, two copies taking turns: #10132571390884605046 in the pre-fire adult layout (KakarikoVillage_Adult_Static.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #16338658219881018069 in the burned layout (KakarikoVillage_Adult_Alternative_Static.bcett.byml.zs) after, same type Obj_Pot_A_08, 0.01 apart ([-53.41, 108.66, 93.47] / [-53.41, 108.67, 93.47]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   },
+   {
+    "hashes": [
+     "17332353328325691959",
+     "9430625341946461210"
+    ],
+    "why": "one spot, two copies taking turns: #17332353328325691959 in the pre-fire adult layout (KakarikoVillage_Adult_Static.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #9430625341946461210 in the burned layout (KakarikoVillage_Adult_Alternative_Static.bcett.byml.zs) after, same type Obj_Pot_A_08, 0.04 apart ([-54.59, 104.63, 101.66] / [-54.58, 104.67, 101.66]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   },
+   {
+    "hashes": [
+     "7122842226382586963",
+     "1202776697094645489"
+    ],
+    "why": "one spot, two copies taking turns: #7122842226382586963 in the pre-fire adult layout (KakarikoVillage_Adult_Dynamic.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #1202776697094645489 in the burned layout (KakarikoVillage_Adult_Alternative_Dynamic.bcett.byml.zs) after, same type Obj_Kokiri_Beehive_A_01, 0.15 apart ([-4.4, 88.15, 66.08] / [-4.4, 88.0, 66.1]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   },
+   {
+    "hashes": [
+     "10145298046756223872",
+     "18024025553142632322"
+    ],
+    "why": "one spot, two copies taking turns: #10145298046756223872 in the pre-fire adult layout (KakarikoVillage_Adult_Dynamic.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #18024025553142632322 in the burned layout (KakarikoVillage_Adult_Alternative_Dynamic.bcett.byml.zs) after, same type Obj_Kokiri_Beehive_A_01, 0.07 apart ([-5.06, 88.88, 67.04] / [-5.06, 88.95, 67.04]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   },
+   {
+    "hashes": [
+     "1653162402693744760",
+     "4974669760799564503"
+    ],
+    "why": "one spot, two copies taking turns: #1653162402693744760 in the pre-fire adult layout (KakarikoVillage_Adult_Dynamic.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #4974669760799564503 in the burned layout (KakarikoVillage_Adult_Alternative_Dynamic.bcett.byml.zs) after, same type Obj_Kokiri_Beehive_A_01, 0.29 apart ([-2.26, 87.52, 67.57] / [-2.02, 87.69, 67.59]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   },
+   {
+    "hashes": [
+     "11490165347466345300",
+     "17138417389390636986"
+    ],
+    "why": "one spot, two copies taking turns: #11490165347466345300 in the pre-fire adult layout (KakarikoVillage_Adult_Dynamic.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #17138417389390636986 in the burned layout (KakarikoVillage_Adult_Alternative_Dynamic.bcett.byml.zs) after, same type Obj_Kokiri_Beehive_A_01, 0.05 apart ([-3.94, 88.24, 68.41] / [-3.94, 88.29, 68.41]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   },
+   {
+    "hashes": [
+     "15194145214241428457",
+     "13581472975735926379"
+    ],
+    "why": "one spot, two copies taking turns: #15194145214241428457 in the pre-fire adult layout (KakarikoVillage_Adult_Dynamic.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #13581472975735926379 in the burned layout (KakarikoVillage_Adult_Alternative_Dynamic.bcett.byml.zs) after, same type Obj_Kokiri_Beehive_A_01, 0.09 apart ([-5.76, 88.82, 69.35] / [-5.76, 88.91, 69.35]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   },
+   {
+    "hashes": [
+     "16799768758395032082",
+     "11170096559973302143"
+    ],
+    "why": "one spot, two copies taking turns: #16799768758395032082 in the pre-fire adult layout (KakarikoVillage_Adult_Dynamic.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #11170096559973302143 in the burned layout (KakarikoVillage_Adult_Alternative_Dynamic.bcett.byml.zs) after, same type Obj_Kokiri_Beehive_A_01, 0.00 apart ([-3.14, 87.51, 69.61] / [-3.14, 87.51, 69.61]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   },
+   {
+    "hashes": [
+     "313487388078450371",
+     "6233273780664277824"
+    ],
+    "why": "one spot, two copies taking turns: #313487388078450371 in the pre-fire adult layout (KakarikoVillage_Adult_Dynamic.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #6233273780664277824 in the burned layout (KakarikoVillage_Adult_Alternative_Dynamic.bcett.byml.zs) after, same type Obj_Kokiri_Beehive_A_01, 0.00 apart ([-4.47, 87.92, 70.68] / [-4.47, 87.92, 70.68]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   }
+  ]
+ },
+ "Graveyard": {
+  "objects": {
+   "7220582405369522243": {
+    "region": "Graveyard",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock just inside the Kakariko entrance of the graveyard (Land_Graveyard_Gate_*, ChangeBancBeforehandAnchor (-36.6,98.5,8.7), map entrance anchor (-39.9,98.1,8.4)); same spot in child and adult files"
+   },
+   "8769999659774163216": {
+    "region": "Graveyard",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Small rock just inside the Kakariko entrance of the graveyard (Land_Graveyard_Gate_*, ChangeBancBeforehandAnchor (-36.6,98.5,8.7), map entrance anchor (-39.9,98.1,8.4)); same spot in child and adult files"
+   }
+  },
+  "pairs": [],
+  "absent": {
+   "Graveyard Freestanding PoH Crate": "No crate in any Graveyard file; the Piece of Heart (-16.6,108,-8.9) stands freestanding without a crate",
+   "Graveyard Dampe Pot 1": "No Obj_Pot in any Graveyard file; Dampe's race tunnel (Land_DampeGrave_*) holds only the 8 race rupees",
+   "Graveyard Dampe Pot 2": "No Obj_Pot in any Graveyard file; Dampe's race tunnel (Land_DampeGrave_*) holds only the 8 race rupees",
+   "Graveyard Dampe Pot 3": "No Obj_Pot in any Graveyard file; Dampe's race tunnel (Land_DampeGrave_*) holds only the 8 race rupees",
+   "Graveyard Dampe Pot 4": "No Obj_Pot in any Graveyard file; Dampe's race tunnel (Land_DampeGrave_*) holds only the 8 race rupees",
+   "Graveyard Dampe Pot 5": "No Obj_Pot in any Graveyard file; Dampe's race tunnel (Land_DampeGrave_*) holds only the 8 race rupees",
+   "Graveyard Dampe Pot 6": "No Obj_Pot in any Graveyard file; Dampe's race tunnel (Land_DampeGrave_*) holds only the 8 race rupees"
+  },
+  "excluded": {}
+ }
+}

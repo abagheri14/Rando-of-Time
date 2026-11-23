@@ -1,0 +1,1271 @@
+{
+ "_about": "Build data/rando/extras_npcs_data.json: the scene steps the extras plugin (extras_npcs.py) hooks, read from the Built by tools/rando/parity/_extras_npcs_build.py.",
+ "fire_gorons": {
+  "001": {
+   "file": "Npc_Goron_001_Adult",
+   "flowchart": "Npc_Goron_001_Adult",
+   "fade": {
+    "event": "Event30",
+    "next": "Event51",
+    "preds": [
+     [
+      "next",
+      "Event10",
+      null
+     ]
+    ]
+   },
+   "talk": "Event10",
+   "message": "EventFlowMsg/Npc_Goron_001_Adult:Talk_01",
+   "shutter_flag": "Npc_Goron_001_ShutterisOpen",
+   "delete_flag": "Npc_Goron_001_Delete",
+   "scene": "Dm_FireTemple_0015"
+  },
+  "002": {
+   "file": "Npc_Goron_002_Adult",
+   "flowchart": "Npc_Goron_002_Adult",
+   "fade": {
+    "event": "Event6",
+    "next": "Event40",
+    "preds": [
+     [
+      "next",
+      "Event3",
+      null
+     ]
+    ]
+   },
+   "talk": "Event3",
+   "message": "EventFlowMsg/Npc_Goron_002_Adult:Talk_03",
+   "shutter_flag": "Npc_Goron_002_ShutterisOpen",
+   "delete_flag": "Npc_Goron_002_Delete",
+   "scene": "Dm_FireTemple_0019"
+  },
+  "003": {
+   "file": "Npc_Goron_003_Adult",
+   "flowchart": "Npc_Goron_003_Adult",
+   "fade": {
+    "event": "Event47",
+    "next": "Event57",
+    "preds": [
+     [
+      "next",
+      "Event34",
+      null
+     ]
+    ]
+   },
+   "talk": "Event34",
+   "message": "EventFlowMsg/Npc_Goron_003_Adult:Talk_04",
+   "shutter_flag": "Npc_Goron_003_ShutterisOpen",
+   "delete_flag": "Npc_Goron_003_Delete",
+   "scene": "Dm_FireTemple_0016"
+  },
+  "004": {
+   "file": "Npc_Goron_004_Adult",
+   "flowchart": "Npc_Goron_004_Adult",
+   "fade": {
+    "event": "Event29",
+    "next": "Event41",
+    "preds": [
+     [
+      "next",
+      "Event31",
+      null
+     ]
+    ]
+   },
+   "talk": "Event31",
+   "message": "EventFlowMsg/Npc_Goron_004_Adult:Talk_03",
+   "shutter_flag": "Npc_Goron_004_ShutterisOpen",
+   "delete_flag": "Npc_Goron_004_Delete",
+   "scene": "Dm_FireTemple_0018"
+  },
+  "005": {
+   "file": "Npc_Goron_005_Adult",
+   "flowchart": "Npc_Goron_005_Adult",
+   "fade": {
+    "event": "Event3",
+    "next": "Event61",
+    "preds": [
+     [
+      "next",
+      "Event51",
+      null
+     ]
+    ]
+   },
+   "talk": "Event51",
+   "message": "EventFlowMsg/Npc_Goron_005_Adult:Talk_07",
+   "shutter_flag": "Npc_Goron_005_ShutterisOpen",
+   "delete_flag": "Npc_Goron_005_Delete",
+   "scene": "Dm_FireTemple_0014"
+  },
+  "007": {
+   "file": "Npc_Goron_007_Adult",
+   "flowchart": "Npc_Goron_007_Adult",
+   "fade": {
+    "event": "Event10",
+    "next": "Event16",
+    "preds": [
+     [
+      "next",
+      "Event13",
+      null
+     ]
+    ]
+   },
+   "talk": "Event13",
+   "message": "EventFlowMsg/Npc_Goron_007_Adult:Talk_04",
+   "shutter_flag": "Npc_Goron_007_ShutterisOpen",
+   "delete_flag": "Npc_Goron_007_Delete",
+   "scene": "Dm_FireTemple_0017"
+  },
+  "008": {
+   "file": "Npc_Goron_008_Adult",
+   "flowchart": "Npc_Goron_008_Adult",
+   "fade": {
+    "event": "Event7",
+    "next": "Event15",
+    "preds": [
+     [
+      "next",
+      "Event12",
+      null
+     ]
+    ]
+   },
+   "talk": "Event12",
+   "message": "EventFlowMsg/Npc_Goron_008_Adult:Talk_05",
+   "shutter_flag": "Npc_Goron_008_ShutterisOpen",
+   "delete_flag": "Npc_Goron_008_Delete",
+   "scene": "Dm_FireTemple_0020"
+  },
+  "009": {
+   "file": "Npc_Goron_009_Adult",
+   "flowchart": "Npc_Goron_009_Adult",
+   "fade": {
+    "event": "Event7",
+    "next": "Event13",
+    "preds": [
+     [
+      "next",
+      "Event9",
+      null
+     ]
+    ]
+   },
+   "talk": "Event9",
+   "message": "EventFlowMsg/Npc_Goron_009_Adult:Talk_05",
+   "shutter_flag": "Npc_Goron_009_ShutterisOpen",
+   "delete_flag": "Npc_Goron_009_Delete",
+   "scene": "Dm_FireTemple_0021"
+  },
+  "010": {
+   "file": "Npc_Goron_010_Adult",
+   "flowchart": "Npc_Goron_010_Adult",
+   "fade": {
+    "event": "Event3",
+    "next": "Event13",
+    "preds": [
+     [
+      "next",
+      "Event11",
+      null
+     ]
+    ]
+   },
+   "talk": "Event11",
+   "message": "EventFlowMsg/Npc_Goron_010_Adult:Talk_06",
+   "shutter_flag": "Npc_Goron_010_ShutterisOpen",
+   "delete_flag": "Npc_Goron_010_Delete",
+   "scene": "Dm_FireTemple_0022"
+  }
+ },
+ "beggar": {
+  "file": "Npc_Hylia_046_BottleShop_Child",
+  "flowchart": "Npc_Hylia_046_BottleShop_Child",
+  "choices": {
+   "fish": {
+    "event": "Event119",
+    "next": "Event115",
+    "preds": [
+     [
+      "case",
+      "Event49",
+      0
+     ],
+     [
+      "case",
+      "Event12",
+      0
+     ],
+     [
+      "case",
+      "Event41",
+      0
+     ],
+     [
+      "case",
+      "Event150",
+      0
+     ]
+    ]
+   },
+   "bugs": {
+    "event": "Event120",
+    "next": "Event116",
+    "preds": [
+     [
+      "case",
+      "Event49",
+      1
+     ],
+     [
+      "case",
+      "Event12",
+      1
+     ],
+     [
+      "case",
+      "Event41",
+      1
+     ],
+     [
+      "case",
+      "Event150",
+      1
+     ]
+    ]
+   },
+   "blue_fire": {
+    "event": "Event121",
+    "next": "Event117",
+    "preds": [
+     [
+      "case",
+      "Event49",
+      2
+     ],
+     [
+      "case",
+      "Event12",
+      2
+     ],
+     [
+      "case",
+      "Event41",
+      2
+     ]
+    ]
+   }
+  },
+  "player_has_age_query": true
+ },
+ "hat": {
+  "file": "MiniGame_Fishing_Sub",
+  "flowchart": "MiniGame_Fishing_Sub",
+  "returned": {
+   "event": "Event331",
+   "next": "Event799",
+   "preds": [
+    [
+     "next",
+     "Event380",
+     null
+    ]
+   ]
+  }
+ },
+ "pole": {
+  "file": "MiniGame_Fishing",
+  "flowchart": "MiniGame_Fishing",
+  "payment": {
+   "event": "Event710",
+   "next": null,
+   "preds": [
+    [
+     "entry",
+     "PaymentCheck",
+     null
+    ]
+   ]
+  },
+  "no_rupees": "Event30",
+  "message": "EventFlowMsg/MiniGame_Fishing.msbt:Talk_07"
+ },
+ "big_poes": {
+  "file": "Dm_SY_InsertBottle",
+  "flowchart": "Dm_SY_InsertBottle",
+  "ends": {
+   "short": {
+    "event": "Event70",
+    "next": "Event55",
+    "preds": [
+     [
+      "next",
+      "Event74",
+      null
+     ]
+    ]
+   },
+   "long": {
+    "event": "Event71",
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event41",
+      null
+     ]
+    ]
+   }
+  },
+  "pushes": [
+   "Event52",
+   "Event1"
+  ],
+  "gamedata_actor": true
+ },
+ "signs": {
+  "KF Adventurers Guide Board": [
+   {
+    "row": "Obj_Kokiri_MessageBoard_A_01",
+    "file": "Obj_Kokiri_MessageBoard_A_01",
+    "flowchart": "Obj_Kokiri_MessageBoard_A_01",
+    "entry": "Talk",
+    "first": {
+     "event": "Event0",
+     "next": "Event1",
+     "preds": [
+      [
+       "entry",
+       "Talk",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": false
+   }
+  ],
+  "KF Mido Rupee Board": [
+   {
+    "row": "Obj_Kokiri_MessageBoard_A_02",
+    "file": "Obj_Kokiri_MessageBoard_A_01",
+    "flowchart": "Obj_Kokiri_MessageBoard_A_01",
+    "entry": "Talk_Mido",
+    "first": {
+     "event": "Event3",
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "Talk_Mido",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": false
+   }
+  ],
+  "KF Pond Signs": [
+   {
+    "row": "Obj_Kokiri_Signboard_GuideAction_A_04",
+    "file": "Obj_Kokiri_Signboard_GuideAction_A_04",
+    "flowchart": "Obj_Kokiri_Signboard_GuideAction_A_04",
+    "entry": "Talk",
+    "first": {
+     "event": "Event0",
+     "next": "Event5",
+     "preds": [
+      [
+       "entry",
+       "Talk",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "KF Roll Attack Sign": [
+   {
+    "row": "Obj_Kokiri_Signboard_GuideAction_A_02",
+    "file": "Obj_Kokiri_Signboard_GuideAction_A_02",
+    "flowchart": "Obj_Kokiri_Signboard_GuideAction_A_02",
+    "entry": "RollAttack",
+    "first": {
+     "event": "Event38",
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "RollAttack",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "KF Kokiri Trial Sign": [
+   {
+    "row": "Obj_Kokiri_Signboard_GuideAction_A_03",
+    "file": "Obj_Kokiri_Signboard_GuideAction_A_03",
+    "flowchart": "Obj_Kokiri_Signboard_GuideAction_A_03",
+    "entry": "Talk",
+    "first": {
+     "event": "Event0",
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "Talk",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": false
+   }
+  ],
+  "LW Deku Theater Sign": [
+   {
+    "row": "SignboardCheck_LostWood_ScrubForestStage_SurfaceFair_LostWood_001",
+    "file": "LostWood_ScrubForestStage_SurfaceFair",
+    "flowchart": "LostWood_ScrubForestStage_SurfaceFair",
+    "entry": "SignboardCheck_LostWood_001",
+    "first": {
+     "event": "Event0",
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "SignboardCheck_LostWood_001",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Market Mask Shop Sign": [
+   {
+    "row": "SignboardCheck_MaskSalesman_HrlCity_001",
+    "file": "SubEvent_MaskSalesman",
+    "flowchart": "SubEvent_MaskSalesman",
+    "entry": "SignboardCheck_MaskSalesman_HrlCity_001",
+    "first": {
+     "event": "Event211",
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "SignboardCheck_MaskSalesman_HrlCity_001",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "ToT Altar": [
+   {
+    "row": "Check_SpiritStoneBase",
+    "file": "DoorOfTime",
+    "flowchart": "DoorOfTime",
+    "entry": "Check_SpiritStoneBase",
+    "first": {
+     "event": "Event172",
+     "next": "Event9",
+     "preds": [
+      [
+       "entry",
+       "Check_SpiritStoneBase",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Graveyard Dampe Tour Sign": [
+   {
+    "row": "MiniGame_DiggingHole_MinigameIconOn_WoodSignboard",
+    "file": "Npc_Hylia_Dampe_001",
+    "flowchart": "Npc_Hylia_Dampe_001",
+    "entry": "MinigameIconOn_WoodSignboard",
+    "first": {
+     "event": "Event489",
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "MinigameIconOn_WoodSignboard",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Graveyard Flat Grave": [
+   {
+    "row": "Obj_Graveyard_Tombstone_A_02_D_T",
+    "file": "MelodyGet_Sun_SubEvent",
+    "flowchart": "MelodyGet_Sun_SubEvent",
+    "entry": "NoGetMelodySun_Flat",
+    "first": {
+     "event": "Event91",
+     "next": "Event12",
+     "preds": [
+      [
+       "entry",
+       "NoGetMelodySun_Flat",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   },
+   {
+    "row": "Obj_Graveyard_Tombstone_A_02_C0_T",
+    "file": "MelodyGet_Sun_SubEvent",
+    "flowchart": "MelodyGet_Sun_SubEvent",
+    "entry": "GetMelodySun_Flat",
+    "first": {
+     "event": "Event95",
+     "next": "Event176",
+     "preds": [
+      [
+       "entry",
+       "GetMelodySun_Flat",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Graveyard Sharp Grave": [
+   {
+    "row": "Obj_Graveyard_Tombstone_A_01_D_T",
+    "file": "MelodyGet_Sun_SubEvent",
+    "flowchart": "MelodyGet_Sun_SubEvent",
+    "entry": "NoGetMelodySun_Sharp",
+    "first": {
+     "event": "Event49",
+     "next": "Event48",
+     "preds": [
+      [
+       "entry",
+       "NoGetMelodySun_Sharp",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   },
+   {
+    "row": "Obj_Graveyard_Tombstone_A_01_C0_T",
+    "file": "MelodyGet_Sun_SubEvent",
+    "flowchart": "MelodyGet_Sun_SubEvent",
+    "entry": "GetMelodySun_Sharp",
+    "first": {
+     "event": "Event6",
+     "next": "Event171",
+     "preds": [
+      [
+       "entry",
+       "GetMelodySun_Sharp",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Graveyard Royal Tomb Poem": [
+   {
+    "row": "Obj_Graveyard_Monument_A_02",
+    "file": "GimmickFlow_RoyalFamilyTomb",
+    "flowchart": "GimmickFlow_RoyalFamilyTomb",
+    "entry": "Obj_Graveyard_Monument_A_02",
+    "first": {
+     "event": "Event2",
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "Obj_Graveyard_Monument_A_02",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Wasteland Poe Altar": [
+   {
+    "row": "Check_Gerudo_StoneTablet",
+    "file": "Npc_GuidePoe_Adult",
+    "flowchart": "Npc_GuidePoe_Adult",
+    "entry": "SageOfSpirit_Check_Gerudo_StoneTablet",
+    "first": {
+     "event": "Event55",
+     "next": "Event84",
+     "preds": [
+      [
+       "entry",
+       "SageOfSpirit_Check_Gerudo_StoneTablet",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "LH Fishing Sign": [
+   {
+    "row": "SignBoardChack_Obj_LakeHrl_SignBoard_A_01",
+    "file": "MiniGame_Fishing",
+    "flowchart": "MiniGame_Fishing",
+    "entry": "CheckSignBoard",
+    "first": {
+     "event": "Event155",
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "CheckSignBoard",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "LH Island Tablet": [
+   {
+    "row": "SignboardCheck_FireArrow_LakeHylia_01",
+    "file": "SageOfWater",
+    "flowchart": "SageOfWater",
+    "entry": "SignboardCheck_FireArrow_LakeHylia_01",
+    "first": {
+     "event": "Event0",
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "SignboardCheck_FireArrow_LakeHylia_01",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "ZR Sleepless Waterfall Plaque": [
+   {
+    "row": "Talk_ZoraRiver_Obj_TriForcePoint_A_13",
+    "file": "SignboardWood",
+    "flowchart": "SignboardWood",
+    "entry": "Talk_ZoraRiver_Obj_TriForcePoint_A_13",
+    "first": {
+     "event": "Event139",
+     "next": "Event130",
+     "preds": [
+      [
+       "entry",
+       "Talk_ZoraRiver_Obj_TriForcePoint_A_13",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "GC Grotto Hole Signs": [
+   {
+    "row": "SignboardCheck_GoronCity_SecretHole_00",
+    "file": "SignboardWood",
+    "flowchart": "SignboardWood",
+    "entry": "Talk_GoronCitySecretHole",
+    "first": {
+     "event": "Event125",
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "Talk_GoronCitySecretHole",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Bottom of the Well Floor Sign": [
+   {
+    "row": "BottomOfTheWell_Level_Room01_FloorSign",
+    "file": "BottomOfTheWell_Gimmick",
+    "flowchart": "BottomOfTheWell_Gimmick",
+    "entry": "AccessFloorSignboard",
+    "first": {
+     "event": "Event75",
+     "next": "Event20",
+     "preds": [
+      [
+       "entry",
+       "AccessFloorSignboard",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Bottom of the Well Monument": [
+   {
+    "row": "BottomOfTheWell_Well_Monument_A_04",
+    "file": "BottomOfTheWell_Gimmick",
+    "flowchart": "BottomOfTheWell_Gimmick",
+    "entry": "AccessWellMonument",
+    "first": {
+     "event": "Event29",
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "AccessWellMonument",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Dodongos Cavern Lower Tablet": [
+   {
+    "row": "SignboardCheck_OnlyFront_DodongoCavern",
+    "file": "Get_StoneOfFire",
+    "flowchart": "Get_StoneOfFire",
+    "entry": "Get_StoneOfFire_ReadStoneTablet",
+    "first": {
+     "event": "Event93",
+     "next": "Event134",
+     "preds": [
+      [
+       "entry",
+       "Get_StoneOfFire_ReadStoneTablet",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Dodongos Cavern Upper Tablet": [
+   {
+    "row": "SignboardCheck_OnlyFront_DodongoCavern2",
+    "file": "Get_StoneOfFire",
+    "flowchart": "Get_StoneOfFire",
+    "entry": "Get_StoneOfFire_ReadStoneTablet2",
+    "first": {
+     "event": "Event167",
+     "next": "Event134",
+     "preds": [
+      [
+       "entry",
+       "Get_StoneOfFire_ReadStoneTablet2",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Spirit Temple Right Snake Tablet": [
+   {
+    "row": "Obj_SpiritTemple_StoneTablet_A_01",
+    "file": "SageOfSpirit",
+    "flowchart": "SageOfSpirit",
+    "entry": "Obj_SpiritTemple_StoneTablet_A_01",
+    "first": {
+     "event": "Event403",
+     "next": "Event97",
+     "preds": [
+      [
+       "entry",
+       "Obj_SpiritTemple_StoneTablet_A_01",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Spirit Temple Left Snake Tablet": [
+   {
+    "row": "Obj_SpiritTemple_StoneTablet_A_02",
+    "file": "SageOfSpirit",
+    "flowchart": "SageOfSpirit",
+    "entry": "Obj_SpiritTemple_StoneTablet_A_02",
+    "first": {
+     "event": "Event404",
+     "next": "Event100",
+     "preds": [
+      [
+       "entry",
+       "Obj_SpiritTemple_StoneTablet_A_02",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Shadow Temple Beak Statue": [
+   {
+    "row": "ShadowTemple_WallStoneSign_Check_01",
+    "file": "ShadowTemple_Gimmick",
+    "flowchart": "ShadowTemple_Gimmick",
+    "entry": "WallStoneSign_01",
+    "first": {
+     "event": "Event175",
+     "next": "Event174",
+     "preds": [
+      [
+       "entry",
+       "WallStoneSign_01",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Shadow Temple Entrance Floor Sign 1": [
+   {
+    "row": "ShadowTemple_FloortSign_Check_02",
+    "file": "ShadowTemple_Gimmick",
+    "flowchart": "ShadowTemple_Gimmick",
+    "entry": "FloortSign_02",
+    "first": {
+     "event": "Event60",
+     "next": "Event172",
+     "preds": [
+      [
+       "entry",
+       "FloortSign_02",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Shadow Temple Entrance Floor Sign 2": [
+   {
+    "row": "ShadowTemple_FloortSign_Check_03",
+    "file": "ShadowTemple_Gimmick",
+    "flowchart": "ShadowTemple_Gimmick",
+    "entry": "FloortSign_03",
+    "first": {
+     "event": "Event194",
+     "next": "Event138",
+     "preds": [
+      [
+       "entry",
+       "FloortSign_03",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Shadow Temple Entrance Floor Sign 3": [
+   {
+    "row": "ShadowTemple_FloortSign_Check",
+    "file": "ShadowTemple_Gimmick",
+    "flowchart": "ShadowTemple_Gimmick",
+    "entry": "FloortSign",
+    "first": {
+     "event": "Event169",
+     "next": "Event171",
+     "preds": [
+      [
+       "entry",
+       "FloortSign",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Shadow Temple Entrance Wall Sign 1": [
+   {
+    "row": "ShadowTemple_WallSign_Check",
+    "file": "ShadowTemple_Gimmick",
+    "flowchart": "ShadowTemple_Gimmick",
+    "entry": "WallSign",
+    "first": {
+     "event": "Event148",
+     "next": "Event154",
+     "preds": [
+      [
+       "entry",
+       "WallSign",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Shadow Temple Entrance Wall Sign 2": [
+   {
+    "row": "ShadowTemple_WallSign_Check_02",
+    "file": "ShadowTemple_Gimmick",
+    "flowchart": "ShadowTemple_Gimmick",
+    "entry": "WallSign_02",
+    "first": {
+     "event": "Event156",
+     "next": "Event154",
+     "preds": [
+      [
+       "entry",
+       "WallSign_02",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Shadow Temple Entrance Wall Sign 3": [
+   {
+    "row": "ShadowTemple_WallSign_Check_03",
+    "file": "ShadowTemple_Gimmick",
+    "flowchart": "ShadowTemple_Gimmick",
+    "entry": "WallSign_03",
+    "first": {
+     "event": "Event164",
+     "next": "Event154",
+     "preds": [
+      [
+       "entry",
+       "WallSign_03",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Shadow Temple First Beamos Sign": [
+   {
+    "row": "ShadowTemple_WallStoneSign_Check_02",
+    "file": "ShadowTemple_Gimmick",
+    "flowchart": "ShadowTemple_Gimmick",
+    "entry": "WallStoneSign_02",
+    "first": {
+     "event": "Event173",
+     "next": "Event177",
+     "preds": [
+      [
+       "entry",
+       "WallStoneSign_02",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Shadow Temple Falling Spikes Sign": [
+   {
+    "row": "ShadowTemple_FloortSign_Check_04",
+    "file": "ShadowTemple_Gimmick",
+    "flowchart": "ShadowTemple_Gimmick",
+    "entry": "FloortSign_04",
+    "first": {
+     "event": "Event197",
+     "next": "Event139",
+     "preds": [
+      [
+       "entry",
+       "FloortSign_04",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Shadow Temple Wind Tunnel Sign": [
+   {
+    "row": "ShadowTemple_WallStoneSign_Check_03",
+    "file": "ShadowTemple_Gimmick",
+    "flowchart": "ShadowTemple_Gimmick",
+    "entry": "WallStoneSign_03",
+    "first": {
+     "event": "Event181",
+     "next": "Event182",
+     "preds": [
+      [
+       "entry",
+       "WallStoneSign_03",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Shadow Temple Invisible Spikes Sign": [
+   {
+    "row": "ShadowTemple_FloortSign_Check_05",
+    "file": "ShadowTemple_Gimmick",
+    "flowchart": "ShadowTemple_Gimmick",
+    "entry": "FloortSign_05",
+    "first": {
+     "event": "Event205",
+     "next": "Event167",
+     "preds": [
+      [
+       "entry",
+       "FloortSign_05",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ],
+  "Shadow Temple Beyond Boat Sign": [
+   {
+    "row": "ShadowTemple_FloortSign_Check_06",
+    "file": "ShadowTemple_Gimmick",
+    "flowchart": "ShadowTemple_Gimmick",
+    "entry": "FloortSign_06",
+    "first": {
+     "event": "Event19",
+     "next": "Event168",
+     "preds": [
+      [
+       "entry",
+       "FloortSign_06",
+       null
+      ]
+     ]
+    },
+    "gamedata_actor": true
+   }
+  ]
+ },
+ "fish": {
+  "pond": {
+   "file": "MiniGame_Fishing",
+   "flowchart": "MiniGame_Fishing",
+   "catch": {
+    "child": {
+     "event": "Event7",
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "Step01_CatchFish_Child",
+       null
+      ]
+     ]
+    },
+    "adult": {
+     "event": "Event6",
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "Step01_CatchFish_Adult",
+       null
+      ]
+     ]
+    }
+   }
+  },
+  "bottle": {
+   "file": "Dm_SY_InsertBottle",
+   "flowchart": "Dm_SY_InsertBottle",
+   "guest": {
+    "event": "Event5",
+    "next": "Event49",
+    "preds": [
+     [
+      "next",
+      "Event44",
+      null
+     ]
+    ]
+   }
+  },
+  "zd": [
+   {
+    "location": "ZD Fish 1",
+    "hash": "13603383307570719760",
+    "pos": [
+     8.7,
+     99.7,
+     22.0
+    ]
+   },
+   {
+    "location": "ZD Fish 2",
+    "hash": "18111112661757703418",
+    "pos": [
+     9.4,
+     99.7,
+     20.7
+    ]
+   },
+   {
+    "location": "ZD Fish 3",
+    "hash": "18248216028196947357",
+    "pos": [
+     9.6,
+     99.7,
+     21.1
+    ]
+   },
+   {
+    "location": "ZD Fish 4",
+    "hash": "5383365985517238333",
+    "pos": [
+     9.9,
+     99.7,
+     22.6
+    ]
+   },
+   {
+    "location": "ZD Fish 5",
+    "hash": "14505995159592034261",
+    "pos": [
+     10.5,
+     99.7,
+     21.6
+    ]
+   }
+  ]
+ },
+ "flags_checked": [
+  "HavePlayedEvent.BottomOfTheWell_Level_Room01_FloorSign",
+  "HavePlayedEvent.BottomOfTheWell_Well_Monument_A_04",
+  "HavePlayedEvent.Check_Gerudo_StoneTablet",
+  "HavePlayedEvent.Check_SpiritStoneBase",
+  "HavePlayedEvent.MiniGame_DiggingHole_MinigameIconOn_WoodSignboard",
+  "HavePlayedEvent.Obj_Graveyard_Monument_A_02",
+  "HavePlayedEvent.Obj_Graveyard_Tombstone_A_01_D_T",
+  "HavePlayedEvent.Obj_Graveyard_Tombstone_A_02_D_T",
+  "HavePlayedEvent.Obj_Kokiri_MessageBoard_A_01",
+  "HavePlayedEvent.Obj_Kokiri_MessageBoard_A_02",
+  "HavePlayedEvent.Obj_Kokiri_Signboard_GuideAction_A_02",
+  "HavePlayedEvent.Obj_Kokiri_Signboard_GuideAction_A_03",
+  "HavePlayedEvent.Obj_Kokiri_Signboard_GuideAction_A_04",
+  "HavePlayedEvent.ShadowTemple_FloortSign_Check",
+  "HavePlayedEvent.ShadowTemple_FloortSign_Check_02",
+  "HavePlayedEvent.ShadowTemple_FloortSign_Check_03",
+  "HavePlayedEvent.ShadowTemple_FloortSign_Check_04",
+  "HavePlayedEvent.ShadowTemple_FloortSign_Check_05",
+  "HavePlayedEvent.ShadowTemple_FloortSign_Check_06",
+  "HavePlayedEvent.ShadowTemple_WallSign_Check",
+  "HavePlayedEvent.ShadowTemple_WallSign_Check_02",
+  "HavePlayedEvent.ShadowTemple_WallSign_Check_03",
+  "HavePlayedEvent.ShadowTemple_WallStoneSign_Check_01",
+  "HavePlayedEvent.ShadowTemple_WallStoneSign_Check_02",
+  "HavePlayedEvent.ShadowTemple_WallStoneSign_Check_03",
+  "HavePlayedEvent.SignBoardChack_Obj_LakeHrl_SignBoard_A_01",
+  "HavePlayedEvent.SignboardCheck_FireArrow_LakeHylia_01",
+  "HavePlayedEvent.SignboardCheck_GoronCity_SecretHole_00",
+  "HavePlayedEvent.SignboardCheck_LostWood_ScrubForestStage_SurfaceFair_LostWood_001",
+  "HavePlayedEvent.SignboardCheck_MaskSalesman_HrlCity_001",
+  "HavePlayedEvent.SignboardCheck_OnlyFront_DodongoCavern",
+  "HavePlayedEvent.SignboardCheck_OnlyFront_DodongoCavern2",
+  "HavePlayedEvent.Talk_ZoraRiver_Obj_TriForcePoint_A_13",
+  "HavePlayedNaviBalloonMessage.type374",
+  "HavePlayedNaviBalloonMessage.type375",
+  "HavePlayedNaviBalloonMessage.type379",
+  "HavePlayedNaviBalloonMessage.type383",
+  "HavePlayedNaviBalloonMessage.type386",
+  "HavePlayedNaviBalloonMessage.type388",
+  "HavePlayedNaviBalloonMessage.type390",
+  "HavePlayedNaviBalloonMessage.type391",
+  "HavePlayedNaviBalloonMessage.type392",
+  "HavePlayedNaviBalloonMessage.type395",
+  "HavePlayedNaviBalloonMessage.type396",
+  "HavePlayedNaviBalloonMessage.type398",
+  "HavePlayedNaviBalloonMessage.type410",
+  "HavePlayedNaviBalloonMessage.type411",
+  "HavePlayedNaviBalloonMessage.type415",
+  "HavePlayedNaviBalloonMessage.type418",
+  "HavePlayedNaviBalloonMessage.type421",
+  "HavePlayedNaviBalloonMessage.type424",
+  "HavePlayedNaviBalloonMessage.type425",
+  "HavePlayedNaviBalloonMessage.type428",
+  "HavePlayedNaviBalloonMessage.type429",
+  "HavePlayedNaviBalloonMessage.type430",
+  "HavePlayedNaviBalloonMessage.type431",
+  "HavePlayedNaviBalloonMessage.type373",
+  "HavePlayedNaviBalloonMessage.type433",
+  "HavePlayedNaviBalloonMessage.type434",
+  "HavePlayedNaviBalloonMessage.type435",
+  "HavePlayedNaviBalloonMessage.type438",
+  "HavePlayedNaviBalloonMessage.type440",
+  "HavePlayedNaviBalloonMessage.type442",
+  "HavePlayedNaviBalloonMessage.type444",
+  "HavePlayedNaviBalloonMessage.type370",
+  "HavePlayedNaviBalloonMessage.type446",
+  "HavePlayedNaviBalloonMessage.type447",
+  "HavePlayedNaviBalloonMessage.type448",
+  "HavePlayedNaviBalloonMessage.type451",
+  "HavePlayedNaviBalloonMessage.type452",
+  "HavePlayedNaviBalloonMessage.type453",
+  "HavePlayedNaviBalloonMessage.type455",
+  "HavePlayedNaviBalloonMessage.type459",
+  "HavePlayedNaviBalloonMessage.type460",
+  "HavePlayedNaviBalloonMessage.type463",
+  "HavePlayedNaviBalloonMessage.type464",
+  "HavePlayedNaviBalloonMessage.type471",
+  "HavePlayedNaviBalloonMessage.type500",
+  "HavePlayedNaviBalloonMessage.type501",
+  "HavePlayedNaviBalloonMessage.type502",
+  "HavePlayedNaviBalloonMessage.type503",
+  "HavePlayedNaviBalloonMessage.type504",
+  "HavePlayedNaviBalloonMessage.type505",
+  "HavePlayedNaviBalloonMessage.type506",
+  "HavePlayedNaviBalloonMessage.type507",
+  "HavePlayedNaviBalloonMessage.type508",
+  "HavePlayedNaviBalloonMessage.type509",
+  "HavePlayedNaviBalloonMessage.type510",
+  "HavePlayedNaviBalloonMessage.type511",
+  "HyruleField_Defeat_BigPoe_01",
+  "HyruleField_Defeat_BigPoe_02",
+  "HyruleField_Defeat_BigPoe_03",
+  "HyruleField_Defeat_BigPoe_04",
+  "HyruleField_Defeat_BigPoe_05",
+  "HyruleField_Defeat_BigPoe_06",
+  "HyruleField_Defeat_BigPoe_07",
+  "HyruleField_Defeat_BigPoe_08",
+  "HyruleField_Defeat_BigPoe_09",
+  "HyruleField_Defeat_BigPoe_10",
+  "IsGet.Item_FishingRod",
+  "Npc_Goron_001_Delete",
+  "Npc_Goron_002_Delete",
+  "Npc_Goron_003_Delete",
+  "Npc_Goron_004_Delete",
+  "Npc_Goron_005_Delete",
+  "Npc_Goron_007_Delete",
+  "Npc_Goron_008_Delete",
+  "Npc_Goron_009_Delete",
+  "Npc_Goron_010_Delete"
+ ]
+}

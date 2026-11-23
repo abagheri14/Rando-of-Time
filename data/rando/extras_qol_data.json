@@ -1,0 +1,312 @@
+{
+ "_about": "Built by tools/rando/parity/_extras_qol_build.py from the game files; read by extras_qol.py.",
+ "talon": {
+  "flowchart": "Goto_HyruleCastle",
+  "steps": {
+   "Event14": {
+    "next": "Event154",
+    "preds": [
+     [
+      "next",
+      "Event205",
+      null
+     ]
+    ],
+    "step": "Step02"
+   },
+   "Event51": {
+    "next": "Event201",
+    "preds": [
+     [
+      "entry",
+      "Goto_HyruleCastle_EntryMarket",
+      null
+     ]
+    ],
+    "step": "Step02_01"
+   },
+   "Event46": {
+    "next": "Event176",
+    "preds": [
+     [
+      "next",
+      "Event36",
+      null
+     ]
+    ],
+    "step": "Step03"
+   },
+   "Event88": {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event79",
+      null
+     ],
+     [
+      "next",
+      "Event86",
+      null
+     ]
+    ],
+    "step": "Step03_02"
+   }
+  }
+ },
+ "frogs": {
+  "flowchart": "MiniGame_FrogTenors",
+  "steps": {
+   "Event147": {
+    "PlayableSeconds": 0.8999999761581421,
+    "FirstPlayableSeconds": 1.7999999523162842,
+    "Num": 14,
+    "IsRandom": true
+   },
+   "Event17": {
+    "PlayableSeconds": 1.0,
+    "FirstPlayableSeconds": 2.0,
+    "Num": 14,
+    "IsRandom": false
+   },
+   "Event247": {
+    "PlayableSeconds": 0.699999988079071,
+    "FirstPlayableSeconds": 1.399999976158142,
+    "Num": 18,
+    "IsRandom": true
+   },
+   "Event248": {
+    "PlayableSeconds": 0.699999988079071,
+    "FirstPlayableSeconds": 1.399999976158142,
+    "Num": 14,
+    "IsRandom": true
+   },
+   "Event250": {
+    "PlayableSeconds": 0.699999988079071,
+    "FirstPlayableSeconds": 1.399999976158142,
+    "Num": 18,
+    "IsRandom": true
+   }
+  }
+ },
+ "replays": {
+  "flowchart": "Dm_SY_Ocarina",
+  "calls": {
+   "Event74": {
+    "next": "Event129",
+    "waits": [
+     "Event90",
+     "Event434",
+     "Event435",
+     "Event436",
+     "Event437",
+     "Event439",
+     "Event441",
+     "Event448",
+     "Event449",
+     "Event450",
+     "Event451",
+     "Event452"
+    ]
+   },
+   "Event12": {
+    "next": "Event137",
+    "waits": [
+     "Event51",
+     "Event72",
+     "Event93",
+     "Event103",
+     "Event106",
+     "Event107",
+     "Event441",
+     "Event448",
+     "Event449",
+     "Event450",
+     "Event451",
+     "Event452"
+    ]
+   },
+   "Event246": {
+    "next": "Event519",
+    "waits": [
+     "Event248",
+     "Event262",
+     "Event520",
+     "Event521",
+     "Event522",
+     "Event523",
+     "Event524",
+     "Event525"
+    ]
+   }
+  },
+  "waits": {
+   "Event452": 180,
+   "Event448": 360,
+   "Event451": 150,
+   "Event450": 210,
+   "Event449": 285,
+   "Event441": 360,
+   "Event435": 180,
+   "Event439": 360,
+   "Event434": 150,
+   "Event437": 250,
+   "Event90": 210,
+   "Event436": 180,
+   "Event106": 180,
+   "Event107": 120,
+   "Event51": 150,
+   "Event93": 250,
+   "Event103": 120,
+   "Event72": 180,
+   "Event520": 150,
+   "Event262": 120,
+   "Event248": 90,
+   "Event524": 180,
+   "Event525": 270,
+   "Event522": 250,
+   "Event523": 210,
+   "Event521": 180
+  }
+ },
+ "packs": {
+  "wallets": [
+   {
+    "pack": "Pack/Actor/Pouch_Wallet_Small.pack.zs",
+    "file": "GameParameter/ExpansionMaxNumActor/Item_Wallet_Small.game__actor__ExpansionMaxNumActor.bgyml",
+    "MaxNum": 200
+   },
+   {
+    "pack": "Pack/Actor/Item_Wallet_Medium.pack.zs",
+    "file": "GameParameter/ExpansionMaxNumActor/Item_Wallet_Medium.game__actor__ExpansionMaxNumActor.bgyml",
+    "MaxNum": 500
+   },
+   {
+    "pack": "Pack/Actor/Pouch_Wallet_Medium.pack.zs",
+    "file": "GameParameter/ExpansionMaxNumActor/Item_Wallet_Medium.game__actor__ExpansionMaxNumActor.bgyml",
+    "MaxNum": 500
+   },
+   {
+    "pack": "Pack/Actor/Item_Wallet_Large.pack.zs",
+    "file": "GameParameter/ExpansionMaxNumActor/Item_Wallet_Large.game__actor__ExpansionMaxNumActor.bgyml",
+    "MaxNum": 1000
+   },
+   {
+    "pack": "Pack/Actor/Pouch_Wallet_Large.pack.zs",
+    "file": "GameParameter/ExpansionMaxNumActor/Item_Wallet_Large.game__actor__ExpansionMaxNumActor.bgyml",
+    "MaxNum": 1000
+   }
+  ],
+  "beehive": {
+   "pack": "Pack/Actor/Obj_Kokiri_Beehive_A_01.pack.zs",
+   "file": "Life/DamageParameters/Obj_Beehive.game__life__DamageParameters.bgyml",
+   "key": "2054188199"
+  },
+  "player": [
+   {
+    "pack": "Pack/Actor/Player_Base.pack.zs",
+    "file": "Life/DamageParameters/Player.game__life__DamageParameters.bgyml",
+    "rates": {
+     "85358548": 1.0,
+     "388620384": 1.0,
+     "988705286": 1.0,
+     "1305706849": 1.0,
+     "1499870550": 1.0,
+     "1804308776": 1.0,
+     "2054188199": 1.0,
+     "2587815097": 1.0,
+     "2872354806": 1.0,
+     "3010012571": 1.0,
+     "3237216321": 1.0,
+     "3333229237": 1.0,
+     "3429998625": 1.0,
+     "3518489183": 1.0,
+     "3520794636": 1.0,
+     "3531729256": 1.0,
+     "3797638382": 1.0,
+     "3810451446": 1.0,
+     "4190899072": 1.0
+    }
+   },
+   {
+    "pack": "Pack/Actor/Player_Child.pack.zs",
+    "file": "Life/DamageParameters/Player.game__life__DamageParameters.bgyml",
+    "rates": {
+     "85358548": 1.0,
+     "388620384": 1.0,
+     "988705286": 1.0,
+     "1305706849": 1.0,
+     "1499870550": 1.0,
+     "1804308776": 1.0,
+     "2054188199": 1.0,
+     "2587815097": 1.0,
+     "2872354806": 1.0,
+     "3010012571": 1.0,
+     "3237216321": 1.0,
+     "3333229237": 1.0,
+     "3429998625": 1.0,
+     "3518489183": 1.0,
+     "3520794636": 1.0,
+     "3531729256": 1.0,
+     "3797638382": 1.0,
+     "3810451446": 1.0,
+     "4190899072": 1.0
+    }
+   },
+   {
+    "pack": "Pack/Actor/Player_Adult.pack.zs",
+    "file": "Life/DamageParameters/Player.game__life__DamageParameters.bgyml",
+    "rates": {
+     "85358548": 1.0,
+     "388620384": 1.0,
+     "988705286": 1.0,
+     "1305706849": 1.0,
+     "1499870550": 1.0,
+     "1804308776": 1.0,
+     "2054188199": 1.0,
+     "2587815097": 1.0,
+     "2872354806": 1.0,
+     "3010012571": 1.0,
+     "3237216321": 1.0,
+     "3333229237": 1.0,
+     "3429998625": 1.0,
+     "3518489183": 1.0,
+     "3520794636": 1.0,
+     "3531729256": 1.0,
+     "3797638382": 1.0,
+     "3810451446": 1.0,
+     "4190899072": 1.0
+    }
+   }
+  ]
+ },
+ "gamedata": {
+  "Step_Goto_HyruleCastle": {
+   "type": "Enum",
+   "values": [
+    "NotReady",
+    "Ready",
+    "Step01",
+    "Step02",
+    "Step02_01",
+    "Step03",
+    "Step03_01",
+    "Step03_02",
+    "Step04",
+    "Complete"
+   ]
+  },
+  "Talon_AfterWakeUp": {
+   "type": "Bool"
+  },
+  "HavePlayedEvent.Dm_HrlCastle_0020": {
+   "type": "Bool"
+  },
+  "Goto_HyruleCastle_IsAfter_Step03_02_Exp": {
+   "type": "BoolExp"
+  },
+  "PlayerStatus.CurrentRupee": {
+   "type": "Int"
+  }
+ }
+}

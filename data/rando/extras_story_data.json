@@ -1,0 +1,883 @@
+{
+ "_about": "Built by tools/rando/parity/_extras_story_build.py from the game files; read by extras_story.py.",
+ "hooks": {
+  "InsideGanonCastle_CommonGimmick": {
+   "flowchart": "InsideGanonCastle_CommonGimmick",
+   "steps": {
+    "Event138": {
+     "next": "Event137",
+     "preds": [
+      [
+       "entry",
+       "InsideGanonCastle_LookBarrierFromDoor_Forest",
+       null
+      ]
+     ],
+     "kind": "call Common_Dungeon_OpenShutterMove:MoveToPlusZ",
+     "params": {
+      "PreOpenPos": "<arg PreOpenPos>",
+      "PostOpenPos": "<arg PostOpenPos>",
+      "LastPos": "<arg LastPos>"
+     }
+    },
+    "Event141": {
+     "next": "Event140",
+     "preds": [
+      [
+       "entry",
+       "InsideGanonCastle_LookBarrierFromDoor_Water",
+       null
+      ]
+     ],
+     "kind": "call Common_Dungeon_OpenShutterMove:MoveToPlusZ",
+     "params": {
+      "PreOpenPos": "<arg PreOpenPos>",
+      "PostOpenPos": "<arg PostOpenPos>",
+      "LastPos": "<arg LastPos>"
+     }
+    },
+    "Event144": {
+     "next": "Event143",
+     "preds": [
+      [
+       "entry",
+       "InsideGanonCastle_LookBarrierFromDoor_Fire",
+       null
+      ]
+     ],
+     "kind": "call Common_Dungeon_OpenShutterMove:MoveToPlusZ",
+     "params": {
+      "PreOpenPos": "<arg PreOpenPos>",
+      "PostOpenPos": "<arg PostOpenPos>",
+      "LastPos": "<arg LastPos>"
+     }
+    },
+    "Event164": {
+     "next": "Event163",
+     "preds": [
+      [
+       "entry",
+       "InsideGanonCastle_LookBarrierFromDoor_Shadow",
+       null
+      ]
+     ],
+     "kind": "call Common_Dungeon_OpenShutterMove:MoveToPlusZ",
+     "params": {
+      "PreOpenPos": "<arg PreOpenPos>",
+      "PostOpenPos": "<arg PostOpenPos>",
+      "LastPos": "<arg LastPos>"
+     }
+    },
+    "Event167": {
+     "next": "Event166",
+     "preds": [
+      [
+       "entry",
+       "InsideGanonCastle_LookBarrierFromDoor_Spirit",
+       null
+      ]
+     ],
+     "kind": "call Common_Dungeon_OpenShutterMove:MoveToPlusZ",
+     "params": {
+      "PreOpenPos": "<arg PreOpenPos>",
+      "PostOpenPos": "<arg PostOpenPos>",
+      "LastPos": "<arg LastPos>"
+     }
+    }
+   }
+  },
+  "Common_Dungeon_OpenShutterMove": {
+   "flowchart": "Common_Dungeon_OpenShutterMove",
+   "steps": {
+    "Event307": {
+     "next": "Event304",
+     "preds": [
+      [
+       "entry",
+       "UnlockGanonBossRoomMoveTo0",
+       null
+      ]
+     ],
+     "kind": "action Player_Event.EventPlayerMove",
+     "params": {
+      "IsWaitEnd": true,
+      "MoveSpeed": 1.0,
+      "DecSpeedDistance": 1.0,
+      "WorldPosX": 0.0,
+      "WorldPosY": 0.0,
+      "WorldPosZ": 0.0,
+      "RidableDesiredGear": 0,
+      "RidableHasToDecelerateNearGoal": false,
+      "IsSheathed": false,
+      "IsInertiaMove": false,
+      "ApplySlowMove": false,
+      "IsContinueMoveAnimeAfterFinish": false,
+      "WorldPos": "<arg PreOpenPos>"
+     }
+    },
+    "Event100": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event103",
+       null
+      ]
+     ],
+     "kind": "call Defeat_Ganon:InsideGanonCastle_Dungeon_BossAppear_1",
+     "params": {}
+    }
+   }
+  },
+  "ForestTemple_OpenDoor_Room01To02": {
+   "flowchart": "ForestTemple_OpenDoor_Room01To02",
+   "steps": {
+    "Event2": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event0",
+       null
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryHavePlayedEvent",
+     "params": {
+      "EventName": "Dm_ForestTemple_0010"
+     }
+    },
+    "Event3": {
+     "next": "Event4",
+     "preds": [
+      [
+       "case",
+       "Event2",
+       1
+      ]
+     ],
+     "kind": "action Player_Event.EventPlayerMove",
+     "params": {
+      "WorldPosX": 0.0,
+      "WorldPosY": 0.0,
+      "WorldPosZ": 0.0,
+      "RidableDesiredGear": 0,
+      "RidableHasToDecelerateNearGoal": false,
+      "IsSheathed": false,
+      "DecSpeedDistance": 2.0,
+      "MoveSpeed": 0.20000000298023224,
+      "IsWaitEnd": false,
+      "WorldPos": [
+       0.07000000029802322,
+       103.5,
+       21.489999771118164
+      ],
+      "IsInertiaMove": false,
+      "ApplySlowMove": false,
+      "IsContinueMoveAnimeAfterFinish": false
+     }
+    },
+    "Event4": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event3",
+       null
+      ]
+     ],
+     "kind": "action EventSystemActor.EventTransition",
+     "params": {
+      "IsWaitEnd": true,
+      "SpecialEventActionType": 1,
+      "FadeInTypeEventEnd": 2,
+      "EventName": "Dm_ForestTemple_0010"
+     }
+    },
+    "Event11": {
+     "next": null,
+     "preds": [
+      [
+       "case",
+       "Event2",
+       0
+      ]
+     ],
+     "kind": "action EventCamera.EventTriggerSendKeepStateMessageToPlayerCamera",
+     "params": {
+      "AfterKeepEndInterpolateCountScale": 1.0,
+      "ChangeToManualModeAfterEvent": false,
+      "KeepManualModeFrame": 120.0,
+      "IsKeepWithRelativePos": false
+     }
+    }
+   }
+  },
+  "Dm_ForestTemple_0010": {
+   "flowchart": "Dm_ForestTemple_0010",
+   "steps": {
+    "Event305": {
+     "next": null,
+     "preds": [
+      [
+       "fork",
+       "Event3",
+       7
+      ]
+     ],
+     "kind": "action GameDataActor.EventTriggerSetGameDataBool",
+     "params": {
+      "GameDataName": "ForestTemple_Elevator_BeforeDm0010",
+      "Index": -1,
+      "Value": true
+     }
+    },
+    "Event2": {
+     "next": "Event306",
+     "preds": [
+      [
+       "next",
+       "Event45",
+       null
+      ]
+     ],
+     "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+     "params": {
+      "ChallengeName": "SageOfForest",
+      "IsWaitEnd": true,
+      "IsIgnoreCompletedChallenge": false,
+      "IsIgnoreChallengeProgressUI": false,
+      "StepName": "Step06"
+     }
+    },
+    "Event307": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event306",
+       null
+      ]
+     ],
+     "kind": "action ChallengeSystemActor.EventTriggerShowChallengeProgressUI",
+     "params": {
+      "ChallengeName": "SageOfForest",
+      "IsFirstStep": false
+     }
+    }
+   }
+  },
+  "Npc_Kaepora_LakeHylia": {
+   "flowchart": "Npc_Kaepora_LakeHylia",
+   "steps": {
+    "Event18": {
+     "next": "Event19",
+     "preds": [
+      [
+       "next",
+       "Event2",
+       null
+      ]
+     ],
+     "kind": "action SoundSystemActor.EventTriggerStopInGameBgm",
+     "params": {
+      "CommandLife": 2,
+      "WithPlayableEvent": false,
+      "IsImmediateOnAutoOff": false,
+      "IsForceFadeTime": false,
+      "FadeType": 2,
+      "WaitingResumeInGameBgm": false
+     }
+    },
+    "Event19": {
+     "next": "Event22",
+     "preds": [
+      [
+       "next",
+       "Event18",
+       null
+      ]
+     ],
+     "kind": "action EventSystemActor.EventTransition",
+     "params": {
+      "IsWaitEnd": true,
+      "SpecialEventActionType": 1,
+      "FadeInTypeEventEnd": 2,
+      "EventName": "Dm_LakeHrl_0010"
+     }
+    },
+    "Event22": {
+     "next": "Event24",
+     "preds": [
+      [
+       "next",
+       "Event19",
+       null
+      ]
+     ],
+     "kind": "action SoundSystemActor.EventTriggerSoundBeginForbidScreenDucking",
+     "params": {
+      "CommandLife": 2
+     }
+    }
+   }
+  },
+  "Dm_Zora_0010": {
+   "flowchart": "Dm_Zora_0010",
+   "steps": {
+    "Event3": {
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "C10",
+       null
+      ]
+     ],
+     "kind": "fork",
+     "params": {}
+    },
+    "Event55": {
+     "next": null,
+     "preds": [
+      [
+       "fork",
+       "Event152",
+       1
+      ]
+     ],
+     "kind": "action GameDataActor.EventTriggerSetGameDataBool",
+     "params": {
+      "GameDataName": "Npc_Zora_KingZora_child_EnableClothCollidable",
+      "Value": true,
+      "Index": -1
+     }
+    },
+    "Event195": {
+     "next": null,
+     "preds": [
+      [
+       "fork",
+       "Event3",
+       3
+      ]
+     ],
+     "kind": "action Npc_Zora_007.EventAIScheduleWarpToAnchor",
+     "params": {
+      "AnchorType": 0,
+      "IsWaitEnd": true,
+      "InstanceName": "",
+      "ForceGetUpDuringSleep": true,
+      "ArrivalState": 1,
+      "ClothWarpMode": -1
+     }
+    },
+    "Event177": {
+     "next": null,
+     "preds": [
+      [
+       "fork",
+       "Event161",
+       3
+      ]
+     ],
+     "kind": "action EventWorldManagerController.EventTriggerResetDemoPaletteForFlowchart",
+     "params": {
+      "IsWaitEnd": false
+     }
+    },
+    "Event232": {
+     "next": null,
+     "preds": [
+      [
+       "fork",
+       "Event161",
+       4
+      ]
+     ],
+     "kind": "call Common_Camera_Pln:CameraDoF_Default",
+     "params": {}
+    },
+    "Event175": {
+     "next": "Event92",
+     "preds": [
+      [
+       "next",
+       "Event186",
+       null
+      ]
+     ],
+     "kind": "action Npc_Zora_KingZora_child.EventTriggerChangeEmotion",
+     "params": {
+      "EmotionType": 3,
+      "IsActFaceOnly": false
+     }
+    },
+    "Event92": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event175",
+       null
+      ]
+     ],
+     "kind": "action Npc_Zora_KingZora_child.EventTalk",
+     "params": {
+      "IsPlayASAllSlot": false,
+      "IsWaitEnd": true,
+      "ASName": "",
+      "IsAnimeDriven": false,
+      "ChoiceNumber": 0,
+      "ChoiceLabel1": 0,
+      "ChoiceLabel2": 0,
+      "ChoiceLabel3": 0,
+      "ChoiceLabel4": 0,
+      "ChoiceDefaultNo": 0,
+      "ChoiceCancelNo": 0,
+      "IsNotBecomeSpeaker": false,
+      "ChangeMstxtForActor": false,
+      "IsAnonymous": false,
+      "NotPlayLipSyncAnim": false,
+      "IsOverrideStyle": false,
+      "OverrideStyle": 0,
+      "IsNotOpenIfSkipedMostRecent": false,
+      "MessageId": "EventFlowMsg/Dm_Zora_0010:Dm_Zore_0010_0019",
+      "IsCloseDialog": false,
+      "MaintainPerformanceState": 0,
+      "EndDialogOption": 0
+     }
+    },
+    "Event184": {
+     "next": "Event192",
+     "preds": [
+      [
+       "next",
+       "Event54",
+       null
+      ]
+     ],
+     "kind": "action Npc_Zora_KingZora_child.EventTriggerChangeEmotion",
+     "params": {
+      "EmotionType": 0,
+      "IsActFaceOnly": true
+     }
+    },
+    "Event67": {
+     "next": "Event186",
+     "preds": [
+      [
+       "next",
+       "Event12",
+       null
+      ]
+     ],
+     "kind": "action Npc_Zora_KingZora_child.EventPlayAS",
+     "params": {
+      "IsWaitEnd": true,
+      "ASName": "C10",
+      "Partial": "",
+      "IsAnimeDriven": true,
+      "ForceFadeInFrame": 20.0,
+      "IsAllSlot": true
+     }
+    }
+   }
+  },
+  "GetPouchContent": {
+   "flowchart": "GetPouchContent",
+   "steps": {
+    "Event23": {
+     "next": "Event72",
+     "preds": [
+      [
+       "case",
+       "Event36",
+       1
+      ]
+     ],
+     "kind": "action SystemTextNPC.EventTalk",
+     "params": {
+      "IsWaitEnd": true,
+      "IsCloseDialog": true,
+      "EndDialogOption": 0,
+      "ASName": "",
+      "IsAnimeDriven": false,
+      "IsPlayASAllSlot": false,
+      "ChoiceNumber": 0,
+      "ChoiceLabel1": 0,
+      "ChoiceLabel2": 0,
+      "ChoiceLabel3": 0,
+      "ChoiceLabel4": 0,
+      "ChoiceDefaultNo": 0,
+      "ChoiceCancelNo": 0,
+      "IsNotBecomeSpeaker": false,
+      "ChangeMstxtForActor": false,
+      "IsAnonymous": false,
+      "NotPlayLipSyncAnim": false,
+      "IsNotOpenIfSkipedMostRecent": false,
+      "IsOverrideStyle": true,
+      "OverrideStyle": 4,
+      "MessageId": "EventFlowMsg/Dm_SY_Get:GetMessage",
+      "MaintainPerformanceState": 0
+     }
+    }
+   }
+  }
+ },
+ "entries": {
+  "InsideGanonCastle_CommonGimmick": {
+   "InsideGanonCastle_LookBarrierFromDoor_Forest": "Event138",
+   "InsideGanonCastle_LookBarrierFromDoor_Water": "Event141",
+   "InsideGanonCastle_LookBarrierFromDoor_Fire": "Event144",
+   "InsideGanonCastle_LookBarrierFromDoor_Shadow": "Event164",
+   "InsideGanonCastle_LookBarrierFromDoor_Spirit": "Event167"
+  },
+  "Common_Dungeon_OpenShutterMove": {
+   "UnlockGanonBossRoomMoveTo0": "Event307"
+  },
+  "Dm_Zora_0010": {
+   "C10": "Event3"
+  }
+ },
+ "actors": {
+  "InsideGanonCastle_CommonGimmick": [
+   "Player_Event",
+   "GameSystemActor",
+   "EventRequestActor",
+   "EventCamera",
+   "SoundSystemActor",
+   "EventSystemActor",
+   "GameDataActor"
+  ],
+  "Common_Dungeon_OpenShutterMove": [
+   "Player_Event",
+   "EventCamera",
+   "EventSystemActor",
+   "UISystemActor",
+   "DoorShutter_EventStarter",
+   "Enemy_Wolfos_White",
+   "GameSystemActor",
+   "SoundSystemActor",
+   "EventRequestActor",
+   "GameDataActor",
+   "Enemy_Scrub_Deku",
+   "Enemy_Scrub_Deku_Leaf",
+   "Npc_Navi",
+   "PostProcessingActor",
+   "Enemy_Floormaster"
+  ],
+  "ForestTemple_OpenDoor_Room01To02": [
+   "GameDataActor",
+   "EventSystemActor",
+   "EventCamera",
+   "Player_Event"
+  ],
+  "Dm_ForestTemple_0010": [
+   "ChallengeSystemActor",
+   "Player_Event",
+   "Npc_Navi",
+   "EventCamera",
+   "EventSystemActor",
+   "DevelopEventSystemActor",
+   "Obj_ForestTemple_Elevator_A_01",
+   "UISystemActor",
+   "Obj_ForestTemple_SwitchCandleStick_A_01",
+   "Obj_ForestTemple_SwitchCandleStick_A_04",
+   "Obj_ForestTemple_SwitchCandleStick_A_03",
+   "Obj_ForestTemple_SwitchCandleStick_A_02",
+   "Dm_Locator",
+   "Dm_Poe_Meg",
+   "Dm_Poe_Joelle",
+   "Dm_Poe_Beth",
+   "Dm_Poe_Amy",
+   "Dm_Weapon_PoeSisters_Joelle_Torch",
+   "Dm_Weapon_PoeSisters_Beth_Torch",
+   "Dm_Weapon_PoeSisters_Amy_Torch",
+   "Dm_Weapon_PoeSisters_Meg_Torch",
+   "GameDataActor",
+   "PostProcessingActor",
+   "GameSystemActor",
+   "EventSystemActor"
+  ],
+  "Npc_Kaepora_LakeHylia": [
+   "EventSystemActor",
+   "GameSystemActor",
+   "Npc_Kaepora_LakeHylia",
+   "GameDataActor",
+   "Player_Event",
+   "Npc_EventStarter",
+   "UISystemActor",
+   "SoundSystemActor"
+  ],
+  "Dm_Zora_0010": [
+   "EventCamera",
+   "Npc_Zora_KingZora_child",
+   "Npc_Navi",
+   "Player_Event",
+   "DevelopEventSystemActor",
+   "Dm_Item_RutoLetter",
+   "EventSystemActor",
+   "Item_Bottle_Letter",
+   "Npc_Zora_007",
+   "Npc_Zora_001",
+   "GameDataActor",
+   "GameSystemActor",
+   "Npc_Zora_004",
+   "PostProcessingActor",
+   "EventWorldManagerController",
+   "Dm_Locator",
+   "EventSystemActor"
+  ],
+  "GetPouchContent": [
+   "PouchSystemActor",
+   "SystemTextNPC",
+   "GameSystemActor",
+   "UISystemActor",
+   "GameDataActor"
+  ]
+ },
+ "gamedata": {
+  "Zorariver_TheWaterfallsplits": {
+   "type": "Bool",
+   "default": false
+  },
+  "HavePlayedEvent.Dm_ForestTemple_0010": {
+   "type": "Bool",
+   "default": false
+  },
+  "ForestTemple_Elevator_BeforeDm0010": {
+   "type": "Bool",
+   "default": false
+  },
+  "HavePlayedEvent.Get_StoneOfWater_ArriveJabuJabuBelly": {
+   "type": "Bool",
+   "default": false
+  },
+  "JabJabOpenedMouth": {
+   "type": "Bool",
+   "default": false
+  },
+  "Npc_Zora_KingZora_child_EnableClothCollidable": {
+   "type": "Bool",
+   "default": false
+  },
+  "HavePlayedEvent.Dm_Zora_0010": {
+   "type": "Bool",
+   "default": false
+  },
+  "IsGet.Item_Medal_Forest": {
+   "type": "Bool",
+   "default": false
+  },
+  "IsGet.Item_Medal_Fire": {
+   "type": "Bool",
+   "default": false
+  },
+  "IsGet.Item_Medal_Water": {
+   "type": "Bool",
+   "default": false
+  },
+  "IsGet.Item_Medal_Shadow": {
+   "type": "Bool",
+   "default": false
+  },
+  "IsGet.Item_Medal_Spirit": {
+   "type": "Bool",
+   "default": false
+  },
+  "IsGet.Item_Medal_Light": {
+   "type": "Bool",
+   "default": false
+  },
+  "IsGet.Item_Stone_Forest": {
+   "type": "Bool",
+   "default": false
+  },
+  "IsGet.Item_Stone_Fire": {
+   "type": "Bool",
+   "default": false
+  },
+  "IsGet.Item_Stone_Water": {
+   "type": "Bool",
+   "default": false
+  },
+  "PouchData.Item_Token_Gold.StockNum": {
+   "type": "Int",
+   "default": 0
+  },
+  "PlayerStatus.MaxLife": {
+   "type": "Int",
+   "default": 12
+  },
+  "InsideGanonCastle_Dungeon_BarrierRemove_Light": {
+   "type": "Bool",
+   "default": false
+  }
+ },
+ "placements": {
+  "jabu_mouth": {
+   "file": "Banc/ZoraFountain/ZoraFountain_Child_Static.bcett.byml.zs",
+   "hash": "4228704915231375030",
+   "gyaml": "FieldAndDungeonEntranceEventRequestActor",
+   "dynamic": {
+    "FirstEventName": "Dm_SY_BancChangeGo_ToInsideJabujabu",
+    "NextBancParamNameAdult": "InsideJabuJabuBelly",
+    "NextBancParamNameChild": "InsideJabuJabuBelly",
+    "NextEventName": "Dm_SY_BancChangeArrive",
+    "NextStartPosName": "InsideJabuJabuBelly_FromZoraFountain"
+   },
+   "translate": [
+    18.077,
+    114.395,
+    -24.478
+   ]
+  },
+  "light_barrier_door": {
+   "file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+   "hash": "18370141889105081871",
+   "gyaml": "Obj_InsideGanonCastle_SwitchShutter_A_01",
+   "dynamic": {
+    "DefaultDungeonRoomIndex": 14
+   },
+   "translate": [
+    -75.461,
+    99.754,
+    -20.998
+   ]
+  },
+  "forest_barrier_door": {
+   "file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+   "hash": "16547757579712762477",
+   "gyaml": "Obj_InsideGanonCastle_SwitchShutter_A_01",
+   "dynamic": {
+    "DefaultDungeonRoomIndex": 3,
+    "NomralEvent": "InsideGanonCastle_LookBarrierFromDoor_Forest"
+   },
+   "translate": [
+    45.156,
+    102.9,
+    58.115
+   ]
+  },
+  "water_barrier_door": {
+   "file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+   "hash": "9454360734666596216",
+   "gyaml": "Obj_InsideGanonCastle_SwitchShutter_A_01",
+   "dynamic": {
+    "DefaultDungeonRoomIndex": 6,
+    "NomralEvent": "InsideGanonCastle_LookBarrierFromDoor_Water"
+   },
+   "translate": [
+    93.296,
+    99.748,
+    -21.0
+   ]
+  },
+  "shadow_barrier_door": {
+   "file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+   "hash": "15970872372384393881",
+   "gyaml": "Obj_InsideGanonCastle_SwitchShutter_A_01",
+   "dynamic": {
+    "DefaultDungeonRoomIndex": 9,
+    "NomralEvent": "InsideGanonCastle_LookBarrierFromDoor_Shadow"
+   },
+   "translate": [
+    62.325,
+    105.394,
+    -129.823
+   ]
+  },
+  "fire_barrier_door": {
+   "file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+   "hash": "8540530808124215779",
+   "gyaml": "Obj_InsideGanonCastle_SwitchShutter_A_01",
+   "dynamic": {
+    "DefaultDungeonRoomIndex": 11,
+    "NomralEvent": "InsideGanonCastle_LookBarrierFromDoor_Fire"
+   },
+   "translate": [
+    -49.493,
+    103.948,
+    -98.652
+   ]
+  },
+  "spirit_barrier_door": {
+   "file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+   "hash": "9280501248130802789",
+   "gyaml": "Obj_InsideGanonCastle_SwitchShutter_A_01",
+   "dynamic": {
+    "DefaultDungeonRoomIndex": 17,
+    "NomralEvent": "InsideGanonCastle_LookBarrierFromDoor_Spirit"
+   },
+   "translate": [
+    -34.64,
+    105.02,
+    45.455
+   ]
+  },
+  "ganondorf_door": {
+   "file": "Banc/InsideGanonCastle/InsideGanonCastle_Static.bcett.byml.zs",
+   "hash": "4569037702968299446",
+   "gyaml": "Obj_InsideGanonCastle_SwitchShutter_A_03",
+   "dynamic": {
+    "DefaultDungeonRoomIndex": 63,
+    "NomralEvent": "Common_Dungeon_OpenDoorChainLock_UnlockGanonBossRoomMoveTo0",
+    "OpenChainEvent": "Common_Dungeon_OpenDoorChainLock_UnlockGanonBossRoomMoveTo0",
+    "OpenChainShutterEvent": "Common_Dungeon_OpenDoorChainLock_UnlockGanonBossRoomMoveTo0",
+    "ShutterEvent": "Common_Dungeon_OpenShutterMoveToPlusZ_Boss"
+   },
+   "translate": [
+    0.083,
+    171.043,
+    -7.011
+   ]
+  }
+ },
+ "ainb": {
+  "jabu_open_mouth": [
+   {
+    "file": "Logic/ZoraFountain_Child_Prefab_41c4.logic.module.ainb",
+    "offset": 6088,
+    "i32": 6,
+    "expect": 18
+   },
+   {
+    "file": "Logic/ZoraFountain_Child_Prefab_41c4.logic.module.ainb",
+    "offset": 6136,
+    "i32": 6,
+    "expect": 18
+   }
+  ]
+ },
+ "anchors": {
+  "light_barrier_door": {
+   "name": "room14_lookPos01",
+   "translate": [
+    -75.003,
+    99.754,
+    -20.998
+   ]
+  }
+ },
+ "text": {
+  "file": "EventFlowMsg/Item_Event.msbt",
+  "languages": [
+   "CNzh",
+   "EUde",
+   "EUen",
+   "EUes",
+   "EUfr",
+   "EUit",
+   "EUnl",
+   "EUpl",
+   "EUru",
+   "JPja",
+   "KRko",
+   "TWzh",
+   "USen",
+   "USes",
+   "USfr",
+   "USpt"
+  ]
+ }
+}

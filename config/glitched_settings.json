@@ -1,0 +1,7 @@
+{
+ "_about": "Glitched preset (the remake's answer to OoTR's 'Glitch Logic Advanced Base'): the default settings with Logic Rules 'Glitched (remake glitches)' (logic_rules remake_glitched): glitchless logic plus every remake glitch trick that has routes in logic, i.e. routes a source shows or that were verified in the game (data/rando/remake_glitch_tricks.json 'rules' and verified 'candidates'; tools/rando/parity/glitches.py resolve_settings). Tricks whose routes are all still untested, refuted or blocked stay out until one is verified. OoTR's N64 glitch_* tricks stay off: they don't work in the remake. Use: python tools/rando/generate.py OUT --settings config/glitched_settings.json.",
+ "base": "config/rando_settings.json",
+ "settings": {
+  "logic_rules": "remake_glitched"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "_about": "Save flags the songs/trade/cows plugin (tools/rando/parity/songs_trade.py) uses for 'given once' at locations whose vanilla reward repeats (cows, Hyrule Loach). The save-data list (GameData/GameDataList) can't take new flags (growth untested), so these are existing permanent flags (ResetType 8, saved) that nothing in the game sets: IsGet.<actor> for abstract base actors that can never enter the pouch, then HavePlayedEvent.<scene ID> for template scene IDs no file references (data/eventsetting_unreferenced.json). Read from the files; that the game never sets them is inferred (no file names them), not seen in-game. Other plugins needing flags: take from 'free' and move them to 'assigned' here (or a shared registry), so two plugins never share one. GF Cow (the remake-only Gerudo Fortress cow) takes a flag of the shared borrowed pool (tools/rando/free_flags.py: an unrequested Navi balloon's saved bool, type327, after the windows the claim build scripts take theirs from, so rebuilding them takes the same flags), listed in 'flags_claimed' so free_flags.CLAIM_FILES ('songs_trade_cows') keeps it out of the drops and fairies plugins' picks while a seed holds it (shuffle_cows on). HavePlayedEvent.Npc_Talk_Base (another NPC template row, like the Npc_*_Base ones above) added to 'free'; the BancChange*_Base and PlayOcarina_Base template rows were left out: code may start those templates itself.",
+ "assigned": {
+  "KF Links House Cow": "IsGet.Obj_Item_Base",
+  "GV Cow": "IsGet.Weapon_Base",
+  "Kak Impas House Cow": "IsGet.Armor_Mask_Base",
+  "LLR Stables Left Cow": "IsGet.Weapon_Sword_DarkLinkSword",
+  "LLR Stables Right Cow": "IsGet.Weapon_Shield_DarkLinkShield",
+  "HF Cow Grotto Cow": "HavePlayedEvent.Npc_ChaseNear_Base",
+  "DMT Cow Grotto Cow": "HavePlayedEvent.Npc_ChaseTalk_Base",
+  "LH Loach Fishing": "HavePlayedEvent.Npc_GatherNear_Base",
+  "Kak Granny Buy Blue Potion": "HavePlayedEvent.Npc_GatherTalk_Base",
+  "GC Medigoron": "HavePlayedEvent.Npc_EachFrame_Base",
+  "Market Mask Shop counter bit 0": "HavePlayedEvent.Npc_StepStart_Base",
+  "Market Mask Shop counter bit 1": "HavePlayedEvent.Npc_StepStart_NotStarter_Base",
+  "Market Mask Shop counter bit 2": "HavePlayedEvent.Dm_MelodyGet_Manegement",
+  "Market Mask Shop counter bit 3": "HavePlayedEvent.MiniGame_Fishing_Tutorial_Parent",
+  "ZR Magic Bean Salesman": "HavePlayedEvent.Parent_Dungeon_DoorMovement",
+  "DMT Biggoron (trade quest complete, adult_trade_shuffle)": "HavePlayedEvent.FocusOnGimmick_Basic_MultipleAnchor_FireTemple",
+  "LH Sun": "HavePlayedEvent.Npc_Near_Base",
+  "LH Underwater Item": "HavePlayedEvent.Npc_Talk_Base",
+  "GF Cow": "HavePlayedNaviBalloonMessage.type327"
+ },
+ "free": [],
+ "flags_claimed": ["HavePlayedNaviBalloonMessage.type327"]
+}

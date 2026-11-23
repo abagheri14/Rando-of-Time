@@ -1,0 +1,46 @@
+# Game files and anything built from them (text, maps, icons)
+/original/
+/cache/
+/gd.pkl
+/data/longshot_pc_text.json
+/data/rando/hints_messages.json
+/data/rando/hints_extra.json
+/data/rando/extras_hints.json
+/tracker/dist/data/
+/tracker/research/cache/
+/tracker/research/samples/
+/tracker/research/checks_proto.json
+installed.json
+
+# Seeds, builds and release packages
+/out/
+/release/dist/
+/tracker/dist/
+/apworld/dist/
+/release/Rando-of-Time/
+/release/Rando-of-Time.zip
+/release/screenshots/
+
+# Local only
+/reference/research/
+/reference/other_randos/
+/reference/other_randomizers.md
+/reference/progressive_items_research.md
+/plans/*
+!/plans/story_hooks_settings.json
+/parked/
+/ROADMAP.md
+/data/rando/proposals/
+/data/rando/feature_matrix.json
+/data/rando/soh_3dr_status.json
+/tools/rando/soh_3dr_parity.py
+/tools/rando/audit_scene_drops.py
+/tools/gamedb/audit.py
+/tools/gamedb/audits/
+
+# Secrets and editor leftovers
+/Token
+*.local.json
+__pycache__/
+*.pyc
+*.orig

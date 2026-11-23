@@ -1,0 +1,4 @@
+{
+  "_policy": "Every trick and glitch is off, nothing is on by default. To test one, add its exact name from data/trick_checklist.csv to `enabled`, one at a time, and take it out again when you're done testing. Any name that isn't listed here is off.",
+  "enabled": []
+}

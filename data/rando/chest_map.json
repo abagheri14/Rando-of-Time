@@ -1,0 +1,1092 @@
+{
+ "_about": "Pair OoT Randomizer's chests with the remake's chests.",
+ "chests": {
+  "KF Kokiri Sword Chest": {
+   "remake": "KokiriForest/chest/16757992849254467386",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Kokiri Sword"
+  },
+  "SFM Wolfos Grotto Chest": {
+   "remake": "SacredForestMeadow/chest/7995233962349162969",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Rupees (50)"
+  },
+  "Market Treasure Chest Game Room 1 Bottom": {
+   "remake": null,
+   "mode": "vanilla",
+   "why": "minigame chest",
+   "vanilla": "Rupee (Treasure Chest Game) (1)"
+  },
+  "Market Treasure Chest Game Room 1 Top": {
+   "remake": null,
+   "mode": "vanilla",
+   "why": "minigame chest",
+   "vanilla": "Small Key (Treasure Chest Game)"
+  },
+  "Market Treasure Chest Game Room 2 Bottom": {
+   "remake": null,
+   "mode": "vanilla",
+   "why": "minigame chest",
+   "vanilla": "Rupee (Treasure Chest Game) (1)"
+  },
+  "Market Treasure Chest Game Room 2 Top": {
+   "remake": null,
+   "mode": "vanilla",
+   "why": "minigame chest",
+   "vanilla": "Small Key (Treasure Chest Game)"
+  },
+  "Market Treasure Chest Game Room 3 Bottom": {
+   "remake": null,
+   "mode": "vanilla",
+   "why": "minigame chest",
+   "vanilla": "Rupees (Treasure Chest Game) (5)"
+  },
+  "Market Treasure Chest Game Room 3 Top": {
+   "remake": null,
+   "mode": "vanilla",
+   "why": "minigame chest",
+   "vanilla": "Small Key (Treasure Chest Game)"
+  },
+  "Market Treasure Chest Game Room 4 Bottom": {
+   "remake": null,
+   "mode": "vanilla",
+   "why": "minigame chest",
+   "vanilla": "Rupees (Treasure Chest Game) (5)"
+  },
+  "Market Treasure Chest Game Room 4 Top": {
+   "remake": null,
+   "mode": "vanilla",
+   "why": "minigame chest",
+   "vanilla": "Small Key (Treasure Chest Game)"
+  },
+  "Market Treasure Chest Game Room 5 Bottom": {
+   "remake": null,
+   "mode": "vanilla",
+   "why": "minigame chest",
+   "vanilla": "Rupees (Treasure Chest Game) (20)"
+  },
+  "Market Treasure Chest Game Room 5 Top": {
+   "remake": null,
+   "mode": "vanilla",
+   "why": "minigame chest",
+   "vanilla": "Small Key (Treasure Chest Game)"
+  },
+  "Market Treasure Chest Game Reward": {
+   "remake": null,
+   "mode": "vanilla",
+   "why": "minigame chest",
+   "vanilla": "Piece of Heart (Treasure Chest Game)"
+  },
+  "Graveyard Shield Grave Chest": {
+   "remake": "Graveyard/chest/16912540161937823130",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Hylian Shield"
+  },
+  "Graveyard Dampe Race Hookshot Chest": {
+   "remake": "Graveyard/chest/16041366920820397198",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Progressive Hookshot"
+  },
+  "ZD Chest": {
+   "remake": "ZoraDomain/chest/3130048366421939233",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Piece of Heart"
+  },
+  "Deku Tree Map Chest": {
+   "remake": "InsideTheDekuTree/chest/8579518566955184384",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Map (Deku Tree)"
+  },
+  "Deku Tree Slingshot Chest": {
+   "remake": "InsideTheDekuTree/chest/821372075822700622",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Slingshot"
+  },
+  "Deku Tree Compass Chest": {
+   "remake": "InsideTheDekuTree/chest/9284193025315608699",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Compass (Deku Tree)"
+  },
+  "Dodongos Cavern Map Chest": {
+   "remake": "DodongoCavern/chest/8291119063305855945",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Map (Dodongos Cavern)"
+  },
+  "Dodongos Cavern Compass Chest": {
+   "remake": "DodongoCavern/chest/17531994809974271603",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Compass (Dodongos Cavern)"
+  },
+  "Dodongos Cavern Bomb Flower Platform Chest": {
+   "remake": "DodongoCavern/chest/12253889300578348965",
+   "vanilla": "Rupees (20)",
+   "mode": "full",
+   "why": "medium (reconcile): room 10: 16 bomb flowers + broken staircase (the staircase climb), chest high at y=116. The ootr_match 'exact' chest (room 5, NoBake on a pedestal, spawned by DodongoCavern_Gimmick_DefeatLizalfos01) is a remake Lizalfos reward"
+  },
+  "Dodongos Cavern Bomb Bag Chest": {
+   "remake": "DodongoCavern/chest/12161709650443144121",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Bomb Bag"
+  },
+  "Jabu Jabus Belly Boomerang Chest": {
+   "remake": "InsideJabuJabuBelly/chest/5527401621172639818",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Boomerang"
+  },
+  "Jabu Jabus Belly Map Chest": {
+   "remake": "InsideJabuJabuBelly/chest/14933854942830098290",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Map (Jabu Jabus Belly)"
+  },
+  "Jabu Jabus Belly Compass Chest": {
+   "remake": "InsideJabuJabuBelly/chest/3510516276638146208",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Compass (Jabu Jabus Belly)"
+  },
+  "Bottom of the Well Compass Chest": {
+   "remake": "BottomOfTheWell/chest/14911602953212243797",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Compass (Bottom of the Well)"
+  },
+  "Bottom of the Well Fire Keese Chest": {
+   "remake": "BottomOfTheWell/chest/874970148260328653",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Deku Shield"
+  },
+  "Bottom of the Well Map Chest": {
+   "remake": "BottomOfTheWell/chest/9466613428674883506",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Map (Bottom of the Well)"
+  },
+  "Bottom of the Well Lens of Truth Chest": {
+   "remake": "BottomOfTheWell/chest/16654774376625985726",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Lens of Truth"
+  },
+  "Forest Temple Map Chest": {
+   "remake": null,
+   "vanilla": "Map (Forest Temple)",
+   "mode": "vanilla",
+   "why": "the remake has no such chest (reconcile)"
+  },
+  "Forest Temple Boss Key Chest": {
+   "remake": "ForestTemple/chest/5306318520835485827",
+   "vanilla": "Boss Key (Forest Temple)",
+   "mode": "full",
+   "why": "high (reconcile): big chest rotated 90 degrees (the room reached through the straightened hall); the only boss key"
+  },
+  "Forest Temple Bow Chest": {
+   "remake": "ForestTemple/chest/11082303891540711688",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Bow"
+  },
+  "Forest Temple Blue Poe Chest": {
+   "remake": "ForestTemple/chest/6948525240950728236",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Compass (Forest Temple)"
+  },
+  "Fire Temple Boss Key Chest": {
+   "remake": "FireTemple/chest/14060099092170010696",
+   "vanilla": "Boss Key (Fire Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 17 at the end of the boss key loop: Goron 010 cage + hammer switch"
+  },
+  "Fire Temple Map Chest": {
+   "remake": "FireTemple/chest/16713240760352215634",
+   "vanilla": "Map (Fire Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 16 = OoT moving-fire room (3 hearts), chest right behind the shutter opened by the narrow-path room's eye switch (Bow or 6 keys). GetEventName FireTemple_GetMap, but it holds the Compass"
+  },
+  "Fire Temple Compass Chest": {
+   "remake": "FireTemple/chest/12945617941305968586",
+   "vanilla": "Compass (Fire Temple)",
+   "mode": "full",
+   "why": "medium (reconcile): room 10 = OoT flame maze (pots match, 40 fire-wall traps): Goron 004 cage behind the 7th-key door; the remake puts a small key here"
+  },
+  "Fire Temple Megaton Hammer Chest": {
+   "remake": "FireTemple/chest/12083259659219538030",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Megaton Hammer"
+  },
+  "Water Temple Compass Chest": {
+   "remake": "WaterTemple/chest/16490222392193949581",
+   "vanilla": "Compass (Water Temple)",
+   "mode": "vanilla",
+   "why": "key chest in a dungeon whose key count differs from OoT (reconcile)"
+  },
+  "Water Temple Map Chest": {
+   "remake": "WaterTemple/chest/16384925224245172970",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Map (Water Temple)"
+  },
+  "Water Temple Boss Key Chest": {
+   "remake": "WaterTemple/chest/10378828369334876242",
+   "vanilla": "Boss Key (Water Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 15 (water spouts), which merges OoT rooms 15/16 (Land models Room15 and Room16 overlap)"
+  },
+  "Water Temple Longshot Chest": {
+   "remake": "WaterTemple/chest/18059711820131847165",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Progressive Hookshot"
+  },
+  "Shadow Temple Map Chest": {
+   "remake": "ShadowTemple/chest/13528903653876646082",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Map (Shadow Temple)"
+  },
+  "Shadow Temple Hover Boots Chest": {
+   "remake": "ShadowTemple/chest/14535080241831873137",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Hover Boots"
+  },
+  "Shadow Temple Compass Chest": {
+   "remake": "ShadowTemple/chest/1733372171176975157",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Compass (Shadow Temple)"
+  },
+  "Shadow Temple Boss Key Chest": {
+   "remake": "ShadowTemple/chest/9221365632831348137",
+   "vanilla": "Boss Key (Shadow Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 19 spike-walls room (Din's Fire) beside the Spike Walls Left chest"
+  },
+  "Spirit Temple Child Climb North Chest": {
+   "remake": "SpiritTemple/chest/1501288453962537671",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Bombchus (10)"
+  },
+  "Spirit Temple Map Chest": {
+   "remake": "SpiritTemple/chest/13852283723126411131",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Map (Spirit Temple)"
+  },
+  "Spirit Temple Silver Gauntlets Chest": {
+   "remake": "DesertColossus/chest/2490063409521505179",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Progressive Strength Upgrade"
+  },
+  "Spirit Temple Compass Chest": {
+   "remake": "SpiritTemple/chest/15633505270333176438",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Compass (Spirit Temple)"
+  },
+  "Spirit Temple Mirror Shield Chest": {
+   "remake": "DesertColossus/chest/10012167258643363548",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Mirror Shield"
+  },
+  "Spirit Temple Boss Key Chest": {
+   "remake": "SpiritTemple/chest/16272168033146555902",
+   "vanilla": "Boss Key (Spirit Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 29: fake doors, eye switch, fire wall, hookshot target"
+  },
+  "Ice Cavern Map Chest": {
+   "remake": "IceCavern/chest/11498802739257120175",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Map (Ice Cavern)"
+  },
+  "Ice Cavern Compass Chest": {
+   "remake": "IceCavern/chest/13542013937093159888",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Compass (Ice Cavern)"
+  },
+  "Ice Cavern Iron Boots Chest": {
+   "remake": "IceCavern/chest/6859289214373847284",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Iron Boots"
+  },
+  "Gerudo Training Ground Maze Right Central Chest": {
+   "remake": "GerudoTrainingGround/chest/196331300747102419",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Bombchus (5)"
+  },
+  "Gerudo Training Ground Maze Path First Chest": {
+   "remake": "GerudoTrainingGround/chest/10696620323243142689",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Rupees (50)"
+  },
+  "Gerudo Training Ground Maze Path Final Chest": {
+   "remake": "GerudoTrainingGround/chest/1941083939696166170",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Ice Arrows"
+  },
+  "Ganons Castle Shadow Trial Golden Gauntlets Chest": {
+   "remake": "InsideGanonCastle/chest/17657623307936361670",
+   "mode": "full",
+   "why": "exact match",
+   "vanilla": "Progressive Strength Upgrade"
+  },
+  "Ganons Castle Spirit Trial Crystal Switch Chest": {
+   "remake": "InsideGanonCastle/chest/7899179288432849355",
+   "vanilla": "Bombchus (20)",
+   "mode": "full",
+   "why": "medium (reconcile): room 17 (second spirit-trial room: crystal switch, sun switches): NoBake chest (InsideGanonCastle_Dungeon_AppaerTreasureBox)"
+  },
+  "Ganons Tower Boss Key Chest": {
+   "remake": "InsideGanonCastle/chest/17092385671602176550",
+   "vanilla": "Boss Key (Ganons Castle)",
+   "mode": "full",
+   "why": "high (reconcile): room 24: black and white Iron Knuckles + EnemyCounter, NoBake big chest"
+  },
+  "KF Midos Bottom Left Chest": {
+   "remake": "KokiriForest/chest/4555665598794293658",
+   "vanilla": "Rupee (1)",
+   "mode": "full",
+   "why": "medium (reconcile): Mido's house, see Top Left (chest_map put KF Storms Grotto on this chest)"
+  },
+  "KF Midos Bottom Right Chest": {
+   "remake": "KokiriForest/chest/9725242744547055868",
+   "vanilla": "Recovery Heart",
+   "mode": "full",
+   "why": "medium (reconcile): Mido's house, see Top Left (chest_map put this OoTR chest in a Deku-scrub grotto)"
+  },
+  "KF Midos Top Left Chest": {
+   "remake": "KokiriForest/chest/12786193094758345086",
+   "vanilla": "Rupees (5)",
+   "mode": "full",
+   "why": "medium (reconcile): Mido's house: the four chests at (-53.2..-49.3, 112.3, -42.1..-40.9) (GetEventName KokiriForest_TreasureBox_NaviChatOff); same region and rule, so the order does not matter for logic"
+  },
+  "KF Midos Top Right Chest": {
+   "remake": "KokiriForest/chest/10831981390482426294",
+   "vanilla": "Rupees (5)",
+   "mode": "full",
+   "why": "medium (reconcile): Mido's house, see Top Left"
+  },
+  "KF Storms Grotto Chest": {
+   "remake": "KokiriForest/chest/14818888396401495482",
+   "vanilla": "Rupees (20)",
+   "mode": "full",
+   "why": "high (reconcile): traced: Kokiri Forest's only grotto (HidingHole_Entry_01 EventRequestActor at (-50.6,122.4,-60.5) -> its DestinationAnchor HidingHole_HoleEntrance at (-51.9,107.5,-62.8)) is behind a Song of Storms cover (FldObj_AirWall_HidingHoleCover + EventProxyRequestActor + HidingHoleCoverDisappearStrom_SafePosition), OoT's KF Storms Grotto spot; its interior holds the Deku Scrub brothers (Scrub_Deku_Brothers_Manager, DefeatedOrder) and this NoBake chest, linked from scrub 'One' (appears when the three are beaten). The former pair 4349272251343787229 is not in a grotto: it stands on a rock ledge (y=123.9, floor 114.6) by the Lost Woods bridge beside GOSSIP_LOST_WOOD_02 and the stick-pouch business scrub."
+  },
+  "LW Near Shortcuts Grotto Chest": {
+   "remake": null,
+   "vanilla": "Rupees (5)",
+   "mode": "vanilla",
+   "why": "the remake has no such chest (reconcile)"
+  },
+  "HF Near Market Grotto Chest": {
+   "remake": null,
+   "vanilla": "Rupees (5)",
+   "mode": "vanilla",
+   "why": "the remake has no such chest (reconcile)"
+  },
+  "HF Open Grotto Chest": {
+   "remake": null,
+   "vanilla": "Rupees (5)",
+   "mode": "vanilla",
+   "why": "the remake has no such chest (reconcile)"
+  },
+  "HF Southeast Grotto Chest": {
+   "remake": null,
+   "vanilla": "Rupees (20)",
+   "mode": "vanilla",
+   "why": "the remake has no such chest (reconcile)"
+  },
+  "Kak Open Grotto Chest": {
+   "remake": "KakarikoVillage/chest/12902291359202819102",
+   "vanilla": "Rupees (20)",
+   "mode": "full",
+   "why": "medium (reconcile): Kakariko grotto (Land_HidingHole_Base_B_01) with its gossip stone 6 units from the chest"
+  },
+  "Kak Redead Grotto Chest": {
+   "remake": null,
+   "vanilla": "Rupees (200)",
+   "mode": "vanilla",
+   "why": "the remake has no such chest (reconcile)"
+  },
+  "Graveyard Heart Piece Grave Chest": {
+   "remake": "Graveyard/chest/9622128545943056087",
+   "vanilla": "Piece of Heart",
+   "mode": "full",
+   "why": "medium (reconcile): underground altar room with an Obj_TBox_A_02 Piece of Heart (the other HP chest is Dampe's race reward); note that the remake's Hylian Shield chest stands next to a ReDead"
+  },
+  "Graveyard Royal Familys Tomb Chest": {
+   "remake": null,
+   "vanilla": "Bombs (5)",
+   "mode": "vanilla",
+   "why": "the remake has no such chest (reconcile)"
+  },
+  "DMT Chest": {
+   "remake": "DeathMountainTrail/chest/9809508929088891725",
+   "mode": "full",
+   "why": "small-reward chest (2 OoTR, 1 remake), order unknown; same region and rule for all of them, so any pairing is right",
+   "vanilla": "Rupees (50)",
+   "group": "DeathMountainTrail:minor"
+  },
+  "DMT Storms Grotto Chest": {
+   "remake": null,
+   "vanilla": "Rupees (200)",
+   "mode": "vanilla",
+   "why": "the remake has no such chest (reconcile)"
+  },
+  "GC Maze Left Chest": {
+   "remake": "GoronCity/chest/1176975953041865014",
+   "mode": "full",
+   "why": "small-reward chest (1 OoTR, 4 remake), order unknown; same region and rule for all of them, so any pairing is right",
+   "vanilla": "Rupees (200)",
+   "group": "GoronCity:minor"
+  },
+  "GC Maze Center Chest": {
+   "remake": "GoronCity/chest/14647422914070455120",
+   "vanilla": "Rupees (50)",
+   "mode": "full",
+   "why": "high (reconcile): the maze's four chests (z 2.0, -2.3, -5.2, -8.4) are walled in by brown (Obj_BrokenRock_A_01), iron (Obj_BrokenRock_A_02) and silver (Obj_LiftRock_B_01) rocks; which rock blocks which chest depends on collision not readable here, so all four take one rule that clears every rock type (data/rando/logic/chests.json: Megaton Hammer and Silver Gauntlets); with one rule the pairing inside the maze can't matter to logic"
+  },
+  "GC Maze Right Chest": {
+   "remake": "GoronCity/chest/3870071239709713434",
+   "mode": "full",
+   "why": "2 TBox_Rupee_Purple chests on both sides, order unknown; same region and rule for all of them, so any pairing is right",
+   "vanilla": "Rupees (50)",
+   "group": "GoronCity:TBox_Rupee_Purple"
+  },
+  "DMC Upper Grotto Chest": {
+   "remake": "DeathMountainCrater/chest/1158729434763801603",
+   "mode": "full",
+   "why": "small-reward chest (1 OoTR, 2 remake), order unknown; same region and rule for all of them, so any pairing is right",
+   "vanilla": "Bombs (20)",
+   "group": "DeathMountainCrater:minor"
+  },
+  "ZR Open Grotto Chest": {
+   "remake": "ZoraRiver/chest/8838426083116998768",
+   "mode": "full",
+   "why": "small-reward chest (1 OoTR, 1 remake), order unknown; same region and rule for all of them, so any pairing is right",
+   "vanilla": "Rupees (20)",
+   "group": "ZoraRiver:minor"
+  },
+  "GV Chest": {
+   "remake": "GerudoValley/chest/13612880783193811229",
+   "mode": "full",
+   "why": "small-reward chest (1 OoTR, 5 remake), order unknown; same region and rule for all of them, so any pairing is right",
+   "vanilla": "Rupees (50)",
+   "group": "GerudoValley:minor"
+  },
+  "GF Chest": {
+   "remake": "GerudoFortress/chest/12343753510713797715",
+   "mode": "full",
+   "why": "only Obj_Heart_Piece chest in its area on both sides",
+   "vanilla": "Piece of Heart"
+  },
+  "Wasteland Chest": {
+   "remake": "HountedWasteland/chest/8825521833684392638",
+   "mode": "full",
+   "why": "small-reward chest (1 OoTR, 1 remake), order unknown; same region and rule for all of them, so any pairing is right",
+   "vanilla": "Rupees (50)",
+   "group": "HountedWasteland:minor"
+  },
+  "Deku Tree Basement Chest": {
+   "remake": "InsideTheDekuTree/chest/12889104996486369065",
+   "vanilla": "Recovery Heart",
+   "mode": "full",
+   "why": "high (reconcile): room 4 chest at y=79.4, the only chest on the basement level (lobby floor y~100); the slingshot and compass rooms each hold their own second chest"
+  },
+  "Deku Tree Compass Room Side Chest": {
+   "remake": "InsideTheDekuTree/chest/11368028582977069031",
+   "vanilla": "Recovery Heart",
+   "mode": "full",
+   "why": "high (reconcile): room 3, same room as the Compass chest (exact pair); the only other chest in room 3"
+  },
+  "Deku Tree Slingshot Room Side Chest": {
+   "remake": "InsideTheDekuTree/chest/13027331340815880287",
+   "vanilla": "Recovery Heart",
+   "mode": "full",
+   "why": "high (reconcile): room 2, same room as the Slingshot chest (exact pair); the only other chest in room 2"
+  },
+  "Dodongos Cavern End of Bridge Chest": {
+   "remake": "DodongoCavern/chest/7524527082521156886",
+   "vanilla": "Deku Shield",
+   "mode": "full",
+   "why": "medium (reconcile): room 1 (lobby) upper level y=113.3: Obj_TBox_A_06 Deku Shield right beside a WallCrack (bomb to reveal = can_blast_or_smash). The second A_06 shield chest (bomb bag room 13) is a remake addition"
+  },
+  "Dodongos Cavern Boss Room Chest": {
+   "remake": null,
+   "vanilla": "Bombs (5)",
+   "mode": "vanilla",
+   "why": "the remake has no such chest (reconcile)"
+  },
+  "Bottom of the Well Front Left Fake Wall Chest": {
+   "remake": "BottomOfTheWell/chest/8975637636514249074",
+   "vanilla": "Small Key (Bottom of the Well)",
+   "mode": "vanilla",
+   "why": "key chest in a dungeon whose key count differs from OoT (reconcile)"
+  },
+  "Bottom of the Well Right Bottom Fake Wall Chest": {
+   "remake": "BottomOfTheWell/chest/8397646530660039355",
+   "vanilla": "Small Key (Bottom of the Well)",
+   "mode": "vanilla",
+   "why": "key chest in a dungeon whose key count differs from OoT (reconcile)"
+  },
+  "Bottom of the Well Like Like Chest": {
+   "remake": null,
+   "vanilla": "Hylian Shield",
+   "mode": "vanilla",
+   "why": "the remake has no such chest (reconcile)"
+  },
+  "Bottom of the Well Back Left Bombable Chest": {
+   "remake": "BottomOfTheWell/chest/10905582354954996284",
+   "vanilla": "Deku Nuts (10)",
+   "mode": "full",
+   "why": "medium (reconcile): back-left (-29.6,-37) by a face relief and a Lens-of-Truth floor; the remake's well has no bombable walls"
+  },
+  "Bottom of the Well Center Skulltula Chest": {
+   "remake": "BottomOfTheWell/chest/631709185320708287",
+   "vanilla": "Deku Nuts (5)",
+   "mode": "full",
+   "why": "medium (reconcile): central block east side (12,100,-11), mirror of the compass chest, Skulltula above"
+  },
+  "Bottom of the Well Front Center Bombable Chest": {
+   "remake": "BottomOfTheWell/chest/6064359710907908886",
+   "vanilla": "Bombchus (10)",
+   "mode": "vanilla",
+   "why": "low-confidence pair (reconcile): leftover: room 11 at the far back behind a gate and an invisible (lens) floor; access likely differs from OoT's explosives rule"
+  },
+  "Bottom of the Well Invisible Chest": {
+   "remake": "BottomOfTheWell/chest/11718708984125260282",
+   "vanilla": "Rupees (200)",
+   "mode": "full",
+   "why": "high (reconcile): room 2 behind the Lullaby triforce: the dungeon's only GlassTruth (invisible) chest"
+  },
+  "Bottom of the Well Underwater Front Chest": {
+   "remake": "BottomOfTheWell/chest/5429815628949128345",
+   "vanilla": "Bombs (10)",
+   "mode": "full",
+   "why": "medium (reconcile): front centre at y=96.2, below the water plane at y=99.6"
+  },
+  "Bottom of the Well Underwater Left Chest": {
+   "remake": "BottomOfTheWell/chest/12988877782812797760",
+   "vanilla": "Recovery Heart",
+   "mode": "vanilla",
+   "why": "low-confidence pair (reconcile): chest at y=97.8 in a pit with a ladder (but on the right side, x=+19.9)"
+  },
+  "Forest Temple First Room Chest": {
+   "remake": "ForestTemple/chest/1171460703078800858",
+   "vanilla": "Small Key (Forest Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 0 (entrance courtyard with Wolfos), the only chest; small key on both sides"
+  },
+  "Forest Temple First Stalfos Chest": {
+   "remake": "ForestTemple/chest/14776684749746592758",
+   "vanilla": "Small Key (Forest Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 4: 2 Stalfos + EnemyCounter, NoBake key chest; directly below the Bow chest's 3-Stalfos room 17 (OoT room 6 holds both fights)"
+  },
+  "Forest Temple Floormaster Chest": {
+   "remake": "ForestTemple/chest/7535137041266964235",
+   "vanilla": "Small Key (Forest Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 22: Enemy_Floormaster + EnemyCounter + NoBake key chest"
+  },
+  "Forest Temple Red Poe Chest": {
+   "remake": "ForestTemple/chest/3433400840978782007",
+   "vanilla": "Small Key (Forest Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 16: Enemy_Poe_Joelle (red Poe) + her painting + NoBake key chest"
+  },
+  "Forest Temple Well Chest": {
+   "remake": "ForestTemple/chest/6449977980406424425",
+   "vanilla": "Small Key (Forest Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 15 at y=88, the bottom of the well beside the east courtyard (room 14); small key on both sides"
+  },
+  "Forest Temple Eye Switch Chest": {
+   "remake": "ForestTemple/chest/15920957434854338961",
+   "vanilla": "Arrows (30)",
+   "mode": "full",
+   "why": "high (reconcile): rooms 7/8: block-push room (MovableBox on 1F and 2F) with Obj_EyeSwitch_A_02 and a NoBake chest (purple rupee). chest_map's unique-item pair (large arrows) is the basement chest"
+  },
+  "Forest Temple Basement Chest": {
+   "remake": "ForestTemple/chest/9038700938965170329",
+   "vanilla": "Arrows (5)",
+   "mode": "full",
+   "why": "high (reconcile): room 27: basement with the rotating walls (PivotedFloor), boss-door lock and pre-boss pots; holds TBox_ArrowBundle_Large (OoT: arrows 5)"
+  },
+  "Forest Temple Falling Ceiling Room Chest": {
+   "remake": "ForestTemple/chest/15117164073907033527",
+   "vanilla": "Arrows (10)",
+   "mode": "full",
+   "why": "high (reconcile): room 24: Obj_ForestTemple_FallingCeiling + Skulltulas + floor switch. The chest has no Drop__DropActor (default contents)"
+  },
+  "Forest Temple Raised Island Courtyard Chest": {
+   "remake": "ForestTemple/chest/3174893090599461927",
+   "vanilla": "Recovery Heart",
+   "mode": "full",
+   "why": "medium (reconcile): east courtyard (room 14: Octorok, Deku Babas, GS) chest at y=101.4 beside a hookshot target and the door toward the falling-ceiling room; holds the remake's Map"
+  },
+  "Fire Temple Big Lava Room Blocked Door Chest": {
+   "remake": "FireTemple/chest/1705064956286753527",
+   "vanilla": "Small Key (Fire Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 22 off the big lava room behind Obj_FireTemple_CrackWall (bombable = has_explosives), Goron 003 cage"
+  },
+  "Fire Temple Big Lava Room Lower Open Door Chest": {
+   "remake": "FireTemple/chest/3949488292768750868",
+   "vanilla": "Small Key (Fire Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 1 = OoT big lava room (pot counts match), lower level, Goron 001 cage"
+  },
+  "Fire Temple Boulder Maze Lower Chest": {
+   "remake": "FireTemple/chest/12567412825200613393",
+   "vanilla": "Small Key (Fire Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 5 = OoT boulder maze (MQ 'Lizalfos maze' is room 5), maze floor y=147 near the entry, Goron 007 cage"
+  },
+  "Fire Temple Boulder Maze Shortcut Chest": {
+   "remake": "FireTemple/chest/16785682308850448108",
+   "vanilla": "Small Key (Fire Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 4 = MQ 'Shortcut Room' (Fire room numbers match OoT), below the boulder maze's Obj_FireTemple_CrackFloor; Goron 002 cage, only chest in the room"
+  },
+  "Fire Temple Boulder Maze Side Room Chest": {
+   "remake": "FireTemple/chest/3688520809244472975",
+   "vanilla": "Small Key (Fire Temple)",
+   "mode": "vanilla",
+   "why": "low-confidence pair (reconcile): remaining boulder-maze chest: room 5 lower level, north end, no Goron; holds the Map and has GetEventName FireTemple_GetCompass. Same OoTR region and rule as the Lower chest"
+  },
+  "Fire Temple Boulder Maze Upper Chest": {
+   "remake": "FireTemple/chest/9634924691849556346",
+   "vanilla": "Small Key (Fire Temple)",
+   "mode": "full",
+   "why": "medium (reconcile): room 5 raised level y=150.5 (torch slugs, cracked floor), Goron 008 cage"
+  },
+  "Fire Temple Highest Goron Chest": {
+   "remake": "FireTemple/chest/10521366928524045067",
+   "vanilla": "Small Key (Fire Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 11: Song of Time block + hammer (rusted) switch + Goron 009 cage = OoTR rule Megaton_Hammer and Song_of_Time"
+  },
+  "Fire Temple Near Boss Chest": {
+   "remake": "FireTemple/chest/5634724236470386190",
+   "vanilla": "Small Key (Fire Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 2 = OoT room 2 (near-boss lava room with Darunia and the boss door; pot counts match), Goron 005 cage"
+  },
+  "Fire Temple Flare Dancer Chest": {
+   "remake": "FireTemple/chest/8757492004108970488",
+   "vanilla": "Bombs (10)",
+   "mode": "full",
+   "why": "high (reconcile): room 3: Flare Dancer + EnemyCounter, NoBake chest spawned by FocusOnGimmick_FireTemple_FlareDancer02 (boss key loop)"
+  },
+  "Fire Temple Scarecrow Chest": {
+   "remake": "FireTemple/chest/862385681502746018",
+   "vanilla": "Rupees (200)",
+   "mode": "full",
+   "why": "medium (reconcile): room 8 at the top (y=194) with hookshot targets and a GS (OoT GS Scarecrow Climb/Top = rooms 7/8); three chests stacked on one spot (purple + 2 red), the other two are remake additions"
+  },
+  "Water Temple Cracked Wall Chest": {
+   "remake": null,
+   "vanilla": "Small Key (Water Temple)",
+   "mode": "vanilla",
+   "why": "the remake has no such chest (reconcile)"
+  },
+  "Water Temple Torches Chest": {
+   "remake": "WaterTemple/chest/18099019250896853049",
+   "vanilla": "Small Key (Water Temple)",
+   "mode": "vanilla",
+   "why": "key chest in a dungeon whose key count differs from OoT (reconcile)"
+  },
+  "Water Temple Central Pillar Chest": {
+   "remake": "WaterTemple/chest/11682974908842171598",
+   "vanilla": "Small Key (Water Temple)",
+   "mode": "vanilla",
+   "why": "key chest in a dungeon whose key count differs from OoT (reconcile)"
+  },
+  "Water Temple Central Bow Target Chest": {
+   "remake": "WaterTemple/chest/3693930347660122883",
+   "vanilla": "Small Key (Water Temple)",
+   "mode": "vanilla",
+   "why": "key chest in a dungeon whose key count differs from OoT (reconcile)"
+  },
+  "Water Temple River Chest": {
+   "remake": null,
+   "vanilla": "Small Key (Water Temple)",
+   "mode": "vanilla",
+   "why": "the remake has no such chest (reconcile)"
+  },
+  "Water Temple Dragon Chest": {
+   "remake": "WaterTemple/chest/2503861086004941173",
+   "vanilla": "Small Key (Water Temple)",
+   "mode": "vanilla",
+   "why": "key chest in a dungeon whose key count differs from OoT (reconcile)"
+  },
+  "Shadow Temple After Wind Hidden Chest": {
+   "remake": "ShadowTemple/chest/169081039115821925",
+   "vanilla": "Small Key (Shadow Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 16: GlassTruth chest beside a WallCrack (has_explosives); small key on both sides"
+  },
+  "Shadow Temple Early Silver Rupee Chest": {
+   "remake": "ShadowTemple/chest/1111717451118505545",
+   "vanilla": "Small Key (Shadow Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 6 = OoT room 6 (scythe-shortcut silver rupees, rotating blade); small key on both sides"
+  },
+  "Shadow Temple Falling Spikes Switch Chest": {
+   "remake": "ShadowTemple/chest/5781953901224064730",
+   "vanilla": "Small Key (Shadow Temple)",
+   "mode": "full",
+   "why": "medium (reconcile): room 11 upper level y=63.5, its only upper chest; small key on both sides"
+  },
+  "Shadow Temple Invisible Floormaster Chest": {
+   "remake": "ShadowTemple/chest/17902550525792072472",
+   "vanilla": "Small Key (Shadow Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 21: Enemy_Floormaster_Truth (invisible) + EnemyCounter + NoBake key chest"
+  },
+  "Shadow Temple After Wind Enemy Chest": {
+   "remake": "ShadowTemple/chest/5681107746948738726",
+   "vanilla": "Rupees (5)",
+   "mode": "full",
+   "why": "high (reconcile): room 16 (flying pots + pots, OoT 'After Wind' pots): 2 Gibdos, NoBake chest"
+  },
+  "Shadow Temple Falling Spikes Lower Chest": {
+   "remake": "ShadowTemple/chest/8858270325665149688",
+   "vanilla": "Arrows (10)",
+   "mode": "full",
+   "why": "medium (reconcile): room 11: falling ceilings, push block; lower chest y=56.4"
+  },
+  "Shadow Temple Falling Spikes Upper Chest": {
+   "remake": null,
+   "vanilla": "Rupees (5)",
+   "mode": "vanilla",
+   "why": "the remake has no such chest (reconcile)"
+  },
+  "Shadow Temple Invisible Blades Invisible Chest": {
+   "remake": "ShadowTemple/chest/3718790579351798247",
+   "vanilla": "Arrows (30)",
+   "mode": "full",
+   "why": "high (reconcile): room 31: the Obj_TBox_GlassTruth (lens-only) chest next to the visible one"
+  },
+  "Shadow Temple Invisible Blades Visible Chest": {
+   "remake": "ShadowTemple/chest/10344372963276519235",
+   "vanilla": "Rupees (5)",
+   "mode": "full",
+   "why": "high (reconcile): room 31, alcove of room 10 (invisible spinning scythe RotateBlade_GlassTruth, Like Like): a visible and an invisible chest plus the GS"
+  },
+  "Shadow Temple Invisible Spikes Chest": {
+   "remake": null,
+   "vanilla": "Rupees (5)",
+   "mode": "vanilla",
+   "why": "the remake has no such chest (reconcile)"
+  },
+  "Shadow Temple Spike Walls Left Chest": {
+   "remake": "ShadowTemple/chest/9852624243105848451",
+   "vanilla": "Rupees (5)",
+   "mode": "full",
+   "why": "high (reconcile): room 19: spike walls (SpikeBoard x2) beside the boss key chest (exact pair)"
+  },
+  "Shadow Temple Wind Hint Chest": {
+   "remake": "ShadowTemple/chest/12345747231768877602",
+   "vanilla": "Arrows (10)",
+   "mode": "full",
+   "why": "medium (reconcile): room 15 beside the fan room 14: 2 ReDeads + EnemyCounter + GlassTruth (invisible) chest"
+  },
+  "Spirit Temple Child Bridge Chest": {
+   "remake": "SpiritTemple/chest/5309180490719879013",
+   "vanilla": "Deku Shield",
+   "mode": "full",
+   "why": "high (reconcile): room 2: child Stalfos, Green Bubbles, flying pots, net; Obj_TBox_A_06 Deku Shield (red rupee if already owned)"
+  },
+  "Spirit Temple Child Climb East Chest": {
+   "remake": null,
+   "vanilla": "Deku Shield",
+   "mode": "vanilla",
+   "why": "the remake has no such chest (reconcile)"
+  },
+  "Spirit Temple First Mirror Left Chest": {
+   "remake": "SpiritTemple/chest/876108895472176682",
+   "mode": "vanilla",
+   "why": "Obj_TBox_A_04 has no item setting (an ice-trap chest; untested)",
+   "vanilla": "Ice Trap",
+   "group": "DesertColossus:minor"
+  },
+  "Spirit Temple First Mirror Right Chest": {
+   "remake": "SpiritTemple/chest/12909857529499414969",
+   "vanilla": "Recovery Heart",
+   "mode": "full",
+   "why": "high (reconcile): room 18: the other chest (NoBake). chest_map paired First Mirror Left with a Desert Colossus secret-hole chest"
+  },
+  "Spirit Temple Hallway Left Invisible Chest": {
+   "remake": "SpiritTemple/chest/9143177002861777924",
+   "vanilla": "Recovery Heart",
+   "mode": "full",
+   "why": "high (reconcile): room 23 corridor between the Armos room and the Iron Knuckle: two GlassTruth chests; left/right order unverified but same region and rule"
+  },
+  "Spirit Temple Hallway Right Invisible Chest": {
+   "remake": "SpiritTemple/chest/14040210993541550542",
+   "vanilla": "Recovery Heart",
+   "mode": "full",
+   "why": "high (reconcile): room 23: the second GlassTruth chest"
+  },
+  "Spirit Temple Statue Room Northeast Chest": {
+   "remake": null,
+   "vanilla": "Rupees (5)",
+   "mode": "vanilla",
+   "why": "the remake has no such chest (reconcile)"
+  },
+  "Spirit Temple Topmost Chest": {
+   "remake": "SpiritTemple/chest/13828480906010430010",
+   "vanilla": "Bombs (20)",
+   "mode": "full",
+   "why": "high (reconcile): room 31, highest room (y~158): mirrors, sun switch, Dinolfos, White Bubbles; NoBake chest"
+  },
+  "Spirit Temple Child Early Torches Chest": {
+   "remake": "SpiritTemple/chest/5703423643219134246",
+   "vanilla": "Small Key (Spirit Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 4: silver rupees + torches + NoBake key chest (OoT room 2 silver rupees)"
+  },
+  "Spirit Temple Early Adult Right Chest": {
+   "remake": "SpiritTemple/chest/4277978357934400600",
+   "vanilla": "Small Key (Spirit Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 16 off the adult boulder room 15 (silver rupees, rolling rocks, SoT blocks, GS Boulder Room); small key on both sides"
+  },
+  "Spirit Temple Near Four Armos Chest": {
+   "remake": "SpiritTemple/chest/12042193296697281461",
+   "vanilla": "Small Key (Spirit Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 26, closed alcove of the Armos room 22 (respawning Armos, sun switch); small key on both sides"
+  },
+  "Spirit Temple Statue Room Hand Chest": {
+   "remake": "SpiritTemple/chest/2203243501006528435",
+   "vanilla": "Small Key (Spirit Temple)",
+   "mode": "full",
+   "why": "medium (reconcile): statue room 7 (Map chest room, boss door), raised NoBake key chest at y=124.8"
+  },
+  "Spirit Temple Sun Block Room Chest": {
+   "remake": "SpiritTemple/chest/17407066694905911064",
+   "vanilla": "Small Key (Spirit Temple)",
+   "mode": "full",
+   "why": "high (reconcile): room 9: sun blocks (MovableBox x5), sun switches, silver rupees, NoBake key chest"
+  },
+  "Gerudo Training Ground Heavy Block Second Chest": {
+   "remake": "GerudoTrainingGround/chest/3750231902048775592",
+   "vanilla": "Rupees (5)",
+   "mode": "full",
+   "why": "medium (reconcile): room 10, see Heavy Block First"
+  },
+  "Gerudo Training Ground Lobby Left Chest": {
+   "remake": "GerudoTrainingGround/chest/11182647876438515984",
+   "vanilla": "Rupees (5)",
+   "mode": "full",
+   "why": "medium (reconcile): lobby room 0, left (-x): GlassTruth chest (needs the Lens in the remake), no Drop__DropActor"
+  },
+  "Gerudo Training Ground Stalfos Chest": {
+   "remake": "GerudoTrainingGround/chest/13501407288943710656",
+   "vanilla": "Small Key (Gerudo Training Ground)",
+   "mode": "vanilla",
+   "why": "key chest in a dungeon whose key count differs from OoT (reconcile)"
+  },
+  "Gerudo Training Ground Heavy Block Third Chest": {
+   "remake": "GerudoTrainingGround/chest/5329807728555596183",
+   "vanilla": "Small Key (Gerudo Training Ground)",
+   "mode": "vanilla",
+   "why": "key chest in a dungeon whose key count differs from OoT (reconcile)"
+  },
+  "Gerudo Training Ground Eye Statue Chest": {
+   "remake": "GerudoTrainingGround/chest/11563468890171962383",
+   "vanilla": "Small Key (Gerudo Training Ground)",
+   "mode": "vanilla",
+   "why": "key chest in a dungeon whose key count differs from OoT (reconcile)"
+  },
+  "Gerudo Training Ground Near Scarecrow Chest": {
+   "remake": "GerudoTrainingGround/chest/9911316961118170383",
+   "vanilla": "Small Key (Gerudo Training Ground)",
+   "mode": "vanilla",
+   "why": "low-confidence pair (reconcile): room 4 has one chest; candidate: key chest on the maze's upper level (y=105) next to the shutter from room 4's upper floor (scarecrow marker)"
+  },
+  "Gerudo Training Ground Hammer Room Switch Chest": {
+   "remake": "GerudoTrainingGround/chest/4372363658229299619",
+   "vanilla": "Small Key (Gerudo Training Ground)",
+   "mode": "vanilla",
+   "why": "key chest in a dungeon whose key count differs from OoT (reconcile)"
+  },
+  "Gerudo Training Ground Underwater Silver Rupee Chest": {
+   "remake": "GerudoTrainingGround/chest/3717705376223508790",
+   "vanilla": "Small Key (Gerudo Training Ground)",
+   "mode": "vanilla",
+   "why": "key chest in a dungeon whose key count differs from OoT (reconcile)"
+  },
+  "Gerudo Training Ground Beamos Chest": {
+   "remake": "GerudoTrainingGround/chest/4709724720801091788",
+   "vanilla": "Small Key (Gerudo Training Ground)",
+   "mode": "vanilla",
+   "why": "key chest in a dungeon whose key count differs from OoT (reconcile)"
+  },
+  "Gerudo Training Ground Hidden Ceiling Chest": {
+   "remake": "GerudoTrainingGround/chest/4320448574091221496",
+   "vanilla": "Small Key (Gerudo Training Ground)",
+   "mode": "vanilla",
+   "why": "low-confidence pair (reconcile): the other key chest on the maze's upper level (y=105, ceiling height)"
+  },
+  "Gerudo Training Ground Before Heavy Block Chest": {
+   "remake": "GerudoTrainingGround/chest/4519534997122863169",
+   "vanilla": "Arrows (30)",
+   "mode": "full",
+   "why": "high (reconcile): room 3: Wolfos fight + heavy block (MovableBox_A_04), chest appears via GerudoTrainingGround_03_AppaerTreasureBox"
+  },
+  "Gerudo Training Ground Hammer Room Clear Chest": {
+   "remake": "GerudoTrainingGround/chest/4961588221597286817",
+   "vanilla": "Arrows (10)",
+   "mode": "full",
+   "why": "high (reconcile): room 5 = OoT room 5 (hammer pillars, eye switches): NoBake A_06 chest (arrows if Bow) spawned by GerudoTrainingGround_05_AppaerTreasureBox"
+  },
+  "Gerudo Training Ground Heavy Block First Chest": {
+   "remake": "GerudoTrainingGround/chest/6897789835137994741",
+   "vanilla": "Rupees (200)",
+   "mode": "full",
+   "why": "medium (reconcile): Like Like room 10 (3 Like Likes, behind the heavy block); same OoTR region and rule as the other heavy-block chests, order unknown"
+  },
+  "Gerudo Training Ground Heavy Block Fourth Chest": {
+   "remake": "GerudoTrainingGround/chest/7881496104962067240",
+   "mode": "vanilla",
+   "why": "Obj_TBox_A_04 has no item setting (an ice-trap chest; untested)",
+   "vanilla": "Ice Trap",
+   "group": "GerudoTrainingGround:minor"
+  },
+  "Gerudo Training Ground Lobby Right Chest": {
+   "remake": "GerudoTrainingGround/chest/2436665354602612279",
+   "vanilla": "Arrows (10)",
+   "mode": "full",
+   "why": "medium (reconcile): lobby room 0, right: NoBake chest dropped by GerudoTrainingGround_00_FallTreasureBox (eye switch)"
+  },
+  "Gerudo Training Ground Maze Path Second Chest": {
+   "remake": "GerudoTrainingGround/chest/8186301369655588602",
+   "vanilla": "Rupees (20)",
+   "mode": "vanilla",
+   "why": "low-confidence pair (reconcile): maze room 8, south-west red-rupee chest (OoT: 20 rupees); number of doors in front of it not verified"
+  },
+  "Gerudo Training Ground Maze Path Third Chest": {
+   "remake": "GerudoTrainingGround/chest/10743352138513225188",
+   "vanilla": "Arrows (30)",
+   "mode": "vanilla",
+   "why": "low-confidence pair (reconcile): maze south-west A_06 chest (no room index; arrows if Bow); number of doors not verified"
+  },
+  "Gerudo Training Ground Maze Right Side Chest": {
+   "remake": "GerudoTrainingGround/chest/11683433230229591151",
+   "vanilla": "Arrows (30)",
+   "mode": "vanilla",
+   "why": "low-confidence pair (reconcile): maze east side A_06 chest (arrows if Bow), near the Maze Right Central bombchu chest"
+  },
+  "Ganons Castle Forest Trial Chest": {
+   "remake": "InsideGanonCastle/chest/16913531450403950487",
+   "vanilla": "Rupees (5)",
+   "mode": "full",
+   "why": "high (reconcile): room 2: Wolfos + timed torches (first forest-trial room; fans in room 3), NoBake chest"
+  },
+  "Ganons Castle Light Trial First Left Chest": {
+   "remake": "InsideGanonCastle/chest/1029712040059298120",
+   "vanilla": "Rupees (5)",
+   "mode": "full",
+   "why": "high (reconcile): room 12, 3x2 grid entered from +x: left row (z~-16) = blue, ice, blue = OoT 5r/ice/heart; first = nearest the door"
+  },
+  "Ganons Castle Shadow Trial Front Chest": {
+   "remake": "InsideGanonCastle/chest/18277713685010400796",
+   "vanilla": "Rupees (5)",
+   "mode": "full",
+   "why": "high (reconcile): room 8 (shadow trial: invisible floors, Like Like): chest at the front; gold gauntlets chest at the far end"
+  },
+  "Ganons Castle Light Trial Invisible Enemies Chest": {
+   "remake": "InsideGanonCastle/chest/14962432460641118089",
+   "vanilla": "Small Key (Ganons Castle)",
+   "mode": "vanilla",
+   "why": "key chest in a dungeon whose key count differs from OoT (reconcile)"
+  },
+  "Ganons Castle Light Trial Lullaby Chest": {
+   "remake": "InsideGanonCastle/chest/4733634471038136588",
+   "vanilla": "Small Key (Ganons Castle)",
+   "mode": "vanilla",
+   "why": "key chest in a dungeon whose key count differs from OoT (reconcile)"
+  },
+  "Ganons Castle Light Trial First Right Chest": {
+   "remake": "InsideGanonCastle/chest/5732331492537302993",
+   "mode": "vanilla",
+   "why": "Obj_TBox_A_04 has no item setting (an ice-trap chest; untested)",
+   "vanilla": "Ice Trap",
+   "group": "InsideGanonCastle:minor"
+  },
+  "Ganons Castle Light Trial Second Left Chest": {
+   "remake": "InsideGanonCastle/chest/17726220643880970879",
+   "mode": "vanilla",
+   "why": "Obj_TBox_A_04 has no item setting (an ice-trap chest; untested)",
+   "vanilla": "Ice Trap",
+   "group": "InsideGanonCastle:minor"
+  },
+  "Ganons Castle Light Trial Third Left Chest": {
+   "remake": "InsideGanonCastle/chest/7461796063704896255",
+   "vanilla": "Recovery Heart",
+   "mode": "full",
+   "why": "high (reconcile): room 12 left row far"
+  },
+  "Ganons Castle Light Trial Third Right Chest": {
+   "remake": "InsideGanonCastle/chest/11406545451127340703",
+   "mode": "vanilla",
+   "why": "Obj_TBox_A_04 has no item setting (an ice-trap chest; untested)",
+   "vanilla": "Ice Trap",
+   "group": "InsideGanonCastle:minor"
+  },
+  "Ganons Castle Water Trial Left Chest": {
+   "remake": "InsideGanonCastle/chest/3253191540272036329",
+   "mode": "vanilla",
+   "why": "Obj_TBox_A_04 has no item setting (an ice-trap chest; untested)",
+   "vanilla": "Ice Trap",
+   "group": "InsideGanonCastle:minor"
+  },
+  "Ganons Castle Water Trial Right Chest": {
+   "remake": "InsideGanonCastle/chest/14404733996390762670",
+   "vanilla": "Recovery Heart",
+   "mode": "full",
+   "why": "high (reconcile): room 5: the other water-trial chest (bombchus in the remake). chest_map paired it with Spirit Trial Crystal Switch"
+  },
+  "Ganons Castle Light Trial Second Right Chest": {
+   "remake": "InsideGanonCastle/chest/14046623154429024571",
+   "vanilla": "Arrows (30)",
+   "mode": "full",
+   "why": "high (reconcile): room 12 right row middle"
+  },
+  "Ganons Castle Spirit Trial Invisible Chest": {
+   "remake": null,
+   "vanilla": "Arrows (10)",
+   "mode": "vanilla",
+   "why": "the remake has no such chest (reconcile)"
+  }
+ }
+}

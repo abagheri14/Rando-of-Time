@@ -1,0 +1,10 @@
+{
+ "_about": "Ganon's tower collapse needs the Longshot in the remake. Runners agree the remake changed one spot of the collapsing castle so the Longshot is required there: sera18171 (https://x.com/sera18171/status/2121082703756120211: it 'became mandatory at that spot', so any% had to get the Iron Boots and do the Water Temple for it), hangao_game (https://www.youtube.com/watch?v=lOTS9TMF0qs: exactly one place where the Longshot couldn't be avoided), gymnast86 (any% collected the Longshot for the collapse until the Hookshot skip was found), ZFG (https://x.com/zfg111/status/2121857390966644964), and ZSR's any% route ('Tower Collapse with Longshot Skip'). read the escape's CrumblingGanonCastle_3F_Fookshot event as a cutscene with a demo Longshot and no pouch query; the runners' point is the target's range (Link has to reach the target that starts that cutscene), which no pouch query shows. Asking for the Longshot can only make logic stricter, never count on something the game doesn't allow. The skip with the plain Hookshot is logic_remake_glitch_collapse_hookshot (data/rando/remake_glitch_tricks.json). Not loaded per plugin: always applied.",
+ "regions": {
+  "Ganondorf Boss Room": {
+   "locations": {
+    "Ganon": "can_use(Light_Arrows) and can_use(Longshot)"
+   }
+  }
+ }
+}

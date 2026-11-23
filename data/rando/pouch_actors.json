@@ -1,0 +1,361 @@
+{
+ "_about": "{item actor in config/item_map.json: (pouch actor, count)}: what a chest item puts in the inventory",
+ "actors": {
+  "Item_AgonyStone": [
+   "Item_AgonyStone",
+   1
+  ],
+  "Item_Arrow_Ice": [
+   "Item_Arrow_Ice",
+   1
+  ],
+  "Item_Arrow_Light": [
+   "Item_Arrow_Light",
+   1
+  ],
+  "Item_BombBundle_Small": [
+   "Item_Bomb",
+   5
+  ],
+  "Item_BombchuBundle_Large": [
+   "Item_Bombchu",
+   20
+  ],
+  "Item_BombchuBundle_Medium": [
+   "Item_Bombchu",
+   10
+  ],
+  "Item_BombchuBundle_Small": [
+   "Item_Bombchu",
+   5
+  ],
+  "Item_Boomerang": [
+   "Item_Boomerang",
+   1
+  ],
+  "Item_Bottle": [
+   "Item_Bottle",
+   1
+  ],
+  "Item_Bottle_BigPoe": [
+   "Item_Bottle_BigPoe",
+   1
+  ],
+  "Item_Bottle_BlueFire": [
+   "Item_Bottle_BlueFire",
+   1
+  ],
+  "Item_Bottle_BluePotion": [
+   "Item_Bottle_BluePotion",
+   1
+  ],
+  "Item_Bottle_Bug": [
+   "Item_Bottle_Bug",
+   1
+  ],
+  "Item_Bottle_Fairy": [
+   "Item_Bottle_Fairy",
+   1
+  ],
+  "Item_Bottle_Fish": [
+   "Item_Bottle_Fish",
+   1
+  ],
+  "Item_Bottle_GreenPotion": [
+   "Item_Bottle_GreenPotion",
+   1
+  ],
+  "Item_Bottle_Milk": [
+   "Item_Bottle_Milk",
+   1
+  ],
+  "Item_Bottle_Poe": [
+   "Item_Bottle_Poe",
+   1
+  ],
+  "Item_Bottle_RedPotion": [
+   "Item_Bottle_RedPotion",
+   1
+  ],
+  "Item_ClaimCheck": [
+   "Item_ClaimCheck",
+   1
+  ],
+  "Item_CojiroCucco": [
+   "Item_CojiroCucco",
+   1
+  ],
+  "Item_DekuStickBundle_Small": [
+   "Item_DekuStick",
+   3
+  ],
+  "Item_DinFire": [
+   "Item_DinFire",
+   1
+  ],
+  "Item_Dungeon_BossKey": [
+   "Item_Dungeon_BossKey",
+   1
+  ],
+  "Item_Dungeon_Compass": [
+   "Item_Dungeon_Compass",
+   1
+  ],
+  "Item_Dungeon_Map": [
+   "Item_Dungeon_Map",
+   1
+  ],
+  "Item_Dungeon_SmallKey": [
+   "Item_Dungeon_SmallKey",
+   1
+  ],
+  "Item_EyeDrop": [
+   "Item_EyeDrop",
+   1
+  ],
+  "Item_EyeballFrog": [
+   "Item_EyeballFrog",
+   1
+  ],
+  "Item_FairyBless_DefenseDouble": [
+   "Item_FairyBless_DefenseDouble",
+   1
+  ],
+  "Item_FaroreWind": [
+   "Item_FaroreWind",
+   1
+  ],
+  "Item_GlassTruth": [
+   "Item_GlassTruth",
+   1
+  ],
+  "Item_Hammer": [
+   "Item_Hammer",
+   1
+  ],
+  "Item_HeavyBoot": [
+   "Item_HeavyBoot",
+   1
+  ],
+  "Item_HoverBoot": [
+   "Item_HoverBoot",
+   1
+  ],
+  "Item_Medal_Fire": [
+   "Item_Medal_Fire",
+   1
+  ],
+  "Item_Medal_Forest": [
+   "Item_Medal_Forest",
+   1
+  ],
+  "Item_Medal_Light": [
+   "Item_Medal_Light",
+   1
+  ],
+  "Item_Medal_Shadow": [
+   "Item_Medal_Shadow",
+   1
+  ],
+  "Item_Medal_Spirit": [
+   "Item_Medal_Spirit",
+   1
+  ],
+  "Item_Medal_Water": [
+   "Item_Medal_Water",
+   1
+  ],
+  "Item_Melody_EponaSong": [
+   "Item_Melody_EponaSong",
+   1
+  ],
+  "Item_Melody_FireBolero": [
+   "Item_Melody_FireBolero",
+   1
+  ],
+  "Item_Melody_ForestMinuet": [
+   "Item_Melody_ForestMinuet",
+   1
+  ],
+  "Item_Melody_LightPrelude": [
+   "Item_Melody_LightPrelude",
+   1
+  ],
+  "Item_Melody_SariaSong": [
+   "Item_Melody_SariaSong",
+   1
+  ],
+  "Item_Melody_ShadowNocturne": [
+   "Item_Melody_ShadowNocturne",
+   1
+  ],
+  "Item_Melody_SpiritRequiem": [
+   "Item_Melody_SpiritRequiem",
+   1
+  ],
+  "Item_Melody_StormSong": [
+   "Item_Melody_StormSong",
+   1
+  ],
+  "Item_Melody_SunSong": [
+   "Item_Melody_SunSong",
+   1
+  ],
+  "Item_Melody_TimeSong": [
+   "Item_Melody_TimeSong",
+   1
+  ],
+  "Item_Melody_WaterSerenade": [
+   "Item_Melody_WaterSerenade",
+   1
+  ],
+  "Item_Melody_ZeldaLullaby": [
+   "Item_Melody_ZeldaLullaby",
+   1
+  ],
+  "Item_NayruLove": [
+   "Item_NayruLove",
+   1
+  ],
+  "Item_OddMushroom": [
+   "Item_OddMushroom",
+   1
+  ],
+  "Item_OddPowder": [
+   "Item_OddPowder",
+   1
+  ],
+  "Item_PoacherSaw": [
+   "Item_PoacherSaw",
+   1
+  ],
+  "Item_PocketCucco": [
+   "Item_PocketCucco",
+   1
+  ],
+  "Item_PocketEgg": [
+   "Item_PocketEgg",
+   1
+  ],
+  "Item_Prescription": [
+   "Item_Prescription",
+   1
+  ],
+  "Item_Shield_Mirror": [
+   "Weapon_Shield_Mirror",
+   1
+  ],
+  "Item_Stone_Fire": [
+   "Item_Stone_Fire",
+   1
+  ],
+  "Item_Stone_Forest": [
+   "Item_Stone_Forest",
+   1
+  ],
+  "Item_Stone_Water": [
+   "Item_Stone_Water",
+   1
+  ],
+  "Item_Sword_Biggoron": [
+   "Item_Sword_Biggoron",
+   1
+  ],
+  "Item_Sword_BrokenGiant": [
+   "Item_Sword_BrokenGiant",
+   1
+  ],
+  "Item_Sword_Kokiri": [
+   "Weapon_Sword_Kokiri",
+   1
+  ],
+  "Item_Token_Gerudo": [
+   "Item_Token_Gerudo",
+   1
+  ],
+  "Item_WeirdEgg": [
+   "Item_WeirdEgg",
+   1
+  ],
+  "Item_ZeldaLetter": [
+   "Item_ZeldaLetter",
+   1
+  ],
+  "Obj_Armor_Goron": [
+   "Armor_Adult_Goron",
+   1
+  ],
+  "Obj_Armor_Zora": [
+   "Armor_Adult_Zora",
+   1
+  ],
+  "Obj_Arrow_Fire": [
+   "Item_Arrow_Fire",
+   1
+  ],
+  "Obj_Bottle_Letter": [
+   "Item_Bottle_Letter",
+   1
+  ],
+  "Obj_Heart_Container": [
+   "Obj_Heart_Container",
+   1
+  ],
+  "Obj_Heart_Piece": [
+   "Obj_Heart_Piece",
+   1
+  ],
+  "Obj_MiniGame_SmallKey": [
+   "Obj_MiniGame_SmallKey",
+   1
+  ],
+  "TBox_ArrowBundle_Large": [
+   "Item_Arrow_Normal",
+   10
+  ],
+  "TBox_ArrowBundle_Medium": [
+   "Item_Arrow_Normal",
+   5
+  ],
+  "TBox_ArrowBundle_Small": [
+   "Item_Arrow_Normal",
+   3
+  ],
+  "TBox_DekuNutBundle": [
+   "Item_DekuNut",
+   3
+  ],
+  "TBox_DekuSeedBundle": [
+   "TBox_DekuSeedBundle",
+   1
+  ],
+  "TBox_Rupee_Blue": [
+   "Obj_Rupee_Green",
+   5
+  ],
+  "TBox_Rupee_Gold": [
+   "Obj_Rupee_Green",
+   200
+  ],
+  "TBox_Rupee_Green": [
+   "TBox_Rupee_Green",
+   1
+  ],
+  "TBox_Rupee_Purple": [
+   "Obj_Rupee_Green",
+   50
+  ],
+  "TBox_Rupee_Red": [
+   "Obj_Rupee_Green",
+   20
+  ],
+  "TBox_Shield_Deku": [
+   "Weapon_Shield_Deku",
+   1
+  ],
+  "TBox_Shield_Hylian": [
+   "Weapon_Shield_Hylian",
+   1
+  ]
+ }
+}

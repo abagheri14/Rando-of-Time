@@ -1,0 +1,1083 @@
+{
+ "_about": "Dungeon requirements audit (tools/rando/parity/audit_dungeons.py). Only rules where the remake is harder than OoTR's logic: each rule is OoTR's own rule AND what the remake adds (or a rule that implies OoTR's, dropping a branch the remake does not have), so nothing here can make logic looser. Loaded first (file-name order); where a later file (dungeons.json, drops.json...) defines the same key, the plugin ANDs the '_reapply' rule (what the remake adds, or the replacement rule) back onto it in before_fill, so a later file can tighten but never undo it. '_evidence': OoTR's rule and the remake evidence per entry. Keys another logic file defines (today the Water Temple North Basement -> Boss Key Chest Room exit, dungeons.json) are only in '_reapply', so this file never restates their key counts.",
+ "regions": {
+  "Deku Tree Basement": {
+   "locations": {
+    "Deku Tree GS Basement Vines": "can_use(Slingshot) or can_use(Boomerang) or can_use(Bow) or can_use(Hookshot)",
+    "Deku Tree Basement Chest": "has_fire_source_with_torch"
+   }
+  },
+  "Dodongos Cavern Climb": {
+   "locations": {
+    "Dodongos Cavern Bomb Flower Platform Chest": "can_blast_or_smash"
+   }
+  },
+  "Jabu Jabus Belly Main": {
+   "locations": {
+    "Jabu Jabus Belly Small Wooden Crate 2": "at('Jabu Jabus Belly Before Boss', True)",
+    "Jabu Jabus Belly Small Wooden Crate 1": "at('Jabu Jabus Belly Before Boss', True)",
+    "Jabu Jabus Belly Boomerang Chest": "is_adult or can_child_damage"
+   }
+  },
+  "Queen Gohma Boss Room": {
+   "events": {
+    "Defeat Queen Gohma": "can_use(Slingshot) and can_jumpslash"
+   }
+  },
+  "Dodongos Cavern Lobby": {
+   "exits": {
+    "Dodongos Cavern Torch Room": "False",
+    "Dodongos Cavern Staircase Room": "at('Dodongos Cavern Torch Room', can_use(Sticks) or has_fire_source)"
+   }
+  },
+  "Jabu Jabus Belly Beginning": {
+   "exits": {
+    "Jabu Jabus Belly Main": "can_use(Slingshot) or can_use(Boomerang) or can_use(Bow) or can_use(Hookshot)"
+   }
+  },
+  "Forest Temple Lobby": {
+   "locations": {
+    "Forest Temple First Room Chest": "can_use(Hookshot)",
+    "Forest Temple GS First Room": "(is_adult and (Hookshot or Bow)) or (is_child and Slingshot)"
+   },
+   "exits": {
+    "Forest Temple Central Area": "(is_adult or can_child_attack or Nuts) and ((Small_Key_Forest_Temple, 1))"
+   }
+  },
+  "Forest Temple Block Push Room": {
+   "locations": {
+    "Forest Temple Eye Switch Chest": "Progressive_Strength_Upgrade and can_use(Bow)"
+   },
+   "exits": {
+    "Forest Temple Straightened Hall": "(Progressive_Strength_Upgrade and (Small_Key_Forest_Temple, 2) and can_use(Bow)) and ((Small_Key_Forest_Temple, 3))",
+    "Forest Temple Outside Upper Ledge": "False"
+   }
+  },
+  "Forest Temple NE Outdoors": {
+   "locations": {
+    "Forest Temple GS Raised Island Courtyard": "(can_use(Hookshot) or (logic_forest_outdoor_east_gs and can_use(Boomerang)) or at('Forest Temple Falling Room', can_use(Bow) or can_use(Dins_Fire) or has_explosives)) and (can_use(Scarecrow))"
+   },
+   "exits": {
+    "Forest Temple Outdoors High Balconies": "False",
+    "Forest Temple NW Outdoors": "False"
+   }
+  },
+  "Forest Temple Bow Region": {
+   "locations": {
+    "Forest Temple Blue Poe Chest": "(can_use(Bow)) and ((Small_Key_Forest_Temple, 4))",
+    "Forest Temple Blue Poe Room Pot 1": "(Small_Key_Forest_Temple, 4)",
+    "Forest Temple Blue Poe Room Pot 2": "(Small_Key_Forest_Temple, 4)",
+    "Forest Temple Blue Poe Room Pot 3": "(Small_Key_Forest_Temple, 4)"
+   },
+   "exits": {
+    "Forest Temple Frozen Eye Switch Room": "((Small_Key_Forest_Temple, 5)) and (can_use(Bow))"
+   },
+   "events": {
+    "Forest Temple Jo and Beth": "(can_use(Bow)) and ((Small_Key_Forest_Temple, 4))"
+   }
+  },
+  "Fire Temple Narrow Path Room": {
+   "locations": {
+    "Fire Temple Map Chest": "(Bow or (Small_Key_Fire_Temple, 6)) and (can_use(Bow) or can_use(Hookshot))"
+   },
+   "exits": {
+    "Fire Temple Boulder Maze Upper": "(Small_Key_Fire_Temple, 5) and (can_use(Bow) or can_use(Hookshot))"
+   }
+  },
+  "Fire Temple Boulder Maze Upper": {
+   "locations": {
+    "Fire Temple Moving Fire Room Recovery Heart 1": "can_use(Bow) or can_use(Hookshot)",
+    "Fire Temple Moving Fire Room Recovery Heart 2": "can_use(Bow) or can_use(Hookshot)"
+   },
+   "exits": {
+    "Fire Temple Flame Maze": "((Small_Key_Fire_Temple, 7)) and (can_use(Bow) or can_use(Hookshot))"
+   }
+  },
+  "Forest Temple Central Area": {
+   "exits": {
+    "Forest Temple Block Push Room": "((Small_Key_Forest_Temple, 1)) and ((Small_Key_Forest_Temple, 2))",
+    "Forest Temple NW Outdoors": "can_play(Song_of_Time)",
+    "Forest Temple NE Outdoors": "False"
+   }
+  },
+  "Forest Temple NW Outdoors": {
+   "exits": {
+    "Forest Temple Outdoors High Balconies": "(here(is_adult or has_explosives or ((Boomerang or Nuts or Deku_Shield) and (Sticks or Kokiri_Sword or Slingshot)))) and (can_use(Hookshot))",
+    "Forest Temple NE Outdoors": "False"
+   }
+  },
+  "Forest Temple Frozen Eye Switch Room": {
+   "exits": {
+    "Forest Temple Falling Room": "can_use(Bow)"
+   }
+  },
+  "Fire Temple Flame Maze": {
+   "exits": {
+    "Fire Temple Upper": "(Small_Key_Fire_Temple, 8)"
+   }
+  },
+  "Fire Temple Lower": {
+   "exits": {
+    "Fire Temple Lower Locked Door": "((Small_Key_Fire_Temple, 8) or not keysanity) and can_use(Megaton_Hammer)"
+   }
+  },
+  "Water Temple North Basement": {
+   "locations": {
+    "Water Temple GS Near Boss Key Chest": "at('Water Temple Boss Key Chest Room', True)"
+   }
+  },
+  "Shadow Temple Beyond Boat": {
+   "locations": {
+    "Shadow Temple Spike Walls Left Chest": "(can_use(Dins_Fire)) and ((Small_Key_Shadow_Temple, 5))",
+    "Shadow Temple Boss Key Chest": "(can_use(Dins_Fire)) and ((Small_Key_Shadow_Temple, 5))"
+   }
+  },
+  "Water Temple Lobby": {
+   "exits": {
+    "Water Temple Before Boss": "(can_use(Longshot)) and (can_use(Iron_Boots) and Raise_Water_Level)"
+   }
+  },
+  "Water Temple Dark Link Region": {
+   "exits": {
+    "Water Temple River": "(can_play(Song_of_Time)) and (can_use(Longshot))"
+   }
+  },
+  "Shadow Temple First Beamos": {
+   "locations": {
+    "Shadow Temple Scythe Shortcut Silver Rupee Ledge": "can_use(Hookshot)"
+   }
+  },
+  "Shadow Temple Falling Spikes": {
+   "locations": {
+    "Shadow Temple GS Falling Spikes Room": "(logic_shadow_umbrella_gs or Hookshot) and (Progressive_Strength_Upgrade)"
+   }
+  },
+  "Spirit Temple Central Chamber": {
+   "locations": {
+    "Spirit Temple GS Lobby": "((is_child and logic_spirit_lobby_gs and Boomerang and (Small_Key_Spirit_Temple, 5)) or (is_adult and (Hookshot or Hover_Boots or logic_spirit_lobby_jump) and ((Small_Key_Spirit_Temple, 3) or spirit_temple_shortcuts)) or (logic_spirit_lobby_gs and Boomerang and (Hookshot or Hover_Boots or logic_spirit_lobby_jump) and (has_explosives or ((Small_Key_Spirit_Temple, 2) and free_bombchu_drops)))) and (can_use(Scarecrow))",
+    "Spirit Temple GS Hall After Sun Block Room": "((is_child and Boomerang and (Small_Key_Spirit_Temple, 5)) or (is_adult and Hookshot and ((Small_Key_Spirit_Temple, 3) or spirit_temple_shortcuts)) or (Boomerang and Hookshot and (has_explosives or ((Small_Key_Spirit_Temple, 2) and free_bombchu_drops)))) and ((Silver_Rupee_Spirit_Temple_Sun_Block, 5))"
+   }
+  },
+  "Adult Spirit Temple Climb": {
+   "locations": {
+    "Spirit Temple Statue Room Hand Chest": "((can_play(Zeldas_Lullaby)) and (can_use(Hookshot) or can_use(Hover_Boots))) and (can_play(Zeldas_Lullaby) and can_use(Longshot))"
+   },
+   "exits": {
+    "Spirit Temple Anubis Room": "((Small_Key_Spirit_Temple, 4)) and (can_use(Hookshot))"
+   }
+  },
+  "Gerudo Training Ground Lava Room Front": {
+   "exits": {
+    "Gerudo Training Ground Central Maze Right": "can_play(Song_of_Time)"
+   }
+  },
+  "Gerudo Training Ground Eye Statue Upper": {
+   "exits": {
+    "Gerudo Training Ground Eye Statue Lower": "can_use(Bow)"
+   }
+  },
+  "Spirit Temple Big Mirror Room": {
+   "exits": {
+    "Spirit Temple Before Boss": "((spirit_temple_shortcuts or (has_explosives and Mirror_Shield)) and Hookshot) and (can_use(Longshot))"
+   },
+   "locations": {
+    "Spirit Temple Boss Key Chest": "can_play(Zeldas_Lullaby) and Bow and Hookshot and (can_use(Megaton_Hammer) or has_explosives)"
+   }
+  },
+  "Ganons Castle Main": {
+   "exits": {
+    "Ganons Castle Fire Trial": "(logic_fewer_tunic_requirements or can_use(Goron_Tunic)) and (can_use(Golden_Gauntlets))"
+   }
+  },
+  "Ganons Castle Forest Trial Wind Room": {
+   "exits": {
+    "Ganons Castle Forest Trial Ending": "(((Silver_Rupee_Ganons_Castle_Forest_Trial, 5)) and (can_play(Song_of_Time) and can_use(Hookshot))) and ((Silver_Rupee_Ganons_Castle_Forest_Trial, 5) and can_play(Song_of_Time) and can_use(Longshot) and can_use(Hover_Boots) and can_use(Iron_Boots))"
+   },
+   "locations": {
+    "Ganons Castle Forest Trial Silver Rupee Front Right": "can_play(Song_of_Time) and can_use(Longshot) and can_use(Hover_Boots) and can_use(Iron_Boots)",
+    "Ganons Castle Forest Trial Silver Rupee Front Left": "can_play(Song_of_Time) and can_use(Longshot) and can_use(Hover_Boots) and can_use(Iron_Boots)",
+    "Ganons Castle Forest Trial Silver Rupee Back Right": "can_play(Song_of_Time) and can_use(Longshot) and can_use(Hover_Boots) and can_use(Iron_Boots)",
+    "Ganons Castle Forest Trial Silver Rupee Back Center": "can_play(Song_of_Time) and can_use(Longshot) and can_use(Hover_Boots) and can_use(Iron_Boots)",
+    "Ganons Castle Forest Trial Silver Rupee Center Left": "can_play(Song_of_Time) and can_use(Longshot) and can_use(Hover_Boots) and can_use(Iron_Boots)"
+   }
+  },
+  "Ganons Castle Shadow Trial": {
+   "exits": {
+    "Ganons Castle Shadow Trial First Gap": "(can_use(Longshot) or can_use(Fire_Arrows)) and (can_use(Fire_Arrows) or (can_use(Dins_Fire) and can_use(Bow)))"
+   },
+   "locations": {
+    "Ganons Castle Shadow Trial Front Chest": "(is_child or can_use(Fire_Arrows) or Hookshot or Hover_Boots or can_play(Song_of_Time)) and (can_use(Fire_Arrows) or (can_use(Dins_Fire) and can_use(Bow)))"
+   }
+  },
+  "Dodongos Cavern Far Bridge": {
+   "locations": {
+    "Dodongos Cavern GS Alcove Above Stairs": "(can_use(Hookshot) or can_use(Boomerang)) and (can_blast_or_smash)"
+   }
+  },
+  "Water Temple South Basement": {
+   "locations": {
+    "Water Temple GS Behind Gate": "at('Water Temple Middle Water Level', can_use(Iron_Boots) and can_use(Hookshot) and (Zora_Tunic or logic_fewer_tunic_requirements))"
+   }
+  },
+  "Deku Tree Slingshot Room": {
+   "locations": {
+    "Deku Tree Slingshot Room Side Chest": "can_use(Slingshot) or can_use(Boomerang) or can_use(Bow) or can_use(Hookshot)"
+   }
+  },
+  "Dodongos Cavern Staircase Room": {
+   "locations": {
+    "Dodongos Cavern GS Vines Above Stairs": "at('Dodongos Cavern Climb', can_use(Slingshot) or can_use(Bow) or can_use(Boomerang) or can_use(Hookshot)) or (logic_dc_vines_gs and can_use(Longshot))"
+   }
+  },
+  "Fire Temple Upper": {
+   "locations": {
+    "Fire Temple Megaton Hammer Chest": "has_explosives and can_use(Hookshot)"
+   },
+   "exits": {
+    "Fire Temple Before Boss": "Megaton_Hammer and (can_play(Song_of_Time) or has_explosives) and can_use(Hookshot)"
+   }
+  },
+  "Fire Temple Lower Locked Door": {
+   "locations": {
+    "Fire Temple Flare Dancer Chest": "can_use(Hookshot) and (has_explosives or can_use(Megaton_Hammer))",
+    "Fire Temple Boss Key Chest": "can_use(Hookshot) and (has_explosives or can_use(Megaton_Hammer))"
+   }
+  },
+  "Fire Temple Near Boss": {
+   "locations": {
+    "Fire Temple Near Boss Pot 1": "is_adult and can_use(Hookshot)",
+    "Fire Temple Near Boss Pot 2": "is_adult and can_use(Hookshot)",
+    "Fire Temple Near Boss Pot 3": "is_adult and can_use(Hookshot)",
+    "Fire Temple Near Boss Pot 4": "is_adult and can_use(Hookshot)"
+   },
+   "exits": {
+    "Fire Temple Before Boss": "is_adult and (fire_temple_shortcuts or logic_fire_boss_door_jump)"
+   }
+  },
+  "Ganons Castle Fire Trial": {
+   "locations": {
+    "Ganons Castle Fire Trial Silver Rupee Right Back": "(is_adult or logic_fire_trial_slug_rupee) and can_use(Hover_Boots)",
+    "Ganons Castle Fire Trial Silver Rupee Flamethrower": "(True) and can_use(Hover_Boots)",
+    "Ganons Castle Fire Trial Silver Rupee Right Center": "(can_use(Golden_Gauntlets) and can_use(Goron_Tunic)) and can_use(Hover_Boots)",
+    "Ganons Castle Fire Trial Silver Rupee Right Front": "(True) and can_use(Hover_Boots)",
+    "Ganons Castle Fire Trial Silver Rupee Inside Pillar": "(can_use(Golden_Gauntlets)) and can_use(Hover_Boots)"
+   }
+  },
+  "Bottom of the Well Main Area": {
+   "locations": {
+    "Bottom of the Well Map Chest": "has_explosives",
+    "Bottom of the Well Basement Silver Rupee Wood Beam Front": "has_explosives",
+    "Bottom of the Well Basement Silver Rupee Wood Beam Back": "has_explosives",
+    "Bottom of the Well Basement Silver Rupee Ladders Bottom": "has_explosives",
+    "Bottom of the Well Basement Silver Rupee Ladders Middle": "has_explosives",
+    "Bottom of the Well Basement Silver Rupee Ladders Top": "has_explosives"
+   }
+  },
+  "Shadow Temple Boat": {
+   "locations": {
+    "Shadow Temple GS Near Ship": "Longshot and can_use(Distant_Scarecrow)"
+   },
+   "exits": {
+    "Shadow Temple Beyond Boat": "can_play(Zeldas_Lullaby) and Progressive_Strength_Upgrade"
+   }
+  },
+  "Bongo Bongo Boss Room": {
+   "events": {
+    "Defeat Bongo Bongo": "(Kokiri_Sword or is_adult) and (can_use(Bow) or can_use(Slingshot) or logic_shadow_bongo) and (can_use(Lens_of_Truth) or logic_lens_bongo)"
+   }
+  },
+  "Ganons Castle Shadow Trial Second Gap": {
+   "locations": {
+    "Ganons Castle Shadow Trial Golden Gauntlets Chest": "can_use(Lens_of_Truth) or logic_lens_castle"
+   }
+  },
+  "Shadow Temple Before Boss": {
+   "exits": {
+    "Shadow Temple Beyond Boat SoT Block": "False"
+   }
+  },
+  "Shadow Temple Invisible Spikes": {
+   "exits": {
+    "Shadow Temple Wind Tunnel": "Hookshot and can_use(Longshot) and (Small_Key_Shadow_Temple, 3)"
+   }
+  },
+  "Child Spirit Temple Beyond Metal Bridges": {
+   "locations": {
+    "Spirit Temple Child Bridge Chest": "can_use(Boomerang)",
+    "Spirit Temple Child Early Torches Silver Rupee Top Right": "can_use(Boomerang)",
+    "Spirit Temple Child Early Torches Silver Rupee Bottom Right": "can_use(Boomerang)",
+    "Spirit Temple Child Early Torches Silver Rupee Bottom Left": "can_use(Boomerang)",
+    "Spirit Temple Child Early Torches Silver Rupee Top Left": "can_use(Boomerang)",
+    "Spirit Temple Child Early Torches Silver Rupee Near Torch": "can_use(Boomerang)",
+    "Spirit Temple Child Bridge Flying Pot 1": "can_use(Boomerang)",
+    "Spirit Temple Child Bridge Flying Pot 2": "can_use(Boomerang)",
+    "Spirit Temple Child Anubis Pot 1": "can_use(Boomerang)",
+    "Spirit Temple Child Anubis Pot 2": "can_use(Boomerang)",
+    "Spirit Temple Child Anubis Pot 3": "can_use(Boomerang)",
+    "Spirit Temple Child Anubis Pot 4": "can_use(Boomerang)",
+    "Deku Shield Pot": "fix_broken_drops and can_use(Boomerang)"
+   }
+  },
+  "Early Adult Spirit Temple": {
+   "locations": {
+    "Spirit Temple Compass Chest": "Hookshot and can_play(Zeldas_Lullaby) and can_use(Longshot)"
+   }
+  },
+  "Spirit Temple Anubis Room": {
+   "exits": {
+    "Spirit Temple Big Mirror Room": "(Small_Key_Spirit_Temple, 5) and can_use(Longshot)"
+   }
+  },
+  "Ganons Castle Spirit Trial Second Room Back": {
+   "exits": {
+    "Ganons Castle Spirit Trial Ending": "is_adult and Bow and can_use(Fire_Arrows) and Mirror_Shield"
+   }
+  },
+  "Spirit Temple Boulder Room": {
+   "locations": {
+    "Spirit Temple Adult Boulder Silver Rupee Ledge": "(True) and can_play(Song_of_Time)",
+    "Spirit Temple Adult Boulder Silver Rupee Front Left": "(True) and can_play(Song_of_Time)",
+    "Spirit Temple Adult Boulder Silver Rupee Front Right": "(True) and can_play(Song_of_Time)",
+    "Spirit Temple Adult Boulder Silver Rupee Back Right": "(True) and can_play(Song_of_Time)",
+    "Spirit Temple Adult Boulder Silver Rupee Back Left": "(True) and can_play(Song_of_Time)"
+   }
+  },
+  "GV Fortress Side": {
+   "locations": {
+    "GV GS Pillar": "can_use(Longshot) and can_use(Megaton_Hammer) and (at_night or gold_skulls_ignore_daytime)"
+   }
+  },
+  "Deku Tree Lobby": {
+   "locations": {
+    "Deku Tree Compass Chest": "(can_use(Slingshot) or can_use(Bow) or can_use(Hookshot))",
+    "Deku Tree Compass Room Side Chest": "(can_use(Slingshot) or can_use(Bow) or can_use(Hookshot))",
+    "Deku Tree GS Compass Room": "(is_adult or can_child_attack) and (can_use(Slingshot) or can_use(Bow) or can_use(Hookshot))"
+   },
+   "exits": {
+    "Deku Tree Basement": "deku_tree_shortcuts or (here(is_adult or can_child_attack or Nuts) and here(can_use(Slingshot) or can_use(Bow) or can_use(Hookshot)))"
+   }
+  },
+  "Shadow Temple Beginning": {
+   "locations": {
+    "Shadow Temple Hover Boots Chest": "can_use(Hover_Boots) or (not warp_songs and (can_play(Minuet_of_Forest) or can_play(Serenade_of_Water) or can_play(Nocturne_of_Shadow) or can_play(Prelude_of_Light)))"
+   }
+  }
+ },
+ "_reapply": {
+  "Deku Tree Basement": {
+   "locations": {
+    "Deku Tree GS Basement Vines": "can_use(Slingshot) or can_use(Boomerang) or can_use(Bow) or can_use(Hookshot)",
+    "Deku Tree Basement Chest": "has_fire_source_with_torch"
+   }
+  },
+  "Dodongos Cavern Climb": {
+   "locations": {
+    "Dodongos Cavern Bomb Flower Platform Chest": "can_blast_or_smash"
+   }
+  },
+  "Jabu Jabus Belly Main": {
+   "locations": {
+    "Jabu Jabus Belly Small Wooden Crate 2": "at('Jabu Jabus Belly Before Boss', True)",
+    "Jabu Jabus Belly Small Wooden Crate 1": "at('Jabu Jabus Belly Before Boss', True)",
+    "Jabu Jabus Belly Boomerang Chest": "is_adult or can_child_damage"
+   }
+  },
+  "Queen Gohma Boss Room": {
+   "events": {
+    "Defeat Queen Gohma": "can_use(Slingshot) and can_jumpslash"
+   }
+  },
+  "Dodongos Cavern Lobby": {
+   "exits": {
+    "Dodongos Cavern Torch Room": "False",
+    "Dodongos Cavern Staircase Room": "at('Dodongos Cavern Torch Room', can_use(Sticks) or has_fire_source)"
+   }
+  },
+  "Jabu Jabus Belly Beginning": {
+   "exits": {
+    "Jabu Jabus Belly Main": "can_use(Slingshot) or can_use(Boomerang) or can_use(Bow) or can_use(Hookshot)"
+   }
+  },
+  "Forest Temple Lobby": {
+   "locations": {
+    "Forest Temple First Room Chest": "can_use(Hookshot)",
+    "Forest Temple GS First Room": "(is_adult and (Hookshot or Bow)) or (is_child and Slingshot)"
+   },
+   "exits": {
+    "Forest Temple Central Area": "(Small_Key_Forest_Temple, 1)"
+   }
+  },
+  "Forest Temple Block Push Room": {
+   "locations": {
+    "Forest Temple Eye Switch Chest": "Progressive_Strength_Upgrade and can_use(Bow)"
+   },
+   "exits": {
+    "Forest Temple Straightened Hall": "(Small_Key_Forest_Temple, 3)",
+    "Forest Temple Outside Upper Ledge": "False"
+   }
+  },
+  "Forest Temple NE Outdoors": {
+   "locations": {
+    "Forest Temple GS Raised Island Courtyard": "can_use(Scarecrow)"
+   },
+   "exits": {
+    "Forest Temple Outdoors High Balconies": "False",
+    "Forest Temple NW Outdoors": "False"
+   }
+  },
+  "Forest Temple Bow Region": {
+   "locations": {
+    "Forest Temple Blue Poe Chest": "(Small_Key_Forest_Temple, 4)",
+    "Forest Temple Blue Poe Room Pot 1": "(Small_Key_Forest_Temple, 4)",
+    "Forest Temple Blue Poe Room Pot 2": "(Small_Key_Forest_Temple, 4)",
+    "Forest Temple Blue Poe Room Pot 3": "(Small_Key_Forest_Temple, 4)"
+   },
+   "exits": {
+    "Forest Temple Frozen Eye Switch Room": "can_use(Bow)"
+   },
+   "events": {
+    "Forest Temple Jo and Beth": "(Small_Key_Forest_Temple, 4)"
+   }
+  },
+  "Fire Temple Narrow Path Room": {
+   "locations": {
+    "Fire Temple Map Chest": "can_use(Bow) or can_use(Hookshot)"
+   },
+   "exits": {
+    "Fire Temple Boulder Maze Upper": "(Small_Key_Fire_Temple, 5) and (can_use(Bow) or can_use(Hookshot))"
+   }
+  },
+  "Fire Temple Boulder Maze Upper": {
+   "locations": {
+    "Fire Temple Moving Fire Room Recovery Heart 1": "can_use(Bow) or can_use(Hookshot)",
+    "Fire Temple Moving Fire Room Recovery Heart 2": "can_use(Bow) or can_use(Hookshot)"
+   },
+   "exits": {
+    "Fire Temple Flame Maze": "can_use(Bow) or can_use(Hookshot)"
+   }
+  },
+  "Forest Temple Central Area": {
+   "exits": {
+    "Forest Temple Block Push Room": "(Small_Key_Forest_Temple, 2)",
+    "Forest Temple NW Outdoors": "can_play(Song_of_Time)",
+    "Forest Temple NE Outdoors": "False"
+   }
+  },
+  "Forest Temple NW Outdoors": {
+   "exits": {
+    "Forest Temple Outdoors High Balconies": "can_use(Hookshot)",
+    "Forest Temple NE Outdoors": "False"
+   }
+  },
+  "Forest Temple Frozen Eye Switch Room": {
+   "exits": {
+    "Forest Temple Falling Room": "can_use(Bow)"
+   }
+  },
+  "Fire Temple Flame Maze": {
+   "exits": {
+    "Fire Temple Upper": "(Small_Key_Fire_Temple, 8)"
+   }
+  },
+  "Fire Temple Lower": {
+   "exits": {
+    "Fire Temple Lower Locked Door": "((Small_Key_Fire_Temple, 8) or not keysanity) and can_use(Megaton_Hammer)"
+   }
+  },
+  "Water Temple North Basement": {
+   "locations": {
+    "Water Temple GS Near Boss Key Chest": "at('Water Temple Boss Key Chest Room', True)"
+   },
+   "exits": {
+    "Water Temple Boss Key Chest Room": "has_explosives and Progressive_Strength_Upgrade"
+   }
+  },
+  "Shadow Temple Beyond Boat": {
+   "locations": {
+    "Shadow Temple Spike Walls Left Chest": "(Small_Key_Shadow_Temple, 5)",
+    "Shadow Temple Boss Key Chest": "(Small_Key_Shadow_Temple, 5)"
+   }
+  },
+  "Water Temple Lobby": {
+   "exits": {
+    "Water Temple Before Boss": "can_use(Iron_Boots) and Raise_Water_Level"
+   }
+  },
+  "Water Temple Dark Link Region": {
+   "exits": {
+    "Water Temple River": "can_use(Longshot)"
+   }
+  },
+  "Shadow Temple First Beamos": {
+   "locations": {
+    "Shadow Temple Scythe Shortcut Silver Rupee Ledge": "can_use(Hookshot)"
+   }
+  },
+  "Shadow Temple Falling Spikes": {
+   "locations": {
+    "Shadow Temple GS Falling Spikes Room": "Progressive_Strength_Upgrade"
+   }
+  },
+  "Spirit Temple Central Chamber": {
+   "locations": {
+    "Spirit Temple GS Lobby": "can_use(Scarecrow)",
+    "Spirit Temple GS Hall After Sun Block Room": "(Silver_Rupee_Spirit_Temple_Sun_Block, 5)"
+   }
+  },
+  "Adult Spirit Temple Climb": {
+   "locations": {
+    "Spirit Temple Statue Room Hand Chest": "(can_use(Hookshot) or can_use(Hover_Boots)) and (can_play(Zeldas_Lullaby) and can_use(Longshot))"
+   },
+   "exits": {
+    "Spirit Temple Anubis Room": "can_use(Hookshot)"
+   }
+  },
+  "Gerudo Training Ground Lava Room Front": {
+   "exits": {
+    "Gerudo Training Ground Central Maze Right": "can_play(Song_of_Time)"
+   }
+  },
+  "Gerudo Training Ground Eye Statue Upper": {
+   "exits": {
+    "Gerudo Training Ground Eye Statue Lower": "can_use(Bow)"
+   }
+  },
+  "Spirit Temple Big Mirror Room": {
+   "exits": {
+    "Spirit Temple Before Boss": "can_use(Longshot)"
+   },
+   "locations": {
+    "Spirit Temple Boss Key Chest": "can_play(Zeldas_Lullaby) and Bow and Hookshot and (can_use(Megaton_Hammer) or has_explosives)"
+   }
+  },
+  "Ganons Castle Main": {
+   "exits": {
+    "Ganons Castle Fire Trial": "can_use(Golden_Gauntlets)"
+   }
+  },
+  "Ganons Castle Forest Trial Wind Room": {
+   "exits": {
+    "Ganons Castle Forest Trial Ending": "(can_play(Song_of_Time) and can_use(Hookshot)) and ((Silver_Rupee_Ganons_Castle_Forest_Trial, 5) and can_play(Song_of_Time) and can_use(Longshot) and can_use(Hover_Boots) and can_use(Iron_Boots))"
+   },
+   "locations": {
+    "Ganons Castle Forest Trial Silver Rupee Front Right": "can_play(Song_of_Time) and can_use(Longshot) and can_use(Hover_Boots) and can_use(Iron_Boots)",
+    "Ganons Castle Forest Trial Silver Rupee Front Left": "can_play(Song_of_Time) and can_use(Longshot) and can_use(Hover_Boots) and can_use(Iron_Boots)",
+    "Ganons Castle Forest Trial Silver Rupee Back Right": "can_play(Song_of_Time) and can_use(Longshot) and can_use(Hover_Boots) and can_use(Iron_Boots)",
+    "Ganons Castle Forest Trial Silver Rupee Back Center": "can_play(Song_of_Time) and can_use(Longshot) and can_use(Hover_Boots) and can_use(Iron_Boots)",
+    "Ganons Castle Forest Trial Silver Rupee Center Left": "can_play(Song_of_Time) and can_use(Longshot) and can_use(Hover_Boots) and can_use(Iron_Boots)"
+   }
+  },
+  "Ganons Castle Shadow Trial": {
+   "exits": {
+    "Ganons Castle Shadow Trial First Gap": "can_use(Fire_Arrows) or (can_use(Dins_Fire) and can_use(Bow))"
+   },
+   "locations": {
+    "Ganons Castle Shadow Trial Front Chest": "(is_child or can_use(Fire_Arrows) or Hookshot or Hover_Boots or can_play(Song_of_Time)) and (can_use(Fire_Arrows) or (can_use(Dins_Fire) and can_use(Bow)))"
+   }
+  },
+  "Dodongos Cavern Far Bridge": {
+   "locations": {
+    "Dodongos Cavern GS Alcove Above Stairs": "can_blast_or_smash"
+   }
+  },
+  "Water Temple South Basement": {
+   "locations": {
+    "Water Temple GS Behind Gate": "at('Water Temple Middle Water Level', can_use(Iron_Boots) and can_use(Hookshot) and (Zora_Tunic or logic_fewer_tunic_requirements))"
+   }
+  },
+  "Deku Tree Slingshot Room": {
+   "locations": {
+    "Deku Tree Slingshot Room Side Chest": "can_use(Slingshot) or can_use(Boomerang) or can_use(Bow) or can_use(Hookshot)"
+   }
+  },
+  "Dodongos Cavern Staircase Room": {
+   "locations": {
+    "Dodongos Cavern GS Vines Above Stairs": "at('Dodongos Cavern Climb', can_use(Slingshot) or can_use(Bow) or can_use(Boomerang) or can_use(Hookshot)) or (logic_dc_vines_gs and can_use(Longshot))"
+   }
+  },
+  "Fire Temple Upper": {
+   "locations": {
+    "Fire Temple Megaton Hammer Chest": "has_explosives and can_use(Hookshot)"
+   },
+   "exits": {
+    "Fire Temple Before Boss": "Megaton_Hammer and (can_play(Song_of_Time) or has_explosives) and can_use(Hookshot)"
+   }
+  },
+  "Fire Temple Lower Locked Door": {
+   "locations": {
+    "Fire Temple Flare Dancer Chest": "can_use(Hookshot) and (has_explosives or can_use(Megaton_Hammer))",
+    "Fire Temple Boss Key Chest": "can_use(Hookshot) and (has_explosives or can_use(Megaton_Hammer))"
+   }
+  },
+  "Fire Temple Near Boss": {
+   "locations": {
+    "Fire Temple Near Boss Pot 1": "is_adult and can_use(Hookshot)",
+    "Fire Temple Near Boss Pot 2": "is_adult and can_use(Hookshot)",
+    "Fire Temple Near Boss Pot 3": "is_adult and can_use(Hookshot)",
+    "Fire Temple Near Boss Pot 4": "is_adult and can_use(Hookshot)"
+   },
+   "exits": {
+    "Fire Temple Before Boss": "is_adult and (fire_temple_shortcuts or logic_fire_boss_door_jump)"
+   }
+  },
+  "Ganons Castle Fire Trial": {
+   "locations": {
+    "Ganons Castle Fire Trial Silver Rupee Right Back": "(is_adult or logic_fire_trial_slug_rupee) and can_use(Hover_Boots)",
+    "Ganons Castle Fire Trial Silver Rupee Flamethrower": "(True) and can_use(Hover_Boots)",
+    "Ganons Castle Fire Trial Silver Rupee Right Center": "(can_use(Golden_Gauntlets) and can_use(Goron_Tunic)) and can_use(Hover_Boots)",
+    "Ganons Castle Fire Trial Silver Rupee Right Front": "(True) and can_use(Hover_Boots)",
+    "Ganons Castle Fire Trial Silver Rupee Inside Pillar": "(can_use(Golden_Gauntlets)) and can_use(Hover_Boots)"
+   }
+  },
+  "Bottom of the Well Main Area": {
+   "locations": {
+    "Bottom of the Well Map Chest": "has_explosives",
+    "Bottom of the Well Basement Silver Rupee Wood Beam Front": "has_explosives",
+    "Bottom of the Well Basement Silver Rupee Wood Beam Back": "has_explosives",
+    "Bottom of the Well Basement Silver Rupee Ladders Bottom": "has_explosives",
+    "Bottom of the Well Basement Silver Rupee Ladders Middle": "has_explosives",
+    "Bottom of the Well Basement Silver Rupee Ladders Top": "has_explosives"
+   }
+  },
+  "Shadow Temple Boat": {
+   "locations": {
+    "Shadow Temple GS Near Ship": "Longshot and can_use(Distant_Scarecrow)"
+   },
+   "exits": {
+    "Shadow Temple Beyond Boat": "can_play(Zeldas_Lullaby) and Progressive_Strength_Upgrade"
+   }
+  },
+  "Bongo Bongo Boss Room": {
+   "events": {
+    "Defeat Bongo Bongo": "(Kokiri_Sword or is_adult) and (can_use(Bow) or can_use(Slingshot) or logic_shadow_bongo) and (can_use(Lens_of_Truth) or logic_lens_bongo)"
+   }
+  },
+  "Ganons Castle Shadow Trial Second Gap": {
+   "locations": {
+    "Ganons Castle Shadow Trial Golden Gauntlets Chest": "can_use(Lens_of_Truth) or logic_lens_castle"
+   }
+  },
+  "Shadow Temple Before Boss": {
+   "exits": {
+    "Shadow Temple Beyond Boat SoT Block": "False"
+   }
+  },
+  "Shadow Temple Invisible Spikes": {
+   "exits": {
+    "Shadow Temple Wind Tunnel": "Hookshot and can_use(Longshot) and (Small_Key_Shadow_Temple, 3)"
+   }
+  },
+  "Child Spirit Temple Beyond Metal Bridges": {
+   "locations": {
+    "Spirit Temple Child Bridge Chest": "can_use(Boomerang)",
+    "Spirit Temple Child Early Torches Silver Rupee Top Right": "can_use(Boomerang)",
+    "Spirit Temple Child Early Torches Silver Rupee Bottom Right": "can_use(Boomerang)",
+    "Spirit Temple Child Early Torches Silver Rupee Bottom Left": "can_use(Boomerang)",
+    "Spirit Temple Child Early Torches Silver Rupee Top Left": "can_use(Boomerang)",
+    "Spirit Temple Child Early Torches Silver Rupee Near Torch": "can_use(Boomerang)",
+    "Spirit Temple Child Bridge Flying Pot 1": "can_use(Boomerang)",
+    "Spirit Temple Child Bridge Flying Pot 2": "can_use(Boomerang)",
+    "Spirit Temple Child Anubis Pot 1": "can_use(Boomerang)",
+    "Spirit Temple Child Anubis Pot 2": "can_use(Boomerang)",
+    "Spirit Temple Child Anubis Pot 3": "can_use(Boomerang)",
+    "Spirit Temple Child Anubis Pot 4": "can_use(Boomerang)"
+   }
+  },
+  "Early Adult Spirit Temple": {
+   "locations": {
+    "Spirit Temple Compass Chest": "Hookshot and can_play(Zeldas_Lullaby) and can_use(Longshot)"
+   }
+  },
+  "Spirit Temple Anubis Room": {
+   "exits": {
+    "Spirit Temple Big Mirror Room": "(Small_Key_Spirit_Temple, 5) and can_use(Longshot)"
+   }
+  },
+  "Ganons Castle Spirit Trial Second Room Back": {
+   "exits": {
+    "Ganons Castle Spirit Trial Ending": "is_adult and Bow and can_use(Fire_Arrows) and Mirror_Shield"
+   }
+  },
+  "Spirit Temple Boulder Room": {
+   "locations": {
+    "Spirit Temple Adult Boulder Silver Rupee Ledge": "(True) and can_play(Song_of_Time)",
+    "Spirit Temple Adult Boulder Silver Rupee Front Left": "(True) and can_play(Song_of_Time)",
+    "Spirit Temple Adult Boulder Silver Rupee Front Right": "(True) and can_play(Song_of_Time)",
+    "Spirit Temple Adult Boulder Silver Rupee Back Right": "(True) and can_play(Song_of_Time)",
+    "Spirit Temple Adult Boulder Silver Rupee Back Left": "(True) and can_play(Song_of_Time)"
+   }
+  },
+  "GV Fortress Side": {
+   "locations": {
+    "GV GS Pillar": "can_use(Longshot) and can_use(Megaton_Hammer) and (at_night or gold_skulls_ignore_daytime)"
+   }
+  },
+  "Deku Tree Lobby": {
+   "locations": {
+    "Deku Tree Compass Chest": "(can_use(Slingshot) or can_use(Bow) or can_use(Hookshot))",
+    "Deku Tree Compass Room Side Chest": "(can_use(Slingshot) or can_use(Bow) or can_use(Hookshot))",
+    "Deku Tree GS Compass Room": "(is_adult or can_child_attack) and (can_use(Slingshot) or can_use(Bow) or can_use(Hookshot))"
+   },
+   "exits": {
+    "Deku Tree Basement": "deku_tree_shortcuts or (here(is_adult or can_child_attack or Nuts) and here(can_use(Slingshot) or can_use(Bow) or can_use(Hookshot)))"
+   }
+  },
+  "Shadow Temple Beginning": {
+   "locations": {
+    "Shadow Temple Hover Boots Chest": "can_use(Hover_Boots) or (not warp_songs and (can_play(Minuet_of_Forest) or can_play(Serenade_of_Water) or can_play(Nocturne_of_Shadow) or can_play(Prelude_of_Light)))"
+   }
+  }
+ },
+ "_evidence": {
+  "Deku Tree Basement / Deku Tree GS Basement Vines": {
+   "verdict": "uncertain (strict rule applied)",
+   "ootr": "can_use_projectile or can_use(Dins_Fire) or (logic_deku_basement_gs and (is_adult or Sticks or Kokiri_Sword))",
+   "why": "GS #70603 room 4 on vines ~4.6 above the floor: a thrown bomb or Din's Fire is not shown to reach it (strict: projectile weapons only)"
+  },
+  "Dodongos Cavern Climb / Dodongos Cavern Bomb Flower Platform Chest": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "True",
+   "why": "chest #48965 room 10 sits inside breakable rock WallCrack #70992 (same spot); nearest bomb flower 13 below"
+  },
+  "Jabu Jabus Belly Main / Jabu Jabus Belly Small Wooden Crate 2": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "True",
+   "why": "crate #07036 in room 17, the upper hallway (y~102); the room-1 lift only runs y74-91: reached only after Big Octo"
+  },
+  "Jabu Jabus Belly Main / Jabu Jabus Belly Small Wooden Crate 1": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "True",
+   "why": "crate #88523 in room 17 as crate 2 (not in play yet)"
+  },
+  "Queen Gohma Boss Room / Defeat Queen Gohma": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "(Nuts or can_use(Slingshot)) and can_jumpslash",
+   "why": "Enemy_DungeonBoss_Gohma has no light-stun (Deku Nut) module, only an eye-hit reaction; remake guides use the Slingshot"
+  },
+  "Dodongos Cavern Lobby / Dodongos Cavern Torch Room": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "is_adult",
+   "why": "the torch room's lobby side is room 9's switch ledge 3.0 above the lobby floor; adult's highest grab is 2.81 (Player_Adult StartJumpCliffHoldLimitHeight)"
+  },
+  "Dodongos Cavern Lobby / Dodongos Cavern Staircase Room": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "at('Dodongos Cavern Torch Room', is_adult or Sticks or can_use(Dins_Fire))",
+   "why": "the west door opens from room 9's switch, behind room 8's door, which needs 3 timed torches lit (#52842/#36516/#74653): a lit stick or a fire source"
+  },
+  "Jabu Jabus Belly Beginning / Jabu Jabus Belly Main": {
+   "verdict": "uncertain (strict rule applied)",
+   "ootr": "can_use_projectile",
+   "why": "the first door's hanging switch #62528 is ~6.5 above Link: slingshot/boomerang (bow/hookshot); a thrown bomb is not shown to reach it"
+  },
+  "Forest Temple Lobby / Forest Temple First Room Chest": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "True",
+   "why": "chest #00858 on top of the west tree; vines are on the east tree: Hookshot across (3 remake guides)"
+  },
+  "Forest Temple Block Push Room / Forest Temple Eye Switch Chest": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "Progressive_Strength_Upgrade and (can_use(Bow) or can_use(Slingshot))",
+   "why": "eye switch #37526 isHitHookShot=false under a wire grate (Obj_WireMesh_A_02): Bow only"
+  },
+  "Forest Temple NE Outdoors / Forest Temple GS Raised Island Courtyard": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "can_use(Hookshot) or (logic_forest_outdoor_east_gs and can_use(Boomerang)) or at('Forest Temple Falling Room', can_use(Bow) or can_use(Dins_Fire) or has_explosives)",
+   "why": "east-courtyard GS #16762 beside Scarecrow marker #25544 above the falling-ceiling door: Scarecrow's Song + Hookshot (drops group: reaches all 3)"
+  },
+  "Forest Temple Bow Region / Forest Temple Blue Poe Chest": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "can_use(Bow)",
+   "why": "4th small-key door #48563 (locks #89377/#00798) between the Bow room (17) and Beth's room (18)"
+  },
+  "Fire Temple Narrow Path Room / Fire Temple Map Chest": {
+   "verdict": "uncertain (strict rule applied)",
+   "ootr": "Bow or (Small_Key_Fire_Temple, 6)",
+   "why": "room 16 is entered through shutter #89444, whose room-6 face opens only by eye switch #94765 (hookshot-hittable); 6 keys alone don't open it"
+  },
+  "Fire Temple Boulder Maze Upper / Fire Temple Moving Fire Room Recovery Heart 1": {
+   "verdict": "uncertain (strict rule applied)",
+   "ootr": "True",
+   "why": "room 16 (as the Map Chest)"
+  },
+  "Fire Temple Boulder Maze Upper / Fire Temple Moving Fire Room Recovery Heart 2": {
+   "verdict": "uncertain (strict rule applied)",
+   "ootr": "True",
+   "why": "room 16 (as the Map Chest)"
+  },
+  "Forest Temple Lobby / Forest Temple Central Area": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "is_adult or can_child_attack or Nuts",
+   "why": "new small-key door #84964 (locks #32468/#76177) between the entrance courtyard (room 0) and the corridor; guide: 'you cannot get into the temple without it'"
+  },
+  "Forest Temple Central Area / Forest Temple Block Push Room": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "(Small_Key_Forest_Temple, 1)",
+   "why": "main-hall west door #17869 (locks #96461/#10806) is the 2nd key door"
+  },
+  "Forest Temple Block Push Room / Forest Temple Straightened Hall": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "Progressive_Strength_Upgrade and (Small_Key_Forest_Temple, 2) and can_use(Bow)",
+   "why": "door #49409 at the top of the block room (locks #11120/#84114) is the 3rd key door"
+  },
+  "Forest Temple Central Area / Forest Temple NW Outdoors": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "can_play(Song_of_Time) or is_child",
+   "why": "Song of Time block #48771 in front of door #65441; no crawlspace (no CrawlAnchor) for a child"
+  },
+  "Forest Temple Central Area / Forest Temple NE Outdoors": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "can_use(Bow) or can_use(Slingshot)",
+   "why": "the main hall's NE corner is fenced (#09009); the switch #77219 lifting it is behind the fence: one-way shortcut from the courtyard"
+  },
+  "Forest Temple NW Outdoors / Forest Temple Outdoors High Balconies": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "here(is_adult or has_explosives or ((Boomerang or Nuts or Deku_Shield) and (Sticks or Kokiri_Sword or Slingshot)))",
+   "why": "the well is drained only by switch #25067 on the NW balcony, reached across a gap by Hookshot target #24441 (3 guides)"
+  },
+  "Forest Temple NE Outdoors / Forest Temple Outdoors High Balconies": {
+   "verdict": "uncertain (strict rule applied)",
+   "ootr": "can_use(Longshot) or (logic_forest_vines and can_use(Hookshot))",
+   "why": "the east courtyard has no drain switch and no way up to the NW switch balcony (OoTR's Longshot route has no counterpart in the files)"
+  },
+  "Forest Temple Bow Region / Forest Temple Frozen Eye Switch Room": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "(Small_Key_Forest_Temple, 5)",
+   "why": "Beth's shutter #67814 opens only after her (Bow); 5th key door #40959"
+  },
+  "Forest Temple Frozen Eye Switch Room / Forest Temple Falling Room": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "Bow or can_use(Dins_Fire)",
+   "why": "separate events IceMelts / RoomSpin: melting the ice no longer turns the room, a second arrow hits the eye (Bow)"
+  },
+  "Forest Temple Bow Region / Forest Temple Jo and Beth": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "can_use(Bow)",
+   "why": "Beth is behind the 4th key door #48563"
+  },
+  "Fire Temple Boulder Maze Upper / Fire Temple Flame Maze": {
+   "verdict": "uncertain (strict rule applied)",
+   "ootr": "(Small_Key_Fire_Temple, 7)",
+   "why": "every way into room 16 (pursuing fire wall, door #50496 to the flame maze) passes eye switch #94765"
+  },
+  "Fire Temple Flame Maze / Fire Temple Upper": {
+   "verdict": "uncertain (strict rule applied)",
+   "ootr": "(Small_Key_Fire_Temple, 8) or (Hover_Boots and Megaton_Hammer) or logic_fire_flame_maze",
+   "why": "both exits of the flame maze are key-locked (door #35070, shutter #67001 + lock #99073); no Hover Boots bypass in the files"
+  },
+  "Fire Temple Lower / Fire Temple Lower Locked Door": {
+   "verdict": "same (OoTR's rule)",
+   "ootr": "((Small_Key_Fire_Temple, 8) or (not keysanity)) and can_use(Megaton_Hammer)",
+   "why": "boss-key loop door #17955 (locks #07466/#63529) is a small-key door in the remake, but the dungeons plugin sets its open flag IsChainLockDoorOpen.4189300454150217955 on a new file whenever small keys are vanilla or dungeon (OoTR's 'not keysanity' case, as OoTR's ROM patch removes the lock); with keys elsewhere the door stays locked and 8 keys is every key. The earlier 9-key rule left Fire Temple Near Boss Chest as the only spot for the first key"
+  },
+  "Water Temple North Basement / Water Temple GS Near Boss Key Chest": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "True",
+   "why": "GS #48567 in the boulder stream past room 14's block puzzle (drops group with the other 4 Water GS)"
+  },
+  "Shadow Temple Beyond Boat / Shadow Temple Spike Walls Left Chest": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "can_use(Dins_Fire)",
+   "why": "room 19 door #59796 carries the 5th chain lock #53510; the boss approach door #95971 has none"
+  },
+  "Shadow Temple Beyond Boat / Shadow Temple Boss Key Chest": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "can_use(Dins_Fire)",
+   "why": "room 19, behind the 5th lock #53510 (as Spike Walls Left)"
+  },
+  "Water Temple Lobby / Water Temple Before Boss": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "can_use(Longshot)",
+   "why": "high water (floating platform #43983, Longshot target #97515 18.8 away) then Iron Boots up room 11's water slope (Kotaku)"
+  },
+  "Water Temple North Basement / Water Temple Boss Key Chest Room": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "(Small_Key_Water_Temple, 5) and (logic_water_bk_jump_dive or Iron_Boots) and (logic_water_north_basement_ledge_jump or Hover_Boots or (has_explosives and Progressive_Strength_Upgrade))",
+   "why": "room 14: break walls, push block #71436 onto switch #05458 to raise the water to the upper door (6 above the water); no Hover route"
+  },
+  "Water Temple Dark Link Region / Water Temple River": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "can_play(Song_of_Time)",
+   "why": "targets #54039/#28341 ~12 above room 7's floor: Longshot, then down the waterfall (no Song of Time block in the temple)"
+  },
+  "Shadow Temple First Beamos / Shadow Temple Scythe Shortcut Silver Rupee Ledge": {
+   "verdict": "uncertain (strict rule applied)",
+   "ootr": "True",
+   "why": "rupee 3 above the floor under hookshot target #99525 (strict: Hookshot)"
+  },
+  "Shadow Temple Falling Spikes / Shadow Temple GS Falling Spikes Room": {
+   "verdict": "uncertain (strict rule applied)",
+   "ootr": "logic_shadow_umbrella_gs or Hookshot",
+   "why": "GS #90606 on top of the falling spikes, 17.4 above the floor; guide: needs the room's pushable block (strict: Strength)"
+  },
+  "Spirit Temple Central Chamber / Spirit Temple GS Lobby": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "(is_child and logic_spirit_lobby_gs and Boomerang and (Small_Key_Spirit_Temple, 5)) or (is_adult and (Hookshot or Hover_Boots or logic_spirit_lobby_jump) and ((Small_Key_Spirit_Temple, 3) or spirit_temple_shortcuts)) or (logic_spirit_lobby_gs and Boomerang and (Hookshot or Hover_Boots or logic_spirit_lobby_jump) and (has_explosives or ((Small_Key_Spirit_Temple, 2) and free_bombchu_drops)))",
+   "why": "GS #41804 on a ledge beside Pierre's spot #73433: Scarecrow's Song + Hookshot (VGC); drops group: reaches all 5"
+  },
+  "Adult Spirit Temple Climb / Spirit Temple Statue Room Hand Chest": {
+   "verdict": "uncertain (strict rule applied)",
+   "ootr": "can_play(Zeldas_Lullaby)",
+   "why": "west-hand chest #28435 5.6 above the adult ledge; hookshot targets #67835/#77364 beside the hands (strict: Hookshot or Hover Boots)"
+  },
+  "Gerudo Training Ground Lava Room Front / Gerudo Training Ground Central Maze Right": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "is_child or can_play(Song_of_Time)",
+   "why": "Song of Time steps #94064/#80618 start absent for both ages (signs isDefaultActive false, no age parameter)"
+  },
+  "Gerudo Training Ground Eye Statue Upper / Gerudo Training Ground Eye Statue Lower": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "True",
+   "why": "lower floor under lava until the statue puzzle: eye switch #38959 arrows only (isHitHookShot false)"
+  },
+  "Adult Spirit Temple Climb / Spirit Temple Anubis Room": {
+   "verdict": "uncertain (strict rule applied)",
+   "ootr": "(Small_Key_Spirit_Temple, 4)",
+   "why": "upper-east lock #90626 is 10 above the adult entry ledge; hookshot target #13138 (strict: Hookshot)"
+  },
+  "Spirit Temple Big Mirror Room / Spirit Temple Before Boss": {
+   "verdict": "uncertain (strict rule applied)",
+   "ootr": "(spirit_temple_shortcuts or (has_explosives and Mirror_Shield)) and Hookshot",
+   "why": "target #A_12 behind the statue face >=10.5 from the lift edge (Hookshot 10): strict Longshot"
+  },
+  "Ganons Castle Main / Ganons Castle Fire Trial": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "logic_fewer_tunic_requirements or can_use(Goron_Tunic)",
+   "why": "giant pillar Obj_LiftRock_C_01 #25607 in front of the fire-trial door #92680 (same as the light trial's)"
+  },
+  "Ganons Castle Forest Trial Wind Room / Ganons Castle Forest Trial Ending": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "(Silver_Rupee_Ganons_Castle_Forest_Trial, 5)",
+   "why": "silver rupee #35976 on a Song of Time block that starts absent; #44300 over a hookshot target raised by a floor switch"
+  },
+  "Ganons Castle Shadow Trial / Ganons Castle Shadow Trial First Gap": {
+   "verdict": "uncertain (strict rule applied)",
+   "ootr": "can_use(Longshot) or can_use(Fire_Arrows)",
+   "why": "no hookshot target across the gap; invisible platforms shown by timed torch #67244 (Fire Arrows, or an arrow through a torch lit with Din's)"
+  },
+  "Spirit Temple Central Chamber / Spirit Temple GS Hall After Sun Block Room": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "(is_child and Boomerang and (Small_Key_Spirit_Temple, 5)) or (is_adult and Hookshot and ((Small_Key_Spirit_Temple, 3) or spirit_temple_shortcuts)) or (Boomerang and Hookshot and (has_explosives or ((Small_Key_Spirit_Temple, 2) and free_bombchu_drops)))",
+   "why": "its true spot #74946 is in room 10, behind the sun-block silver-rupee shutter #70549 (drops group: reaches all 5)"
+  },
+  "Deku Tree Basement / Deku Tree Basement Chest": {
+   "verdict": "uncertain (strict rule applied)",
+   "ootr": "True",
+   "why": "chest #69065 sits behind web #85267; the gimmick (EventRequestActor #46220, InsideTheDekuTree_Gimmick_CandleAndSpiderWeb) links step switch #20480, an unlit switch candle #02086 (InitialBurn false) and the web; the guide says the switch reveals a torch. Whether the switch lights the candle and burns the web by itself was not settled from the logic module (strict: a fire source or a stick lit at the torch)"
+  },
+  "Fire Temple Narrow Path Room / Fire Temple Boulder Maze Upper": {
+   "verdict": "remake key count (OoTR stricter, but its count makes the audit's Fire loop rule unreachable)",
+   "ootr": "(Small_Key_Fire_Temple, 6)",
+   "why": "REMAKE COUNT (not stricter than OoTR): the remake has no lock between the narrow path and the upper boulder maze (door #63202 unlocked; its 8 locks are D1 #04174, D2 #79290, D3 #90487, D4 #67313, D5 #50496, the flame-maze exits #35070 and #67001, the loop #17955). OoTR's 6 plus the remake moving OoT's Side Room key to the flame maze left only 4 real keys + OoTR's free key before this door with vanilla keys: the whole upper temple and, with the loop fix, Volvagia were unreachable. Kept the room-16 eye switch (Bow or Hookshot) as strict"
+  },
+  "Dodongos Cavern Far Bridge / Dodongos Cavern GS Alcove Above Stairs": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "can_use(Hookshot) or can_use(Boomerang)",
+   "why": "true spot #94851 (room 18) sits behind WallCrack #34774; today a drops group (covered), needed once the pairs are corrected"
+  },
+  "Water Temple South Basement / Water Temple GS Behind Gate": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "True",
+   "why": "true spot #82352 (room 2, the pillar basement, behind gate shutter #52825 opened by crystal switch #12952, same room as the Central Pillar Chest #71598): middle water, Iron Boots, Hookshot, Zora Tunic; today a drops group (covered), needed once the pairs are corrected"
+  },
+  "Child Spirit Temple Beyond Metal Bridges / Spirit Temple Child Bridge Flying Pot 1": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "True",
+   "why": "G4 line 739: the room 2-4 drops inherit OoTR's looser region rule; proposed AND can_use(Boomerang). Room 2's flying pots: strict rule (their break spot is not shown in the files)."
+  },
+  "Child Spirit Temple Beyond Metal Bridges / Spirit Temple Child Bridge Flying Pot 2": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "True",
+   "why": "G4 line 739: the room 2-4 drops inherit OoTR's looser region rule; proposed AND can_use(Boomerang). Room 2's flying pots: strict rule (their break spot is not shown in the files)."
+  },
+  "Child Spirit Temple Beyond Metal Bridges / Spirit Temple Child Anubis Pot 1": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "True",
+   "why": "G4 (739): room 3 (the Anubis room, its 4 pots; Anubis Pot 4 is OoTR's Deku Shield Pot) is reached only from room 2's south side through the crawl hole (-48.5,104.8,-64.6), after room 2's bridge, which drops only when the crystal switch Obj_SwitchHit_A_03 #14462237492087080970 is hit behind the solid net Obj_SpiritTemple_FallNet_B_04 #12594774514080527410 (collision box 3.6 x 8.2 x 0.2, GroundObject): a curving Boomerang reaches it, a Slingshot shot is blocked, OoTR's 5-rupee alternative drops room 4's net instead. Not on the region's way in: room 1's east door #14338828094098848225 leads to room 4's north part without that bridge (G4 line 772), and with the 5 rupees counted room 4's net bridges to its south part, so the region has a second way in that needs no Boomerang."
+  },
+  "Child Spirit Temple Beyond Metal Bridges / Spirit Temple Child Anubis Pot 2": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "True",
+   "why": "G4 (739): room 3 (the Anubis room, its 4 pots; Anubis Pot 4 is OoTR's Deku Shield Pot) is reached only from room 2's south side through the crawl hole (-48.5,104.8,-64.6), after room 2's bridge, which drops only when the crystal switch Obj_SwitchHit_A_03 #14462237492087080970 is hit behind the solid net Obj_SpiritTemple_FallNet_B_04 #12594774514080527410 (collision box 3.6 x 8.2 x 0.2, GroundObject): a curving Boomerang reaches it, a Slingshot shot is blocked, OoTR's 5-rupee alternative drops room 4's net instead. Not on the region's way in: room 1's east door #14338828094098848225 leads to room 4's north part without that bridge (G4 line 772), and with the 5 rupees counted room 4's net bridges to its south part, so the region has a second way in that needs no Boomerang."
+  },
+  "Child Spirit Temple Beyond Metal Bridges / Spirit Temple Child Anubis Pot 3": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "True",
+   "why": "G4 (739): room 3 (the Anubis room, its 4 pots; Anubis Pot 4 is OoTR's Deku Shield Pot) is reached only from room 2's south side through the crawl hole (-48.5,104.8,-64.6), after room 2's bridge, which drops only when the crystal switch Obj_SwitchHit_A_03 #14462237492087080970 is hit behind the solid net Obj_SpiritTemple_FallNet_B_04 #12594774514080527410 (collision box 3.6 x 8.2 x 0.2, GroundObject): a curving Boomerang reaches it, a Slingshot shot is blocked, OoTR's 5-rupee alternative drops room 4's net instead. Not on the region's way in: room 1's east door #14338828094098848225 leads to room 4's north part without that bridge (G4 line 772), and with the 5 rupees counted room 4's net bridges to its south part, so the region has a second way in that needs no Boomerang."
+  },
+  "Child Spirit Temple Beyond Metal Bridges / Spirit Temple Child Anubis Pot 4": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "True",
+   "why": "G4 (739): room 3 (the Anubis room, its 4 pots; Anubis Pot 4 is OoTR's Deku Shield Pot) is reached only from room 2's south side through the crawl hole (-48.5,104.8,-64.6), after room 2's bridge, which drops only when the crystal switch Obj_SwitchHit_A_03 #14462237492087080970 is hit behind the solid net Obj_SpiritTemple_FallNet_B_04 #12594774514080527410 (collision box 3.6 x 8.2 x 0.2, GroundObject): a curving Boomerang reaches it, a Slingshot shot is blocked, OoTR's 5-rupee alternative drops room 4's net instead. Not on the region's way in: room 1's east door #14338828094098848225 leads to room 4's north part without that bridge (G4 line 772), and with the 5 rupees counted room 4's net bridges to its south part, so the region has a second way in that needs no Boomerang."
+  },
+  "Child Spirit Temple Beyond Metal Bridges / Deku Shield Pot": {
+   "verdict": "LOOSER-in-OoTR",
+   "ootr": "fix_broken_drops",
+   "why": "G4 (739): room 3 (the Anubis room, its 4 pots; Anubis Pot 4 is OoTR's Deku Shield Pot) is reached only from room 2's south side through the crawl hole (-48.5,104.8,-64.6), after room 2's bridge, which drops only when the crystal switch Obj_SwitchHit_A_03 #14462237492087080970 is hit behind the solid net Obj_SpiritTemple_FallNet_B_04 #12594774514080527410 (collision box 3.6 x 8.2 x 0.2, GroundObject): a curving Boomerang reaches it, a Slingshot shot is blocked, OoTR's 5-rupee alternative drops room 4's net instead. Not on the region's way in: room 1's east door #14338828094098848225 leads to room 4's north part without that bridge (G4 line 772), and with the 5 rupees counted room 4's net bridges to its south part, so the region has a second way in that needs no Boomerang."
+  },
+  "Child Spirit Temple Beyond Metal Bridges / Spirit Temple Child Early Torches Chest": {
+   "verdict": "rule in dungeons.json",
+   "ootr": "Sticks or can_use(Dins_Fire)",
+   "why": "The chest's one rule is data/rando/logic/dungeons.json's (Sticks or can_use(Dins_Fire)) and (Silver_Rupee_Spirit_Temple_Child_Early_Torches, 5) (light the north candles, cross room 4's net the 5 rupees drop). No Boomerang: room 1's east door reaches room 4's north part without room 2's bridge (G4 line 772); with vanilla silver rupees the 5 rupees, on the south side, imply the Boomerang through their own locations; with shuffled ones the net drops when the fifth is credited (silver_build_handover.md T8). The Boomerang this file used to add here (G4 line 374) is kept for the spots only reached over the bridge (the bridge chest, the 5 rupee spots, room 2-3's pots)."
+  },
+  "Deku Tree Lobby / Deku Tree Compass Chest": {
+   "verdict": "LOOSER-in-OoTR (other randomizers, in game)",
+   "ootr": "True",
+   "why": "the three Enemy_Skullwalltula on the 2F -> 3F vine wall must be shot to climb (the child's sword can't reach them); seen in game twice by WekarXD, by WhippyWoo and reported by an ootrr player. The Boomerang is left out until tested."
+  },
+  "Deku Tree Lobby / Deku Tree Compass Room Side Chest": {
+   "verdict": "LOOSER-in-OoTR (other randomizers, in game)",
+   "ootr": "True",
+   "why": "the three Enemy_Skullwalltula on the 2F -> 3F vine wall must be shot to climb (the child's sword can't reach them); seen in game twice by WekarXD, by WhippyWoo and reported by an ootrr player. The Boomerang is left out until tested."
+  },
+  "Deku Tree Lobby / Deku Tree GS Compass Room": {
+   "verdict": "LOOSER-in-OoTR (other randomizers, in game)",
+   "ootr": "is_adult or can_child_attack",
+   "why": "the three Enemy_Skullwalltula on the 2F -> 3F vine wall must be shot to climb (the child's sword can't reach them); seen in game twice by WekarXD, by WhippyWoo and reported by an ootrr player. The Boomerang is left out until tested."
+  },
+  "Deku Tree Lobby / Deku Tree Basement": {
+   "verdict": "LOOSER-in-OoTR (other randomizers, in game)",
+   "ootr": "deku_tree_shortcuts or here(is_adult or can_child_attack or Nuts)",
+   "why": "the basement is reached by dropping through the web from 3F; the three Enemy_Skullwalltula on the 2F -> 3F vine wall must be shot to climb (the child's sword can't reach them); seen in game twice by WekarXD, by WhippyWoo and reported by an ootrr player. The Boomerang is left out until tested."
+  },
+  "Forest Temple Block Push Room / Forest Temple Outside Upper Ledge": {
+   "verdict": "LOOSER-in-OoTR (other randomizer, in game)",
+   "ootr": "can_use(Hover_Boots) or (logic_forest_outside_backdoor and Progressive_Strength_Upgrade and can_jumpslash)",
+   "why": "the alcove door from the block-push room to the NW courtyard's upper ledge is barred from the alcove side until it is passed from the ledge (Kaepora dfab4e8, seen in game; their SoH-logic sweep left 87/400 seeds unfinishable with a key in the Floormaster chest). The trick uses the same door."
+  },
+  "Shadow Temple Beginning / Shadow Temple Hover Boots Chest": {
+   "verdict": "LOOSER-in-OoTR (other randomizers, files)",
+   "ootr": "True",
+   "why": "Dead Hand's room (room 4; chest #14535080241831873137 at (-72.6,90.5,-10.1), Item_HoverBoot) lies past room 26's falling floor Obj_ShadowTemple_FallingFloor_A_01 #1947304115190709465 (-40.0,90.4,-10.1): Logic/ShadowTemple_Level_Room_B1F_B_Prefab_e203 deletes it once ShadowTemple_Level_Room_26_FloorFalled is set, no hookshot target spans the gap, and the Area at (-59.9,90.4,-10.1) autosaves (IsNeedAutoSave) beyond it, so a death returns there. Way back: the Hover Boots, or, once Dead Hand dies and his shutter (Obj_ShadowTemple_SwitchShutter_A_04, IsDisableSaveAndWarp) opens, a warp song whose pad leads home (Barajador). Only the chest is past the floor (every Shadow Temple Beginning pot is at x > -40). With warp_songs (shuffled destinations) a song's name says nothing about its pad, so only the Hover Boots count then."
+  },
+  "Forest Temple Bow Region / Forest Temple Blue Poe Room Pot 1": {
+   "verdict": "LOOSER-in-OoTR (files; ootrando b38a654)",
+   "ootr": "True",
+   "why": "pot #4243968346728704417 (Obj_Pot_A_02, DefaultDungeonRoomIndex 18) stands in Beth's room 18 beside Enemy_Poe_Beth, behind the 4th small-key door #48563 that this file already puts on the Blue Poe Chest and Jo and Beth. A remake key layout, as those two entries."
+  },
+  "Forest Temple Bow Region / Forest Temple Blue Poe Room Pot 2": {
+   "verdict": "LOOSER-in-OoTR (files; ootrando b38a654)",
+   "ootr": "True",
+   "why": "pot #12084337161955511012 (Obj_Pot_A_02, DefaultDungeonRoomIndex 18) stands in Beth's room 18 beside Enemy_Poe_Beth, behind the 4th small-key door #48563 that this file already puts on the Blue Poe Chest and Jo and Beth. A remake key layout, as those two entries."
+  },
+  "Forest Temple Bow Region / Forest Temple Blue Poe Room Pot 3": {
+   "verdict": "LOOSER-in-OoTR (files; ootrando b38a654)",
+   "ootr": "True",
+   "why": "pot #14344239269960841819 (Obj_Pot_A_02, DefaultDungeonRoomIndex 18) stands in Beth's room 18 beside Enemy_Poe_Beth, behind the 4th small-key door #48563 that this file already puts on the Blue Poe Chest and Jo and Beth. A remake key layout, as those two entries."
+  },
+  "Dodongos Cavern Far Bridge / Dodongos Cavern Upper Lizalfos": {
+   "verdict": "SAME (OoTR's True restored after the game fix)",
+   "ootr": "True",
+   "why": "RESTORED: Game 6's fix makes node 18 of Logic/Gimmick_DodongoCavern_MiddleBoss02_6dee (the OR that creates the two Lizalfos) also read the west shutter's IsPlayingEvent (node 10, the far-bridge side): from either shutter the fight starts and both shutters open once the room is clear (_story_traps.py DC_LIZALFOS, read back). The override is gone; OoTR's True holds. Was (stopgap): False, because from the bridge side the west shutter (#2644993904249439673) let Link into an empty room 16 locked from inside (no Lizalfos, no clear, no chest)."
+  },
+  "Spirit Temple Lobby / Spirit Temple Lobby Pot 1": {
+   "verdict": "SAME (OoTR's True restored, the pot is paired with both age copies at its spot)",
+   "ootr": "True",
+   "why": "RESTORED: data/rando/drops_regions_d2.json pairs OoTR's pot with both pots at its spot (one per age), so the location exists for both ages and OoTR's True holds; the override is gone. Was (stopgap): the paired pot #3892291898975768871 (SpiritTemple_Level_Room_01_Prefab_02b0 Obj_Pot_A_05_b377) is created only for the adult (Logic_Create <- Adulthood); the other age's pot at the same spot (-12.9,100.25,-3.1) is #103563951645462556, today the separate new location Spirit Temple Lobby Pot 7. The remake splits the lobby's pots by age (design), but OoTR's location is both ages: parity loss. Fix (tools, no game change): pair OoTR's location with both pots at its spot (#3892291898975768871 + #103563951645462556), as drop_map already does for DMC Near GC Pot 1-2 and GC Lower Staircase Pot 1-2 (one location, a copy per age); then OoTR's True returns."
+  },
+  "Spirit Temple Lobby / Spirit Temple Lobby Pot 2": {
+   "verdict": "SAME (OoTR's True restored, the pot is paired with both age copies at its spot)",
+   "ootr": "True",
+   "why": "RESTORED: data/rando/drops_regions_d2.json pairs OoTR's pot with both pots at its spot (one per age), so the location exists for both ages and OoTR's True holds; the override is gone. Was (stopgap): the paired pot #3030155917724115111 (SpiritTemple_Level_Room_01_Prefab_02b0 Obj_Pot_A_05_4624) is created only for the child (Logic_Create <- Childhood); the other age's pot at the same spot (12.9,100.25,0.1) is #5871571106450718234, today the separate new location Spirit Temple Lobby Pot 8. The remake splits the lobby's pots by age (design), but OoTR's location is both ages: parity loss. Fix (tools, no game change): pair OoTR's location with both pots at its spot (#3030155917724115111 + #5871571106450718234), as drop_map already does for DMC Near GC Pot 1-2 and GC Lower Staircase Pot 1-2 (one location, a copy per age); then OoTR's True returns."
+  }
+ }
+}

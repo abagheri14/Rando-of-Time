@@ -1,0 +1,1559 @@
+{
+ "_about": "Build data/rando/songs_trade_data.json: the scene steps the songs/trade/cows plugin (songs_trade.py) edits,",
+ "songs": {
+  "Song from Impa": {
+   "vanilla": "Zeldas Lullaby",
+   "scenes": {
+    "Dm_MelodyGet_Zelda": {
+     "flowchart": "Dm_MelodyGet_Zelda",
+     "lesson": [
+      {
+       "event": "Event27",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event102",
+         null
+        ]
+       ],
+       "kind": "example",
+       "entry": "LearningOcarinaPlayExample",
+       "melody": 0
+      },
+      {
+       "event": "Event49",
+       "next": "Event50",
+       "preds": [
+        [
+         "next",
+         "Event73",
+         null
+        ]
+       ],
+       "kind": "follow",
+       "entry": "LearningOcarinaFollowExample",
+       "melody": 0
+      },
+      {
+       "event": "Event50",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event49",
+         null
+        ]
+       ],
+       "kind": "auto",
+       "entry": "LearningOcarinaPlayAuto",
+       "melody": null
+      }
+     ],
+     "isget_sets": [],
+     "wait_actor": "EventSystemActor"
+    }
+   }
+  },
+  "Song from Malon": {
+   "vanilla": "Eponas Song",
+   "scenes": {
+    "Dm_MelodyGet_Epona": {
+     "flowchart": "Dm_MelodyGet_Epona",
+     "lesson": [
+      {
+       "event": "Event2",
+       "next": null,
+       "preds": [
+        [
+         "fork",
+         "Event0",
+         2
+        ]
+       ],
+       "kind": "example",
+       "entry": "LearningOcarinaPlayExample",
+       "melody": 1
+      },
+      {
+       "event": "Event7",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event157",
+         null
+        ]
+       ],
+       "kind": "follow",
+       "entry": "LearningOcarinaFollowExample",
+       "melody": 1
+      },
+      {
+       "event": "Event3",
+       "next": "Event53",
+       "preds": [
+        [
+         "fork",
+         "Event6",
+         2
+        ]
+       ],
+       "kind": "auto",
+       "entry": "LearningOcarinaPlayAuto",
+       "melody": null
+      }
+     ],
+     "isget_sets": [],
+     "wait_actor": "GameSystemActor"
+    }
+   }
+  },
+  "Song from Saria": {
+   "vanilla": "Sarias Song",
+   "scenes": {
+    "Dm_MelodyGet_Saria": {
+     "flowchart": "Dm_MelodyGet_Saria",
+     "lesson": [
+      {
+       "event": "Event85",
+       "next": "Event86",
+       "preds": [
+        [
+         "next",
+         "Event70",
+         null
+        ]
+       ],
+       "kind": "follow",
+       "entry": "LearningOcarinaFollowExample",
+       "melody": 2
+      },
+      {
+       "event": "Event86",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event85",
+         null
+        ]
+       ],
+       "kind": "auto",
+       "entry": "LearningOcarinaPlayAuto",
+       "melody": null
+      },
+      {
+       "event": "Event135",
+       "next": null,
+       "preds": [
+        [
+         "fork",
+         "Event47",
+         1
+        ]
+       ],
+       "kind": "example",
+       "entry": "LearningOcarinaPlayExample",
+       "melody": 2
+      }
+     ],
+     "isget_sets": [],
+     "wait_actor": "EventSystemActor"
+    }
+   }
+  },
+  "Song from Royal Familys Tomb": {
+   "vanilla": "Suns Song",
+   "scenes": {
+    "Dm_MelodyGet_Sun": {
+     "flowchart": "Dm_MelodyGet_Sun",
+     "lesson": [
+      {
+       "event": "Event106",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event9",
+         null
+        ]
+       ],
+       "kind": "follow",
+       "entry": "LearningOcarinaFollowExample",
+       "melody": 3
+      },
+      {
+       "event": "Event107",
+       "next": null,
+       "preds": [
+        [
+         "fork",
+         "Event113",
+         0
+        ]
+       ],
+       "kind": "auto",
+       "entry": "LearningOcarinaPlayAuto",
+       "melody": null
+      },
+      {
+       "event": "Event0",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event240",
+         null
+        ]
+       ],
+       "kind": "example",
+       "entry": "LearningOcarinaPlayExample",
+       "melody": 3
+      },
+      {
+       "event": "Event145",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event1",
+         null
+        ]
+       ],
+       "kind": "follow",
+       "entry": "LearningOcarinaFollowExample",
+       "melody": 3
+      },
+      {
+       "event": "Event146",
+       "next": null,
+       "preds": [
+        [
+         "fork",
+         "Event149",
+         0
+        ]
+       ],
+       "kind": "auto",
+       "entry": "LearningOcarinaPlayAuto",
+       "melody": null
+      },
+      {
+       "event": "Event3",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event241",
+         null
+        ]
+       ],
+       "kind": "example",
+       "entry": "LearningOcarinaPlayExample",
+       "melody": 3
+      }
+     ],
+     "isget_sets": [],
+     "wait_actor": "EventSystemActor"
+    }
+   }
+  },
+  "Song from Ocarina of Time": {
+   "vanilla": "Song of Time",
+   "scenes": {
+    "Dm_MelodyGet_Time": {
+     "flowchart": "Dm_MelodyGet_Time",
+     "lesson": [
+      {
+       "event": "Event83",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event217",
+         null
+        ]
+       ],
+       "kind": "example",
+       "entry": "LearningOcarinaPlayExample",
+       "melody": 4
+      },
+      {
+       "event": "Event92",
+       "next": null,
+       "preds": [
+        [
+         "fork",
+         "Event105",
+         1
+        ]
+       ],
+       "kind": "follow",
+       "entry": "LearningOcarinaFollowExample",
+       "melody": 4
+      },
+      {
+       "event": "Event93",
+       "next": "Event96",
+       "preds": [
+        [
+         "fork",
+         "Event99",
+         1
+        ]
+       ],
+       "kind": "auto",
+       "entry": "LearningOcarinaPlayAuto",
+       "melody": null
+      }
+     ],
+     "isget_sets": [],
+     "wait_actor": "EventSystemActor"
+    }
+   }
+  },
+  "Song from Windmill": {
+   "vanilla": "Song of Storms",
+   "scenes": {
+    "Dm_MelodyGet_Storm": {
+     "flowchart": "Dm_MelodyGet_Storm",
+     "lesson": [
+      {
+       "event": "Event6",
+       "next": null,
+       "preds": [
+        [
+         "fork",
+         "Event5",
+         0
+        ]
+       ],
+       "kind": "example",
+       "entry": "LearningOcarinaPlayExample",
+       "melody": 5
+      },
+      {
+       "event": "Event9",
+       "next": "Event13",
+       "preds": [
+        [
+         "next",
+         "Event85",
+         null
+        ]
+       ],
+       "kind": "follow",
+       "entry": "LearningOcarinaFollowExample",
+       "melody": 5
+      },
+      {
+       "event": "Event13",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event9",
+         null
+        ]
+       ],
+       "kind": "auto",
+       "entry": "LearningOcarinaPlayAuto",
+       "melody": null
+      }
+     ],
+     "isget_sets": [],
+     "wait_actor": "EventSystemActor"
+    }
+   }
+  },
+  "Sheik in Forest": {
+   "vanilla": "Minuet of Forest",
+   "scenes": {
+    "Dm_MelodyGet_Forest": {
+     "flowchart": "Dm_MelodyGet_Forest",
+     "lesson": [
+      {
+       "event": "Event7",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event63",
+         null
+        ]
+       ],
+       "kind": "example",
+       "entry": "LearningOcarinaPlayExample",
+       "melody": 6
+      },
+      {
+       "event": "Event9",
+       "next": "Event299",
+       "preds": [
+        [
+         "next",
+         "Event107",
+         null
+        ]
+       ],
+       "kind": "follow",
+       "entry": "LearningOcarinaFollowExample",
+       "melody": 6
+      },
+      {
+       "event": "Event32",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event37",
+         null
+        ]
+       ],
+       "kind": "seek",
+       "entry": "LearningOcarinaPlayAutoForSeek",
+       "melody": null
+      }
+     ],
+     "isget_sets": [],
+     "wait_actor": "GameSystemActor"
+    }
+   }
+  },
+  "Sheik in Crater": {
+   "vanilla": "Bolero of Fire",
+   "scenes": {
+    "Dm_MelodyGet_Fire": {
+     "flowchart": "Dm_MelodyGet_Fire",
+     "lesson": [
+      {
+       "event": "Event2",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event60",
+         null
+        ]
+       ],
+       "kind": "example",
+       "entry": "LearningOcarinaPlayExample",
+       "melody": 7
+      },
+      {
+       "event": "Event3",
+       "next": "Event92",
+       "preds": [
+        [
+         "next",
+         "Event257",
+         null
+        ]
+       ],
+       "kind": "follow",
+       "entry": "LearningOcarinaFollowExample",
+       "melody": 7
+      },
+      {
+       "event": "Event91",
+       "next": "Event64",
+       "preds": [
+        [
+         "next",
+         "Event206",
+         null
+        ]
+       ],
+       "kind": "seek",
+       "entry": "LearningOcarinaPlayAutoForSeek",
+       "melody": null
+      }
+     ],
+     "isget_sets": [
+      {
+       "event": "Event1",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event131",
+         null
+        ]
+       ]
+      }
+     ],
+     "wait_actor": "EventSystemActor"
+    }
+   }
+  },
+  "Sheik in Ice Cavern": {
+   "vanilla": "Serenade of Water",
+   "scenes": {
+    "Dm_MelodyGet_Water": {
+     "flowchart": "Dm_MelodyGet_Water",
+     "lesson": [
+      {
+       "event": "Event14",
+       "next": null,
+       "preds": [
+        [
+         "fork",
+         "Event82",
+         0
+        ]
+       ],
+       "kind": "seek",
+       "entry": "LearningOcarinaPlayAutoForSeek",
+       "melody": null
+      },
+      {
+       "event": "Event16",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event449",
+         null
+        ]
+       ],
+       "kind": "example",
+       "entry": "LearningOcarinaPlayExample",
+       "melody": 8
+      },
+      {
+       "event": "Event2",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event9",
+         null
+        ]
+       ],
+       "kind": "follow",
+       "entry": "LearningOcarinaFollowExample",
+       "melody": 8
+      }
+     ],
+     "isget_sets": [],
+     "wait_actor": "GameSystemActor"
+    }
+   }
+  },
+  "Sheik at Colossus": {
+   "vanilla": "Requiem of Spirit",
+   "scenes": {
+    "Dm_MelodyGet_Spilit": {
+     "flowchart": "Dm_MelodyGet_Spilit",
+     "lesson": [
+      {
+       "event": "Event8",
+       "next": "Event10",
+       "preds": [
+        [
+         "next",
+         "Event229",
+         null
+        ]
+       ],
+       "kind": "example",
+       "entry": "LearningOcarinaPlayExample",
+       "melody": 9
+      },
+      {
+       "event": "Event9",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event144",
+         null
+        ]
+       ],
+       "kind": "follow",
+       "entry": "LearningOcarinaFollowExample",
+       "melody": 9
+      },
+      {
+       "event": "Event19",
+       "next": null,
+       "preds": [
+        [
+         "fork",
+         "Event116",
+         0
+        ]
+       ],
+       "kind": "seek",
+       "entry": "LearningOcarinaPlayAutoForSeek",
+       "melody": null
+      }
+     ],
+     "isget_sets": [],
+     "wait_actor": "EventSystemActor"
+    }
+   }
+  },
+  "Sheik in Kakariko": {
+   "vanilla": "Nocturne of Shadow",
+   "scenes": {
+    "Dm_MelodyGet_Shadow": {
+     "flowchart": "Dm_MelodyGet_Shadow",
+     "lesson": [
+      {
+       "event": "Event12",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event198",
+         null
+        ]
+       ],
+       "kind": "example",
+       "entry": "LearningOcarinaPlayExample",
+       "melody": 10
+      },
+      {
+       "event": "Event13",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event239",
+         null
+        ]
+       ],
+       "kind": "follow",
+       "entry": "LearningOcarinaFollowExample",
+       "melody": 10
+      },
+      {
+       "event": "Event23",
+       "next": null,
+       "preds": [
+        [
+         "fork",
+         "Event25",
+         0
+        ]
+       ],
+       "kind": "seek",
+       "entry": "LearningOcarinaPlayAutoForSeek",
+       "melody": null
+      }
+     ],
+     "isget_sets": [],
+     "wait_actor": "EventSystemActor"
+    }
+   }
+  },
+  "Sheik at Temple": {
+   "vanilla": "Prelude of Light",
+   "scenes": {
+    "Dm_MelodyGet_Shine": {
+     "flowchart": "Dm_MelodyGet_Shine",
+     "lesson": [
+      {
+       "event": "Event12",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event311",
+         null
+        ]
+       ],
+       "kind": "example",
+       "entry": "LearningOcarinaPlayExample",
+       "melody": 11
+      },
+      {
+       "event": "Event13",
+       "next": null,
+       "preds": [
+        [
+         "next",
+         "Event294",
+         null
+        ]
+       ],
+       "kind": "follow",
+       "entry": "LearningOcarinaFollowExample",
+       "melody": 11
+      },
+      {
+       "event": "Event23",
+       "next": null,
+       "preds": [
+        [
+         "fork",
+         "Event25",
+         0
+        ]
+       ],
+       "kind": "seek",
+       "entry": "LearningOcarinaPlayAutoForSeek",
+       "melody": null
+      }
+     ],
+     "isget_sets": [],
+     "wait_actor": "EventSystemActor"
+    }
+   }
+  }
+ },
+ "melody": {
+  "file": "GameParameter/MelodyScoreBook/Default.game__ocarina__MelodyScoreBook.bgyml",
+  "notes": {
+   "Left": 3433458314,
+   "Up": 825411668,
+   "Right": 1423767502,
+   "Down": 2552959238,
+   "A": 1673550086
+  },
+  "entries": [
+   {
+    "index": 0,
+    "melody_type": null,
+    "notes": [
+     3433458314,
+     825411668,
+     1423767502,
+     3433458314,
+     825411668,
+     1423767502
+    ]
+   },
+   {
+    "index": 1,
+    "melody_type": 1578183671,
+    "notes": [
+     825411668,
+     3433458314,
+     1423767502,
+     825411668,
+     3433458314,
+     1423767502
+    ]
+   },
+   {
+    "index": 2,
+    "melody_type": 1714634223,
+    "notes": [
+     2552959238,
+     1423767502,
+     3433458314,
+     2552959238,
+     1423767502,
+     3433458314
+    ]
+   },
+   {
+    "index": 3,
+    "melody_type": 4027509467,
+    "notes": [
+     1423767502,
+     2552959238,
+     825411668,
+     1423767502,
+     2552959238,
+     825411668
+    ]
+   },
+   {
+    "index": 4,
+    "melody_type": 1633238835,
+    "notes": [
+     1423767502,
+     1673550086,
+     2552959238,
+     1423767502,
+     1673550086,
+     2552959238
+    ]
+   },
+   {
+    "index": 5,
+    "melody_type": 3908825807,
+    "notes": [
+     1673550086,
+     2552959238,
+     825411668,
+     1673550086,
+     2552959238,
+     825411668
+    ]
+   },
+   {
+    "index": 6,
+    "melody_type": 3730579522,
+    "notes": [
+     1673550086,
+     825411668,
+     3433458314,
+     1423767502,
+     3433458314,
+     1423767502
+    ]
+   },
+   {
+    "index": 7,
+    "melody_type": 2294896162,
+    "notes": [
+     2552959238,
+     1673550086,
+     2552959238,
+     1673550086,
+     1423767502,
+     2552959238,
+     1423767502,
+     2552959238
+    ]
+   },
+   {
+    "index": 8,
+    "melody_type": 2618337060,
+    "notes": [
+     1673550086,
+     2552959238,
+     1423767502,
+     1423767502,
+     3433458314
+    ]
+   },
+   {
+    "index": 9,
+    "melody_type": 2812177227,
+    "notes": [
+     1673550086,
+     2552959238,
+     1673550086,
+     1423767502,
+     2552959238,
+     1673550086
+    ]
+   },
+   {
+    "index": 10,
+    "melody_type": 3083053472,
+    "notes": [
+     3433458314,
+     1423767502,
+     1423767502,
+     1673550086,
+     3433458314,
+     1423767502,
+     2552959238
+    ]
+   },
+   {
+    "index": 11,
+    "melody_type": 3042703042,
+    "notes": [
+     825411668,
+     1423767502,
+     825411668,
+     1423767502,
+     3433458314,
+     825411668
+    ]
+   }
+  ]
+ },
+ "cows": {
+  "file": "Animal_Cow",
+  "generic_start": {
+   "event": "Event141",
+   "next": null,
+   "preds": [
+    [
+     "entry",
+     "PushToBottleMilk",
+     null
+    ]
+   ]
+  },
+  "generic_transition": {
+   "event": "Event3",
+   "next": "Event64",
+   "preds": [
+    [
+     "next",
+     "Event1",
+     null
+    ]
+   ]
+  },
+  "generic_after": {
+   "event": "Event64",
+   "next": "Event54",
+   "preds": [
+    [
+     "next",
+     "Event3",
+     null
+    ]
+   ]
+  },
+  "generic_milk": {
+   "event": "Event4",
+   "next": "Event29",
+   "preds": [
+    [
+     "next",
+     "Event20",
+     null
+    ]
+   ]
+  },
+  "kf_start": {
+   "event": "Event2",
+   "next": null,
+   "preds": [
+    [
+     "entry",
+     "PushToBottleMilk_LinkHouse",
+     null
+    ]
+   ]
+  },
+  "kf_row": "Animal_Cow_PushToBottleMilk_LinkHouse",
+  "gerudo_give": {
+   "event": "Event139",
+   "next": "Event111",
+   "preds": [
+    [
+     "next",
+     "Event65",
+     null
+    ]
+   ]
+  }
+ },
+ "frogs": {
+  "file": "MiniGame_FrogTenors",
+  "count_branch": {
+   "event": "Event378",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event380",
+     null
+    ]
+   ]
+  },
+  "after_reward": {
+   "event": "Event379",
+   "next": "Event392",
+   "preds": [
+    [
+     "next",
+     "Event381",
+     null
+    ],
+    [
+     "next",
+     "Event388",
+     null
+    ],
+    [
+     "next",
+     "Event389",
+     null
+    ],
+    [
+     "next",
+     "Event390",
+     null
+    ],
+    [
+     "next",
+     "Event391",
+     null
+    ]
+   ]
+  },
+  "heart_give": {
+   "event": "Event384",
+   "next": "Event375",
+   "preds": [
+    [
+     "next",
+     "Event277",
+     null
+    ]
+   ]
+  }
+ },
+ "gs100": {
+  "file": "GatheringTokenGold",
+  "give": {
+   "event": "Event471",
+   "next": "Event279",
+   "preds": [
+    [
+     "next",
+     "Event392",
+     null
+    ]
+   ]
+  },
+  "first_flag": {
+   "event": "Event141",
+   "next": "Event238",
+   "preds": [
+    [
+     "case",
+     "Event150",
+     1
+    ]
+   ]
+  },
+  "clone": {
+   "first_Event238": {
+    "copy": "Event238",
+    "next": "first_Event278"
+   },
+   "first_Event278": {
+    "copy": "Event278",
+    "next": "first_Event196"
+   },
+   "first_Event196": {
+    "copy": "Event196",
+    "next": "first_Event392"
+   },
+   "first_Event392": {
+    "copy": "Event392",
+    "next": "give"
+   }
+  },
+  "clone_start": "first_Event238"
+ },
+ "loach": {
+  "file": "MiniGame_Fishing",
+  "keep_loach": {
+   "event": "Event226",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event83",
+     null
+    ]
+   ]
+  },
+  "gives": [
+   {
+    "event": "Event374",
+    "next": "Event860",
+    "preds": [
+     [
+      "next",
+      "Event702",
+      null
+     ]
+    ]
+   },
+   {
+    "event": "Event378",
+    "next": "Event864",
+    "preds": [
+     [
+      "next",
+      "Event863",
+      null
+     ]
+    ]
+   }
+  ]
+ },
+ "talon": {
+  "file": "Minigame_FindOutCucco",
+  "first_win": {
+   "event": "Event23",
+   "next": "Event43",
+   "preds": [
+    [
+     "next",
+     "Event206",
+     null
+    ]
+   ]
+  },
+  "reward_id": "event/Minigame_FindOutCucco/Minigame_FindOutCucco/Event23/ReveiveItem"
+ },
+ "granny": {
+  "file": "Npc_Hylia_053_Adult",
+  "bottle_check": {
+   "event": "Event15",
+   "next": null,
+   "preds": [
+    [
+     "case",
+     "Event11",
+     0
+    ]
+   ]
+  },
+  "price": {
+   "event": "Event179",
+   "next": "Event12",
+   "preds": [
+    [
+     "case",
+     "Event15",
+     0
+    ]
+   ]
+  },
+  "give": {
+   "event": "Event12",
+   "next": "Event20",
+   "preds": [
+    [
+     "next",
+     "Event179",
+     null
+    ]
+   ]
+  },
+  "gate": {
+   "event": "Event29",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event119",
+     null
+    ]
+   ]
+  },
+  "buy": {
+   "event": "Event31",
+   "next": null,
+   "preds": [
+    [
+     "case",
+     "Event3",
+     0
+    ]
+   ]
+  },
+  "last_gate": {
+   "event": "Event3",
+   "next": null,
+   "preds": [
+    [
+     "case",
+     "Event30",
+     0
+    ],
+    [
+     "next",
+     "Event98",
+     null
+    ],
+    [
+     "next",
+     "Event124",
+     null
+    ]
+   ]
+  }
+ },
+ "rolling_goron": {
+  "file": "Npc_Goron_006_Child",
+  "stop": {
+   "event": "Event7",
+   "next": "Event14",
+   "preds": [
+    [
+     "case",
+     "Event2",
+     1
+    ]
+   ]
+  },
+  "handover": {
+   "event": "Event54",
+   "next": "Event58",
+   "preds": [
+    [
+     "case",
+     "Event21",
+     0
+    ]
+   ]
+  },
+  "flag": {
+   "event": "Event1",
+   "next": "Event19",
+   "preds": [
+    [
+     "next",
+     "Event58",
+     null
+    ],
+    [
+     "next",
+     "Event92",
+     null
+    ]
+   ]
+  },
+  "reward_ids": [
+   "event/Npc_Goron_006_Child/Npc_Goron_006_Child/Event58/ReveiveItem",
+   "event/Npc_Goron_006_Child/Npc_Goron_006_Child/Event92/ReveiveItem"
+  ]
+ },
+ "dampe_dig": {
+  "demo": {
+   "event": "Event291",
+   "next": "Event82",
+   "preds": [
+    [
+     "next",
+     "Event89",
+     null
+    ]
+   ]
+  },
+  "raise": {
+   "event": "Event82",
+   "next": "Event45",
+   "preds": [
+    [
+     "next",
+     "Event291",
+     null
+    ]
+   ]
+  },
+  "give": {
+   "event": "Event628",
+   "next": null,
+   "preds": [
+    [
+     "fork",
+     "Event449",
+     0
+    ]
+   ]
+  },
+  "flag": {
+   "event": "Event357",
+   "next": "Event74",
+   "preds": [
+    [
+     "next",
+     "Event612",
+     null
+    ]
+   ]
+  },
+  "file": "Npc_Hylia_Dampe_001",
+  "reward_id": "event/Npc_Hylia_Dampe_001/Npc_Hylia_Dampe_001/Event628/ActorName"
+ },
+ "medigoron": {
+  "file": "Npc_Goron_Medigoron_Adult",
+  "first_check": {
+   "event": "Event19",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event54",
+     null
+    ]
+   ]
+  },
+  "price": {
+   "event": "Event29",
+   "next": "Event10",
+   "preds": [
+    [
+     "next",
+     "Event4",
+     null
+    ],
+    [
+     "next",
+     "Event18",
+     null
+    ],
+    [
+     "next",
+     "Event22",
+     null
+    ],
+    [
+     "next",
+     "Event24",
+     null
+    ],
+    [
+     "next",
+     "Event30",
+     null
+    ],
+    [
+     "next",
+     "Event33",
+     null
+    ]
+   ]
+  },
+  "sale": {
+   "event": "Event11",
+   "next": "Event45",
+   "preds": [
+    [
+     "next",
+     "Event12",
+     null
+    ]
+   ]
+  },
+  "talk_03": {
+   "event": "Event4",
+   "next": "Event29",
+   "preds": [
+    [
+     "case",
+     "Event23",
+     1
+    ],
+    [
+     "next",
+     "Event51",
+     null
+    ],
+    [
+     "next",
+     "Event52",
+     null
+    ],
+    [
+     "next",
+     "Event64",
+     null
+    ],
+    [
+     "next",
+     "Event65",
+     null
+    ],
+    [
+     "next",
+     "Event63",
+     null
+    ],
+    [
+     "next",
+     "Event66",
+     null
+    ],
+    [
+     "next",
+     "Event67",
+     null
+    ],
+    [
+     "next",
+     "Event68",
+     null
+    ],
+    [
+     "next",
+     "Event69",
+     null
+    ],
+    [
+     "next",
+     "Event70",
+     null
+    ],
+    [
+     "next",
+     "Event71",
+     null
+    ],
+    [
+     "next",
+     "Event88",
+     null
+    ],
+    [
+     "next",
+     "Event89",
+     null
+    ],
+    [
+     "next",
+     "Event90",
+     null
+    ]
+   ]
+  },
+  "shop_rupees": {
+   "event": "Event113",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event230",
+     null
+    ]
+   ]
+  },
+  "shop_pay": {
+   "event": "Event114",
+   "next": "Event240",
+   "preds": [
+    [
+     "case",
+     "Event120",
+     0
+    ],
+    [
+     "case",
+     "Event122",
+     0
+    ]
+   ]
+  },
+  "shop_after_give": {
+   "event": "Event169",
+   "next": "Event25",
+   "preds": [
+    [
+     "next",
+     "Event119",
+     null
+    ]
+   ]
+  },
+  "shop_broken_check": {
+   "event": "Event25",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event169",
+     null
+    ]
+   ]
+  },
+  "shop_save": {
+   "event": "Event62",
+   "next": null,
+   "preds": [
+    [
+     "case",
+     "Event25",
+     1
+    ],
+    [
+     "next",
+     "Event115",
+     null
+    ]
+   ]
+  },
+  "reward_id": "event/Npc_Goron_Medigoron_Adult/Npc_Goron_Medigoron_Adult/Event11/ActorName"
+ },
+ "lake": {
+  "scenes": {
+   "Dm_SY_Get": {
+    "hook": {
+     "event": "Event119",
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event182",
+       null
+      ]
+     ]
+    },
+    "hide": {
+     "event": "Event47",
+     "next": null,
+     "preds": [
+      [
+       "fork",
+       "Event49",
+       1
+      ]
+     ]
+    },
+    "death": {
+     "event": "Event124",
+     "next": "Event115",
+     "preds": [
+      [
+       "case",
+       "Event178",
+       0
+      ]
+     ]
+    }
+   },
+   "Dm_SY_Get_WithoutPlayer": {
+    "hook": {
+     "event": "Event15",
+     "next": "Event18",
+     "preds": [
+      [
+       "entry",
+       "Dm_SY_Get_WithoutPlayer",
+       null
+      ]
+     ]
+    },
+    "hide": {
+     "event": "Event6",
+     "next": "Event8",
+     "preds": [
+      [
+       "next",
+       "Event1",
+       null
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "song_types": {
+  "Zeldas Lullaby": 0,
+  "Eponas Song": 1,
+  "Sarias Song": 2,
+  "Suns Song": 3,
+  "Song of Time": 4,
+  "Song of Storms": 5,
+  "Minuet of Forest": 6,
+  "Bolero of Fire": 7,
+  "Serenade of Water": 8,
+  "Requiem of Spirit": 9,
+  "Nocturne of Shadow": 10,
+  "Prelude of Light": 11
+ },
+ "song_actors": {
+  "Zeldas Lullaby": "Item_Melody_ZeldaLullaby",
+  "Eponas Song": "Item_Melody_EponaSong",
+  "Sarias Song": "Item_Melody_SariaSong",
+  "Suns Song": "Item_Melody_SunSong",
+  "Song of Time": "Item_Melody_TimeSong",
+  "Song of Storms": "Item_Melody_StormSong",
+  "Minuet of Forest": "Item_Melody_ForestMinuet",
+  "Bolero of Fire": "Item_Melody_FireBolero",
+  "Serenade of Water": "Item_Melody_WaterSerenade",
+  "Requiem of Spirit": "Item_Melody_SpiritRequiem",
+  "Nocturne of Shadow": "Item_Melody_ShadowNocturne",
+  "Prelude of Light": "Item_Melody_LightPrelude"
+ }
+}

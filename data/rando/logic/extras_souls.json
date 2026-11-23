@@ -1,0 +1,29 @@
+{
+ "_about": "Logic of the extras_souls plugin (tools/rando/parity/extras_souls.py). Not plain overrides: the plugin applies these to the built world when an option is on. bosses: the OoTR region each soul guards (every exit into it also needs the soul). beans: for each soil (data/rando/extras_souls_data.json 'beans', same order: the fairies plugin's spot order), its soul item and the OoTR regions whose rules plant there (every can_plant_bean, plant_beans and can_plant_bugs in those regions' locations, events and exits also needs the soul; found by scanning vendor/ootr/data/World/Overworld.json for the three words).",
+ "options": {
+  "bosses": {
+   "gohma": {"item": "Queen Gohma Soul", "region": "Queen Gohma Boss Room"},
+   "king_dodongo": {"item": "King Dodongo Soul", "region": "King Dodongo Boss Room"},
+   "barinade": {"item": "Barinade Soul", "region": "Barinade Boss Room"},
+   "phantom_ganon": {"item": "Phantom Ganon Soul", "region": "Phantom Ganon Boss Room"},
+   "volvagia": {"item": "Volvagia Soul", "region": "Volvagia Boss Room"},
+   "morpha": {"item": "Morpha Soul", "region": "Morpha Boss Room"},
+   "bongo_bongo": {"item": "Bongo Bongo Soul", "region": "Bongo Bongo Boss Room"},
+   "twinrova": {"item": "Twinrova Soul", "region": "Twinrova Boss Room"}
+  },
+  "ganon": {"item": "Ganon Soul", "region": "Ganondorf Boss Room"},
+  "beans": [
+   {"item": "Kokiri Forest Bean Soul", "fairy": "KF Bean Plant Fairy", "regions": ["Kokiri Forest"]},
+   {"item": "Lost Woods Bridge Bean Soul", "fairy": "LW Bridge Bean Plant Fairy", "regions": ["Lost Woods"]},
+   {"item": "Lost Woods Theater Bean Soul", "fairy": "LW Theater Bean Plant Fairy", "regions": ["LW Beyond Mido"]},
+   {"item": "Zoras River Bean Soul", "fairy": "ZR Bean Plant Fairy", "regions": ["Zora River"]},
+   {"item": "Lake Hylia Bean Soul", "fairy": "LH Bean Plant Fairy", "regions": ["Lake Hylia"]},
+   {"item": "Gerudo Valley Bean Soul", "fairy": "GV Bean Plant Fairy", "regions": ["GV Upper Stream"]},
+   {"item": "Desert Colossus Bean Soul", "fairy": "Colossus Bean Plant Fairy", "regions": ["Desert Colossus"]},
+   {"item": "Graveyard Bean Soul", "fairy": "Graveyard Bean Plant Fairy", "regions": ["Graveyard"]},
+   {"item": "Death Mountain Trail Bean Soul", "fairy": "DMT Bean Plant Fairy", "regions": ["Death Mountain"]},
+   {"item": "Death Mountain Crater Bean Soul", "fairy": "DMC Bean Plant Fairy", "regions": ["DMC Central Nearby", "DMC Central Local"]}
+  ],
+  "bean_words": ["can_plant_bean", "plant_beans", "can_plant_bugs"]
+ }
+}
