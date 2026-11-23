@@ -1,0 +1,629 @@
+{
+ "_about": "Built by tools/rando/parity/_songs_trade_masks_build.py from the game files; used by tools/mask_slot.py (the mask button's picker and owned record). Other plugins must not use flags_claimed.",
+ "order": [
+  "Armor_Child_Mask_Truth",
+  "Armor_Child_Mask_Goron",
+  "Armor_Child_Mask_Zora",
+  "Armor_Child_Mask_Gerudo",
+  "Armor_Child_Mask_Bunny",
+  "Armor_Child_Mask_Spooky",
+  "Armor_Child_Mask_Skull",
+  "Armor_Child_Mask_Keaton"
+ ],
+ "items": {
+  "Mask of Truth": {
+   "pouch": "Armor_Child_Mask_Truth",
+   "get": "Item_Mask_Truth"
+  },
+  "Goron Mask": {
+   "pouch": "Armor_Child_Mask_Goron",
+   "get": "Item_Mask_Goron"
+  },
+  "Zora Mask": {
+   "pouch": "Armor_Child_Mask_Zora",
+   "get": "Item_Mask_Zora"
+  },
+  "Gerudo Mask": {
+   "pouch": "Armor_Child_Mask_Gerudo",
+   "get": "Item_Mask_Gerudo"
+  },
+  "Bunny Hood": {
+   "pouch": "Armor_Child_Mask_Bunny",
+   "get": "Item_Mask_Bunny"
+  },
+  "Spooky Mask": {
+   "pouch": "Armor_Child_Mask_Spooky",
+   "get": "Item_Mask_Spooky"
+  },
+  "Skull Mask": {
+   "pouch": "Armor_Child_Mask_Skull",
+   "get": "Item_Mask_Skull"
+  },
+  "Keaton Mask": {
+   "pouch": "Armor_Child_Mask_Keaton",
+   "get": "Item_Mask_Keaton"
+  }
+ },
+ "host": {
+  "file": "ReplaceEquipmentForEraChange",
+  "scene_rows": []
+ },
+ "navi": {
+  "file": "NaviHint",
+  "entry": "NaviHint_Field",
+  "nothing": "Event5",
+  "talk_call": "Event135",
+  "talk": "Event136"
+ },
+ "sequence": {
+  "area_sel": 9,
+  "area_query": 10,
+  "end": 0,
+  "trig": 4,
+  "trig_out": "TrigRight",
+  "trig_sel": 17,
+  "request": 19,
+  "sim": 28,
+  "struct_q": 34
+ },
+ "equip": {
+  "from": "SageOfShadow:Event63",
+  "DynamicEquipmentState": 1
+ },
+ "sales": [
+  {
+   "file": "Npc_Hylia_030_Child",
+   "event": "Event282",
+   "mask": "Armor_Child_Mask_Spooky"
+  },
+  {
+   "file": "SubEvent_MaskSalesman",
+   "event": "Event11",
+   "mask": "Armor_Child_Mask_Keaton"
+  },
+  {
+   "file": "SubEvent_MaskSalesman",
+   "event": "Event22",
+   "mask": "Armor_Child_Mask_Skull"
+  },
+  {
+   "file": "SubEvent_MaskSalesman",
+   "event": "Event159",
+   "mask": "Armor_Child_Mask_Bunny"
+  }
+ ],
+ "files": [
+  "DisplayShop",
+  "GossipStone",
+  "NaviHint",
+  "Npc_Hylia_023_Shop_Child",
+  "Npc_Hylia_030_Child",
+  "Npc_Hylia_Soldier_003",
+  "ReplaceEquipmentForEraChange",
+  "SubEvent_MaskSalesman"
+ ],
+ "site_counts": {
+  "query": 32,
+  "name_query": 1
+ },
+ "stock_exps": {
+  "HappyMaskSaleMan_UntilRentMaskOfBunny": [
+   [
+    1,
+    3925934864
+   ],
+   [
+    2,
+    1468430352
+   ],
+   [
+    15,
+    2120249395
+   ],
+   [
+    16,
+    1
+   ],
+   [
+    1,
+    3925934864
+   ],
+   [
+    2,
+    1275749364
+   ],
+   [
+    5
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ]
+  ],
+  "HappyMaskSaleMan_UntilRentMaskOfKeaton": [
+   [
+    1,
+    3925934864
+   ],
+   [
+    2,
+    1623663363
+   ],
+   [
+    15,
+    3049326745
+   ],
+   [
+    16,
+    1
+   ],
+   [
+    1,
+    3925934864
+   ],
+   [
+    2,
+    1275749364
+   ],
+   [
+    5
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ]
+  ],
+  "HappyMaskSaleMan_UntilRentMaskOfSkull": [
+   [
+    1,
+    3925934864
+   ],
+   [
+    2,
+    312303209
+   ],
+   [
+    15,
+    1202902901
+   ],
+   [
+    16,
+    1
+   ],
+   [
+    1,
+    3925934864
+   ],
+   [
+    2,
+    1275749364
+   ],
+   [
+    5
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ]
+  ],
+  "HappyMaskSaleMan_UntilRentMaskOfSpooky": [
+   [
+    1,
+    3925934864
+   ],
+   [
+    2,
+    3002369292
+   ],
+   [
+    15,
+    4031144606
+   ],
+   [
+    16,
+    1
+   ],
+   [
+    1,
+    3925934864
+   ],
+   [
+    2,
+    1275749364
+   ],
+   [
+    5
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ]
+  ],
+  "HappyMaskShop_HasMask_Bunny": [
+   [
+    10,
+    3144873916
+   ],
+   [
+    15,
+    3472691999
+   ],
+   [
+    16,
+    2
+   ],
+   [
+    5
+   ],
+   [
+    15,
+    2120249395
+   ],
+   [
+    16,
+    0
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ]
+  ],
+  "HappyMaskShop_HasMask_Gerudo": [
+   [
+    10,
+    3891435611
+   ],
+   [
+    15,
+    244623583
+   ],
+   [
+    16,
+    0
+   ],
+   [
+    15,
+    3472691999
+   ],
+   [
+    16,
+    6
+   ],
+   [
+    5
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ]
+  ],
+  "HappyMaskShop_HasMask_Goron": [
+   [
+    10,
+    3891435611
+   ],
+   [
+    15,
+    3472691999
+   ],
+   [
+    16,
+    5
+   ],
+   [
+    5
+   ],
+   [
+    15,
+    4233137575
+   ],
+   [
+    16,
+    0
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ]
+  ],
+  "HappyMaskShop_HasMask_Keaton": [
+   [
+    0,
+    428444948
+   ],
+   [
+    15,
+    3472691999
+   ],
+   [
+    16,
+    1
+   ],
+   [
+    5
+   ],
+   [
+    15,
+    3049326745
+   ],
+   [
+    16,
+    0
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ]
+  ],
+  "HappyMaskShop_HasMask_Skull": [
+   [
+    10,
+    2545698480
+   ],
+   [
+    15,
+    1202902901
+   ],
+   [
+    16,
+    0
+   ],
+   [
+    15,
+    3472691999
+   ],
+   [
+    16,
+    3
+   ],
+   [
+    5
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ]
+  ],
+  "HappyMaskShop_HasMask_Spooky": [
+   [
+    10,
+    3397555400
+   ],
+   [
+    15,
+    4031144606
+   ],
+   [
+    16,
+    0
+   ],
+   [
+    15,
+    3472691999
+   ],
+   [
+    16,
+    0
+   ],
+   [
+    5
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ]
+  ],
+  "HappyMaskShop_HasMask_Truth": [
+   [
+    10,
+    3891435611
+   ],
+   [
+    0,
+    3306404271
+   ],
+   [
+    5
+   ],
+   [
+    15,
+    3472691999
+   ],
+   [
+    16,
+    7
+   ],
+   [
+    5
+   ],
+   [
+    15,
+    2521144531
+   ],
+   [
+    16,
+    0
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ]
+  ],
+  "HappyMaskShop_HasMask_Zora": [
+   [
+    10,
+    3891435611
+   ],
+   [
+    15,
+    2454624838
+   ],
+   [
+    16,
+    0
+   ],
+   [
+    15,
+    3472691999
+   ],
+   [
+    16,
+    4
+   ],
+   [
+    5
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ]
+  ],
+  "HappyMaskShop_RentalAnyMask": [
+   [
+    10,
+    1072726485
+   ],
+   [
+    5
+   ],
+   [
+    15,
+    2120249395
+   ],
+   [
+    16,
+    0
+   ],
+   [
+    15,
+    244623583
+   ],
+   [
+    16,
+    0
+   ],
+   [
+    15,
+    4233137575
+   ],
+   [
+    16,
+    0
+   ],
+   [
+    15,
+    3049326745
+   ],
+   [
+    16,
+    0
+   ],
+   [
+    15,
+    1202902901
+   ],
+   [
+    16,
+    0
+   ],
+   [
+    15,
+    4031144606
+   ],
+   [
+    16,
+    0
+   ],
+   [
+    15,
+    2521144531
+   ],
+   [
+    16,
+    0
+   ],
+   [
+    15,
+    2454624838
+   ],
+   [
+    16,
+    0
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ],
+   [
+    3
+   ]
+  ]
+ },
+ "stock_hash": {
+  "Armor_Child_Mask_Truth": 2521144531,
+  "Armor_Child_Mask_Goron": 4233137575,
+  "Armor_Child_Mask_Zora": 2454624838,
+  "Armor_Child_Mask_Gerudo": 244623583,
+  "Armor_Child_Mask_Bunny": 2120249395,
+  "Armor_Child_Mask_Spooky": 4031144606,
+  "Armor_Child_Mask_Skull": 1202902901,
+  "Armor_Child_Mask_Keaton": 3049326745
+ },
+ "flags_claimed": {
+  "Armor_Child_Mask_Bunny": "HavePlayedNaviBalloonMessage.type282",
+  "Armor_Child_Mask_Gerudo": "HavePlayedNaviBalloonMessage.type283",
+  "Armor_Child_Mask_Goron": "HavePlayedNaviBalloonMessage.type286",
+  "Armor_Child_Mask_Keaton": "HavePlayedNaviBalloonMessage.type287",
+  "Armor_Child_Mask_Skull": "HavePlayedNaviBalloonMessage.type288",
+  "Armor_Child_Mask_Spooky": "HavePlayedNaviBalloonMessage.type289",
+  "Armor_Child_Mask_Truth": "HavePlayedNaviBalloonMessage.type290",
+  "Armor_Child_Mask_Zora": "HavePlayedNaviBalloonMessage.type291",
+  "picker_scratch": "HavePlayedNaviBalloonMessage.type292",
+  "switched": "HavePlayedNaviBalloonMessage.type293",
+  "token": "HavePlayedNaviBalloonMessage.type295"
+ }
+}

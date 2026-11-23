@@ -1,0 +1,789 @@
+{
+ "_about": "Extras from Ship of Harkinian and the 3DS randomizer as new OoTR locations (tools/rando/parity/extras_npcs.py). Each feature is a remake setting, off by default; its locations, item-pool items and rule changes exist only while it is on (the plugin adds them after OoTR builds the world, as the story plugin does for the Master Sword pedestal), so with every setting off a seed is exactly what it is without the plugin. 'region' is an OoTR region, 'rule' an OoTR rule at least as strict as the game ('copy_rule_of': the rule and region of the OoTR location in the same goron cell). 'flag': the saved Bool that records the item as given (Bool, ResetTypeValue 8). Step data the patch hooks: data/rando/extras_npcs_data.json (_extras_npcs_build.py).",
+ "flags_claimed": {
+  "_about": "Saved flags no game file sets or reads (Navi balloon types with empty parameters, never requested; found). Other plugins must not use these.",
+  "Market Beggar Fish": "HavePlayedNaviBalloonMessage.type500",
+  "Market Beggar Bugs": "HavePlayedNaviBalloonMessage.type501",
+  "Market Beggar Blue Fire": "HavePlayedNaviBalloonMessage.type502",
+  "Kak Beggar Fish": "HavePlayedNaviBalloonMessage.type503",
+  "Kak Beggar Bugs": "HavePlayedNaviBalloonMessage.type504",
+  "Kak Beggar Blue Fire": "HavePlayedNaviBalloonMessage.type505",
+  "LH Fishermans Hat": "HavePlayedNaviBalloonMessage.type506",
+  "Spirit Temple Right Snake Tablet": "HavePlayedNaviBalloonMessage.type507",
+  "Spirit Temple Left Snake Tablet": "HavePlayedNaviBalloonMessage.type508",
+  "Fire Temple Big Lava Room Lower Open Door Goron": "HavePlayedNaviBalloonMessage.type509",
+  "Fire Temple Boulder Maze Shortcut Goron": "HavePlayedNaviBalloonMessage.type510",
+  "Fire Temple Big Lava Room Blocked Door Goron": "HavePlayedNaviBalloonMessage.type511",
+  "Fire Temple Compass Goron": "HavePlayedNaviBalloonMessage.type471",
+  "Fire Temple Near Boss Goron": "HavePlayedNaviBalloonMessage.type464",
+  "Fire Temple Boulder Maze Lower Goron": "HavePlayedNaviBalloonMessage.type463",
+  "Fire Temple Boulder Maze Upper Goron": "HavePlayedNaviBalloonMessage.type460",
+  "Fire Temple Highest Goron": "HavePlayedNaviBalloonMessage.type459",
+  "Fire Temple Boss Key Goron": "HavePlayedNaviBalloonMessage.type455",
+  "LH Child Pond Fish 1": "HavePlayedNaviBalloonMessage.type374",
+  "LH Child Pond Fish 2": "HavePlayedNaviBalloonMessage.type375",
+  "LH Child Pond Fish 3": "HavePlayedNaviBalloonMessage.type379",
+  "LH Child Pond Fish 4": "HavePlayedNaviBalloonMessage.type383",
+  "LH Child Pond Fish 5": "HavePlayedNaviBalloonMessage.type386",
+  "LH Child Pond Fish 6": "HavePlayedNaviBalloonMessage.type388",
+  "LH Child Pond Fish 7": "HavePlayedNaviBalloonMessage.type390",
+  "LH Child Pond Fish 8": "HavePlayedNaviBalloonMessage.type391",
+  "LH Child Pond Fish 9": "HavePlayedNaviBalloonMessage.type392",
+  "LH Child Pond Fish 10": "HavePlayedNaviBalloonMessage.type395",
+  "LH Child Pond Fish 11": "HavePlayedNaviBalloonMessage.type396",
+  "LH Child Pond Fish 12": "HavePlayedNaviBalloonMessage.type398",
+  "LH Child Pond Fish 13": "HavePlayedNaviBalloonMessage.type410",
+  "LH Child Pond Fish 14": "HavePlayedNaviBalloonMessage.type411",
+  "LH Child Pond Fish 15": "HavePlayedNaviBalloonMessage.type415",
+  "LH Child Pond Loach 1": "HavePlayedNaviBalloonMessage.type418",
+  "LH Child Pond Loach 2": "HavePlayedNaviBalloonMessage.type421",
+  "LH Adult Pond Fish 1": "HavePlayedNaviBalloonMessage.type424",
+  "LH Adult Pond Fish 2": "HavePlayedNaviBalloonMessage.type425",
+  "LH Adult Pond Fish 3": "HavePlayedNaviBalloonMessage.type428",
+  "LH Adult Pond Fish 4": "HavePlayedNaviBalloonMessage.type429",
+  "LH Adult Pond Fish 5": "HavePlayedNaviBalloonMessage.type430",
+  "LH Adult Pond Fish 6": "HavePlayedNaviBalloonMessage.type431",
+  "LH Adult Pond Fish 7": "HavePlayedNaviBalloonMessage.type373",
+  "LH Adult Pond Fish 8": "HavePlayedNaviBalloonMessage.type433",
+  "LH Adult Pond Fish 9": "HavePlayedNaviBalloonMessage.type434",
+  "LH Adult Pond Fish 10": "HavePlayedNaviBalloonMessage.type435",
+  "LH Adult Pond Fish 11": "HavePlayedNaviBalloonMessage.type438",
+  "LH Adult Pond Fish 12": "HavePlayedNaviBalloonMessage.type440",
+  "LH Adult Pond Fish 13": "HavePlayedNaviBalloonMessage.type442",
+  "LH Adult Pond Fish 14": "HavePlayedNaviBalloonMessage.type444",
+  "LH Adult Pond Fish 15": "HavePlayedNaviBalloonMessage.type370",
+  "LH Adult Pond Loach": "HavePlayedNaviBalloonMessage.type446",
+  "ZD Fish 1": "HavePlayedNaviBalloonMessage.type447",
+  "ZD Fish 2": "HavePlayedNaviBalloonMessage.type448",
+  "ZD Fish 3": "HavePlayedNaviBalloonMessage.type451",
+  "ZD Fish 4": "HavePlayedNaviBalloonMessage.type452",
+  "ZD Fish 5": "HavePlayedNaviBalloonMessage.type453"
+ },
+ "beggar": {
+  "setting": "remake_shuffle_beggar",
+  "file_note": "Npc_Hylia_046_BottleShop_Child: Market_Child_Static 1846730507901349719, KakarikoVillage_Adult_Static 3419413757547410468 and _Adult_Alternative_Static 4248643109379467369; one schedule ('Always'), no Presence. The item is handed over when the player picks a bottle content to offer (before the price talk), once per content and age.",
+  "locations": {
+   "Market Beggar Fish": {
+    "age": "child",
+    "bottle": "fish",
+    "region": "Market",
+    "rule": "is_child and at_day and has_bottle and Fish",
+    "tags": [
+     "Market",
+     "NPCs"
+    ]
+   },
+   "Market Beggar Bugs": {
+    "age": "child",
+    "bottle": "bugs",
+    "region": "Market",
+    "rule": "is_child and at_day and has_bottle and Bugs",
+    "tags": [
+     "Market",
+     "NPCs"
+    ]
+   },
+   "Market Beggar Blue Fire": {
+    "age": "child",
+    "bottle": "blue_fire",
+    "region": "Market",
+    "rule": "is_child and at_day and has_bottle and Blue_Fire",
+    "tags": [
+     "Market",
+     "NPCs"
+    ]
+   },
+   "Kak Beggar Fish": {
+    "age": "adult",
+    "bottle": "fish",
+    "region": "Kakariko Village",
+    "rule": "is_adult and at_day and has_bottle and Fish",
+    "tags": [
+     "Kakariko Village",
+     "NPCs"
+    ]
+   },
+   "Kak Beggar Bugs": {
+    "age": "adult",
+    "bottle": "bugs",
+    "region": "Kakariko Village",
+    "rule": "is_adult and at_day and has_bottle and Bugs",
+    "tags": [
+     "Kakariko Village",
+     "NPCs"
+    ]
+   },
+   "Kak Beggar Blue Fire": {
+    "age": "adult",
+    "bottle": "blue_fire",
+    "region": "Kakariko Village",
+    "rule": "is_adult and at_day and has_bottle and Blue_Fire",
+    "tags": [
+     "Kakariko Village",
+     "NPCs"
+    ]
+   }
+  }
+ },
+ "fire_gorons": {
+  "setting": "remake_shuffle_fire_gorons",
+  "file_note": "Each goron shares its cell with one chest (positions 1-2 m apart, same room): the goron takes that chest's OoTR region and final rule. Flags: a claimed flag set right before the item (an autosave inside the get routine would otherwise keep the item while the goron, whose own Npc_Goron_<n>_Delete is only set by his run-away scene afterwards, could be talked to again); the Delete flag is checked too.",
+  "locations": {
+   "Fire Temple Big Lava Room Lower Open Door Goron": {
+    "goron": "001",
+    "copy_rule_of": "Fire Temple Big Lava Room Lower Open Door Chest",
+    "placement": "15078276601645269158",
+    "room": 1
+   },
+   "Fire Temple Boulder Maze Shortcut Goron": {
+    "goron": "002",
+    "copy_rule_of": "Fire Temple Boulder Maze Shortcut Chest",
+    "placement": "15811960517408920451",
+    "room": 4
+   },
+   "Fire Temple Big Lava Room Blocked Door Goron": {
+    "goron": "003",
+    "copy_rule_of": "Fire Temple Big Lava Room Blocked Door Chest",
+    "placement": "16308204814314151802",
+    "room": 22
+   },
+   "Fire Temple Compass Goron": {
+    "goron": "004",
+    "copy_rule_of": "Fire Temple Compass Chest",
+    "placement": "14145775382200751338",
+    "room": 10
+   },
+   "Fire Temple Near Boss Goron": {
+    "goron": "005",
+    "copy_rule_of": "Fire Temple Near Boss Chest",
+    "placement": "7258907813583462787",
+    "room": 2
+   },
+   "Fire Temple Boulder Maze Lower Goron": {
+    "goron": "007",
+    "copy_rule_of": "Fire Temple Boulder Maze Lower Chest",
+    "placement": "4764260411133247706",
+    "room": 5
+   },
+   "Fire Temple Boulder Maze Upper Goron": {
+    "goron": "008",
+    "copy_rule_of": "Fire Temple Boulder Maze Upper Chest",
+    "placement": "6795605425605323186",
+    "room": 5
+   },
+   "Fire Temple Highest Goron": {
+    "goron": "009",
+    "copy_rule_of": "Fire Temple Highest Goron Chest",
+    "placement": "18183220964241281790",
+    "room": 11
+   },
+   "Fire Temple Boss Key Goron": {
+    "goron": "010",
+    "copy_rule_of": "Fire Temple Boss Key Chest",
+    "placement": "53371340867292587",
+    "room": 17
+   }
+  }
+ },
+ "hat": {
+  "setting": "remake_shuffle_fishermans_hat",
+  "locations": {
+   "LH Fishermans Hat": {
+    "region": "LH Fishing Hole",
+    "rule": "is_adult",
+    "tags": [
+     "Lake Hylia",
+     "Minigames"
+    ]
+   }
+  }
+ },
+ "pole": {
+  "setting": "remake_shuffle_fishing_pole",
+  "item": "Fishing Pole",
+  "actor": "Item_FishingRod",
+  "flag": "IsGet.Item_FishingRod",
+  "needs_pole": [
+   "LH Child Fishing",
+   "LH Adult Fishing",
+   "LH Loach Fishing",
+   "LH Fishermans Hat"
+  ],
+  "hint": [
+   [
+    "a fishing rod",
+    "a fisher's tool"
+   ],
+   "the Fishing Pole"
+  ]
+ },
+ "big_poes": {
+  "setting": "remake_shuffle_big_poes",
+  "file_note": "HyruleField_Adult_Static Enemy_Poe_Big, one per fence (PoeBig_FenceID 1-10). Dm_SY_InsertBottle gets the caught poe's fence number as its argument BigPoeFenceId (-1 for any other catch). Flag: the poe's own HyruleField_Defeat_BigPoe_NN (named by its placement's PoeBig_IsCleared, never set or read by the game).",
+  "locations": {
+   "HF Big Poe Near Market": {
+    "fence": 1,
+    "placement": "14251224488536515648",
+    "pos": [
+     -0.5,
+     156.8,
+     108.6
+    ]
+   },
+   "HF Big Poe Near Ranch North": {
+    "fence": 2,
+    "placement": "14243249953385923196",
+    "pos": [
+     -55.3,
+     157.5,
+     151.0
+    ]
+   },
+   "HF Big Poe Near Market West": {
+    "fence": 3,
+    "placement": "13083428023969258779",
+    "pos": [
+     -48.9,
+     155.3,
+     59.9
+    ]
+   },
+   "HF Big Poe Near Ranch West": {
+    "fence": 4,
+    "placement": "17062001970451212242",
+    "pos": [
+     -114.5,
+     154.2,
+     175.0
+    ]
+   },
+   "HF Big Poe Near Gerudo Valley": {
+    "fence": 5,
+    "placement": "9905882851420639939",
+    "pos": [
+     -214.2,
+     137.5,
+     183.2
+    ]
+   },
+   "HF Big Poe Southwest": {
+    "fence": 6,
+    "placement": "8090701722613921954",
+    "pos": [
+     -184.5,
+     146.1,
+     227.5
+    ]
+   },
+   "HF Big Poe South": {
+    "fence": 7,
+    "placement": "11942482632588488560",
+    "pos": [
+     -117.3,
+     152.6,
+     310.7
+    ]
+   },
+   "HF Big Poe Near Lake": {
+    "fence": 8,
+    "placement": "8804587356294582290",
+    "pos": [
+     -12.7,
+     153.6,
+     376.8
+    ]
+   },
+   "HF Big Poe Near Lost Woods": {
+    "fence": 9,
+    "placement": "1678473494217528635",
+    "pos": [
+     100.2,
+     167.2,
+     298.0
+    ]
+   },
+   "HF Big Poe Center": {
+    "fence": 10,
+    "placement": "3265900466216953621",
+    "pos": [
+     20.5,
+     164.2,
+     234.2
+    ]
+   }
+  },
+  "region": "Hyrule Field",
+  "rule": "can_ride_epona and Bow and has_bottle",
+  "rule_why": "OoTR's Big Poe Kill rule, as each per-poe check needs exactly that: settled from the files (game-files answer): every Enemy_Poe_Big appears when Epona jumps its fence, takes every damage type at 1.0, has no Hookshot behaviour, and its soul is bottled from horseback. The Hookshot (OotrR's unproven 'prudence', added the same day) is gone again.",
+  "tags": [
+   "Hyrule Field"
+  ]
+ },
+ "signs": {
+  "setting": "remake_shuffle_signs",
+  "file_note": "Sign spots with a scene row of their own (the row's flow entry is used by that row only and called by no other flow): the item comes at the start of the read, once. Flag: HavePlayedEvent.<row> (saved; the engine sets it after the row's scene has played, nothing else reads it), set again by the patch right after the item; the two Spirit Temple tablets use claimed flags (SageOfSpirit sets their own). Signs on the shared generic rows (SignboardCheck, SignboardCheck_OnlyFront)",
+  "locations": {
+   "KF Adventurers Guide Board": {
+    "rows": [
+     "Obj_Kokiri_MessageBoard_A_01"
+    ],
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "dungeon": false,
+    "labels": [
+     "KokiriForest_018"
+    ]
+   },
+   "KF Mido Rupee Board": {
+    "rows": [
+     "Obj_Kokiri_MessageBoard_A_02"
+    ],
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "dungeon": false,
+    "labels": [
+     "KokiriForest_021"
+    ]
+   },
+   "KF Pond Signs": {
+    "rows": [
+     "Obj_Kokiri_Signboard_GuideAction_A_04"
+    ],
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "dungeon": false,
+    "labels": [
+     "KokiriForest_002",
+     "KokiriForest_015"
+    ]
+   },
+   "KF Roll Attack Sign": {
+    "rows": [
+     "Obj_Kokiri_Signboard_GuideAction_A_02"
+    ],
+    "region": "Kokiri Forest",
+    "rule": "is_child",
+    "dungeon": false,
+    "labels": [
+     "KokiriForest_022"
+    ]
+   },
+   "KF Kokiri Trial Sign": {
+    "rows": [
+     "Obj_Kokiri_Signboard_GuideAction_A_03"
+    ],
+    "region": "Kokiri Forest",
+    "rule": "is_child",
+    "dungeon": false,
+    "labels": [
+     "KokiriForest_014"
+    ]
+   },
+   "LW Deku Theater Sign": {
+    "rows": [
+     "SignboardCheck_LostWood_ScrubForestStage_SurfaceFair_LostWood_001"
+    ],
+    "region": "Deku Theater",
+    "rule": "True",
+    "dungeon": false,
+    "labels": [
+     "LostWood_001"
+    ]
+   },
+   "Market Mask Shop Sign": {
+    "rows": [
+     "SignboardCheck_MaskSalesman_HrlCity_001"
+    ],
+    "region": "Market",
+    "rule": "is_child",
+    "dungeon": false,
+    "labels": [
+     "HrlCity_001"
+    ]
+   },
+   "ToT Altar": {
+    "rows": [
+     "Check_SpiritStoneBase"
+    ],
+    "region": "Temple of Time",
+    "rule": "True",
+    "dungeon": false,
+    "labels": [
+     "TempleOfTime_000"
+    ]
+   },
+   "Graveyard Dampe Tour Sign": {
+    "rows": [
+     "MiniGame_DiggingHole_MinigameIconOn_WoodSignboard"
+    ],
+    "region": "Graveyard",
+    "rule": "is_child",
+    "dungeon": false,
+    "labels": [
+     "GraveYard_000"
+    ]
+   },
+   "Graveyard Flat Grave": {
+    "rows": [
+     "Obj_Graveyard_Tombstone_A_02_D_T",
+     "Obj_Graveyard_Tombstone_A_02_C0_T"
+    ],
+    "flag_row": "Obj_Graveyard_Tombstone_A_02_D_T",
+    "region": "Graveyard",
+    "rule": "True",
+    "dungeon": false,
+    "labels": [
+     "GraveYard_TombFlat"
+    ]
+   },
+   "Graveyard Sharp Grave": {
+    "rows": [
+     "Obj_Graveyard_Tombstone_A_01_D_T",
+     "Obj_Graveyard_Tombstone_A_01_C0_T"
+    ],
+    "flag_row": "Obj_Graveyard_Tombstone_A_01_D_T",
+    "region": "Graveyard",
+    "rule": "True",
+    "dungeon": false,
+    "labels": [
+     "GraveYard_TombSharp"
+    ]
+   },
+   "Graveyard Royal Tomb Poem": {
+    "rows": [
+     "Obj_Graveyard_Monument_A_02"
+    ],
+    "region": "Graveyard Royal Familys Tomb",
+    "rule": "is_adult or Slingshot or Boomerang or Sticks or has_explosives or Kokiri_Sword",
+    "dungeon": false,
+    "labels": [
+     "RoyalFamilyTomb_00"
+    ]
+   },
+   "Wasteland Poe Altar": {
+    "rows": [
+     "Check_Gerudo_StoneTablet"
+    ],
+    "region": "Haunted Wasteland",
+    "rule": "True",
+    "dungeon": false,
+    "labels": [
+     "HountedWasteland_01"
+    ]
+   },
+   "LH Fishing Sign": {
+    "rows": [
+     "SignBoardChack_Obj_LakeHrl_SignBoard_A_01"
+    ],
+    "region": "LH Fishing Island",
+    "rule": "True",
+    "dungeon": false,
+    "labels": [
+     "FishingSignBoard"
+    ]
+   },
+   "LH Island Tablet": {
+    "rows": [
+     "SignboardCheck_FireArrow_LakeHylia_01"
+    ],
+    "region": "Lake Hylia",
+    "rule": "True",
+    "dungeon": false,
+    "labels": [
+     "LakeHylia_01"
+    ]
+   },
+   "ZR Sleepless Waterfall Plaque": {
+    "rows": [
+     "Talk_ZoraRiver_Obj_TriForcePoint_A_13"
+    ],
+    "region": "Zora River",
+    "rule": "True",
+    "dungeon": false,
+    "labels": [
+     "Obj_TriForcePoint_A_13"
+    ]
+   },
+   "GC Grotto Hole Signs": {
+    "rows": [
+     "SignboardCheck_GoronCity_SecretHole_00"
+    ],
+    "region": "GC Grotto",
+    "rule": "True",
+    "dungeon": false,
+    "labels": [
+     "SignboardHole__00"
+    ]
+   },
+   "Bottom of the Well Floor Sign": {
+    "rows": [
+     "BottomOfTheWell_Level_Room01_FloorSign"
+    ],
+    "region": "Bottom of the Well Main Area",
+    "rule": "True",
+    "dungeon": true,
+    "labels": [
+     "BottomOfTheWell_03"
+    ]
+   },
+   "Bottom of the Well Monument": {
+    "rows": [
+     "BottomOfTheWell_Well_Monument_A_04"
+    ],
+    "region": "Bottom of the Well Main Area",
+    "rule": "True",
+    "dungeon": true,
+    "labels": [
+     "BottomOfTheWell_01"
+    ]
+   },
+   "Dodongos Cavern Lower Tablet": {
+    "rows": [
+     "SignboardCheck_OnlyFront_DodongoCavern"
+    ],
+    "region": "Dodongos Cavern Lobby",
+    "rule": "True",
+    "dungeon": true,
+    "labels": [
+     "DodongoCavern_002"
+    ]
+   },
+   "Dodongos Cavern Upper Tablet": {
+    "rows": [
+     "SignboardCheck_OnlyFront_DodongoCavern2"
+    ],
+    "region": "Dodongos Cavern Far Bridge",
+    "rule": "True",
+    "dungeon": true,
+    "labels": [
+     "DodongoCavern_001"
+    ]
+   },
+   "Spirit Temple Right Snake Tablet": {
+    "rows": [
+     "Obj_SpiritTemple_StoneTablet_A_01"
+    ],
+    "flag": "claimed",
+    "region": "Spirit Temple Lobby",
+    "rule": "True",
+    "dungeon": true,
+    "labels": [
+     "SpiritTemple_00"
+    ]
+   },
+   "Spirit Temple Left Snake Tablet": {
+    "rows": [
+     "Obj_SpiritTemple_StoneTablet_A_02"
+    ],
+    "flag": "claimed",
+    "region": "Spirit Temple Lobby",
+    "rule": "True",
+    "dungeon": true,
+    "labels": [
+     "SpiritTemple_01"
+    ]
+   },
+   "Shadow Temple Beak Statue": {
+    "rows": [
+     "ShadowTemple_WallStoneSign_Check_01"
+    ],
+    "region": "Shadow Temple Beginning",
+    "rule": "True",
+    "dungeon": true,
+    "labels": [
+     "ShadowTemple_01"
+    ]
+   },
+   "Shadow Temple Entrance Floor Sign 1": {
+    "rows": [
+     "ShadowTemple_FloortSign_Check_02"
+    ],
+    "region": "Shadow Temple Beginning",
+    "rule": "True",
+    "dungeon": true,
+    "labels": [
+     "ShadowTemple_00"
+    ]
+   },
+   "Shadow Temple Entrance Floor Sign 2": {
+    "rows": [
+     "ShadowTemple_FloortSign_Check_03"
+    ],
+    "region": "Shadow Temple Beginning",
+    "rule": "True",
+    "dungeon": true,
+    "labels": [
+     "ShadowTemple_02"
+    ]
+   },
+   "Shadow Temple Entrance Floor Sign 3": {
+    "rows": [
+     "ShadowTemple_FloortSign_Check"
+    ],
+    "region": "Shadow Temple Beginning",
+    "rule": "True",
+    "dungeon": true,
+    "labels": [
+     "ShadowTemple_12"
+    ]
+   },
+   "Shadow Temple Entrance Wall Sign 1": {
+    "rows": [
+     "ShadowTemple_WallSign_Check"
+    ],
+    "region": "Shadow Temple Beginning",
+    "rule": "True",
+    "dungeon": true,
+    "labels": [
+     "ShadowTemple_03"
+    ]
+   },
+   "Shadow Temple Entrance Wall Sign 2": {
+    "rows": [
+     "ShadowTemple_WallSign_Check_02"
+    ],
+    "region": "Shadow Temple Beginning",
+    "rule": "True",
+    "dungeon": true,
+    "labels": [
+     "ShadowTemple_04"
+    ]
+   },
+   "Shadow Temple Entrance Wall Sign 3": {
+    "rows": [
+     "ShadowTemple_WallSign_Check_03"
+    ],
+    "region": "Shadow Temple Beginning",
+    "rule": "True",
+    "dungeon": true,
+    "labels": [
+     "ShadowTemple_05"
+    ]
+   },
+   "Shadow Temple First Beamos Sign": {
+    "rows": [
+     "ShadowTemple_WallStoneSign_Check_02"
+    ],
+    "region": "Shadow Temple First Beamos",
+    "rule": "True",
+    "dungeon": true,
+    "labels": [
+     "ShadowTemple_10"
+    ]
+   },
+   "Shadow Temple Falling Spikes Sign": {
+    "rows": [
+     "ShadowTemple_FloortSign_Check_04"
+    ],
+    "region": "Shadow Temple Falling Spikes",
+    "rule": "True",
+    "dungeon": true,
+    "labels": [
+     "ShadowTemple_06"
+    ]
+   },
+   "Shadow Temple Wind Tunnel Sign": {
+    "rows": [
+     "ShadowTemple_WallStoneSign_Check_03"
+    ],
+    "region": "Shadow Temple Wind Tunnel",
+    "rule": "True",
+    "dungeon": true,
+    "labels": [
+     "ShadowTemple_08"
+    ]
+   },
+   "Shadow Temple Invisible Spikes Sign": {
+    "rows": [
+     "ShadowTemple_FloortSign_Check_05"
+    ],
+    "region": "Shadow Temple Invisible Spikes",
+    "rule": "(Silver_Rupee_Shadow_Temple_Invisible_Spikes, 5) and (Bombs or Progressive_Strength_Upgrade)",
+    "dungeon": true,
+    "labels": [
+     "ShadowTemple_09"
+    ]
+   },
+   "Shadow Temple Beyond Boat Sign": {
+    "rows": [
+     "ShadowTemple_FloortSign_Check_06"
+    ],
+    "region": "Shadow Temple Beyond Boat",
+    "rule": "True",
+    "dungeon": true,
+    "labels": [
+     "ShadowTemple_09"
+    ]
+   }
+  }
+ },
+ "fish": {
+  "setting": "remake_fishsanity",
+  "_about": "Ship of Harkinian's fishsanity. Pond: the catch entries MiniGame_Fishing:Step01_CatchFish_Child / _Adult hand over the next unclaimed check of the age's list (SoH's order with Pond Fish Count 1-16; count 17 uses the same order). Names and rules are SoH's (location_access/overworld/lake_hylia.cpp, zoras_domain.cpp). ZD: the child layout's five Animal_Fish_Blue, numbered by position (x, then z); SoH has them as a child only.",
+  "pond": {
+   "region": "LH Fishing Hole",
+   "child": [
+    "LH Child Pond Fish 1",
+    "LH Child Pond Fish 2",
+    "LH Child Pond Fish 3",
+    "LH Child Pond Fish 4",
+    "LH Child Pond Fish 5",
+    "LH Child Pond Fish 6",
+    "LH Child Pond Fish 7",
+    "LH Child Pond Fish 8",
+    "LH Child Pond Fish 9",
+    "LH Child Pond Fish 10",
+    "LH Child Pond Fish 11",
+    "LH Child Pond Fish 12",
+    "LH Child Pond Fish 13",
+    "LH Child Pond Fish 14",
+    "LH Child Pond Fish 15",
+    "LH Child Pond Loach 1",
+    "LH Child Pond Loach 2"
+   ],
+   "adult": [
+    "LH Adult Pond Fish 1",
+    "LH Adult Pond Fish 2",
+    "LH Adult Pond Fish 3",
+    "LH Adult Pond Fish 4",
+    "LH Adult Pond Fish 5",
+    "LH Adult Pond Fish 6",
+    "LH Adult Pond Fish 7",
+    "LH Adult Pond Fish 8",
+    "LH Adult Pond Fish 9",
+    "LH Adult Pond Fish 10",
+    "LH Adult Pond Fish 11",
+    "LH Adult Pond Fish 12",
+    "LH Adult Pond Fish 13",
+    "LH Adult Pond Fish 14",
+    "LH Adult Pond Fish 15",
+    "LH Adult Pond Loach"
+   ],
+   "tags": [
+    "Lake Hylia",
+    "Minigames"
+   ],
+   "rule_child_split": "is_child",
+   "rule_child": "True",
+   "rule_adult": "is_adult"
+  },
+  "zd": {
+   "region": "Zoras Domain",
+   "rule": "is_child and has_bottle",
+   "locations": [
+    "ZD Fish 1",
+    "ZD Fish 2",
+    "ZD Fish 3",
+    "ZD Fish 4",
+    "ZD Fish 5"
+   ],
+   "tags": [
+    "Zoras Domain"
+   ],
+   "file": "Banc/ZoraDomain/ZoraDomain_Child_Static.bcett.byml.zs",
+   "name": "RandoFish",
+   "ai": "AI/PouchContent.event.root.ainb",
+   "tag_base": 5
+  }
+ }
+}

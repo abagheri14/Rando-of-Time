@@ -1,0 +1,2254 @@
+{
+ "DeathMountainTrail": {
+  "objects": {
+   "11830620217139163618": {
+    "region": "DMT Cow Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y=63.6 inside the B_02 grotto (base -13.4,79.2,-6.8) whose entrance is the bomb rock at (-13.4,140.1,-6.8) with SoundLocator_HidingHoleCow; the grotto cow (-25.3,63.7,-13.9) stands 2.4 units away"
+   },
+   "4790064441201624663": {
+    "region": "DMT Cow Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y=63.6 inside the B_02 grotto (base -13.4,79.2,-6.8) whose entrance is the bomb rock at (-13.4,140.1,-6.8) with SoundLocator_HidingHoleCow; the grotto cow (-25.3,63.7,-13.9) stands 2.4 units away"
+   },
+   "18165494116056569063": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "adult boulders by the Dodongo's Cavern entrance (StartPos -44.3,109.7,-17.6, DC sign -47,109.7,-13.2), lower trail y 107-110"
+   },
+   "15242943501730516725": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "adult boulders by the Dodongo's Cavern entrance (StartPos -44.3,109.7,-17.6, DC sign -47,109.7,-13.2), lower trail y 107-110"
+   },
+   "8950244213799048861": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "the rock holding DMT GS Above Dodongos Cavern (GS 1.4 units above); on the trail level y 123.7 where child Goron 010 and a signboard stand"
+   },
+   "9449864367576682354": {
+    "region": "Death Mountain",
+    "rule": "can_use(Megaton_Hammer)",
+    "confidence": "medium",
+    "why": "Obj_BrokenRock_A_02 is OoT's bronze (hammer) boulder: its ActorParam replaces the stone ChemicalRef with Component/ChemicalParam/Dummy and the ReactionRef with Default (A_01 keeps WallCrack's stone chemistry), audit_overworld's fact table reads it as hammer only, every A_02 sits where OoT has a bronze boulder (DMC hammer grotto lid = OoTR can_use(Megaton_Hammer), GC maze, DMT, GV, Fire Temple), the remake places child-only A_02 exactly where a child must be stopped (DMC Fire Temple walkway), and VGC's remake guide calls these 'Megaton boulders' (a block 'smashed by the Megaton Hammer') as opposed to bomb walls. Only the shared WallCrack DamageRates (Bomb 100) suggest bombs; the strict reading is hammer only. These two are adult-only A_02 (DeathMountainTrail_Adult_Dynamic): the base rule can_blast_or_smash would accept bombs. Add the hammer."
+   },
+   "14984065111564053892": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "the boulder line blocking the summit path (x -23..-3, y 132-138, z -4..5) = OoTR's Death Mountain -> Summit here(can_blast_or_smash); breaking any of them needs can_blast_or_smash, so Death Mountain + that rule equals Summit + that rule"
+   },
+   "399653387701256048": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "the boulder line blocking the summit path (x -23..-3, y 132-138, z -4..5) = OoTR's Death Mountain -> Summit here(can_blast_or_smash); breaking any of them needs can_blast_or_smash, so Death Mountain + that rule equals Summit + that rule"
+   },
+   "9677582272997323629": {
+    "region": "Death Mountain",
+    "rule": "can_use(Megaton_Hammer)",
+    "confidence": "medium",
+    "why": "Obj_BrokenRock_A_02 is OoT's bronze (hammer) boulder: its ActorParam replaces the stone ChemicalRef with Component/ChemicalParam/Dummy and the ReactionRef with Default (A_01 keeps WallCrack's stone chemistry), audit_overworld's fact table reads it as hammer only, every A_02 sits where OoT has a bronze boulder (DMC hammer grotto lid = OoTR can_use(Megaton_Hammer), GC maze, DMT, GV, Fire Temple), the remake places child-only A_02 exactly where a child must be stopped (DMC Fire Temple walkway), and VGC's remake guide calls these 'Megaton boulders' (a block 'smashed by the Megaton Hammer') as opposed to bomb walls. Only the shared WallCrack DamageRates (Bomb 100) suggest bombs; the strict reading is hammer only. These two are adult-only A_02 (DeathMountainTrail_Adult_Dynamic): the base rule can_blast_or_smash would accept bombs. Add the hammer."
+   },
+   "3405298614843554622": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "the boulder line blocking the summit path (x -23..-3, y 132-138, z -4..5) = OoTR's Death Mountain -> Summit here(can_blast_or_smash); breaking any of them needs can_blast_or_smash, so Death Mountain + that rule equals Summit + that rule"
+   },
+   "8580335210618464267": {
+    "region": "Death Mountain Summit",
+    "rule": "True",
+    "confidence": "high",
+    "why": "covers the cow grotto (HidingHoleJoint_A_02 + SoundLocator_HidingHoleCow at the same spot); OoTR's DMT Cow Grotto entrance is a here(can_blast_or_smash) exit of Death Mountain Summit"
+   },
+   "5803622411498968148": {
+    "region": "Death Mountain Summit",
+    "rule": "True",
+    "confidence": "high",
+    "why": "holds DMT GS Falling Rocks Path (GS 1.3 units above), high on the summit path y=186"
+   },
+   "13948143684682776614": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "lower trail by the Dodongo's Cavern entrance, y 110.5-110.8, next to the DC StartPos"
+   },
+   "2851507096200394201": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "lower trail by the Dodongo's Cavern entrance, y 110.5-110.8, next to the DC StartPos"
+   },
+   "12245920151873026789": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "lower trail by the Dodongo's Cavern entrance, y 110.5-110.8, next to the DC StartPos"
+   },
+   "14939062091580693841": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "lower trail by the Dodongo's Cavern entrance, y 110.5-110.8, next to the DC StartPos"
+   },
+   "15028130154350955098": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "trail level above Dodongo's Cavern (y 123.8), 5 units from the GS rock; child Goron 010 and a signboard stand on the same level, so it is on the walkable trail, not on the heart-piece perch"
+   },
+   "11138816988756551783": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "child rocks on the trail at y 128.7, south of (below) the summit boulder line; exists only BEFORE King Dodongo is beaten: DeathMountainTrail_Child_Prefab_0821 instance _eeb2: Logic_Delete <- Get_StoneOfFire_IsCompleted_Exp; Get_StoneOfFire goes Complete in Dm_SY_BancChange_EscapeDungeon Get_StoneOfFire_Complete (the blue warp), and tools/rando/world_settings.py ties the stone to 'Defeat King Dodongo'; Death Mountain Rock 9 takes its spot after. Missable, and logic can't say 'before': False (junk only) as a STOPGAP until one object per spot; one location with the other copy at this spot (this area's 'merge'): a child finds a rock here before and after King Dodongo, so the spot is always there: True (the entry-6 stopgap is gone)"
+   },
+   "6087670250388905572": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "child rocks on the trail at y 128.7, south of (below) the summit boulder line; exists only once King Dodongo is beaten: DeathMountainTrail_Child_Prefab_0821 instance _a313: Logic_Create <- Get_StoneOfFire_IsCompleted_Exp; Get_StoneOfFire goes Complete in Dm_SY_BancChange_EscapeDungeon Get_StoneOfFire_Complete (the blue warp), and tools/rando/world_settings.py ties the stone to 'Defeat King Dodongo'. It replaces Death Mountain Rock 8 at the same spot (that one's Logic_Delete is the same flag). STOPGAP until one object per spot; one location with the other copy at this spot (this area's 'merge'): a child finds a rock here before and after King Dodongo, so the spot is always there: True (the entry-6 stopgap is gone)"
+   },
+   "3302088556978088009": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "child rocks on the trail at y 128.7, south of (below) the summit boulder line; exists only BEFORE King Dodongo is beaten: DeathMountainTrail_Child_Prefab_0821 instance _504b: Logic_Delete <- Get_StoneOfFire_IsCompleted_Exp; Get_StoneOfFire goes Complete in Dm_SY_BancChange_EscapeDungeon Get_StoneOfFire_Complete (the blue warp), and tools/rando/world_settings.py ties the stone to 'Defeat King Dodongo'; Death Mountain Rock 6 takes its spot after. Missable, and logic can't say 'before': False (junk only) as a STOPGAP until one object per spot; one location with the other copy at this spot (this area's 'merge'): a child finds a rock here before and after King Dodongo, so the spot is always there: True (the entry-6 stopgap is gone)"
+   },
+   "11074416093858939225": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "child rocks on the trail at y 128.7, south of (below) the summit boulder line; exists only once King Dodongo is beaten: DeathMountainTrail_Child_Prefab_0821 instance _23f6: Logic_Create <- Get_StoneOfFire_IsCompleted_Exp; Get_StoneOfFire goes Complete in Dm_SY_BancChange_EscapeDungeon Get_StoneOfFire_Complete (the blue warp), and tools/rando/world_settings.py ties the stone to 'Defeat King Dodongo'. It replaces Death Mountain Rock 7 at the same spot (that one's Logic_Delete is the same flag). STOPGAP until one object per spot; one location with the other copy at this spot (this area's 'merge'): a child finds a rock here before and after King Dodongo, so the spot is always there: True (the entry-6 stopgap is gone)"
+   },
+   "5670786033047026238": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "lower trail y 122, between the DMT chest area and the Dodongo's Cavern area"
+   },
+   "11840734680907699074": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "lower trail y 122, between the DMT chest area and the Dodongo's Cavern area"
+   },
+   "327492638871129940": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "lower trail y 122, between the DMT chest area and the Dodongo's Cavern area"
+   },
+   "18346525865052973000": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "lower trail y 122, between the DMT chest area and the Dodongo's Cavern area"
+   },
+   "3834806024043284116": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "settled (collision, tools/reach.py NavGrid): on the y 133.5 terrace at the top of the lower trail's ramp (x -20..-6, z 0..4), below the summit blockade (bombable A_01 boulders -21.5,135.2,-4.3 / -7.7,136.6,-0.3 / -2.8,137.7,0.6 sit on its south side). Both ages walk to it from the lower trail (the DMT chest plateau y 120 and the DMT PoH spot) without climbing or breaking anything, while the summit plateau (cow grotto boulder, y 140) is reached from there only by climbing; from the summit side it is a drop. So OoTR's Death Mountain (lower trail), not the Summit"
+   },
+   "13787606981173272160": {
+    "region": "Death Mountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "settled (collision, tools/reach.py NavGrid): on the y 133.5 terrace at the top of the lower trail's ramp (x -20..-6, z 0..4), below the summit blockade (bombable A_01 boulders -21.5,135.2,-4.3 / -7.7,136.6,-0.3 / -2.8,137.7,0.6 sit on its south side). Both ages walk to it from the lower trail (the DMT chest plateau y 120 and the DMT PoH spot) without climbing or breaking anything, while the summit plateau (cow grotto boulder, y 140) is reached from there only by climbing; from the summit side it is a drop. So OoTR's Death Mountain (lower trail), not the Summit"
+   },
+   "18073597818631342065": {
+    "region": "Death Mountain Summit",
+    "rule": "True",
+    "confidence": "high",
+    "why": "child rocks at the summit top (y 210) next to Kaepora Gaebora (-7.4,210,-137.6)"
+   },
+   "13595148908038154752": {
+    "region": "Death Mountain Summit",
+    "rule": "True",
+    "confidence": "high",
+    "why": "child rocks at the summit top (y 210) next to Kaepora Gaebora (-7.4,210,-137.6)"
+   }
+  },
+  "pairs": [],
+  "absent": {
+   "DMT Rock Red Rupee": "the remake's DMT files place no rupee on the trail (the only placed rupees are the 6-rupee ring in the I_03 storms grotto, already paired)",
+   "DMT Rock Blue Rupee": "the remake's DMT files place no rupee on the trail (the only placed rupees are the 6-rupee ring in the I_03 storms grotto, already paired)",
+   "DMT Storms Grotto Beehive 1": "the remake's storms grotto (I_03 under the Song of Storms cover at -1.6,120.2,-26.1) holds only the rupee ring; no beehive in any DMT file",
+   "DMT Storms Grotto Beehive 2": "the remake's storms grotto (I_03 under the Song of Storms cover at -1.6,120.2,-26.1) holds only the rupee ring; no beehive in any DMT file",
+   "DMT Cow Grotto Green Rupee 6": "the remake's rupee ring has 6 rupees (3 green, 2 blue, 1 red), all paired; there is no 7th",
+   "DMT Cow Grotto Recovery Heart 1": "no Obj_Heart in any DMT file; the cow grotto (B_02) holds the cow, a gossip stone, a fairy and one grass tuft",
+   "DMT Cow Grotto Recovery Heart 2": "no Obj_Heart in any DMT file; the cow grotto (B_02) holds the cow, a gossip stone, a fairy and one grass tuft",
+   "DMT Cow Grotto Recovery Heart 3": "no Obj_Heart in any DMT file; the cow grotto (B_02) holds the cow, a gossip stone, a fairy and one grass tuft",
+   "DMT Cow Grotto Recovery Heart 4": "no Obj_Heart in any DMT file; the cow grotto (B_02) holds the cow, a gossip stone, a fairy and one grass tuft",
+   "DMT Cow Grotto Beehive": "no beehive in any DMT file (Obj_Kokiri_Beehive exists only in Kakariko)"
+  },
+  "excluded": {},
+  "merge": [
+   {
+    "hashes": [
+     "3302088556978088009",
+     "11074416093858939225"
+    ],
+    "why": "one spot, two copies taking turns: #3302088556978088009 until King Dodongo is beaten (DeathMountainTrail_Child_Prefab_0821 _504b: Logic_Delete <- Get_StoneOfFire_IsCompleted_Exp), #11074416093858939225 after (_23f6: Logic_Create <- the same flag), same position (-19.74,128.65,13.98); one location, one check (the respawn model's bit is per location), as Kakariko's two adult layouts"
+   },
+   {
+    "hashes": [
+     "11138816988756551783",
+     "6087670250388905572"
+    ],
+    "why": "one spot, two copies taking turns: #11138816988756551783 until King Dodongo is beaten (_eeb2: Logic_Delete <- Get_StoneOfFire_IsCompleted_Exp), #6087670250388905572 after (_a313: Logic_Create <- the same flag), same position (-20.29,128.65,14.62); one location, one check"
+   }
+  ]
+ },
+ "GoronCity": {
+  "objects": {
+   "16929684490549965748": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "boulder maze (x -46..-28, y 113.7-114.2) among the maze chests; A_01 and A_02 both take Bomb/Hammer damage (CrackStoneObject), so blasting reaches every one through other bomb rocks (OoTR's maze chests: can_blast_or_smash or Silver_Gauntlets)"
+   },
+   "6224093172612549845": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "boulder maze (x -46..-28, y 113.7-114.2) among the maze chests; A_01 and A_02 both take Bomb/Hammer damage (CrackStoneObject), so blasting reaches every one through other bomb rocks (OoTR's maze chests: can_blast_or_smash or Silver_Gauntlets)"
+   },
+   "1493583863851704702": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "boulder maze (x -46..-28, y 113.7-114.2) among the maze chests; A_01 and A_02 both take Bomb/Hammer damage (CrackStoneObject), so blasting reaches every one through other bomb rocks (OoTR's maze chests: can_blast_or_smash or Silver_Gauntlets)"
+   },
+   "1326474780527120523": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "boulder maze (x -46..-28, y 113.7-114.2) among the maze chests; A_01 and A_02 both take Bomb/Hammer damage (CrackStoneObject), so blasting reaches every one through other bomb rocks (OoTR's maze chests: can_blast_or_smash or Silver_Gauntlets)"
+   },
+   "15677699532769498187": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "boulder maze (x -46..-28, y 113.7-114.2) among the maze chests; A_01 and A_02 both take Bomb/Hammer damage (CrackStoneObject), so blasting reaches every one through other bomb rocks (OoTR's maze chests: can_blast_or_smash or Silver_Gauntlets)"
+   },
+   "13752329688808041417": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "boulder maze (x -46..-28, y 113.7-114.2) among the maze chests; A_01 and A_02 both take Bomb/Hammer damage (CrackStoneObject), so blasting reaches every one through other bomb rocks (OoTR's maze chests: can_blast_or_smash or Silver_Gauntlets)"
+   },
+   "13404489088146365032": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "boulder maze (x -46..-28, y 113.7-114.2) among the maze chests; A_01 and A_02 both take Bomb/Hammer damage (CrackStoneObject), so blasting reaches every one through other bomb rocks (OoTR's maze chests: can_blast_or_smash or Silver_Gauntlets)"
+   },
+   "350218654240957402": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "boulder maze (x -46..-28, y 113.7-114.2) among the maze chests; A_01 and A_02 both take Bomb/Hammer damage (CrackStoneObject), so blasting reaches every one through other bomb rocks (OoTR's maze chests: can_blast_or_smash or Silver_Gauntlets)"
+   },
+   "568594831719413463": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "boulder maze (x -46..-28, y 113.7-114.2) among the maze chests; A_01 and A_02 both take Bomb/Hammer damage (CrackStoneObject), so blasting reaches every one through other bomb rocks (OoTR's maze chests: can_blast_or_smash or Silver_Gauntlets)"
+   },
+   "2214331431043654664": {
+    "region": "Goron City",
+    "rule": "can_use(Megaton_Hammer)",
+    "confidence": "medium",
+    "why": "Obj_BrokenRock_A_02 is OoT's bronze (hammer) boulder: its ActorParam replaces the stone ChemicalRef with Component/ChemicalParam/Dummy and the ReactionRef with Default (A_01 keeps WallCrack's stone chemistry), audit_overworld's fact table reads it as hammer only, every A_02 sits where OoT has a bronze boulder (DMC hammer grotto lid = OoTR can_use(Megaton_Hammer), GC maze, DMT, GV, Fire Temple), the remake places child-only A_02 exactly where a child must be stopped (DMC Fire Temple walkway), and VGC's remake guide calls these 'Megaton boulders' (a block 'smashed by the Megaton Hammer') as opposed to bomb walls. Only the shared WallCrack DamageRates (Bomb 100) suggest bombs; the strict reading is hammer only. These six A_02 (both age files) form the south strip in front of the far chest (-48.4,113.7,2.0) and the east column: with A_02 hammer-only the base can_blast_or_smash lets a child with bombs in. Add the hammer (adult). The chests and gossip-stone passes already require can_use(Megaton_Hammer) and can_use(Silver_Gauntlets) in this maze."
+   },
+   "14465858715163701812": {
+    "region": "Goron City",
+    "rule": "can_use(Megaton_Hammer)",
+    "confidence": "medium",
+    "why": "Obj_BrokenRock_A_02 is OoT's bronze (hammer) boulder: its ActorParam replaces the stone ChemicalRef with Component/ChemicalParam/Dummy and the ReactionRef with Default (A_01 keeps WallCrack's stone chemistry), audit_overworld's fact table reads it as hammer only, every A_02 sits where OoT has a bronze boulder (DMC hammer grotto lid = OoTR can_use(Megaton_Hammer), GC maze, DMT, GV, Fire Temple), the remake places child-only A_02 exactly where a child must be stopped (DMC Fire Temple walkway), and VGC's remake guide calls these 'Megaton boulders' (a block 'smashed by the Megaton Hammer') as opposed to bomb walls. Only the shared WallCrack DamageRates (Bomb 100) suggest bombs; the strict reading is hammer only. These six A_02 (both age files) form the south strip in front of the far chest (-48.4,113.7,2.0) and the east column: with A_02 hammer-only the base can_blast_or_smash lets a child with bombs in. Add the hammer (adult). The chests and gossip-stone passes already require can_use(Megaton_Hammer) and can_use(Silver_Gauntlets) in this maze."
+   },
+   "12350172607562201215": {
+    "region": "Goron City",
+    "rule": "can_use(Megaton_Hammer)",
+    "confidence": "medium",
+    "why": "Obj_BrokenRock_A_02 is OoT's bronze (hammer) boulder: its ActorParam replaces the stone ChemicalRef with Component/ChemicalParam/Dummy and the ReactionRef with Default (A_01 keeps WallCrack's stone chemistry), audit_overworld's fact table reads it as hammer only, every A_02 sits where OoT has a bronze boulder (DMC hammer grotto lid = OoTR can_use(Megaton_Hammer), GC maze, DMT, GV, Fire Temple), the remake places child-only A_02 exactly where a child must be stopped (DMC Fire Temple walkway), and VGC's remake guide calls these 'Megaton boulders' (a block 'smashed by the Megaton Hammer') as opposed to bomb walls. Only the shared WallCrack DamageRates (Bomb 100) suggest bombs; the strict reading is hammer only. These six A_02 (both age files) form the south strip in front of the far chest (-48.4,113.7,2.0) and the east column: with A_02 hammer-only the base can_blast_or_smash lets a child with bombs in. Add the hammer (adult). The chests and gossip-stone passes already require can_use(Megaton_Hammer) and can_use(Silver_Gauntlets) in this maze."
+   },
+   "2748115100431371354": {
+    "region": "Goron City",
+    "rule": "can_use(Megaton_Hammer)",
+    "confidence": "medium",
+    "why": "Obj_BrokenRock_A_02 is OoT's bronze (hammer) boulder: its ActorParam replaces the stone ChemicalRef with Component/ChemicalParam/Dummy and the ReactionRef with Default (A_01 keeps WallCrack's stone chemistry), audit_overworld's fact table reads it as hammer only, every A_02 sits where OoT has a bronze boulder (DMC hammer grotto lid = OoTR can_use(Megaton_Hammer), GC maze, DMT, GV, Fire Temple), the remake places child-only A_02 exactly where a child must be stopped (DMC Fire Temple walkway), and VGC's remake guide calls these 'Megaton boulders' (a block 'smashed by the Megaton Hammer') as opposed to bomb walls. Only the shared WallCrack DamageRates (Bomb 100) suggest bombs; the strict reading is hammer only. These six A_02 (both age files) form the south strip in front of the far chest (-48.4,113.7,2.0) and the east column: with A_02 hammer-only the base can_blast_or_smash lets a child with bombs in. Add the hammer (adult). The chests and gossip-stone passes already require can_use(Megaton_Hammer) and can_use(Silver_Gauntlets) in this maze."
+   },
+   "3559172832032073716": {
+    "region": "Goron City",
+    "rule": "can_use(Megaton_Hammer)",
+    "confidence": "medium",
+    "why": "Obj_BrokenRock_A_02 is OoT's bronze (hammer) boulder: its ActorParam replaces the stone ChemicalRef with Component/ChemicalParam/Dummy and the ReactionRef with Default (A_01 keeps WallCrack's stone chemistry), audit_overworld's fact table reads it as hammer only, every A_02 sits where OoT has a bronze boulder (DMC hammer grotto lid = OoTR can_use(Megaton_Hammer), GC maze, DMT, GV, Fire Temple), the remake places child-only A_02 exactly where a child must be stopped (DMC Fire Temple walkway), and VGC's remake guide calls these 'Megaton boulders' (a block 'smashed by the Megaton Hammer') as opposed to bomb walls. Only the shared WallCrack DamageRates (Bomb 100) suggest bombs; the strict reading is hammer only. These six A_02 (both age files) form the south strip in front of the far chest (-48.4,113.7,2.0) and the east column: with A_02 hammer-only the base can_blast_or_smash lets a child with bombs in. Add the hammer (adult). The chests and gossip-stone passes already require can_use(Megaton_Hammer) and can_use(Silver_Gauntlets) in this maze."
+   },
+   "6958775698257163131": {
+    "region": "Goron City",
+    "rule": "can_use(Megaton_Hammer)",
+    "confidence": "medium",
+    "why": "Obj_BrokenRock_A_02 is OoT's bronze (hammer) boulder: its ActorParam replaces the stone ChemicalRef with Component/ChemicalParam/Dummy and the ReactionRef with Default (A_01 keeps WallCrack's stone chemistry), audit_overworld's fact table reads it as hammer only, every A_02 sits where OoT has a bronze boulder (DMC hammer grotto lid = OoTR can_use(Megaton_Hammer), GC maze, DMT, GV, Fire Temple), the remake places child-only A_02 exactly where a child must be stopped (DMC Fire Temple walkway), and VGC's remake guide calls these 'Megaton boulders' (a block 'smashed by the Megaton Hammer') as opposed to bomb walls. Only the shared WallCrack DamageRates (Bomb 100) suggest bombs; the strict reading is hammer only. These six A_02 (both age files) form the south strip in front of the far chest (-48.4,113.7,2.0) and the east column: with A_02 hammer-only the base can_blast_or_smash lets a child with bombs in. Add the hammer (adult). The chests and gossip-stone passes already require can_use(Megaton_Hammer) and can_use(Silver_Gauntlets) in this maze."
+   },
+   "3009822989781876601": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "four rocks at y 115 by the upper-staircase pots (-20,110.8,11) on the Goron City floor, outside the maze"
+   },
+   "3721220525082878677": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "four rocks at y 115 by the upper-staircase pots (-20,110.8,11) on the Goron City floor, outside the maze"
+   },
+   "16561044195918001352": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "four rocks at y 115 by the upper-staircase pots (-20,110.8,11) on the Goron City floor, outside the maze"
+   },
+   "1144847674319821543": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "four rocks at y 115 by the upper-staircase pots (-20,110.8,11) on the Goron City floor, outside the maze"
+   },
+   "12582170880756375404": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "far north-west corner of the boulder maze, between the gossip stone (-48.8,113.7,-3.8) and the paired boulder-maze crate; OoTR's rule for that corner (GC Maze Gossip Stone / Boulder Maze Crate) reused; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was OoTR's maze rule with the Silver Gauntlets branch)"
+   },
+   "1632991845137831542": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "far north-west corner of the boulder maze, between the gossip stone (-48.8,113.7,-3.8) and the paired boulder-maze crate; OoTR's rule for that corner (GC Maze Gossip Stone / Boulder Maze Crate) reused; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was OoTR's maze rule with the Silver Gauntlets branch)"
+   },
+   "8668774813841012997": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Obj_Goron_BrokenRock_A_01, the WallCrack boulder closing the Lost Woods shortcut at (16.1, 104.9, -1.6): the map's Lost Woods entrance anchor is 10 m east, BGM_LostWood beside it; OoTR's 'GC Woods Warp Open' boulder (adult layout). Broken from the Goron City side (bombs or the hammer; bomb flowers stand next to it)"
+   },
+   "8438942300162055419": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Obj_Goron_BrokenRock_A_01, the WallCrack boulder closing the Lost Woods shortcut at (16.1, 104.9, -1.6): the map's Lost Woods entrance anchor is 10 m east, BGM_LostWood beside it; OoTR's 'GC Woods Warp Open' boulder (child layout). Broken from the Goron City side (bombs or the hammer; bomb flowers stand next to it)"
+   }
+  },
+  "pairs": [],
+  "absent": {
+   "GC Upper Staircase Pot 3": "the remake has two pots by the upper staircase (both paired); no third",
+   "GC Spinning Pot Bomb Drop 1": "the remake's spinning pot (Obj_GoronCity_LargePot_A_01) is event-driven, declares no Drop__DropActor and its prizes are not placed objects",
+   "GC Spinning Pot Bomb Drop 2": "the remake's spinning pot (Obj_GoronCity_LargePot_A_01) is event-driven, declares no Drop__DropActor and its prizes are not placed objects",
+   "GC Spinning Pot Bomb Drop 3": "the remake's spinning pot (Obj_GoronCity_LargePot_A_01) is event-driven, declares no Drop__DropActor and its prizes are not placed objects",
+   "GC Spinning Pot Rupee Drop 1": "the remake's spinning pot (Obj_GoronCity_LargePot_A_01) is event-driven, declares no Drop__DropActor and its prizes are not placed objects",
+   "GC Spinning Pot Rupee Drop 2": "the remake's spinning pot (Obj_GoronCity_LargePot_A_01) is event-driven, declares no Drop__DropActor and its prizes are not placed objects",
+   "GC Spinning Pot Rupee Drop 3": "the remake's spinning pot (Obj_GoronCity_LargePot_A_01) is event-driven, declares no Drop__DropActor and its prizes are not placed objects",
+   "GC Spinning Pot PoH Drop Rupee 1": "the remake's spinning pot (Obj_GoronCity_LargePot_A_01) is event-driven, declares no Drop__DropActor and its prizes are not placed objects",
+   "GC Spinning Pot PoH Drop Rupee 2": "the remake's spinning pot (Obj_GoronCity_LargePot_A_01) is event-driven, declares no Drop__DropActor and its prizes are not placed objects",
+   "GC Grotto Beehive": "no beehive in any Goron City file"
+  },
+  "excluded": {
+   "6878314521120022317": "Obj_BrokenBox_A_06: declares no Drop__DropActor and is the RespawnFlagSyncLink twin of the Obj_BrokenBox_A_01 crate at the same spot (that A_01 crate is the location)",
+   "2852929314039658159": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "17551874513910786007": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "2869001768010422195": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "17755712064836129824": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "15323459835074052276": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "12319196803136020804": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "1270547072074120036": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "13961964070919136206": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "7587980043199731531": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "11667504005524267399": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "12663712343267843154": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "3321005994909014883": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "7786742868332468713": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "18014792176135301990": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "9809940516740063028": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "2644481534053964786": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "4657754202940185213": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "11319019839937808": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "11492358040392662459": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "12963031563960909618": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "11484764291747851444": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "6785494683290852906": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "12491554049947605427": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "1916559377689826651": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "17416500912328700779": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "11637168303145778371": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "14579027738236428127": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "38670353231231228": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "545076192133350996": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "10821248355098448742": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "15781396066988928273": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "6498511388530733920": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "7556337954071136043": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "11305720140610233108": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "2422338022893952129": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "16175312741172529423": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)"
+  }
+ },
+ "DeathMountainCrater": {
+  "objects": {
+   "12627030076101040890": {
+    "region": "DMC Upper Local",
+    "rule": "can_break_heated_crate",
+    "confidence": "high",
+    "why": "the crate holding DMC GS Crate (anchor DMC Upper Local, same spot); in the heat, so OoTR's heated-crate helper"
+   },
+   "4502491733150659917": {
+    "region": "DMC Upper Local",
+    "rule": "can_break_heated_crate",
+    "confidence": "high",
+    "why": "second child crate 1.9 units from the GS crate (DMC Upper Local anchor)"
+   },
+   "8995841256848496528": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "high",
+    "why": "child pot 1.5 units from the GS crate (DMC Upper Local anchor)"
+   },
+   "3608254906757039927": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "child pots on the upper rim (y 128.3) between the DMT entrance and the GS crate, beside bomb rock (8.5,128.3,38.5); past the entrance, so the heated region"
+   },
+   "5094859563924152486": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "child pots on the upper rim (y 128.3) between the DMT entrance and the GS crate, beside bomb rock (8.5,128.3,38.5); past the entrance, so the heated region"
+   },
+   "14962149652005504200": {
+    "region": "DMC Central Local",
+    "rule": "is_adult",
+    "confidence": "medium",
+    "why": "Rupees (same hash in both age files) at y 107.79 on a low ledge 0.8 above the lava, z -17.3..-21.0, beside the Bolero-to-Fire-Temple walkway; the walkway is blocked at z -15.6..-16.9 by three CHILD-ONLY Obj_BrokenRock_A_02 and at z -17.7..-24.4 by three ADULT-ONLY lift rocks; Obj_HookShotTarget_A_03/A_01 stand on the ledge (-0.9,107.8,-24.1)/(-0.6,109.8,-24.0). Obj_BrokenRock_A_02 is OoT's bronze (hammer) boulder: its ActorParam replaces the stone ChemicalRef with Component/ChemicalParam/Dummy and the ReactionRef with Default (A_01 keeps WallCrack's stone chemistry), audit_overworld's fact table reads it as hammer only, every A_02 sits where OoT has a bronze boulder (DMC hammer grotto lid = OoTR can_use(Megaton_Hammer), GC maze, DMT, GV, Fire Temple), the remake places child-only A_02 exactly where a child must be stopped (DMC Fire Temple walkway), and VGC's remake guide calls these 'Megaton boulders' (a block 'smashed by the Megaton Hammer') as opposed to bomb walls. Only the shared WallCrack DamageRates (Bomb 100) suggest bombs; the strict reading is hammer only. So the child's 'can_blast_or_smash' branch is not sound: a child cannot pass the A_02 line (that is what child-only A_02 there are for). The adult lifts the rocks and drops down or hookshots to the ledge. Rule: is_adult."
+   },
+   "2137181062354999972": {
+    "region": "DMC Central Local",
+    "rule": "is_adult",
+    "confidence": "medium",
+    "why": "Rupees (same hash in both age files) at y 107.79 on a low ledge 0.8 above the lava, z -17.3..-21.0, beside the Bolero-to-Fire-Temple walkway; the walkway is blocked at z -15.6..-16.9 by three CHILD-ONLY Obj_BrokenRock_A_02 and at z -17.7..-24.4 by three ADULT-ONLY lift rocks; Obj_HookShotTarget_A_03/A_01 stand on the ledge (-0.9,107.8,-24.1)/(-0.6,109.8,-24.0). Obj_BrokenRock_A_02 is OoT's bronze (hammer) boulder: its ActorParam replaces the stone ChemicalRef with Component/ChemicalParam/Dummy and the ReactionRef with Default (A_01 keeps WallCrack's stone chemistry), audit_overworld's fact table reads it as hammer only, every A_02 sits where OoT has a bronze boulder (DMC hammer grotto lid = OoTR can_use(Megaton_Hammer), GC maze, DMT, GV, Fire Temple), the remake places child-only A_02 exactly where a child must be stopped (DMC Fire Temple walkway), and VGC's remake guide calls these 'Megaton boulders' (a block 'smashed by the Megaton Hammer') as opposed to bomb walls. Only the shared WallCrack DamageRates (Bomb 100) suggest bombs; the strict reading is hammer only. So the child's 'can_blast_or_smash' branch is not sound: a child cannot pass the A_02 line (that is what child-only A_02 there are for). The adult lifts the rocks and drops down or hookshots to the ledge. Rule: is_adult."
+   },
+   "9089638521355540295": {
+    "region": "DMC Central Local",
+    "rule": "is_adult",
+    "confidence": "medium",
+    "why": "Rupees (same hash in both age files) at y 107.79 on a low ledge 0.8 above the lava, z -17.3..-21.0, beside the Bolero-to-Fire-Temple walkway; the walkway is blocked at z -15.6..-16.9 by three CHILD-ONLY Obj_BrokenRock_A_02 and at z -17.7..-24.4 by three ADULT-ONLY lift rocks; Obj_HookShotTarget_A_03/A_01 stand on the ledge (-0.9,107.8,-24.1)/(-0.6,109.8,-24.0). Obj_BrokenRock_A_02 is OoT's bronze (hammer) boulder: its ActorParam replaces the stone ChemicalRef with Component/ChemicalParam/Dummy and the ReactionRef with Default (A_01 keeps WallCrack's stone chemistry), audit_overworld's fact table reads it as hammer only, every A_02 sits where OoT has a bronze boulder (DMC hammer grotto lid = OoTR can_use(Megaton_Hammer), GC maze, DMT, GV, Fire Temple), the remake places child-only A_02 exactly where a child must be stopped (DMC Fire Temple walkway), and VGC's remake guide calls these 'Megaton boulders' (a block 'smashed by the Megaton Hammer') as opposed to bomb walls. Only the shared WallCrack DamageRates (Bomb 100) suggest bombs; the strict reading is hammer only. So the child's 'can_blast_or_smash' branch is not sound: a child cannot pass the A_02 line (that is what child-only A_02 there are for). The adult lifts the rocks and drops down or hookshots to the ledge. Rule: is_adult."
+   },
+   "11477097298279134715": {
+    "region": "DMC Lower Nearby",
+    "rule": "True",
+    "confidence": "high",
+    "why": "covers the I_03 grotto (HidingHoleJoint at the same spot) holding the DMC Hammer Grotto chest; OoTR's hammer grotto is an exit of DMC Lower Nearby; near the Goron City exit StartPos (-55.5,120.4,-19.8)"
+   },
+   "12575210264974120106": {
+    "region": "DMC Ladder Area Nearby",
+    "rule": "can_use(Megaton_Hammer)",
+    "confidence": "medium",
+    "why": "Obj_BrokenRock_A_02 is OoT's bronze (hammer) boulder: its ActorParam replaces the stone ChemicalRef with Component/ChemicalParam/Dummy and the ReactionRef with Default (A_01 keeps WallCrack's stone chemistry), audit_overworld's fact table reads it as hammer only, every A_02 sits where OoT has a bronze boulder (DMC hammer grotto lid = OoTR can_use(Megaton_Hammer), GC maze, DMT, GV, Fire Temple), the remake places child-only A_02 exactly where a child must be stopped (DMC Fire Temple walkway), and VGC's remake guide calls these 'Megaton boulders' (a block 'smashed by the Megaton Hammer') as opposed to bomb walls. Only the shared WallCrack DamageRates (Bomb 100) suggest bombs; the strict reading is hammer only. Both-age A_02 between the ladder area (Deku scrub (-23,119.1,33)) and the lower area by Goron City (OoT's bronze boulders on Ladder Area -> Lower Nearby, which OoTR opens with the hammer). Add the hammer. Region kept (same level as the scrub; OoTR's at('DMC Lower Nearby') wording is the 1998 geometry)."
+   },
+   "8679993994356197333": {
+    "region": "DMC Ladder Area Nearby",
+    "rule": "can_use(Megaton_Hammer)",
+    "confidence": "medium",
+    "why": "Obj_BrokenRock_A_02 is OoT's bronze (hammer) boulder: its ActorParam replaces the stone ChemicalRef with Component/ChemicalParam/Dummy and the ReactionRef with Default (A_01 keeps WallCrack's stone chemistry), audit_overworld's fact table reads it as hammer only, every A_02 sits where OoT has a bronze boulder (DMC hammer grotto lid = OoTR can_use(Megaton_Hammer), GC maze, DMT, GV, Fire Temple), the remake places child-only A_02 exactly where a child must be stopped (DMC Fire Temple walkway), and VGC's remake guide calls these 'Megaton boulders' (a block 'smashed by the Megaton Hammer') as opposed to bomb walls. Only the shared WallCrack DamageRates (Bomb 100) suggest bombs; the strict reading is hammer only. Both-age A_02 between the ladder area (Deku scrub (-23,119.1,33)) and the lower area by Goron City (OoT's bronze boulders on Ladder Area -> Lower Nearby, which OoTR opens with the hammer). Add the hammer. Region kept (same level as the scrub; OoTR's at('DMC Lower Nearby') wording is the 1998 geometry)."
+   },
+   "5524931827254348969": {
+    "region": "DMC Upper Nearby",
+    "rule": "True",
+    "confidence": "high",
+    "why": "covers the A_03 grotto holding the paired DMC Upper Grotto Chest; OoTR's upper grotto is a here(can_blast_or_smash) exit of DMC Upper Nearby"
+   },
+   "10291266372915035962": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "high",
+    "why": "settled (collision, tools/reach.py NavGrid): on the ledge at y 122.4-123.1 (x -18..-10, z 24..34) that juts over the lava at the end of the upper path; reached from the DMT entrance (16.5,131.9,59.4) by walking and dropping past the GS crate (-2.9,128.2,48.7); the ladder-area floor with the Deku scrub (-23,119.1,33) is 3.2 below it (adult ledge grab 2.81, child 2.01) and reaches it by no route, either age. So it is OoTR's DMC Upper Local (the heated upper path with the GS crate and the wall heart piece), not Ladder Area Nearby"
+   },
+   "2109842002649137583": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "upper rim (y 128.3) past the DMT entrance, beside two child pots"
+   },
+   "10520267131921302353": {
+    "region": "DMC Upper Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 67-69 inside the A_03 grotto, around the paired DMC Upper Grotto Chest (-27,67.6,65.2) and its gossip stone"
+   },
+   "10206985919030447838": {
+    "region": "DMC Upper Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 67-69 inside the A_03 grotto, around the paired DMC Upper Grotto Chest (-27,67.6,65.2) and its gossip stone"
+   },
+   "3943721227043271732": {
+    "region": "DMC Upper Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 67-69 inside the A_03 grotto, around the paired DMC Upper Grotto Chest (-27,67.6,65.2) and its gossip stone"
+   },
+   "7564605921637587273": {
+    "region": "DMC Upper Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 67-69 inside the A_03 grotto, around the paired DMC Upper Grotto Chest (-27,67.6,65.2) and its gossip stone"
+   },
+   "10254537967204215143": {
+    "region": "DMC Upper Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 67-69 inside the A_03 grotto, around the paired DMC Upper Grotto Chest (-27,67.6,65.2) and its gossip stone"
+   },
+   "17016411154641075498": {
+    "region": "DMC Upper Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 67-69 inside the A_03 grotto, around the paired DMC Upper Grotto Chest (-27,67.6,65.2) and its gossip stone"
+   },
+   "8039316352414536735": {
+    "region": "DMC Upper Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 67-69 inside the A_03 grotto, around the paired DMC Upper Grotto Chest (-27,67.6,65.2) and its gossip stone"
+   },
+   "1117292011785988380": {
+    "region": "DMC Upper Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 67-69 inside the A_03 grotto, around the paired DMC Upper Grotto Chest (-27,67.6,65.2) and its gossip stone"
+   },
+   "163222268581924143": {
+    "region": "DMC Upper Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 67-69 inside the A_03 grotto, around the paired DMC Upper Grotto Chest (-27,67.6,65.2) and its gossip stone"
+   },
+   "7544648525216776809": {
+    "region": "DMC Upper Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 67-69 inside the A_03 grotto, around the paired DMC Upper Grotto Chest (-27,67.6,65.2) and its gossip stone"
+   },
+   "1926142912245196445": {
+    "region": "DMC Upper Nearby",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "2.2-2.5 units from the upper-grotto bomb rock, which OoTR places in DMC Upper Nearby"
+   },
+   "15310626505717414559": {
+    "region": "DMC Upper Nearby",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "2.2-2.5 units from the upper-grotto bomb rock, which OoTR places in DMC Upper Nearby"
+   },
+   "4256755263998205765": {
+    "region": "DMC Upper Nearby",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "2.2-2.5 units from the upper-grotto bomb rock, which OoTR places in DMC Upper Nearby"
+   },
+   "17510543738023527238": {
+    "region": "DMC Upper Nearby",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "2.2-2.5 units from the upper-grotto bomb rock, which OoTR places in DMC Upper Nearby"
+   },
+   "8740412976381850469": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "high",
+    "why": "settled (collision, tools/reach.py NavGrid): on the ledge at y 122.4-123.1 (x -18..-10, z 24..34) that juts over the lava at the end of the upper path; reached from the DMT entrance (16.5,131.9,59.4) by walking and dropping past the GS crate (-2.9,128.2,48.7); the ladder-area floor with the Deku scrub (-23,119.1,33) is 3.2 below it (adult ledge grab 2.81, child 2.01) and reaches it by no route, either age. So it is OoTR's DMC Upper Local (the heated upper path with the GS crate and the wall heart piece), not Ladder Area Nearby"
+   },
+   "12764696357690143910": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "high",
+    "why": "settled (collision, tools/reach.py NavGrid): on the ledge at y 122.4-123.1 (x -18..-10, z 24..34) that juts over the lava at the end of the upper path; reached from the DMT entrance (16.5,131.9,59.4) by walking and dropping past the GS crate (-2.9,128.2,48.7); the ladder-area floor with the Deku scrub (-23,119.1,33) is 3.2 below it (adult ledge grab 2.81, child 2.01) and reaches it by no route, either age. So it is OoTR's DMC Upper Local (the heated upper path with the GS crate and the wall heart piece), not Ladder Area Nearby"
+   },
+   "9284120517102697436": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "upper rim (y 124.8-128.5) between the DMT entrance and the GS crate, away from the grotto rock: the heated region"
+   },
+   "7682609425523332827": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "upper rim (y 124.8-128.5) between the DMT entrance and the GS crate, away from the grotto rock: the heated region"
+   },
+   "14936226666394533208": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "upper rim (y 124.8-128.5) between the DMT entrance and the GS crate, away from the grotto rock: the heated region"
+   },
+   "5758039723623033052": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "upper rim (y 124.8-128.5) between the DMT entrance and the GS crate, away from the grotto rock: the heated region"
+   },
+   "12149948234252356692": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "upper rim (y 124.8-128.5) between the DMT entrance and the GS crate, away from the grotto rock: the heated region"
+   },
+   "4793260471136377552": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "upper rim (y 124.8-128.5) between the DMT entrance and the GS crate, away from the grotto rock: the heated region"
+   },
+   "8572656032555563605": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "upper rim (y 124.8-128.5) between the DMT entrance and the GS crate, away from the grotto rock: the heated region"
+   },
+   "13279296057525147608": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "upper rim (y 124.8-128.5) between the DMT entrance and the GS crate, away from the grotto rock: the heated region"
+   },
+   "11298927640547352220": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "upper rim y 132.3, 5-6 units from the DMC gossip stone (43.6,132.3,37.3; OoTR DMC Upper Local)"
+   },
+   "11152633378830838160": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "upper rim y 132.3, 5-6 units from the DMC gossip stone (43.6,132.3,37.3; OoTR DMC Upper Local)"
+   },
+   "12189550029126530073": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "upper rim y 132.3, 5-6 units from the DMC gossip stone (43.6,132.3,37.3; OoTR DMC Upper Local)"
+   },
+   "5605006337447940100": {
+    "region": "DMC Upper Local",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "upper rim y 132.3, 5-6 units from the DMC gossip stone (43.6,132.3,37.3; OoTR DMC Upper Local)"
+   },
+   "6987338395680713863": {
+    "region": "DMC Central Local",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "adult-only rocks on the walkway to the Fire Temple door (y 112-113), central heated area"
+   },
+   "14216626233574515210": {
+    "region": "DMC Central Local",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "adult-only rocks on the walkway to the Fire Temple door (y 112-113), central heated area"
+   },
+   "5461607116687866226": {
+    "region": "DMC Central Local",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "adult-only rocks on the walkway to the Fire Temple door (y 112-113), central heated area"
+   }
+  },
+  "pairs": [],
+  "absent": {
+   "DMC Child Red Rupee 1": "the remake has no child-only rupee set in DMC; its only unpaired rupees are 1 red + 2 green for both ages on a lava ledge by the Fire Temple walkway, kept as new locations with a stricter rule (a child may need explosives)",
+   "DMC Child Red Rupee 2": "the remake has no child-only rupee set in DMC; its only unpaired rupees are 1 red + 2 green for both ages on a lava ledge by the Fire Temple walkway, kept as new locations with a stricter rule (a child may need explosives)",
+   "DMC Child Blue Rupee 1": "the remake has no child-only rupee set in DMC; its only unpaired rupees are 1 red + 2 green for both ages on a lava ledge by the Fire Temple walkway, kept as new locations with a stricter rule (a child may need explosives)",
+   "DMC Child Blue Rupee 2": "the remake has no child-only rupee set in DMC; its only unpaired rupees are 1 red + 2 green for both ages on a lava ledge by the Fire Temple walkway, kept as new locations with a stricter rule (a child may need explosives)",
+   "DMC Child Blue Rupee 3": "the remake has no child-only rupee set in DMC; its only unpaired rupees are 1 red + 2 green for both ages on a lava ledge by the Fire Temple walkway, kept as new locations with a stricter rule (a child may need explosives)",
+   "DMC Child Blue Rupee 4": "the remake has no child-only rupee set in DMC; its only unpaired rupees are 1 red + 2 green for both ages on a lava ledge by the Fire Temple walkway, kept as new locations with a stricter rule (a child may need explosives)",
+   "DMC Child Blue Rupee 5": "the remake has no child-only rupee set in DMC; its only unpaired rupees are 1 red + 2 green for both ages on a lava ledge by the Fire Temple walkway, kept as new locations with a stricter rule (a child may need explosives)",
+   "DMC Child Blue Rupee 6": "the remake has no child-only rupee set in DMC; its only unpaired rupees are 1 red + 2 green for both ages on a lava ledge by the Fire Temple walkway, kept as new locations with a stricter rule (a child may need explosives)",
+   "DMC Near GC Pot 3": "the remake has two pots by the Goron City exit (both paired); no others in DMC Lower Nearby",
+   "DMC Near GC Pot 4": "the remake has two pots by the Goron City exit (both paired); no others in DMC Lower Nearby",
+   "DMC Upper Grotto Beehive 1": "the upper grotto holds a chest, a gossip stone and five lift rocks; no beehive in any DMC file",
+   "DMC Upper Grotto Beehive 2": "the upper grotto holds a chest, a gossip stone and five lift rocks; no beehive in any DMC file",
+   "DMC Hammer Grotto Beehive": "the hammer grotto holds the Dinolfos chest; no beehive in any DMC file"
+  },
+  "excluded": {
+   "1617141603420049765": "Obj_BrokenBox_A_06: declares no Drop__DropActor and is the RespawnFlagSyncLink twin of the Obj_BrokenBox_A_01 crate at the same spot (that A_01 crate is the location)",
+   "17444962966713158176": "Obj_BrokenRock_A_02 is OoT's bronze (hammer) boulder: its ActorParam replaces the stone ChemicalRef with Component/ChemicalParam/Dummy and the ReactionRef with Default (A_01 keeps WallCrack's stone chemistry), audit_overworld's fact table reads it as hammer only, every A_02 sits where OoT has a bronze boulder (DMC hammer grotto lid = OoTR can_use(Megaton_Hammer), GC maze, DMT, GV, Fire Temple), the remake places child-only A_02 exactly where a child must be stopped (DMC Fire Temple walkway), and VGC's remake guide calls these 'Megaton boulders' (a block 'smashed by the Megaton Hammer') as opposed to bomb walls. Only the shared WallCrack DamageRates (Bomb 100) suggest bombs; the strict reading is hammer only. This copy is CHILD-ONLY (DeathMountainCrater_Child_Dynamic): a child never has the Megaton Hammer, so it can never be broken. Logic currently lets a child with bombs take it (too loose). Remove it as a location (or rule False).",
+   "5416806354710087510": "Obj_BrokenRock_A_02 is OoT's bronze (hammer) boulder: its ActorParam replaces the stone ChemicalRef with Component/ChemicalParam/Dummy and the ReactionRef with Default (A_01 keeps WallCrack's stone chemistry), audit_overworld's fact table reads it as hammer only, every A_02 sits where OoT has a bronze boulder (DMC hammer grotto lid = OoTR can_use(Megaton_Hammer), GC maze, DMT, GV, Fire Temple), the remake places child-only A_02 exactly where a child must be stopped (DMC Fire Temple walkway), and VGC's remake guide calls these 'Megaton boulders' (a block 'smashed by the Megaton Hammer') as opposed to bomb walls. Only the shared WallCrack DamageRates (Bomb 100) suggest bombs; the strict reading is hammer only. These three are CHILD-ONLY A_02 (DeathMountainCrater_Child_Dynamic) on the walkway from the Bolero point (0.4,111.8,-8.6) to the Fire Temple door: placed to stop the child. A child never has the hammer, so they can never be broken; logic currently accepts a child with bombs (too loose). Remove as locations (or rule False).",
+   "15044423826661592135": "Obj_BrokenRock_A_02 is OoT's bronze (hammer) boulder: its ActorParam replaces the stone ChemicalRef with Component/ChemicalParam/Dummy and the ReactionRef with Default (A_01 keeps WallCrack's stone chemistry), audit_overworld's fact table reads it as hammer only, every A_02 sits where OoT has a bronze boulder (DMC hammer grotto lid = OoTR can_use(Megaton_Hammer), GC maze, DMT, GV, Fire Temple), the remake places child-only A_02 exactly where a child must be stopped (DMC Fire Temple walkway), and VGC's remake guide calls these 'Megaton boulders' (a block 'smashed by the Megaton Hammer') as opposed to bomb walls. Only the shared WallCrack DamageRates (Bomb 100) suggest bombs; the strict reading is hammer only. These three are CHILD-ONLY A_02 (DeathMountainCrater_Child_Dynamic) on the walkway from the Bolero point (0.4,111.8,-8.6) to the Fire Temple door: placed to stop the child. A child never has the hammer, so they can never be broken; logic currently accepts a child with bombs (too loose). Remove as locations (or rule False).",
+   "13991526616466298561": "Obj_BrokenRock_A_02 is OoT's bronze (hammer) boulder: its ActorParam replaces the stone ChemicalRef with Component/ChemicalParam/Dummy and the ReactionRef with Default (A_01 keeps WallCrack's stone chemistry), audit_overworld's fact table reads it as hammer only, every A_02 sits where OoT has a bronze boulder (DMC hammer grotto lid = OoTR can_use(Megaton_Hammer), GC maze, DMT, GV, Fire Temple), the remake places child-only A_02 exactly where a child must be stopped (DMC Fire Temple walkway), and VGC's remake guide calls these 'Megaton boulders' (a block 'smashed by the Megaton Hammer') as opposed to bomb walls. Only the shared WallCrack DamageRates (Bomb 100) suggest bombs; the strict reading is hammer only. These three are CHILD-ONLY A_02 (DeathMountainCrater_Child_Dynamic) on the walkway from the Bolero point (0.4,111.8,-8.6) to the Fire Temple door: placed to stop the child. A child never has the hammer, so they can never be broken; logic currently accepts a child with bombs (too loose). Remove as locations (or rule False)."
+  }
+ },
+ "ZoraRiver": {
+  "objects": {
+   "18049114647202169539": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "6048109687318133293": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "2298283628328435720": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "1482691670641189285": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "3922348358728399997": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "4690834361593581821": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "9871945473853767030": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "1308828964686406569": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "13410543774724933525": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "9631182645511745726": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "9119591811446675392": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "3328888660444152381": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "11633715633323756970": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "5230435736251084516": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "1391937830947703725": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "15482102146451554097": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "4582064739131737845": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "12818104578529512147": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "3661284024861567877": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "17324353931517538893": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "IsInZoraRiver rupee at the river surface (y 96.5/100.3/104.6/107.4 = the Octoroks' water levels), between the first bridge (-26.4,101.9,-8.3) and the upper bridge (79.7,112.9,-27.5); all past the two boulders at the Hyrule Field entrance, so Zora River, not ZR Front. Most likely the remake's form of OoTR's (global) ZR child river wonderitems"
+   },
+   "15114269249738800955": {
+    "region": "ZR Front",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "the two boulders 7-9 units from the Hyrule Field arrival point (-77,97.5,14): OoTR's ZR Front -> Zora River blockade"
+   },
+   "6669732312980766026": {
+    "region": "ZR Front",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "the two boulders 7-9 units from the Hyrule Field arrival point (-77,97.5,14): OoTR's ZR Front -> Zora River blockade"
+   },
+   "16547116969322393756": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "covers the fairy grotto (HidingHoleJoint_A_02 at the same spot, fairy fountain interior below) on the raised grotto ledge (y 114)"
+   },
+   "4826518667068841696": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ring of four lift rocks around the fairy-grotto bomb rock on the raised grotto ledge (y 114.2)"
+   },
+   "13320994476481854351": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ring of four lift rocks around the fairy-grotto bomb rock on the raised grotto ledge (y 114.2)"
+   },
+   "17344143844704392683": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ring of four lift rocks around the fairy-grotto bomb rock on the raised grotto ledge (y 114.2)"
+   },
+   "2027803741890732419": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ring of four lift rocks around the fairy-grotto bomb rock on the raised grotto ledge (y 114.2)"
+   },
+   "2204724976020882097": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ring of four lift rocks around the fairy-grotto bomb rock on the raised grotto ledge (y 114.2)"
+   },
+   "16270014503275548770": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ring of four lift rocks around the fairy-grotto bomb rock on the raised grotto ledge (y 114.2)"
+   },
+   "17845102228874376901": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ring of four lift rocks around the fairy-grotto bomb rock on the raised grotto ledge (y 114.2)"
+   },
+   "2222529920688210414": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ring of four lift rocks around the fairy-grotto bomb rock on the raised grotto ledge (y 114.2)"
+   },
+   "2371172516158343997": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ring of four lift rocks around the storms-grotto cover (Land_Kokiri_HidingHoleCover_A_01, -78.1,99.1,-16.8)"
+   },
+   "13737853645147528759": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ring of four lift rocks around the storms-grotto cover (Land_Kokiri_HidingHoleCover_A_01, -78.1,99.1,-16.8)"
+   },
+   "14826555421246983691": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ring of four lift rocks around the storms-grotto cover (Land_Kokiri_HidingHoleCover_A_01, -78.1,99.1,-16.8)"
+   },
+   "5153283257875856350": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ring of four lift rocks around the storms-grotto cover (Land_Kokiri_HidingHoleCover_A_01, -78.1,99.1,-16.8)"
+   },
+   "15818815631206221451": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ring of four lift rocks around the storms-grotto cover (Land_Kokiri_HidingHoleCover_A_01, -78.1,99.1,-16.8)"
+   },
+   "12357333631332004666": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ring of four lift rocks around the storms-grotto cover (Land_Kokiri_HidingHoleCover_A_01, -78.1,99.1,-16.8)"
+   },
+   "2663263298906525797": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ring of four lift rocks around the storms-grotto cover (Land_Kokiri_HidingHoleCover_A_01, -78.1,99.1,-16.8)"
+   },
+   "6005721242265519567": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ring of four lift rocks around the storms-grotto cover (Land_Kokiri_HidingHoleCover_A_01, -78.1,99.1,-16.8)"
+   },
+   "17019758987192094710": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "river bank y 100.9 by the bean-patch skulltula (-54.6,100.6,-11.9), past the entrance boulders"
+   },
+   "17949292987925547918": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "river bank y 100.9 by the bean-patch skulltula (-54.6,100.6,-11.9), past the entrance boulders"
+   },
+   "9080915605353397341": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "child rock on the bank at y 104.5 near the first bridge, past the entrance boulders"
+   },
+   "6791647991070983026": {
+    "region": "ZR Open Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 74.9 next to the paired ZR Open Grotto Chest (-16.7,74.9,29.7) and its gossip stone"
+   },
+   "8656037947240541": {
+    "region": "ZR Open Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 74.9 next to the paired ZR Open Grotto Chest (-16.7,74.9,29.7) and its gossip stone"
+   },
+   "8253690719061067088": {
+    "region": "Zora River",
+    "rule": "is_child or here(can_plant_bean) or Hover_Boots or logic_zora_river_lower",
+    "confidence": "medium",
+    "why": "on the limestone pillars (y 110.5, river at 100.3) 7 units from the ZR Near Open Grotto heart piece (-4,111.4,-34.3), same pillar group; that heart piece's OoTR rule reused"
+   },
+   "5236788318647646124": {
+    "region": "Zora River",
+    "rule": "Kokiri_Sword or Boomerang or has_explosives or can_use(Megaton_Hammer)",
+    "confidence": "high",
+    "why": "Region and pillar rule right (is_child holds). Grass cutting: Obj_Plant_Grass_A_01/A_03 DamageParameters 'Plant_Grass' carry the exception 'デクの棒では刈れない' (Deku Sticks cannot cut it): rule 204148089 (the ignore-damage rule, the same one that makes Din's Fire only ignite grass and beehives) on the Deku Stick's attack attribute 3473086895. OoTR's can_cut_shrubs counts Sticks, so for a child copy the rule is ANDed with 'is_adult or Kokiri_Sword or Boomerang or has_explosives or can_use(Megaton_Hammer)' (better fixed once in drops.py CATEGORY['grass'] / ['grass_always_respawn'])."
+   },
+   "554336807288771355": {
+    "region": "Zora River",
+    "rule": "is_child or here(can_plant_bean) or Hover_Boots or logic_zora_river_lower",
+    "confidence": "medium",
+    "why": "on the limestone pillars (y 110.5, river at 100.3) 7 units from the ZR Near Open Grotto heart piece (-4,111.4,-34.3), same pillar group; that heart piece's OoTR rule reused"
+   },
+   "8025310784454452781": {
+    "region": "Zora River",
+    "rule": "Kokiri_Sword or Boomerang or has_explosives or can_use(Megaton_Hammer)",
+    "confidence": "high",
+    "why": "Region and pillar rule right (is_child holds). Grass cutting: Obj_Plant_Grass_A_01/A_03 DamageParameters 'Plant_Grass' carry the exception 'デクの棒では刈れない' (Deku Sticks cannot cut it): rule 204148089 (the ignore-damage rule, the same one that makes Din's Fire only ignite grass and beehives) on the Deku Stick's attack attribute 3473086895. OoTR's can_cut_shrubs counts Sticks, so for a child copy the rule is ANDed with 'is_adult or Kokiri_Sword or Boomerang or has_explosives or can_use(Megaton_Hammer)' (better fixed once in drops.py CATEGORY['grass'] / ['grass_always_respawn'])."
+   },
+   "10869334366827386783": {
+    "region": "ZR Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 82 inside the F_03 grotto whose entrance is the Song of Storms cover (-78.1,99.1,-16.8); next to its gossip stone (-77.8,82,-32.6)"
+   },
+   "12253865241549498327": {
+    "region": "ZR Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 82 inside the F_03 grotto whose entrance is the Song of Storms cover (-78.1,99.1,-16.8); next to its gossip stone (-77.8,82,-32.6)"
+   },
+   "5730330007630899881": {
+    "region": "ZR Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 82 inside the F_03 grotto whose entrance is the Song of Storms cover (-78.1,99.1,-16.8); next to its gossip stone (-77.8,82,-32.6)"
+   },
+   "13505325356541728049": {
+    "region": "ZR Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 82 inside the F_03 grotto whose entrance is the Song of Storms cover (-78.1,99.1,-16.8); next to its gossip stone (-77.8,82,-32.6)"
+   },
+   "4776081376285256939": {
+    "region": "ZR Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 82 inside the F_03 grotto whose entrance is the Song of Storms cover (-78.1,99.1,-16.8); next to its gossip stone (-77.8,82,-32.6)"
+   },
+   "8980910965654538945": {
+    "region": "ZR Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 82 inside the F_03 grotto whose entrance is the Song of Storms cover (-78.1,99.1,-16.8); next to its gossip stone (-77.8,82,-32.6)"
+   },
+   "8953658065056150046": {
+    "region": "ZR Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 82 inside the F_03 grotto whose entrance is the Song of Storms cover (-78.1,99.1,-16.8); next to its gossip stone (-77.8,82,-32.6)"
+   },
+   "5095784848033030406": {
+    "region": "ZR Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 82 inside the F_03 grotto whose entrance is the Song of Storms cover (-78.1,99.1,-16.8); next to its gossip stone (-77.8,82,-32.6)"
+   }
+  },
+  "pairs": [],
+  "absent": {
+   "ZR Waterfall Red Rupee 1": "no red and no underwater rupee in any ZR file; every placed rupee is a green/blue IsInZoraRiver rupee at the river surface, none near the waterfall basin (x > 100)",
+   "ZR Waterfall Red Rupee 2": "no red and no underwater rupee in any ZR file; every placed rupee is a green/blue IsInZoraRiver rupee at the river surface, none near the waterfall basin (x > 100)",
+   "ZR Waterfall Red Rupee 3": "no red and no underwater rupee in any ZR file; every placed rupee is a green/blue IsInZoraRiver rupee at the river surface, none near the waterfall basin (x > 100)",
+   "ZR Waterfall Red Rupee 4": "no red and no underwater rupee in any ZR file; every placed rupee is a green/blue IsInZoraRiver rupee at the river surface, none near the waterfall basin (x > 100)",
+   "ZR Open Grotto Beehive 1": "the open grotto holds a chest, a gossip stone and grass; no beehive in any ZR file",
+   "ZR Open Grotto Beehive 2": "the open grotto holds a chest, a gossip stone and grass; no beehive in any ZR file",
+   "ZR Storms Grotto Beehive": "the storms grotto holds a gossip stone, a fairy and four pots; no beehive in any ZR file"
+  },
+  "excluded": {}
+ },
+ "ZoraDomain": {
+  "objects": {
+   "16664642180278451461": {
+    "region": "ZD Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 60 on the floor of the D_01 grotto (base 17,75.3,-18.3; entrance Land_Zora_HidingHoleCover_A_01 at 17,100.2,-18.3; a bomb or hammer lid, Land_Zora_HidingHoleCover_A_01 with logic HidingHole_Level_Hole_29; the entry requester fires on an Area and a player-state check, no song)"
+   },
+   "12326682905628388229": {
+    "region": "ZD Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 60 on the floor of the D_01 grotto (base 17,75.3,-18.3; entrance Land_Zora_HidingHoleCover_A_01 at 17,100.2,-18.3; a bomb or hammer lid, Land_Zora_HidingHoleCover_A_01 with logic HidingHole_Level_Hole_29; the entry requester fires on an Area and a player-state check, no song)"
+   },
+   "6454478348589065391": {
+    "region": "ZD Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 60 on the floor of the D_01 grotto (base 17,75.3,-18.3; entrance Land_Zora_HidingHoleCover_A_01 at 17,100.2,-18.3; a bomb or hammer lid, Land_Zora_HidingHoleCover_A_01 with logic HidingHole_Level_Hole_29; the entry requester fires on an Area and a player-state check, no song)"
+   },
+   "10666689264325218801": {
+    "region": "ZD Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 60 on the floor of the D_01 grotto (base 17,75.3,-18.3; entrance Land_Zora_HidingHoleCover_A_01 at 17,100.2,-18.3; a bomb or hammer lid, Land_Zora_HidingHoleCover_A_01 with logic HidingHole_Level_Hole_29; the entry requester fires on an Area and a player-state check, no song)"
+   },
+   "13117411709061323811": {
+    "region": "ZD Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 60 on the floor of the D_01 grotto (base 17,75.3,-18.3; entrance Land_Zora_HidingHoleCover_A_01 at 17,100.2,-18.3; a bomb or hammer lid, Land_Zora_HidingHoleCover_A_01 with logic HidingHole_Level_Hole_29; the entry requester fires on an Area and a player-state check, no song)"
+   },
+   "17151259896404091033": {
+    "region": "ZD Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 60 on the floor of the D_01 grotto (base 17,75.3,-18.3; entrance Land_Zora_HidingHoleCover_A_01 at 17,100.2,-18.3; a bomb or hammer lid, Land_Zora_HidingHoleCover_A_01 with logic HidingHole_Level_Hole_29; the entry requester fires on an Area and a player-state check, no song)"
+   }
+  },
+  "pairs": [],
+  "absent": {
+   "ZD In Front of King Zora Beehive 1": "no beehive in any Zora's Domain file (Obj_Kokiri_Beehive exists only in Kakariko)",
+   "ZD In Front of King Zora Beehive 2": "no beehive in any Zora's Domain file (Obj_Kokiri_Beehive exists only in Kakariko)",
+   "ZD Behind King Zora Beehive": "no beehive in any Zora's Domain file (Obj_Kokiri_Beehive exists only in Kakariko)"
+  },
+  "excluded": {}
+ },
+ "ZoraFountain": {
+  "objects": {
+   "12389449717548603491": {
+    "region": "ZF Hidden Cave",
+    "rule": "True",
+    "confidence": "high",
+    "why": "cave floor (y 103.7, limestone ceiling at 110-112) with invisible Skulltulas (Enemy_Skulltula_Truth), past the silver rocks (68,101.7,26); the ZF GS Hidden Cave skulltula is higher in the same cave: OoT's hidden cave"
+   },
+   "14131098108744088630": {
+    "region": "ZF Hidden Cave",
+    "rule": "True",
+    "confidence": "high",
+    "why": "cave floor (y 103.7, limestone ceiling at 110-112) with invisible Skulltulas (Enemy_Skulltula_Truth), past the silver rocks (68,101.7,26); the ZF GS Hidden Cave skulltula is higher in the same cave: OoT's hidden cave"
+   },
+   "11141668837643914565": {
+    "region": "ZF Hidden Cave",
+    "rule": "True",
+    "confidence": "high",
+    "why": "cave floor (y 103.7, limestone ceiling at 110-112) with invisible Skulltulas (Enemy_Skulltula_Truth), past the silver rocks (68,101.7,26); the ZF GS Hidden Cave skulltula is higher in the same cave: OoT's hidden cave"
+   },
+   "18012345028628492631": {
+    "region": "ZF Hidden Cave",
+    "rule": "True",
+    "confidence": "high",
+    "why": "cave floor (y 103.7, limestone ceiling at 110-112) with invisible Skulltulas (Enemy_Skulltula_Truth), past the silver rocks (68,101.7,26); the ZF GS Hidden Cave skulltula is higher in the same cave: OoT's hidden cave"
+   }
+  },
+  "pairs": [
+   {
+    "ootr": [
+     "ZF Hidden Cave Pot 1",
+     "ZF Hidden Cave Pot 2"
+    ],
+    "hashes": [
+     "12389449717548603491",
+     "11141668837643914565"
+    ],
+    "why": "the two pot spots of the hidden cave (child copies 14131098108744088630 / 18012345028628492631 at the same spots); same region and rule"
+   }
+  ],
+  "absent": {
+   "ZF Hidden Cave Pot 3": "the remake's hidden cave has two pot spots (both paired)",
+   "ZF Bottom Green Rupee 17": "the remake places 16 rupees on the fountain floor (all paired)",
+   "ZF Bottom Green Rupee 18": "the remake places 16 rupees on the fountain floor (all paired)"
+  },
+  "excluded": {
+   "8128099944573471538": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "15546380048732510520": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "11141853402576759431": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "17232595302518493540": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "4117475603241592218": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "7870652284690645781": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)"
+  }
+ },
+ "GerudoValley": {
+  "objects": {
+   "12528458135940488179": {
+    "region": "GV Fortress Side",
+    "rule": "can_use(Hookshot) or can_use(Bow)",
+    "confidence": "high",
+    "why": "Obj_Gerudo_HangingSign_A_01.root.ainb drops on QuerySensorHitIsHitTgExtention AND QueryDamageCalculatorIsOnDamageType 16 (Hookshot) OR 6 (Arrow): the Bow knocks it down too. Adult sign at the Gerudo Fortress exit (FADE (-66.6,114,-7.2)), GV Fortress Side."
+   },
+   "6896071498853277403": {
+    "region": "GV Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 84 in the F_02 grotto behind the event cover (FldObj_AirWall_HidingHoleCover, -45.3,101,-29) by the carpenters' tent, in a row with the GV Storms Grotto Lens Chest (-43.3,84,-46)"
+   },
+   "9231973890535833762": {
+    "region": "GV Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 84 in the F_02 grotto behind the event cover (FldObj_AirWall_HidingHoleCover, -45.3,101,-29) by the carpenters' tent, in a row with the GV Storms Grotto Lens Chest (-43.3,84,-46)"
+   },
+   "3407692112799570510": {
+    "region": "GV Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 84 in the F_02 grotto behind the event cover (FldObj_AirWall_HidingHoleCover, -45.3,101,-29) by the carpenters' tent, in a row with the GV Storms Grotto Lens Chest (-43.3,84,-46)"
+   },
+   "13179280208744162657": {
+    "region": "GV Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 84 in the F_02 grotto behind the event cover (FldObj_AirWall_HidingHoleCover, -45.3,101,-29) by the carpenters' tent, in a row with the GV Storms Grotto Lens Chest (-43.3,84,-46)"
+   },
+   "15334540056586068351": {
+    "region": "GV Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 84 in the F_02 grotto behind the event cover (FldObj_AirWall_HidingHoleCover, -45.3,101,-29) by the carpenters' tent, in a row with the GV Storms Grotto Lens Chest (-43.3,84,-46)"
+   },
+   "946934829814115422": {
+    "region": "GV Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 84 in the F_02 grotto behind the event cover (FldObj_AirWall_HidingHoleCover, -45.3,101,-29) by the carpenters' tent, in a row with the GV Storms Grotto Lens Chest (-43.3,84,-46)"
+   },
+   "10851977283896645114": {
+    "region": "GV Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 84 in the F_02 grotto behind the event cover (FldObj_AirWall_HidingHoleCover, -45.3,101,-29) by the carpenters' tent, in a row with the GV Storms Grotto Lens Chest (-43.3,84,-46)"
+   },
+   "14928885472468269852": {
+    "region": "GV Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "y 84 in the F_02 grotto behind the event cover (FldObj_AirWall_HidingHoleCover, -45.3,101,-29) by the carpenters' tent, in a row with the GV Storms Grotto Lens Chest (-43.3,84,-46)"
+   },
+   "235030242296092194": {
+    "region": "GV Fortress Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "adult rocks around the GV Chest (-33.7,102.2,22.1, OoTR GV Fortress Side) west of the bridge"
+   },
+   "16329060730828157520": {
+    "region": "GV Fortress Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "adult rocks around the GV Chest (-33.7,102.2,22.1, OoTR GV Fortress Side) west of the bridge"
+   },
+   "13220487356418123141": {
+    "region": "GV Fortress Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "adult rocks around the GV Chest (-33.7,102.2,22.1, OoTR GV Fortress Side) west of the bridge"
+   },
+   "7623590182732686599": {
+    "region": "GV Fortress Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "adult rocks around the GV Chest (-33.7,102.2,22.1, OoTR GV Fortress Side) west of the bridge"
+   },
+   "6933130136085028789": {
+    "region": "GV Fortress Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "adult rocks around the GV Chest (-33.7,102.2,22.1, OoTR GV Fortress Side) west of the bridge"
+   },
+   "11101586527269648394": {
+    "region": "GV Fortress Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "adult rocks around the GV Chest (-33.7,102.2,22.1, OoTR GV Fortress Side) west of the bridge"
+   },
+   "1260877297084261540": {
+    "region": "GV Fortress Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "adult rocks around the GV Chest (-33.7,102.2,22.1, OoTR GV Fortress Side) west of the bridge"
+   },
+   "16340216739483509937": {
+    "region": "GV Fortress Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "adult rocks around the GV Chest (-33.7,102.2,22.1, OoTR GV Fortress Side) west of the bridge"
+   },
+   "437500486740655632": {
+    "region": "Gerudo Valley",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "adult rock east of the bridge (26.6,99.4,-19.3), Hyrule Field side"
+   },
+   "13616202327675692596": {
+    "region": "GV Fortress Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "by the carpenters' tent (-38,101,-22) and the storms-grotto cover, west of the bridge"
+   },
+   "2810966902921961370": {
+    "region": "GV Fortress Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "by the carpenters' tent (-38,101,-22) and the storms-grotto cover, west of the bridge"
+   },
+   "12925874919748100001": {
+    "region": "GV Fortress Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "by the carpenters' tent (-38,101,-22) and the storms-grotto cover, west of the bridge"
+   },
+   "5968807343188866308": {
+    "region": "GV Fortress Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "by the carpenters' tent (-38,101,-22) and the storms-grotto cover, west of the bridge"
+   },
+   "10113245881984180973": {
+    "region": "GV Fortress Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "by the carpenters' tent (-38,101,-22) and the storms-grotto cover, west of the bridge"
+   },
+   "8621559146002641352": {
+    "region": "GV Fortress Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "by the carpenters' tent (-38,101,-22) and the storms-grotto cover, west of the bridge"
+   },
+   "4664881360046400269": {
+    "region": "GV Fortress Side",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "west end of the bridge (bridge centred at x 0), fortress side"
+   },
+   "11999890871333516817": {
+    "region": "Gerudo Valley",
+    "rule": "True",
+    "confidence": "high",
+    "why": "east side by the log bridge (57.5,97.5,7.5) and the Hyrule Field arrival point (72.6,94.3,16.6)"
+   },
+   "6693656883402690485": {
+    "region": "Gerudo Valley",
+    "rule": "True",
+    "confidence": "high",
+    "why": "east side by the log bridge (57.5,97.5,7.5) and the Hyrule Field arrival point (72.6,94.3,16.6)"
+   },
+   "3887186300719322791": {
+    "region": "Gerudo Valley",
+    "rule": "True",
+    "confidence": "high",
+    "why": "east side by the log bridge (57.5,97.5,7.5) and the Hyrule Field arrival point (72.6,94.3,16.6)"
+   },
+   "11208975108919442439": {
+    "region": "Gerudo Valley",
+    "rule": "True",
+    "confidence": "high",
+    "why": "east side by the log bridge (57.5,97.5,7.5) and the Hyrule Field arrival point (72.6,94.3,16.6)"
+   },
+   "161402875664343852": {
+    "region": "Gerudo Valley",
+    "rule": "True",
+    "confidence": "high",
+    "why": "east side by the log bridge (57.5,97.5,7.5) and the Hyrule Field arrival point (72.6,94.3,16.6)"
+   },
+   "14087790011470090944": {
+    "region": "Gerudo Valley",
+    "rule": "True",
+    "confidence": "high",
+    "why": "east side by the log bridge (57.5,97.5,7.5) and the Hyrule Field arrival point (72.6,94.3,16.6)"
+   }
+  },
+  "pairs": [],
+  "absent": {
+   "GV Freestanding PoH Crate": "no crate in any Gerudo Valley file (the crate-ledge heart piece became an Obj_TBox_A_02 chest)",
+   "GV Crate Near Cow": "no crate in any Gerudo Valley file (the crate-ledge heart piece became an Obj_TBox_A_02 chest)",
+   "GV Storms Grotto Beehive": "the storms grotto holds two chests and four pots; no beehive in any GV file",
+   "GV Octorok Grotto Red Rupee": "the E_01 Octorok grotto (under the silver rock 11.5,90.4,36.5) holds flowing water, Octoroks and a chest (new location GV Octorok Grotto Chest); no placed rupee in any GV file",
+   "GV Octorok Grotto Blue Rupee 1": "the E_01 Octorok grotto (under the silver rock 11.5,90.4,36.5) holds flowing water, Octoroks and a chest (new location GV Octorok Grotto Chest); no placed rupee in any GV file",
+   "GV Octorok Grotto Blue Rupee 2": "the E_01 Octorok grotto (under the silver rock 11.5,90.4,36.5) holds flowing water, Octoroks and a chest (new location GV Octorok Grotto Chest); no placed rupee in any GV file",
+   "GV Octorok Grotto Blue Rupee 3": "the E_01 Octorok grotto (under the silver rock 11.5,90.4,36.5) holds flowing water, Octoroks and a chest (new location GV Octorok Grotto Chest); no placed rupee in any GV file",
+   "GV Octorok Grotto Green Rupee 1": "the E_01 Octorok grotto (under the silver rock 11.5,90.4,36.5) holds flowing water, Octoroks and a chest (new location GV Octorok Grotto Chest); no placed rupee in any GV file",
+   "GV Octorok Grotto Green Rupee 2": "the E_01 Octorok grotto (under the silver rock 11.5,90.4,36.5) holds flowing water, Octoroks and a chest (new location GV Octorok Grotto Chest); no placed rupee in any GV file",
+   "GV Octorok Grotto Green Rupee 3": "the E_01 Octorok grotto (under the silver rock 11.5,90.4,36.5) holds flowing water, Octoroks and a chest (new location GV Octorok Grotto Chest); no placed rupee in any GV file",
+   "GV Octorok Grotto Green Rupee 4": "the E_01 Octorok grotto (under the silver rock 11.5,90.4,36.5) holds flowing water, Octoroks and a chest (new location GV Octorok Grotto Chest); no placed rupee in any GV file"
+  },
+  "excluded": {
+   "15973093482153030029": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "8414723300021904225": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "7226792411253787347": "Obj_Gerudo_HangingSign_A_01.root.ainb drops on QuerySensorHitIsHitTgExtention AND QueryDamageCalculatorIsOnDamageType 16 (Hookshot) OR 6 (Arrow): the Bow knocks it down too. Child copy: only Hookshot or arrows trigger it (slingshot is type 14) and the child cannot reach GV Fortress Side (OoTR is_adult exits; the child file has FldObj_AirWall_Player at the bridge's west end (-11.5,100.3,9.2) and no fortress FADE). Logic already never reaches it (can_use(Hookshot)); drop it as a location.",
+   "239101719535991464": "Child copy beyond the child-only FldObj_AirWall_Player at (-11.46,100.26,9.23) (4.8 units, between the intact child bridge and the rock): a child cannot reach it, and OoTR's GV Fortress Side is adult-only, so logic already never reaches it. Drop it as a location."
+  }
+ },
+ "GerudoFortress": {
+  "objects": {
+   "2817669269036620933": {
+    "region": "GF Balcony",
+    "rule": "is_adult",
+    "confidence": "medium",
+    "why": "purple-rupee crate (OoT's GF Above Jail Crate holds 50 rupees) at y 136.5 above the prison Link is thrown in (Land_Gerudo_FortressOutdoorPrison_A_01, 2,122,-107)"
+   },
+   "2299167504535204510": {
+    "region": "Hideout Kitchen Hallway",
+    "rule": "Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or logic_gerudo_kitchen",
+    "confidence": "low",
+    "why": "two crates at the far end of the guarded y 117.5 hall (patrolling Npc_Gerudo_009 at 12,117.5,-71.9 and Npc_Gerudo_012), the room between the first carpenter's cell and the next ledge on the rescue route (OoT's kitchen hallway); OoTR's Near Kitchen Crate 1 rule (the guard) applied to both"
+   },
+   "4589862650167016326": {
+    "region": "Hideout Kitchen Hallway",
+    "rule": "Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot) or logic_gerudo_kitchen",
+    "confidence": "low",
+    "why": "two crates at the far end of the guarded y 117.5 hall (patrolling Npc_Gerudo_009 at 12,117.5,-71.9 and Npc_Gerudo_012), the room between the first carpenter's cell and the next ledge on the rescue route (OoT's kitchen hallway); OoTR's Near Kitchen Crate 1 rule (the guard) applied to both"
+   },
+   "12729353069388613701": {
+    "region": "Hideout 1 Torch Jail",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Npc_Hylia_016's thief room (Land_Gerudo_FortressRoom_A_04, gates 19.5,110,-85.3 / 16,110,-73.8), the ground-floor cell 20 units from the prison window: the first carpenter on the rescue route (calls for help from outside, map icon opens with Dm_Gerudo_0023) = OoT's 1-torch jail"
+   },
+   "5950791967684866655": {
+    "region": "Hideout 1 Torch Jail",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Npc_Hylia_016's thief room (Land_Gerudo_FortressRoom_A_04, gates 19.5,110,-85.3 / 16,110,-73.8), the ground-floor cell 20 units from the prison window: the first carpenter on the rescue route (calls for help from outside, map icon opens with Dm_Gerudo_0023) = OoT's 1-torch jail"
+   },
+   "14149922038181651872": {
+    "region": "Hideout 1 Torch Jail",
+    "rule": "'Hideout 1 Torch Jail Carpenter'",
+    "confidence": "medium",
+    "why": "Npc_Hylia_016's room; inside the carpenter's cell (on the carpenter's side of the chain-locked door, which opens with the key of that cell's thief), so the carpenter-freed event is required"
+   },
+   "4127942712380630686": {
+    "region": "Hideout 2 Torches Jail",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Npc_Hylia_013's thief room (Land_Gerudo_FortressRoom_A_01, lowest cell y 102.5, gates 24.5,102.5,-57.8 / -78.3), reached from the ground and from the vines below the roof cluster on the rescue route; 2 crates + a cell pot like OoT's 2-torch jail"
+   },
+   "8243865802736975992": {
+    "region": "Hideout 2 Torches Jail",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Npc_Hylia_013's thief room (Land_Gerudo_FortressRoom_A_01, lowest cell y 102.5, gates 24.5,102.5,-57.8 / -78.3), reached from the ground and from the vines below the roof cluster on the rescue route; 2 crates + a cell pot like OoT's 2-torch jail"
+   },
+   "17564413325240842430": {
+    "region": "Hideout 2 Torches Jail",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Npc_Hylia_013's thief room (Land_Gerudo_FortressRoom_A_01, lowest cell y 102.5, gates 24.5,102.5,-57.8 / -78.3), reached from the ground and from the vines below the roof cluster on the rescue route; 2 crates + a cell pot like OoT's 2-torch jail"
+   },
+   "14446042898084265136": {
+    "region": "Hideout 2 Torches Jail",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Npc_Hylia_013's thief room (Land_Gerudo_FortressRoom_A_01, lowest cell y 102.5, gates 24.5,102.5,-57.8 / -78.3), reached from the ground and from the vines below the roof cluster on the rescue route; 2 crates + a cell pot like OoT's 2-torch jail"
+   },
+   "10284629266025908616": {
+    "region": "Hideout 2 Torches Jail",
+    "rule": "'Hideout 2 Torches Jail Carpenter'",
+    "confidence": "medium",
+    "why": "Npc_Hylia_013's room; inside the carpenter's cell (on the carpenter's side of the chain-locked door, which opens with the key of that cell's thief), so the carpenter-freed event is required"
+   },
+   "12036531709858383178": {
+    "region": "Hideout 4 Torches Jail",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Npc_Hylia_015's thief room (Land_Gerudo_FortressRoom_A_03, y 119, gates 24.7,119,-32 / 39,119,-34.3), entered from the guarded ledge (Npc_Gerudo_012 at 10.6,119.3,-38.9) climbed from the ground: OoT's ground/roof-cluster jail"
+   },
+   "940439159177345831": {
+    "region": "Hideout 4 Torches Jail",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Npc_Hylia_015's thief room (Land_Gerudo_FortressRoom_A_03, y 119, gates 24.7,119,-32 / 39,119,-34.3), entered from the guarded ledge (Npc_Gerudo_012 at 10.6,119.3,-38.9) climbed from the ground: OoT's ground/roof-cluster jail"
+   },
+   "12014882968213567359": {
+    "region": "Hideout 4 Torches Jail",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Npc_Hylia_015's thief room (Land_Gerudo_FortressRoom_A_03, y 119, gates 24.7,119,-32 / 39,119,-34.3), entered from the guarded ledge (Npc_Gerudo_012 at 10.6,119.3,-38.9) climbed from the ground: OoT's ground/roof-cluster jail"
+   },
+   "6163979871466990965": {
+    "region": "Hideout 4 Torches Jail",
+    "rule": "'Hideout 4 Torches Jail Carpenter'",
+    "confidence": "medium",
+    "why": "Npc_Hylia_015's room; inside the carpenter's cell (on the carpenter's side of the chain-locked door, which opens with the key of that cell's thief), so the carpenter-freed event is required"
+   },
+   "16214070848493878572": {
+    "region": "Hideout 3 Torches Jail",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "dark room with a patrolling guard (Npc_Gerudo_016, IsInDarkArea) leading to Npc_Hylia_014's cell (Land_Gerudo_FortressRoom_A_02, y 120.5); entered by the door at 60,122.1,-74 just below the kitchen roof and GF GS Top Floor (55.3,131.9,-70.2): OoT's 3-torch jail via GF 3 Torches Jail Exterior, the strictest jail"
+   },
+   "2651615114908793933": {
+    "region": "Hideout 3 Torches Jail",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "dark room with a patrolling guard (Npc_Gerudo_016, IsInDarkArea) leading to Npc_Hylia_014's cell (Land_Gerudo_FortressRoom_A_02, y 120.5); entered by the door at 60,122.1,-74 just below the kitchen roof and GF GS Top Floor (55.3,131.9,-70.2): OoT's 3-torch jail via GF 3 Torches Jail Exterior, the strictest jail"
+   },
+   "2601738864413660498": {
+    "region": "Hideout 3 Torches Jail",
+    "rule": "'Hideout 3 Torches Jail Carpenter'",
+    "confidence": "medium",
+    "why": "Npc_Hylia_014's room; inside the carpenter's cell (on the carpenter's side of the chain-locked door, which opens with the key of that cell's thief), so the carpenter-freed event is required"
+   },
+   "2056417943849283718": {
+    "region": "Hideout Kitchen Pots",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "inside the kitchen (Land_Gerudo_FortressPotRoom_A_01: cauldrons, woks) beside its paired guards Npc_Gerudo_014/015"
+   },
+   "18403153827746969167": {
+    "region": "Hideout Kitchen Pots",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "inside the kitchen (Land_Gerudo_FortressPotRoom_A_01: cauldrons, woks) beside its paired guards Npc_Gerudo_014/015"
+   },
+   "7637566006997697590": {
+    "region": "Hideout Break Room",
+    "rule": "Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot)",
+    "confidence": "medium",
+    "why": "office room (Land_Gerudo_FortressOfficeRoom_A_01, 40,116.5,-104.5) with the paired seated guards Npc_Gerudo_017/018, reached by the corridor from the prison door: OoT's break room (2 pots + 2 crates); the objects lie past the guards"
+   },
+   "16326193461159913374": {
+    "region": "Hideout Break Room",
+    "rule": "Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot)",
+    "confidence": "medium",
+    "why": "office room (Land_Gerudo_FortressOfficeRoom_A_01, 40,116.5,-104.5) with the paired seated guards Npc_Gerudo_017/018, reached by the corridor from the prison door: OoT's break room (2 pots + 2 crates); the objects lie past the guards"
+   },
+   "1693186935826757463": {
+    "region": "Hideout Break Room",
+    "rule": "Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot)",
+    "confidence": "medium",
+    "why": "office room (Land_Gerudo_FortressOfficeRoom_A_01, 40,116.5,-104.5) with the paired seated guards Npc_Gerudo_017/018, reached by the corridor from the prison door: OoT's break room (2 pots + 2 crates); the objects lie past the guards"
+   },
+   "8713486340033920524": {
+    "region": "Hideout Break Room",
+    "rule": "Gerudo_Membership_Card or can_use(Bow) or can_use(Hookshot)",
+    "confidence": "medium",
+    "why": "office room (Land_Gerudo_FortressOfficeRoom_A_01, 40,116.5,-104.5) with the paired seated guards Npc_Gerudo_017/018, reached by the corridor from the prison door: OoT's break room (2 pots + 2 crates); the objects lie past the guards"
+   },
+   "11192137055889843513": {
+    "region": "GF Entrances Behind Crates",
+    "rule": "True",
+    "confidence": "high",
+    "why": "settled (collision, doors closed): the tent around the GF grotto hole (33.15,112.61,-67.8; HidingHole_Entry_01 #869618779242072342) is the south end of the y 112.6 entrance hall behind the yard door #13437584779945060224 (23.75,110,-61): with only that door open the yard reaches it by walking, with it closed not; no guard stands between the door and the tent. It is the remake's only GF grotto entrance, OoTR's GF Entrances Behind Crates (True from the yard; equal to Hideout Kitchen Hallway, also True from the yard, since hideout/grotto entrances are never shuffled in the remake)"
+   },
+   "9507282379367090849": {
+    "region": "GF Entrances Behind Crates",
+    "rule": "True",
+    "confidence": "high",
+    "why": "settled (collision, doors closed): the tent around the GF grotto hole (33.15,112.61,-67.8; HidingHole_Entry_01 #869618779242072342) is the south end of the y 112.6 entrance hall behind the yard door #13437584779945060224 (23.75,110,-61): with only that door open the yard reaches it by walking, with it closed not; no guard stands between the door and the tent. It is the remake's only GF grotto entrance, OoTR's GF Entrances Behind Crates (True from the yard; equal to Hideout Kitchen Hallway, also True from the yard, since hideout/grotto entrances are never shuffled in the remake)"
+   },
+   "16052743231004465758": {
+    "region": "GF Entrances Behind Crates",
+    "rule": "True",
+    "confidence": "high",
+    "why": "settled (collision, doors closed): the tent around the GF grotto hole (33.15,112.61,-67.8; HidingHole_Entry_01 #869618779242072342) is the south end of the y 112.6 entrance hall behind the yard door #13437584779945060224 (23.75,110,-61): with only that door open the yard reaches it by walking, with it closed not; no guard stands between the door and the tent. It is the remake's only GF grotto entrance, OoTR's GF Entrances Behind Crates (True from the yard; equal to Hideout Kitchen Hallway, also True from the yard, since hideout/grotto entrances are never shuffled in the remake)"
+   },
+   "12401477347800941236": {
+    "region": "GF Storms Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "settled: in the grotto room under the tent hole: the hole's landing #5394200527786978472 (33.15,89.5,-67.8) and the chest #16619432200060282313 / pots / flying pots (x 13-18, y 89.15) share one y 89.1 corridor (z -66..-68); exit HidingHole_Exit_01 #8902486123731021553. OoTR's GF Storms Grotto; its entrance rule (audit_overworld: is_adult and can_open_storm_grotto and can_break_crate) is stricter than the game (the remake's hole has no Song of Storms lid), so medium: at least as strict"
+   },
+   "13384456307225149229": {
+    "region": "GF Storms Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "settled: in the grotto room under the tent hole: the hole's landing #5394200527786978472 (33.15,89.5,-67.8) and the chest #16619432200060282313 / pots / flying pots (x 13-18, y 89.15) share one y 89.1 corridor (z -66..-68); exit HidingHole_Exit_01 #8902486123731021553. OoTR's GF Storms Grotto; its entrance rule (audit_overworld: is_adult and can_open_storm_grotto and can_break_crate) is stricter than the game (the remake's hole has no Song of Storms lid), so medium: at least as strict"
+   },
+   "10448629319757216336": {
+    "region": "GF Storms Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "settled: in the grotto room under the tent hole: the hole's landing #5394200527786978472 (33.15,89.5,-67.8) and the chest #16619432200060282313 / pots / flying pots (x 13-18, y 89.15) share one y 89.1 corridor (z -66..-68); exit HidingHole_Exit_01 #8902486123731021553. OoTR's GF Storms Grotto; its entrance rule (audit_overworld: is_adult and can_open_storm_grotto and can_break_crate) is stricter than the game (the remake's hole has no Song of Storms lid), so medium: at least as strict"
+   },
+   "1503765887478653725": {
+    "region": "GF Storms Grotto",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "settled: in the grotto room under the tent hole: the hole's landing #5394200527786978472 (33.15,89.5,-67.8) and the chest #16619432200060282313 / pots / flying pots (x 13-18, y 89.15) share one y 89.1 corridor (z -66..-68); exit HidingHole_Exit_01 #8902486123731021553. OoTR's GF Storms Grotto; its entrance rule (audit_overworld: is_adult and can_open_storm_grotto and can_break_crate) is stricter than the game (the remake's hole has no Song of Storms lid), so medium: at least as strict"
+   },
+   "6732953306673142040": {
+    "region": "Gerudo Fortress",
+    "rule": "can_use(Hookshot) or can_use(Bow)",
+    "confidence": "high",
+    "why": "Obj_Gerudo_HangingSign_A_01.root.ainb drops on QuerySensorHitIsHitTgExtention AND QueryDamageCalculatorIsOnDamageType 16 (Hookshot) OR 6 (Arrow): the Bow knocks it down too. Sign 7.5 units above the valley arrival point."
+   },
+   "8828718989919118860": {
+    "region": "Gerudo Fortress",
+    "rule": "can_use(Hookshot) or can_use(Bow)",
+    "confidence": "high",
+    "why": "Obj_Gerudo_HangingSign_A_01.root.ainb drops on QuerySensorHitIsHitTgExtention AND QueryDamageCalculatorIsOnDamageType 16 (Hookshot) OR 6 (Arrow): the Bow knocks it down too. Signs 12 units above the yard by the Training Ground entrance."
+   },
+   "8115852316838709817": {
+    "region": "Gerudo Fortress",
+    "rule": "can_use(Hookshot) or can_use(Bow)",
+    "confidence": "high",
+    "why": "Obj_Gerudo_HangingSign_A_01.root.ainb drops on QuerySensorHitIsHitTgExtention AND QueryDamageCalculatorIsOnDamageType 16 (Hookshot) OR 6 (Arrow): the Bow knocks it down too. Signs 12 units above the yard by the Training Ground entrance."
+   },
+   "15881581772429221877": {
+    "region": "Gerudo Fortress",
+    "rule": "Gerudo_Membership_Card and (can_use(Hookshot) or can_use(Bow))",
+    "confidence": "high",
+    "why": "Obj_Gerudo_HangingSign_A_01.root.ainb drops on QuerySensorHitIsHitTgExtention AND QueryDamageCalculatorIsOnDamageType 16 (Hookshot) OR 6 (Arrow): the Bow knocks it down too. Signs over the way to horseback archery past guard Npc_Gerudo_004 (card kept, as OoTR)."
+   },
+   "17724810702496123294": {
+    "region": "Gerudo Fortress",
+    "rule": "Gerudo_Membership_Card and (can_use(Hookshot) or can_use(Bow))",
+    "confidence": "high",
+    "why": "Obj_Gerudo_HangingSign_A_01.root.ainb drops on QuerySensorHitIsHitTgExtention AND QueryDamageCalculatorIsOnDamageType 16 (Hookshot) OR 6 (Arrow): the Bow knocks it down too. Signs over the way to horseback archery past guard Npc_Gerudo_004 (card kept, as OoTR)."
+   },
+   "2349512283536085768": {
+    "region": "Hideout 1 Torch Jail",
+    "rule": "can_use(Bow) or can_use(Hookshot)",
+    "confidence": "high",
+    "why": "Obj_Gerudo_CowBoneDecoration_A_01.root.ainb: Shake + OneShotDropDrop on QuerySensorHitIsHitTgExtention AND QueryDamageCalculatorIsOnDamageType 6 (Arrow) OR 16 (Hookshot): the Hookshot knocks it down too. Cow skulls above the thief-room gates."
+   },
+   "4634453312080240577": {
+    "region": "Hideout 1 Torch Jail",
+    "rule": "can_use(Bow) or can_use(Hookshot)",
+    "confidence": "high",
+    "why": "Obj_Gerudo_CowBoneDecoration_A_01.root.ainb: Shake + OneShotDropDrop on QuerySensorHitIsHitTgExtention AND QueryDamageCalculatorIsOnDamageType 6 (Arrow) OR 16 (Hookshot): the Hookshot knocks it down too. Cow skulls above the thief-room gates."
+   },
+   "7003610076311224619": {
+    "region": "Hideout 2 Torches Jail",
+    "rule": "can_use(Bow) or can_use(Hookshot)",
+    "confidence": "high",
+    "why": "Obj_Gerudo_CowBoneDecoration_A_01.root.ainb: Shake + OneShotDropDrop on QuerySensorHitIsHitTgExtention AND QueryDamageCalculatorIsOnDamageType 6 (Arrow) OR 16 (Hookshot): the Hookshot knocks it down too. Cow skulls above the thief-room gates."
+   },
+   "17587029482227951923": {
+    "region": "Hideout 2 Torches Jail",
+    "rule": "can_use(Bow) or can_use(Hookshot)",
+    "confidence": "high",
+    "why": "Obj_Gerudo_CowBoneDecoration_A_01.root.ainb: Shake + OneShotDropDrop on QuerySensorHitIsHitTgExtention AND QueryDamageCalculatorIsOnDamageType 6 (Arrow) OR 16 (Hookshot): the Hookshot knocks it down too. Cow skulls above the thief-room gates."
+   },
+   "17584816620127092697": {
+    "region": "Hideout 4 Torches Jail",
+    "rule": "can_use(Bow) or can_use(Hookshot)",
+    "confidence": "high",
+    "why": "Obj_Gerudo_CowBoneDecoration_A_01.root.ainb: Shake + OneShotDropDrop on QuerySensorHitIsHitTgExtention AND QueryDamageCalculatorIsOnDamageType 6 (Arrow) OR 16 (Hookshot): the Hookshot knocks it down too. Cow skulls above the thief-room gates."
+   },
+   "13893816253844391371": {
+    "region": "Hideout 4 Torches Jail",
+    "rule": "can_use(Bow) or can_use(Hookshot)",
+    "confidence": "high",
+    "why": "Obj_Gerudo_CowBoneDecoration_A_01.root.ainb: Shake + OneShotDropDrop on QuerySensorHitIsHitTgExtention AND QueryDamageCalculatorIsOnDamageType 6 (Arrow) OR 16 (Hookshot): the Hookshot knocks it down too. Cow skulls above the thief-room gates."
+   },
+   "4553986215469177690": {
+    "region": "Hideout 3 Torches Jail",
+    "rule": "can_use(Bow) or can_use(Hookshot)",
+    "confidence": "high",
+    "why": "Obj_Gerudo_CowBoneDecoration_A_01.root.ainb: Shake + OneShotDropDrop on QuerySensorHitIsHitTgExtention AND QueryDamageCalculatorIsOnDamageType 6 (Arrow) OR 16 (Hookshot): the Hookshot knocks it down too. Cow skulls above the thief-room gates."
+   },
+   "3151136260723459862": {
+    "region": "Hideout 3 Torches Jail",
+    "rule": "can_use(Bow) or can_use(Hookshot)",
+    "confidence": "high",
+    "why": "Obj_Gerudo_CowBoneDecoration_A_01.root.ainb: Shake + OneShotDropDrop on QuerySensorHitIsHitTgExtention AND QueryDamageCalculatorIsOnDamageType 6 (Arrow) OR 16 (Hookshot): the Hookshot knocks it down too. Cow skulls above the thief-room gates."
+   },
+   "8213765688950970468": {
+    "region": "Hideout Kitchen Hallway",
+    "rule": "True",
+    "confidence": "high",
+    "why": "settled (collision, doors closed): the yard door #13437584779945060224 (23.75,110,-61) opens on the y 112.6 entrance hall (Land_Gerudo_FortressEntrance); the hall runs north to the dark hall of guard Npc_Gerudo_013 and on, up a ramp, to the kitchen (Land_Gerudo_FortressPotRoom, y 115.6) that holds Hideout Kitchen Pot 1/2; one walkable room behind guards (OoTR's kitchen complex). This skull hangs 3 above the entrance-hall floor (y 112.6) by guard Npc_Gerudo_013; 63 floor spots see it within Hookshot range (from 1.9). Kitchen Hallway + (Bow or Hookshot) (the category rule; either item also passes the kitchen guards in OoTR) is exact"
+   },
+   "17006046039283617757": {
+    "region": "Hideout Kitchen Hallway",
+    "rule": "True",
+    "confidence": "high",
+    "why": "settled (collision, doors closed): the yard door #13437584779945060224 (23.75,110,-61) opens on the y 112.6 entrance hall (Land_Gerudo_FortressEntrance); the hall runs north to the dark hall of guard Npc_Gerudo_013 and on, up a ramp, to the kitchen (Land_Gerudo_FortressPotRoom, y 115.6) that holds Hideout Kitchen Pot 1/2; one walkable room behind guards (OoTR's kitchen complex). This skull hangs 4.5 above the kitchen floor (drop lands on y 115.6); 127 floor spots there see it within Hookshot range (3-10). Kitchen Hallway + (Bow or Hookshot) equals any kitchen part + (Bow or Hookshot) in OoTR (either item passes the kitchen guards from the hallway), so the category rule is exact"
+   },
+   "1645768353047080411": {
+    "region": "GF Balcony",
+    "rule": "can_use(Hookshot)",
+    "confidence": "high",
+    "why": "settled (collision): the cow skull hangs 7 above the floor (y 122) of the jail cell guards throw Link into (every guard's GotoPrison anchor #5915960154939125016 is in it; its door #13770423316756286493 is RestrictedDoor_GerudoFortress_00, locked from inside only while GerudoFortress_GoToPrison is set, the fortress isn't cleared and guard 017 stands: Logic/GerudoFortress_Level_Room_06_ade9 node 16; the guards jail only an adult owning the Hookshot and throw one without it out to Gerudo Valley, SageOfSpirit Event230). The cell's only opening is the window in its north wall (y 129-131, x -1.5..1.7, z -100). From GF Balcony (the GF Above Jail Crate roof, 7.1,136.5,-99) Link drops to the ledge at (2.5,128.8,-95) and through the window into the cell (walk/drop only). From the cell floor the skull is 6-9 away with a clear line: the Bow or the Hookshot (range 10) breaks it and the drop lands on the cell floor. Out: the door (open unless Link was jailed, and a jailed Link owns the Hookshot) or the Hookshot to the WireNet above the window (Land_Gerudo_FortressOutdoorPrison_A_01, y 132-132.8; the ivy tops out below the sill); the rule keeps the Hookshot, which GF Balcony needs in OoTR anyway (corrected, Placement: the door and the Hookshot target)"
+   }
+  },
+  "pairs": [
+   {
+    "ootr": [
+     "GF Above Jail Crate"
+    ],
+    "hashes": [
+     "2817669269036620933"
+    ],
+    "why": "the only crate above the jail, purple rupee like OoT's 50-rupee crate"
+   },
+   {
+    "ootr": [
+     "Hideout Near Kitchen Crate 1",
+     "Hideout Near Kitchen Crate 2"
+    ],
+    "hashes": [
+     "2299167504535204510",
+     "4589862650167016326"
+    ],
+    "why": "the two crates of the guarded hall; a group, so crate 1's guard rule covers both"
+   },
+   {
+    "ootr": [
+     "Hideout 1 Torch Jail Pot 1"
+    ],
+    "hashes": [
+     "5950791967684866655"
+    ],
+    "why": "the corridor pot of the 1-torch room (its other pot is inside the locked cell and stays a new location)"
+   },
+   {
+    "ootr": [
+     "Hideout 1 Torch Jail Crate"
+    ],
+    "hashes": [
+     "12729353069388613701"
+    ],
+    "why": "the only crate of the 1-torch room"
+   },
+   {
+    "ootr": [
+     "Hideout 2 Torch Jail Pot 1",
+     "Hideout 2 Torch Jail Pot 2"
+    ],
+    "hashes": [
+     "17564413325240842430",
+     "14446042898084265136"
+    ],
+    "why": "the two corridor pots of the 2-torch room (same region and rule)"
+   },
+   {
+    "ootr": [
+     "Hideout 2 Torch Jail Crate 1",
+     "Hideout 2 Torch Jail Crate 2"
+    ],
+    "hashes": [
+     "4127942712380630686",
+     "8243865802736975992"
+    ],
+    "why": "the two crates of the 2-torch room (same region and rule)"
+   },
+   {
+    "ootr": [
+     "Hideout 4 Torch Jail Pot 1",
+     "Hideout 4 Torch Jail Pot 2"
+    ],
+    "hashes": [
+     "12036531709858383178",
+     "940439159177345831"
+    ],
+    "why": "the two corridor pots of the 4-torch room"
+   },
+   {
+    "ootr": [
+     "Hideout 3 Torch Jail Crate"
+    ],
+    "hashes": [
+     "16214070848493878572"
+    ],
+    "why": "one of the two crates of the 3-torch rooms"
+   },
+   {
+    "ootr": [
+     "Hideout Kitchen Pot 1",
+     "Hideout Kitchen Pot 2"
+    ],
+    "hashes": [
+     "2056417943849283718",
+     "18403153827746969167"
+    ],
+    "why": "the kitchen's two pots"
+   },
+   {
+    "ootr": [
+     "Hideout Break Room Pot 1",
+     "Hideout Break Room Pot 2"
+    ],
+    "hashes": [
+     "7637566006997697590",
+     "16326193461159913374"
+    ],
+    "why": "the break room's two pots (same region and rule)"
+   },
+   {
+    "ootr": [
+     "Hideout Break Room Crate 1",
+     "Hideout Break Room Crate 2"
+    ],
+    "hashes": [
+     "1693186935826757463",
+     "8713486340033920524"
+    ],
+    "why": "the break room's two crates (same region and rule)"
+   }
+  ],
+  "absent": {
+   "GF Crate 1": "no crate in the fortress yard: all 13 GF crates are inside the hideout rooms, on the jail roof or in the grotto nook",
+   "GF Crate 2": "no crate in the fortress yard: all 13 GF crates are inside the hideout rooms, on the jail roof or in the grotto nook",
+   "GF Crate 3": "no crate in the fortress yard: all 13 GF crates are inside the hideout rooms, on the jail roof or in the grotto nook",
+   "GF Crate 4": "no crate in the fortress yard: all 13 GF crates are inside the hideout rooms, on the jail roof or in the grotto nook",
+   "GF Crate 5": "no crate in the fortress yard: all 13 GF crates are inside the hideout rooms, on the jail roof or in the grotto nook",
+   "GF Crate 6": "no crate in the fortress yard: all 13 GF crates are inside the hideout rooms, on the jail roof or in the grotto nook",
+   "GF HBA Crate 1": "no crate on the horseback-archery range (only the minigame pots Obj_Gerudo_HorsebackArcheryPot_A_01 and Land_ decor crates)",
+   "GF HBA Crate 2": "no crate on the horseback-archery range (only the minigame pots Obj_Gerudo_HorsebackArcheryPot_A_01 and Land_ decor crates)",
+   "GF HBA Crate 3": "no crate on the horseback-archery range (only the minigame pots Obj_Gerudo_HorsebackArcheryPot_A_01 and Land_ decor crates)",
+   "GF HBA Crate 4": "no crate on the horseback-archery range (only the minigame pots Obj_Gerudo_HorsebackArcheryPot_A_01 and Land_ decor crates)",
+   "GF HBA Crate 5": "no crate on the horseback-archery range (only the minigame pots Obj_Gerudo_HorsebackArcheryPot_A_01 and Land_ decor crates)",
+   "GF HBA Crate 6": "no crate on the horseback-archery range (only the minigame pots Obj_Gerudo_HorsebackArcheryPot_A_01 and Land_ decor crates)",
+   "GF HBA Crate 7": "no crate on the horseback-archery range (only the minigame pots Obj_Gerudo_HorsebackArcheryPot_A_01 and Land_ decor crates)",
+   "GF HBA Crate 8": "no crate on the horseback-archery range (only the minigame pots Obj_Gerudo_HorsebackArcheryPot_A_01 and Land_ decor crates)",
+   "GF HBA Crate 9": "no crate on the horseback-archery range (only the minigame pots Obj_Gerudo_HorsebackArcheryPot_A_01 and Land_ decor crates)",
+   "GF HBA Crate 10": "no crate on the horseback-archery range (only the minigame pots Obj_Gerudo_HorsebackArcheryPot_A_01 and Land_ decor crates)",
+   "GF HBA Crate 11": "no crate on the horseback-archery range (only the minigame pots Obj_Gerudo_HorsebackArcheryPot_A_01 and Land_ decor crates)",
+   "GF HBA Crate 12": "no crate on the horseback-archery range (only the minigame pots Obj_Gerudo_HorsebackArcheryPot_A_01 and Land_ decor crates)",
+   "GF HBA Crate 13": "no crate on the horseback-archery range (only the minigame pots Obj_Gerudo_HorsebackArcheryPot_A_01 and Land_ decor crates)",
+   "Hideout 1 Torch Jail Pot 2": "the 1-torch room has one corridor pot (paired) and one pot inside the locked cell (new location)",
+   "Hideout 1 Torch Jail Pot 3": "the 1-torch room has one corridor pot (paired) and one pot inside the locked cell (new location)",
+   "Hideout 2 Torch Jail Pot 3": "the 2-torch room has two corridor pots (paired)",
+   "Hideout 2 Torch Jail In Cell Pot 1": "the remake's 2-torch room has a single pot inside the carpenter's locked cell; OoTR's in-cell pots have rule True, so that pot is kept as a new location with the carpenter-freed rule instead",
+   "Hideout 2 Torch Jail In Cell Pot 2": "the remake's 2-torch room has a single pot inside the carpenter's locked cell; OoTR's in-cell pots have rule True, so that pot is kept as a new location with the carpenter-freed rule instead",
+   "Hideout 2 Torch Jail In Cell Pot 3": "the remake's 2-torch room has a single pot inside the carpenter's locked cell; OoTR's in-cell pots have rule True, so that pot is kept as a new location with the carpenter-freed rule instead",
+   "Hideout 2 Torch Jail In Cell Pot 4": "the remake's 2-torch room has a single pot inside the carpenter's locked cell; OoTR's in-cell pots have rule True, so that pot is kept as a new location with the carpenter-freed rule instead",
+   "Hideout Near Kitchen Crate 3": "the guarded hall has two crates (paired)",
+   "Hideout Near Kitchen Crate 4": "the guarded hall has two crates (paired)",
+   "Hideout Near Kitchen Crate 5": "the guarded hall has two crates (paired)",
+   "Hideout Break Room Hallway Crate 1": "no crate in the corridor from the prison door to the office (torches only); the office's two crates are paired",
+   "Hideout Break Room Hallway Crate 2": "no crate in the corridor from the prison door to the office (torches only); the office's two crates are paired"
+  },
+  "excluded": {
+   "2978924816881744144": "sign at (-60,103.8,52.1) in the level's far scenery: no NPC, anchor, StartPos or navigation point within 40 units, only FarModel cliffs around it; unreachable"
+  }
+ },
+ "HountedWasteland": {
+  "objects": {
+   "12727181966767362695": {
+    "region": "Wasteland Near Crate",
+    "rule": "True",
+    "confidence": "high",
+    "why": "the only crate in the Wasteland, 61 units from the Colossus exit (-117.4,111.5,-55.8) among Leevers; the quicksand river (86,100,34) and its hook target are at the Gerudo Fortress end (118,108,55)"
+   },
+   "17072091790119450948": {
+    "region": "Wasteland Near Crate",
+    "rule": "True",
+    "confidence": "high",
+    "why": "the only crate in the Wasteland, 61 units from the Colossus exit (-117.4,111.5,-55.8) among Leevers; the quicksand river (86,100,34) and its hook target are at the Gerudo Fortress end (118,108,55)"
+   }
+  },
+  "pairs": [
+   {
+    "ootr": [
+     "Wasteland Crate Near Colossus"
+    ],
+    "hashes": [
+     "12727181966767362695"
+    ],
+    "why": "the only crate, on the Colossus side (child copy 17072091790119450948 at the same spot)"
+   }
+  ],
+  "absent": {
+   "Wasteland Crate Before Quicksand": "the remake's Wasteland has one crate (near Colossus, paired); none by the quicksand river",
+   "Wasteland Crate After Quicksand 1": "the remake's Wasteland has one crate (near Colossus, paired); none by the quicksand river",
+   "Wasteland Crate After Quicksand 2": "the remake's Wasteland has one crate (near Colossus, paired); none by the quicksand river",
+   "Wasteland Crate After Quicksand 3": "the remake's Wasteland has one crate (near Colossus, paired); none by the quicksand river"
+  },
+  "excluded": {}
+ },
+ "DesertColossus": {
+  "objects": {
+   "11775214249229013361": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "16621402224890915556": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "18197400436072728215": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "957143433858074275": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "16117975978270223197": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "6134354417804165413": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "9646992800260506640": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "17423307513719482481": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "2998156606704182276": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "11865320499527977817": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "12633478034361641846": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "1906407567055825654": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "13006127181635492141": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "14895234221763732392": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "16204250776468318955": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "7399002334902415981": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "12872220029137614290": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "3362624739415251079": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "12018399683966511889": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "7366909239651648842": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "8379343935146367065": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "9733701917080790917": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "12621655956742113285": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "15810166810719622215": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "10246401569108236041": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "3909291346341412493": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "8070738855765516266": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "12674537464618869610": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "2080273229807412450": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "10883261377759686322": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "11280431184440749936": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "14661299287843217892": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "5436704423903961565": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "11471655649805969169": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "15277948837988855815": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "526234122872622164": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "11187157653318748904": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "18433219493470315107": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "5037686075994320632": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "4017099806481352112": {
+    "region": "Desert Colossus",
+    "rule": "can_bonk or can_blast_or_smash",
+    "confidence": "medium",
+    "why": "Fruit 6.5 units up a ground-level palm (bases y 96.5-100.4; the oasis palms at z -24..-28 are outside Obj_DesertColossus_CrackWall_A_01 (-48.9,100.3,-33.0), the fairy-fountain bomb wall; each palm's Reference links name its 1-2 fruits). Decoded here: the palm's AI (Obj_Gerudo_PalmTree_A_01 pack, Obj_PalmTree root, node 0 OneShotPalmTreeSendMessage) fires on QueryDamageCalculatorIsOnDamageAtrribute 46 (the roll), IsOnDamageType 17 (Hammer) and 7 (Bomb) and damage element 7; nothing for Arrow (6), SlingshotBullet (14), Boomerang (15) or Hookshot (16). PalmFruit.root.ainb only unbinds on that message (QueryPalmTreeReceiveMessage) and dies on landing contact (DeathReason 10 -> drop); the fruit has a LifeParam (MaxLife 1) but NO DamageParameters, so a direct Slingshot/Bow hit is not proven to knock it down. Proposed rule: the proven triggers 'can_bonk or can_blast_or_smash' (a net loosening with default deadly_bonks, where rolling is always possible). The old Slingshot/Bow branch is kept only as 'possible, unverified' (it would matter only with ohko bonks)."
+   },
+   "11645809275165132302": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ground level (y 95) near the Spirit Temple side, by the Guay spawn"
+   },
+   "9098182495644025696": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ground level (y 95) near the Spirit Temple side, by the Guay spawn"
+   },
+   "3996706393667627088": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ground level (y 95) near the Spirit Temple side, by the Guay spawn"
+   },
+   "17758323757509734186": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ground level (y 95) near the Spirit Temple side, by the Guay spawn"
+   },
+   "2257375462346864447": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ground level (y 95) near the Spirit Temple side, by the Guay spawn"
+   },
+   "17030155793043366699": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ground level (y 95) near the Spirit Temple side, by the Guay spawn"
+   },
+   "7189120978405291373": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ground level (y 95) near the Spirit Temple side, by the Guay spawn"
+   },
+   "3794108288976088388": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ground level (y 95) near the Spirit Temple side, by the Guay spawn"
+   },
+   "3891886645242384925": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ground level (y 95) near the Spirit Temple side, by the Guay spawn"
+   },
+   "1846829036121299313": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ground level (y 95) near the Spirit Temple side, by the Guay spawn"
+   },
+   "3421274023671655352": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ground level (y 95) near the Spirit Temple side, by the Guay spawn"
+   },
+   "18192086157806368451": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ground level (y 95) near the Spirit Temple side, by the Guay spawn"
+   },
+   "9203224707045543681": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "rupee-dropping rock cluster on a sand outcrop (y 105.8, 6 above the ground) with a navigation anchor on top (-104.6,106.6,50.1); copies for both ages"
+   },
+   "12414690125675705208": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "rupee-dropping rock cluster on a sand outcrop (y 105.8, 6 above the ground) with a navigation anchor on top (-104.6,106.6,50.1); copies for both ages"
+   },
+   "4108432179731449070": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "rupee-dropping rock cluster on a sand outcrop (y 105.8, 6 above the ground) with a navigation anchor on top (-104.6,106.6,50.1); copies for both ages"
+   },
+   "352697202323389437": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "rupee-dropping rock cluster on a sand outcrop (y 105.8, 6 above the ground) with a navigation anchor on top (-104.6,106.6,50.1); copies for both ages"
+   },
+   "17813319975073074839": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "rupee-dropping rock cluster on a sand outcrop (y 105.8, 6 above the ground) with a navigation anchor on top (-104.6,106.6,50.1); copies for both ages"
+   },
+   "15615314528351978483": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "rupee-dropping rock cluster on a sand outcrop (y 105.8, 6 above the ground) with a navigation anchor on top (-104.6,106.6,50.1); copies for both ages"
+   },
+   "14514022023330510682": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "rupee-dropping rock cluster on a sand outcrop (y 105.8, 6 above the ground) with a navigation anchor on top (-104.6,106.6,50.1); copies for both ages"
+   },
+   "3068749159060442969": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "rupee-dropping rock cluster on a sand outcrop (y 105.8, 6 above the ground) with a navigation anchor on top (-104.6,106.6,50.1); copies for both ages"
+   },
+   "17604351797179232812": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "rupee-dropping rock cluster on a sand outcrop (y 105.8, 6 above the ground) with a navigation anchor on top (-104.6,106.6,50.1); copies for both ages"
+   },
+   "18089518693918851857": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "rupee-dropping rock cluster on a sand outcrop (y 105.8, 6 above the ground) with a navigation anchor on top (-104.6,106.6,50.1); copies for both ages"
+   },
+   "2046759311695128505": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "rupee-dropping rock cluster on a sand outcrop (y 105.8, 6 above the ground) with a navigation anchor on top (-104.6,106.6,50.1); copies for both ages"
+   },
+   "16808421367294770117": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "rupee-dropping rock cluster on a sand outcrop (y 105.8, 6 above the ground) with a navigation anchor on top (-104.6,106.6,50.1); copies for both ages"
+   },
+   "6141646481426607938": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "rupee-dropping rock cluster on a sand outcrop (y 105.8, 6 above the ground) with a navigation anchor on top (-104.6,106.6,50.1); copies for both ages"
+   },
+   "2465861655194430312": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "rupee-dropping rock cluster on a sand outcrop (y 105.8, 6 above the ground) with a navigation anchor on top (-104.6,106.6,50.1); copies for both ages"
+   },
+   "8801611424590464863": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ground level (y 100.4) in the open desert"
+   },
+   "3151283906786313067": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "ground level (y 100.4) in the open desert"
+   }
+  },
+  "pairs": [],
+  "absent": {
+   "Colossus Grotto Beehive": "the remake's Colossus grotto (under the silver rock) holds the Beamos/Skullwalltula chest; no beehive in any Colossus file"
+  },
+  "excluded": {
+   "10395622039634609957": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)",
+   "12476546951712559797": "Obj_LiftRock_B_01 (silver rock): not a drop location (outside the drops shuffle; permanent flag, no Drop__DropActor, Silver Gauntlets cover)"
+  }
+ }
+}

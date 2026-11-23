@@ -1,0 +1,145 @@
+{
+  "_about": "Shops, scrubs, merchants (tools/rando/parity/shops.py; and data/ootr_match.json 'evidence'). Rules where the remake differs from OoT, whatever the settings: the HF grotto scrub sells only to a child (its Secret flow gives an adult talk only), the Market Bombchu Shop's keeper appears only after the Goron Ruby stage (Presence Get_StoneOfFire_IsCompleted_Exp), the Wasteland carpet salesman sells only as an adult (the child file's Npc_Hylia_044_Child has no sale). Scrubs: the 24 OoTR scrubs the remake doesn't have are removed (SFM, GC, DMC hammer, ZR, LH, GV and Colossus grottos; Dodongo's Cavern lobby and bomb-bag room; Ganon's Castle); the Dodongo's Cavern side-room scrub stands behind a breakable WallCrack (no bomb-flower route assumed), the Jabu-Jabu scrub at water level (diving or Iron Boots assumed for both ages); the remake's two dungeon scrubs without an OoT twin are new locations (Bottom of the Well room 1: the region behind the fake walls, the stricter of the two room-1 regions; Shadow Temple room 9: the huge-pit room, past its moving platforms and guillotines). Potion shops: both potion keepers refuse to sell Blue Fire until the player has had it once (DisplayShop Outofstock_SelectBottle_BlueFire: Event490 Shop_SelectItemName == Item_Bottle_BlueFire, Event108 IsGet.Item_Bottle_BlueFire, else Event492-496 the out-of-stock talk while Market_ or KakarikoVillage_Hylia_020_Shop_Talking), so the two vanilla Blue Fire slots (Market Potion Shop Item 2, Kak Potion Shop Item 5) need OoTR's 'Blue Fire' (scooped in the Ice Cavern or Ganon's Castle) before their Buy Blue Fire counts; with remake_split_potion_shops no other potion slot takes Buy Blue Fire.",
+  "regions": {
+    "HF Inside Fence Grotto": {
+      "locations": {
+        "HF Deku Scrub Grotto": "is_child and can_stun_deku"
+      }
+    },
+    "Market Bombchu Shop": {
+      "locations": {
+        "Market Bombchu Shop Item 1": "'Defeat King Dodongo'",
+        "Market Bombchu Shop Item 2": "'Defeat King Dodongo'",
+        "Market Bombchu Shop Item 3": "'Defeat King Dodongo'",
+        "Market Bombchu Shop Item 4": "'Defeat King Dodongo'",
+        "Market Bombchu Shop Item 5": "'Defeat King Dodongo'",
+        "Market Bombchu Shop Item 6": "'Defeat King Dodongo'",
+        "Market Bombchu Shop Item 7": "'Defeat King Dodongo'",
+        "Market Bombchu Shop Item 8": "'Defeat King Dodongo'"
+      }
+    },
+    "Haunted Wasteland": {
+      "locations": {
+        "Wasteland Bombchu Salesman": "is_adult and Progressive_Wallet and can_jumpslash and (shuffle_expensive_merchants or not free_bombchu_drops or has_bombchus)"
+      }
+    },
+    "SFM Storms Grotto": {
+      "locations": {
+        "SFM Deku Scrub Grotto Front": null,
+        "SFM Deku Scrub Grotto Rear": null
+      }
+    },
+    "GC Grotto": {
+      "locations": {
+        "GC Deku Scrub Grotto Left": null,
+        "GC Deku Scrub Grotto Center": null,
+        "GC Deku Scrub Grotto Right": null
+      }
+    },
+    "DMC Hammer Grotto": {
+      "locations": {
+        "DMC Deku Scrub Grotto Left": null,
+        "DMC Deku Scrub Grotto Center": null,
+        "DMC Deku Scrub Grotto Right": null
+      }
+    },
+    "ZR Storms Grotto": {
+      "locations": {
+        "ZR Deku Scrub Grotto Front": null,
+        "ZR Deku Scrub Grotto Rear": null
+      }
+    },
+    "LH Grotto": {
+      "locations": {
+        "LH Deku Scrub Grotto Left": null,
+        "LH Deku Scrub Grotto Center": null,
+        "LH Deku Scrub Grotto Right": null
+      }
+    },
+    "GV Storms Grotto": {
+      "locations": {
+        "GV Deku Scrub Grotto Front": null,
+        "GV Deku Scrub Grotto Rear": null
+      }
+    },
+    "Colossus Grotto": {
+      "locations": {
+        "Colossus Deku Scrub Grotto Front": null,
+        "Colossus Deku Scrub Grotto Rear": null
+      }
+    },
+    "Dodongos Cavern Lobby": {
+      "locations": {
+        "Dodongos Cavern Deku Scrub Lobby": null
+      }
+    },
+    "Dodongos Cavern Climb": {
+      "locations": {
+        "Dodongos Cavern Deku Scrub Near Bomb Bag Left": null,
+        "Dodongos Cavern Deku Scrub Near Bomb Bag Right": null
+      }
+    },
+    "Ganons Castle Deku Scrubs": {
+      "locations": {
+        "Ganons Castle Deku Scrub Left": null,
+        "Ganons Castle Deku Scrub Center-Left": null,
+        "Ganons Castle Deku Scrub Center-Right": null,
+        "Ganons Castle Deku Scrub Right": null
+      }
+    },
+    "Dodongos Cavern Torch Room": {
+      "locations": {
+        "Dodongos Cavern Deku Scrub Side Room Near Dodongos": "can_blast_or_smash"
+      }
+    },
+    "Jabu Jabus Belly Main": {
+      "locations": {
+        "Jabu Jabus Belly Deku Scrub": "can_stun_deku and (can_dive or can_use(Iron_Boots))"
+      }
+    },
+    "Bottom of the Well Behind Fake Walls": {
+      "locations": {
+        "Bottom of the Well Deku Scrub": "can_stun_deku"
+      }
+    },
+    "Shadow Temple Huge Pit": {
+      "locations": {
+        "Shadow Temple Deku Scrub": "can_stun_deku"
+      }
+    },
+    "Market Potion Shop": {
+      "locations": {
+        "Market Potion Shop Item 2": "'Blue Fire'"
+      }
+    },
+    "Kak Potion Shop Front": {
+      "locations": {
+        "Kak Potion Shop Item 5": "is_adult and 'Blue Fire'"
+      }
+    }
+  },
+  "new_locations": {
+    "Bottom of the Well Deku Scrub": {
+      "type": "Scrub",
+      "vanilla_item": "Buy Green Potion",
+      "filter_tags": [
+        "Bottom of the Well",
+        "Vanilla Dungeons",
+        "Deku Scrubs"
+      ],
+      "scene": 8,
+      "default": 58
+    },
+    "Shadow Temple Deku Scrub": {
+      "type": "Scrub",
+      "vanilla_item": "Buy Green Potion",
+      "filter_tags": [
+        "Shadow Temple",
+        "Vanilla Dungeons",
+        "Deku Scrubs"
+      ],
+      "scene": 7,
+      "default": 58
+    }
+  }
+}

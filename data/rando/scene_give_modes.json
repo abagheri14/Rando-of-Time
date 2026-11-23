@@ -1,0 +1,1181 @@
+{
+ "_about": "Which scene reward locations (NPC gifts, songs, cutscenes) can give a progressive item, and how.",
+ "locations": {
+  "event/Animal_Cow/Item_Bottle_Milk": {
+   "progressive": true,
+   "steps": {
+    "Animal_Cow.bfevfl.zs:Event114": "inplace",
+    "Animal_Cow.bfevfl.zs:Event4": "inplace",
+    "Animal_Cow.bfevfl.zs:Event74": "inplace"
+   }
+  },
+  "event/Dm_Awake_Fire_Get/Item_Medal_Fire": {
+   "progressive": true,
+   "steps": {
+    "Dm_Awake_Fire_Get.110.bfevfl.zs:Event13": "host",
+    "Dm_Awake_Fire_Get.bfevfl.zs:Event13": "host"
+   }
+  },
+  "event/Dm_Awake_Forest_Get/Item_Medal_Forest": {
+   "progressive": true,
+   "steps": {
+    "Dm_Awake_Forest_Get.110.bfevfl.zs:Event13": "host",
+    "Dm_Awake_Forest_Get.bfevfl.zs:Event13": "host"
+   }
+  },
+  "event/Dm_Awake_Shadow_Get/Item_Medal_Shadow": {
+   "progressive": true,
+   "steps": {
+    "Dm_Awake_Shadow_Get.110.bfevfl.zs:Event3": "host",
+    "Dm_Awake_Shadow_Get.bfevfl.zs:Event3": "host"
+   }
+  },
+  "event/Dm_Awake_Spirit_Get/Item_Medal_Spirit": {
+   "progressive": true,
+   "steps": {
+    "Dm_Awake_Spirit_Get.110.bfevfl.zs:Event14": "host",
+    "Dm_Awake_Spirit_Get.bfevfl.zs:Event14": "host"
+   }
+  },
+  "event/Dm_Awake_Water_Get/Item_Medal_Water": {
+   "progressive": true,
+   "steps": {
+    "Dm_Awake_Water_Get.110.bfevfl.zs:Event13": "host",
+    "Dm_Awake_Water_Get.bfevfl.zs:Event13": "host"
+   }
+  },
+  "event/Dm_DeathMtTrail_0025/Item_Stone_Fire": {
+   "progressive": true,
+   "steps": {
+    "Dm_DeathMtTrail_0025.bfevfl.zs:Event26": "host"
+   }
+  },
+  "event/Dm_DeathMtTrail_0050/Item_ClaimCheck": {
+   "progressive": true,
+   "steps": {
+    "Dm_DeathMtTrail_0050.bfevfl.zs:Event21": "inplace"
+   }
+  },
+  "event/Dm_DeathMtTrail_0050/Item_EyeDrop": {
+   "progressive": true,
+   "steps": {
+    "Dm_DeathMtTrail_0050.bfevfl.zs:Event58": "inplace"
+   }
+  },
+  "event/Dm_FairyFountain_Courage/Item_FairyBless_DefenseDouble": {
+   "progressive": true,
+   "steps": {
+    "Dm_FairyFountain_Courage.bfevfl.zs:Event144": "inplace"
+   }
+  },
+  "event/Dm_FairyFountain_Din/Item_DinFire": {
+   "progressive": true,
+   "steps": {
+    "Dm_FairyFountain_Din.bfevfl.zs:Event212": "inplace"
+   }
+  },
+  "event/Dm_FairyFountain_Frore/Item_FaroreWind": {
+   "progressive": true,
+   "steps": {
+    "Dm_FairyFountain_Frore.bfevfl.zs:Event174": "inplace"
+   }
+  },
+  "event/Dm_FairyFountain_Nayru/Item_NayruLove": {
+   "progressive": true,
+   "steps": {
+    "Dm_FairyFountain_Nayru.bfevfl.zs:Event163": "inplace"
+   }
+  },
+  "event/Dm_FairyFountain_Power/Item_FairyBless_MP": {
+   "progressive": true,
+   "steps": {
+    "Dm_FairyFountain_Power.bfevfl.zs:Event141": "inplace"
+   }
+  },
+  "event/Dm_FairyFountain_Wisdom/Item_FairyBless_MPDouble": {
+   "progressive": true,
+   "steps": {
+    "Dm_FairyFountain_Wisdom.bfevfl.zs:Event144": "inplace"
+   }
+  },
+  "event/Dm_FinalBattle_0010/Weapon_Sword_Master": {
+   "progressive": true,
+   "steps": {
+    "Dm_FinalBattle_0010.bfevfl.zs:Event173": "inplace"
+   }
+  },
+  "event/Dm_Gerudo_0025/Item_Token_Gerudo": {
+   "progressive": true,
+   "steps": {
+    "Dm_Gerudo_0025.bfevfl.zs:Event294": "host"
+   }
+  },
+  "event/Dm_Goron_0030/Item_Gauntlet_Goron": {
+   "progressive": true,
+   "steps": {
+    "Dm_Goron_0030.bfevfl.zs:Event127": "host"
+   }
+  },
+  "event/Dm_HrlCastle_0020/Item_AlarmCucco": {
+   "progressive": true,
+   "steps": {
+    "Dm_HrlCastle_0020.110.bfevfl.zs:Event69": "inplace",
+    "Dm_HrlCastle_0020.bfevfl.zs:Event69": "inplace"
+   }
+  },
+  "event/Dm_HrlCastle_0050/Item_ZeldaLetter": {
+   "progressive": true,
+   "steps": {
+    "Dm_HrlCastle_0050.bfevfl.zs:Event59": "host"
+   }
+  },
+  "event/Dm_InsideJabu_Jabu_0030/Item_Stone_Water": {
+   "progressive": true,
+   "steps": {
+    "Dm_InsideJabu_Jabu_0030.110.bfevfl.zs:Event181": "host",
+    "Dm_InsideJabu_Jabu_0030.bfevfl.zs:Event181": "host"
+   }
+  },
+  "event/Dm_Kokiri_0130/Item_Stone_Forest": {
+   "progressive": true,
+   "steps": {
+    "Dm_Kokiri_0130.bfevfl.zs:Event22": "host"
+   }
+  },
+  "event/Dm_Kokiri_0155/Item_Ocarina_Fairy": {
+   "progressive": true,
+   "steps": {
+    "Dm_Kokiri_0155.bfevfl.zs:Event68": "inplace",
+    "Dm_Kokiri_0155.bfevfl.zs:Event77": "inplace"
+   }
+  },
+  "event/Dm_LostWood_0040/Item_BulletBag_Large": {
+   "progressive": true,
+   "steps": {
+    "Dm_LostWood_0040.bfevfl.zs:Event17": "inplace"
+   }
+  },
+  "event/Dm_LostWood_0040/Item_BulletBag_Medium": {
+   "progressive": true,
+   "steps": {
+    "Dm_LostWood_0040.bfevfl.zs:Event30": "inplace"
+   }
+  },
+  "event/Dm_LostWood_0040/TBox_Rupee_Green": {
+   "progressive": true,
+   "steps": {
+    "Dm_LostWood_0040.bfevfl.zs:Event37": "inplace"
+   }
+  },
+  "event/Dm_MelodyGet_Epona/Item_Melody_EponaSong": {
+   "progressive": true,
+   "steps": {
+    "Dm_MelodyGet_Epona.bfevfl.zs:Event11": "inplace"
+   }
+  },
+  "event/Dm_MelodyGet_Fire/Item_Melody_FireBolero": {
+   "progressive": true,
+   "steps": {
+    "Dm_MelodyGet_Fire.bfevfl.zs:Event192": "host"
+   }
+  },
+  "event/Dm_MelodyGet_Forest/Item_Melody_ForestMinuet": {
+   "progressive": true,
+   "steps": {
+    "Dm_MelodyGet_Forest.bfevfl.zs:Event22": "inplace"
+   }
+  },
+  "event/Dm_MelodyGet_Saria/Item_Melody_SariaSong": {
+   "progressive": true,
+   "steps": {
+    "Dm_MelodyGet_Saria.bfevfl.zs:Event109": "host"
+   }
+  },
+  "event/Dm_MelodyGet_Shadow/Item_Melody_ShadowNocturne": {
+   "progressive": true,
+   "steps": {
+    "Dm_MelodyGet_Shadow.bfevfl.zs:Event21": "inplace"
+   }
+  },
+  "event/Dm_MelodyGet_Shine/Item_Melody_LightPrelude": {
+   "progressive": true,
+   "steps": {
+    "Dm_MelodyGet_Shine.bfevfl.zs:Event53": "host"
+   }
+  },
+  "event/Dm_MelodyGet_Spilit/Item_Melody_SpiritRequiem": {
+   "progressive": true,
+   "steps": {
+    "Dm_MelodyGet_Spilit.bfevfl.zs:Event17": "host"
+   }
+  },
+  "event/Dm_MelodyGet_Storm/Item_Melody_StormSong": {
+   "progressive": true,
+   "steps": {
+    "Dm_MelodyGet_Storm.bfevfl.zs:Event29": "host"
+   }
+  },
+  "event/Dm_MelodyGet_Sun_03/Item_Melody_SunSong": {
+   "progressive": true,
+   "steps": {
+    "Dm_MelodyGet_Sun_03.bfevfl.zs:Event34": "host"
+   }
+  },
+  "event/Dm_MelodyGet_Time/Item_Melody_TimeSong": {
+   "progressive": true,
+   "steps": {
+    "Dm_MelodyGet_Time.bfevfl.zs:Event4": "inplace"
+   }
+  },
+  "event/Dm_MelodyGet_Time/Item_Ocarina_Time": {
+   "progressive": true,
+   "steps": {
+    "Dm_MelodyGet_Time.bfevfl.zs:Event229": "inplace",
+    "Dm_MelodyGet_Time.bfevfl.zs:Event70": "inplace"
+   }
+  },
+  "event/Dm_MelodyGet_Water/Item_Melody_WaterSerenade": {
+   "progressive": true,
+   "steps": {
+    "Dm_MelodyGet_Water.bfevfl.zs:Event29": "inplace"
+   }
+  },
+  "event/Dm_MelodyGet_Zelda/Item_Melody_ZeldaLullaby": {
+   "progressive": true,
+   "steps": {
+    "Dm_MelodyGet_Zelda.bfevfl.zs:Event111": "host"
+   }
+  },
+  "event/Dm_SY_Ocarina/Item_Melody_EponaSong": {
+   "progressive": true,
+   "steps": {
+    "Dm_SY_Ocarina.bfevfl.zs:Event60": "inplace"
+   }
+  },
+  "event/Dm_SY_Ocarina/Item_Melody_FireBolero": {
+   "progressive": true,
+   "steps": {
+    "Dm_SY_Ocarina.bfevfl.zs:Event67": "inplace"
+   }
+  },
+  "event/Dm_SY_Ocarina/Item_Melody_ForestMinuet": {
+   "progressive": true,
+   "steps": {
+    "Dm_SY_Ocarina.bfevfl.zs:Event65": "inplace"
+   }
+  },
+  "event/Dm_SY_Ocarina/Item_Melody_LightPrelude": {
+   "progressive": true,
+   "steps": {
+    "Dm_SY_Ocarina.bfevfl.zs:Event71": "inplace"
+   }
+  },
+  "event/Dm_SY_Ocarina/Item_Melody_SariaSong": {
+   "progressive": true,
+   "steps": {
+    "Dm_SY_Ocarina.bfevfl.zs:Event61": "inplace"
+   }
+  },
+  "event/Dm_SY_Ocarina/Item_Melody_ScarecrowSong": {
+   "progressive": true,
+   "steps": {
+    "Dm_SY_Ocarina.bfevfl.zs:Event81": "inplace"
+   }
+  },
+  "event/Dm_SY_Ocarina/Item_Melody_ShadowNocturne": {
+   "progressive": true,
+   "steps": {
+    "Dm_SY_Ocarina.bfevfl.zs:Event70": "inplace"
+   }
+  },
+  "event/Dm_SY_Ocarina/Item_Melody_SpiritRequiem": {
+   "progressive": true,
+   "steps": {
+    "Dm_SY_Ocarina.bfevfl.zs:Event69": "inplace"
+   }
+  },
+  "event/Dm_SY_Ocarina/Item_Melody_StormSong": {
+   "progressive": true,
+   "steps": {
+    "Dm_SY_Ocarina.bfevfl.zs:Event64": "inplace"
+   }
+  },
+  "event/Dm_SY_Ocarina/Item_Melody_SunSong": {
+   "progressive": true,
+   "steps": {
+    "Dm_SY_Ocarina.bfevfl.zs:Event62": "inplace"
+   }
+  },
+  "event/Dm_SY_Ocarina/Item_Melody_TimeSong": {
+   "progressive": true,
+   "steps": {
+    "Dm_SY_Ocarina.bfevfl.zs:Event63": "inplace"
+   }
+  },
+  "event/Dm_SY_Ocarina/Item_Melody_WaterSerenade": {
+   "progressive": true,
+   "steps": {
+    "Dm_SY_Ocarina.bfevfl.zs:Event68": "inplace"
+   }
+  },
+  "event/Dm_SY_Ocarina/Item_Melody_ZeldaLullaby": {
+   "progressive": true,
+   "steps": {
+    "Dm_SY_Ocarina.bfevfl.zs:Event59": "inplace"
+   }
+  },
+  "event/Dm_SageRoom_0005/Item_Medal_Light": {
+   "progressive": true,
+   "steps": {
+    "Dm_SageRoom_0005.bfevfl.zs:Event48": "host"
+   }
+  },
+  "event/Dm_TimeTemple_0030/Weapon_Sword_Master": {
+   "progressive": true,
+   "steps": {
+    "Dm_TimeTemple_0030.bfevfl.zs:Event117": "host"
+   }
+  },
+  "event/Dm_TimeTemple_0130/Item_Arrow_Light": {
+   "progressive": true,
+   "steps": {
+    "Dm_TimeTemple_0130.bfevfl.zs:Event85": "host"
+   }
+  },
+  "event/Dm_ZoraFountain_0030/Item_Stone_Water": {
+   "progressive": true,
+   "steps": {
+    "Dm_ZoraFountain_0030.bfevfl.zs:Event3": "host"
+   }
+  },
+  "event/DoorOfTime/Weapon_Sword_Master": {
+   "progressive": true,
+   "steps": {
+    "DoorOfTime.bfevfl.zs:Event115": "inplace"
+   }
+  },
+  "event/Enemy_Scrub_Business_Common/Item_Bottle": {
+   "progressive": true,
+   "steps": {
+    "Enemy_Scrub_Business_Common.bfevfl.zs:Event5": "inplace"
+   }
+  },
+  "event/Enemy_Scrub_Business_Common/Item_NutBag_Large": {
+   "progressive": true,
+   "steps": {
+    "Enemy_Scrub_Business_Common.bfevfl.zs:Event318": "inplace"
+   }
+  },
+  "event/Enemy_Scrub_Business_Common/Item_NutBag_Medium": {
+   "progressive": true,
+   "steps": {
+    "Enemy_Scrub_Business_Common.bfevfl.zs:Event326": "inplace"
+   }
+  },
+  "event/Enemy_Scrub_Business_Common/Item_StickBag_Large": {
+   "progressive": true,
+   "steps": {
+    "Enemy_Scrub_Business_Common.bfevfl.zs:Event317": "inplace"
+   }
+  },
+  "event/Enemy_Scrub_Business_Common/Item_StickBag_Medium": {
+   "progressive": true,
+   "steps": {
+    "Enemy_Scrub_Business_Common.bfevfl.zs:Event322": "inplace",
+    "Enemy_Scrub_Business_Common.bfevfl.zs:Event555": "inplace"
+   }
+  },
+  "event/Enemy_Scrub_Business_Common/Obj_Heart_Piece": {
+   "progressive": true,
+   "steps": {
+    "Enemy_Scrub_Business_Common.bfevfl.zs:Event293": "inplace",
+    "Enemy_Scrub_Business_Common.bfevfl.zs:Event645": "inplace"
+   }
+  },
+  "event/Enemy_Scrub_Business_Dream/Item_Arrow_Fire": {
+   "progressive": true,
+   "steps": {
+    "Enemy_Scrub_Business_Dream.bfevfl.zs:Event48": "inplace"
+   }
+  },
+  "event/Enemy_Scrub_Business_Dream/Item_Arrow_Ice": {
+   "progressive": true,
+   "steps": {
+    "Enemy_Scrub_Business_Dream.bfevfl.zs:Event51": "inplace"
+   }
+  },
+  "event/Enemy_Scrub_Business_Dream/Item_Bottle": {
+   "progressive": true,
+   "steps": {
+    "Enemy_Scrub_Business_Dream.bfevfl.zs:Event78": "inplace"
+   }
+  },
+  "event/Enemy_Scrub_Business_Dream/Item_DinFire": {
+   "progressive": true,
+   "steps": {
+    "Enemy_Scrub_Business_Dream.bfevfl.zs:Event52": "inplace"
+   }
+  },
+  "event/Enemy_Scrub_Business_Dream/Item_GlassTruth": {
+   "progressive": true,
+   "steps": {
+    "Enemy_Scrub_Business_Dream.bfevfl.zs:Event54": "inplace"
+   }
+  },
+  "event/Enemy_Scrub_Business_Dream/Item_HeavyBoot": {
+   "progressive": true,
+   "steps": {
+    "Enemy_Scrub_Business_Dream.bfevfl.zs:Event69": "inplace"
+   }
+  },
+  "event/Enemy_Scrub_Business_Dream/Item_HoverBoot": {
+   "progressive": true,
+   "steps": {
+    "Enemy_Scrub_Business_Dream.bfevfl.zs:Event63": "inplace"
+   }
+  },
+  "event/Enemy_Scrub_Business_Dream/Item_Longshot": {
+   "progressive": true,
+   "steps": {
+    "Enemy_Scrub_Business_Dream.bfevfl.zs:Event37": "inplace"
+   }
+  },
+  "event/Enemy_Scrub_Business_Dream/Item_NayruLove": {
+   "progressive": true,
+   "steps": {
+    "Enemy_Scrub_Business_Dream.bfevfl.zs:Event61": "inplace"
+   }
+  },
+  "event/Enemy_Scrub_Business_Dream/Item_Sword_Biggoron": {
+   "progressive": true,
+   "steps": {
+    "Enemy_Scrub_Business_Dream.bfevfl.zs:Event46": "inplace"
+   }
+  },
+  "event/Enemy_Scrub_Business_Dream/Shop_Sword_Giant": {
+   "progressive": true,
+   "steps": {
+    "Enemy_Scrub_Business_Dream.bfevfl.zs:Event45": "inplace"
+   }
+  },
+  "event/Enemy_Scrub_Business_Seed/Item_ScrubBusinessSeed": {
+   "progressive": true,
+   "steps": {
+    "Enemy_Scrub_Business_Seed.bfevfl.zs:Event130": "inplace",
+    "Enemy_Scrub_Business_Seed.bfevfl.zs:Event135": "inplace",
+    "Enemy_Scrub_Business_Seed.bfevfl.zs:Event9": "inplace"
+   }
+  },
+  "event/Field_PlantMagicBean/Item_MagicBean": {
+   "progressive": true,
+   "steps": {
+    "Field_PlantMagicBean.bfevfl.zs:Event15": "inplace",
+    "Field_PlantMagicBean.bfevfl.zs:Event73": "inplace"
+   }
+  },
+  "event/GatheringTokenGold/Item_AgonyStone": {
+   "progressive": false,
+   "steps": {
+    "GatheringTokenGold.bfevfl.zs:Event75": null
+   }
+  },
+  "event/GatheringTokenGold/Item_BombchuBundle_Large": {
+   "progressive": false,
+   "steps": {
+    "GatheringTokenGold.bfevfl.zs:Event200": null
+   }
+  },
+  "event/GatheringTokenGold/Item_Wallet_Large": {
+   "progressive": false,
+   "steps": {
+    "GatheringTokenGold.bfevfl.zs:Event194": null
+   }
+  },
+  "event/GatheringTokenGold/Item_Wallet_Medium": {
+   "progressive": false,
+   "steps": {
+    "GatheringTokenGold.bfevfl.zs:Event398": null
+   }
+  },
+  "event/GatheringTokenGold/Obj_Heart_Piece": {
+   "progressive": false,
+   "steps": {
+    "GatheringTokenGold.bfevfl.zs:Event219": null
+   }
+  },
+  "event/GatheringTokenGold/Obj_Rupee_Gold": {
+   "progressive": false,
+   "steps": {
+    "GatheringTokenGold.bfevfl.zs:Event471": null
+   }
+  },
+  "event/Goto_HyruleCastle/Item_AlarmCucco": {
+   "progressive": true,
+   "steps": {
+    "Goto_HyruleCastle.bfevfl.zs:Event20": "inplace"
+   }
+  },
+  "event/Goto_HyruleCastle/Item_WeirdEgg": {
+   "progressive": true,
+   "steps": {
+    "Goto_HyruleCastle.bfevfl.zs:Event35": "inplace",
+    "Goto_HyruleCastle.bfevfl.zs:Event55": "inplace"
+   }
+  },
+  "event/Goto_HyruleCastle/Pouch_Amiibo": {
+   "progressive": true,
+   "steps": {
+    "Goto_HyruleCastle.bfevfl.zs:Event205": "inplace"
+   }
+  },
+  "event/LostWood_ScrubForestStageElder_SkullMaskFirst/Item_StickBag_Large": {
+   "progressive": true,
+   "steps": {
+    "LostWood_ScrubForestStageElder_SkullMaskFirst.bfevfl.zs:Event32": "inplace"
+   }
+  },
+  "event/LostWood_ScrubForestStageElder_SkullMaskFirst/Item_StickBag_Medium": {
+   "progressive": true,
+   "steps": {
+    "LostWood_ScrubForestStageElder_SkullMaskFirst.bfevfl.zs:Event29": "inplace"
+   }
+  },
+  "event/LostWood_ScrubForestStageElder_TrueMaskFirst/Item_NutBag_Large": {
+   "progressive": true,
+   "steps": {
+    "LostWood_ScrubForestStageElder_TrueMaskFirst.bfevfl.zs:Event31": "inplace"
+   }
+  },
+  "event/LostWood_ScrubForestStageElder_TrueMaskFirst/Item_NutBag_Medium": {
+   "progressive": true,
+   "steps": {
+    "LostWood_ScrubForestStageElder_TrueMaskFirst.bfevfl.zs:Event2": "inplace"
+   }
+  },
+  "event/MiniGame_BombchuBowling/Item_BombBag_Large": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_BombchuBowling.bfevfl.zs:Event306": "inplace"
+   }
+  },
+  "event/MiniGame_BombchuBowling/Item_BombBag_Medium": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_BombchuBowling.bfevfl.zs:Event304": "inplace"
+   }
+  },
+  "event/MiniGame_BombchuBowling/Item_BombchuBundle_Medium": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_BombchuBowling.bfevfl.zs:Event309": "inplace"
+   }
+  },
+  "event/MiniGame_BombchuBowling/Obj_Heart_Piece": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_BombchuBowling.bfevfl.zs:Event143": "inplace"
+   }
+  },
+  "event/MiniGame_BombchuBowling/Obj_Rupee_Red": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_BombchuBowling.bfevfl.zs:Event81": "inplace"
+   }
+  },
+  "event/MiniGame_Diving/Item_Scale_Silver": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_Diving.bfevfl.zs:Event21": "inplace"
+   }
+  },
+  "event/MiniGame_Diving/Obj_Rupee_Red": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_Diving.bfevfl.zs:Event15": "inplace"
+   }
+  },
+  "event/MiniGame_Fishing/Item_Scale_Gold": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_Fishing.bfevfl.zs:Event579": "inplace",
+    "MiniGame_Fishing.bfevfl.zs:Event822": "inplace"
+   }
+  },
+  "event/MiniGame_Fishing/Obj_Heart_Piece": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_Fishing.bfevfl.zs:Event573": "inplace",
+    "MiniGame_Fishing.bfevfl.zs:Event821": "inplace"
+   }
+  },
+  "event/MiniGame_Fishing/Obj_Rupee_Blue": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_Fishing.bfevfl.zs:Event382": "inplace"
+   }
+  },
+  "event/MiniGame_Fishing/Obj_Rupee_Purple": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_Fishing.bfevfl.zs:Event374": "inplace",
+    "MiniGame_Fishing.bfevfl.zs:Event378": "inplace",
+    "MiniGame_Fishing.bfevfl.zs:Event385": "inplace"
+   }
+  },
+  "event/MiniGame_Fishing/Obj_Rupee_Red": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_Fishing.bfevfl.zs:Event383": "inplace",
+    "MiniGame_Fishing.bfevfl.zs:Event384": "inplace"
+   }
+  },
+  "event/MiniGame_FrogTenors/Obj_Heart_Piece": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_FrogTenors.bfevfl.zs:Event161": "inplace",
+    "MiniGame_FrogTenors.bfevfl.zs:Event384": "inplace",
+    "MiniGame_FrogTenors.bfevfl.zs:Event75": "inplace"
+   }
+  },
+  "event/MiniGame_FrogTenors/Obj_Rupee_Blue": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_FrogTenors.bfevfl.zs:Event162": "inplace",
+    "MiniGame_FrogTenors.bfevfl.zs:Event76": "inplace"
+   }
+  },
+  "event/MiniGame_HitTarget/Item_BulletBag_Large": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_HitTarget.bfevfl.zs:Event378": "inplace"
+   }
+  },
+  "event/MiniGame_HitTarget/Item_BulletBag_Medium": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_HitTarget.bfevfl.zs:Event241": "inplace"
+   }
+  },
+  "event/MiniGame_HitTarget/Item_Quiver_Large": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_HitTarget.bfevfl.zs:Event242": "inplace"
+   }
+  },
+  "event/MiniGame_HitTarget/Item_Quiver_Medium": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_HitTarget.bfevfl.zs:Event381": "inplace"
+   }
+  },
+  "event/MiniGame_HitTarget/Obj_Rupee_Purple": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_HitTarget.bfevfl.zs:Event382": "inplace"
+   }
+  },
+  "event/MiniGame_HitTarget/Obj_Rupee_Red": {
+   "progressive": true,
+   "steps": {
+    "MiniGame_HitTarget.bfevfl.zs:Event8": "inplace"
+   }
+  },
+  "event/MiniGame_HorseRace/Obj_Rupee_Red": {
+   "progressive": false,
+   "steps": {
+    "MiniGame_HorseRace.110.bfevfl.zs:Event93": null,
+    "MiniGame_HorseRace.bfevfl.zs:Event93": null
+   }
+  },
+  "event/Minigame_CatchCucco/Item_Bottle": {
+   "progressive": false,
+   "steps": {
+    "Minigame_CatchCucco.bfevfl.zs:Event181": null
+   }
+  },
+  "event/Minigame_CatchCucco/Obj_Rupee_Red": {
+   "progressive": false,
+   "steps": {
+    "Minigame_CatchCucco.bfevfl.zs:Event62": null
+   }
+  },
+  "event/Minigame_FindOutCucco/Item_Bottle_Milk": {
+   "progressive": true,
+   "steps": {
+    "Minigame_FindOutCucco.bfevfl.zs:Event23": "inplace",
+    "Minigame_FindOutCucco.bfevfl.zs:Event244": "inplace"
+   }
+  },
+  "event/Minigame_HorsebackArchery/Item_Quiver_Large": {
+   "progressive": true,
+   "steps": {
+    "Minigame_HorsebackArchery.bfevfl.zs:Event319": "inplace"
+   }
+  },
+  "event/Minigame_HorsebackArchery/Item_Quiver_Medium": {
+   "progressive": true,
+   "steps": {
+    "Minigame_HorsebackArchery.bfevfl.zs:Event320": "inplace"
+   }
+  },
+  "event/Minigame_HorsebackArchery/Obj_Heart_Piece": {
+   "progressive": true,
+   "steps": {
+    "Minigame_HorsebackArchery.bfevfl.zs:Event322": "inplace"
+   }
+  },
+  "event/Minigame_HorsebackArchery/Obj_Rupee_Purple": {
+   "progressive": true,
+   "steps": {
+    "Minigame_HorsebackArchery.bfevfl.zs:Event317": "inplace"
+   }
+  },
+  "event/Npc_Bonooru/Item_Melody_ScarecrowSong": {
+   "progressive": true,
+   "steps": {
+    "Npc_Bonooru.bfevfl.zs:Event159": "host"
+   }
+  },
+  "event/Npc_Goron_006_Child/Item_BombBag_Large": {
+   "progressive": true,
+   "steps": {
+    "Npc_Goron_006_Child.bfevfl.zs:Event92": "inplace"
+   }
+  },
+  "event/Npc_Goron_006_Child/Item_BombBag_Medium": {
+   "progressive": true,
+   "steps": {
+    "Npc_Goron_006_Child.bfevfl.zs:Event58": "inplace"
+   }
+  },
+  "event/Npc_Goron_Biggoron_Adult/Item_BrokenSword": {
+   "progressive": true,
+   "steps": {
+    "Npc_Goron_Biggoron_Adult.bfevfl.zs:Event26": "inplace"
+   }
+  },
+  "event/Npc_Goron_Biggoron_Adult/Item_Prescription": {
+   "progressive": true,
+   "steps": {
+    "Npc_Goron_Biggoron_Adult.bfevfl.zs:Event232": "inplace"
+   }
+  },
+  "event/Npc_Goron_Biggoron_Adult/Item_Sword_Biggoron": {
+   "progressive": true,
+   "steps": {
+    "Npc_Goron_Biggoron_Adult.bfevfl.zs:Event123": "inplace"
+   }
+  },
+  "event/Npc_Goron_Biggoron_Adult/Weapon_Sword_BrokenGiant": {
+   "progressive": true,
+   "steps": {
+    "Npc_Goron_Biggoron_Adult.bfevfl.zs:Event106": "inplace"
+   }
+  },
+  "event/Npc_Goron_Biggoron_Adult/Weapon_Sword_Giant": {
+   "progressive": true,
+   "steps": {
+    "Npc_Goron_Biggoron_Adult.bfevfl.zs:Event96": "inplace"
+   }
+  },
+  "event/Npc_Goron_Medigoron_Adult/Shop_Sword_Giant": {
+   "progressive": true,
+   "steps": {
+    "Npc_Goron_Medigoron_Adult.bfevfl.zs:Event11": "inplace"
+   }
+  },
+  "event/Npc_Hylia_001_Adult/Obj_Heart_Piece": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_001_Adult.bfevfl.zs:Event4": "host"
+   }
+  },
+  "event/Npc_Hylia_012_Adult/Item_BrokenSword": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_012_Adult.bfevfl.zs:Event58": "inplace"
+   }
+  },
+  "event/Npc_Hylia_012_Adult/Item_PoacherSaw": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_012_Adult.bfevfl.zs:Event51": "inplace"
+   }
+  },
+  "event/Npc_Hylia_017_Adult/Item_CojiroCucco": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_017_Adult.bfevfl.zs:Event25": "inplace"
+   }
+  },
+  "event/Npc_Hylia_017_Adult/Item_OddMushroom": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_017_Adult.bfevfl.zs:Event100": "inplace",
+    "Npc_Hylia_017_Adult.bfevfl.zs:Event116": "inplace",
+    "Npc_Hylia_017_Adult.bfevfl.zs:Event56": "inplace"
+   }
+  },
+  "event/Npc_Hylia_020_Shop_Child/Item_Bottle": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_020_Shop_Child.bfevfl.zs:Event171": "inplace"
+   }
+  },
+  "event/Npc_Hylia_020_Shop_Child/Item_Bottle_RedPotion": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_020_Shop_Child.bfevfl.zs:Event172": "inplace"
+   }
+  },
+  "event/Npc_Hylia_023_Shop_Child/Item_Mask_Truth": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_023_Shop_Child.bfevfl.zs:Event51": "inplace"
+   }
+  },
+  "event/Npc_Hylia_030_Child/Armor_Child_Mask_Spooky": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_030_Child.bfevfl.zs:Event282": "inplace"
+   }
+  },
+  "event/Npc_Hylia_044_Adult/Shop_BombchuBundle_01": {
+   "progressive": false,
+   "steps": {
+    "Npc_Hylia_044_Adult.bfevfl.zs:Event3": null
+   }
+  },
+  "event/Npc_Hylia_045_Adult/Item_EyeDrop": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_045_Adult.bfevfl.zs:Event137": "inplace",
+    "Npc_Hylia_045_Adult.bfevfl.zs:Event26": "inplace",
+    "Npc_Hylia_045_Adult.bfevfl.zs:Event27": "inplace",
+    "Npc_Hylia_045_Adult.bfevfl.zs:Event45": "inplace"
+   }
+  },
+  "event/Npc_Hylia_045_Adult/Item_EyeballFrog": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_045_Adult.bfevfl.zs:Event21": "inplace"
+   }
+  },
+  "event/Npc_Hylia_045_Child/Obj_Heart_Piece": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_045_Child.bfevfl.zs:Event113": "inplace"
+   }
+  },
+  "event/Npc_Hylia_047_Child/Item_MagicBean": {
+   "progressive": false,
+   "steps": {
+    "Npc_Hylia_047_Child.bfevfl.zs:Event11": null,
+    "Npc_Hylia_047_Child.bfevfl.zs:Event15": null,
+    "Npc_Hylia_047_Child.bfevfl.zs:Event3": null,
+    "Npc_Hylia_047_Child.bfevfl.zs:Event33": null,
+    "Npc_Hylia_047_Child.bfevfl.zs:Event35": null,
+    "Npc_Hylia_047_Child.bfevfl.zs:Event55": null,
+    "Npc_Hylia_047_Child.bfevfl.zs:Event56": null,
+    "Npc_Hylia_047_Child.bfevfl.zs:Event7": null
+   }
+  },
+  "event/Npc_Hylia_048_BottleShop/Item_Bottle": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_048_BottleShop.bfevfl.zs:Event329": "inplace"
+   }
+  },
+  "event/Npc_Hylia_048_BottleShop/Obj_Rupee_Gold": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_048_BottleShop.bfevfl.zs:Event330": "inplace"
+   }
+  },
+  "event/Npc_Hylia_049_Adult/Item_CojiroCucco": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_049_Adult.bfevfl.zs:Event234": "inplace"
+   }
+  },
+  "event/Npc_Hylia_049_Adult/Item_PocketCucco": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_049_Adult.bfevfl.zs:Event77": "inplace"
+   }
+  },
+  "event/Npc_Hylia_049_Adult/Item_PocketEgg": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_049_Adult.bfevfl.zs:Event264": "inplace"
+   }
+  },
+  "event/Npc_Hylia_053_Adult/Item_Bottle_BluePotion": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_053_Adult.bfevfl.zs:Event12": "inplace"
+   }
+  },
+  "event/Npc_Hylia_053_Adult/Item_OddMushroom": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_053_Adult.bfevfl.zs:Event54": "inplace"
+   }
+  },
+  "event/Npc_Hylia_053_Adult/Item_OddPowder": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_053_Adult.bfevfl.zs:Event167": "inplace"
+   }
+  },
+  "event/Npc_Hylia_Dampe_001/Dm_Obj_Graveyard_Rock_A_01": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_Dampe_001.110.bfevfl.zs:Event292": "inplace",
+    "Npc_Hylia_Dampe_001.bfevfl.zs:Event292": "inplace",
+    "Npc_Hylia_Dampe_001.110.bfevfl.zs:Event358": "inplace",
+    "Npc_Hylia_Dampe_001.bfevfl.zs:Event358": "inplace"
+   }
+  },
+  "event/Npc_Hylia_Dampe_001/Obj_Heart_Piece": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_Dampe_001.110.bfevfl.zs:Event291": "inplace",
+    "Npc_Hylia_Dampe_001.bfevfl.zs:Event291": "inplace",
+    "Npc_Hylia_Dampe_001.110.bfevfl.zs:Event628": "inplace",
+    "Npc_Hylia_Dampe_001.bfevfl.zs:Event628": "inplace",
+    "Npc_Hylia_Dampe_001.110.bfevfl.zs:Event82": "inplace",
+    "Npc_Hylia_Dampe_001.bfevfl.zs:Event82": "inplace"
+   }
+  },
+  "event/Npc_Hylia_Dampe_001/Obj_Rupee_Blue": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_Dampe_001.110.bfevfl.zs:Event175": "inplace",
+    "Npc_Hylia_Dampe_001.bfevfl.zs:Event175": "inplace"
+   }
+  },
+  "event/Npc_Hylia_Dampe_001/Obj_Rupee_Gold": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_Dampe_001.110.bfevfl.zs:Event224": "inplace",
+    "Npc_Hylia_Dampe_001.bfevfl.zs:Event224": "inplace"
+   }
+  },
+  "event/Npc_Hylia_Dampe_001/Obj_Rupee_Green": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_Dampe_001.110.bfevfl.zs:Event174": "inplace",
+    "Npc_Hylia_Dampe_001.bfevfl.zs:Event174": "inplace"
+   }
+  },
+  "event/Npc_Hylia_Dampe_001/Obj_Rupee_Purple": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_Dampe_001.110.bfevfl.zs:Event152": "inplace",
+    "Npc_Hylia_Dampe_001.bfevfl.zs:Event152": "inplace"
+   }
+  },
+  "event/Npc_Hylia_Dampe_001/Obj_Rupee_Red": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_Dampe_001.110.bfevfl.zs:Event176": "inplace",
+    "Npc_Hylia_Dampe_001.bfevfl.zs:Event176": "inplace"
+   }
+  },
+  "event/Npc_Hylia_RunningMan_Adult/Obj_Rupee_Purple": {
+   "progressive": false,
+   "steps": {
+    "Npc_Hylia_RunningMan_Adult.bfevfl.zs:Event125": null
+   }
+  },
+  "event/Npc_Hylia_RunningMan_Adult/Obj_Rupee_Red": {
+   "progressive": false,
+   "steps": {
+    "Npc_Hylia_RunningMan_Adult.bfevfl.zs:Event133": null
+   }
+  },
+  "event/Npc_Hylia_Soldier_003/Item_ZeldaLetter": {
+   "progressive": true,
+   "steps": {
+    "Npc_Hylia_Soldier_003.bfevfl.zs:Event57": "inplace"
+   }
+  },
+  "event/Npc_Kokiri_001_Shop_Child/Obj_Shield_Deku": {
+   "progressive": true,
+   "steps": {
+    "Npc_Kokiri_001_Shop_Child.bfevfl.zs:Event116": "host",
+    "Npc_Kokiri_001_Shop_Child.bfevfl.zs:Event117": "host"
+   }
+  },
+  "event/Npc_Kokiri_005_Child/Obj_Rupee_Blue": {
+   "progressive": true,
+   "steps": {
+    "Npc_Kokiri_005_Child.bfevfl.zs:Event92": "inplace"
+   }
+  },
+  "event/Npc_Kokiri_008_Child/Obj_Rupee_Blue": {
+   "progressive": false,
+   "steps": {
+    "Npc_Kokiri_008_Child.bfevfl.zs:Event224": null
+   }
+  },
+  "event/Npc_Kokiri_Fado_Adult/Item_OddPowder": {
+   "progressive": true,
+   "steps": {
+    "Npc_Kokiri_Fado_Adult.bfevfl.zs:Event63": "inplace"
+   }
+  },
+  "event/Npc_Kokiri_Fado_Adult/Item_PoacherSaw": {
+   "progressive": true,
+   "steps": {
+    "Npc_Kokiri_Fado_Adult.bfevfl.zs:Event123": "inplace"
+   }
+  },
+  "event/Npc_SkullKid_Child/Obj_Heart_Piece": {
+   "progressive": false,
+   "steps": {
+    "Npc_SkullKid_Child.bfevfl.zs:Event71": null
+   }
+  },
+  "event/Npc_SkullKid_Child_02/Obj_Heart_Piece": {
+   "progressive": false,
+   "steps": {
+    "Npc_SkullKid_Child_02.bfevfl.zs:Event24": null
+   }
+  },
+  "event/Npc_SkullKid_Child_02/Obj_Rupee_Blue": {
+   "progressive": false,
+   "steps": {
+    "Npc_SkullKid_Child_02.bfevfl.zs:Event154": null,
+    "Npc_SkullKid_Child_02.bfevfl.zs:Event22": null
+   }
+  },
+  "event/Npc_SkullKid_Child_02/Obj_Rupee_Red": {
+   "progressive": false,
+   "steps": {
+    "Npc_SkullKid_Child_02.bfevfl.zs:Event23": null
+   }
+  },
+  "event/Npc_Zora_011_Shop_Adult/Obj_Armor_Zora": {
+   "progressive": true,
+   "steps": {
+    "Npc_Zora_011_Shop_Adult.bfevfl.zs:Event2": "host"
+   }
+  },
+  "event/Npc_Zora_KingZora_adult/Item_EyeballFrog": {
+   "progressive": true,
+   "steps": {
+    "Npc_Zora_KingZora_adult.bfevfl.zs:Event131": "inplace",
+    "Npc_Zora_KingZora_adult.bfevfl.zs:Event47": "inplace",
+    "Npc_Zora_KingZora_adult.bfevfl.zs:Event87": "inplace"
+   }
+  },
+  "event/Npc_Zora_KingZora_adult/Item_Prescription": {
+   "progressive": true,
+   "steps": {
+    "Npc_Zora_KingZora_adult.bfevfl.zs:Event84": "inplace"
+   }
+  },
+  "event/SageOfFire/Obj_Armor_Goron": {
+   "progressive": true,
+   "steps": {
+    "SageOfFire.bfevfl.zs:Event18": "inplace"
+   }
+  },
+  "event/SageOfWater/Obj_Armor_Zora": {
+   "progressive": true,
+   "steps": {
+    "SageOfWater.bfevfl.zs:Event242": "inplace"
+   }
+  },
+  "event/SimpleShop/Item_MagicBean": {
+   "progressive": true,
+   "steps": {
+    "SimpleShop.bfevfl.zs:Event182": "inplace"
+   }
+  },
+  "event/SimpleShop/Weapon_Sword_BrokenGiant": {
+   "progressive": true,
+   "steps": {
+    "SimpleShop.bfevfl.zs:Event115": "inplace"
+   }
+  },
+  "event/SubEvent_AllBossBattle/Item_Arrow_Light": {
+   "progressive": true,
+   "steps": {
+    "SubEvent_AllBossBattle.bfevfl.zs:Event190": "inplace",
+    "SubEvent_AllBossBattle.bfevfl.zs:Event191": "inplace",
+    "SubEvent_AllBossBattle.bfevfl.zs:Event381": "inplace"
+   }
+  },
+  "event/SubEvent_AllBossBattle/Weapon_Boomerang": {
+   "progressive": true,
+   "steps": {
+    "SubEvent_AllBossBattle.bfevfl.zs:Event188": "inplace"
+   }
+  },
+  "event/SubEvent_AllBossBattle/Weapon_Hammer": {
+   "progressive": true,
+   "steps": {
+    "SubEvent_AllBossBattle.bfevfl.zs:Event189": "inplace"
+   }
+  },
+  "event/SubEvent_AllBossBattle/Weapon_Shield_Mirror": {
+   "progressive": true,
+   "steps": {
+    "SubEvent_AllBossBattle.bfevfl.zs:Event187": "inplace"
+   }
+  },
+  "event/SubEvent_FindRichard/Obj_Heart_Piece": {
+   "progressive": false,
+   "steps": {
+    "SubEvent_FindRichard.bfevfl.zs:Event16": null
+   }
+  },
+  "event/SubEvent_FindRichard/Obj_Rupee_Blue": {
+   "progressive": false,
+   "steps": {
+    "SubEvent_FindRichard.bfevfl.zs:Event73": null
+   }
+  },
+  "event/SubEvent_GetSwordBigGoron/Item_PocketCucco": {
+   "progressive": true,
+   "steps": {
+    "SubEvent_GetSwordBigGoron.bfevfl.zs:Event113": "inplace",
+    "SubEvent_GetSwordBigGoron.bfevfl.zs:Event82": "inplace"
+   }
+  },
+  "event/SubEvent_GetSwordBigGoron/Item_PocketEgg": {
+   "progressive": true,
+   "steps": {
+    "SubEvent_GetSwordBigGoron.bfevfl.zs:Event5": "inplace",
+    "SubEvent_GetSwordBigGoron.bfevfl.zs:Event69": "inplace"
+   }
+  },
+  "event/SubEvent_MaskSalesman/Armor_Child_Mask_Bunny": {
+   "progressive": true,
+   "steps": {
+    "SubEvent_MaskSalesman.bfevfl.zs:Event159": "inplace"
+   }
+  },
+  "event/SubEvent_MaskSalesman/Armor_Child_Mask_Keaton": {
+   "progressive": true,
+   "steps": {
+    "SubEvent_MaskSalesman.bfevfl.zs:Event11": "inplace"
+   }
+  },
+  "event/SubEvent_MaskSalesman/Armor_Child_Mask_Skull": {
+   "progressive": true,
+   "steps": {
+    "SubEvent_MaskSalesman.bfevfl.zs:Event22": "inplace"
+   }
+  },
+  "event/SubEvent_MaskSalesman/Obj_Rupee_Gold": {
+   "progressive": true,
+   "steps": {
+    "SubEvent_MaskSalesman.bfevfl.zs:Event365": "inplace"
+   }
+  }
+ }
+}

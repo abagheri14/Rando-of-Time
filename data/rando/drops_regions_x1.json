@@ -1,0 +1,1254 @@
+{
+ "_about": "Region assignments (x1) for the drop objects o1/o2/d1/d2 left out: trees (Obj_Tree_A_01/A_02, Obj_Tree_Tutorial_A_01, Obj_Gerudo_PalmTree_A_01), the Hyrule Field bushes (Land_kokiri_Plant_A_02_DropFixed_03), always-respawn grass and pots (*_Respawn), silver rocks (Obj_LiftRock_B_01) and the Obj_LiftRock_A_02/C_01/C_05 rocks of drop_objects.csv; one entry per hash. Same format and standard as drops_regions_o1/o2/d1/d2: region = exact OoTR region where Link stands to break/use the object; rule = extra OoTR rule to reach it inside that region (no age, and not the object's own break requirement: rolling, cutting, Silver/Golden Gauntlets are added by category). Method: positions from drop_objects.csv against the nearest objects already assigned in o1/o2/d1/d2 (same level and room), landmarks from the level files (actors within ~20 units: grotto holes, doors, NPCs, Gold Skulltulas), drop_map / gs_positions (GS trees), the d1/d2 room maps. low = junk only (the DreamWorld boss-rush copies, which have no OoTR region).",
+ "BottomOfTheWell": {
+  "objects": {
+   "190723038439219808": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "has_explosives",
+    "confidence": "medium",
+    "why": "room 9 basement: respawning grass 8 beyond the grass tucked behind the bomb-rock pair at [-15..-17,-19..-20] (assigned Main Area, has_explosives), toward the basement pool; explosives required to be safe"
+   },
+   "13073030852500161257": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 9 basement: respawning pot 1.1 from the paired Basement Pot (1.2,87.4,-24.6) in the open centre, away from the bomb rocks"
+   },
+   "8966676941469294681": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "has_explosives",
+    "confidence": "medium",
+    "why": "room 9 basement north-east corner: respawning pot 5 from the pots behind the bomb-rock pair at [22-24,-11..-12] (assigned has_explosives); may be reachable around it, explosives required to be safe"
+   }
+  }
+ },
+ "DesertColossus": {
+  "objects": {
+   "10395622039634609957": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock over the Colossus grotto hole (Land_DesertColossus_HidingHoleJoint_A_01 at the same spot (-115.5,93.9,-26.7)) on the desert floor = OoTR's Desert Colossus -> Colossus Grotto (can_use(Silver_Gauntlets))"
+   },
+   "12476546951712559797": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock over the Colossus grotto hole (Land_DesertColossus_HidingHoleJoint_A_01 at the same spot (-115.5,93.9,-26.7)) on the desert floor = OoTR's Desert Colossus -> Colossus Grotto (can_use(Silver_Gauntlets))"
+   },
+   "1005337725139538803": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the open desert floor (base y 100); its palm fruits are assigned Desert Colossus"
+   },
+   "10997137311957688505": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 96.5-98) in the palm grove (x -98..-66, z 51..88); its palm fruits are assigned Desert Colossus"
+   },
+   "12595954778695208671": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 96.5-98) in the palm grove (x -98..-66, z 51..88); its palm fruits are assigned Desert Colossus"
+   },
+   "13643357828974324733": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 96.5-98) in the palm grove (x -98..-66, z 51..88); its palm fruits are assigned Desert Colossus"
+   },
+   "1480817223029634036": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the open desert floor (base y 100); its palm fruits are assigned Desert Colossus"
+   },
+   "1768093878444194729": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 96.5-98) in the palm grove (x -98..-66, z 51..88); its palm fruits are assigned Desert Colossus"
+   },
+   "18110212244699630337": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 96.5-98) in the palm grove (x -98..-66, z 51..88); its palm fruits are assigned Desert Colossus"
+   },
+   "1959341866236567309": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 100) by the Great Fairy fountain's bomb wall (Obj_DesertColossus_CrackWall_A_01 (-49,100,-33)); its palm fruits are assigned Desert Colossus"
+   },
+   "2731268273568168526": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 100) by the Great Fairy fountain's bomb wall (Obj_DesertColossus_CrackWall_A_01 (-49,100,-33)); its palm fruits are assigned Desert Colossus"
+   },
+   "5593970006999448076": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 96.5-98) in the palm grove (x -98..-66, z 51..88); its palm fruits are assigned Desert Colossus"
+   },
+   "5779696087696113552": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 96.5-98) in the palm grove (x -98..-66, z 51..88); its palm fruits are assigned Desert Colossus"
+   },
+   "739939603844396426": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 100) by the Great Fairy fountain's bomb wall (Obj_DesertColossus_CrackWall_A_01 (-49,100,-33)); its palm fruits are assigned Desert Colossus"
+   },
+   "7439255337227773458": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 96.5-98) in the palm grove (x -98..-66, z 51..88); its palm fruits are assigned Desert Colossus"
+   },
+   "11844090500640808485": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 96.5-98) in the palm grove (x -98..-66, z 51..88); its palm fruits are assigned Desert Colossus"
+   },
+   "13131222520479016335": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 96.5-98) in the palm grove (x -98..-66, z 51..88); its palm fruits are assigned Desert Colossus"
+   },
+   "13258668481065035514": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 96.5-98) in the palm grove (x -98..-66, z 51..88); its palm fruits are assigned Desert Colossus"
+   },
+   "14459462049542450833": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 96.5-98) in the palm grove (x -98..-66, z 51..88); its palm fruits are assigned Desert Colossus"
+   },
+   "18416165237811069923": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 96.5-98) in the palm grove (x -98..-66, z 51..88); its palm fruits are assigned Desert Colossus"
+   },
+   "2692282572798522597": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 96.5-98) in the palm grove (x -98..-66, z 51..88); its palm fruits are assigned Desert Colossus"
+   },
+   "2894822103988485266": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the open desert floor (base y 100); its palm fruits are assigned Desert Colossus"
+   },
+   "3258225261562132178": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 96.5-98) in the palm grove (x -98..-66, z 51..88); its palm fruits are assigned Desert Colossus"
+   },
+   "5310725158103538672": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 100) by the Great Fairy fountain's bomb wall (Obj_DesertColossus_CrackWall_A_01 (-49,100,-33)); its palm fruits are assigned Desert Colossus"
+   },
+   "7181915067234024540": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 100) by the Great Fairy fountain's bomb wall (Obj_DesertColossus_CrackWall_A_01 (-49,100,-33)); its palm fruits are assigned Desert Colossus"
+   },
+   "7904833362283426605": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 96.5-98) in the palm grove (x -98..-66, z 51..88); its palm fruits are assigned Desert Colossus"
+   },
+   "8251131722033049700": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the desert floor (base y 100) by the Great Fairy fountain's bomb wall (Obj_DesertColossus_CrackWall_A_01 (-49,100,-33)); its palm fruits are assigned Desert Colossus"
+   },
+   "8716351247076661087": {
+    "region": "Desert Colossus",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Gerudo palm tree on the open desert floor (base y 100); its palm fruits are assigned Desert Colossus"
+   }
+  }
+ },
+ "DreamWorld": {
+  "objects": {
+   "13446447866967965592": {
+    "region": "Queen Gohma Boss Room",
+    "rule": "True",
+    "confidence": "low",
+    "why": "Boss-rush copy (DreamWorld/GohmaStage) of the Gohma arena grass (same coordinates as InsideTheDekuTree room 10). The boss rush is entered from a bed (Npc_Dream) and has no OoTR region; placed with the original arena, junk only"
+   },
+   "16100187403005966396": {
+    "region": "Queen Gohma Boss Room",
+    "rule": "True",
+    "confidence": "low",
+    "why": "Boss-rush copy (DreamWorld/GohmaStage) of the Gohma arena grass (same coordinates as InsideTheDekuTree room 10). The boss rush is entered from a bed (Npc_Dream) and has no OoTR region; placed with the original arena, junk only"
+   },
+   "17274067799607933872": {
+    "region": "Queen Gohma Boss Room",
+    "rule": "True",
+    "confidence": "low",
+    "why": "Boss-rush copy (DreamWorld/GohmaStage) of the Gohma arena grass (same coordinates as InsideTheDekuTree room 10). The boss rush is entered from a bed (Npc_Dream) and has no OoTR region; placed with the original arena, junk only"
+   },
+   "2478360857842555164": {
+    "region": "Queen Gohma Boss Room",
+    "rule": "True",
+    "confidence": "low",
+    "why": "Boss-rush copy (DreamWorld/GohmaStage) of the Gohma arena grass (same coordinates as InsideTheDekuTree room 10). The boss rush is entered from a bed (Npc_Dream) and has no OoTR region; placed with the original arena, junk only"
+   },
+   "272710906552258554": {
+    "region": "Queen Gohma Boss Room",
+    "rule": "True",
+    "confidence": "low",
+    "why": "Boss-rush copy (DreamWorld/GohmaStage) of the Gohma arena grass (same coordinates as InsideTheDekuTree room 10). The boss rush is entered from a bed (Npc_Dream) and has no OoTR region; placed with the original arena, junk only"
+   },
+   "2988260348651760167": {
+    "region": "Queen Gohma Boss Room",
+    "rule": "True",
+    "confidence": "low",
+    "why": "Boss-rush copy (DreamWorld/GohmaStage) of the Gohma arena grass (same coordinates as InsideTheDekuTree room 10). The boss rush is entered from a bed (Npc_Dream) and has no OoTR region; placed with the original arena, junk only"
+   },
+   "6866523047965934774": {
+    "region": "Queen Gohma Boss Room",
+    "rule": "True",
+    "confidence": "low",
+    "why": "Boss-rush copy (DreamWorld/GohmaStage) of the Gohma arena grass (same coordinates as InsideTheDekuTree room 10). The boss rush is entered from a bed (Npc_Dream) and has no OoTR region; placed with the original arena, junk only"
+   },
+   "9885852591435111570": {
+    "region": "Queen Gohma Boss Room",
+    "rule": "True",
+    "confidence": "low",
+    "why": "Boss-rush copy (DreamWorld/GohmaStage) of the Gohma arena grass (same coordinates as InsideTheDekuTree room 10). The boss rush is entered from a bed (Npc_Dream) and has no OoTR region; placed with the original arena, junk only"
+   },
+   "12253587007839077983": {
+    "region": "SFM Entryway",
+    "rule": "True",
+    "confidence": "low",
+    "why": "Boss-rush copy (DreamWorld/WolfosStage) of the grass ring at the SFM Wolfos-grotto hole (same coordinates as SacredForestMeadow grass assigned SFM Entryway). The boss rush has no OoTR region; placed with the original, junk only"
+   },
+   "17728622680469768322": {
+    "region": "SFM Entryway",
+    "rule": "True",
+    "confidence": "low",
+    "why": "Boss-rush copy (DreamWorld/WolfosStage) of the grass ring at the SFM Wolfos-grotto hole (same coordinates as SacredForestMeadow grass assigned SFM Entryway). The boss rush has no OoTR region; placed with the original, junk only"
+   },
+   "3798130014155558643": {
+    "region": "SFM Entryway",
+    "rule": "True",
+    "confidence": "low",
+    "why": "Boss-rush copy (DreamWorld/WolfosStage) of the grass ring at the SFM Wolfos-grotto hole (same coordinates as SacredForestMeadow grass assigned SFM Entryway). The boss rush has no OoTR region; placed with the original, junk only"
+   }
+  }
+ },
+ "ForestTemple": {
+  "objects": {
+   "18069611988256927347": {
+    "region": "Forest Temple Bow Region",
+    "rule": "can_use(Bow)",
+    "confidence": "high",
+    "why": "room 17 (upper Stalfos room, Bow chest): respawning pot at the same spot as the Obj_Pot_A_02 (-2.2,114.5,-68.9) assigned Forest Temple Bow Region. An arrow refill pot: ForestTemple_Level_Room_06_Prefab_6d52 creates Obj_Pot_A_02_Respawn_e2a9 only once the regular pot is broken and Link has a quiver and no arrows (player:bag:Item_Arrow_Normal, no stock), so it needs the Bow (tools/gamedb location audit)"
+   }
+  }
+ },
+ "GanonCastle": {
+  "objects": {
+   "13713923972504494620": {
+    "region": "Ganons Castle Grounds",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Golden-gauntlet pillar (Obj_LiftRock_C_01) on the castle-grounds floor (y 84.6) by the OGC GS web (78.1,94,328.5) and the rainbow-bridge end (59,87,315) = the OGC Great Fairy pillar (OoTR exit can_use(Golden_Gauntlets)). Note: no GameData flag"
+   }
+  }
+ },
+ "GerudoTrainingGround": {
+  "objects": {
+   "1226235239914902322": {
+    "region": "Gerudo Training Ground Lobby",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 7 (Beamos + Dinolfos room, OoTR Lobby region per the d2 rooms map): respawning pot just inside its lobby-side door (shutter (24.8,98,-5.4) with EnemyCounter), reached on entering, before the fight"
+   },
+   "16145161792185629501": {
+    "region": "Gerudo Training Ground Lobby",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 7 (Beamos + Dinolfos room, OoTR Lobby region per the d2 rooms map): respawning pot just inside its lobby-side door (shutter (24.8,98,-5.4) with EnemyCounter), reached on entering, before the fight"
+   }
+  }
+ },
+ "GerudoValley": {
+  "objects": {
+   "15973093482153030029": {
+    "region": "GV Grotto Ledge",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock over the Octorok-grotto hole (Land_GerudoValley_HidingHoleJoint_A_02 at the same spot (11.5,90.4,36.5)) on the ledge below the bridge level (y 90 vs 101), signboard (7,90,39) = OoTR's GV Grotto Ledge -> GV Octorok Grotto (can_use(Silver_Gauntlets))"
+   },
+   "8414723300021904225": {
+    "region": "GV Grotto Ledge",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock over the Octorok-grotto hole (Land_GerudoValley_HidingHoleJoint_A_02 at the same spot (11.5,90.4,36.5)) on the ledge below the bridge level (y 90 vs 101), signboard (7,90,39) = OoTR's GV Grotto Ledge -> GV Octorok Grotto (can_use(Silver_Gauntlets))"
+   }
+  }
+ },
+ "GoronCity": {
+  "objects": {
+   "11319019839937808": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was True: 'the Silver Gauntlets the rock itself needs' were thought enough)"
+   },
+   "11667504005524267399": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was True: 'the Silver Gauntlets the rock itself needs' were thought enough)"
+   },
+   "12319196803136020804": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was True: 'the Silver Gauntlets the rock itself needs' were thought enough)"
+   },
+   "12663712343267843154": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was True: 'the Silver Gauntlets the rock itself needs' were thought enough)"
+   },
+   "1270547072074120036": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was True: 'the Silver Gauntlets the rock itself needs' were thought enough)"
+   },
+   "13961964070919136206": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was True: 'the Silver Gauntlets the rock itself needs' were thought enough)"
+   },
+   "15323459835074052276": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was True: 'the Silver Gauntlets the rock itself needs' were thought enough)"
+   },
+   "17551874513910786007": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was True: 'the Silver Gauntlets the rock itself needs' were thought enough)"
+   },
+   "17755712064836129824": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was True: 'the Silver Gauntlets the rock itself needs' were thought enough)"
+   },
+   "18014792176135301990": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was True: 'the Silver Gauntlets the rock itself needs' were thought enough)"
+   },
+   "2644481534053964786": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was True: 'the Silver Gauntlets the rock itself needs' were thought enough)"
+   },
+   "2852929314039658159": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was True: 'the Silver Gauntlets the rock itself needs' were thought enough)"
+   },
+   "2869001768010422195": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was True: 'the Silver Gauntlets the rock itself needs' were thought enough)"
+   },
+   "3321005994909014883": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was True: 'the Silver Gauntlets the rock itself needs' were thought enough)"
+   },
+   "4657754202940185213": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was True: 'the Silver Gauntlets the rock itself needs' were thought enough)"
+   },
+   "7587980043199731531": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was True: 'the Silver Gauntlets the rock itself needs' were thought enough)"
+   },
+   "7786742868332468713": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was True: 'the Silver Gauntlets the rock itself needs' were thought enough)"
+   },
+   "9809940516740063028": {
+    "region": "Goron City",
+    "rule": "can_blast_or_smash",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule; the collision mesh (tools/reach.py; widest route vs the adult's CctRadius 0.35 m, no standing on rock tops) reaches no maze object with the Silver Gauntlets alone: the silver boulders stand behind brown rocks; with bombs or the hammer every one is reached (the same run reproduces every in-game maze report, data/rando/logic/chests.json _why 'GC Maze Left/Center/Right/Fourth Chest'). So reaching it is can_blast_or_smash (was True: 'the Silver Gauntlets the rock itself needs' were thought enough)"
+   },
+   "10821248355098448742": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule"
+   },
+   "11305720140610233108": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule"
+   },
+   "11484764291747851444": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule"
+   },
+   "11492358040392662459": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule"
+   },
+   "11637168303145778371": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule"
+   },
+   "12491554049947605427": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule"
+   },
+   "12963031563960909618": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule"
+   },
+   "14579027738236428127": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule"
+   },
+   "15781396066988928273": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule"
+   },
+   "16175312741172529423": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule"
+   },
+   "17416500912328700779": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule"
+   },
+   "1916559377689826651": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule"
+   },
+   "2422338022893952129": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule"
+   },
+   "38670353231231228": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule"
+   },
+   "545076192133350996": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule"
+   },
+   "6498511388530733920": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule"
+   },
+   "6785494683290852906": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule"
+   },
+   "7556337954071136043": {
+    "region": "Goron City",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Silver rock in the boulder maze (x -48..-32, z -8..0, y 113.7) among the maze chests and the bomb rocks assigned Goron City; OoTR's maze rule (can_blast_or_smash or can_use(Silver_Gauntlets)) is met by the Silver Gauntlets the rock itself needs, so no extra rule"
+   }
+  }
+ },
+ "HyruleCastle": {
+  "objects": {
+   "14682910199250480023": {
+    "region": "Hyrule Castle Grounds",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Tree inside the castle gate (27.2,108,-55.5) at y 114 among hedges, between the gate pots (y 108, Hyrule Castle Grounds) and the moat; grounds soldiers (Soldier_018 (-5,114,-77)) patrol here, below the HC Garden courtyard level (126.8-130.7); child-only scene"
+   },
+   "6668469451194880309": {
+    "region": "Hyrule Castle Grounds",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree beside the HC storms-grotto hole (35.9,117.3,-106.2) (OoTR's HC Storms Grotto exit is from Hyrule Castle Grounds); y 117, below the courtyard level (126.8-130.7) of the HC Garden soldiers; child-only scene"
+   },
+   "1779045507264709660": {
+    "region": "Hyrule Castle Grounds",
+    "rule": "True",
+    "confidence": "high",
+    "why": "The HC GS Tree's tree: its Gold Skulltula (-12,122,-95) sits on it (drop_map: HC GS Tree, Hyrule Castle Grounds); near the rock-wall gossip stone (-26,120,-97); child-only scene"
+   }
+  }
+ },
+ "HyruleField": {
+  "objects": {
+   "12111374068099501077": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "13030954850772711586": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "13037178969835996014": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "13290504378426406086": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "14621798303840927376": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "14630606235340334840": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "1472455071461140792": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "16106513735391908889": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "1702878762460339592": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "17130900495045735954": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "1758714094280233423": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "493105369468884447": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "6794980312912759563": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "10950878580448147055": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "11310912260140613389": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "12870146517126532303": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "14012747169982643998": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "14040579338952279240": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "16053425221492455201": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "16059709934581007857": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "2907799653264284118": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "8023741251559567641": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "8258690081080809149": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "8827339149651327899": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "9014488669281029221": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "9778224113645681398": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Bush (Land_kokiri_Plant_A_02_DropFixed_03) in the ring around the bush-covered grotto hole (163.3,155.6,27.4) (Land_Kokiri_HidingHoleCover_A_01) in east Hyrule Field near the owl spot (194.8,163.2,19.6); field surface (y 155.6)"
+   },
+   "12137861042058028060": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in east Hyrule Field around the Southeast-grotto hole (179.8,156.6,190.5) and the field pond (192,153,200); 12-25 from the field crate (186.7,157.2,185.6) assigned Hyrule Field; surface level (y 156-157)"
+   },
+   "13370813738128397064": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in east Hyrule Field around the Southeast-grotto hole (179.8,156.6,190.5) and the field pond (192,153,200); 12-25 from the field crate (186.7,157.2,185.6) assigned Hyrule Field; surface level (y 156-157)"
+   },
+   "13625730132309156416": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in north-west Hyrule Field by the Tektite-grotto hole (-98,146.4,17.1) and the castle water gate (-127.5,148,17.5); field surface (y 146), Blue Tektite nearby"
+   },
+   "2274960724750589737": {
+    "region": "Lake Hylia",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Tree on the west shore of Lake Hylia (y 131.3, surface 130.8), 25 from the west-shore pots (-298,131.3,558) assigned Lake Hylia, True; Tektites nearby"
+   },
+   "3033051943232834543": {
+    "region": "Lake Hylia",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree on the Lake Hylia shore below the field entrance (entrance anchor (-89.3,143.6,395.7), owl (-90.7,144.8,383.8)): z > 390 (lake zone) and y 135, down at lake level; Tektites around, scarecrows (-97..-109,433..439) further south"
+   },
+   "3818811429225407652": {
+    "region": "Lake Hylia",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Tree on the west shore of Lake Hylia beside the gossip stone (-331,131,502), at lake-surface level (y 131.3, surface 130.8); same shore as the west-shore pots (-298,131.3,558) assigned Lake Hylia, True"
+   },
+   "4202610557562597895": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in east Hyrule Field around the Southeast-grotto hole (179.8,156.6,190.5) and the field pond (192,153,200); 12-25 from the field crate (186.7,157.2,185.6) assigned Hyrule Field; surface level (y 156-157)"
+   },
+   "4218584745687975386": {
+    "region": "Lon Lon Ranch",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Tree in the east of Lon Lon Ranch (ranch zone x -160..-20, z 175..305), 3-6 from the fence piece Land_LonLon_Fence_A_03 (-33.4,150.6,222.3) and 20 from the LLR GS tree; inside vs just outside the east fence is not certain, but both regions open freely from Hyrule Field"
+   },
+   "5458351023770449749": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree just outside the Lon Lon Ranch gate (Land_LonLon_Gate_B_01 (-61.8,150.6,184.2)) near the ranch signboard (-57,150,181) and the Big Poe fence; field side (z < 184)"
+   },
+   "5614088541996338867": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in open Hyrule Field north of Lon Lon Ranch among the wheat (Land_HrlField_FarWheat), outside the ranch (gate (-61.8,150.6,184.2), ranch zone z 175..305)"
+   },
+   "6065203273564369222": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in east Hyrule Field around the Southeast-grotto hole (179.8,156.6,190.5) and the field pond (192,153,200); 12-25 from the field crate (186.7,157.2,185.6) assigned Hyrule Field; surface level (y 156-157)"
+   },
+   "6223660235487685854": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in open Hyrule Field north of Lon Lon Ranch among the wheat (Land_HrlField_FarWheat), outside the ranch (gate (-61.8,150.6,184.2), ranch zone z 175..305)"
+   },
+   "7072875581016876419": {
+    "region": "Lake Hylia",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Tree on the west shore of Lake Hylia beside the gossip stone (-331,131,502), at lake-surface level (y 131.3, surface 130.8); same shore as the west-shore pots (-298,131.3,558) assigned Lake Hylia, True"
+   },
+   "7165623237974597787": {
+    "region": "Lake Hylia",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree on the Lake Hylia shore below the field entrance (entrance anchor (-89.3,143.6,395.7), owl (-90.7,144.8,383.8)): z > 390 (lake zone) and y 135, down at lake level; Tektites around, scarecrows (-97..-109,433..439) further south"
+   },
+   "7401731690452636829": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in open Hyrule Field north of Lon Lon Ranch among the wheat (Land_HrlField_FarWheat), outside the ranch (gate (-61.8,150.6,184.2), ranch zone z 175..305)"
+   },
+   "7474322845678586878": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree just outside the Lon Lon Ranch gate (Land_LonLon_Gate_B_01 (-61.8,150.6,184.2)) near the ranch signboard (-57,150,181) and the Big Poe fence; field side (z < 184)"
+   },
+   "7910060671215256572": {
+    "region": "Lon Lon Ranch",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Tree in the east of Lon Lon Ranch (ranch zone x -160..-20, z 175..305), 3-6 from the fence piece Land_LonLon_Fence_A_03 (-33.4,150.6,222.3) and 20 from the LLR GS tree; inside vs just outside the east fence is not certain, but both regions open freely from Hyrule Field"
+   },
+   "8872817083316962397": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in open Hyrule Field by the treasure-note chest (84,153,45) with its Poe and the field bridge (108,149,58); the adult file has an Obj_Tree_A_01 here, the child file two Obj_Tree_A_02; adult file only"
+   },
+   "9436671947768854950": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in north-west Hyrule Field by the Tektite-grotto hole (-98,146.4,17.1) and the castle water gate (-127.5,148,17.5); field surface (y 146), Blue Tektite nearby"
+   },
+   "14955246627264035007": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in open south Hyrule Field with a Gold Skulltula on it (70.5,167.4,263.8); surface level, away from the ranch (x < -20) and the lake zone (z > 390)"
+   },
+   "5212886501294351852": {
+    "region": "Lon Lon Ranch",
+    "rule": "True",
+    "confidence": "high",
+    "why": "The LLR GS Tree's tree: its Gold Skulltula (-39.6,158.3,200.7) sits on it (drop_map pairs that GS with LLR GS Tree, Lon Lon Ranch); beside Talon's house (door (-59.3,150.7,196.3)) inside the ranch gate"
+   },
+   "10879618382927558545": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in open Hyrule Field north of Lon Lon Ranch among the wheat (Land_HrlField_FarWheat), outside the ranch (gate (-61.8,150.6,184.2), ranch zone z 175..305)"
+   },
+   "11360839127659481687": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree just outside the Lon Lon Ranch gate (Land_LonLon_Gate_B_01 (-61.8,150.6,184.2)) near the ranch signboard (-57,150,181) and the Big Poe fence; field side (z < 184)"
+   },
+   "11911719197298195722": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree just outside the Lon Lon Ranch gate (Land_LonLon_Gate_B_01 (-61.8,150.6,184.2)) near the ranch signboard (-57,150,181) and the Big Poe fence; field side (z < 184)"
+   },
+   "12827680079997267992": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in east Hyrule Field around the Southeast-grotto hole (179.8,156.6,190.5) and the field pond (192,153,200); 12-25 from the field crate (186.7,157.2,185.6) assigned Hyrule Field; surface level (y 156-157)"
+   },
+   "12901759018495139016": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in east Hyrule Field around the Southeast-grotto hole (179.8,156.6,190.5) and the field pond (192,153,200); 12-25 from the field crate (186.7,157.2,185.6) assigned Hyrule Field; surface level (y 156-157)"
+   },
+   "13290121916491266930": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in open Hyrule Field north of Lon Lon Ranch among the wheat (Land_HrlField_FarWheat), outside the ranch (gate (-61.8,150.6,184.2), ranch zone z 175..305)"
+   },
+   "14746004663600537193": {
+    "region": "Lon Lon Ranch",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Tree in the east of Lon Lon Ranch (ranch zone x -160..-20, z 175..305), 3-6 from the fence piece Land_LonLon_Fence_A_03 (-33.4,150.6,222.3) and 20 from the LLR GS tree; inside vs just outside the east fence is not certain, but both regions open freely from Hyrule Field"
+   },
+   "14949060154181808701": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in east Hyrule Field around the Southeast-grotto hole (179.8,156.6,190.5) and the field pond (192,153,200); 12-25 from the field crate (186.7,157.2,185.6) assigned Hyrule Field; surface level (y 156-157)"
+   },
+   "17772713014165831816": {
+    "region": "Lon Lon Ranch",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Tree in the east of Lon Lon Ranch (ranch zone x -160..-20, z 175..305), 3-6 from the fence piece Land_LonLon_Fence_A_03 (-33.4,150.6,222.3) and 20 from the LLR GS tree; inside vs just outside the east fence is not certain, but both regions open freely from Hyrule Field"
+   },
+   "2057863984925335673": {
+    "region": "Lake Hylia",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree on the Lake Hylia shore below the field entrance (entrance anchor (-89.3,143.6,395.7), owl (-90.7,144.8,383.8)): z > 390 (lake zone) and y 135, down at lake level; Tektites around, scarecrows (-97..-109,433..439) further south"
+   },
+   "3738284544038345833": {
+    "region": "Lake Hylia",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Tree on the west shore of Lake Hylia beside the gossip stone (-331,131,502), at lake-surface level (y 131.3, surface 130.8); same shore as the west-shore pots (-298,131.3,558) assigned Lake Hylia, True"
+   },
+   "4854833651331764551": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in east Hyrule Field around the Southeast-grotto hole (179.8,156.6,190.5) and the field pond (192,153,200); 12-25 from the field crate (186.7,157.2,185.6) assigned Hyrule Field; surface level (y 156-157)"
+   },
+   "6329660253565517319": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in north-west Hyrule Field by the Tektite-grotto hole (-98,146.4,17.1) and the castle water gate (-127.5,148,17.5); field surface (y 146), Blue Tektite nearby"
+   },
+   "6634328619385342310": {
+    "region": "Lake Hylia",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree on the Lake Hylia shore below the field entrance (entrance anchor (-89.3,143.6,395.7), owl (-90.7,144.8,383.8)): z > 390 (lake zone) and y 135, down at lake level; Tektites around, scarecrows (-97..-109,433..439) further south"
+   },
+   "7635614797851048491": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in north-west Hyrule Field by the Tektite-grotto hole (-98,146.4,17.1) and the castle water gate (-127.5,148,17.5); field surface (y 146), Blue Tektite nearby"
+   },
+   "8498469865312032287": {
+    "region": "Lake Hylia",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Tree on the west shore of Lake Hylia (y 131.3, surface 130.8), 25 from the west-shore pots (-298,131.3,558) assigned Lake Hylia, True; Tektites nearby"
+   },
+   "9244209797274743608": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in open Hyrule Field north of Lon Lon Ranch among the wheat (Land_HrlField_FarWheat), outside the ranch (gate (-61.8,150.6,184.2), ranch zone z 175..305)"
+   },
+   "944053536421371717": {
+    "region": "Lake Hylia",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Tree on the west shore of Lake Hylia beside the gossip stone (-331,131,502), at lake-surface level (y 131.3, surface 130.8); same shore as the west-shore pots (-298,131.3,558) assigned Lake Hylia, True"
+   },
+   "13067672081153505697": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in open south Hyrule Field with a Gold Skulltula on it (70.5,167.4,263.8); surface level, away from the ranch (x < -20) and the lake zone (z > 390)"
+   },
+   "16093046669510246256": {
+    "region": "Lon Lon Ranch",
+    "rule": "True",
+    "confidence": "high",
+    "why": "The LLR GS Tree's tree: its Gold Skulltula (-39.6,158.3,200.7) sits on it (drop_map pairs that GS with LLR GS Tree, Lon Lon Ranch); beside Talon's house (door (-59.3,150.7,196.3)) inside the ranch gate"
+   },
+   "11354987278416404894": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in open Hyrule Field by the treasure-note chest (84,153,45) with its Poe and the field bridge (108,149,58); the adult file has an Obj_Tree_A_01 here, the child file two Obj_Tree_A_02; child file only"
+   },
+   "9860797772243961676": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in open Hyrule Field by the treasure-note chest (84,153,45) with its Poe and the field bridge (108,149,58); the adult file has an Obj_Tree_A_01 here, the child file two Obj_Tree_A_02; child file only"
+   }
+  }
+ },
+ "InsideGanonCastle": {
+  "objects": {
+   "3853917559410573871": {
+    "region": "Ganons Castle Fire Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 (fire trial): golden-gauntlet pillar over the silver rupee (-48,106,-71) = OoTR's Fire Trial Silver Rupee Inside Pillar (only can_use(Golden_Gauntlets)). Note: no GameData flag"
+   },
+   "6251811700274725607": {
+    "region": "Ganons Castle Main",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 1 (main hall): golden-gauntlet pillar in front of the fire-trial door (shutter (-16.1,103.8,-49.9), SageSymbol_A_03, fire braziers), on the hall side (audit_dungeons: the remake blocks the fire trial with it). Note: no GameData flag"
+   },
+   "7808482170470849591": {
+    "region": "Ganons Castle Main",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 1 (main hall): golden-gauntlet pillar in front of the light-trial door (shutter (-33,99.7,-21); light-trial chest room 12 behind it), on the hall side = OoTR's Main -> Light Trial (can_use(Golden_Gauntlets)). Note: no GameData flag"
+   },
+   "8144266723486145695": {
+    "region": "Ganons Castle Shadow Trial Second Gap",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 8 (shadow trial): golden-gauntlet block (Obj_LiftRock_C_05) 8 from the Golden Gauntlets chest (48,104,-105) (Second Gap) and past the Like Like pots (35-42,-87..-90) assigned First Gap. Note: no GameData flag"
+   }
+  }
+ },
+ "InsideTheDekuTree": {
+  "objects": {
+   "12536486041203664147": {
+    "region": "Deku Tree Slingshot Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 2: respawning grass in the pit under the falling floor (y 104.9), 0.4 from the room-2 grass (-38.5,104.9,15.0) assigned Deku Tree Slingshot Room"
+   },
+   "13412951694392781478": {
+    "region": "Queen Gohma Boss Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = Gohma's arena (d1 rooms map 10 -> Queen Gohma Boss Room): respawning grass on the arena floor (y 47), reset group 2704679172559390365"
+   },
+   "15513822668871942093": {
+    "region": "Queen Gohma Boss Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = Gohma's arena (d1 rooms map 10 -> Queen Gohma Boss Room): respawning grass on the arena floor (y 47), reset group 2704679172559390365"
+   },
+   "16322427109872094443": {
+    "region": "Queen Gohma Boss Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = Gohma's arena (d1 rooms map 10 -> Queen Gohma Boss Room): respawning grass on the arena floor (y 47), reset group 2704679172559390365"
+   },
+   "18176645256741116364": {
+    "region": "Queen Gohma Boss Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = Gohma's arena (d1 rooms map 10 -> Queen Gohma Boss Room): respawning grass on the arena floor (y 47), reset group 2704679172559390365"
+   },
+   "2540384747854371104": {
+    "region": "Deku Tree Basement Back Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 7 (torch room past the eye-switch water room): respawning grass by the entrance, 1.3 from the grass (-46.7,79.6,37.8) assigned Deku Tree Basement Back Room"
+   },
+   "2794401671936016215": {
+    "region": "Queen Gohma Boss Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = Gohma's arena (d1 rooms map 10 -> Queen Gohma Boss Room): respawning grass on the arena floor (y 47), reset group 2704679172559390365"
+   },
+   "4629107463458964273": {
+    "region": "Queen Gohma Boss Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = Gohma's arena (d1 rooms map 10 -> Queen Gohma Boss Room): respawning grass on the arena floor (y 47), reset group 2704679172559390365"
+   },
+   "6283235374766662242": {
+    "region": "Queen Gohma Boss Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = Gohma's arena (d1 rooms map 10 -> Queen Gohma Boss Room): respawning grass on the arena floor (y 47), reset group 2704679172559390365"
+   },
+   "97733905166195279": {
+    "region": "Queen Gohma Boss Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = Gohma's arena (d1 rooms map 10 -> Queen Gohma Boss Room): respawning grass on the arena floor (y 47), reset group 2704679172559390365"
+   }
+  }
+ },
+ "KakarikoVillage": {
+  "objects": {
+   "17337529934879425827": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "The Kak GS Tree's tree: its Gold Skulltula (-74,104,43) sits on it (drop_map: Kak GS Tree, Kakariko Village); in the village park (Land_Kakariko_Park_A_01) among villagers; child file and both adult layouts"
+   },
+   "16206101463308204390": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "The Kak GS Tree's tree: its Gold Skulltula (-74,104,43) sits on it (drop_map: Kak GS Tree, Kakariko Village); in the village park (Land_Kakariko_Park_A_01) among villagers; child file and both adult layouts"
+   },
+   "2354134291418861435": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "The Kak GS Tree's tree: its Gold Skulltula (-74,104,43) sits on it (drop_map: Kak GS Tree, Kakariko Village); in the village park (Land_Kakariko_Park_A_01) among villagers; child file and both adult layouts"
+   }
+  },
+  "merge": [
+   {
+    "hashes": [
+     "16206101463308204390",
+     "17337529934879425827"
+    ],
+    "why": "one spot, two copies taking turns: #16206101463308204390 in the pre-fire adult layout (KakarikoVillage_Adult_Dynamic.bcett.byml.zs) until Phantom Ganon, Volvagia and Morpha are beaten (Sequence_IsAlternative_KakarikoAdult), #17337529934879425827 in the burned layout (KakarikoVillage_Adult_Alternative_Dynamic.bcett.byml.zs) after, same type Obj_Tree_A_01, 0.00 apart ([-73.6, 96.72, 43.48] / [-73.6, 96.72, 43.48]); one location, one check (the respawn model's bit is per location), in both adult layouts: is_adult (was missable)"
+   }
+  ]
+ },
+ "KokiriForest": {
+  "objects": {
+   "6257885313885825332": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Obj_LiftRock_A_02 at (-45.8,111.8,-27.8) in the rock garden in front of Mido's house door (-50.9,-33.7), same spot as an Obj_LiftRock_A_01 assigned Kokiri Forest. Note: no GameData flag and no Drop__DropActor (o1 lists it under excluded for that reason); child file only"
+   },
+   "16289857062629223401": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree on the village path up to the Lost Woods gate (-31.8,121,-64.8), beside the Mad Scrub (-25.4,119.3,-43.9); village grass at (-36,116,-39) is assigned Kokiri Forest"
+   },
+   "16679436462789486217": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree on the west side of the village (y 115) by the Deku Babas (-68.9,-42.4)/(-74.8,-38.3), north-west of Mido's house; 12-13 from the Mido rock-garden rocks assigned Kokiri Forest; far from the Deku Tree side (Npc_DekuTreeChild at x 84)"
+   },
+   "6773253737981046726": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree on the west side of the village (y 115) by the Deku Babas (-68.9,-42.4)/(-74.8,-38.3), north-west of Mido's house; 12-13 from the Mido rock-garden rocks assigned Kokiri Forest; far from the Deku Tree side (Npc_DekuTreeChild at x 84)"
+   },
+   "13406223599913557": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree on the west side of the village (y 115) by the Deku Babas (-68.9,-42.4)/(-74.8,-38.3), north-west of Mido's house; 12-13 from the Mido rock-garden rocks assigned Kokiri Forest; far from the Deku Tree side (Npc_DekuTreeChild at x 84)"
+   },
+   "8081385000376875395": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree on the west side of the village (y 115) by the Deku Babas (-68.9,-42.4)/(-74.8,-38.3), north-west of Mido's house; 12-13 from the Mido rock-garden rocks assigned Kokiri Forest; far from the Deku Tree side (Npc_DekuTreeChild at x 84)"
+   },
+   "960339589683708397": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree on the village path up to the Lost Woods gate (-31.8,121,-64.8), beside the Mad Scrub (-25.4,119.3,-43.9); village grass at (-36,116,-39) is assigned Kokiri Forest"
+   },
+   "8791123278103287700": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Obj_Tree_Tutorial_A_01 (roll-into-tree tutorial tree) at (-52,117.4,-0.1) beside the guide sign Obj_Kokiri_Signboard_GuideAction_A_02 (-57.5,117.4,-3.6) and the Mad Scrubs (-59..-62,118,7..9), inside the village"
+   },
+   "1776403076916983857": {
+    "region": "Kokiri Forest",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Obj_Tree_Tutorial_A_01 (roll-into-tree tutorial tree) at (-52,117.4,-0.1) beside the guide sign Obj_Kokiri_Signboard_GuideAction_A_02 (-57.5,117.4,-3.6) and the Mad Scrubs (-59..-62,118,7..9), inside the village"
+   }
+  }
+ },
+ "Market": {
+  "objects": {
+   "15208331741259317796": {
+    "region": "Market",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Tree in the market plaza (y 100) among child villagers, dogs and cuccos; the elevated-walkway pots 16 away are assigned Market; child file only"
+   }
+  }
+ },
+ "ShadowTemple": {
+  "objects": {
+   "12144875447328979495": {
+    "region": "Shadow Temple Invisible Spikes",
+    "rule": "(Silver_Rupee_Shadow_Temple_Invisible_Spikes, 5)",
+    "confidence": "high",
+    "why": "room 13 (giant-skull-pot room: Freestanding Key, GS Single Giant Pot), opened by room 12's invisible-spikes silver rupees (audit_dungeons); respawning pot on its floor; OoTR's silver-rupee rule for that room reused"
+   },
+   "2390438047371933001": {
+    "region": "Shadow Temple Beyond Boat",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 20 (three giant skull pots, past the boat; d2 rooms map 20 -> Beyond Boat, where OoTR's GS Triple Giant Pot is True): respawning pot flanking the doorway at (-230.5,47.8,-44)"
+   },
+   "6544503533980361638": {
+    "region": "Shadow Temple Invisible Spikes",
+    "rule": "(Silver_Rupee_Shadow_Temple_Invisible_Spikes, 5)",
+    "confidence": "high",
+    "why": "room 13 (giant-skull-pot room: Freestanding Key, GS Single Giant Pot), opened by room 12's invisible-spikes silver rupees (audit_dungeons); respawning pot on its floor; OoTR's silver-rupee rule for that room reused"
+   },
+   "9802947017180102035": {
+    "region": "Shadow Temple Beyond Boat",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 20 (three giant skull pots, past the boat; d2 rooms map 20 -> Beyond Boat, where OoTR's GS Triple Giant Pot is True): respawning pot flanking the doorway at (-230.5,47.8,-44)"
+   }
+  }
+ },
+ "SpiritTemple": {
+  "objects": {
+   "9063034506877571508": {
+    "region": "Spirit Temple Anubis Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 21 (Anubis + Beamos room): respawning pot by the third adult lock door (29.3,130,-17.5) on the room-21 side (room centre (38.6,130,-23))"
+   }
+  }
+ },
+ "ZoraFountain": {
+  "objects": {
+   "11141853402576759431": {
+    "region": "Zoras Fountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "One of 3 silver rocks (67.7-69.9,101.7,25.3-27.8) at the hidden-cave mouth (Land_ZoraFountain_Cave_* (71,101,28)); the ZF Hidden Cave pots (88,103.7,45) lie past them. Lifted from the fountain floor = the Silver Gauntlets part of OoTR's Zoras Fountain -> ZF Hidden Cave"
+   },
+   "15546380048732510520": {
+    "region": "Zoras Fountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "One of 3 silver rocks (67.7-69.9,101.7,25.3-27.8) at the hidden-cave mouth (Land_ZoraFountain_Cave_* (71,101,28)); the ZF Hidden Cave pots (88,103.7,45) lie past them. Lifted from the fountain floor = the Silver Gauntlets part of OoTR's Zoras Fountain -> ZF Hidden Cave"
+   },
+   "8128099944573471538": {
+    "region": "Zoras Fountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "One of 3 silver rocks (67.7-69.9,101.7,25.3-27.8) at the hidden-cave mouth (Land_ZoraFountain_Cave_* (71,101,28)); the ZF Hidden Cave pots (88,103.7,45) lie past them. Lifted from the fountain floor = the Silver Gauntlets part of OoTR's Zoras Fountain -> ZF Hidden Cave"
+   },
+   "17232595302518493540": {
+    "region": "Zoras Fountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "One of 3 silver rocks (67.7-69.9,101.7,25.3-27.8) at the hidden-cave mouth (Land_ZoraFountain_Cave_* (71,101,28)); the ZF Hidden Cave pots (88,103.7,45) lie past them. Lifted from the fountain floor = the Silver Gauntlets part of OoTR's Zoras Fountain -> ZF Hidden Cave"
+   },
+   "4117475603241592218": {
+    "region": "Zoras Fountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "One of 3 silver rocks (67.7-69.9,101.7,25.3-27.8) at the hidden-cave mouth (Land_ZoraFountain_Cave_* (71,101,28)); the ZF Hidden Cave pots (88,103.7,45) lie past them. Lifted from the fountain floor = the Silver Gauntlets part of OoTR's Zoras Fountain -> ZF Hidden Cave"
+   },
+   "7870652284690645781": {
+    "region": "Zoras Fountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "One of 3 silver rocks (67.7-69.9,101.7,25.3-27.8) at the hidden-cave mouth (Land_ZoraFountain_Cave_* (71,101,28)); the ZF Hidden Cave pots (88,103.7,45) lie past them. Lifted from the fountain floor = the Silver Gauntlets part of OoTR's Zoras Fountain -> ZF Hidden Cave"
+   },
+   "1080099215763536241": {
+    "region": "Zoras Fountain",
+    "rule": "True",
+    "confidence": "high",
+    "why": "The ZF GS Tree's tree: its Gold Skulltula (49.3,110.4,32) sits on it (drop_map: ZF GS Tree, Zoras Fountain); on the ledge Land_ZoraRiver_Ledge_A_02 by the fountain; child file only"
+   }
+  }
+ }
+}

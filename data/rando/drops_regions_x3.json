@@ -1,0 +1,121 @@
+{
+ "_about": "Region assignments (x3) for the butterflies that turn into a fairy at a Deku Stick (Animal_ButterflyToFairy, remake_shuffle_butterfly_fairies). Same format as drops_regions_x1: region = the OoTR region where Link stands; rule = the extra rule inside it (the Deku Stick is the category's own rule, can_use(Sticks): child only). OoTR's own Butterfly Fairy rules add at_day at the Graveyard and Zora's Fountain. Method: nearest objects already assigned in drops_regions_* (same level), landmarks from the level files. Adult-layout copies are not locations (no adult Deku Sticks): only the child or both-age placement.",
+ "Graveyard": {
+  "objects": {
+   "9364011807493436645": {
+    "region": "Graveyard",
+    "rule": "at_day",
+    "confidence": "high",
+    "why": "Butterfly fairy: child Graveyard (2.5,103.5,5.6), 23 from the Graveyard GS bean patch; OoTR's Graveyard Butterfly Fairy (at_day)"
+   }
+  }
+ },
+ "HyruleCastle": {
+  "objects": {
+   "56015454395480141": {
+    "region": "Hyrule Castle Grounds",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Butterfly fairy: castle grounds (-20.6,115.6,-70.9), 8.7 from Hyrule Castle Grounds Tree 3; OoTR's HC Butterfly Fairy"
+   },
+   "10525144443854186255": {
+    "region": "Hyrule Castle Grounds",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Butterfly fairy: castle grounds (-21.2,115.6,-82.3), 15 from Hyrule Castle Grounds Tree 2 and the HC GS tree"
+   },
+   "2190345092305739753": {
+    "region": "HC Garden",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Butterfly fairy: the castle courtyard end (0,128.9,-245.8), beyond the HC Garden crates (49.5): past the moat crawl"
+   },
+   "13512404507962685409": {
+    "region": "HC Garden",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Butterfly fairy: the castle courtyard end (10.8,129.3,-243.5), beyond the HC Garden crates (55): past the moat crawl"
+   }
+  }
+ },
+ "HyruleField": {
+  "objects": {
+   "5302015774447719098": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Butterfly fairy: open field (185.8,158,229.3), 16.8 from Hyrule Field Trees 24/25 (one per age layout)"
+   },
+   "13686347745953642981": {
+    "region": "Lake Hylia",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Butterfly fairy: Lake Hylia shore by the scarecrow (Npc_Pierre), 33 from Lake Hylia Trees 1-4; OoTR's LH Butterfly Fairy"
+   },
+   "8066692015120655907": {
+    "region": "Hyrule Field",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "Butterfly fairy: field (-5.8,146.9,408) by HrlField_Note_08, above the lake (y 146.9, the lake shore is ~134), 50 from Hyrule Field Grass 17"
+   }
+  }
+ },
+ "KakarikoVillage": {
+  "objects": {
+   "3799718328804501607": {
+    "region": "Kakariko Village",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Butterfly fairy: by the watchtower (-48.2,119.6,20.3), 8.9 from Kak GS Watchtower (child, adult and the burnt layout)"
+   },
+   "12639822957853755425": {
+    "region": "Kak Redead Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Butterfly fairy: in the Redead grotto (-4.9,83.7,65), 4.5 from its beehives"
+   }
+  }
+ },
+ "LostWood": {
+  "objects": {
+   "12302030190286938663": {
+    "region": "LW Beyond Mido",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Butterfly fairy: by the Deku Theater (6.6,100.8,-47.7), 6.2 from the LW GS bean patch near the theater; OoTR's LW Beyond Mido Butterfly Fairy"
+   }
+  }
+ },
+ "ZoraFountain": {
+  "objects": {
+   "8934070999893489886": {
+    "region": "Zoras Fountain",
+    "rule": "at_day",
+    "confidence": "high",
+    "why": "Butterfly fairy: Zora's Fountain (19.6,102.3,8.1), 16.7 from ZF GS Above the Log; OoTR's ZF Butterfly Fairy (at_day)"
+   }
+  }
+ },
+ "ZoraRiver": {
+  "objects": {
+   "15416415279441399670": {
+    "region": "ZR Storms Grotto",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Butterfly fairy: in the Song of Storms grotto (-77.7,83,-33.1), 4 from its pots"
+   },
+   "16488738769576530684": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Butterfly fairy: in the ring of rocks (-78.4,100.4,-17.5), 1.9 from Zora River Rocks 2-5; OoTR's ZR Butterfly Fairy"
+   },
+   "13286252685910662099": {
+    "region": "Zora River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "Butterfly fairy: upper river near the waterfall (125.4,130.1,-40.8), 23.7 from ZR GS Ladder"
+   }
+  }
+ }
+}

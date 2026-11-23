@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rando of Time Tracker (prototype)</title>
+<style>
+:root {
+  --paper:#efe3c2;
+  --ink:#3b2a1a;
+  --edge:#7a4e2a;
+  --panel:#f7efd9;
+  --done:#6b8f3a;
+  --taint:#a3241a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 14px/1.4 system-ui, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: #2a2018;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: center;
+  padding: 8px 12px;
+  background: #3a2b1f;
+  color: #f5ead0;
+}
+
+header h1 {
+  font-size: 16px;
+  margin: 0 8px 0 0;
+  font-weight: 600;
+}
+
+header select, header button, header label {
+  font: inherit;
+}
+
+header select, header button {
+  background: #f5ead0;
+  color: var(--ink);
+  border: 1px solid var(--edge);
+  border-radius: 6px;
+  padding: 3px 8px;
+}
+
+header button:hover {
+  background: #fff7e0;
+  cursor: pointer;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.chip {
+  border: 1px solid #a88b63;
+  border-radius: 12px;
+  padding: 1px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+  background: #5a4430;
+  color: #f5ead0;
+}
+
+.chip.off {
+  opacity: .45;
+  text-decoration: line-through;
+}
+
+#status {
+  margin-left: auto;
+  font-size: 12px;
+  opacity: .85;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 40vw;
+}
+
+#taint {
+  display: none;
+  background: var(--taint);
+  color: #fff;
+  padding: 4px 12px;
+  font-weight: 600;
+}
+
+#taint.on {
+  display: block;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  min-height: 0;
+}
+
+#viewport {
+  overflow: auto;
+  background: var(--paper);
+  position: relative;
+  min-height: 0;
+}
+
+#stage {
+  position: relative;
+  margin: 0 auto;
+}
+
+#stage img.map {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.pin {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  margin: -13px 0 0 -13px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid #3b2a1a;
+  box-shadow: 0 1px 2px rgba(0,0,0,.4);
+}
+
+.pin.icon {
+  border: none;
+  box-shadow: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 34px;
+  height: 34px;
+  margin: -17px 0 0 -17px;
+}
+
+.pin.done {
+  opacity: .4;
+}
+
+.pin.done:not(.icon)::after {
+  content: "✓";
+  position: absolute;
+  right: -6px;
+  top: -8px;
+  color: var(--done);
+  font-size: 15px;
+  text-shadow: 0 0 2px #fff;
+}
+
+.pin.sel {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+  z-index: 5;
+}
+
+.pin:hover {
+  z-index: 6;
+  transform: scale(1.15);
+}
+
+#player {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 22px solid #1d5fd6;
+  margin: -14px 0 0 -10px;
+  filter: drop-shadow(0 0 2px #fff);
+  z-index: 7;
+  display: none;
+  pointer-events: none;
+}
+
+#tip {
+  position: fixed;
+  pointer-events: none;
+  background: #fffbe9;
+  border: 1px solid var(--edge);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+  display: none;
+  z-index: 20;
+  max-width: 320px;
+}
+
+aside {
+  background: var(--panel);
+  border-left: 2px solid var(--edge);
+  overflow: auto;
+  min-height: 0;
+}
+
+aside h2 {
+  font-size: 14px;
+  margin: 0;
+  padding: 8px 10px;
+  background: #e7d8b0;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #c9b07e;
+}
+
+aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside li {
+  padding: 4px 10px;
+  border-bottom: 1px solid #eadfbf;
+  cursor: pointer;
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+}
+
+aside li:hover {
+  background: #fff7e0;
+}
+
+aside li.done {
+  color: #8a7a5a;
+  text-decoration: line-through;
+}
+
+aside li .k {
+  font-size: 11px;
+  color: #7a6646;
+  min-width: 64px;
+}
+
+aside li .it {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--taint);
+  text-align: right;
+}
+
+header {
+  grid-row: 1;
+}
+
+#taint {
+  grid-row: 2;
+}
+
+main {
+  grid-row: 3;
+}
+
+footer {
+  grid-row: 4;
+}
+
+footer {
+  background: #3a2b1f;
+  color: #f5ead0;
+  padding: 6px 12px;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 4px 10px;
+  min-height: 32px;
+  max-height: 72px;
+  overflow: auto;
+}
+
+footer .item {
+  background: #5a4430;
+  border-radius: 10px;
+  padding: 1px 8px;
+}
+
+.zoom {
+  display: flex;
+  gap: 4px;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Rando Tracker <small style="opacity:.6">prototype</small></h1>
+  <select id="mapSel" aria-label="Map"></select>
+  <label><input type="checkbox" id="follow" checked> Follow the game</label>
+  <div class="zoom"><button id="zOut" title="Zoom out">&minus;</button><button id="zIn" title="Zoom in">+</button></div>
+  <div class="chips" id="chips"></div>
+  <button id="spoilerBtn" title="Shows every item; marks this seed as tainted">Load spoiler log&hellip;</button>
+  <input type="file" id="spoilerFile" accept=".json" hidden>
+  <span id="status">waiting for the game&hellip;</span>
+</header>
+<div id="taint"></div>
+<main>
+  <div id="viewport"><div id="stage"><img class="map" id="mapImg" alt=""><div id="player"></div></div></div>
+  <aside><h2 id="listTitle">Checks</h2><ul id="list"></ul></aside>
+</main>
+<footer id="items"></footer>
+<div id="tip"></div>
+<script>
+const KIND = {
+  chest: ["Chest", "#9b3fb3"],
+  gs: ["Skulltula", "#c9a400"],
+  pot: ["Pot", "#3a78d6"],
+  flying_pot: ["Flying pot", "#3a78d6"],
+  grass: ["Grass", "#3c9a35"],
+  rock_liftable: ["Rock", "#7d7d7d"],
+  rock_bombable: ["Boulder", "#6b4a31"],
+  crate: ["Crate", "#b8762e"],
+  beehive: ["Beehive", "#e08a00"],
+  freestanding: ["Item", "#d23a3a"],
+  freestanding_rupee_heart: ["Rupee/heart", "#d96b6b"],
+  boss_heart: ["Boss heart", "#b00000"],
+  icicle: ["Icicle", "#4fa3c7"],
+  tree: ["Tree", "#2f6b2a"],
+  other: ["Other", "#444"]
+};
+const W = 2000, H = 1440;
+let checks = [], maps = [], cur = null, st = {}, zoom = 1, spoiler = null, sel = null;
+const off = new Set(JSON.parse(localStorage.getItem("off") || "[]"));
+const marks = new Set(JSON.parse(localStorage.getItem("marks") || "[]"));
+const $ = id => document.getElementById(id);
+
+function seedKey() {
+  return (st.seed || "unknown") + "/" + (st.save || "").replace(/.*(slot_\d+).*/, "$1");
+}
+function done(c) {
+  return (st.doneSet && st.doneSet.has(c.hash)) || marks.has(c.hash);
+}
+
+function icon(c, d) {
+  const hp = /Heart Piece|PoH|Piece of Heart/.test(c.loc);
+  if (c.kind === "chest") return d ? "MapIconTreasure_01" : "MapIconTreasure_00";
+  if (c.kind === "gs") return d ? "MapIconCollectSkullSignCheck_00" : "MapIconCollectSkullSign_00";
+  if (hp) return d ? "MapIconCollectHeartPieceCheck_00" : "MapIconCollectHeartPiece_00";
+  return null;
+}
+
+function renderChips() {
+  const present = new Set(checks.filter(c => c.texture === cur).map(c => c.kind));
+  $("chips").innerHTML = "";
+  for (const k of Object.keys(KIND)) {
+    if (!present.has(k)) continue;
+    const el = document.createElement("span");
+    el.className = "chip" + (off.has(k) ? " off" : "");
+    el.textContent = KIND[k][0];
+    el.style.borderColor = KIND[k][1];
+    el.onclick = () => {
+      off.has(k) ? off.delete(k) : off.add(k);
+      localStorage.setItem("off", JSON.stringify([...off]));
+      render();
+    };
+    $("chips").appendChild(el);
+  }
+}
+
+function render() {
+  const stage = $("stage");
+  stage.style.width = (Math.max(600, $("viewport").clientWidth - 4) * zoom) + "px";
+  stage.querySelectorAll(".pin").forEach(p => p.remove());
+  const here = checks.filter(c => c.texture === cur && !off.has(c.kind));
+  const list = $("list");
+  list.innerHTML = "";
+  let nd = 0;
+  here.sort((a, b) => (done(a) - done(b)) || a.kind.localeCompare(b.kind) || a.loc.localeCompare(b.loc));
+  for (const c of here) {
+    const d = done(c);
+    nd += d;
+    const p = document.createElement("div");
+    const ic = icon(c, d);
+    p.className = "pin" + (ic ? " icon" : "") + (d ? " done" : "") + (sel === c.hash ? " sel" : "");
+    if (ic) p.style.backgroundImage = `url(/icons/${ic}.png)`;
+    else {
+      p.style.background = KIND[c.kind] ? KIND[c.kind][1] : "#444";
+      p.textContent = (KIND[c.kind] || ["?"])[0][0];
+    }
+    p.style.left = (c.px / W * 100) + "%";
+    p.style.top = (c.py / H * 100) + "%";
+    p.onmouseenter = e => tip(e, c);
+    p.onmousemove = e => tip(e, c);
+    p.onmouseleave = () => $("tip").style.display = "none";
+    p.onclick = () => toggle(c);
+    stage.appendChild(p);
+    const li = document.createElement("li");
+    li.className = d ? "done" : "";
+    const item = spoiler && spoiler[c.loc] ? `<span class="it">${esc(spoiler[c.loc])}</span>` : "";
+    li.innerHTML = `<span class="k">${esc((KIND[c.kind] || [c.kind])[0])}</span><span>${esc(c.loc)}</span>${item}`;
+    li.onclick = () => {
+      sel = c.hash;
+      render();
+      const r = stage.getBoundingClientRect();
+      $("viewport").scrollTo({
+        left: c.px / W * r.width - $("viewport").clientWidth / 2,
+        top: c.py / H * r.height - $("viewport").clientHeight / 2,
+        behavior: "smooth"
+      });
+    };
+    list.appendChild(li);
+  }
+  $("listTitle").textContent = `${cur || "?"}: ${nd} / ${here.length} done`;
+  const pl = st.player || {};
+  const pe = $("player");
+  if (pl.texture === cur && pl.px != null) {
+    pe.style.display = "block";
+    pe.style.left = (pl.px / W * 100) + "%";
+    pe.style.top = (pl.py / H * 100) + "%";
+  } else pe.style.display = "none";
+  renderChips();
+}
+
+function tip(e, c) {
+  const t = $("tip");
+  const item = spoiler && spoiler[c.loc] ? `<br><b style="color:var(--taint)">${esc(spoiler[c.loc])}</b>` : "";
+  t.innerHTML = `<b>${esc(c.loc)}</b><br>${esc((KIND[c.kind] || [c.kind])[0])}${c.floor ? " &middot; " + c.floor : ""}` +
+    ` &middot; ${done(c) ? (st.doneSet && st.doneSet.has(c.hash) ? "done (from the save)" : "marked by hand") : "not done"}${item}`;
+  t.style.display = "block";
+  t.style.left = (e.clientX + 14) + "px";
+  t.style.top = (e.clientY + 14) + "px";
+}
+function esc(s) {
+  return String(s).replace(/[&<>"]/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch]));
+}
+function toggle(c) {
+  if (st.doneSet && st.doneSet.has(c.hash)) return;  // the save says it's done, so you can't undo it by hand
+  marks.has(c.hash) ? marks.delete(c.hash) : marks.add(c.hash);
+  localStorage.setItem("marks", JSON.stringify([...marks]));
+  sel = c.hash;
+  render();
+}
+function setMap(name) {
+  if (!name || name === cur) return;
+  cur = name; $("mapSel").value = name; $("mapImg").src = `/maps/${name}.webp`; render();
+}
+function showTaint() {
+  const t = localStorage.getItem("taint:" + seedKey());
+  $("taint").className = t ? "on" : "";
+  $("taint").textContent = t ? `Spoiler log opened for this run (${seedKey()}) on ${new Date(+t).toLocaleString()}: this run is tainted.` : "";
+}
+
+async function poll() {
+  try {
+    st = await (await fetch("/api/state")).json();
+    st.doneSet = new Set(st.done || []);
+    const when = st.mtime ? new Date(st.mtime * 1000).toLocaleTimeString() : "?";
+    const lg = st.log || {};
+    $("status").textContent = `save ${when} · ${st.banc || "?"} · log: ${lg.level || "?"} (${lg.age || "?"}) · ❤ ${lg.hearts ?? "?"}/${lg.max_hearts ?? "?"} · GS ${lg.gs ?? (st.pouch || {}).Item_Token_Gold ?? 0}`;
+    $("items").innerHTML = Object.entries(st.pouch || {}).map(([k, v]) => `<span class="item">${esc(k.replace(/^(Item|Weapon|Armor|Obj)_/, ""))}${v > 1 ? " ×" + v : ""}</span>`).join("");
+    if ($("follow").checked) {
+      let want = st.player && st.player.texture;
+      if (lg.level && st.banc && lg.level !== st.banc) {  // the log is newer than the last save
+        want = maps.includes(lg.level + "_00") ? lg.level + "_00" : maps.find(m => m.startsWith(lg.level + "_"));
+      }
+      if (want && maps.includes(want)) setMap(want);
+    }
+    showTaint();
+    render();
+  } catch (e) {
+    $("status").textContent = "server not reachable";
+  }
+}
+
+$("zIn").onclick = () => { zoom = Math.min(4, zoom * 1.25); render(); };
+$("zOut").onclick = () => { zoom = Math.max(0.5, zoom / 1.25); render(); };
+$("mapSel").onchange = e => { $("follow").checked = false; setMap(e.target.value); };
+$("spoilerBtn").onclick = () => {
+  if (confirm("Opening the spoiler log shows every item and marks this run as tainted. Continue?")) $("spoilerFile").click();
+};
+$("spoilerFile").onchange = async e => {
+  const f = e.target.files[0];
+  if (!f) return;
+  const j = JSON.parse(await f.text());
+  spoiler = {};
+  for (const [k, v] of Object.entries(j.locations || {})) spoiler[k] = typeof v === "string" ? v : (v.item || JSON.stringify(v));
+  localStorage.setItem("taint:" + seedKey(), String(Date.now()));
+  showTaint();
+  render();
+};
+window.onresize = render;
+
+(async () => {
+  checks = await (await fetch("/checks.json")).json();
+  maps = await (await fetch("/api/maps")).json();
+  for (const m of maps) {
+    const o = document.createElement("option");
+    o.value = o.textContent = m;
+    $("mapSel").appendChild(o);
+  }
+  setMap(maps.includes("KokiriForest_Child_00") ? "KokiriForest_Child_00" : maps[0]);
+  poll();
+  setInterval(poll, 2000);
+})();
+</script>
+</body>
+</html>

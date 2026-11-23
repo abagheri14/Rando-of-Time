@@ -1,0 +1,229 @@
+{
+ "_about": "The big-chest cinematic the dungeon-item scene copies (helper of tools/rando/parity/dungeons.py). (made by tools/rando/parity/_dungeons_scenes.py)",
+ "file": "Dm_SY_Treasurebox",
+ "big": {
+  "nodes": {
+   "pp_Event37": {
+    "copy": "Event37",
+    "cases": {
+     "0": "pp_Event42",
+     "1": "pp_Event48"
+    }
+   },
+   "pp_Event42": {
+    "copy": "Event42",
+    "fork": [
+     "pp_Event39",
+     "pp_Event44",
+     "p_Event14",
+     "pp_Event97"
+    ],
+    "join": "pp_Event43"
+   },
+   "pp_Event48": {
+    "copy": "Event48",
+    "fork": [
+     "pp_Event87",
+     "pp_Event50",
+     "p_Event14",
+     "pp_Event100"
+    ],
+    "join": "pp_Event49"
+   },
+   "pp_Event39": {
+    "copy": "Event39",
+    "cases": {
+     "0": "pp_Event58",
+     "1": "pp_Event41"
+    }
+   },
+   "pp_Event44": {
+    "copy": "Event44",
+    "next": "pp_Event40"
+   },
+   "pp_Event97": {
+    "copy": "Event97",
+    "next": "pp_Event35"
+   },
+   "pp_Event43": {
+    "copy": "Event43",
+    "next": null
+   },
+   "pp_Event87": {
+    "copy": "Event87",
+    "cases": {
+     "0": "pp_Event77",
+     "1": "pp_Event77",
+     "2": "pp_Event78",
+     "3": "pp_Event78",
+     "4": "pp_Event78",
+     "5": "pp_Event78",
+     "6": "pp_Event78",
+     "7": "pp_Event78",
+     "8": "pp_Event78",
+     "99": "pp_Event78"
+    }
+   },
+   "pp_Event50": {
+    "copy": "Event50",
+    "next": "pp_Event33"
+   },
+   "pp_Event100": {
+    "copy": "Event100",
+    "next": "pp_Event80"
+   },
+   "pp_Event49": {
+    "copy": "Event49",
+    "next": null
+   },
+   "pp_Event58": {
+    "copy": "Event58",
+    "cases": {
+     "0": "pp_Event61",
+     "1": "pp_Event55"
+    }
+   },
+   "pp_Event41": {
+    "copy": "Event41",
+    "next": null
+   },
+   "pp_Event40": {
+    "copy": "Event40",
+    "next": null
+   },
+   "pp_Event35": {
+    "copy": "Event35",
+    "next": "pp_Event65"
+   },
+   "pp_Event77": {
+    "copy": "Event77",
+    "next": null
+   },
+   "pp_Event78": {
+    "copy": "Event78",
+    "cases": {
+     "0": "pp_Event79",
+     "1": "pp_Event47"
+    }
+   },
+   "pp_Event33": {
+    "copy": "Event33",
+    "next": null
+   },
+   "pp_Event80": {
+    "copy": "Event80",
+    "next": "pp_Event103"
+   },
+   "pp_Event61": {
+    "copy": "Event61",
+    "next": null
+   },
+   "pp_Event55": {
+    "copy": "Event55",
+    "next": null
+   },
+   "pp_Event65": {
+    "copy": "Event65",
+    "next": "pp_Event51"
+   },
+   "pp_Event79": {
+    "copy": "Event79",
+    "cases": {
+     "0": "pp_Event123",
+     "1": "pp_Event120"
+    }
+   },
+   "pp_Event47": {
+    "copy": "Event47",
+    "next": null
+   },
+   "pp_Event103": {
+    "copy": "Event103",
+    "next": "pp_Event102"
+   },
+   "pp_Event51": {
+    "copy": "Event51",
+    "next": "pp_Event105"
+   },
+   "pp_Event123": {
+    "copy": "Event123",
+    "next": null
+   },
+   "pp_Event120": {
+    "copy": "Event120",
+    "next": null
+   },
+   "pp_Event102": {
+    "copy": "Event102",
+    "next": null
+   },
+   "pp_Event105": {
+    "copy": "Event105",
+    "next": "pp_Event104"
+   },
+   "pp_Event104": {
+    "copy": "Event104",
+    "next": "pp_Event107"
+   },
+   "pp_Event107": {
+    "copy": "Event107",
+    "next": "pp_Event106"
+   },
+   "pp_Event106": {
+    "copy": "Event106",
+    "next": null
+   },
+   "p_Event14": {
+    "copy": "Event14",
+    "fork": [
+     "p_Event52",
+     "p_Event20",
+     "p_Event70"
+    ],
+    "join": "p_Event36"
+   },
+   "p_Event52": {
+    "copy": "Event52",
+    "next": "p_Event54"
+   },
+   "p_Event20": {
+    "copy": "Event20",
+    "next": null
+   },
+   "p_Event70": {
+    "copy": "Event70",
+    "cases": {
+     "0": "p_Event92",
+     "1": "p_Event84"
+    }
+   },
+   "p_Event36": {
+    "copy": "Event36",
+    "next": null
+   },
+   "p_Event54": {
+    "copy": "Event54",
+    "next": "get"
+   },
+   "p_Event92": {
+    "copy": "Event92",
+    "next": "p_Event113"
+   },
+   "p_Event84": {
+    "copy": "Event84",
+    "next": "p_Event91"
+   },
+   "p_Event113": {
+    "copy": "Event113",
+    "next": null
+   },
+   "p_Event91": {
+    "copy": "Event91",
+    "next": null
+   }
+  },
+  "start": "pp_Event37",
+  "stop": "get",
+  "wait90": "Event45"
+ }
+}

@@ -1,0 +1,437 @@
+{
+ "_about": "Remake-only chests as new OoTR locations, and rule changes for OoTR chests the remake reshaped (tools/rando/parity/chests.py; evidence per location: data/rando/chests_locations.json). Rules are at least as strict as the game: GC maze (every rock type), KF Storms Grotto (the remake's Deku Scrub brothers: reflect their nuts), SFM Wolfos Grotto (the remake covers it with a Song of Storms lid), GV Crate Freestanding PoH (a chest reached by the child's Cucco glide). Grotto pass (audit_overworld): KF Bridge Ledge Chest is one location for its Kokiri Forest and Lost Woods copies, reached by Lost Woods' bridge bean platform; HF Redead Grotto Chest is the ReDead room behind Hyrule Field's storm lid (OoTR's Kak Redead Grotto Chest and LW Near Shortcuts Grotto Chest are absent).",
+ "_why": {
+  "LLR Tower Chest": "SETTLED IN GAME: the chest HyruleField/chest/17445672702269453589 (-151.9,162.0,265.3) sits on the tower's terrace, reached by the adult with the Hookshot up the vine wall: seen by three other remake randomizers' players (Kaepora, Br00ty's OOTRR tracker, Clawshot's maintainer 17/11). The earlier stopgap asked for both a child route into the silo and the adult Hookshot route (OotrR study); the child route isn't real. can_use(Hookshot) is adult-only in OoTR.",
+  "GC Maze Left/Center/Right/Fourth Chest": "LOOSENED to each chest's own route: Left and Center can_blast_or_smash; Fourth can_use(Megaton_Hammer) or (has_explosives and can_use(Silver_Gauntlets)); Right can_blast_or_smash and can_use(Silver_Gauntlets). From the collision mesh (tools/reach.py, `python tools/reach.py verify` passing; NavGrid over x -51..-12, z -12..12 at 0.25 m from the upper Goron City floor (-20,115,-3), standing on rock tops not allowed, a route counted only where it never narrows below the age's CctRadius: adult 0.35, child 0.23 m). Rocks by actor: Obj_BrokenRock_A_01 brown = bombs or hammer; Obj_BrokenRock_A_02 bronze = hammer only (ChemicalRef Dummy, fact table; drops_regions_o2 review); Obj_LiftRock_B_01 silver = Silver Gauntlets. Results (adult): nothing -> no chest; bombs -> Left, Center; hammer -> Left, Center, Fourth; Silver Gauntlets alone -> none; bombs + silver -> all four; hammer + silver -> all four. Child: bombs -> Left, Center (narrowest gap on the way 0.57 m half-width). This reproduces every in-game report: Kaepora (all rocks reset: hammer alone opens Center, Left and Fourth, not Right; Silver alone none; bombs + Silver all four; a child with bombchus Center and Left) and Robophill via OotrR (Left/Center maze rocks, Fourth a hammer rock). Where the mesh's route was looser than an in-game rule, the in-game one is kept: the Fourth chest's bombs-only route existed only while bronze rocks were read as bombable. Parity note: OoTR's Silver-Gauntlets-only branch (OoTR's Left/Center/Right) has no route in the remake's maze (its silver boulders stand behind brown rocks): remake level design. Was: can_use(Megaton_Hammer) and can_use(Silver_Gauntlets) for all four (one rule clearing every rock type).",
+  "GV Octorok Grotto Chest": "The chest lies 3.19 units under water in the grotto: Kaepora and Clawshot both saw that the scales don't get Link to it and the Iron Boots do. Was True.",
+  "LH Fairy Note 06 Chest": "Clawshot, played: the shore chest HyruleField/chest/17023457248274633121 (-297.4,131.3,558.1, adult map only, beside Note 06 and an Enemy_Poe) is reached only with the lake refilled; the Poe need not die. Files agree: it stands at the full lake's surface (Obj_LakeHrl_WaterPlane_A_05/A_08 at y 130.8), on the west shore's rocks, with the drained lakebed's rocks and fallen trees 10 units below (y 118-122). A remake-only chest: no OoTR rule to keep.",
+  "LH Grotto Chest": "Clawshot, played: the four timed candles (Obj_CandleStick_TimeExtinguish_A_01, 15 s; HidingHole_Level_Hole_30 ANDs their Burning outputs) can't all be lit by Din's Fire, which lights three: a child lights the fourth with a Deku Stick from a lit one, an adult with an arrow shot through a lit one; Fire Arrows alone light all four. A remake-only chest (the remake replaced OoT's three scrubs): no OoTR rule to keep. Was has_fire_source."
+ },
+ "regions": {
+  "DMC Hammer Grotto": {
+   "locations": {
+    "DMC Hammer Grotto Chest": "True"
+   }
+  },
+  "Colossus Grotto": {
+   "locations": {
+    "Colossus Grotto Chest": "has_explosives"
+   }
+  },
+  "GV Octorok Grotto": {
+   "locations": {
+    "GV Octorok Grotto Chest": "can_use(Iron_Boots)"
+   }
+  },
+  "GV Storms Grotto": {
+   "locations": {
+    "GV Storms Grotto Lens Chest": "can_use(Lens_of_Truth)",
+    "GV Storms Grotto Chest": "True"
+   }
+  },
+  "Fire Temple Boulder Maze Upper": {
+   "locations": {
+    "Fire Temple Scarecrow Ledge Second Chest": "can_use(Scarecrow) or (logic_fire_scarecrow and Longshot)",
+    "Fire Temple Scarecrow Ledge Third Chest": "can_use(Scarecrow) or (logic_fire_scarecrow and Longshot)"
+   }
+  },
+  "Goron City": {
+   "locations": {
+    "GC Maze Fourth Chest": "can_use(Megaton_Hammer) or (has_explosives and can_use(Silver_Gauntlets))",
+    "GC Maze Left Chest": "can_blast_or_smash",
+    "GC Maze Center Chest": "can_blast_or_smash",
+    "GC Maze Right Chest": "can_blast_or_smash and can_use(Silver_Gauntlets)"
+   }
+  },
+  "Dodongos Cavern Lobby": {
+   "locations": {
+    "Dodongos Cavern Lobby Wall Crack Chest": "can_blast_or_smash"
+   }
+  },
+  "Dodongos Cavern Lower Right Side": {
+   "locations": {
+    "Dodongos Cavern Lower Lizalfos Chest": "is_adult or Sticks or Slingshot or Bombs or Kokiri_Sword"
+   }
+  },
+  "Dodongos Cavern Upper Lizalfos": {
+   "locations": {
+    "Dodongos Cavern Upper Lizalfos Chest": "is_adult or Sticks or Slingshot or Bombs or Kokiri_Sword"
+   }
+  },
+  "Dodongos Cavern Far Bridge": {
+   "locations": {
+    "Dodongos Cavern Bomb Bag Room Shield Chest": "True"
+   }
+  },
+  "Ice Cavern Behind Ice Walls": {
+   "locations": {
+    "Ice Cavern Push Block Room Chest": "can_play(Song_of_Time)"
+   }
+  },
+  "Jabu Jabus Belly Before Boss": {
+   "locations": {
+    "Jabu Jabus Belly Before Boss Chest": "True"
+   }
+  },
+  "Zoras Fountain": {
+   "locations": {
+    "ZF Scarecrow Ledge Chest": "is_adult and can_use(Scarecrow) and can_use(Longshot)"
+   }
+  },
+  "LH Grotto": {
+   "locations": {
+    "LH Grotto Chest": "(can_use(Dins_Fire) and (can_use(Sticks) or can_use(Bow))) or can_use(Fire_Arrows)"
+   }
+  },
+  "GC Grotto": {
+   "locations": {
+    "GC Grotto Chest": "True"
+   }
+  },
+  "GF Entrances Behind Crates": {
+   "locations": {
+    "GF Crate Grotto Chest": "is_adult and can_break_crate"
+   }
+  },
+  "SFM Storms Grotto": {
+   "locations": {
+    "SFM Storms Grotto Chest": "can_play(Song_of_Time)"
+   }
+  },
+  "LLR Tower": {
+   "locations": {
+    "LLR Tower Chest": "can_use(Hookshot)"
+   }
+  },
+  "Hyrule Field": {
+   "locations": {
+    "HF Fairy Note 04 Chest": "is_adult",
+    "HF Fairy Note 08 Chest": "is_adult",
+    "HF Fairy Note 11 Chest": "is_child and at('Hyrule Field', is_adult)",
+    "HF Redead Grotto Chest": "can_open_storm_grotto and (is_adult or Sticks or Kokiri_Sword or can_use(Dins_Fire))"
+   }
+  },
+  "Lake Hylia": {
+   "locations": {
+    "LH Fairy Note 06 Chest": "is_adult and 'Water Temple Clear'"
+   }
+  },
+  "Kakariko Village": {
+   "locations": {
+    "Kak Windmill Top Chest": "is_adult and can_use(Longshot) and can_use(Hover_Boots)"
+   }
+  },
+  "KF Storms Grotto": {
+   "locations": {
+    "KF Storms Grotto Chest": "has_shield"
+   }
+  },
+  "SFM Wolfos Grotto": {
+   "locations": {
+    "SFM Wolfos Grotto Chest": "(is_adult or Slingshot or Sticks or Kokiri_Sword or can_use(Dins_Fire)) and can_open_storm_grotto"
+   }
+  },
+  "GV Crate Ledge": {
+   "locations": {
+    "GV Crate Freestanding PoH": "is_child"
+   }
+  },
+  "Lost Woods": {
+   "locations": {
+    "KF Bridge Ledge Chest": "is_adult and here(can_plant_bean)"
+   }
+  }
+ },
+ "new_locations": {
+  "DMC Hammer Grotto Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (50)",
+   "filter_tags": [
+    "Death Mountain Crater",
+    "Grottos",
+    "Chests"
+   ],
+   "scene": 62,
+   "default": null
+  },
+  "Colossus Grotto Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (50)",
+   "filter_tags": [
+    "Desert Colossus",
+    "Grottos",
+    "Chests"
+   ],
+   "scene": 62,
+   "default": null
+  },
+  "GV Octorok Grotto Chest": {
+   "type": "Chest",
+   "vanilla_item": "Deku Seeds (30)",
+   "filter_tags": [
+    "Gerudo Valley",
+    "Grottos",
+    "Chests"
+   ],
+   "scene": 62,
+   "default": null
+  },
+  "GV Storms Grotto Lens Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (20)",
+   "filter_tags": [
+    "Gerudo Valley",
+    "Grottos",
+    "Chests"
+   ],
+   "scene": 62,
+   "default": null
+  },
+  "Fire Temple Scarecrow Ledge Second Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (20)",
+   "filter_tags": [
+    "Fire Temple",
+    "Vanilla Dungeons",
+    "Chests"
+   ],
+   "scene": 4,
+   "default": null
+  },
+  "Fire Temple Scarecrow Ledge Third Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (20)",
+   "filter_tags": [
+    "Fire Temple",
+    "Vanilla Dungeons",
+    "Chests"
+   ],
+   "scene": 4,
+   "default": null
+  },
+  "GC Maze Fourth Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (20)",
+   "filter_tags": [
+    "Goron City",
+    "Chests"
+   ],
+   "scene": 98,
+   "default": null
+  },
+  "Dodongos Cavern Lobby Wall Crack Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (5)",
+   "filter_tags": [
+    "Dodongo's Cavern",
+    "Vanilla Dungeons",
+    "Chests"
+   ],
+   "scene": 1,
+   "default": null
+  },
+  "Dodongos Cavern Lower Lizalfos Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (20)",
+   "filter_tags": [
+    "Dodongo's Cavern",
+    "Vanilla Dungeons",
+    "Chests"
+   ],
+   "scene": 1,
+   "default": null
+  },
+  "Dodongos Cavern Upper Lizalfos Chest": {
+   "type": "Chest",
+   "vanilla_item": "Deku Seeds (30)",
+   "filter_tags": [
+    "Dodongo's Cavern",
+    "Vanilla Dungeons",
+    "Chests"
+   ],
+   "scene": 1,
+   "default": null
+  },
+  "Dodongos Cavern Bomb Bag Room Shield Chest": {
+   "type": "Chest",
+   "vanilla_item": "Deku Shield",
+   "filter_tags": [
+    "Dodongo's Cavern",
+    "Vanilla Dungeons",
+    "Chests"
+   ],
+   "scene": 1,
+   "default": null
+  },
+  "Ice Cavern Push Block Room Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (20)",
+   "filter_tags": [
+    "Ice Cavern",
+    "Vanilla Dungeons",
+    "Chests"
+   ],
+   "scene": 9,
+   "default": null
+  },
+  "Jabu Jabus Belly Before Boss Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (20)",
+   "filter_tags": [
+    "Jabu Jabu's Belly",
+    "Vanilla Dungeons",
+    "Chests"
+   ],
+   "scene": 2,
+   "default": null
+  },
+  "ZF Scarecrow Ledge Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (50)",
+   "filter_tags": [
+    "Zora's Fountain",
+    "Chests"
+   ],
+   "scene": 89,
+   "default": null
+  },
+  "LH Grotto Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (20)",
+   "filter_tags": [
+    "Lake Hylia",
+    "Grottos",
+    "Chests"
+   ],
+   "scene": 62,
+   "default": null
+  },
+  "GC Grotto Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (50)",
+   "filter_tags": [
+    "Goron City",
+    "Grottos",
+    "Chests"
+   ],
+   "scene": 62,
+   "default": null
+  },
+  "GF Crate Grotto Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (20)",
+   "filter_tags": [
+    "Gerudo's Fortress",
+    "Grottos",
+    "Chests"
+   ],
+   "scene": 62,
+   "default": null
+  },
+  "SFM Storms Grotto Chest": {
+   "type": "Chest",
+   "vanilla_item": "Deku Seeds (30)",
+   "filter_tags": [
+    "Sacred Forest Meadow",
+    "Forest Area",
+    "Grottos",
+    "Chests"
+   ],
+   "scene": 62,
+   "default": null
+  },
+  "GV Storms Grotto Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupee (1)",
+   "filter_tags": [
+    "Gerudo Valley",
+    "Grottos",
+    "Chests"
+   ],
+   "scene": 62,
+   "default": null
+  },
+  "LLR Tower Chest": {
+   "type": "Chest",
+   "vanilla_item": "Deku Seeds (30)",
+   "filter_tags": [
+    "Lon Lon Ranch",
+    "Chests"
+   ],
+   "scene": 76,
+   "default": null
+  },
+  "HF Fairy Note 04 Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (20)",
+   "filter_tags": [
+    "Hyrule Field",
+    "Chests"
+   ],
+   "scene": 81,
+   "default": null
+  },
+  "HF Fairy Note 08 Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (20)",
+   "filter_tags": [
+    "Hyrule Field",
+    "Chests"
+   ],
+   "scene": 81,
+   "default": null
+  },
+  "LH Fairy Note 06 Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (20)",
+   "filter_tags": [
+    "Lake Hylia",
+    "Chests"
+   ],
+   "scene": 87,
+   "default": null
+  },
+  "HF Fairy Note 11 Chest": {
+   "type": "Chest",
+   "vanilla_item": "Piece of Heart",
+   "filter_tags": [
+    "Hyrule Field",
+    "Chests"
+   ],
+   "scene": 81,
+   "default": null
+  },
+  "KF Bridge Ledge Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (50)",
+   "filter_tags": [
+    "Lost Woods",
+    "Forest Area",
+    "Chests"
+   ],
+   "scene": 91,
+   "default": null
+  },
+  "Kak Windmill Top Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (50)",
+   "filter_tags": [
+    "Kakariko Village",
+    "Chests"
+   ],
+   "scene": 82,
+   "default": null
+  },
+  "HF Redead Grotto Chest": {
+   "type": "Chest",
+   "vanilla_item": "Rupees (50)",
+   "filter_tags": [
+    "Hyrule Field",
+    "Grottos",
+    "Chests"
+   ],
+   "scene": 62,
+   "default": null
+  }
+ }
+}

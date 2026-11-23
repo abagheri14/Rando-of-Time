@@ -1,0 +1,16 @@
+{
+ "_about": "Logic of the extras_qol plugin (tools/rando/parity/extras_qol.py). Every option here is a remake setting that is off by default, so nothing in this file is a plain OoTR override (no 'helpers' / 'regions' sections: world_settings.py applies none of it). The plugin rewrites rules through OoTR's logic reader only when the option is on, and stops the seed if a rewrite finds no rule (must_hit). remake_skip_talon: Talon starts awake at the ranch, so the castle-grounds condition OoTR puts on Malon's song, Talon's cuccos and the castle garden (at('Hyrule Castle Grounds', is_child and (Weird_Egg or Chicken)), or the plain 'Weird_Egg or Chicken' exit) becomes True, and Malon's castle egg is skipped (she has left the castle: False). remake_early_grannys_shop: Granny's shuffled item needs only the wallet her price needs (the remake's merchant scene sells it at her first talk). remake_slingshot_beehives: the Slingshot breaks hives (Obj_Beehive SlingshotBullet damage rate set to 1). remake_damage_multiplier x8 / x16: OoTR's \"damage_multiplier != 'ohko'\" tests read False (the logic treats both as one-hit KO).",
+ "options": {
+  "remake_skip_talon=true": {
+   "set": {"HC Malon Egg": "False"},
+   "egg_or_chicken": "Weird_Egg or Chicken",
+   "must_hit": ["HC Malon Egg", "HC Garden", "Song from Malon", "LLR Talons Chickens"]
+  },
+  "remake_early_grannys_shop=true": {
+   "set": {"Kak Granny Buy Blue Potion": "Progressive_Wallet"}
+  },
+  "remake_slingshot_beehives=true": {
+   "or_helpers": {"can_break_lower_beehive": "can_use(Slingshot)", "can_break_upper_beehive": "can_use(Slingshot)"}
+  }
+ }
+}

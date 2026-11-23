@@ -1,0 +1,685 @@
+{
+ "_about": "Built by tools/rando/parity/_extras_qol_build.py from the game files; read by extras_qol.py.",
+ "talon": {
+  "flowchart": "Goto_HyruleCastle",
+  "steps": {
+   "Event14": {
+    "next": "Event154",
+    "preds": [
+     [
+      "next",
+      "Event205",
+      null
+     ]
+    ],
+    "step": "Step02"
+   },
+   "Event51": {
+    "next": "Event201",
+    "preds": [
+     [
+      "entry",
+      "Goto_HyruleCastle_EntryMarket",
+      null
+     ]
+    ],
+    "step": "Step02_01"
+   },
+   "Event46": {
+    "next": "Event176",
+    "preds": [
+     [
+      "next",
+      "Event36",
+      null
+     ]
+    ],
+    "step": "Step03"
+   },
+   "Event88": {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event79",
+      null
+     ],
+     [
+      "next",
+      "Event86",
+      null
+     ]
+    ],
+    "step": "Step03_02"
+   }
+  }
+ },
+ "frogs": {
+  "flowchart": "MiniGame_FrogTenors",
+  "steps": {
+   "Event147": {
+    "PlayableSeconds": 0.8999999761581421,
+    "FirstPlayableSeconds": 1.7999999523162842,
+    "Num": 14,
+    "IsRandom": true
+   },
+   "Event17": {
+    "PlayableSeconds": 1.0,
+    "FirstPlayableSeconds": 2.0,
+    "Num": 14,
+    "IsRandom": false
+   },
+   "Event247": {
+    "PlayableSeconds": 0.699999988079071,
+    "FirstPlayableSeconds": 1.399999976158142,
+    "Num": 18,
+    "IsRandom": true
+   },
+   "Event248": {
+    "PlayableSeconds": 0.699999988079071,
+    "FirstPlayableSeconds": 1.399999976158142,
+    "Num": 14,
+    "IsRandom": true
+   },
+   "Event250": {
+    "PlayableSeconds": 0.699999988079071,
+    "FirstPlayableSeconds": 1.399999976158142,
+    "Num": 18,
+    "IsRandom": true
+   }
+  }
+ },
+ "replays": {
+  "flowchart": "Dm_SY_Ocarina",
+  "calls": {
+   "Event74": {
+    "next": "Event129",
+    "waits": [
+     "Event90",
+     "Event434",
+     "Event435",
+     "Event436",
+     "Event437",
+     "Event439",
+     "Event441",
+     "Event448",
+     "Event449",
+     "Event450",
+     "Event451",
+     "Event452"
+    ]
+   },
+   "Event12": {
+    "next": "Event137",
+    "waits": [
+     "Event51",
+     "Event72",
+     "Event93",
+     "Event103",
+     "Event106",
+     "Event107",
+     "Event441",
+     "Event448",
+     "Event449",
+     "Event450",
+     "Event451",
+     "Event452"
+    ]
+   },
+   "Event246": {
+    "next": "Event519",
+    "waits": [
+     "Event248",
+     "Event262",
+     "Event520",
+     "Event521",
+     "Event522",
+     "Event523",
+     "Event524",
+     "Event525"
+    ]
+   }
+  },
+  "waits": {
+   "Event452": 180,
+   "Event448": 360,
+   "Event451": 150,
+   "Event450": 210,
+   "Event449": 285,
+   "Event441": 360,
+   "Event435": 180,
+   "Event439": 360,
+   "Event434": 150,
+   "Event437": 250,
+   "Event90": 210,
+   "Event436": 180,
+   "Event106": 180,
+   "Event107": 120,
+   "Event51": 150,
+   "Event93": 250,
+   "Event103": 120,
+   "Event72": 180,
+   "Event520": 150,
+   "Event262": 120,
+   "Event248": 90,
+   "Event524": 180,
+   "Event525": 270,
+   "Event522": 250,
+   "Event523": 210,
+   "Event521": 180
+  }
+ },
+ "packs": {
+  "wallets": [
+   {
+    "pack": "Pack/Actor/Pouch_Wallet_Small.pack.zs",
+    "file": "GameParameter/ExpansionMaxNumActor/Item_Wallet_Small.game__actor__ExpansionMaxNumActor.bgyml",
+    "MaxNum": 200
+   },
+   {
+    "pack": "Pack/Actor/Item_Wallet_Medium.pack.zs",
+    "file": "GameParameter/ExpansionMaxNumActor/Item_Wallet_Medium.game__actor__ExpansionMaxNumActor.bgyml",
+    "MaxNum": 500
+   },
+   {
+    "pack": "Pack/Actor/Pouch_Wallet_Medium.pack.zs",
+    "file": "GameParameter/ExpansionMaxNumActor/Item_Wallet_Medium.game__actor__ExpansionMaxNumActor.bgyml",
+    "MaxNum": 500
+   },
+   {
+    "pack": "Pack/Actor/Item_Wallet_Large.pack.zs",
+    "file": "GameParameter/ExpansionMaxNumActor/Item_Wallet_Large.game__actor__ExpansionMaxNumActor.bgyml",
+    "MaxNum": 1000
+   },
+   {
+    "pack": "Pack/Actor/Pouch_Wallet_Large.pack.zs",
+    "file": "GameParameter/ExpansionMaxNumActor/Item_Wallet_Large.game__actor__ExpansionMaxNumActor.bgyml",
+    "MaxNum": 1000
+   }
+  ],
+  "beehive": {
+   "pack": "Pack/Actor/Obj_Kokiri_Beehive_A_01.pack.zs",
+   "file": "Life/DamageParameters/Obj_Beehive.game__life__DamageParameters.bgyml",
+   "key": "2054188199"
+  },
+  "player": [
+   {
+    "pack": "Pack/Actor/Player_Base.pack.zs",
+    "file": "Life/DamageParameters/Player.game__life__DamageParameters.bgyml",
+    "rates": {
+     "85358548": 1.0,
+     "388620384": 1.0,
+     "988705286": 1.0,
+     "1305706849": 1.0,
+     "1499870550": 1.0,
+     "1804308776": 1.0,
+     "2054188199": 1.0,
+     "2587815097": 1.0,
+     "2872354806": 1.0,
+     "3010012571": 1.0,
+     "3237216321": 1.0,
+     "3333229237": 1.0,
+     "3429998625": 1.0,
+     "3518489183": 1.0,
+     "3520794636": 1.0,
+     "3531729256": 1.0,
+     "3797638382": 1.0,
+     "3810451446": 1.0,
+     "4190899072": 1.0
+    }
+   },
+   {
+    "pack": "Pack/Actor/Player_Child.pack.zs",
+    "file": "Life/DamageParameters/Player.game__life__DamageParameters.bgyml",
+    "rates": {
+     "85358548": 1.0,
+     "388620384": 1.0,
+     "988705286": 1.0,
+     "1305706849": 1.0,
+     "1499870550": 1.0,
+     "1804308776": 1.0,
+     "2054188199": 1.0,
+     "2587815097": 1.0,
+     "2872354806": 1.0,
+     "3010012571": 1.0,
+     "3237216321": 1.0,
+     "3333229237": 1.0,
+     "3429998625": 1.0,
+     "3518489183": 1.0,
+     "3520794636": 1.0,
+     "3531729256": 1.0,
+     "3797638382": 1.0,
+     "3810451446": 1.0,
+     "4190899072": 1.0
+    }
+   },
+   {
+    "pack": "Pack/Actor/Player_Adult.pack.zs",
+    "file": "Life/DamageParameters/Player.game__life__DamageParameters.bgyml",
+    "rates": {
+     "85358548": 1.0,
+     "388620384": 1.0,
+     "988705286": 1.0,
+     "1305706849": 1.0,
+     "1499870550": 1.0,
+     "1804308776": 1.0,
+     "2054188199": 1.0,
+     "2587815097": 1.0,
+     "2872354806": 1.0,
+     "3010012571": 1.0,
+     "3237216321": 1.0,
+     "3333229237": 1.0,
+     "3429998625": 1.0,
+     "3518489183": 1.0,
+     "3520794636": 1.0,
+     "3531729256": 1.0,
+     "3797638382": 1.0,
+     "3810451446": 1.0,
+     "4190899072": 1.0
+    }
+   }
+  ]
+ },
+ "gamedata": {
+  "Step_Goto_HyruleCastle": {
+   "type": "Enum",
+   "values": [
+    "NotReady",
+    "Ready",
+    "Step01",
+    "Step02",
+    "Step02_01",
+    "Step03",
+    "Step03_01",
+    "Step03_02",
+    "Step04",
+    "Complete"
+   ]
+  },
+  "Talon_AfterWakeUp": {
+   "type": "Bool"
+  },
+  "HavePlayedEvent.Dm_HrlCastle_0020": {
+   "type": "Bool"
+  },
+  "Goto_HyruleCastle_IsAfter_Step03_02_Exp": {
+   "type": "BoolExp"
+  },
+  "PlayerStatus.CurrentRupee": {
+   "type": "Int"
+  }
+ },
+ "pickup_text": {
+  "flags": [
+   "HavePlayedGetEvent.Obj_Rupee_Green",
+   "HavePlayedGetEvent.Obj_Rupee_Blue",
+   "HavePlayedGetEvent.Obj_Rupee_Red",
+   "HavePlayedGetEvent.Obj_Rupee_Purple",
+   "HavePlayedGetEvent.Obj_Rupee_Gold",
+   "HavePlayedGetEvent.Obj_Heart",
+   "HavePlayedGetEvent.Obj_MagicJar_Small",
+   "HavePlayedGetEvent.Obj_MagicJar_Large",
+   "HavePlayedGetEvent.Obj_ArrowBundle_Small",
+   "HavePlayedGetEvent.Obj_ArrowBundle_Medium",
+   "HavePlayedGetEvent.Obj_ArrowBundle_Large",
+   "HavePlayedGetEvent.Obj_DekuSeed",
+   "HavePlayedGetEvent.Item_DekuSeed",
+   "HavePlayedGetEvent.Item_DekuNut",
+   "HavePlayedGetEvent.Item_DekuStick",
+   "HavePlayedGetEvent.Item_Bomb",
+   "HavePlayedGetEvent.Item_Bombchu"
+  ],
+  "bags": [
+   {
+    "item": "Item_DekuNut",
+    "bag": "Item_NutBag_Small",
+    "kind": "DekuNut",
+    "max": 20,
+    "rows": [
+     "IsGet.Item_NutBag_Small",
+     "PouchData.Item_NutBag_Small.StockNum",
+     "PouchContentMaxNum.DekuNut",
+     "CurrentExpansionActor_DekuNut"
+    ]
+   },
+   {
+    "item": "Item_DekuStick",
+    "bag": "Item_StickBag_Small",
+    "kind": "DekuStick",
+    "max": 10,
+    "rows": [
+     "IsGet.Item_StickBag_Small",
+     "PouchData.Item_StickBag_Small.StockNum",
+     "PouchContentMaxNum.DekuStick",
+     "CurrentExpansionActor_DekuStick"
+    ]
+   }
+  ]
+ },
+ "blocks": [
+  {
+   "file": "GameParameter/GrabMoveActorParam/Obj_MovableBox_A_01.game__object__GrabMoveActorParam.bgyml",
+   "packs": [
+    "Pack/Actor/Enemy_Amos.pack.zs",
+    "Pack/Actor/Enemy_Amos_AlwaysRespawn.pack.zs",
+    "Pack/Actor/ForestTemple_MovableBox_Puzzle_Manager.pack.zs",
+    "Pack/Actor/Obj_AmosStatue_A_01.pack.zs",
+    "Pack/Actor/Obj_FireTemple_MovableBox_A_01.pack.zs",
+    "Pack/Actor/Obj_FireTemple_MovableBox_A_02.pack.zs",
+    "Pack/Actor/Obj_ForestTemple_MovableBox_A_01.pack.zs",
+    "Pack/Actor/Obj_ForestTemple_MovableBox_A_02.pack.zs",
+    "Pack/Actor/Obj_ForestTemple_MovableBox_A_03.pack.zs",
+    "Pack/Actor/Obj_ForestTemple_MovableBox_A_04.pack.zs",
+    "Pack/Actor/Obj_ForestTemple_MovableBox_A_05.pack.zs",
+    "Pack/Actor/Obj_Goron_Statue_A_01.pack.zs",
+    "Pack/Actor/Obj_LonLonRanch_MovableBox_A_01.pack.zs",
+    "Pack/Actor/Obj_MovableBox_A_01.pack.zs",
+    "Pack/Actor/Obj_MovableBox_A_04.pack.zs",
+    "Pack/Actor/Obj_MovableBox_A_05.pack.zs",
+    "Pack/Actor/Obj_SpiritTemple_MovableBox_A_01.pack.zs",
+    "Pack/Actor/Obj_Tombstone_A_01.pack.zs",
+    "Pack/Actor/Obj_Tombstone_A_02.pack.zs",
+    "Pack/Actor/Obj_Tombstone_A_03.pack.zs"
+   ],
+   "MoveSpeed": {
+    "MaxX": 44.0,
+    "Type": "Hermit2DSplit",
+    "Data": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     8.0,
+     0.0,
+     0.0,
+     0.0,
+     18.0,
+     0.05999999865889549,
+     0.007597883231937885,
+     0.007597883231937885,
+     35.0,
+     0.550000011920929,
+     0.04975903034210205,
+     0.04975903034210205,
+     43.0,
+     1.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "file": "GameParameter/GrabMoveActorParam/Obj_MovableBox_A_04.game__object__GrabMoveActorParam.bgyml",
+   "packs": [
+    "Pack/Actor/Obj_MovableBox_A_04.pack.zs"
+   ],
+   "MoveSpeed": {
+    "MaxX": 50.0,
+    "Type": "Hermit2DSplit",
+    "Data": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     10.0,
+     0.0,
+     0.0,
+     0.0,
+     20.003374099731445,
+     0.15566037595272064,
+     0.031961843371391296,
+     0.031961843371391296,
+     29.92580223083496,
+     0.7122641801834106,
+     0.05000000074505806,
+     0.05000000074505806,
+     44.0,
+     1.0,
+     0.0,
+     0.0,
+     50.0,
+     1.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "file": "GameParameter/GrabMoveActorParam/Obj_MovableBox_A_05.game__object__GrabMoveActorParam.bgyml",
+   "packs": [
+    "Pack/Actor/Obj_FireTemple_MovableBox_A_01.pack.zs",
+    "Pack/Actor/Obj_FireTemple_MovableBox_A_02.pack.zs",
+    "Pack/Actor/Obj_Goron_Statue_A_01.pack.zs",
+    "Pack/Actor/Obj_MovableBox_A_05.pack.zs"
+   ],
+   "MoveSpeed": {
+    "MaxX": 53.0,
+    "Type": "Hermit2DSplit",
+    "Data": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     13.0,
+     0.0,
+     0.0,
+     0.0,
+     42.0,
+     0.550000011920929,
+     0.05481554940342903,
+     0.05481554940342903,
+     53.0,
+     1.0,
+     0.004999999888241291,
+     0.004999999888241291
+    ]
+   }
+  }
+ ],
+ "dpad": {
+  "file": "Sequence/UpdateShortCutOpenHoldFrameCounter.module.ainb",
+  "counter": "Sequence_ShortCutOpenHoldCounter",
+  "nodes": {
+   "hold": 1,
+   "trig": 13,
+   "hook": 32,
+   "reset": 24,
+   "counter": 19,
+   "step": 25,
+   "dummy": 23,
+   "bool_sel": 3,
+   "f32_sel": 20,
+   "sim": 10,
+   "set_bool": 16,
+   "get_bool": 30,
+   "hash": 5,
+   "set_enum": 9,
+   "closing": 33
+  },
+  "outputs": [
+   "HoldUp",
+   "HoldDown",
+   "TrigUp",
+   "TrigDown",
+   "HoldR",
+   "HoldLeft",
+   "TrigLeft"
+  ],
+  "sources": {
+   "get_s64": {
+    "file": "Sequence/AfterChangeBanc.module.ainb",
+    "node": 17
+   },
+   "str_sel": {
+    "file": "Sequence/AfterChangeBanc.module.ainb",
+    "node": 16
+   },
+   "set_s64": {
+    "file": "Sequence/AfterEvent.module.ainb",
+    "node": 12
+   },
+   "get_exp": {
+    "file": "Sequence/Ocarina.module.ainb",
+    "node": 71
+   },
+   "sync": {
+    "file": "Sequence/LoadBancImpl.module.ainb",
+    "node": 69
+   },
+   "index": {
+    "file": "Sequence/AfterLoadSaveData.module.ainb",
+    "node": 0
+   },
+   "push": {
+    "file": "Sequence/SetPouchAndStatusForGameStart.module.ainb",
+    "node": 7
+   }
+  },
+  "slots": {
+   "head": "PlayerStatus.EquipHeadArmor",
+   "boots": "PlayerStatus.EquipBoot"
+  },
+  "gear": {
+   "head": [
+    {
+     "actor": "Armor_GlassTruth",
+     "button": "Pa_HeadEquip_01",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Truth",
+     "button": "Pa_HeadEquip_02",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Goron",
+     "button": "Pa_HeadEquip_02",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Zora",
+     "button": "Pa_HeadEquip_02",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Gerudo",
+     "button": "Pa_HeadEquip_02",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Bunny",
+     "button": "Pa_HeadEquip_02",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Spooky",
+     "button": "Pa_HeadEquip_02",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Skull",
+     "button": "Pa_HeadEquip_02",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Keaton",
+     "button": "Pa_HeadEquip_02",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Amiibo0",
+     "button": "Pa_HeadEquip_03",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Amiibo1",
+     "button": "Pa_HeadEquip_03",
+     "child": true,
+     "adult": true
+    }
+   ],
+   "boots": [
+    {
+     "actor": "Armor_Adult_HoverBoot",
+     "button": "Pa_FootEquip_00",
+     "child": false,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Adult_HeavyBoot",
+     "button": "Pa_FootEquip_01",
+     "child": false,
+     "adult": true
+    }
+   ]
+  },
+  "wheel": {
+   "file": "Sequence/ShortCut.module.ainb",
+   "nodes": {
+    "hold": 3,
+    "end": 5,
+    "held": 6,
+    "force": 16,
+    "set_category": 17,
+    "close_flag": 32,
+    "get_bool": 51,
+    "hold_r": 59,
+    "dummy": 7
+   }
+  },
+  "kinds": {
+   "Armor_GlassTruth": "GlassTruth",
+   "Armor_Child_Mask_Truth": "TruthMask",
+   "Armor_Child_Mask_Goron": "GoronMask",
+   "Armor_Child_Mask_Zora": "ZoraMask",
+   "Armor_Child_Mask_Gerudo": "GerudoMask",
+   "Armor_Child_Mask_Bunny": "BunnyMask",
+   "Armor_Child_Mask_Spooky": "SpookyMask",
+   "Armor_Child_Mask_Skull": "SkullMask",
+   "Armor_Child_Mask_Keaton": "KeatonMask",
+   "Armor_Child_Mask_Amiibo0": "Lure",
+   "Armor_Child_Mask_Amiibo1": "Lure",
+   "Armor_Adult_HoverBoot": "HoverBoot",
+   "Armor_Adult_HeavyBoot": "HeavyBoot"
+  },
+  "tunics": [
+   {
+    "actor": "Armor_Adult_Zora",
+    "button": "Pa_Epuipment_06",
+    "child": false,
+    "adult": true,
+    "default": false
+   },
+   {
+    "actor": "Armor_Adult_Goron",
+    "button": "Pa_Epuipment_07",
+    "child": false,
+    "adult": true,
+    "default": false
+   },
+   {
+    "actor": "Armor_Adult_Normal",
+    "button": "Pa_Epuipment_08",
+    "child": false,
+    "adult": true,
+    "default": true
+   }
+  ],
+  "tunic_slot": "PlayerStatus.EquipArmor",
+  "tunic_kinds": {
+   "Armor_Adult_Zora": "SheikahWarp",
+   "Armor_Adult_Goron": "SheikahWarp",
+   "Armor_Adult_Normal": "SheikahWarp"
+  }
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "_about": "Where the remake shows each OoT Randomizer misc hint and other text the hints plugin writes (tools/rando/parity/hints.py). Each target is one message (file + label in every language's Mals archive). keep_pages: vanilla pages (0-based, split at page breaks {tag:0,4}) kept before the new text; the new text replaces the rest. Read from the game files (event flows that show each message are named in 'shown_by'); 'unverified' marks what still needs an in-game look. tools/rando/parity/_hints_extract.py copies every target's vanilla text in all 16 languages into data/rando/hints_messages.json.",
+ "colors": {
+  "_about": "OoTR colour name -> remake colour index (tag 0,3 parameter, little-endian u16 hex). 0000 is the game's own highlight for key words (3065 uses in USen); ffff ends a colour. Other indices the game uses: 0100 (muttered text and Gossip Stones' whole text), 0300 (magic cost in item captions), 0400 and 0500 (staff roll). Which colour each index shows is unverified, so every OoTR colour maps to the standard highlight.",
+  "Red": "0000", "Green": "0000", "Blue": "0000", "Light Blue": "0000", "Pink": "0000", "Yellow": "0000", "Black": "0000"
+ },
+ "box": {
+  "_about": "Text box limits read from the vanilla text: no EventFlowMsg page has more than 3 lines (21,216 pages in USen); normal-size lines run to about 52 characters, small-font lines ({tag:0,2,5000}, Gossip Stones) to about 65. Hint text is wrapped to these widths in every language (the hint text is English everywhere).",
+  "lines": 3, "width": 50, "width_small": 60
+ },
+ "targets": {
+  "altar": {"file": "EventFlowMsg/SignboardWood.msbt", "label": "TempleOfTime_000", "keep_pages": [],
+            "shown_by": "DoorOfTime:Check_SpiritStoneBase (Event35/Event36, SignBoard_EventStarter). The remake's altar shows one message for both ages, so the child and adult altar texts are joined (stones, Door of Time, medallions, bridge, Ganon's Boss Key)."},
+  "ganondorf": {"file": "EventFlowMsg/Dm_InsideGanonCastle_BossIn.msbt", "label": "Dm_InsideGanonCastle_BossIn_Text_018_b", "keep_pages": [0],
+                "shown_by": "Dm_InsideGanonCastle_BossIn timeline, Ganondorf's last line before the battle ('You will return them at once!'). Unverified: cutscene lines may close on a timer."},
+  "dampe_diary": {"file": "EventFlowMsg/Diary_Hylia_Dampe_Adult.msbt", "label": "Talk_03", "keep_pages": [0], "leftover": "vanilla",
+                  "shown_by": "Diary_Hylia_Dampe_Adult:Talk (adult; Talk_01 -> Talk_02 -> Talk_03 after the first grave-digging tour, Talk_04 before it). Talk_03 is Dampe's 'take the treasure that shrinks and stretches into the tomb' entry; Talk_04 also gets the hint so it shows before the tour too.",
+                  "also": [{"file": "EventFlowMsg/Diary_Hylia_Dampe_Adult.msbt", "label": "Talk_04", "keep_pages": [0]}]},
+  "10_skulltulas": {"file": "EventFlowMsg/Npc_SkullDad.msbt", "label": "Talk_28", "keep_pages": [],
+                    "shown_by": "GatheringTokenGold:NextGoal (the cursed father names the next token goal: 10, 20, 30, 40, 50, then 100). The five cursed children only say 'Yeaaarrgh! I'm cursed!' and which child gives which reward is not in the files, so the father's goal lines carry the hints."},
+  "20_skulltulas": {"file": "EventFlowMsg/Npc_SkullDad.msbt", "label": "Talk_23", "keep_pages": [], "shown_by": "GatheringTokenGold:NextGoal"},
+  "30_skulltulas": {"file": "EventFlowMsg/Npc_SkullDad.msbt", "label": "Talk_24", "keep_pages": [], "shown_by": "GatheringTokenGold:NextGoal"},
+  "40_skulltulas": {"file": "EventFlowMsg/Npc_SkullDad.msbt", "label": "Talk_25", "keep_pages": [], "shown_by": "GatheringTokenGold:NextGoal"},
+  "50_skulltulas": {"file": "EventFlowMsg/Npc_SkullDad.msbt", "label": "Talk_26", "keep_pages": [], "shown_by": "GatheringTokenGold:NextGoal"},
+  "100_skulltulas": {"file": "EventFlowMsg/Npc_SkullDad.msbt", "label": "Talk_27", "keep_pages": [], "shown_by": "GatheringTokenGold:NextGoal"},
+  "frogs2": {"file": "EventFlowMsg/MiniGame_FrogTenors.msbt", "label": "Talk_19", "keep_pages": [0, 1],
+             "shown_by": "MiniGame_FrogTenors: the frogs explain their ocarina game ('Once we're full, we'll give you a Piece of Heart!'), the remake's counterpart of OoTR's frogs2 hint on the Zora River log."},
+  "big_poes": {"file": "EventFlowMsg/Npc_Hylia_048_BottleShop.msbt", "label": "Talk_63", "keep_pages": [],
+               "shown_by": "Npc_Hylia_048_BottleShop (the poe buyer: 'Reach 500 points, and I'll give you something useful for catching poes'; the bottle is OoTR's Market 10 Big Poes)."},
+  "theater": {"file": "EventFlowMsg/SignboardWood.msbt", "label": "LostWood_001", "keep_pages": [0],
+              "shown_by": "Deku Theater sign (placement-named sign LostWood_001: 'Forest Stage' / 'prepare your face' / 'Amazing prizes await!'). OoTR's skull_mask and mask_of_truth hints share this sign, as in OoTR; 'Forest Stage' stays and each reward gets a page."},
+  "medigoron": {"file": "EventFlowMsg/Npc_Goron_Medigoron_Adult.msbt", "label": "Talk_02", "keep_pages": [],
+                "shown_by": "Npc_Goron_Medigoron_Adult sale offer ('Wanna buy one? ... for N rupees'); keeps the price variable tag in markup mode."},
+  "carpet_salesman": {"file": "EventFlowMsg/Npc_Hylia_044_Adult.msbt", "label": "Talk_09", "keep_pages": [0],
+                      "shown_by": "Npc_Hylia_044_Adult (Mirage Desert carpet merchant: 'Moving objects of great danger! ... But what could they be?'). Talk_08 is the same offer; both get the hint.",
+                      "also": [{"file": "EventFlowMsg/Npc_Hylia_044_Adult.msbt", "label": "Talk_08", "keep_pages": [0]}]},
+  "carpet_sold": {"file": "EventFlowMsg/Npc_Hylia_044_Adult.msbt", "label": "Talk_03", "keep_pages": [],
+                  "shown_by": "Npc_Hylia_044_Adult after the sale ('...the answer...were Bombchus!'): rewritten to the item actually sold when shuffle_expensive_merchants is on."},
+  "granny": {"file": "EventFlowMsg/Npc_Hylia_053_Adult.msbt", "label": "Talk_101", "keep_pages": [],
+             "shown_by": "Npc_Hylia_053_Adult potion offer ('The ultimate potion! ... 100 rupees')."},
+  "seed_info": {"file": "EventFlowMsg/Dm_Kokiri_0030.msbt", "label": "Dm_Kokiri_0030_Text_010_b", "keep_pages": [0],
+                "shown_by": "Dm_Kokiri_0030 (the opening: Navi's first line to Link, 'Link! Hey, Link, wake up!'), the first text box of a new file. Unverified: cutscene lines may close on a timer."}
+ },
+ "warp_songs": {
+  "_about": "Warp song destinations as the remake names them. Dm_SY_Ocarina Talk_02..07 is the confirmation the remake asks after a warp song ('Warp to the Sacred Grove?'), OoTR's warp song text; Ocarina_00 Caption_06..11 (song list) and PouchContent Item_Melody_*_GetCaption also name the destination. Rewritten only when warp song destinations are shuffled (warp_songs), as OoTR does.",
+  "Minuet of Forest Warp -> Sacred Forest Meadow": {"confirm": "Talk_02", "caption": "Caption_06", "get_caption": "Item_Melody_ForestMinuet_GetCaption"},
+  "Bolero of Fire Warp -> DMC Central Local": {"confirm": "Talk_03", "caption": "Caption_07", "get_caption": "Item_Melody_FireBolero_GetCaption"},
+  "Serenade of Water Warp -> Lake Hylia": {"confirm": "Talk_04", "caption": "Caption_08", "get_caption": "Item_Melody_WaterSerenade_GetCaption"},
+  "Requiem of Spirit Warp -> Desert Colossus": {"confirm": "Talk_05", "caption": "Caption_09", "get_caption": "Item_Melody_SpiritRequiem_GetCaption"},
+  "Nocturne of Shadow Warp -> Graveyard Warp Pad Region": {"confirm": "Talk_06", "caption": "Caption_10", "get_caption": "Item_Melody_ShadowNocturne_GetCaption"},
+  "Prelude of Light Warp -> Temple of Time": {"confirm": "Talk_07", "caption": "Caption_11", "get_caption": "Item_Melody_LightPrelude_GetCaption"}
+ },
+ "owls": {
+  "_about": "Kaepora Gaebora's rides name their destination: Lake Hylia (Dm_LakeHrl_0010_0005 'I was just on my way to Hyrule Castle. Care to join me?', _0008 'Care for a lift to Hyrule Castle?'), Death Mountain Trail (Npc_Kaepora_DeathMountainTrail Talk_04 'I can carry you as far as Kakariko Village', Talk_01 last page). Rewritten only when owl_drops is on, as OoTR does. {dest} is the destination.",
+  "LH Owl Flight -> Hyrule Field": [
+   {"file": "EventFlowMsg/Dm_LakeHrl_0010.msbt", "label": "Dm_LakeHrl_0010_0005", "keep_pages": [], "pages": ["As it happens, Link, I was just on my way to #{dest}#. Care to join me?", "If you'd like, just grab hold of my talons, and I'll take you on a little trip through the skies."]},
+   {"file": "EventFlowMsg/Dm_LakeHrl_0010.msbt", "label": "Dm_LakeHrl_0010_0008", "keep_pages": [], "pages": ["Care for a lift to #{dest}#? I imagine flying might be a nice treat for you."]}],
+  "DMT Owl Flight -> Kak Impas Rooftop": [
+   {"file": "EventFlowMsg/Npc_Kaepora_DeathMountainTrail.msbt", "label": "Talk_04", "keep_pages": [], "pages": ["If you're heading down the mountain, I can carry you to #{dest}#. What do you say?"]},
+   {"file": "EventFlowMsg/Npc_Kaepora_DeathMountainTrail.msbt", "label": "Talk_01", "keep_pages": [0, 1], "pages": ["If you're heading down the mountain, I'll carry you along to #{dest}#."]}]
+ }
+}

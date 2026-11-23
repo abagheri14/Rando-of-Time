@@ -1,0 +1,2188 @@
+{
+  "_about": {
+    "what": "The remake's own glitch tricks (Switch 2 remake of Ocarina of Time, versions 1.0.0 and 1.1.1), each an OoTR trick (off by default) that tools/rando/parity/glitches.py applies. (python tools/rando/glitch_report.py checklist).",
+    "default": "Every trick is off. generate.register_remake_tricks registers each name with OoTR's allowed_tricks, so a settings file can turn it on (or \"logic_remake_glitch_...\": true, as the app's Detailed Logic > Remake glitches switches write it). Logic Rules 'Glitched (remake glitches)' (logic_rules remake_glitched) turns on every trick with routes in logic (parity/glitches.py resolve_settings).",
+    "rules": "Live routes: a source shows the route (high confidence). Each: id, region (an OoTR region, or a 'Remake ...' region glitches.py makes), kind (exit | location | event | helper), target (exit destination, location or event name, or a helper name), add (the route, ORed beside the normal rule; for a helper, beside every use of it), confidence, test (what to try in the game), note, source. Optional: new (the exit/event doesn't exist in OoTR: made closed, the route opens it), optional (the spot is another plugin's, e.g. a drop-group event: skipped when that plugin is off).",
+    "candidates": "Routes to test in the game (medium or low confidence): same fields. None is in any seed's logic until marked \"verified\": \"YYYY-MM-DD\" (then live); \"refuted\": why (never live), \"blocked\": why logic can't express it (never live).",
+    "helpers": "data/rando/logic/glitches.json: remake_ijsc (Deku Sticks as child, Megaton Hammer as adult, plus another quick-menu item: remake_quick_menu_item), remake_ijsc_child, remake_ijsc_adult, remake_actor_jump_adult.",
+    "confidence": "high: the runner's own written method or tutorial (ZSR's oot2026 pages count) plus independent confirmation, or an any% route step; medium: one primary source with a method, or the technique proven and the spot plausible; low: a title, a chapter heading or a single news claim.",
+    "versions": "Every trick here works on 1.1.1 as well as 1.0.0. Hookshot Storage (1.0 only) is in the research notes, not in any trick."
+  },
+  "tricks": {
+    "logic_remake_glitch_jsc": {
+      "name": "Infinite Jump Slash Cancel (infinite height)",
+      "description": "Jump-attack with the Deku Stick (child) or Megaton Hammer (adult), open the quick item menu mid-attack, swap to another item and back, and buffer a new jump attack: each cycle stops the fall and adds height; holding Target keeps Link moving forward. Live routes: the Graveyard Shadow Temple ledge (both ages), the Shadow Temple as a child (entrance pit, gaps, high silver crystals), the Kakariko gate and King Zora as a child, the Gerudo Valley bridge, the Gerudo Card skip, the Mirror Shield hand, Dodongo's Cavern's early Bomb Bag, the adult Deku Tree and the Fire Trial door. About 80 more height and gap routes are on the in-game checklist.",
+      "confidence": "high",
+      "found_by": "Ataappi (credited by Kethaldo, Linkus7, Chris Crikeyson); tutorial gymnast86; ZSR technique page (Vespher)",
+      "versions": "1.0.0 and 1.1.1; not patched",
+      "age": "both",
+      "items": "Deku Sticks (child) or Megaton Hammer (adult)",
+      "difficulty": "hard (1-3 frame menu timing); in every any% run since 2026-11-08",
+      "ootr_analog": "can_hover (glitch_hovering, N64 bomb hover with ISG), which does not work in the remake",
+      "sources": [
+        "https://www.youtube.com/watch?v=4HSZ6GMQCZk",
+        "https://www.youtube.com/watch?v=6S0NxUvQQ3g",
+        "https://www.youtube.com/watch?v=cacROQ9d2xY",
+        "https://www.youtube.com/watch?v=xhBb5x3FMQE",
+        "https://www.youtube.com/watch?v=lmRD82rFDxw",
+        "https://www.youtube.com/watch?v=9ab2hrwJlqY",
+        "https://www.youtube.com/watch?v=k0HbyRWIAaY",
+        "https://www.youtube.com/watch?v=a8OzbnrtYe8",
+        "https://www.youtube.com/watch?v=BC0zoYBU2uY",
+        "https://x.com/ORCinfo/status/2119287501592613245",
+        "https://x.com/imJakeZSR/status/2119242851439784094",
+        "https://x.com/k4erup/status/2119137721587540452",
+        "https://automaton-media.com/articles/newsjp/20261109-478196/",
+        "https://automaton-media.com/articles/newsjp/20261113-479169/",
+        "https://dexerto.com/legend-of-zelda/speedrunners-are-already-breaking-zelda-ocarina-of-time-remake-with-infinite-and-super-jumps-3426795",
+        "https://www.youtube.com/watch?v=f6JUWP1mP0I",
+        "https://www.youtube.com/watch?v=VEnrL0kISjw",
+        "https://www.zsr.gg/oot2026/tech/jumpslash-cancel",
+        "https://www.zsr.gg/oot2026/route/any-1",
+        "https://www.youtube.com/watch?v=_HkBJTg-YFQ",
+        "https://www.youtube.com/watch?v=2EznLNDm3_I",
+        "https://www.youtube.com/watch?v=PESvcCMcaZs"
+      ],
+      "rules": [
+        {
+          "id": "jsc-graveyard-ledge",
+          "region": "Graveyard",
+          "kind": "exit",
+          "target": "Graveyard Warp Pad Region",
+          "new": true,
+          "add": "logic_remake_glitch_jsc and remake_ijsc",
+          "confidence": "high",
+          "note": "Child with sticks is documented (ZFG, AUTOMATON, gymnast86, KnightPohtaytoe). Adult with the Hammer is the same technique, but the any% route used the actor jump there.",
+          "source": "https://www.zsr.gg/oot2026/area/graveyard"
+        },
+        {
+          "id": "jsc-shadow-entry-child",
+          "region": "Shadow Temple Entryway",
+          "kind": "exit",
+          "target": "Shadow Temple Beginning",
+          "add": "logic_remake_glitch_jsc and remake_ijsc_child and (logic_lens_shadow or can_use(Lens_of_Truth))",
+          "confidence": "high",
+          "note": "Child IJSC over the entrance pit (AUTOMATON 2026-11-09, ZFG's child clear). The adult form is candidate jsc-shadow-entry-adult.",
+          "source": "https://www.zsr.gg/oot2026/dungeon/shadow-temple"
+        },
+        {
+          "id": "jsc-shadow-first-beamos-child",
+          "region": "Shadow Temple Beginning",
+          "kind": "exit",
+          "target": "Shadow Temple First Beamos",
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC over the gap after the entrance (normally the Hover Boots). The any% child route (ZSR route/any-1) and ZFG's tool-free child clear take a child from the entrance to Bongo Bongo; the route names IJSC for the gaps, and the logic here asks for at least the route's loadout (Deku Sticks and another item, Din's Fire, explosives for the pit, keys, Lens or the lens tricks, the Kokiri Sword). The child silver-crystal rooms are shown by Dry4Haz. Linkus7's world-record commentary narrates the child route: every gap and ledge 'basically requires a mini hover' (IJSC), the wind carries Link through the wind-tunnel door after a timed hover, and the last platforms take 'three hovers... five hovers' to the door.",
+          "source": "https://www.youtube.com/watch?v=V8RP5ZyaHA0"
+        },
+        {
+          "id": "jsc-shadow-wind-tunnel-child",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "exit",
+          "target": "Shadow Temple Wind Tunnel",
+          "add": "remake_ijsc_child and (Small_Key_Shadow_Temple, 3)",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC across the gap to the wind tunnel door (normally the Hookshot). The any% child route (ZSR route/any-1) and ZFG's tool-free child clear take a child from the entrance to Bongo Bongo; the route names IJSC for the gaps, and the logic here asks for at least the route's loadout (Deku Sticks and another item, Din's Fire, explosives for the pit, keys, Lens or the lens tricks, the Kokiri Sword). The child silver-crystal rooms are shown by Dry4Haz. Linkus7's world-record commentary narrates the child route: every gap and ledge 'basically requires a mini hover' (IJSC), the wind carries Link through the wind-tunnel door after a timed hover, and the last platforms take 'three hovers... five hovers' to the door.",
+          "source": "https://www.youtube.com/watch?v=V8RP5ZyaHA0"
+        },
+        {
+          "id": "jsc-shadow-statue-child",
+          "region": "Shadow Temple Beyond Boat",
+          "kind": "exit",
+          "target": "Shadow Temple Before Boss",
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC across the chasm before the boss door instead of dropping the statue (Bow). The any% child route (ZSR route/any-1) and ZFG's tool-free child clear take a child from the entrance to Bongo Bongo; the route names IJSC for the gaps, and the logic here asks for at least the route's loadout (Deku Sticks and another item, Din's Fire, explosives for the pit, keys, Lens or the lens tricks, the Kokiri Sword). The child silver-crystal rooms are shown by Dry4Haz. Linkus7's world-record commentary narrates the child route: every gap and ledge 'basically requires a mini hover' (IJSC), the wind carries Link through the wind-tunnel door after a timed hover, and the last platforms take 'three hovers... five hovers' to the door.",
+          "source": "https://www.youtube.com/watch?v=V8RP5ZyaHA0"
+        },
+        {
+          "id": "jsc-shadow-spikes-rupee-ledge-child",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "location",
+          "target": "Shadow Temple Invisible Spikes Silver Rupee Ledge",
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC up to this silver rupee on the high ledge of the invisible-spikes room (normally the Hookshot); the room's freestanding key, needed for the boss door, comes after all five. ZFG beat Bongo Bongo as a child without tools (2026-11-08); a child clear crosses every gap on the way, and the community's technique for them is IJSC with Deku Sticks (AUTOMATON 2026-11-09).",
+          "source": "https://x.com/zfg111/status/2119336664816570520"
+        },
+        {
+          "id": "jsc-shadow-spikes-rupee-right-child",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "location",
+          "target": "Shadow Temple Invisible Spikes Silver Rupee Right",
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC up to this silver rupee on the high ledge of the invisible-spikes room (normally the Hookshot); the room's freestanding key, needed for the boss door, comes after all five. ZFG beat Bongo Bongo as a child without tools (2026-11-08); a child clear crosses every gap on the way, and the community's technique for them is IJSC with Deku Sticks (AUTOMATON 2026-11-09).",
+          "source": "https://x.com/zfg111/status/2119336664816570520"
+        },
+        {
+          "id": "jsc-shadow-spikes-rupee-left-child",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "location",
+          "target": "Shadow Temple Invisible Spikes Silver Rupee Left",
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC up to this silver rupee on the high ledge of the invisible-spikes room (normally the Hookshot); the room's freestanding key, needed for the boss door, comes after all five. ZFG beat Bongo Bongo as a child without tools (2026-11-08); a child clear crosses every gap on the way, and the community's technique for them is IJSC with Deku Sticks (AUTOMATON 2026-11-09).",
+          "source": "https://x.com/zfg111/status/2119336664816570520"
+        },
+        {
+          "id": "jsc-shadow-spikes-rupee-near-ledge-child",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "location",
+          "target": "Shadow Temple Invisible Spikes Silver Rupee Near Ledge",
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC up to this silver rupee on the high ledge of the invisible-spikes room (normally the Hookshot); the room's freestanding key, needed for the boss door, comes after all five. ZFG beat Bongo Bongo as a child without tools (2026-11-08); a child clear crosses every gap on the way, and the community's technique for them is IJSC with Deku Sticks (AUTOMATON 2026-11-09).",
+          "source": "https://x.com/zfg111/status/2119336664816570520"
+        },
+        {
+          "id": "jsc-kak-gate-in",
+          "region": "Kakariko Village",
+          "kind": "exit",
+          "target": "Kak Behind Gate",
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC over the Death Mountain gate without showing Zelda's Letter (the gate then stays open).",
+          "source": "https://www.zsr.gg/oot2026/area/kakariko-village"
+        },
+        {
+          "id": "jsc-kak-gate-out",
+          "region": "Kak Behind Gate",
+          "kind": "exit",
+          "target": "Kakariko Village",
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: back over the Death Mountain gate into Kakariko (the gate stays open after the first jump; IJSC again otherwise).",
+          "source": "https://www.zsr.gg/oot2026/area/kakariko-village"
+        },
+        {
+          "id": "jsc-kz-over",
+          "region": "Zoras Domain",
+          "kind": "exit",
+          "target": "ZD Behind King Zora",
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC over King Zora to Zora's Fountain without Ruto's Letter.",
+          "source": "https://www.zsr.gg/oot2026/area/zora-domain"
+        },
+        {
+          "id": "jsc-kz-back",
+          "region": "ZD Behind King Zora",
+          "kind": "exit",
+          "target": "Zoras Domain",
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC back over King Zora into Zora's Domain.",
+          "source": "https://www.zsr.gg/oot2026/area/zora-domain"
+        },
+        {
+          "id": "jsc-deku-adult",
+          "region": "KF Outside Deku Tree",
+          "kind": "exit",
+          "target": "Deku Tree Lobby",
+          "add": "remake_ijsc_adult",
+          "confidence": "high",
+          "test": "Adult with the Hammer: save and reload by the Deku Tree (clears the jump cap), IJSC onto the tree's nose, drop on the left and slip between the trees into the tree.",
+          "source": "https://www.youtube.com/watch?v=dK3N0kW9kGw"
+        },
+        {
+          "id": "jsc-gf-card-skip",
+          "region": "Gerudo Fortress",
+          "kind": "exit",
+          "target": "GF Outside Gate",
+          "add": "remake_ijsc_adult and can_use(Hover_Boots)",
+          "confidence": "high",
+          "test": "Adult with the Hammer and Hover Boots: IJSC (with a hover) over the fortress gate to the Haunted Wasteland side without the Gerudo Card ('Gerudo Card Skip').",
+          "source": "https://www.zsr.gg/oot2026/area/gerudo-fortress"
+        },
+        {
+          "id": "jsc-colossus-mirror-hover",
+          "region": "Desert Colossus",
+          "kind": "exit",
+          "target": "Remake Spirit Temple Right Hand",
+          "new": true,
+          "add": "remake_ijsc_adult and can_use(Hover_Boots)",
+          "confidence": "high",
+          "test": "Adult with the Hammer and Hover Boots: IJSC (with hovers) up to the Mirror Shield hand from outside ('early mirror shield with jsc hovers').",
+          "source": "https://www.youtube.com/watch?v=c9GkAi8628w"
+        },
+        {
+          "id": "jsc-ganon-fire-ending-zsr",
+          "region": "Ganons Castle Fire Trial",
+          "kind": "exit",
+          "target": "Ganons Castle Fire Trial Ending",
+          "add": "remake_ijsc_adult and (Silver_Rupee_Ganons_Castle_Fire_Trial, 5) and (shuffle_silver_rupees or Goron_Tunic)",
+          "confidence": "high",
+          "test": "Adult with the Hammer: once the silver rupees are taken, IJSC from the last pillar over the lava to the trial's door (normally the Longshot).",
+          "source": "https://www.youtube.com/watch?v=c-0Gi8b9WTs"
+        },
+        {
+          "id": "jsc-shadow-scythe-ledge-child",
+          "region": "Shadow Temple First Beamos",
+          "kind": "location",
+          "target": "Shadow Temple Scythe Shortcut Silver Rupee Ledge",
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC up to the ledge silver crystal in the Beamos room (normally the Hookshot). The any% child route (ZSR route/any-1) and ZFG's tool-free child clear take a child from the entrance to Bongo Bongo; the route names IJSC for the gaps, and the logic here asks for at least the route's loadout (Deku Sticks and another item, Din's Fire, explosives for the pit, keys, Lens or the lens tricks, the Kokiri Sword). The child silver-crystal rooms are shown by Dry4Haz.",
+          "source": "https://www.youtube.com/watch?v=-qPFcVgVjo8"
+        },
+        {
+          "id": "jsc-shadow-scythe-ledge-event-child",
+          "region": "Shadow Temple First Beamos",
+          "kind": "event",
+          "target": "Remake silver rupee Shadow Temple Scythe Shortcut 4",
+          "optional": true,
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "As jsc-shadow-scythe-ledge-child (the remake's silver-crystal event).",
+          "source": "https://www.youtube.com/watch?v=-qPFcVgVjo8"
+        },
+        {
+          "id": "jsc-shadow-spikes-event-2",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "event",
+          "target": "Remake silver rupee Shadow Temple Invisible Spikes 2",
+          "optional": true,
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC up to this high silver crystal in the invisible-spikes room (the remake's silver-crystal event; normally the Hookshot). The any% child route (ZSR route/any-1) and ZFG's tool-free child clear take a child from the entrance to Bongo Bongo; the route names IJSC for the gaps, and the logic here asks for at least the route's loadout (Deku Sticks and another item, Din's Fire, explosives for the pit, keys, Lens or the lens tricks, the Kokiri Sword). The child silver-crystal rooms are shown by Dry4Haz.",
+          "source": "https://www.youtube.com/watch?v=FIicL-kovfQ"
+        },
+        {
+          "id": "jsc-shadow-spikes-event-3",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "event",
+          "target": "Remake silver rupee Shadow Temple Invisible Spikes 3",
+          "optional": true,
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC up to this high silver crystal in the invisible-spikes room (the remake's silver-crystal event; normally the Hookshot). The any% child route (ZSR route/any-1) and ZFG's tool-free child clear take a child from the entrance to Bongo Bongo; the route names IJSC for the gaps, and the logic here asks for at least the route's loadout (Deku Sticks and another item, Din's Fire, explosives for the pit, keys, Lens or the lens tricks, the Kokiri Sword). The child silver-crystal rooms are shown by Dry4Haz.",
+          "source": "https://www.youtube.com/watch?v=FIicL-kovfQ"
+        },
+        {
+          "id": "jsc-shadow-spikes-event-4",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "event",
+          "target": "Remake silver rupee Shadow Temple Invisible Spikes 4",
+          "optional": true,
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC up to this high silver crystal in the invisible-spikes room (the remake's silver-crystal event; normally the Hookshot). The any% child route (ZSR route/any-1) and ZFG's tool-free child clear take a child from the entrance to Bongo Bongo; the route names IJSC for the gaps, and the logic here asks for at least the route's loadout (Deku Sticks and another item, Din's Fire, explosives for the pit, keys, Lens or the lens tricks, the Kokiri Sword). The child silver-crystal rooms are shown by Dry4Haz.",
+          "source": "https://www.youtube.com/watch?v=FIicL-kovfQ"
+        },
+        {
+          "id": "jsc-shadow-spikes-event-5",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "event",
+          "target": "Remake silver rupee Shadow Temple Invisible Spikes 5",
+          "optional": true,
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC up to this high silver crystal in the invisible-spikes room (the remake's silver-crystal event; normally the Hookshot). The any% child route (ZSR route/any-1) and ZFG's tool-free child clear take a child from the entrance to Bongo Bongo; the route names IJSC for the gaps, and the logic here asks for at least the route's loadout (Deku Sticks and another item, Din's Fire, explosives for the pit, keys, Lens or the lens tricks, the Kokiri Sword). The child silver-crystal rooms are shown by Dry4Haz.",
+          "source": "https://www.youtube.com/watch?v=FIicL-kovfQ"
+        },
+        {
+          "id": "jsc-gv-bridge",
+          "region": "Gerudo Valley",
+          "kind": "exit",
+          "target": "GV Fortress Side",
+          "add": "remake_ijsc_adult",
+          "confidence": "high",
+          "test": "Adult with the Hammer: IJSC across the broken Gerudo Valley bridge to the fortress side (an any% route step).",
+          "source": "https://www.zsr.gg/oot2026/route/any-1"
+        },
+        {
+          "id": "jsc-dc-lobby-far-bridge",
+          "region": "Dodongos Cavern Lobby",
+          "kind": "exit",
+          "target": "Dodongos Cavern Far Bridge",
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: from the lobby (or its lava pool by the spiked wall), IJSC up to the Bomb Bag chest's bridge (the any% 'Early Bomb Bag').",
+          "source": "https://www.zsr.gg/oot2026/dungeon/dodongo-cavern"
+        },
+        {
+          "id": "jsc-graveyard-poh-child",
+          "region": "Graveyard",
+          "kind": "location",
+          "target": "Graveyard Freestanding PoH",
+          "add": "remake_ijsc_child and can_break_crate",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC all the way up to the Graveyard heart piece (shown by AbdallahSmash).",
+          "source": "https://www.youtube.com/watch?v=g8hG_dATuSQ"
+        },
+        {
+          "id": "jsc-lh-poh-child",
+          "region": "Lake Hylia",
+          "kind": "location",
+          "target": "LH Freestanding PoH",
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC onto the laboratory roof and take the heart piece (shown by AbdallahSmash; normally adult with Scarecrow's Song or the bean plant).",
+          "source": "https://www.youtube.com/watch?v=g8hG_dATuSQ"
+        },
+        {
+          "id": "jsc-zr-waterfall-child",
+          "region": "Zora River",
+          "kind": "exit",
+          "target": "ZR Behind Waterfall",
+          "add": "remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC over the invisible wall on the waterfall ledge into Zora's Domain, before learning Zelda's Lullaby (shown by SmallAnt).",
+          "source": "https://www.youtube.com/watch?v=5CHDJLMuosA"
+        }
+      ],
+      "candidates": [
+        {
+          "id": "jsc-kf-gs-twins",
+          "region": "Kokiri Forest",
+          "kind": "location",
+          "target": "KF GS House of Twins",
+          "add": "remake_ijsc_adult and (at_night or gold_skulls_ignore_daytime)",
+          "confidence": "medium",
+          "test": "Adult at night with the Megaton Hammer: IJSC up beside the Skulltula, kill it with the jump attack, then touch the token while still in the air (or after it drops). Replaces the Hookshot (the Skulltula is high on the Twins' house)."
+        },
+        {
+          "id": "jsc-lw-bridge-in",
+          "region": "Lost Woods",
+          "kind": "exit",
+          "target": "LW Bridge",
+          "add": "remake_ijsc_adult",
+          "confidence": "low",
+          "test": "Adult with the Hammer, from the Lost Woods entrance area: IJSC across the gap to the bridge (normally Longshot, Hover Boots or a bean plant).",
+          "refuted": "2026-11-20 (source): invisible walls on both sides of the Lost Woods bridge (speedrun.com oot26 forum thread 'Forest skip?')."
+        },
+        {
+          "id": "jsc-lw-bridge-out",
+          "region": "LW Bridge",
+          "kind": "exit",
+          "target": "Lost Woods",
+          "add": "remake_ijsc_adult",
+          "confidence": "low",
+          "test": "Adult with the Hammer, from the bridge: IJSC back over the gap into the Lost Woods (normally the Longshot).",
+          "refuted": "2026-11-20 (source): invisible walls on both sides of the Lost Woods bridge (speedrun.com oot26 forum thread 'Forest skip?')."
+        },
+        {
+          "id": "jsc-lw-gs-theater",
+          "region": "LW Beyond Mido",
+          "kind": "location",
+          "target": "LW GS Above Theater",
+          "add": "remake_ijsc_adult and (at_night or gold_skulls_ignore_daytime)",
+          "confidence": "medium",
+          "test": "Adult at night with the Megaton Hammer: IJSC up beside the Skulltula, kill it with the jump attack, then touch the token while still in the air (or after it drops). Replaces the bean plant (the Skulltula is on the wall above the Deku Theater)."
+        },
+        {
+          "id": "jsc-lw-bridge-ledge-chest",
+          "region": "Lost Woods",
+          "kind": "location",
+          "target": "KF Bridge Ledge Chest",
+          "add": "remake_ijsc_adult",
+          "confidence": "low",
+          "test": "Adult with the Hammer: IJSC up to the ledge chest the bean platform normally reaches near the bridge."
+        },
+        {
+          "id": "jsc-sfm-gs",
+          "region": "Sacred Forest Meadow",
+          "kind": "location",
+          "target": "SFM GS",
+          "add": "remake_ijsc_adult and (at_night or gold_skulls_ignore_daytime)",
+          "confidence": "medium",
+          "test": "Adult at night with the Megaton Hammer: IJSC up beside the Skulltula, kill it with the jump attack, then touch the token while still in the air (or after it drops). Replaces the Hookshot."
+        },
+        {
+          "id": "jsc-sfm-ledge",
+          "region": "Sacred Forest Meadow",
+          "kind": "exit",
+          "target": "SFM Forest Temple Entrance Ledge",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Megaton Hammer (no Hookshot): IJSC up to the Forest Temple entrance ledge. ThreeLetterName got in as adult without the Hookshot (items not narrated; he had Hover Boots). As a child it can't work: the child map has two push-off walls on the ledge (game data; shown).",
+          "source": "https://www.youtube.com/watch?v=8EYgfjgoOUU"
+        },
+        {
+          "id": "jsc-hc-garden",
+          "region": "Hyrule Castle Grounds",
+          "kind": "exit",
+          "target": "HC Garden",
+          "add": "remake_ijsc_child",
+          "confidence": "low",
+          "refuted": "2026-11-20: ZSR Progression Triggers: the garden is reachable by JSC over the hedges, but Zelda won't talk until Talon is woken, so her checks stay locked.",
+          "test": "Child with Deku Sticks: IJSC up the vines/ledge into the castle garden without waking Talon (no Weird Egg or Chicken)."
+        },
+        {
+          "id": "jsc-ogc-gs",
+          "region": "Ganons Castle Grounds",
+          "kind": "location",
+          "target": "OGC GS",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC up to the Skulltula outside Ganon's Castle, kill it with the jump attack, take the token (normally the Hookshot)."
+        },
+        {
+          "id": "jsc-kak-impa-roof",
+          "region": "Kakariko Village",
+          "kind": "exit",
+          "target": "Kak Impas Rooftop",
+          "add": "remake_ijsc",
+          "confidence": "medium",
+          "test": "Child with Deku Sticks and adult with the Hammer: IJSC from the ground onto Impa's house roof (normally the Hookshot)."
+        },
+        {
+          "id": "jsc-kak-medicine-roof",
+          "region": "Kakariko Village",
+          "kind": "exit",
+          "target": "Kak Odd Medicine Rooftop",
+          "add": "remake_ijsc",
+          "confidence": "medium",
+          "test": "Child with Deku Sticks and adult with the Hammer: IJSC onto the roof with the man on it (normally the Hookshot or the watchtower jump)."
+        },
+        {
+          "id": "jsc-kak-gs-watchtower",
+          "region": "Kakariko Village",
+          "kind": "location",
+          "target": "Kak GS Watchtower",
+          "add": "remake_ijsc_child and (at_night or gold_skulls_ignore_daytime)",
+          "confidence": "medium",
+          "test": "Child at night with Deku Sticks: IJSC up beside the Skulltula, kill it with the jump attack, then touch the token while still in the air (or after it drops). Replaces the Slingshot or Bombchus (the Skulltula is up the watchtower ladder)."
+        },
+        {
+          "id": "jsc-kak-windmill-top",
+          "region": "Kakariko Village",
+          "kind": "location",
+          "target": "Kak Windmill Top Chest",
+          "add": "remake_ijsc_adult",
+          "confidence": "low",
+          "test": "Adult with the Hammer: IJSC up to the chest on top of the windmill (normally Longshot and Hover Boots)."
+        },
+        {
+          "id": "jsc-graveyard-poh",
+          "region": "Graveyard",
+          "kind": "location",
+          "target": "Graveyard Freestanding PoH",
+          "add": "remake_ijsc_adult and can_break_crate",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC up to the crate on the high ledge in the Graveyard, break it, take the Piece of Heart (normally a bean plant or the Longshot). The child form is live."
+        },
+        {
+          "id": "jsc-graveyard-gs-wall",
+          "region": "Graveyard",
+          "kind": "location",
+          "target": "Graveyard GS Wall",
+          "add": "remake_ijsc_child and (at_night or gold_skulls_ignore_daytime)",
+          "confidence": "medium",
+          "test": "Child at night with Deku Sticks: IJSC up beside the Skulltula, kill it with the jump attack, then touch the token while still in the air (or after it drops). Replaces the Boomerang."
+        },
+        {
+          "id": "jsc-dmt-summit",
+          "region": "Death Mountain",
+          "kind": "exit",
+          "target": "Death Mountain Summit",
+          "add": "remake_ijsc",
+          "confidence": "medium",
+          "test": "Child with Deku Sticks and adult with the Hammer: IJSC up the cliff beside the boulders on the trail and land above them (normally explosives, Hammer, or a bean plant with Strength)."
+        },
+        {
+          "id": "jsc-gc-gs-center",
+          "region": "Goron City",
+          "kind": "location",
+          "target": "GC GS Center Platform",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC up to the hanging centre platform's Skulltula, kill it, take the token (normally the Hookshot)."
+        },
+        {
+          "id": "jsc-dmc-fire-temple",
+          "region": "DMC Lower Local",
+          "kind": "exit",
+          "target": "DMC Fire Temple Entrance",
+          "add": "remake_ijsc_adult and (logic_fewer_tunic_requirements or Goron_Tunic)",
+          "confidence": "medium",
+          "test": "Adult with the Hammer (and the Goron Tunic): IJSC over the broken bridge gap to the Fire Temple entrance (normally the Hookshot or Hover Boots)."
+        },
+        {
+          "id": "jsc-dmc-lower-central",
+          "region": "DMC Lower Local",
+          "kind": "exit",
+          "target": "DMC Central Nearby",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC over the lava from the lower crater to the central area (normally Hookshot or Hover Boots)."
+        },
+        {
+          "id": "jsc-dmc-central-lower",
+          "region": "DMC Central Local",
+          "kind": "exit",
+          "target": "DMC Lower Nearby",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC from the central area back over the lava to the lower crater (normally Hookshot, Hover Boots or the bean plant)."
+        },
+        {
+          "id": "jsc-dmc-central-upper",
+          "region": "DMC Central Local",
+          "kind": "exit",
+          "target": "DMC Upper Nearby",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC up the crater wall from the central area to the upper crater (normally the bean plant)."
+        },
+        {
+          "id": "jsc-dmc-pierre",
+          "region": "DMC Central Local",
+          "kind": "exit",
+          "target": "DMC Pierre Platform",
+          "add": "remake_ijsc_adult",
+          "confidence": "low",
+          "test": "Adult with the Hammer: IJSC to Pierre's platform in the crater (normally the Longshot to the scarecrow)."
+        },
+        {
+          "id": "jsc-zr-gs-above-bridge",
+          "region": "Zora River",
+          "kind": "location",
+          "target": "ZR GS Above Bridge",
+          "add": "remake_ijsc_adult and (at_night or gold_skulls_ignore_daytime)",
+          "confidence": "medium",
+          "test": "Adult at night with the Megaton Hammer: IJSC up beside the Skulltula, kill it with the jump attack, then touch the token while still in the air (or after it drops). Replaces the Hookshot (the Skulltula is on the wall above the bridge)."
+        },
+        {
+          "id": "jsc-zr-gs-raised-grottos",
+          "region": "Zora River",
+          "kind": "location",
+          "target": "ZR GS Near Raised Grottos",
+          "add": "remake_ijsc_adult and (at_night or gold_skulls_ignore_daytime)",
+          "confidence": "medium",
+          "test": "Adult at night with the Megaton Hammer: IJSC up beside the Skulltula, kill it with the jump attack, then touch the token while still in the air (or after it drops). Replaces the Hookshot (the Skulltula is on the wall above the raised grottos)."
+        },
+        {
+          "id": "jsc-zr-poh-grotto",
+          "region": "Zora River",
+          "kind": "location",
+          "target": "ZR Near Open Grotto Freestanding PoH",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC up to the Piece of Heart on the pillar near the open grotto (normally Hover Boots, a bean plant or a trick jump)."
+        },
+        {
+          "id": "jsc-zr-poh-domain",
+          "region": "Zora River",
+          "kind": "location",
+          "target": "ZR Near Domain Freestanding PoH",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC up to the Piece of Heart on the ledge near Zora's Domain (normally Hover Boots or a trick jump)."
+        },
+        {
+          "id": "jsc-zr-waterfall",
+          "region": "Zora River",
+          "kind": "exit",
+          "target": "ZR Behind Waterfall",
+          "add": "remake_ijsc_adult",
+          "confidence": "low",
+          "test": "Adult with the Hammer: IJSC over the waterfall ledge's invisible wall into Zora's Domain without Zelda's Lullaby."
+        },
+        {
+          "id": "jsc-zf-scarecrow-chest",
+          "region": "Zoras Fountain",
+          "kind": "location",
+          "target": "ZF Scarecrow Ledge Chest",
+          "add": "remake_ijsc_adult",
+          "confidence": "low",
+          "test": "Adult with the Hammer: IJSC up to the ledge chest Pierre's hookshot point normally reaches (normally Scarecrow's Song and the Longshot)."
+        },
+        {
+          "id": "jsc-lh-poh",
+          "region": "Lake Hylia",
+          "kind": "location",
+          "target": "LH Freestanding PoH",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC up to the Piece of Heart on the tall platform by the laboratory (normally Scarecrow's Song or the bean plant)."
+        },
+        {
+          "id": "jsc-lh-gs-tree",
+          "region": "Lake Hylia",
+          "kind": "location",
+          "target": "LH GS Tree",
+          "add": "remake_ijsc_adult and (at_night or gold_skulls_ignore_daytime)",
+          "confidence": "medium",
+          "test": "Adult at night with the Megaton Hammer: IJSC up beside the Skulltula, kill it with the jump attack, then touch the token while still in the air (or after it drops). Replaces the Longshot (the Skulltula is high in the island's tree)."
+        },
+        {
+          "id": "jsc-lh-gs-lab-wall",
+          "region": "Lake Hylia",
+          "kind": "location",
+          "target": "LH GS Lab Wall",
+          "add": "remake_ijsc_child and (at_night or gold_skulls_ignore_daytime)",
+          "confidence": "medium",
+          "test": "Child at night with Deku Sticks: IJSC up beside the Skulltula, kill it with the jump attack, then touch the token while still in the air (or after it drops). Replaces the Boomerang (the Skulltula is on the laboratory wall)."
+        },
+        {
+          "id": "jsc-lh-fishing-island",
+          "region": "Lake Hylia",
+          "kind": "exit",
+          "target": "LH Fishing Island",
+          "add": "remake_ijsc_adult",
+          "confidence": "low",
+          "test": "Adult with the Hammer (lake still drained): IJSC across to the fishing-pond island (normally Scarecrow's Song, a bean plant or the Water Temple refill)."
+        },
+        {
+          "id": "jsc-gv-bridge-back",
+          "region": "GV Fortress Side",
+          "kind": "exit",
+          "target": "Gerudo Valley",
+          "add": "remake_ijsc_adult",
+          "confidence": "low",
+          "test": "Adult with the Hammer: IJSC back across the broken bridge (normally Epona, the Longshot or freed carpenters)."
+        },
+        {
+          "id": "jsc-gv-crate-ledge",
+          "region": "Gerudo Valley",
+          "kind": "exit",
+          "target": "GV Crate Ledge",
+          "add": "remake_ijsc_adult",
+          "confidence": "low",
+          "test": "Adult with the Hammer: IJSC up to the crate ledge by the waterfall (normally the Longshot)."
+        },
+        {
+          "id": "jsc-gv-gs-tent",
+          "region": "GV Fortress Side",
+          "kind": "location",
+          "target": "GV GS Behind Tent",
+          "add": "remake_ijsc_adult and (at_night or gold_skulls_ignore_daytime)",
+          "confidence": "medium",
+          "test": "Adult at night with the Megaton Hammer: IJSC up beside the Skulltula, kill it with the jump attack, then touch the token while still in the air (or after it drops). Replaces the Hookshot."
+        },
+        {
+          "id": "jsc-gv-gs-pillar",
+          "region": "GV Fortress Side",
+          "kind": "location",
+          "target": "GV GS Pillar",
+          "add": "remake_ijsc_adult and (at_night or gold_skulls_ignore_daytime)",
+          "confidence": "medium",
+          "test": "Adult at night with the Megaton Hammer: IJSC up beside the Skulltula, kill it with the jump attack, then touch the token while still in the air (or after it drops). Replaces the Longshot (the Skulltula is on the bridge pillar)."
+        },
+        {
+          "id": "jsc-gf-roof-cluster",
+          "region": "Gerudo Fortress",
+          "kind": "exit",
+          "target": "GF Roof Entrance Cluster",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC from the fortress ground onto the roof with the upper doors (normally Hover Boots or a trick jump)."
+        },
+        {
+          "id": "jsc-gf-kitchen-roof",
+          "region": "Gerudo Fortress",
+          "kind": "exit",
+          "target": "GF Kitchen Roof Access",
+          "add": "remake_ijsc_adult and Gerudo_Membership_Card",
+          "confidence": "medium",
+          "test": "Adult with the Hammer and the Gerudo Card: IJSC up onto the kitchen roof (normally the Longshot)."
+        },
+        {
+          "id": "jsc-gf-break-room",
+          "region": "Gerudo Fortress",
+          "kind": "exit",
+          "target": "GF Break Room Entrance",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC up to the break-room door ledge (normally the Hookshot)."
+        },
+        {
+          "id": "jsc-gf-crates-roof",
+          "region": "GF Entrances Behind Crates",
+          "kind": "exit",
+          "target": "GF Roof Entrance Cluster",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC from behind the crates up to the upper roof doors (normally the Longshot)."
+        },
+        {
+          "id": "jsc-gf-chest-roof",
+          "region": "GF Kitchen Roof Access",
+          "kind": "exit",
+          "target": "GF Chest Roof",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC from the kitchen roof to the roof with the Piece-of-Heart chest (normally Hover Boots, Scarecrow's Song or the Longshot)."
+        },
+        {
+          "id": "jsc-gf-balcony-chest-roof",
+          "region": "GF Balcony",
+          "kind": "exit",
+          "target": "GF Chest Roof",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC from the balcony to the chest roof (normally the Longshot)."
+        },
+        {
+          "id": "jsc-gf-roof-gs",
+          "region": "GF 3 Torches Jail Exterior",
+          "kind": "exit",
+          "target": "GF Roof Gold Skulltula",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC up to the top floor where the roof Skulltula is (normally the Longshot)."
+        },
+        {
+          "id": "jsc-gf-gs-archery",
+          "region": "Gerudo Fortress",
+          "kind": "location",
+          "target": "GF GS Archery Range",
+          "add": "remake_ijsc_adult and Gerudo_Membership_Card and (at_night or gold_skulls_ignore_daytime)",
+          "confidence": "medium",
+          "test": "Adult at night with the Hammer and the Gerudo Card: IJSC up to the Skulltula on the archery range wall, kill it, take the token (normally the Longshot)."
+        },
+        {
+          "id": "jsc-wasteland-in",
+          "region": "Wasteland Near Fortress",
+          "kind": "exit",
+          "target": "Haunted Wasteland",
+          "add": "remake_ijsc_adult",
+          "confidence": "low",
+          "test": "Adult with the Hammer: IJSC across the quicksand river at the start of the Wasteland (normally Hover Boots or the Longshot)."
+        },
+        {
+          "id": "jsc-wasteland-out",
+          "region": "Haunted Wasteland",
+          "kind": "exit",
+          "target": "Wasteland Near Fortress",
+          "add": "remake_ijsc_adult",
+          "confidence": "low",
+          "test": "Adult with the Hammer: IJSC back across the quicksand river (normally Hover Boots or the Longshot)."
+        },
+        {
+          "id": "jsc-colossus-poh",
+          "region": "Desert Colossus",
+          "kind": "location",
+          "target": "Colossus Freestanding PoH",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC up to the Piece of Heart on top of the rock arch (normally the bean platform)."
+        },
+        {
+          "id": "jsc-colossus-gs-tree",
+          "region": "Desert Colossus",
+          "kind": "location",
+          "target": "Colossus GS Tree",
+          "add": "remake_ijsc_adult and (at_night or gold_skulls_ignore_daytime)",
+          "confidence": "medium",
+          "test": "Adult at night with the Megaton Hammer: IJSC up beside the Skulltula, kill it with the jump attack, then touch the token while still in the air (or after it drops). Replaces the Longshot."
+        },
+        {
+          "id": "jsc-colossus-gs-hill",
+          "region": "Desert Colossus",
+          "kind": "location",
+          "target": "Colossus GS Hill",
+          "add": "remake_ijsc_adult and (at_night or gold_skulls_ignore_daytime)",
+          "confidence": "medium",
+          "test": "Adult at night with the Megaton Hammer: IJSC up beside the Skulltula, kill it with the jump attack, then touch the token while still in the air (or after it drops). Replaces the bean platform or the Longshot."
+        },
+        {
+          "id": "jsc-colossus-left-hand",
+          "region": "Desert Colossus",
+          "kind": "exit",
+          "target": "Remake Spirit Temple Left Hand",
+          "new": true,
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC up the Colossus to the left hand (Silver Gauntlets chest) from outside (the actor jump does the same from the bean flower)."
+        },
+        {
+          "id": "jsc-colossus-right-hand",
+          "region": "Desert Colossus",
+          "kind": "exit",
+          "target": "Remake Spirit Temple Right Hand",
+          "new": true,
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC up the Colossus to the right hand (Mirror Shield chest) from outside."
+        },
+        {
+          "id": "jsc-llr-gs-window",
+          "region": "Lon Lon Ranch",
+          "kind": "location",
+          "target": "LLR GS House Window",
+          "add": "remake_ijsc_child and (at_night or gold_skulls_ignore_daytime)",
+          "confidence": "low",
+          "test": "Child at night with Deku Sticks: IJSC up beside the Skulltula, kill it with the jump attack, then touch the token while still in the air (or after it drops). Replaces the Boomerang."
+        },
+        {
+          "id": "jsc-llr-gs-back-wall",
+          "region": "Lon Lon Ranch",
+          "kind": "location",
+          "target": "LLR GS Back Wall",
+          "add": "remake_ijsc_child and (at_night or gold_skulls_ignore_daytime)",
+          "confidence": "low",
+          "test": "Child at night with Deku Sticks: IJSC up beside the Skulltula, kill it with the jump attack, then touch the token while still in the air (or after it drops). Replaces the Boomerang."
+        },
+        {
+          "id": "jsc-dc-gs-scarecrow",
+          "region": "Dodongos Cavern Lower Right Side",
+          "kind": "location",
+          "target": "Dodongos Cavern GS Scarecrow",
+          "add": "remake_ijsc",
+          "confidence": "medium",
+          "test": "Child with Deku Sticks and adult with the Hammer: IJSC up to the Skulltula on the high alcove, kill it, take the token (normally Scarecrow's Song or the Longshot)."
+        },
+        {
+          "id": "jsc-dc-gs-vines",
+          "region": "Dodongos Cavern Staircase Room",
+          "kind": "location",
+          "target": "Dodongos Cavern GS Vines Above Stairs",
+          "add": "remake_ijsc",
+          "confidence": "low",
+          "test": "Child with Deku Sticks and adult with the Hammer: IJSC up the staircase room to the Skulltula on the vines (normally a ranged item from the top of the stairs)."
+        },
+        {
+          "id": "jsc-dc-far-bridge",
+          "region": "Dodongos Cavern Climb",
+          "kind": "exit",
+          "target": "Dodongos Cavern Far Bridge",
+          "add": "remake_ijsc",
+          "confidence": "medium",
+          "test": "Child with Deku Sticks and adult with the Hammer: IJSC across from the upper climb to the bomb-bag bridge (normally an adult jump, Hover Boots or the Longshot)."
+        },
+        {
+          "id": "jsc-jabu-before-boss",
+          "region": "Jabu Jabus Belly Main",
+          "kind": "exit",
+          "target": "Jabu Jabus Belly Before Boss",
+          "add": "remake_ijsc_child",
+          "confidence": "low",
+          "test": "Child with Deku Sticks: IJSC up to the ledge before Barinade's room without lowering the floor (normally the floor switch or Hover Boots)."
+        },
+        {
+          "id": "jsc-ft-first-room-chest",
+          "region": "Forest Temple Lobby",
+          "kind": "location",
+          "target": "Forest Temple First Room Chest",
+          "add": "remake_ijsc",
+          "confidence": "medium",
+          "test": "Child with Deku Sticks and adult with the Hammer: IJSC up to the chest on the tree ledge in the first room (normally the Hookshot)."
+        },
+        {
+          "id": "jsc-ft-gs-first-room",
+          "region": "Forest Temple Lobby",
+          "kind": "location",
+          "target": "Forest Temple GS First Room",
+          "add": "remake_ijsc",
+          "confidence": "medium",
+          "test": "Child with Deku Sticks and adult with the Hammer: IJSC up to the first room's Skulltula, kill it, take the token (normally Hookshot, Bow or Slingshot)."
+        },
+        {
+          "id": "jsc-ft-gs-lobby",
+          "region": "Forest Temple Central Area",
+          "kind": "location",
+          "target": "Forest Temple GS Lobby",
+          "add": "remake_ijsc",
+          "confidence": "medium",
+          "test": "Child with Deku Sticks and adult with the Hammer: IJSC up to the main hall's Skulltula, kill it, take the token (normally Hookshot or Boomerang)."
+        },
+        {
+          "id": "jsc-ft-balconies",
+          "region": "Forest Temple NW Outdoors",
+          "kind": "exit",
+          "target": "Forest Temple Outdoors High Balconies",
+          "add": "remake_ijsc",
+          "confidence": "medium",
+          "test": "Child with Deku Sticks and adult with the Hammer: IJSC from the west courtyard to the high balconies (normally the Hookshot). Sources show IJSC up to the courtyard tops (bow-room clip setup)."
+        },
+        {
+          "id": "jsc-ft-ne-chest",
+          "region": "Forest Temple NE Outdoors",
+          "kind": "location",
+          "target": "Forest Temple Raised Island Courtyard Chest",
+          "add": "remake_ijsc",
+          "confidence": "medium",
+          "test": "Child with Deku Sticks and adult with the Hammer: IJSC up to the raised island chest in the east courtyard (normally the Hookshot)."
+        },
+        {
+          "id": "jsc-ft-upper-ledge",
+          "region": "Forest Temple Block Push Room",
+          "kind": "exit",
+          "target": "Forest Temple Outside Upper Ledge",
+          "add": "remake_ijsc_adult",
+          "confidence": "low",
+          "test": "Adult with the Hammer: IJSC from the block-push room to the outside upper ledge (normally Hover Boots)."
+        },
+        {
+          "id": "jsc-fire-scarecrow-chest",
+          "region": "Fire Temple Boulder Maze Upper",
+          "kind": "location",
+          "target": "Fire Temple Scarecrow Chest",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC up to the scarecrow ledge above the boulder maze (normally Scarecrow's Song or the Longshot)."
+        },
+        {
+          "id": "jsc-fire-scarecrow-chest-2",
+          "region": "Fire Temple Boulder Maze Upper",
+          "kind": "location",
+          "target": "Fire Temple Scarecrow Ledge Second Chest",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "As jsc-fire-scarecrow-chest, the ledge's second chest."
+        },
+        {
+          "id": "jsc-fire-scarecrow-chest-3",
+          "region": "Fire Temple Boulder Maze Upper",
+          "kind": "location",
+          "target": "Fire Temple Scarecrow Ledge Third Chest",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "As jsc-fire-scarecrow-chest, the ledge's third chest."
+        },
+        {
+          "id": "jsc-fire-gs-scarecrow-climb",
+          "region": "Fire Temple Boulder Maze Upper",
+          "kind": "location",
+          "target": "Fire Temple GS Scarecrow Climb",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC up the scarecrow climb, kill its Skulltula, take the token."
+        },
+        {
+          "id": "jsc-fire-gs-scarecrow-top",
+          "region": "Fire Temple Boulder Maze Upper",
+          "kind": "location",
+          "target": "Fire Temple GS Scarecrow Top",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC to the top of the scarecrow climb, kill its Skulltula, take the token."
+        },
+        {
+          "id": "jsc-water-dark-link",
+          "region": "Water Temple Falling Platform Room",
+          "kind": "exit",
+          "target": "Water Temple Dark Link Region",
+          "add": "remake_ijsc_adult and (Small_Key_Water_Temple, 4)",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC up the falling-platform room to the top door (normally the Hookshot target)."
+        },
+        {
+          "id": "jsc-water-river",
+          "region": "Water Temple Dark Link Region",
+          "kind": "exit",
+          "target": "Water Temple River",
+          "add": "remake_ijsc_adult and can_play(Song_of_Time)",
+          "confidence": "low",
+          "test": "Adult with the Hammer (Song of Time for the block): IJSC across the gap after Dark Link's room to the river (normally the Longshot)."
+        },
+        {
+          "id": "jsc-water-boss",
+          "region": "Water Temple Lobby",
+          "kind": "exit",
+          "target": "Water Temple Before Boss",
+          "add": "remake_ijsc_adult and can_use(Iron_Boots) and Raise_Water_Level",
+          "confidence": "low",
+          "test": "Adult with the Hammer and Iron Boots, water high: IJSC across the spiked gap to the boss door (normally the Longshot)."
+        },
+        {
+          "id": "jsc-shadow-first-beamos-adult",
+          "region": "Shadow Temple Beginning",
+          "kind": "exit",
+          "target": "Shadow Temple First Beamos",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC over the gap after the entrance (normally the Hover Boots). The child does it with Deku Sticks (child Shadow clear)."
+        },
+        {
+          "id": "jsc-shadow-scythe-ledge",
+          "region": "Shadow Temple First Beamos",
+          "kind": "location",
+          "target": "Shadow Temple Scythe Shortcut Silver Rupee Ledge",
+          "add": "remake_ijsc",
+          "confidence": "low",
+          "test": "IJSC up to the silver rupee on the ledge in the scythe shortcut room (normally the Hookshot)."
+        },
+        {
+          "id": "jsc-gtg-lava-back",
+          "region": "Gerudo Training Ground Lava Room Front",
+          "kind": "exit",
+          "target": "Gerudo Training Ground Lava Room Back",
+          "add": "remake_ijsc_adult",
+          "confidence": "low",
+          "test": "Adult with the Hammer: IJSC over the lava to the back of the lava room (normally Hover Boots)."
+        },
+        {
+          "id": "jsc-gtg-boulder-ceiling",
+          "region": "Gerudo Training Ground Boulder Room",
+          "kind": "location",
+          "target": "Gerudo Training Ground Boulder Room Silver Rupee Ceiling",
+          "add": "remake_ijsc_adult",
+          "confidence": "low",
+          "test": "Adult with the Hammer: IJSC up to the silver rupee near the ceiling in the boulder room (normally the Hookshot)."
+        },
+        {
+          "id": "jsc-ganon-light-rupee",
+          "region": "Ganons Castle Light Trial Boulder Room",
+          "kind": "location",
+          "target": "Ganons Castle Light Trial Silver Rupee Center Top",
+          "add": "remake_ijsc_adult",
+          "confidence": "low",
+          "test": "Adult with the Hammer: IJSC up to the silver rupee high in the Light Trial's boulder room (normally the Hookshot)."
+        },
+        {
+          "id": "jsc-ganon-spirit-rupee",
+          "region": "Ganons Castle Spirit Trial",
+          "kind": "location",
+          "target": "Ganons Castle Spirit Trial Silver Rupee Ceiling",
+          "add": "remake_ijsc_adult",
+          "confidence": "low",
+          "test": "Adult with the Hammer: IJSC up to the Spirit Trial's ceiling silver rupee (normally the Hookshot)."
+        },
+        {
+          "id": "jsc-ganon-fire-ending",
+          "region": "Ganons Castle Fire Trial",
+          "kind": "exit",
+          "target": "Ganons Castle Fire Trial Ending",
+          "add": "remake_ijsc_adult and (Silver_Rupee_Ganons_Castle_Fire_Trial, 5) and (shuffle_silver_rupees or Goron_Tunic)",
+          "confidence": "low",
+          "test": "Adult with the Hammer (Goron Tunic): IJSC over the lava from the last pillar to the Fire Trial's end (normally the Longshot)."
+        },
+        {
+          "id": "jsc-shadow-wind-tunnel-adult",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "exit",
+          "target": "Shadow Temple Wind Tunnel",
+          "add": "remake_ijsc_adult and (Small_Key_Shadow_Temple, 3)",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC across the gap to the wind tunnel door (normally the Hookshot and Longshot)."
+        },
+        {
+          "id": "jsc-shadow-statue-adult",
+          "region": "Shadow Temple Beyond Boat",
+          "kind": "exit",
+          "target": "Shadow Temple Before Boss",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC across the chasm before the boss door (normally the Bow to drop the statue)."
+        },
+        {
+          "id": "jsc-shadow-wind-back",
+          "region": "Shadow Temple Wind Tunnel",
+          "kind": "exit",
+          "target": "Shadow Temple Invisible Spikes",
+          "add": "remake_ijsc",
+          "confidence": "medium",
+          "test": "IJSC back across from the wind tunnel to the invisible-spikes room (normally the Hookshot)."
+        },
+        {
+          "id": "jsc-shadow-entry-adult",
+          "region": "Shadow Temple Entryway",
+          "kind": "exit",
+          "target": "Shadow Temple Beginning",
+          "add": "remake_ijsc_adult and (logic_lens_shadow or can_use(Lens_of_Truth))",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC over the entrance pit (normally the Hookshot or Hover Boots). The child form is live."
+        },
+        {
+          "id": "jsc-gf-card-skip-nohover",
+          "region": "Gerudo Fortress",
+          "kind": "exit",
+          "target": "GF Outside Gate",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer, no Hover Boots: IJSC over the fortress gate to the Wasteland side."
+        },
+        {
+          "id": "jsc-dc-bomb-bag-adult",
+          "region": "Dodongos Cavern Lobby",
+          "kind": "exit",
+          "target": "Dodongos Cavern Far Bridge",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC from the lobby (or its lava pool) up to the Bomb Bag chest's bridge."
+        },
+        {
+          "id": "jsc-ganon-fire-rupee-1",
+          "region": "Ganons Castle Fire Trial",
+          "kind": "event",
+          "target": "Remake silver rupee Ganons Castle Fire Trial 1",
+          "optional": true,
+          "add": "remake_ijsc_adult and (True)",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC to this Fire Trial silver rupee instead of hovering to it (JakeZSR's 'Fire Trial without Hover Boots or Longshot'; how each rupee is taken is in the video only)."
+        },
+        {
+          "id": "jsc-ganon-fire-rupee-2",
+          "region": "Ganons Castle Fire Trial",
+          "kind": "event",
+          "target": "Remake silver rupee Ganons Castle Fire Trial 2",
+          "optional": true,
+          "add": "remake_ijsc_adult and (can_use(Golden_Gauntlets))",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC to this Fire Trial silver rupee instead of hovering to it (JakeZSR's 'Fire Trial without Hover Boots or Longshot'; how each rupee is taken is in the video only)."
+        },
+        {
+          "id": "jsc-ganon-fire-rupee-3",
+          "region": "Ganons Castle Fire Trial",
+          "kind": "event",
+          "target": "Remake silver rupee Ganons Castle Fire Trial 3",
+          "optional": true,
+          "add": "remake_ijsc_adult and (is_adult or logic_fire_trial_slug_rupee)",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC to this Fire Trial silver rupee instead of hovering to it (JakeZSR's 'Fire Trial without Hover Boots or Longshot'; how each rupee is taken is in the video only)."
+        },
+        {
+          "id": "jsc-ganon-fire-rupee-4",
+          "region": "Ganons Castle Fire Trial",
+          "kind": "event",
+          "target": "Remake silver rupee Ganons Castle Fire Trial 4",
+          "optional": true,
+          "add": "remake_ijsc_adult and (can_use(Golden_Gauntlets) and can_use(Goron_Tunic))",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC to this Fire Trial silver rupee instead of hovering to it (JakeZSR's 'Fire Trial without Hover Boots or Longshot'; how each rupee is taken is in the video only)."
+        },
+        {
+          "id": "jsc-ganon-fire-rupee-5",
+          "region": "Ganons Castle Fire Trial",
+          "kind": "event",
+          "target": "Remake silver rupee Ganons Castle Fire Trial 5",
+          "optional": true,
+          "add": "remake_ijsc_adult and (True)",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC to this Fire Trial silver rupee instead of hovering to it (JakeZSR's 'Fire Trial without Hover Boots or Longshot'; how each rupee is taken is in the video only)."
+        },
+        {
+          "id": "jsc-ganon-fire-rupee-loc-right-back",
+          "region": "Ganons Castle Fire Trial",
+          "kind": "location",
+          "target": "Ganons Castle Fire Trial Silver Rupee Right Back",
+          "add": "remake_ijsc_adult and (is_adult or logic_fire_trial_slug_rupee)",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC to this Fire Trial silver rupee instead of hovering (silver rupee shuffle form of the rupee events)."
+        },
+        {
+          "id": "jsc-ganon-fire-rupee-loc-flamethrower",
+          "region": "Ganons Castle Fire Trial",
+          "kind": "location",
+          "target": "Ganons Castle Fire Trial Silver Rupee Flamethrower",
+          "add": "remake_ijsc_adult and (True)",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC to this Fire Trial silver rupee instead of hovering (silver rupee shuffle form of the rupee events)."
+        },
+        {
+          "id": "jsc-ganon-fire-rupee-loc-right-center",
+          "region": "Ganons Castle Fire Trial",
+          "kind": "location",
+          "target": "Ganons Castle Fire Trial Silver Rupee Right Center",
+          "add": "remake_ijsc_adult and (can_use(Golden_Gauntlets) and can_use(Goron_Tunic))",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC to this Fire Trial silver rupee instead of hovering (silver rupee shuffle form of the rupee events)."
+        },
+        {
+          "id": "jsc-ganon-fire-rupee-loc-right-front",
+          "region": "Ganons Castle Fire Trial",
+          "kind": "location",
+          "target": "Ganons Castle Fire Trial Silver Rupee Right Front",
+          "add": "remake_ijsc_adult and (True)",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC to this Fire Trial silver rupee instead of hovering (silver rupee shuffle form of the rupee events)."
+        },
+        {
+          "id": "jsc-ganon-fire-rupee-loc-inside-pillar",
+          "region": "Ganons Castle Fire Trial",
+          "kind": "location",
+          "target": "Ganons Castle Fire Trial Silver Rupee Inside Pillar",
+          "add": "remake_ijsc_adult and (can_use(Golden_Gauntlets))",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC to this Fire Trial silver rupee instead of hovering (silver rupee shuffle form of the rupee events)."
+        },
+        {
+          "id": "jsc-water-raise-altar",
+          "region": "Water Temple Lobby",
+          "kind": "event",
+          "target": "Raise Water Level",
+          "add": "remake_ijsc_adult and remake_water_raise_keys and at('Water Temple Middle Water Level', True)",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC up to the Zelda's Lullaby altar that raises the water to the top (morpha's 'pierre hover'; normally Hookshot, Hover Boots or Bow).",
+          "source": "https://www.zsr.gg/oot2026/dungeon/water-temple"
+        },
+        {
+          "id": "jsc-kf-sword-chest-adult",
+          "region": "Kokiri Forest",
+          "kind": "location",
+          "target": "KF Kokiri Sword Chest",
+          "add": "remake_ijsc_adult",
+          "confidence": "medium",
+          "test": "Adult with the Hammer: IJSC over the low Kokiri Forest wall to the Kokiri Sword chest (SmallAnt did it as adult; how isn't narrated). The sword is force-equipped.",
+          "source": "https://www.youtube.com/watch?v=5CHDJLMuosA"
+        },
+        {
+          "id": "jsc-dmc-child-gap",
+          "region": "DMC Central Local",
+          "kind": "exit",
+          "target": "DMC Lower Nearby",
+          "add": "remake_ijsc_child",
+          "confidence": "medium",
+          "test": "Child with Deku Sticks, after warping in with Bolero: IJSC over the gap the adult needs the Hookshot for (the child takes heat damage but no hitstun; AbdallahSmash). Which gap is inferred.",
+          "source": "https://www.youtube.com/watch?v=g8hG_dATuSQ"
+        }
+      ],
+      "requires": "Child: Deku Sticks. Adult: Megaton Hammer. Plus one other quick-menu item to swap to (helper remake_quick_menu_item). No sword works. Ground to start from.",
+      "achieves": "Any height under the cap, and horizontal travel while holding Target; crosses gaps such as the Gerudo Valley bridge and the Shadow Temple entrance pit.",
+      "limits": "Height cap: never above the global height of Link's last normal jump or forward hop; loading a save from the title screen (or changing age through the Master Sword) removes it, so it costs time, not logic. Ceilings end a chain; walls stop horizontal movement; invisible walls exist (adult Lon Lon Ranch is fenced off). Water, Iron Boots and tunnels: unknown. Don't skip the Hyrule Field owl with it: time of day then stays frozen and night checks are lost.",
+      "modelling": "A live route into the Shadow Temple turns OoTR's raw adult items in Shadow Temple rules into can_use(...) (glitches._shadow_guards), so a child never counts on an adult item there."
+    },
+    "logic_remake_glitch_actor_jump": {
+      "name": "Actor Jump (Hookshot / Bow / Ocarina launch off a movable object)",
+      "description": "Stand on or against a movable actor (an open chest, the Graveyard gravestone, a Magic Bean plant, a pushable block) while finishing an aimable item's animation (Hookshot or Longshot aimed, Bow, Slingshot, or the Ocarina with the camera panned fully down) and jump on the frame it ends: Link is launched far up. Live routes: adult to the Graveyard Shadow Temple ledge, the Silver Gauntlets hand from the Colossus bean flower, the Mirror Shield hand from the opened Silver Gauntlets chest, and the Gerudo Card skip from the roof heart-piece chest.",
+      "confidence": "high",
+      "found_by": "Ataappi (credited); bean jump VidyaJames; chest jump Vespher, Ikaboze, k4erup; Colossus method relayed by FurryWulfz; ZFG's first clips (2026-11-07)",
+      "versions": "1.0.0 and 1.1.1; not patched",
+      "age": "adult (mapped); the Ocarina and Slingshot forms also work as child",
+      "items": "Hookshot, Bow, Slingshot or Ocarina, plus a movable actor (chest, gravestone, bean plant)",
+      "difficulty": "easy to medium (the Ocarina B+X press is strict)",
+      "ootr_analog": "glitch_graveyard_shadow_early_hookshot, glitch_hookshot_jump",
+      "sources": [
+        "https://readdork.com/gaming/ocarina-of-time-speedrunners-have-already-turned-the-remakes-new-jump-button-against-it",
+        "https://www.ggrecon.com/articles/ocarina-of-time-remake-speedrun-glitches/",
+        "https://digg.com/gaming/yfvzrr3t",
+        "https://twistedvoxel.com/zelda-ocarina-of-time-switch-2-silver-gauntlets-actor-jump/",
+        "https://www.youtube.com/watch?v=hJFcUd_OiA0",
+        "https://www.youtube.com/watch?v=Rop0oeZVk24",
+        "https://www.youtube.com/watch?v=7dhP657omlI",
+        "https://www.youtube.com/watch?v=7-cr8XZGCto",
+        "https://www.youtube.com/watch?v=aAnF6pWjcgI",
+        "https://www.youtube.com/watch?v=HDiAv5j2JQI",
+        "https://www.youtube.com/watch?v=PJBwjasOZQk",
+        "https://www.youtube.com/watch?v=dfWl-sWDpro",
+        "https://x.com/zfg111/status/2118924457427505482",
+        "https://x.com/zfg111/status/2119125070966837547",
+        "https://x.com/Ikaboze/status/2118969656799088982",
+        "https://x.com/Vespher/status/2118911857503371301",
+        "https://x.com/k4erup/status/2118943998874399201",
+        "https://pixeltwelve.com/articles/zelda-ocarina-of-time-remake-link-launch-glitch",
+        "https://pro-gamer.gg/zelda-ocarina-of-time-switch-2-speedrun-glitches-actor-jump-jumpslash-cancel/",
+        "https://dexerto.com/legend-of-zelda/speedrunners-are-already-breaking-zelda-ocarina-of-time-remake-with-infinite-and-super-jumps-3426795",
+        "https://www.zsr.gg/oot2026/area/gerudo-fortress",
+        "https://www.youtube.com/watch?v=AcMAQQxEDpM",
+        "https://www.youtube.com/watch?v=1EIvnoPTQ48",
+        "https://www.youtube.com/watch?v=ZW4V-9YsOaY"
+      ],
+      "rules": [
+        {
+          "id": "aj-graveyard-ledge",
+          "region": "Graveyard",
+          "kind": "exit",
+          "target": "Graveyard Warp Pad Region",
+          "new": true,
+          "add": "logic_remake_glitch_actor_jump and is_adult and (can_use(Hookshot) or (here(can_plant_bean) and Ocarina))",
+          "confidence": "high",
+          "note": "Adult to the Shadow Temple ledge without Nocturne of Shadow (skips completing the Forest, Fire and Water Temples): Hookshot actor jump off the gravestone (SmallAnt's setup, JakeZSR for ZSR) or off the Graveyard bean plant with the Hookshot aimed down (RoboRotembo, works on 1.1.1); Ocarina actor jump (Vespher's 'buffered ocarina actor jump'; the bean plant is required here to be safe, the actor isn't named). The Bow form is a candidate.",
+          "source": "https://www.zsr.gg/oot2026/area/graveyard"
+        },
+        {
+          "id": "aj-colossus-left-hand",
+          "region": "Desert Colossus",
+          "kind": "exit",
+          "target": "Remake Spirit Temple Left Hand",
+          "new": true,
+          "add": "logic_remake_glitch_actor_jump and is_adult and here(can_plant_bean) and (Ocarina or can_use(Hookshot))",
+          "confidence": "high",
+          "note": "Silver Gauntlets chest as adult without the child side of the Spirit Temple (ZFG, FurryWulfz, Twisted Voxel). Needs structural 1.",
+          "source": "https://www.youtube.com/watch?v=hJFcUd_OiA0"
+        },
+        {
+          "id": "aj-left-to-right-hand",
+          "region": "Remake Spirit Temple Left Hand",
+          "kind": "exit",
+          "target": "Remake Spirit Temple Right Hand",
+          "new": true,
+          "add": "logic_remake_glitch_actor_jump and is_adult and (Ocarina or can_use(Hookshot))",
+          "confidence": "high",
+          "note": "Second actor jump from the opened Silver Gauntlets chest to the Mirror Shield chest (FurryWulfz, ThreeLetterName, The Gaming Branch). Needs structural 2.",
+          "source": "https://twistedvoxel.com/zelda-ocarina-of-time-switch-2-silver-gauntlets-actor-jump/"
+        },
+        {
+          "id": "aj-gf-card-skip",
+          "region": "GF Chest Roof",
+          "kind": "exit",
+          "target": "GF Outside Gate",
+          "new": true,
+          "add": "remake_actor_jump_adult",
+          "confidence": "high",
+          "test": "Adult: open the heart-piece chest on the fortress roof, stand in it, actor jump (Ocarina, Hookshot or Bow) over the gate to the Wasteland side without the Gerudo Card ('Gerudo Card Skip').",
+          "source": "https://www.zsr.gg/oot2026/area/gerudo-fortress"
+        }
+      ],
+      "candidates": [
+        {
+          "id": "aj-ft-scarecrow-gs",
+          "region": "Forest Temple NE Outdoors",
+          "kind": "event",
+          "target": "Remake drop group ForestTemple:Forest Temple GS Raised Island Courtyard 3",
+          "optional": true,
+          "add": "remake_actor_jump_adult and (can_use(Hookshot) or at('Forest Temple Falling Room', True))",
+          "confidence": "medium",
+          "test": "Adult: actor jump to the east-courtyard Gold Skulltula, which the remake put on the scarecrow ledge (no Scarecrow's Song). Which actor and where Link stands are shown only in Photon's clip.",
+          "source": "https://www.youtube.com/watch?v=p_ODNIXsEYI"
+        },
+        {
+          "id": "aj-kak-windmill-poh-child",
+          "region": "Kak Windmill",
+          "kind": "location",
+          "target": "Kak Windmill Freestanding PoH",
+          "add": "is_child and Hylian_Shield and Ocarina",
+          "confidence": "medium",
+          "test": "Child with the Hylian Shield and the Ocarina: ledge-grab the turning windmill platform (a moving actor), shield-crouch, pan the camera straight down and jump; the actor jump reaches the Piece of Heart (Gowther31; normally the Boomerang or the adult route).",
+          "source": "https://www.youtube.com/watch?v=pVtG6NzPq4E"
+        },
+        {
+          "id": "aj-graveyard-ledge-bow",
+          "region": "Graveyard",
+          "kind": "exit",
+          "target": "Graveyard Warp Pad Region",
+          "new": true,
+          "add": "logic_remake_glitch_actor_jump and is_adult and can_use(Bow)",
+          "confidence": "medium",
+          "test": "Adult with the Bow: actor jump off the gravestone (aim the Bow, cancel, jump) up to the Shadow Temple ledge. The Bow is named as an actor-jump item, but no Graveyard clip uses it."
+        },
+        {
+          "id": "aj-graveyard-poh",
+          "region": "Graveyard",
+          "kind": "location",
+          "target": "Graveyard Freestanding PoH",
+          "add": "logic_remake_glitch_actor_jump and is_adult and can_use(Hookshot) and can_break_crate",
+          "confidence": "medium",
+          "test": "Adult with the Hookshot: stand on any grave, Hookshot actor jump up to the heart-piece ledge, break the crate (JBurtonGaming: 'useful for getting the heartpiece in the graveyard').",
+          "source": "https://www.youtube.com/watch?v=wT76ly9Pm9M"
+        }
+      ],
+      "requires": "An actor to stand in or against, and one of: Hookshot/Longshot, Bow, Slingshot, Ocarina (helper remake_actor_jump_adult for the adult forms). Every documented use is adult.",
+      "achieves": "One big launch (about three times Link's height) per setup; the camera steers it.",
+      "limits": "Child forms (Slingshot, Ocarina) are named but not shown. Crates, pots and Cuccos are not documented.",
+      "modelling": "The Spirit Temple hand regions 'Remake Spirit Temple Left Hand' / 'Right Hand' (glitches._hands): the two chests in regions of their own, entered from their old rooms under their old rules, so they can be reached from outside."
+    },
+    "logic_remake_glitch_spirit_hand_entry": {
+      "name": "Spirit Temple entry through the Mirror Shield hand (untested: no route in logic yet)",
+      "description": "After reaching a Colossus hand from outside, go into the temple through the hand's doorway. No source shows it: the '90% Spirit Temple skip' means taking both hand chests from outside.",
+      "confidence": "low",
+      "found_by": "bradyONE (video 2026-11-07); pro-gamer.gg table; Sirloin ('SKIP the full Spirit Temple')",
+      "versions": "launch builds",
+      "age": "adult",
+      "items": "as logic_remake_glitch_actor_jump",
+      "difficulty": "unknown",
+      "ootr_analog": "glitch_spirit_child_side_as_adult",
+      "sources": [
+        "https://www.youtube.com/watch?v=vVzYOGpTEKk",
+        "https://www.youtube.com/watch?v=eaBkAlxkVqY",
+        "https://pro-gamer.gg/zelda-ocarina-of-time-switch-2-speedrun-glitches-actor-jump-jumpslash-cancel/"
+      ],
+      "rules": [],
+      "candidates": [
+        {
+          "id": "hand-remake-spirit-temple-rig-spirit-temple-beyond-anu",
+          "region": "Remake Spirit Temple Right Hand",
+          "kind": "exit",
+          "target": "Spirit Temple Beyond Anubis Room",
+          "new": true,
+          "add": "logic_remake_glitch_spirit_hand_entry and is_adult",
+          "confidence": "low",
+          "note": "Uses the new region from logic_remake_glitch_actor_jump structural 2; enable both."
+        }
+      ],
+      "requires": "Adult on the right hand (actor jump or IJSC).",
+      "achieves": "Unknown (would reach Beyond Anubis Room)."
+    },
+    "logic_remake_glitch_bomb_pose_clip": {
+      "name": "Bomb Pose wall clip (Forest Temple Song of Time block and Bow room)",
+      "description": "Hold an Ocarina note until it warbles (about 3 s), cancel, hold Target and forward and draw a bomb: Link is pushed into a corner, and saving and reloading puts him behind the wall. Forest Temple: IJSC with the Hammer up a main-hall column and clip into the EAST courtyard past the Song of Time block; from the east courtyard, the bomb-void trick puts Link in the Bow room; Iron Boots take him through the well to the west courtyard.",
+      "confidence": "high",
+      "found_by": "PastyPixel (technique); ontrigger (Song of Time block use); Ultraspeed7 (bow room, verified by Photon); sva (aim-less setup)",
+      "versions": "found 2026-11-12/14; not patched",
+      "age": "adult",
+      "items": "Ocarina, Bombs, Megaton Hammer (IJSC up to the clip spots); a shield for sva's aim-less bow-room setup",
+      "difficulty": "hard (IJSC plus a precise bomb position)",
+      "ootr_analog": "none (N64 Forest Temple tricks used hovering)",
+      "sources": [
+        "https://www.youtube.com/watch?v=8gl_ixqj4Ug",
+        "https://www.youtube.com/watch?v=4V1lRs6J-Sk",
+        "https://www.youtube.com/watch?v=ieSkr6VOtnA",
+        "https://www.youtube.com/watch?v=jQIMqlB1rVQ",
+        "https://www.youtube.com/watch?v=BC0zoYBU2uY",
+        "https://automaton-media.com/articles/newsjp/20261113-479169/",
+        "https://www.youtube.com/watch?v=f6JUWP1mP0I",
+        "https://www.zsr.gg/oot2026/dungeon/forest-temple",
+        "https://www.zsr.gg/oot2026/tech/bomb-pose",
+        "https://www.youtube.com/watch?v=RyWAgiSeS9M",
+        "https://www.youtube.com/watch?v=h66DDsmrlAU"
+      ],
+      "rules": [
+        {
+          "id": "bomb-ft-sot-block",
+          "region": "Forest Temple Central Area",
+          "kind": "exit",
+          "target": "Forest Temple NE Outdoors",
+          "add": "logic_remake_glitch_bomb_pose_clip and remake_ijsc_adult and Ocarina and Bombs",
+          "confidence": "high",
+          "note": "Song of Time block skip (technique PastyPixel, use ontrigger): IJSC with the Hammer to the top of the column by the door to the Stalfos hallway, bomb pose (hold an Ocarina note until it warbles, cancel, draw a bomb holding Target and forward) into the wall, save and reload: Link is in the EAST courtyard (ZSR; the earlier note's 'NW courtyard' was wrong). The west courtyard is the one behind the Song of Time block.",
+          "source": "https://www.zsr.gg/oot2026/dungeon/forest-temple"
+        },
+        {
+          "id": "bomb-ft-bow-room",
+          "region": "Forest Temple NE Outdoors",
+          "kind": "exit",
+          "target": "Forest Temple Bow Region",
+          "new": true,
+          "add": "logic_remake_glitch_bomb_pose_clip and (remake_ijsc_adult or remake_actor_jump_adult) and Ocarina and Bombs",
+          "confidence": "high",
+          "note": "'Iron Boots skip' (ZSR: theory Dusty_Carpet; developed by Dusty_Carpet, cool_cool, karterfreak; Ultraspeed7, Photon): from the east courtyard, JSC or actor jump over the courtyard wall to the corner near the Bow room, set the respawn point with the Ocarina, throw a bomb into that corner and void out; the bomb invalidates the respawn and Link is put in the Bow room. The only way to the Bow without both the Song of Time and the Iron Boots. The Bow Region's own rules (keys 4/5) still apply.",
+          "source": "https://www.zsr.gg/oot2026/dungeon/forest-temple"
+        },
+        {
+          "id": "bomb-ft-well",
+          "region": "Forest Temple NE Outdoors",
+          "kind": "exit",
+          "target": "Forest Temple NW Outdoors",
+          "add": "logic_remake_glitch_bomb_pose_clip and can_use(Iron_Boots)",
+          "confidence": "high",
+          "test": "Adult with the Iron Boots, after the clip into the east courtyard: walk through the well to the west courtyard (ZSR). The remake's logic has this passage closed otherwise; it only matters after the clip.",
+          "source": "https://www.zsr.gg/oot2026/dungeon/forest-temple"
+        }
+      ],
+      "candidates": [],
+      "requires": "Adult; Ocarina, Bombs, Megaton Hammer (IJSC up to the clip spots) or an actor jump for the Bow room.",
+      "achieves": "Through a wall after a save and reload; with a bomb near the respawn point, a void-out puts Link in bounds somewhere else.",
+      "limits": "The pose breaks on standing still while pulling the bomb, throwing or picking it up, jumping, jumpslashing, climbing, rolling or taking damage (ZSR). Works on 1.1.1."
+    },
+    "logic_remake_glitch_child_shadow": {
+      "name": "Child Shadow Temple ('Early Adult' / 'Puberty Skip')",
+      "description": "Child Link does the Shadow Temple (IJSC with Deku Sticks to the Graveyard ledge and over the entrance pit, Din's Fire for the torches, IJSC over the dungeon's gaps and up to its high silver crystals), beats Bongo Bongo and takes the blue warp: the warp always lands in the adult Graveyard, so Link comes back ADULT with the Kokiri Sword. Time travel without the Door of Time or the Master Sword, one way. The generator checks such seeds the way the player lives them: everything the child can get first, then adult, a child again only through the Master Sword pedestal (glitches.after_fill).",
+      "confidence": "high",
+      "found_by": "ZFG (2026-11-08, without tools); Dead Cartridge (2026-11-07, with external tools); Harper Jay (2026-11-09)",
+      "versions": "1.0.0/1.1.1; not patched",
+      "age": "child -> adult",
+      "items": "Deku Sticks, Din's Fire, Zelda's Lullaby (boat), Shadow Temple keys and boss key; for Bongo Bongo, Kokiri Sword plus Slingshot (OoTR's own rule already covers a child); Lens or the lens tricks",
+      "difficulty": "hard (many IJSCs)",
+      "ootr_analog": "glitch_child_shadow (Child_Shadow helper)",
+      "sources": [
+        "https://x.com/zfg111/status/2119336664816570520",
+        "https://automaton-media.com/articles/newsjp/20261109-478196/",
+        "https://automaton-media.com/articles/newsjp/20261113-479169/",
+        "https://www.youtube.com/watch?v=K_OS8trWRBk",
+        "https://www.youtube.com/watch?v=tdAG3m6sRrk",
+        "https://bsky.app/profile/did:plc:ktbqsluxs5xfyimyhnjgw6kk/post/3mzu4eco2uc2d",
+        "https://www.youtube.com/watch?v=0VEkH0U6Dq4",
+        "https://www.youtube.com/watch?v=BC0zoYBU2uY",
+        "https://www.youtube.com/watch?v=uqokWwqLqs8",
+        "https://www.youtube.com/watch?v=8EYgfjgoOUU",
+        "https://aftermath.site/legend-of-zelda-ocarina-of-time-remake-speedruns/",
+        "https://gamerant.com/zelda-ocarina-of-time-bug-link-speedrun/",
+        "https://dexerto.com/legend-of-zelda/speedrunners-are-already-breaking-zelda-ocarina-of-time-remake-with-infinite-and-super-jumps-3426795",
+        "https://www.zsr.gg/oot2026/tech/puberty-skip",
+        "https://www.zsr.gg/oot2026/route/any-1",
+        "https://www.zsr.gg/oot2026/boss/bongo-bongo",
+        "https://www.youtube.com/watch?v=FIicL-kovfQ",
+        "https://www.youtube.com/watch?v=-qPFcVgVjo8"
+      ],
+      "rules": [
+        {
+          "id": "cs-graveyard-ledge",
+          "region": "Graveyard",
+          "kind": "exit",
+          "target": "Graveyard Warp Pad Region",
+          "new": true,
+          "add": "logic_remake_glitch_child_shadow and remake_ijsc_child",
+          "confidence": "high"
+        },
+        {
+          "id": "cs-shadow-entry",
+          "region": "Shadow Temple Entryway",
+          "kind": "exit",
+          "target": "Shadow Temple Beginning",
+          "add": "logic_remake_glitch_child_shadow and remake_ijsc_child and (logic_lens_shadow or can_use(Lens_of_Truth))",
+          "confidence": "high",
+          "source": "https://www.zsr.gg/oot2026/dungeon/shadow-temple"
+        },
+        {
+          "id": "cs-first-beamos",
+          "region": "Shadow Temple Beginning",
+          "kind": "exit",
+          "target": "Shadow Temple First Beamos",
+          "add": "logic_remake_glitch_child_shadow and remake_ijsc_child",
+          "confidence": "high",
+          "note": "Child over the gap after the entrance (normally Hover Boots; the route says 'Skip Hover Boots'). The any% child route (ZSR route/any-1) and ZFG's tool-free child clear take a child from the entrance to Bongo Bongo; the route names IJSC for the gaps, and the logic here asks for at least the route's loadout (Deku Sticks and another item, Din's Fire, explosives for the pit, keys, Lens or the lens tricks, the Kokiri Sword). The child silver-crystal rooms are shown by Dry4Haz. Linkus7's world-record commentary narrates the child route: every gap and ledge 'basically requires a mini hover' (IJSC), the wind carries Link through the wind-tunnel door after a timed hover, and the last platforms take 'three hovers... five hovers' to the door.",
+          "source": "https://www.youtube.com/watch?v=V8RP5ZyaHA0"
+        },
+        {
+          "id": "cs-wind-tunnel",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "exit",
+          "target": "Shadow Temple Wind Tunnel",
+          "add": "logic_remake_glitch_child_shadow and remake_ijsc_child and (Small_Key_Shadow_Temple, 3)",
+          "confidence": "high",
+          "note": "Child across the gap to the wind tunnel door (normally the Hookshot target). The any% child route (ZSR route/any-1) and ZFG's tool-free child clear take a child from the entrance to Bongo Bongo; the route names IJSC for the gaps, and the logic here asks for at least the route's loadout (Deku Sticks and another item, Din's Fire, explosives for the pit, keys, Lens or the lens tricks, the Kokiri Sword). The child silver-crystal rooms are shown by Dry4Haz. Linkus7's world-record commentary narrates the child route: every gap and ledge 'basically requires a mini hover' (IJSC), the wind carries Link through the wind-tunnel door after a timed hover, and the last platforms take 'three hovers... five hovers' to the door.",
+          "source": "https://www.youtube.com/watch?v=V8RP5ZyaHA0"
+        },
+        {
+          "id": "cs-spikes-rupee-ledge",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "location",
+          "target": "Shadow Temple Invisible Spikes Silver Rupee Ledge",
+          "add": "logic_remake_glitch_child_shadow and remake_ijsc_child",
+          "confidence": "high",
+          "note": "ZFG beat Bongo Bongo as a child without tools (2026-11-08): a child clear crosses every gap on the way; the community's technique for them is IJSC with Deku Sticks (AUTOMATON 2026-11-09). The room's freestanding key (needed for the boss door) comes after all five rupees.",
+          "source": "https://x.com/zfg111/status/2119336664816570520"
+        },
+        {
+          "id": "cs-spikes-rupee-right",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "location",
+          "target": "Shadow Temple Invisible Spikes Silver Rupee Right",
+          "add": "logic_remake_glitch_child_shadow and remake_ijsc_child",
+          "confidence": "high",
+          "note": "ZFG beat Bongo Bongo as a child without tools (2026-11-08): a child clear crosses every gap on the way; the community's technique for them is IJSC with Deku Sticks (AUTOMATON 2026-11-09). The room's freestanding key (needed for the boss door) comes after all five rupees.",
+          "source": "https://x.com/zfg111/status/2119336664816570520"
+        },
+        {
+          "id": "cs-spikes-rupee-left",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "location",
+          "target": "Shadow Temple Invisible Spikes Silver Rupee Left",
+          "add": "logic_remake_glitch_child_shadow and remake_ijsc_child",
+          "confidence": "high",
+          "note": "ZFG beat Bongo Bongo as a child without tools (2026-11-08): a child clear crosses every gap on the way; the community's technique for them is IJSC with Deku Sticks (AUTOMATON 2026-11-09). The room's freestanding key (needed for the boss door) comes after all five rupees.",
+          "source": "https://x.com/zfg111/status/2119336664816570520"
+        },
+        {
+          "id": "cs-spikes-rupee-near-ledge",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "location",
+          "target": "Shadow Temple Invisible Spikes Silver Rupee Near Ledge",
+          "add": "logic_remake_glitch_child_shadow and remake_ijsc_child",
+          "confidence": "high",
+          "note": "ZFG beat Bongo Bongo as a child without tools (2026-11-08): a child clear crosses every gap on the way; the community's technique for them is IJSC with Deku Sticks (AUTOMATON 2026-11-09). The room's freestanding key (needed for the boss door) comes after all five rupees.",
+          "source": "https://x.com/zfg111/status/2119336664816570520"
+        },
+        {
+          "id": "cs-statue-chasm",
+          "region": "Shadow Temple Beyond Boat",
+          "kind": "exit",
+          "target": "Shadow Temple Before Boss",
+          "add": "logic_remake_glitch_child_shadow and remake_ijsc_child",
+          "confidence": "high",
+          "note": "Child past the chasm before the boss door (normally the Bow drops the statue as a bridge; bombchus with logic_shadow_statue). The any% child route (ZSR route/any-1) and ZFG's tool-free child clear take a child from the entrance to Bongo Bongo; the route names IJSC for the gaps, and the logic here asks for at least the route's loadout (Deku Sticks and another item, Din's Fire, explosives for the pit, keys, Lens or the lens tricks, the Kokiri Sword). The child silver-crystal rooms are shown by Dry4Haz. Linkus7's world-record commentary narrates the child route: every gap and ledge 'basically requires a mini hover' (IJSC), the wind carries Link through the wind-tunnel door after a timed hover, and the last platforms take 'three hovers... five hovers' to the door.",
+          "source": "https://www.youtube.com/watch?v=V8RP5ZyaHA0"
+        },
+        {
+          "id": "cs-blue-warp",
+          "region": "Bongo Bongo Blue Warp",
+          "kind": "event",
+          "target": "Remake Glitch Child Shadow Warp",
+          "new": true,
+          "add": "logic_remake_glitch_child_shadow and is_child and Kokiri_Sword",
+          "confidence": "high",
+          "note": "A child taking the Shadow Temple blue warp comes back adult (ZFG; Dead Cartridge), with the Kokiri Sword as his sword (OoTR's adult rules assume one; the child needs it for Bongo Bongo anyway)."
+        },
+        {
+          "id": "cs-root-exits",
+          "region": "Root",
+          "kind": "exit",
+          "target": "Root Exits",
+          "add": "'Remake Glitch Child Shadow Warp'",
+          "confidence": "high",
+          "note": "Gives the adult access to the world (adult spawn and warp songs) without Time_Travel. Returning to child still needs the Master Sword Pedestal, which OoTR already models."
+        },
+        {
+          "id": "cs-scythe-ledge",
+          "region": "Shadow Temple First Beamos",
+          "kind": "location",
+          "target": "Shadow Temple Scythe Shortcut Silver Rupee Ledge",
+          "add": "logic_remake_glitch_child_shadow and remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC up to the ledge silver crystal in the Beamos room. The any% child route (ZSR route/any-1) and ZFG's tool-free child clear take a child from the entrance to Bongo Bongo; the route names IJSC for the gaps, and the logic here asks for at least the route's loadout (Deku Sticks and another item, Din's Fire, explosives for the pit, keys, Lens or the lens tricks, the Kokiri Sword). The child silver-crystal rooms are shown by Dry4Haz.",
+          "source": "https://www.youtube.com/watch?v=-qPFcVgVjo8"
+        },
+        {
+          "id": "cs-scythe-ledge-event",
+          "region": "Shadow Temple First Beamos",
+          "kind": "event",
+          "target": "Remake silver rupee Shadow Temple Scythe Shortcut 4",
+          "optional": true,
+          "add": "logic_remake_glitch_child_shadow and remake_ijsc_child",
+          "confidence": "high",
+          "test": "As cs-scythe-ledge (the remake's silver-crystal event)."
+        },
+        {
+          "id": "cs-spikes-event-2",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "event",
+          "target": "Remake silver rupee Shadow Temple Invisible Spikes 2",
+          "optional": true,
+          "add": "logic_remake_glitch_child_shadow and remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC up to this high silver crystal in the invisible-spikes room (the remake's silver-crystal event; normally the Hookshot). The any% child route (ZSR route/any-1) and ZFG's tool-free child clear take a child from the entrance to Bongo Bongo; the route names IJSC for the gaps, and the logic here asks for at least the route's loadout (Deku Sticks and another item, Din's Fire, explosives for the pit, keys, Lens or the lens tricks, the Kokiri Sword). The child silver-crystal rooms are shown by Dry4Haz.",
+          "source": "https://www.youtube.com/watch?v=FIicL-kovfQ"
+        },
+        {
+          "id": "cs-spikes-event-3",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "event",
+          "target": "Remake silver rupee Shadow Temple Invisible Spikes 3",
+          "optional": true,
+          "add": "logic_remake_glitch_child_shadow and remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC up to this high silver crystal in the invisible-spikes room (the remake's silver-crystal event; normally the Hookshot). The any% child route (ZSR route/any-1) and ZFG's tool-free child clear take a child from the entrance to Bongo Bongo; the route names IJSC for the gaps, and the logic here asks for at least the route's loadout (Deku Sticks and another item, Din's Fire, explosives for the pit, keys, Lens or the lens tricks, the Kokiri Sword). The child silver-crystal rooms are shown by Dry4Haz.",
+          "source": "https://www.youtube.com/watch?v=FIicL-kovfQ"
+        },
+        {
+          "id": "cs-spikes-event-4",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "event",
+          "target": "Remake silver rupee Shadow Temple Invisible Spikes 4",
+          "optional": true,
+          "add": "logic_remake_glitch_child_shadow and remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC up to this high silver crystal in the invisible-spikes room (the remake's silver-crystal event; normally the Hookshot). The any% child route (ZSR route/any-1) and ZFG's tool-free child clear take a child from the entrance to Bongo Bongo; the route names IJSC for the gaps, and the logic here asks for at least the route's loadout (Deku Sticks and another item, Din's Fire, explosives for the pit, keys, Lens or the lens tricks, the Kokiri Sword). The child silver-crystal rooms are shown by Dry4Haz.",
+          "source": "https://www.youtube.com/watch?v=FIicL-kovfQ"
+        },
+        {
+          "id": "cs-spikes-event-5",
+          "region": "Shadow Temple Invisible Spikes",
+          "kind": "event",
+          "target": "Remake silver rupee Shadow Temple Invisible Spikes 5",
+          "optional": true,
+          "add": "logic_remake_glitch_child_shadow and remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC up to this high silver crystal in the invisible-spikes room (the remake's silver-crystal event; normally the Hookshot). The any% child route (ZSR route/any-1) and ZFG's tool-free child clear take a child from the entrance to Bongo Bongo; the route names IJSC for the gaps, and the logic here asks for at least the route's loadout (Deku Sticks and another item, Din's Fire, explosives for the pit, keys, Lens or the lens tricks, the Kokiri Sword). The child silver-crystal rooms are shown by Dry4Haz.",
+          "source": "https://www.youtube.com/watch?v=FIicL-kovfQ"
+        }
+      ],
+      "candidates": [
+        {
+          "id": "cs-wind-tunnel-back",
+          "region": "Shadow Temple Wind Tunnel",
+          "kind": "exit",
+          "target": "Shadow Temple Invisible Spikes",
+          "add": "logic_remake_glitch_child_shadow and remake_ijsc_child",
+          "confidence": "medium",
+          "test": "Child with Deku Sticks: IJSC back from the wind tunnel side to the invisible-spikes room (not needed on the way to the boss)."
+        }
+      ],
+      "requires": "Child: Deku Sticks and another quick-menu item, Din's Fire, explosives, the Kokiri Sword, Lens or the lens tricks, the dungeon's keys and boss key, and OoTR's Bongo Bongo rule.",
+      "achieves": "Adult Link without the Master Sword; the Shadow Temple's checks as a child.",
+      "modelling": "As jsc (Shadow Temple age guards), plus the blue-warp event 'Remake Glitch Child Shadow Warp' that Root -> Root Exits accepts, and the after-fill check that a seed needing it is beatable as the player lives it (glitches.child_shadow_problem).",
+      "pedestal_return_verified": false
+    },
+    "logic_remake_glitch_adult_deku_tree": {
+      "name": "Adult Deku Tree, warp back as child ('Reverse Puberty Adventure')",
+      "description": "Adult IJSC with the Megaton Hammer onto the Deku Tree's nose, slip between the trees on the left into the child-only tree, and take Gohma's blue warp: it always loads child Kokiri Forest, so Link becomes a child (adult gear carries over). Works whether or not the dungeon was cleared. With the remake's child start the age swap adds nothing to logic; the adult's Deku Tree checks do.",
+      "confidence": "high",
+      "found_by": "oussama and tvbrayden (ZSR); tutorial めだか; AUTOMATON 2026-11-18 (Taechuk, mbuglitch, Ikaboze, tahata)",
+      "versions": "1.1.1 (2026-11-13..18); not patched",
+      "age": "adult -> child",
+      "items": "Megaton Hammer (IJSC); Queen Gohma already defeated (her blue warp is gated by 'Defeat Queen Gohma')",
+      "difficulty": "hard",
+      "ootr_analog": "glitch_equip_swap (wrong-age equipment)",
+      "sources": [
+        "https://automaton-media.com/articles/newsjp/20261118-479830/",
+        "https://www.youtube.com/watch?v=4puxiGiTBLA",
+        "https://www.youtube.com/watch?v=waFmgFj5ju0",
+        "https://www.youtube.com/watch?v=U7sk9sfQAeQ",
+        "https://www.zsr.gg/oot2026/tech/puberty-skip",
+        "https://www.zsr.gg/oot2026/general/progression-triggers",
+        "https://www.youtube.com/watch?v=dK3N0kW9kGw",
+        "https://www.youtube.com/watch?v=YzPO0TqfCHM"
+      ],
+      "rules": [
+        {
+          "id": "deku-adult-entry",
+          "region": "KF Outside Deku Tree",
+          "kind": "exit",
+          "target": "Deku Tree Lobby",
+          "add": "logic_remake_glitch_adult_deku_tree and remake_ijsc_adult",
+          "confidence": "high",
+          "note": "Adult: save and reload by the Deku Tree, IJSC with the Hammer onto the tree's nose, drop on the left and slip between the trees into the tree (めだか's tutorial; AUTOMATON 2026-11-18). OoTR's Deku Tree rules already allow an adult inside (dungeon entrance shuffle).",
+          "source": "https://www.youtube.com/watch?v=dK3N0kW9kGw"
+        },
+        {
+          "id": "deku-blue-warp",
+          "region": "Queen Gohma Blue Warp",
+          "kind": "event",
+          "target": "Remake Glitch Adult Deku Warp",
+          "new": true,
+          "add": "logic_remake_glitch_adult_deku_tree and is_adult",
+          "confidence": "high",
+          "note": "The Deku Tree blue warp always loads Kokiri Forest as child, so an adult becomes a child, whether or not the dungeon was cleared (ZSR Puberty Skip and Progression Triggers). With the remake's child start it adds nothing (a child is always available).",
+          "source": "https://www.zsr.gg/oot2026/tech/puberty-skip"
+        },
+        {
+          "id": "deku-root-exits",
+          "region": "Root",
+          "kind": "exit",
+          "target": "Root Exits",
+          "add": "'Remake Glitch Adult Deku Warp'",
+          "confidence": "high",
+          "note": "Only matters with an adult start, which the remake doesn't have.",
+          "source": "https://www.zsr.gg/oot2026/tech/puberty-skip"
+        }
+      ],
+      "candidates": [],
+      "requires": "Adult: Megaton Hammer and another quick-menu item (save and reload by the tree first, for the jump cap).",
+      "achieves": "The Deku Tree as adult; adult -> child without the pedestal.",
+      "modelling": "The blue-warp event 'Remake Glitch Adult Deku Warp' that Root -> Root Exits accepts (only matters with an adult start, which the remake doesn't have)."
+    },
+    "logic_remake_glitch_gf_skip": {
+      "name": "Gerudo Card skip (past the fortress gate without the Gerudo Card)",
+      "description": "Two methods, both on ZSR's Gerudo Fortress page: an actor jump from the opened heart-piece chest on the fortress roof, or IJSC with Hover Boots from the ground. The any% route goes on into the Haunted Wasteland, so Link ends up past the gate.",
+      "confidence": "high",
+      "found_by": "Tach (actor jump from the HP chest; Vinek proof of concept, Wete42 refinements); morpha (IJSC + Hover Boots), both 2026-11-09",
+      "versions": "1.0.0/1.1.1",
+      "age": "adult",
+      "items": "Ocarina or Hookshot at the open roof chest; or Megaton Hammer + Hover Boots",
+      "difficulty": "medium ('So much easier than IJSC hovering')",
+      "ootr_analog": "glitch_gf_gate_groundclip",
+      "sources": [
+        "https://www.youtube.com/watch?v=7nm7BUvUANg",
+        "https://www.youtube.com/watch?v=SSYXexvNt58",
+        "https://www.zsr.gg/oot2026/area/gerudo-fortress",
+        "https://www.zsr.gg/oot2026/route/any-1"
+      ],
+      "rules": [
+        {
+          "id": "gf-card-skip-chest",
+          "region": "GF Chest Roof",
+          "kind": "exit",
+          "target": "GF Outside Gate",
+          "new": true,
+          "add": "logic_remake_glitch_gf_skip and remake_actor_jump_adult",
+          "confidence": "high",
+          "note": "'Gerudo Card Skip' with an actor jump from the opened heart-piece chest on the fortress roof (Tach; ZSR). The any% route goes on into the Haunted Wasteland, so the jump passes the gate. Exact landing spot: medium.",
+          "source": "https://www.zsr.gg/oot2026/area/gerudo-fortress"
+        },
+        {
+          "id": "gf-card-skip-jsc",
+          "region": "Gerudo Fortress",
+          "kind": "exit",
+          "target": "GF Outside Gate",
+          "add": "logic_remake_glitch_gf_skip and remake_ijsc_adult and can_use(Hover_Boots)",
+          "confidence": "high",
+          "note": "'Gerudo Card Skip' with jump slash cancels and Hover Boots (morpha; ZSR).",
+          "source": "https://www.zsr.gg/oot2026/area/gerudo-fortress"
+        }
+      ],
+      "candidates": [],
+      "requires": "Adult; the roof chest and an actor-jump item, or the Megaton Hammer and Hover Boots.",
+      "achieves": "GF Outside Gate (the Wasteland side) without the Gerudo Card."
+    },
+    "logic_remake_glitch_infinite_hover": {
+      "name": "Infinite Hover Boots",
+      "description": "While hovering (walk off a ledge or an actor), use an empty bottle twice as the boots activate, take tiny steps, repeat: the hover keeps refreshing (credited to Quib; tutorials by Jay Dunna and JBurtonGaming). Only close to the ground, and not in every area. Live: the Ganon's Castle Fire Trial without the Longshot.",
+      "confidence": "high",
+      "found_by": "Quib (credited by Linkus7); Fire Trial use by Roseatia (2026-11-07); guide by Jay Dunna (2026-11-16)",
+      "versions": "launch builds",
+      "age": "adult",
+      "items": "Hover Boots",
+      "difficulty": "unknown",
+      "ootr_analog": "can_hover (glitch_hovering)",
+      "sources": [
+        "https://www.youtube.com/watch?v=VEnrL0kISjw",
+        "https://www.youtube.com/watch?v=FV6cY1FGbYY",
+        "https://www.youtube.com/watch?v=8EKhomtkGbs",
+        "https://www.youtube.com/watch?v=HDiAv5j2JQI",
+        "https://www.zsr.gg/oot2026/tech/infinite-hover-boots",
+        "https://x.com/sera18171/status/2119265116030136459",
+        "https://haplogamingchef.blogspot.com/2026/11/zelda-ocarina-of-time-remake-infinite-hover-glitch-guide.html",
+        "https://www.youtube.com/watch?v=wT76ly9Pm9M",
+        "https://www.youtube.com/watch?v=Zi2-z3eYlHU"
+      ],
+      "rules": [
+        {
+          "id": "hover-ganons-castle-fire-trial-ganons-castle-fire-trial",
+          "region": "Ganons Castle Fire Trial",
+          "kind": "exit",
+          "target": "Ganons Castle Fire Trial Ending",
+          "add": "logic_remake_glitch_infinite_hover and can_use(Hover_Boots) and has_bottle and (Silver_Rupee_Ganons_Castle_Fire_Trial, 5) and (shuffle_silver_rupees or Goron_Tunic)",
+          "confidence": "high",
+          "note": "Infinite Hover Boots across the Fire Trial to its door (ZFG: 'it's been confirmed we can get across fire trial with this'; Jay Dunna shows the room crossed; Roseatia's 'fire trial no longshot with infinite hover boots glitch'). Hover Boots and an empty bottle; the hover only refreshes close to the ground (lava counts).",
+          "source": "https://www.youtube.com/watch?v=8EKhomtkGbs"
+        }
+      ],
+      "candidates": [
+        {
+          "id": "hover-gv-bridge",
+          "region": "Gerudo Valley",
+          "kind": "exit",
+          "target": "GV Fortress Side",
+          "add": "logic_remake_glitch_infinite_hover and can_use(Hover_Boots) and has_bottle",
+          "confidence": "low",
+          "test": "Adult with Hover Boots and an empty bottle: hover across the broken bridge, refreshing the hover by using the empty bottle twice quickly.",
+          "note": "The hover only refreshes close to the ground (ZFG; JBurtonGaming): deep chasms probably fail."
+        },
+        {
+          "id": "hover-shadow-trial-gap",
+          "region": "Ganons Castle Shadow Trial",
+          "kind": "exit",
+          "target": "Ganons Castle Shadow Trial First Gap",
+          "add": "logic_remake_glitch_infinite_hover and can_use(Hover_Boots) and has_bottle and (can_use(Fire_Arrows) or (can_use(Dins_Fire) and can_use(Bow)))",
+          "confidence": "low",
+          "test": "Adult with Hover Boots and an empty bottle: hover over the Shadow Trial's first gap (normally the Longshot or Fire Arrows).",
+          "note": "The hover only refreshes close to the ground (ZFG; JBurtonGaming): deep chasms probably fail."
+        },
+        {
+          "id": "hover-water-boss",
+          "region": "Water Temple Lobby",
+          "kind": "exit",
+          "target": "Water Temple Before Boss",
+          "add": "logic_remake_glitch_infinite_hover and can_use(Hover_Boots) and has_bottle and can_use(Iron_Boots) and Raise_Water_Level",
+          "confidence": "low",
+          "test": "Adult with Hover Boots and an empty bottle: hover over the spiked gap to the Water Temple boss door (normally the Longshot).",
+          "note": "The hover only refreshes close to the ground (ZFG; JBurtonGaming): deep chasms probably fail."
+        }
+      ],
+      "requires": "Adult; Hover Boots; an empty bottle.",
+      "achieves": "Hovering far over low ground or lava.",
+      "limits": "Too high above the ground and Link falls; it doesn't work everywhere."
+    },
+    "logic_remake_glitch_collapse_hookshot": {
+      "name": "Tower collapse without the Longshot",
+      "description": "The remake made one spot of the Ganon's Castle collapse need the Longshot (the base rule here says so, data/rando/logic/ganon_collapse.json). The skip: die once on the lower level (this changes the area-loading range), IJSC back up and land on the event arch from above, so the plain Hookshot reaches.",
+      "confidence": "high",
+      "found_by": "theory ZFG; developed by Ataappi, dannyb and RoboRotembo (hangao_game credits); HenglesZ; tutorials JakeZSR, dannyb strats",
+      "versions": "1.0.0/1.1.1",
+      "age": "adult",
+      "items": "Hookshot, Megaton Hammer (IJSC)",
+      "difficulty": "hard",
+      "ootr_analog": "none",
+      "sources": [
+        "https://www.youtube.com/watch?v=-VOZJwH2BUc",
+        "https://www.youtube.com/watch?v=BC0zoYBU2uY",
+        "https://www.youtube.com/watch?v=7-cr8XZGCto",
+        "https://x.com/sera18171/status/2121082703756120211",
+        "https://www.youtube.com/watch?v=MY1-IGdBx9g",
+        "https://www.youtube.com/watch?v=lOTS9TMF0qs",
+        "https://x.com/zfg111/status/2121857390966644964"
+      ],
+      "rules": [
+        {
+          "id": "collapse-hookshot",
+          "region": "Ganondorf Boss Room",
+          "kind": "location",
+          "target": "Ganon",
+          "add": "logic_remake_glitch_collapse_hookshot and can_use(Light_Arrows) and can_use(Hookshot) and remake_ijsc_adult",
+          "confidence": "high",
+          "note": "The collapse needs the Longshot at one spot (sera18171, hangao_game, gymnast86, ZFG; data/rando/logic/ganon_collapse.json makes the base rule say so). Skip with the plain Hookshot: die once on the lower level, IJSC back up, land on the event arch from above so the Hookshot reaches (dannyb strats setup; JakeZSR tutorial; sera18171).",
+          "source": "https://www.youtube.com/watch?v=MY1-IGdBx9g",
+          "base_change": "can_use(Light_Arrows) and can_use(Longshot)"
+        }
+      ],
+      "candidates": [],
+      "requires": "Adult; Hookshot; Megaton Hammer (IJSC) and another quick-menu item.",
+      "achieves": "Ganon without the Longshot."
+    },
+    "logic_remake_glitch_cucco_displacement": {
+      "name": "Cucco water-respawn displacement (Bottom of the Well as adult) (untested: no route in logic yet)",
+      "description": "Grab a Cucco with precise timing just as it lands in deep water: it respawns at its last safe point and tries to take Link along, sometimes leaving him anywhere between that point and his position, even out of bounds ('This is consistent'). Used to enter the Bottom of the Well as adult. In OoTR an adult can't go past the well's entrance region (Main Area is is_child), so it mainly matters for entrance shuffle and future adult rules.",
+      "confidence": "medium",
+      "found_by": "Benjamin Datum and Joshmesh (rediscovered TotK's LSW), with Toti Sauce, Peggachew and Leem (2026-11-11)",
+      "versions": "1.1.1",
+      "age": "adult",
+      "items": "none (a Cucco in adult Kakariko)",
+      "difficulty": "medium",
+      "ootr_analog": "glitch_botw_cucco_dive, glitch_kak_botw_odie, glitch_kak_botw_ledge",
+      "sources": [
+        "https://www.youtube.com/watch?v=tDpLbEltLy4"
+      ],
+      "rules": [],
+      "candidates": [
+        {
+          "id": "cucco-kakariko-village-bottom-of-the-well",
+          "region": "Kakariko Village",
+          "kind": "exit",
+          "target": "Bottom of the Well",
+          "add": "logic_remake_glitch_cucco_displacement and is_adult",
+          "confidence": "medium",
+          "note": "Bypasses 'Drain Well' for the adult."
+        }
+      ],
+      "limits": "In this logic an adult can't go past the well's entrance room anyway (Main Area is is_child), so the route opens no check until the well's adult rules are known."
+    },
+    "logic_remake_glitch_forest_escape": {
+      "name": "Kokiri Forest escape (not in logic: needs Link without a sword)",
+      "description": "Leave Kokiri Forest as a child before the Deku Tree: from the rock above the Lost Woods water hole to Zora's River, about 43 backwards and 22 forwards jump slash cancels. The backwards chain works only while Link has no sword, so ZSR says the method requires not obtaining the Kokiri Sword. Logic can't require NOT having an item (more items never close a route in OoTR's search), so the route stays out of logic.",
+      "confidence": "medium",
+      "found_by": "Ataappi (hangao_game); route by startakenoko44 (quoted by tahata); karterfreak, ysk_rta, Ikaboze",
+      "versions": "1.1.1",
+      "age": "child",
+      "items": "Deku Sticks",
+      "difficulty": "very hard / inconsistent ('making it consistent has not yet been figured out', gymnast86)",
+      "ootr_analog": "glitch_itemless_forest_escape, glitch_pokey_escape, glitch_wess_escape",
+      "sources": [
+        "https://www.youtube.com/watch?v=hHll6FaJa1s",
+        "https://www.youtube.com/watch?v=U7sk9sfQAeQ",
+        "https://www.youtube.com/watch?v=BC0zoYBU2uY",
+        "https://x.com/Tahatanogame123/status/2120688060342112727",
+        "https://www.youtube.com/watch?v=lNkXTWkSWBA",
+        "https://www.zsr.gg/oot2026/general/progression-triggers",
+        "https://www.youtube.com/watch?v=7VLaMY_0WR8"
+      ],
+      "rules": [],
+      "candidates": [
+        {
+          "id": "escape-can-leave-forest",
+          "region": "Kokiri Forest",
+          "kind": "helper",
+          "target": "can_leave_forest",
+          "add": "logic_remake_glitch_forest_escape and remake_ijsc_child",
+          "confidence": "medium",
+          "blocked": "The escape uses the backwards IJSC, which works only while Link has no sword (Carpaccio; ZSR Progression Triggers): logic can't require NOT having the Kokiri Sword (in OoTR's search more items never close a route), so a seed could count on an escape the player has lost by finding the sword.",
+          "test": "Child with Deku Sticks, before the Deku Tree is beaten (closed forest): chain IJSCs over the Kokiri Forest boundary and leave without passing Mido. Applies everywhere OoTR uses can_leave_forest (the forest exit, Lost Woods to Zora's River and Goron City, the warp songs).",
+          "source": "https://www.youtube.com/watch?v=lNkXTWkSWBA"
+        }
+      ],
+      "requires": "Child; Deku Sticks; NO Kokiri Sword.",
+      "achieves": "The rest of the world before the Deku Tree (can_leave_forest)."
+    },
+    "logic_remake_glitch_kz_stick_lift": {
+      "name": "King Zora skip (jump slash cancel over King Zora)",
+      "description": "Child IJSC with Deku Sticks over King Zora to Zora's Fountain without Ruto's Letter, and back the same way. As adult King Zora is always moved, so there is nothing to skip.",
+      "confidence": "high",
+      "found_by": "ZSR Zora's Domain page (clip by TheGuyDownstairs); Lastora ('Stick Lift Glitch')",
+      "versions": "1.1.1",
+      "age": "child",
+      "items": "Deku Sticks",
+      "difficulty": "unknown",
+      "ootr_analog": "glitch_zd_reverse_kz_child, glitch_kz_with_nothing",
+      "sources": [
+        "https://www.youtube.com/watch?v=1Y_UdZEJSxg",
+        "https://www.zsr.gg/oot2026/area/zora-domain",
+        "https://www.youtube.com/watch?v=0vngUvE0El8"
+      ],
+      "rules": [
+        {
+          "id": "kz-over",
+          "region": "Zoras Domain",
+          "kind": "exit",
+          "target": "ZD Behind King Zora",
+          "add": "logic_remake_glitch_kz_stick_lift and remake_ijsc_child",
+          "confidence": "high",
+          "note": "Child IJSC over King Zora (ZSR Zora's Domain page, clip by TheGuyDownstairs; Lastora's 'Stick Lift' is the same skip). As adult King Zora is always moved, so there is nothing to skip.",
+          "source": "https://www.zsr.gg/oot2026/area/zora-domain"
+        },
+        {
+          "id": "kz-back",
+          "region": "ZD Behind King Zora",
+          "kind": "exit",
+          "target": "Zoras Domain",
+          "add": "logic_remake_glitch_kz_stick_lift and remake_ijsc_child",
+          "confidence": "high",
+          "test": "Child with Deku Sticks: IJSC back over King Zora into Zora's Domain (ZSR; otherwise the child is stuck at the Fountain).",
+          "source": "https://www.zsr.gg/oot2026/area/zora-domain"
+        }
+      ],
+      "candidates": [],
+      "requires": "Child; Deku Sticks and another quick-menu item.",
+      "achieves": "ZD Behind King Zora (Zora's Fountain, Jabu-Jabu) without delivering the letter."
+    },
+    "logic_remake_glitch_dc_skip": {
+      "name": "Dodongo's Cavern early Bomb Bag (jump slash cancel)",
+      "description": "Child IJSC from the cavern's lobby, or from the lava pool by the spiked wall, straight up to the Bomb Bag chest; the any% route takes the bombs and leaves.",
+      "confidence": "high",
+      "found_by": "DontCryXO (2026-11-10); ThreeLetterName (chapter); bradyONE ('Early Bomb Bag')",
+      "versions": "1.1.1",
+      "age": "both",
+      "items": "Deku Sticks or Megaton Hammer",
+      "difficulty": "hard",
+      "ootr_analog": "glitch_dc_head_clip",
+      "sources": [
+        "https://www.youtube.com/watch?v=QUheAqH7S_Q",
+        "https://www.youtube.com/watch?v=8EYgfjgoOUU",
+        "https://www.youtube.com/watch?v=vVzYOGpTEKk",
+        "https://www.zsr.gg/oot2026/dungeon/dodongo-cavern",
+        "https://www.youtube.com/watch?v=ELPyVv2VAvg",
+        "https://www.youtube.com/watch?v=w0_5UZzy3XY"
+      ],
+      "rules": [
+        {
+          "id": "dc-bomb-bag-child",
+          "region": "Dodongos Cavern Lobby",
+          "kind": "exit",
+          "target": "Dodongos Cavern Far Bridge",
+          "add": "logic_remake_glitch_dc_skip and remake_ijsc_child",
+          "confidence": "high",
+          "note": "Child IJSC from the lobby, or from the lava pool by the spiked wall, up to the Bomb Bag chest (ZSR Dodongo's Cavern page; an any% route step: 'Early Bomb Bag', then leave). Far Bridge holds the Bomb Bag chest; Far Bridge -> Mouth still needs explosives.",
+          "source": "https://www.zsr.gg/oot2026/dungeon/dodongo-cavern"
+        }
+      ],
+      "candidates": [],
+      "requires": "Child; Deku Sticks and another quick-menu item (adult with the Hammer is a candidate).",
+      "achieves": "Dodongos Cavern Far Bridge (Bomb Bag chest) from the lobby."
+    },
+    "logic_remake_glitch_hc_talon_skip": {
+      "name": "Hyrule Castle garden without waking Talon (refuted: Zelda won't talk)",
+      "description": "A child can jump slash cancel over the castle hedges into Zelda's courtyard without the Weird Egg, but Zelda won't talk until Talon is woken (ZSR Progression Triggers), so her checks stay locked and the route opens nothing.",
+      "confidence": "high",
+      "found_by": "ThreeLetterName (chapter, 2026-11-11)",
+      "versions": "1.1.1",
+      "age": "child",
+      "items": "Deku Sticks",
+      "difficulty": "unknown",
+      "ootr_analog": "glitch_hc_garden_no_trade",
+      "sources": [
+        "https://www.youtube.com/watch?v=8EYgfjgoOUU",
+        "https://www.zsr.gg/oot2026/general/progression-triggers",
+        "https://www.zsr.gg/oot2026/area/hyrule-castle"
+      ],
+      "rules": [],
+      "candidates": [
+        {
+          "id": "talon-hc-garden",
+          "region": "Hyrule Castle Grounds",
+          "kind": "exit",
+          "target": "HC Garden",
+          "add": "logic_remake_glitch_hc_talon_skip and remake_ijsc_child",
+          "confidence": "low",
+          "refuted": "2026-11-20 (source, not an in-game test): ZSR Progression Triggers: a child reaches the courtyard over the hedges, but Zelda won't talk until Talon is woken, so Zelda's Letter and Zelda's Lullaby stay locked; OoTR's HC Garden would give both.",
+          "source": "https://www.zsr.gg/oot2026/general/progression-triggers"
+        }
+      ]
+    },
+    "logic_remake_glitch_forest_temple_ledge": {
+      "name": "Forest Temple entrance without the Hookshot, adult (untested: no route in logic yet)",
+      "description": "IJSC up to the Forest Temple entrance ledge in Sacred Forest Meadow as an adult without the Hookshot. Shown by ThreeLetterName (items not narrated). A child can't: the child map has push-off walls on the ledge.",
+      "confidence": "low",
+      "found_by": "ThreeLetterName (chapters, 2026-11-11)",
+      "versions": "1.1.1",
+      "age": "adult",
+      "items": "Megaton Hammer and another quick-menu item",
+      "difficulty": "unknown",
+      "ootr_analog": "none",
+      "sources": [
+        "https://www.youtube.com/watch?v=8EYgfjgoOUU"
+      ],
+      "rules": [],
+      "candidates": [
+        {
+          "id": "ftledge-sacred-forest-meadow-sfm-forest-temple-entran",
+          "region": "Sacred Forest Meadow",
+          "kind": "exit",
+          "target": "SFM Forest Temple Entrance Ledge",
+          "add": "logic_remake_glitch_forest_temple_ledge and remake_ijsc_adult",
+          "confidence": "medium",
+          "note": "Inside, the remake's Forest Temple Lobby -> Central Area needs a small key, and the First Room Chest the Hookshot.",
+          "test": "Adult with the Megaton Hammer (no Hookshot): IJSC up to the Forest Temple entrance ledge. ThreeLetterName got in as adult without the Hookshot (items not narrated; he had Hover Boots). As a child it can't work: the child map has two push-off walls on the ledge (game data; shown).",
+          "source": "https://www.youtube.com/watch?v=8EYgfjgoOUU"
+        },
+        {
+          "id": "ftledge-child",
+          "region": "Sacred Forest Meadow",
+          "kind": "exit",
+          "target": "SFM Forest Temple Entrance Ledge",
+          "add": "logic_remake_glitch_forest_temple_ledge and remake_ijsc_child",
+          "confidence": "high",
+          "refuted": "2026-11-20 (source): the child map has two push-off air walls on the ledge (sloperina's game-data notes); ThreeLetterName: no way in with Young Link.",
+          "source": "https://www.youtube.com/watch?v=8EYgfjgoOUU"
+        }
+      ]
+    },
+    "logic_remake_glitch_gs_dupe": {
+      "name": "Gold Skulltula token duplication (save/reload) (untested: no route in logic yet)",
+      "description": "Save by hand next to a Gold Skulltula, kill it with the Boomerang, backflip onto the exit before the token comes back (the level change autosaves), reload the latest autosave; repeat. The guides use the Hyrule Castle Song of Storms grotto's Skulltula. Only with vanilla tokens there: with shuffled tokens it would repeat whatever item the spot holds. Candidate routes: the Skulltula House rewards.",
+      "confidence": "medium",
+      "found_by": "NoHypothesis (2026-11-12); guides by Jay Dunna, AbdallahSmash, Game is Lifer",
+      "versions": "1.1.1",
+      "age": "child",
+      "items": "Boomerang (one guide also uses Song of Storms for a grotto)",
+      "difficulty": "easy",
+      "ootr_analog": "none",
+      "sources": [
+        "https://www.youtube.com/watch?v=k2rmuWjqdfk",
+        "https://www.youtube.com/watch?v=V2CgIsdVLfg",
+        "https://www.youtube.com/watch?v=zsjL5yB3xE8",
+        "https://www.youtube.com/watch?v=h0z_rTh5xg4",
+        "https://gamingreinvented.com/walkthrough/how-to-get-infinite-gold-skulltulas-in-oot-remake/",
+        "https://www.youtube.com/watch?v=FMQ7Ec00l9k"
+      ],
+      "rules": [],
+      "candidates": [
+        {
+          "id": "gsdupe-kak-10",
+          "region": "Kak House of Skulltula",
+          "kind": "location",
+          "target": "Kak 10 Gold Skulltula Reward",
+          "add": "logic_remake_glitch_gs_dupe and (tokensanity == 'off' or tokensanity == 'dungeons') and at('HC Storms Grotto', can_blast_or_smash and can_use(Boomerang))",
+          "confidence": "medium",
+          "test": "Child at the Hyrule Castle Song of Storms grotto (Boomerang, explosives): save by the Gold Skulltula behind the bombable wall, kill it with the Boomerang, backflip onto the exit before the token comes back, reload the latest autosave; repeat until 10 tokens. Only with vanilla tokens there (tokensanity off or dungeons).",
+          "source": "https://gamingreinvented.com/walkthrough/how-to-get-infinite-gold-skulltulas-in-oot-remake/"
+        },
+        {
+          "id": "gsdupe-kak-20",
+          "region": "Kak House of Skulltula",
+          "kind": "location",
+          "target": "Kak 20 Gold Skulltula Reward",
+          "add": "logic_remake_glitch_gs_dupe and (tokensanity == 'off' or tokensanity == 'dungeons') and at('HC Storms Grotto', can_blast_or_smash and can_use(Boomerang))",
+          "confidence": "medium",
+          "test": "Child at the Hyrule Castle Song of Storms grotto (Boomerang, explosives): save by the Gold Skulltula behind the bombable wall, kill it with the Boomerang, backflip onto the exit before the token comes back, reload the latest autosave; repeat until 20 tokens. Only with vanilla tokens there (tokensanity off or dungeons).",
+          "source": "https://gamingreinvented.com/walkthrough/how-to-get-infinite-gold-skulltulas-in-oot-remake/"
+        },
+        {
+          "id": "gsdupe-kak-30",
+          "region": "Kak House of Skulltula",
+          "kind": "location",
+          "target": "Kak 30 Gold Skulltula Reward",
+          "add": "logic_remake_glitch_gs_dupe and (tokensanity == 'off' or tokensanity == 'dungeons') and at('HC Storms Grotto', can_blast_or_smash and can_use(Boomerang))",
+          "confidence": "medium",
+          "test": "Child at the Hyrule Castle Song of Storms grotto (Boomerang, explosives): save by the Gold Skulltula behind the bombable wall, kill it with the Boomerang, backflip onto the exit before the token comes back, reload the latest autosave; repeat until 30 tokens. Only with vanilla tokens there (tokensanity off or dungeons).",
+          "source": "https://gamingreinvented.com/walkthrough/how-to-get-infinite-gold-skulltulas-in-oot-remake/"
+        },
+        {
+          "id": "gsdupe-kak-40",
+          "region": "Kak House of Skulltula",
+          "kind": "location",
+          "target": "Kak 40 Gold Skulltula Reward",
+          "add": "logic_remake_glitch_gs_dupe and (tokensanity == 'off' or tokensanity == 'dungeons') and at('HC Storms Grotto', can_blast_or_smash and can_use(Boomerang))",
+          "confidence": "medium",
+          "test": "Child at the Hyrule Castle Song of Storms grotto (Boomerang, explosives): save by the Gold Skulltula behind the bombable wall, kill it with the Boomerang, backflip onto the exit before the token comes back, reload the latest autosave; repeat until 40 tokens. Only with vanilla tokens there (tokensanity off or dungeons).",
+          "source": "https://gamingreinvented.com/walkthrough/how-to-get-infinite-gold-skulltulas-in-oot-remake/"
+        },
+        {
+          "id": "gsdupe-kak-50",
+          "region": "Kak House of Skulltula",
+          "kind": "location",
+          "target": "Kak 50 Gold Skulltula Reward",
+          "add": "logic_remake_glitch_gs_dupe and (tokensanity == 'off' or tokensanity == 'dungeons') and at('HC Storms Grotto', can_blast_or_smash and can_use(Boomerang))",
+          "confidence": "medium",
+          "test": "Child at the Hyrule Castle Song of Storms grotto (Boomerang, explosives): save by the Gold Skulltula behind the bombable wall, kill it with the Boomerang, backflip onto the exit before the token comes back, reload the latest autosave; repeat until 50 tokens. Only with vanilla tokens there (tokensanity off or dungeons).",
+          "source": "https://gamingreinvented.com/walkthrough/how-to-get-infinite-gold-skulltulas-in-oot-remake/"
+        },
+        {
+          "id": "gsdupe-kak-100",
+          "region": "Kak House of Skulltula",
+          "kind": "location",
+          "target": "Kak 100 Gold Skulltula Reward",
+          "add": "logic_remake_glitch_gs_dupe and (tokensanity == 'off' or tokensanity == 'dungeons') and at('HC Storms Grotto', can_blast_or_smash and can_use(Boomerang))",
+          "confidence": "medium",
+          "test": "Child at the Hyrule Castle Song of Storms grotto (Boomerang, explosives): save by the Gold Skulltula behind the bombable wall, kill it with the Boomerang, backflip onto the exit before the token comes back, reload the latest autosave; repeat until 100 tokens. Only with vanilla tokens there (tokensanity off or dungeons).",
+          "source": "https://gamingreinvented.com/walkthrough/how-to-get-infinite-gold-skulltulas-in-oot-remake/"
+        }
+      ],
+      "requires": "Child; Boomerang; explosives and Song of Storms for the grotto.",
+      "achieves": "Any token count (vanilla tokens)."
+    }
+  },
+  "open_tests": [
+    {
+      "id": "q-pedestal-after-child-shadow",
+      "question": "After the child-Shadow warp (Link adult, the Master Sword never pulled): go to the Temple of Time with the Door of Time open. Can Link pull the sword and then put it back to become a child?",
+      "if_yes": "Set \"pedestal_return_verified\": true on logic_remake_glitch_child_shadow: the after-fill age check then lets that adult become a child again through the pedestal."
+    },
+    {
+      "id": "q-ijsc-gold-skulltula",
+      "question": "Mid-IJSC, does the stick or hammer jump attack kill a wall Gold Skulltula, and can Link take its token before landing (or after, from where he lands)?",
+      "if_yes": "Every '... GS ...' IJSC candidate in this list can be tried and verified."
+    },
+    {
+      "id": "q-child-hover-boots",
+      "question": "A child can open the Hover Boots chest in the Shadow Temple: can he wear the boots?",
+      "if_yes": "Note it (G24); the Shadow Temple age guards stay either way."
+    },
+    {
+      "id": "q-other-age-scenes",
+      "question": "Datamined age-changing scenes (sloperina, unconfirmed): losing to a Gerudo guard as a child, Rauru as a child, the burning-Kakariko Nocturne scene as a child (-> adult); Ruto after Jabu-Jabu, Impa after Zelda's Lullaby, Kaepora on Death Mountain as an adult (-> child). Which really change Link's age?",
+      "if_yes": "A confirmed one that a seed could trigger by accident needs a no-save-warp note; one that helps can become a trick."
+    }
+  ]
+}
