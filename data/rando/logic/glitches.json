@@ -1,0 +1,10 @@
+{
+ "_about": "Glitch logic helpers (tools/rando/parity/glitches.py, data/rando/remake_glitch_tricks.json). They name the techniques the glitch routes use; no rule outside a glitch route names them, so they change nothing while every glitch trick is off. The routes themselves (the forest escape in can_leave_forest included) are applied by glitches.py, only for enabled tricks and only once tested. remake_ijsc: the Infinite Jump Slash Cancel needs the Deku Stick as child or the Megaton Hammer as adult, and one other quick-menu item to swap to each cycle (ZSR, zsr.gg/oot2026/tech/jumpslash-cancel); no sword works. An adult uses only the Ocarina of Time (: UI/Pouch/PouchTable gives the Fairy Ocarina IsUsableChild only).",
+ "helpers": {
+  "remake_quick_menu_item": "(Ocarina and (is_child or (Ocarina, 2))) or Nuts or Bombs or has_bombchus or has_bottle or Lens_of_Truth or Dins_Fire or Farores_Wind or Nayrus_Love or Magic_Bean or can_use(Slingshot) or can_use(Boomerang) or can_use(Bow) or can_use(Hookshot)",
+  "remake_ijsc_child": "can_use(Sticks) and remake_quick_menu_item",
+  "remake_ijsc_adult": "can_use(Megaton_Hammer) and remake_quick_menu_item",
+  "remake_ijsc": "remake_ijsc_child or remake_ijsc_adult",
+  "remake_actor_jump_adult": "is_adult and ((Ocarina, 2) or can_use(Hookshot) or can_use(Bow))"
+ }
+}

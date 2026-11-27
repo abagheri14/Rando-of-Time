@@ -1,0 +1,419 @@
+{
+ "_about": "Build data/rando/songs_trade_child.json: the scene steps and save data the child-trade / mask-shop / bean part of",
+ "flags": {
+  "mask_bits": [
+   "HavePlayedEvent.Npc_StepStart_Base",
+   "HavePlayedEvent.Npc_StepStart_NotStarter_Base",
+   "HavePlayedEvent.Dm_MelodyGet_Manegement",
+   "HavePlayedEvent.MiniGame_Fishing_Tutorial_Parent"
+  ],
+  "beans_sold": "HavePlayedEvent.Parent_Dungeon_DoorMovement"
+ },
+ "egg": {
+  "give": {
+   "event": "Event35",
+   "next": "Event36",
+   "preds": [
+    [
+     "next",
+     "Event40",
+     null
+    ],
+    [
+     "next",
+     "Event197",
+     null
+    ]
+   ]
+  },
+  "step3": {
+   "event": "Event46",
+   "next": "Event176",
+   "preds": [
+    [
+     "next",
+     "Event36",
+     null
+    ]
+   ]
+  },
+  "gift_flag": {
+   "event": "Event76",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event176",
+     null
+    ]
+   ]
+  },
+  "remove": {
+   "event": "Event55",
+   "next": "Event20",
+   "preds": [
+    [
+     "next",
+     "Event141",
+     null
+    ],
+    [
+     "case",
+     "Event83",
+     0
+    ]
+   ]
+  },
+  "hatch": {
+   "event": "Event20",
+   "next": "Event145",
+   "preds": [
+    [
+     "next",
+     "Event55",
+     null
+    ]
+   ]
+  },
+  "hatch_start": {
+   "event": "Event25",
+   "next": null,
+   "preds": [
+    [
+     "entry",
+     "Step03_01_Npc_Navi_StepStart",
+     null
+    ]
+   ]
+  },
+  "after_hatch": {
+   "event": "Event88",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event79",
+     null
+    ],
+    [
+     "next",
+     "Event86",
+     null
+    ]
+   ]
+  },
+  "wake": {
+   "event": "Event72",
+   "next": "Event81",
+   "preds": [
+    [
+     "entry",
+     "Goto_HyruleCastle_AfterWakeUpTalon",
+     null
+    ]
+   ]
+  },
+  "file": "Goto_HyruleCastle",
+  "gift_flag_name": "HaveTalked_Special.Goto_HyruleCastle_Goto_HyruleCastle_AfterMalonAppear_Event38",
+  "give_reward_id": "event/Goto_HyruleCastle/Goto_HyruleCastle/Event35/ActorName",
+  "remove_reward_id": "event/Goto_HyruleCastle/Goto_HyruleCastle/Event55/Actor"
+ },
+ "letter": {
+  "file": "Dm_HrlCastle_0050",
+  "give": {
+   "event": "Event59",
+   "next": null,
+   "preds": [
+    [
+     "fork",
+     "Event270",
+     1
+    ]
+   ]
+  },
+  "guard_reaction": {
+   "EventName": "Work/Event/EventSetting/ShowItem_ZeldaLetter.engine__event__EventSettingParam.gyml",
+   "InvalidGameData": "Npc_Hylia_Soldier_003_GateOpen",
+   "InvalidGameDataHash": 428444948,
+   "ShowItemType": 2982866657,
+   "UseInvalidCondition": true
+  }
+ },
+ "mask_shop": {
+  "sold_check": {
+   "event": "Event134",
+   "next": null,
+   "preds": [
+    [
+     "case",
+     "Event54",
+     0
+    ]
+   ]
+  },
+  "decide": {
+   "event": "Event54",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event52",
+     null
+    ]
+   ]
+  },
+  "close": {
+   "event": "Event182",
+   "next": "Event454",
+   "preds": [
+    [
+     "case",
+     "Event134",
+     1
+    ],
+    [
+     "case",
+     "Event467",
+     0
+    ]
+   ]
+  },
+  "end": {
+   "event": "Event308",
+   "next": "Event0",
+   "preds": [
+    [
+     "next",
+     "Event483",
+     null
+    ],
+    [
+     "next",
+     "Event472",
+     null
+    ]
+   ]
+  },
+  "rental_remove": {
+   "event": "Event113",
+   "next": "Event60",
+   "preds": [
+    [
+     "entry",
+     "Rental_Common",
+     null
+    ]
+   ]
+  },
+  "borrow": {
+   "event": "Event60",
+   "next": "Event473",
+   "preds": [
+    [
+     "next",
+     "Event113",
+     null
+    ]
+   ]
+  },
+  "name_query": {
+   "event": "Event195",
+   "next": null,
+   "preds": [
+    [
+     "case",
+     "Event184",
+     0
+    ]
+   ]
+  },
+  "file": "DisplayShop",
+  "truth_handover": {
+   "event": "Event51",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event204",
+     null
+    ]
+   ]
+  },
+  "truth_file": "Npc_Hylia_023_Shop_Child",
+  "slots": {
+   "Keaton Mask": {
+    "pouch": "Armor_Child_Mask_Keaton",
+    "get_actor": "Item_Mask_Keaton",
+    "index": 1,
+    "location": "Market Mask Shop Item 6",
+    "release": "HappyMaskShop_HasMask_Keaton"
+   },
+   "Skull Mask": {
+    "pouch": "Armor_Child_Mask_Skull",
+    "get_actor": "Item_Mask_Skull",
+    "index": 3,
+    "location": "Market Mask Shop Item 5",
+    "release": "HappyMaskShop_HasMask_Skull"
+   },
+   "Spooky Mask": {
+    "pouch": "Armor_Child_Mask_Spooky",
+    "get_actor": "Item_Mask_Spooky",
+    "index": 0,
+    "location": "Market Mask Shop Item 8",
+    "release": "HappyMaskShop_HasMask_Spooky"
+   },
+   "Bunny Hood": {
+    "pouch": "Armor_Child_Mask_Bunny",
+    "get_actor": "Item_Mask_Bunny",
+    "index": 2,
+    "location": "Market Mask Shop Item 7",
+    "release": "HappyMaskShop_HasMask_Bunny"
+   },
+   "Goron Mask": {
+    "pouch": "Armor_Child_Mask_Goron",
+    "get_actor": "Item_Mask_Goron",
+    "index": 5,
+    "location": "Market Mask Shop Item 4",
+    "release": "HappyMaskShop_HasMask_Goron"
+   },
+   "Zora Mask": {
+    "pouch": "Armor_Child_Mask_Zora",
+    "get_actor": "Item_Mask_Zora",
+    "index": 4,
+    "location": "Market Mask Shop Item 2",
+    "release": "HappyMaskShop_HasMask_Zora"
+   },
+   "Gerudo Mask": {
+    "pouch": "Armor_Child_Mask_Gerudo",
+    "get_actor": "Item_Mask_Gerudo",
+    "index": 6,
+    "location": "Market Mask Shop Item 1",
+    "release": "HappyMaskShop_HasMask_Gerudo"
+   },
+   "Mask of Truth": {
+    "pouch": "Armor_Child_Mask_Truth",
+    "get_actor": "Item_Mask_Truth",
+    "index": 7,
+    "location": "Market Mask Shop Item 3",
+    "release": "HappyMaskShop_HasMask_Truth"
+   }
+  },
+  "gate": "Npc_Hylia_Soldier_003_GateOpen",
+  "truth_reward_id": "event/Npc_Hylia_023_Shop_Child/Npc_Hylia_023_Shop_Child/Event51/ActorName"
+ },
+ "beans": {
+  "branch": {
+   "event": "Event0",
+   "next": null,
+   "preds": [
+    [
+     "case",
+     "Event18",
+     0
+    ],
+    [
+     "next",
+     "Event20",
+     null
+    ],
+    [
+     "case",
+     "Event24",
+     1
+    ]
+   ]
+  },
+  "tier": {
+   "event": "Event10",
+   "next": "Event11",
+   "preds": [
+    [
+     "case",
+     "Event0",
+     5
+    ]
+   ]
+  },
+  "root": {
+   "event": "Event11",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event10",
+     null
+    ]
+   ]
+  },
+  "sold_out": {
+   "event": "Event27",
+   "next": null,
+   "preds": [
+    [
+     "case",
+     "Event0",
+     10
+    ]
+   ]
+  },
+  "shop": {
+   "rupees": {
+    "event": "Event100",
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event136",
+      null
+     ]
+    ]
+   },
+   "pouch": {
+    "event": "Event126",
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event100",
+      0
+     ]
+    ]
+   },
+   "buy": {
+    "event": "Event195",
+    "next": "Event40",
+    "preds": [
+     [
+      "case",
+      "Event126",
+      0
+     ]
+    ]
+   },
+   "give": {
+    "event": "Event182",
+    "next": "Event123",
+    "preds": [
+     [
+      "next",
+      "Event158",
+      null
+     ]
+    ]
+   },
+   "count": {
+    "event": "Event40",
+    "next": "Event101",
+    "preds": [
+     [
+      "next",
+      "Event195",
+      null
+     ]
+    ]
+   }
+  },
+  "file": "Npc_Hylia_047_Child",
+  "give_reward_id": "event/SimpleShop/SimpleShop/Event182/ReveiveItem"
+ }
+}

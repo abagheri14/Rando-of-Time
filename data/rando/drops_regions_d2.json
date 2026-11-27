@@ -1,0 +1,1558 @@
+{
+ "IceCavern": {
+  "rooms": {
+   "0": "Ice Cavern Beginning",
+   "1": "Ice Cavern Beginning",
+   "2": "Ice Cavern Spinning Scythe Room",
+   "3": "Ice Cavern Spinning Scythe Room",
+   "4": "Ice Cavern Behind Ice Walls",
+   "5": "Ice Cavern Map Room",
+   "6": "Ice Cavern Behind Ice Walls",
+   "7": "Ice Cavern Behind Ice Walls",
+   "8": "Ice Cavern Behind Ice Walls",
+   "9": "Ice Cavern End",
+   "10": "Ice Cavern End",
+   "11": "Ice Cavern End"
+  },
+  "objects": {
+   "13545259034644162992": {
+    "region": "Ice Cavern Beginning",
+    "rule": "Blue_Fire",
+    "confidence": "high",
+    "why": "room 0 entry corridor (before the Freezard room); the pot is encased in Obj_RedIce_A_01 placed on the same spot, so it needs blue fire (OoTR's frozen items here use Blue_Fire)"
+   },
+   "6330430963809465220": {
+    "region": "Ice Cavern Beginning",
+    "rule": "Blue_Fire",
+    "confidence": "high",
+    "why": "room 1 = OoT room 1 (Freezard room, OoTR Beginning, frozen blue rupee room); both pots sit inside Obj_RedIce_A_01 blocks; the Freezard EnemyCounter gates room 2, not these pots"
+   },
+   "15712947819189423505": {
+    "region": "Ice Cavern Beginning",
+    "rule": "Blue_Fire",
+    "confidence": "high",
+    "why": "room 1 = OoT room 1 (Freezard room, OoTR Beginning, frozen blue rupee room); both pots sit inside Obj_RedIce_A_01 blocks; the Freezard EnemyCounter gates room 2, not these pots"
+   },
+   "2531238234557984984": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 3 scythe room, second flying pot next to the paired one (remake extra)"
+   },
+   "7618173156337128046": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 5 map room (map chest anchor, reached through the scythe-room silver-rupee gate); pots not in ice, two of them on the map-chest platform"
+   },
+   "15995328541699816119": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 5 map room (map chest anchor, reached through the scythe-room silver-rupee gate); pots not in ice, two of them on the map-chest platform"
+   },
+   "9643663083142689369": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 5 map room (map chest anchor, reached through the scythe-room silver-rupee gate); pots not in ice, two of them on the map-chest platform"
+   },
+   "17314383705983097019": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "Blue_Fire",
+    "confidence": "high",
+    "why": "room 6 = compass room (compass chest anchor, OoTR Behind Ice Walls); both pots are encased in one Obj_RedIce_A_06 linked to them"
+   },
+   "15011057361189787608": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "Blue_Fire",
+    "confidence": "high",
+    "why": "room 6 = compass room (compass chest anchor, OoTR Behind Ice Walls); both pots are encased in one Obj_RedIce_A_06 linked to them"
+   },
+   "3530383460685013192": {
+    "region": "Ice Cavern End",
+    "rule": "is_adult or Slingshot or Sticks or Kokiri_Sword or can_use(Dins_Fire)",
+    "confidence": "high",
+    "why": "room 11 lies behind the gate that opens when the White Wolfos of room 10 dies (EnemyCounter_A_06 linked to the Wolfos); same kill rule as the Iron Boots chest / Sheik"
+   },
+   "2926506116712030829": {
+    "region": "Ice Cavern End",
+    "rule": "is_adult or Slingshot or Sticks or Kokiri_Sword or can_use(Dins_Fire)",
+    "confidence": "high",
+    "why": "room 11 lies behind the gate that opens when the White Wolfos of room 10 dies (EnemyCounter_A_06 linked to the Wolfos); same kill rule as the Iron Boots chest / Sheik"
+   }
+  },
+  "pairs": [
+   {
+    "ootr": [
+     "Ice Cavern Hall Pot 1",
+     "Ice Cavern Hall Pot 2"
+    ],
+    "hashes": [
+     "1432738477026131973",
+     "1222751158157747144"
+    ],
+    "why": "room 2 = OoT room 2 hall behind the Freezard gate (EnemyCounter linked to room-1 Freezards); 2 pots = 2 OoTR hall pots"
+   },
+   {
+    "ootr": [
+     "Ice Cavern Spinning Scythe Flying Pot"
+    ],
+    "hashes": [
+     "16857043952557702868"
+    ],
+    "why": "room 3 = scythe room (silver rupee counter_03, RotateBlade, GS); one of its two flying pots"
+   },
+   {
+    "ootr": [
+     "Ice Cavern Frozen Pot"
+    ],
+    "hashes": [
+     "3105481948394149361"
+    ],
+    "why": "room 5 = OoT map room 9 (map chest anchor); the only map-room pot inside red ice (Obj_RedIce_A_01 linked to it) = OoTR's frozen pot"
+   },
+   {
+    "ootr": [
+     "Ice Cavern Near End Pot 1",
+     "Ice Cavern Near End Pot 2"
+    ],
+    "hashes": [
+     "363703302462445921",
+     "7652943025384915608"
+    ],
+    "why": "room 9 = corridor after the push-block silver-rupee gate, before the red-ice door to the Wolfos room (OoT room 6 'near end')"
+   }
+  ],
+  "absent": {
+   "Ice Cavern Spinning Scythe Pot 1": "remake scythe room (room 3) has no regular pots, only two flying pots (one paired with the OoTR flying pot)",
+   "Ice Cavern Spinning Scythe Pot 2": "remake scythe room (room 3) has no regular pots, only two flying pots (one paired with the OoTR flying pot)",
+   "Ice Cavern Spinning Scythe Pot 3": "remake scythe room (room 3) has no regular pots, only two flying pots (one paired with the OoTR flying pot)",
+   "Ice Cavern Map Room Recovery Heart 1": "remake map room (room 5) has no placed hearts (4 pots and the map chest only)",
+   "Ice Cavern Map Room Recovery Heart 2": "remake map room (room 5) has no placed hearts (4 pots and the map chest only)",
+   "Ice Cavern Map Room Recovery Heart 3": "remake map room (room 5) has no placed hearts (4 pots and the map chest only)",
+   "Ice Cavern Push Block Room Red Rupee 1": "remake push-block room (room 8) has no placed rupees; its red rupee sits in a new chest (Obj_TBox_A_01 TBox_Rupee_Red)",
+   "Ice Cavern Push Block Room Red Rupee 2": "remake push-block room (room 8) has no placed rupees; its red rupee sits in a new chest (Obj_TBox_A_01 TBox_Rupee_Red)",
+   "Ice Cavern Push Block Room Red Rupee 3": "remake push-block room (room 8) has no placed rupees; its red rupee sits in a new chest (Obj_TBox_A_01 TBox_Rupee_Red)",
+   "Ice Cavern Frozen Blue Rupee": "no placed rupee anywhere in the remake Ice Cavern; the entry rooms 0/1 hold frozen pots instead"
+  },
+  "excluded": {}
+ },
+ "BottomOfTheWell": {
+  "rooms": {
+   "0": "Bottom of the Well",
+   "1": "Bottom of the Well Main Area",
+   "2": "Bottom of the Well Main Area",
+   "3": "Bottom of the Well Main Area",
+   "4": "Bottom of the Well Behind Locked Doors",
+   "5": "Bottom of the Well Behind Locked Doors",
+   "6": "Bottom of the Well Behind Locked Doors",
+   "7": "Bottom of the Well Behind Locked Doors",
+   "8": "Bottom of the Well Main Area",
+   "9": "Bottom of the Well Main Area",
+   "10": "Bottom of the Well Left Side",
+   "11": "Bottom of the Well Main Area",
+   "12": "Bottom of the Well Main Area"
+  },
+  "objects": {
+   "9098987026005330221": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "can_play(Zeldas_Lullaby)",
+    "confidence": "medium",
+    "why": "room 1 front pool: pots at y=97.0 under Obj_Well_WaterPlane_A_04 (surface y=99.9, ~2.9 deep), next to the Underwater Front chest; ZL drain kept as the only way (OoTR's slingshot/boomerang/bombchu alternatives for its shallow underwater pot are not assumed for this depth)"
+   },
+   "16040130639953056224": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "can_play(Zeldas_Lullaby)",
+    "confidence": "medium",
+    "why": "room 1 front pool: pots at y=97.0 under Obj_Well_WaterPlane_A_04 (surface y=99.9, ~2.9 deep), next to the Underwater Front chest; ZL drain kept as the only way (OoTR's slingshot/boomerang/bombchu alternatives for its shallow underwater pot are not assumed for this depth)"
+   },
+   "3141423279806923469": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "can_play(Zeldas_Lullaby)",
+    "confidence": "medium",
+    "why": "room 1 front pool: pots at y=97.0 under Obj_Well_WaterPlane_A_04 (surface y=99.9, ~2.9 deep), next to the Underwater Front chest; ZL drain kept as the only way (OoTR's slingshot/boomerang/bombchu alternatives for its shallow underwater pot are not assumed for this depth)"
+   },
+   "17838185570985597937": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "can_play(Zeldas_Lullaby)",
+    "confidence": "medium",
+    "why": "room 1 front pool: pots at y=97.0 under Obj_Well_WaterPlane_A_04 (surface y=99.9, ~2.9 deep), next to the Underwater Front chest; ZL drain kept as the only way (OoTR's slingshot/boomerang/bombchu alternatives for its shallow underwater pot are not assumed for this depth)"
+   },
+   "13474828754365101442": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "can_play(Zeldas_Lullaby)",
+    "confidence": "medium",
+    "why": "room 1 moat around the centre block: pots at y=97.3 under Obj_Well_WaterPlane_A_02 (surface 99.9); underwater, so ZL drain"
+   },
+   "5918144893760685177": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "can_play(Zeldas_Lullaby)",
+    "confidence": "medium",
+    "why": "room 1 moat around the centre block: pots at y=97.3 under Obj_Well_WaterPlane_A_02 (surface 99.9); underwater, so ZL drain"
+   },
+   "8604373745978042051": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "can_play(Zeldas_Lullaby)",
+    "confidence": "medium",
+    "why": "room 1 moat around the centre block: pots at y=97.3 under Obj_Well_WaterPlane_A_02 (surface 99.9); underwater, so ZL drain"
+   },
+   "11930162108790178481": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "can_play(Zeldas_Lullaby)",
+    "confidence": "medium",
+    "why": "room 1 moat around the centre block: pots at y=97.3 under Obj_Well_WaterPlane_A_02 (surface 99.9); underwater, so ZL drain"
+   },
+   "7012036174293450012": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "can_play(Zeldas_Lullaby)",
+    "confidence": "medium",
+    "why": "room 1 north basin under the waterfall: pots at y=98.8 under Obj_Well_WaterPlane_A_03 (surface 101.4), right at the crawl hole that ZL opens (TriForcePoint at [0,101.8,-51])"
+   },
+   "11422150025867601433": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "can_play(Zeldas_Lullaby)",
+    "confidence": "medium",
+    "why": "room 1 north basin under the waterfall: pots at y=98.8 under Obj_Well_WaterPlane_A_03 (surface 101.4), right at the crawl hole that ZL opens (TriForcePoint at [0,101.8,-51])"
+   },
+   "2092886772595448761": {
+    "region": "Bottom of the Well Behind Fake Walls",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 1 inside the centre block next to the Center Skulltula chest (1.7 away; reconcile region Behind Fake Walls), inside the GlassTruth walls A_03/A_34 at x=14"
+   },
+   "2443543311722520559": {
+    "region": "Bottom of the Well Behind Fake Walls",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 1 inside the centre block next to the Center Skulltula chest (1.7 away; reconcile region Behind Fake Walls), inside the GlassTruth walls A_03/A_34 at x=14"
+   },
+   "14099813182838914319": {
+    "region": "Bottom of the Well Behind Fake Walls",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 1 (not locked room 5) on the centre block's west strip at x=-13.5 just outside room 5's wall, inside the GlassTruth wall line (A_07 at x=-13); could also be on the open moat bank: the stricter Behind Fake Walls is used"
+   },
+   "18246106759865127065": {
+    "region": "Bottom of the Well Behind Fake Walls",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 1 (not locked room 5) on the centre block's west strip at x=-13.5 just outside room 5's wall, inside the GlassTruth wall line (A_07 at x=-13); could also be on the open moat bank: the stricter Behind Fake Walls is used"
+   },
+   "6677233868797591943": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 3 = coffin room (Gibdos in coffins, Freestanding Key anchor, OoT 'coffin' room 2); pots stand by candlesticks next to the coffins, nothing gates them (no web/lens object); OoTR's coffin heart 2 there is True"
+   },
+   "8650410172248468465": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 3 = coffin room (Gibdos in coffins, Freestanding Key anchor, OoT 'coffin' room 2); pots stand by candlesticks next to the coffins, nothing gates them (no web/lens object); OoTR's coffin heart 2 there is True"
+   },
+   "5777989807578063864": {
+    "region": "Bottom of the Well Behind Locked Doors",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 5 behind the chained door at [-10.2,-22.5] (Dekubaba, GS East Inner Room)"
+   },
+   "5061848338283631993": {
+    "region": "Bottom of the Well Behind Locked Doors",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 5 behind the chained door at [-10.2,-22.5] (Dekubaba, GS East Inner Room)"
+   },
+   "3443746144208684083": {
+    "region": "Bottom of the Well Behind Locked Doors",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 5 behind the chained door at [-10.2,-22.5] (Dekubaba, GS East Inner Room)"
+   },
+   "4922541437458008474": {
+    "region": "Bottom of the Well Behind Locked Doors",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 7 = Like Like room behind the east locked door (Like Like, GS West Inner Room); remake pots, OoT's flying pots are gone"
+   },
+   "3704217652444280802": {
+    "region": "Bottom of the Well Behind Locked Doors",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 7 = Like Like room behind the east locked door (Like Like, GS West Inner Room); remake pots, OoT's flying pots are gone"
+   },
+   "6539220255102910600": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "can_play(Zeldas_Lullaby)",
+    "confidence": "medium",
+    "why": "room 8 = Dead Hand room (Lens of Truth chest anchor), pots near the entrance ladder, before the Dead Hand arena; reached only through the crawl hole that ZL drains (OoTR Lens chest also needs ZL)"
+   },
+   "3307762411934841364": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "can_play(Zeldas_Lullaby)",
+    "confidence": "medium",
+    "why": "room 8 = Dead Hand room (Lens of Truth chest anchor), pots near the entrance ladder, before the Dead Hand arena; reached only through the crawl hole that ZL drains (OoTR Lens chest also needs ZL)"
+   },
+   "1484084316515022872": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "has_explosives",
+    "confidence": "medium",
+    "why": "room 9 basement, north-east corner right behind the bomb-rock pair at [22-24,-11..-12] (the remake rings the map-chest area with bomb rocks, OoTR map chest needs explosives); could be reachable around it, explosives required to be safe"
+   },
+   "9892629541424148846": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "has_explosives",
+    "confidence": "medium",
+    "why": "room 9 basement, north-east corner right behind the bomb-rock pair at [22-24,-11..-12] (the remake rings the map-chest area with bomb rocks, OoTR map chest needs explosives); could be reachable around it, explosives required to be safe"
+   },
+   "6274265974981062696": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "has_explosives",
+    "confidence": "medium",
+    "why": "room 9 basement grass between the bomb-rock pairs at x~5-7 and x~23, in the map-chest pocket (OoTR map chest: explosives); explosives required to be safe"
+   },
+   "6392685632719229937": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "has_explosives",
+    "confidence": "medium",
+    "why": "room 9 basement grass between the bomb-rock pairs at x~5-7 and x~23, in the map-chest pocket (OoTR map chest: explosives); explosives required to be safe"
+   },
+   "6866564903669243591": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "has_explosives",
+    "confidence": "medium",
+    "why": "room 9 basement grass between the bomb-rock pairs at x~5-7 and x~23, in the map-chest pocket (OoTR map chest: explosives); explosives required to be safe"
+   },
+   "16329781527658340504": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "has_explosives",
+    "confidence": "medium",
+    "why": "room 9 basement grass between the bomb-rock pairs at x~5-7 and x~23, in the map-chest pocket (OoTR map chest: explosives); explosives required to be safe"
+   },
+   "10321354188897701816": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "has_explosives",
+    "confidence": "medium",
+    "why": "room 9 basement grass between the bomb-rock pairs at x~5-7 and x~23, in the map-chest pocket (OoTR map chest: explosives); explosives required to be safe"
+   },
+   "3864926409096901848": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "has_explosives",
+    "confidence": "medium",
+    "why": "room 9 basement grass between the bomb-rock pairs at x~5-7 and x~23, in the map-chest pocket (OoTR map chest: explosives); explosives required to be safe"
+   },
+   "11617818015699856357": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "has_explosives",
+    "confidence": "medium",
+    "why": "room 9 basement grass tucked behind the bomb-rock pair at [-15..-17,-19..-20]; explosives required to be safe"
+   },
+   "11915476117110695952": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "has_explosives",
+    "confidence": "medium",
+    "why": "room 9 basement grass tucked behind the bomb-rock pair at [-15..-17,-19..-20]; explosives required to be safe"
+   },
+   "3254903088755265820": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "has_explosives",
+    "confidence": "medium",
+    "why": "room 9 basement grass tucked behind the bomb-rock pair at [-15..-17,-19..-20]; explosives required to be safe"
+   },
+   "17529505535892353824": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 9 basement bomb rocks (Obj_BrokenRock_A_01, permanent flag); basement is part of OoTR Main Area (reached by the floor holes)"
+   },
+   "11505128767127996486": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 9 basement bomb rocks (Obj_BrokenRock_A_01, permanent flag); basement is part of OoTR Main Area (reached by the floor holes)"
+   },
+   "11141178457141260693": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 9 basement bomb rocks (Obj_BrokenRock_A_01, permanent flag); basement is part of OoTR Main Area (reached by the floor holes)"
+   },
+   "9341058477314100352": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 9 basement bomb rocks (Obj_BrokenRock_A_01, permanent flag); basement is part of OoTR Main Area (reached by the floor holes)"
+   },
+   "9157903178214713404": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 9 basement bomb rocks (Obj_BrokenRock_A_01, permanent flag); basement is part of OoTR Main Area (reached by the floor holes)"
+   },
+   "9022198436374961374": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 9 basement bomb rocks (Obj_BrokenRock_A_01, permanent flag); basement is part of OoTR Main Area (reached by the floor holes)"
+   },
+   "14603693818119288124": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 9 basement bomb rocks (Obj_BrokenRock_A_01, permanent flag); basement is part of OoTR Main Area (reached by the floor holes)"
+   },
+   "6527832079093591587": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 9 basement bomb rocks (Obj_BrokenRock_A_01, permanent flag); basement is part of OoTR Main Area (reached by the floor holes)"
+   },
+   "5265023541749704555": {
+    "region": "Bottom of the Well Left Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = left-side room (Land_Well_Room_A_11) entered by the ladder from the basement silver-rupee gate or the fake wall A_29 = OoTR Left Side"
+   },
+   "310141963798030249": {
+    "region": "Bottom of the Well Left Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = left-side room (Land_Well_Room_A_11) entered by the ladder from the basement silver-rupee gate or the fake wall A_29 = OoTR Left Side"
+   },
+   "8990185526417596110": {
+    "region": "Bottom of the Well Left Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = left-side room (Land_Well_Room_A_11) entered by the ladder from the basement silver-rupee gate or the fake wall A_29 = OoTR Left Side"
+   },
+   "11499567238563790266": {
+    "region": "Bottom of the Well Left Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = left-side room (Land_Well_Room_A_11) entered by the ladder from the basement silver-rupee gate or the fake wall A_29 = OoTR Left Side"
+   },
+   "2976328581859030383": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "can_play(Zeldas_Lullaby) and can_use(Lens_of_Truth)",
+    "confidence": "medium",
+    "why": "room 12, between the invisible-chest room 2 and Dead Hand room 8 (behind the ZL crawl hole); GlassTruth objects A_32/A_33 stand 3.5 from the pots, so the rule copies the nearby Invisible Chest (ZL + Lens)"
+   },
+   "5999281521813032298": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "can_play(Zeldas_Lullaby) and can_use(Lens_of_Truth)",
+    "confidence": "medium",
+    "why": "room 12, between the invisible-chest room 2 and Dead Hand room 8 (behind the ZL crawl hole); GlassTruth objects A_32/A_33 stand 3.5 from the pots, so the rule copies the nearby Invisible Chest (ZL + Lens)"
+   },
+   "18305487040364591494": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "can_play(Zeldas_Lullaby) and can_use(Lens_of_Truth)",
+    "confidence": "medium",
+    "why": "room 12, between the invisible-chest room 2 and Dead Hand room 8 (behind the ZL crawl hole); GlassTruth objects A_32/A_33 stand 3.5 from the pots, so the rule copies the nearby Invisible Chest (ZL + Lens)"
+   },
+   "2004752143010431306": {
+    "region": "Bottom of the Well Main Area",
+    "rule": "can_play(Zeldas_Lullaby) and can_use(Lens_of_Truth)",
+    "confidence": "medium",
+    "why": "room 12, between the invisible-chest room 2 and Dead Hand room 8 (behind the ZL crawl hole); GlassTruth objects A_32/A_33 stand 3.5 from the pots, so the rule copies the nearby Invisible Chest (ZL + Lens)"
+   }
+  },
+  "pairs": [
+   {
+    "ootr": [
+     "Bottom of the Well Near Entrance Pot 1",
+     "Bottom of the Well Near Entrance Pot 2"
+    ],
+    "hashes": [
+     "13514633590582184597",
+     "8241360954609403613"
+    ],
+    "why": "room 1, the dry pot pair just past the entrance Skulltula (z=14, y=100), first thing in the main floor"
+   },
+   {
+    "ootr": [
+     "Bottom of the Well Left Side Pot 1",
+     "Bottom of the Well Left Side Pot 2",
+     "Bottom of the Well Left Side Pot 3"
+    ],
+    "hashes": [
+     "3525219158873909075",
+     "4004629137260820818",
+     "9048011454024145970"
+    ],
+    "why": "row of 3 pots (y=101) inside the left-side room model Land_Well_Room_A_11, just west of the fake wall A_29 from the front-left fake-wall room; carries OoT's room-0 index like OoT's 3 left-side pots"
+   },
+   {
+    "ootr": [
+     "Bottom of the Well Fire Keese Pot"
+    ],
+    "hashes": [
+     "7569958918344529585"
+    ],
+    "why": "room 6 = Fire Keese room (Fire Keese x3, Beamos, Deku-shield chest = Fire Keese chest anchor, reconcile OoT 3 -> remake 6); its single pot"
+   },
+   {
+    "ootr": [
+     "Bottom of the Well Basement Pot 1",
+     "Bottom of the Well Basement Pot 2",
+     "Bottom of the Well Basement Pot 3"
+    ],
+    "hashes": [
+     "10235645789362510550",
+     "17270686864803699583",
+     "13501470156752591346"
+    ],
+    "why": "room 9 = basement (reconcile OoT 1 -> 9; silver rupees, map chest, ReDeads); the three pots in the open centre/north, away from the bomb-rock pairs"
+   }
+  ],
+  "absent": {
+   "Bottom of the Well Center Room Pit Fall Blue Rupee 1": "no placed rupees anywhere in the remake well (only chests and silver rupees); the basement under the centre room holds pots, grass and bomb rocks",
+   "Bottom of the Well Center Room Pit Fall Blue Rupee 2": "no placed rupees anywhere in the remake well (only chests and silver rupees); the basement under the centre room holds pots, grass and bomb rocks",
+   "Bottom of the Well Center Room Pit Fall Blue Rupee 3": "no placed rupees anywhere in the remake well (only chests and silver rupees); the basement under the centre room holds pots, grass and bomb rocks",
+   "Bottom of the Well Center Room Pit Fall Blue Rupee 4": "no placed rupees anywhere in the remake well (only chests and silver rupees); the basement under the centre room holds pots, grass and bomb rocks",
+   "Bottom of the Well Center Room Pit Fall Blue Rupee 5": "no placed rupees anywhere in the remake well (only chests and silver rupees); the basement under the centre room holds pots, grass and bomb rocks",
+   "Bottom of the Well Coffin Recovery Heart 1": "coffin room (room 3) has no placed hearts: 2 pots, Gibdo coffins and the small key",
+   "Bottom of the Well Coffin Recovery Heart 2": "coffin room (room 3) has no placed hearts: 2 pots, Gibdo coffins and the small key",
+   "Bottom of the Well Underwater Pot": "not paired on purpose: the remake's 10 underwater pots (front pool, moat, north basin) lie 2.6-2.9 units below the surface; OoTR's rule (ZL or slingshot/boomerang/bombchus) would be looser than this, so they are new Main Area locations with ZL only",
+   "Bottom of the Well Basement Pot 4": "remake basement (room 9) has only 5 regular pots (3 paired, 2 behind bomb rocks kept as new) plus 2 always-respawn pots",
+   "Bottom of the Well Basement Pot 5": "remake basement (room 9) has only 5 regular pots (3 paired, 2 behind bomb rocks kept as new) plus 2 always-respawn pots",
+   "Bottom of the Well Basement Pot 6": "remake basement (room 9) has only 5 regular pots (3 paired, 2 behind bomb rocks kept as new) plus 2 always-respawn pots",
+   "Bottom of the Well Basement Pot 7": "remake basement (room 9) has only 5 regular pots (3 paired, 2 behind bomb rocks kept as new) plus 2 always-respawn pots",
+   "Bottom of the Well Basement Pot 8": "remake basement (room 9) has only 5 regular pots (3 paired, 2 behind bomb rocks kept as new) plus 2 always-respawn pots",
+   "Bottom of the Well Basement Pot 9": "remake basement (room 9) has only 5 regular pots (3 paired, 2 behind bomb rocks kept as new) plus 2 always-respawn pots",
+   "Bottom of the Well Basement Pot 10": "remake basement (room 9) has only 5 regular pots (3 paired, 2 behind bomb rocks kept as new) plus 2 always-respawn pots",
+   "Bottom of the Well Basement Pot 11": "remake basement (room 9) has only 5 regular pots (3 paired, 2 behind bomb rocks kept as new) plus 2 always-respawn pots",
+   "Bottom of the Well Basement Pot 12": "remake basement (room 9) has only 5 regular pots (3 paired, 2 behind bomb rocks kept as new) plus 2 always-respawn pots",
+   "Bottom of the Well West Inner Room Flying Pot 1": "no flying pots anywhere in the remake well; the inner rooms 5/7 hold regular pots",
+   "Bottom of the Well West Inner Room Flying Pot 2": "no flying pots anywhere in the remake well; the inner rooms 5/7 hold regular pots",
+   "Bottom of the Well West Inner Room Flying Pot 3": "no flying pots anywhere in the remake well; the inner rooms 5/7 hold regular pots"
+  },
+  "excluded": {}
+ },
+ "ShadowTemple": {
+  "rooms": {
+   "0": "Shadow Temple Entryway",
+   "30": "Shadow Temple Entryway",
+   "1": "Shadow Temple Beginning",
+   "2": "Shadow Temple Beginning",
+   "3": "Shadow Temple Beginning",
+   "4": "Shadow Temple Beginning",
+   "26": "Shadow Temple Beginning",
+   "5": "Shadow Temple First Beamos",
+   "6": "Shadow Temple First Beamos",
+   "7": "Shadow Temple First Beamos",
+   "8": "Shadow Temple Huge Pit",
+   "9": "Shadow Temple Huge Pit",
+   "10": "Shadow Temple Huge Pit",
+   "31": "Shadow Temple Huge Pit",
+   "11": "Shadow Temple Falling Spikes",
+   "12": "Shadow Temple Invisible Spikes",
+   "13": "Shadow Temple Invisible Spikes",
+   "14": "Shadow Temple Wind Tunnel",
+   "15": "Shadow Temple Wind Tunnel",
+   "16": "Shadow Temple After Wind",
+   "17": "Shadow Temple Boat",
+   "29": "Shadow Temple Boat",
+   "18": "Shadow Temple Beyond Boat",
+   "19": "Shadow Temple Beyond Boat",
+   "20": "Shadow Temple Beyond Boat",
+   "21": "Shadow Temple Beyond Boat",
+   "22": "Shadow Temple Before Boss",
+   "24": "Bongo Bongo Boss Room"
+  },
+  "objects": {
+   "5137262787253127252": {
+    "region": "Shadow Temple Entryway",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 0 = first room after the graveyard entrance (StartPos z=63, lens-candle ring, shutter at z=30 opened by the intro event Dm_ShadowTemple_0000); before the first pit"
+   },
+   "4385961172347528446": {
+    "region": "Shadow Temple Entryway",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 0 = first room after the graveyard entrance (StartPos z=63, lens-candle ring, shutter at z=30 opened by the intro event Dm_ShadowTemple_0000); before the first pit"
+   },
+   "17689953228344661448": {
+    "region": "Shadow Temple Entryway",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 0 = first room after the graveyard entrance (StartPos z=63, lens-candle ring, shutter at z=30 opened by the intro event Dm_ShadowTemple_0000); before the first pit"
+   },
+   "7543258766643332752": {
+    "region": "Shadow Temple Entryway",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 0 = first room after the graveyard entrance (StartPos z=63, lens-candle ring, shutter at z=30 opened by the intro event Dm_ShadowTemple_0000); before the first pit"
+   },
+   "14017012371096777227": {
+    "region": "Shadow Temple Entryway",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 30 = pit room behind the intro shutter; pots (z=19) and flying pots (z=11) stand on the near side of the pit (Abyss at z~1, invisible GlassTruth platforms and hookshot targets at z 7..-5); OoTR's Lens + hover/hookshot requirement starts at that crossing"
+   },
+   "16363220504982834002": {
+    "region": "Shadow Temple Entryway",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 30 = pit room behind the intro shutter; pots (z=19) and flying pots (z=11) stand on the near side of the pit (Abyss at z~1, invisible GlassTruth platforms and hookshot targets at z 7..-5); OoTR's Lens + hover/hookshot requirement starts at that crossing"
+   },
+   "11384529499855811655": {
+    "region": "Shadow Temple Entryway",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 30 = pit room behind the intro shutter; pots (z=19) and flying pots (z=11) stand on the near side of the pit (Abyss at z~1, invisible GlassTruth platforms and hookshot targets at z 7..-5); OoTR's Lens + hover/hookshot requirement starts at that crossing"
+   },
+   "15593483770892955044": {
+    "region": "Shadow Temple Entryway",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 30 = pit room behind the intro shutter; pots (z=19) and flying pots (z=11) stand on the near side of the pit (Abyss at z~1, invisible GlassTruth platforms and hookshot targets at z 7..-5); OoTR's Lens + hover/hookshot requirement starts at that crossing"
+   },
+   "10043160893858466207": {
+    "region": "Shadow Temple Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 2 whispering walls, extra pot pair at x=-3.8 by the fake wall A_06/A_27"
+   },
+   "10301361589593592700": {
+    "region": "Shadow Temple Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 2 whispering walls, extra pot pair at x=-3.8 by the fake wall A_06/A_27"
+   },
+   "6702955117999869897": {
+    "region": "Shadow Temple First Beamos",
+    "rule": "(Silver_Rupee_Shadow_Temple_Scythe_Shortcut, 5)",
+    "confidence": "medium",
+    "why": "room 6 = scythe shortcut (OoT 6, silver rupees); pots flank the key chest (Early Silver Rupee Chest anchor) behind the silver-rupee gate Obj_silverRupeeCounter_04 that the Unlock event opens, so same rule as that chest"
+   },
+   "1516979191701649719": {
+    "region": "Shadow Temple First Beamos",
+    "rule": "(Silver_Rupee_Shadow_Temple_Scythe_Shortcut, 5)",
+    "confidence": "medium",
+    "why": "room 6 = scythe shortcut (OoT 6, silver rupees); pots flank the key chest (Early Silver Rupee Chest anchor) behind the silver-rupee gate Obj_silverRupeeCounter_04 that the Unlock event opens, so same rule as that chest"
+   },
+   "5735857708033803819": {
+    "region": "Shadow Temple Huge Pit",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 9 = huge pit (OoT 9: silver rupees, falling platforms), pots on the bottom floor by the Beamos, on the pit side of the falling-spikes silver-rupee gate"
+   },
+   "11474152021729303804": {
+    "region": "Shadow Temple Huge Pit",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 9 = huge pit (OoT 9: silver rupees, falling platforms), pots on the bottom floor by the Beamos, on the pit side of the falling-spikes silver-rupee gate"
+   },
+   "7775851373127171934": {
+    "region": "Shadow Temple Huge Pit",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = invisible blades room (RotateBlade_GlassTruth, Like Like; reconcile OoT 16 -> 10/31), ring of 10 pots; free door from the huge pit; OoTR's chests there are True"
+   },
+   "5029848030828875088": {
+    "region": "Shadow Temple Huge Pit",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = invisible blades room (RotateBlade_GlassTruth, Like Like; reconcile OoT 16 -> 10/31), ring of 10 pots; free door from the huge pit; OoTR's chests there are True"
+   },
+   "16048804842009110150": {
+    "region": "Shadow Temple Huge Pit",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = invisible blades room (RotateBlade_GlassTruth, Like Like; reconcile OoT 16 -> 10/31), ring of 10 pots; free door from the huge pit; OoTR's chests there are True"
+   },
+   "134986578316042658": {
+    "region": "Shadow Temple Huge Pit",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = invisible blades room (RotateBlade_GlassTruth, Like Like; reconcile OoT 16 -> 10/31), ring of 10 pots; free door from the huge pit; OoTR's chests there are True"
+   },
+   "107698896144035778": {
+    "region": "Shadow Temple Huge Pit",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = invisible blades room (RotateBlade_GlassTruth, Like Like; reconcile OoT 16 -> 10/31), ring of 10 pots; free door from the huge pit; OoTR's chests there are True"
+   },
+   "5727384110982141012": {
+    "region": "Shadow Temple Huge Pit",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = invisible blades room (RotateBlade_GlassTruth, Like Like; reconcile OoT 16 -> 10/31), ring of 10 pots; free door from the huge pit; OoTR's chests there are True"
+   },
+   "942717339458442898": {
+    "region": "Shadow Temple Huge Pit",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = invisible blades room (RotateBlade_GlassTruth, Like Like; reconcile OoT 16 -> 10/31), ring of 10 pots; free door from the huge pit; OoTR's chests there are True"
+   },
+   "2739008401552783208": {
+    "region": "Shadow Temple Huge Pit",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = invisible blades room (RotateBlade_GlassTruth, Like Like; reconcile OoT 16 -> 10/31), ring of 10 pots; free door from the huge pit; OoTR's chests there are True"
+   },
+   "6352163088611595134": {
+    "region": "Shadow Temple Huge Pit",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = invisible blades room (RotateBlade_GlassTruth, Like Like; reconcile OoT 16 -> 10/31), ring of 10 pots; free door from the huge pit; OoTR's chests there are True"
+   },
+   "10054939734302812185": {
+    "region": "Shadow Temple Huge Pit",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = invisible blades room (RotateBlade_GlassTruth, Like Like; reconcile OoT 16 -> 10/31), ring of 10 pots; free door from the huge pit; OoTR's chests there are True"
+   },
+   "3425839498342409275": {
+    "region": "Shadow Temple Wind Tunnel",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 14 = fan/wind corridor behind the 3rd locked door (fans, pit, hookshot targets); pots at its east end by the doors to rooms 15/16; Wind Tunnel (Hookshot + 3 keys) also covers the case that they stand before the crossing"
+   },
+   "9236688121471794419": {
+    "region": "Shadow Temple Wind Tunnel",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 14 = fan/wind corridor behind the 3rd locked door (fans, pit, hookshot targets); pots at its east end by the doors to rooms 15/16; Wind Tunnel (Hookshot + 3 keys) also covers the case that they stand before the crossing"
+   },
+   "9863928399380026377": {
+    "region": "Shadow Temple Wind Tunnel",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 14 = fan/wind corridor behind the 3rd locked door (fans, pit, hookshot targets); pots at its east end by the doors to rooms 15/16; Wind Tunnel (Hookshot + 3 keys) also covers the case that they stand before the crossing"
+   },
+   "15429078377557359609": {
+    "region": "Shadow Temple Wind Tunnel",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 14 = fan/wind corridor behind the 3rd locked door (fans, pit, hookshot targets); pots at its east end by the doors to rooms 15/16; Wind Tunnel (Hookshot + 3 keys) also covers the case that they stand before the crossing"
+   },
+   "6564827077422769808": {
+    "region": "Shadow Temple Wind Tunnel",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 15 = ReDead room with the GlassTruth wind-hint chest (anchor, Wind Tunnel)"
+   },
+   "1252191464782579179": {
+    "region": "Shadow Temple Wind Tunnel",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 15 = ReDead room with the GlassTruth wind-hint chest (anchor, Wind Tunnel)"
+   },
+   "9528320623415061098": {
+    "region": "Shadow Temple Beyond Boat",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 17 west landing, third pot of the after-boat group"
+   },
+   "15975907892717926899": {
+    "region": "Shadow Temple Boat",
+    "rule": "Progressive_Strength_Upgrade",
+    "confidence": "medium",
+    "why": "settled (collision): room 17 boarding platform (y 46.22, x 116-134, z -40..-60) beside the ship (PaddleShip #4994605815279638863); 4.27 above the dock (y 41.95; adult ledge grab 2.81) and 6 from the y 52 walkway of the 4th-key door: no walk/drop/climb route reaches it from either, and no hookshot target or ladder tag is near it. The way up is the dock block Obj_MovableBox_A_05 #3873385058732997992 pushed to its answer anchors #2277114657977879272 (x 111.4) / #12122213309291200490 (x 116.5, against the platform's west edge), the block the departure event #2242922501158856278 also links. Obj_MovableBox_A_05 is the remake's heavy block (GrabMoveActorType 706960426; OoTR's Strength blocks in Forest rooms 7/8, Water rooms 8/14/20, Shadow room 11), and audit_dungeons asks Strength to board (Boat -> Beyond Boat). medium: at least as strict (if the block moves without Strength the rule is only stricter)"
+   },
+   "712957976181550607": {
+    "region": "Shadow Temple Boat",
+    "rule": "Progressive_Strength_Upgrade",
+    "confidence": "medium",
+    "why": "settled (collision): room 17 boarding platform (y 46.22, x 116-134, z -40..-60) beside the ship (PaddleShip #4994605815279638863); 4.27 above the dock (y 41.95; adult ledge grab 2.81) and 6 from the y 52 walkway of the 4th-key door: no walk/drop/climb route reaches it from either, and no hookshot target or ladder tag is near it. The way up is the dock block Obj_MovableBox_A_05 #3873385058732997992 pushed to its answer anchors #2277114657977879272 (x 111.4) / #12122213309291200490 (x 116.5, against the platform's west edge), the block the departure event #2242922501158856278 also links. Obj_MovableBox_A_05 is the remake's heavy block (GrabMoveActorType 706960426; OoTR's Strength blocks in Forest rooms 7/8, Water rooms 8/14/20, Shadow room 11), and audit_dungeons asks Strength to board (Boat -> Beyond Boat). medium: at least as strict (if the block moves without Strength the rule is only stricter)"
+   },
+   "11721675795691289040": {
+    "region": "Shadow Temple Boat",
+    "rule": "Progressive_Strength_Upgrade",
+    "confidence": "medium",
+    "why": "settled (collision): room 17 boarding platform (y 46.22, x 116-134, z -40..-60) beside the ship (PaddleShip #4994605815279638863); 4.27 above the dock (y 41.95; adult ledge grab 2.81) and 6 from the y 52 walkway of the 4th-key door: no walk/drop/climb route reaches it from either, and no hookshot target or ladder tag is near it. The way up is the dock block Obj_MovableBox_A_05 #3873385058732997992 pushed to its answer anchors #2277114657977879272 (x 111.4) / #12122213309291200490 (x 116.5, against the platform's west edge), the block the departure event #2242922501158856278 also links. Obj_MovableBox_A_05 is the remake's heavy block (GrabMoveActorType 706960426; OoTR's Strength blocks in Forest rooms 7/8, Water rooms 8/14/20, Shadow room 11), and audit_dungeons asks Strength to board (Boat -> Beyond Boat). medium: at least as strict (if the block moves without Strength the rule is only stricter)"
+   },
+   "1349030569854865098": {
+    "region": "Shadow Temple Boat",
+    "rule": "Progressive_Strength_Upgrade",
+    "confidence": "medium",
+    "why": "settled (collision): room 17 boarding platform (y 46.22, x 116-134, z -40..-60) beside the ship (PaddleShip #4994605815279638863); 4.27 above the dock (y 41.95; adult ledge grab 2.81) and 6 from the y 52 walkway of the 4th-key door: no walk/drop/climb route reaches it from either, and no hookshot target or ladder tag is near it. The way up is the dock block Obj_MovableBox_A_05 #3873385058732997992 pushed to its answer anchors #2277114657977879272 (x 111.4) / #12122213309291200490 (x 116.5, against the platform's west edge), the block the departure event #2242922501158856278 also links. Obj_MovableBox_A_05 is the remake's heavy block (GrabMoveActorType 706960426; OoTR's Strength blocks in Forest rooms 7/8, Water rooms 8/14/20, Shadow room 11), and audit_dungeons asks Strength to board (Boat -> Beyond Boat). medium: at least as strict (if the block moves without Strength the rule is only stricter)"
+   },
+   "17234756865109480535": {
+    "region": "Shadow Temple Boat",
+    "rule": "can_use(Distant_Scarecrow)",
+    "confidence": "high",
+    "why": "settled (collision): room 17 east scarecrow ledge (y 51.05, x 98-106, z -40..-46), the remake's stand-in for OoTR's Before Boat Recovery Heart 1/2 (absent here: the ledge holds these 2 pots), with Pierre's spot SCARECROW_SHADOW_TEMPLE_01 (106.26,51.05,-45.91) and GS Near Ship. Its east face (x 107.7) rises from the dock (y 42): no walk/drop/climb route from the dock or the y 52 walkway (lines from the walkway to Pierre are blocked). Pierre is called from the dock (AreaCanCallPierre 112.83,41.95,-43.83); a clear line to him exists only from the dock's east part (x 117-123), 14-19 away: Longshot (20), not Hookshot (10). OoTR's own rule for this ledge: can_use(Distant_Scarecrow)"
+   },
+   "17044246235202554271": {
+    "region": "Shadow Temple Boat",
+    "rule": "can_use(Distant_Scarecrow)",
+    "confidence": "high",
+    "why": "settled (collision): room 17 east scarecrow ledge (y 51.05, x 98-106, z -40..-46), the remake's stand-in for OoTR's Before Boat Recovery Heart 1/2 (absent here: the ledge holds these 2 pots), with Pierre's spot SCARECROW_SHADOW_TEMPLE_01 (106.26,51.05,-45.91) and GS Near Ship. Its east face (x 107.7) rises from the dock (y 42): no walk/drop/climb route from the dock or the y 52 walkway (lines from the walkway to Pierre are blocked). Pierre is called from the dock (AreaCanCallPierre 112.83,41.95,-43.83); a clear line to him exists only from the dock's east part (x 117-123), 14-19 away: Longshot (20), not Hookshot (10). OoTR's own rule for this ledge: can_use(Distant_Scarecrow)"
+   },
+   "3535930098895909483": {
+    "region": "Shadow Temple Beyond Boat",
+    "rule": "can_use(Distant_Scarecrow)",
+    "confidence": "medium",
+    "why": "room 17 west high ledge (y 52.55) beside Pierre 2 #8289152219255184513 (-157.28,52.55,-29.78), called from AreaCanCallPierre #6699859070997340360 (-151.8,42.0,-20.6) or #7021801905510420924 (-150.0,45.2,-35.1): Pierre is 10.8-14 from both, so the Longshot (OoTR's Distant_Scarecrow from Beyond Boat). The region in the file, 'Shadow Temple Beyond Boat Scarecrow', is also reached in OoTR through Before Boss -> 'Beyond Boat SoT Block' (can_play(Song_of_Time)) -> can_use(Scarecrow) (plain Hookshot), but the remake's Shadow Temple has NO Song of Time block (no time-block actor in either ShadowTemple file), so that path is too loose. Placing the pots in Beyond Boat with the Distant_Scarecrow rule makes them right whatever the SoT exit does (finding 'Shadow Temple Before Boss -> Shadow Temple Beyond Boat SoT Block')."
+   },
+   "8781054380795091131": {
+    "region": "Shadow Temple Beyond Boat",
+    "rule": "can_use(Distant_Scarecrow)",
+    "confidence": "medium",
+    "why": "room 17 west high ledge (y 52.55) beside Pierre 2 #8289152219255184513 (-157.28,52.55,-29.78), called from AreaCanCallPierre #6699859070997340360 (-151.8,42.0,-20.6) or #7021801905510420924 (-150.0,45.2,-35.1): Pierre is 10.8-14 from both, so the Longshot (OoTR's Distant_Scarecrow from Beyond Boat). The region in the file, 'Shadow Temple Beyond Boat Scarecrow', is also reached in OoTR through Before Boss -> 'Beyond Boat SoT Block' (can_play(Song_of_Time)) -> can_use(Scarecrow) (plain Hookshot), but the remake's Shadow Temple has NO Song of Time block (no time-block actor in either ShadowTemple file), so that path is too loose. Placing the pots in Beyond Boat with the Distant_Scarecrow rule makes them right whatever the SoT exit does (finding 'Shadow Temple Before Boss -> Shadow Temple Beyond Boat SoT Block')."
+   },
+   "3756369741882798824": {
+    "region": "Shadow Temple Beyond Boat",
+    "rule": "can_use(Distant_Scarecrow)",
+    "confidence": "medium",
+    "why": "room 17 west high ledge (y 52.55) beside Pierre 2 #8289152219255184513 (-157.28,52.55,-29.78), called from AreaCanCallPierre #6699859070997340360 (-151.8,42.0,-20.6) or #7021801905510420924 (-150.0,45.2,-35.1): Pierre is 10.8-14 from both, so the Longshot (OoTR's Distant_Scarecrow from Beyond Boat). The region in the file, 'Shadow Temple Beyond Boat Scarecrow', is also reached in OoTR through Before Boss -> 'Beyond Boat SoT Block' (can_play(Song_of_Time)) -> can_use(Scarecrow) (plain Hookshot), but the remake's Shadow Temple has NO Song of Time block (no time-block actor in either ShadowTemple file), so that path is too loose. Placing the pots in Beyond Boat with the Distant_Scarecrow rule makes them right whatever the SoT exit does (finding 'Shadow Temple Before Boss -> Shadow Temple Beyond Boat SoT Block')."
+   },
+   "645964684709624210": {
+    "region": "Shadow Temple Beyond Boat",
+    "rule": "can_use(Distant_Scarecrow)",
+    "confidence": "medium",
+    "why": "room 17 west high ledge (y 52.55) beside Pierre 2 #8289152219255184513 (-157.28,52.55,-29.78), called from AreaCanCallPierre #6699859070997340360 (-151.8,42.0,-20.6) or #7021801905510420924 (-150.0,45.2,-35.1): Pierre is 10.8-14 from both, so the Longshot (OoTR's Distant_Scarecrow from Beyond Boat). The region in the file, 'Shadow Temple Beyond Boat Scarecrow', is also reached in OoTR through Before Boss -> 'Beyond Boat SoT Block' (can_play(Song_of_Time)) -> can_use(Scarecrow) (plain Hookshot), but the remake's Shadow Temple has NO Song of Time block (no time-block actor in either ShadowTemple file), so that path is too loose. Placing the pots in Beyond Boat with the Distant_Scarecrow rule makes them right whatever the SoT exit does (finding 'Shadow Temple Before Boss -> Shadow Temple Beyond Boat SoT Block')."
+   },
+   "2535753234898910734": {
+    "region": "Shadow Temple Before Boss",
+    "rule": "(Small_Key_Shadow_Temple, 5) and Boss_Key_Shadow_Temple",
+    "confidence": "high",
+    "why": "room 23 = antechamber past the boss door (boss chain lock at z=19.1, StartPos behind it, Bongo arena below); uses OoTR's boss-door rule instead of the boss-room region so boss ER can't misplace it"
+   },
+   "5547078554456230394": {
+    "region": "Shadow Temple Before Boss",
+    "rule": "(Small_Key_Shadow_Temple, 5) and Boss_Key_Shadow_Temple",
+    "confidence": "high",
+    "why": "room 23 = antechamber past the boss door (boss chain lock at z=19.1, StartPos behind it, Bongo arena below); uses OoTR's boss-door rule instead of the boss-room region so boss ER can't misplace it"
+   },
+   "11024655001264732882": {
+    "region": "Shadow Temple Before Boss",
+    "rule": "(Small_Key_Shadow_Temple, 5) and Boss_Key_Shadow_Temple",
+    "confidence": "high",
+    "why": "room 23 = antechamber past the boss door (boss chain lock at z=19.1, StartPos behind it, Bongo arena below); uses OoTR's boss-door rule instead of the boss-room region so boss ER can't misplace it"
+   }
+  },
+  "pairs": [
+   {
+    "ootr": [
+     "Shadow Temple Whispering Walls Near Dead Hand Pot"
+    ],
+    "hashes": [
+     "8173592441786734389"
+    ],
+    "why": "room 2 = whispering walls (GlassTruth fake walls, Wallmaster); westmost pot by the passage to the Dead Hand room"
+   },
+   {
+    "ootr": [
+     "Shadow Temple Whispering Walls Left Pot 1",
+     "Shadow Temple Whispering Walls Left Pot 2",
+     "Shadow Temple Whispering Walls Left Pot 3"
+    ],
+    "hashes": [
+     "10356635971059791941",
+     "17854956688468606247",
+     "6866982547773490759"
+    ],
+    "why": "room 2, the row of 3 pots on the left (z=+1.4) when walking in westward, same row as the flying pot"
+   },
+   {
+    "ootr": [
+     "Shadow Temple Whispering Walls Front Pot 1",
+     "Shadow Temple Whispering Walls Front Pot 2"
+    ],
+    "hashes": [
+     "637997711414805291",
+     "4523454191033743159"
+    ],
+    "why": "room 2, the pot pair nearest the entrance door (x=8.8)"
+   },
+   {
+    "ootr": [
+     "Shadow Temple Whispering Walls Flying Pot"
+    ],
+    "hashes": [
+     "10334432357157409143"
+    ],
+    "why": "room 2, its only flying pot"
+   },
+   {
+    "ootr": [
+     "Shadow Temple Map Chest Room Pot 1",
+     "Shadow Temple Map Chest Room Pot 2"
+    ],
+    "hashes": [
+     "6776181446576910895",
+     "17042617359037842076"
+    ],
+    "why": "room 3 = map chest room (map chest anchor, ReDead); its 2 pots"
+   },
+   {
+    "ootr": [
+     "Shadow Temple Falling Spikes Lower Pot 1",
+     "Shadow Temple Falling Spikes Lower Pot 2"
+    ],
+    "hashes": [
+     "10246279987220488515",
+     "599553213768790720"
+    ],
+    "why": "room 11 = falling spikes (OoT 10 -> 11), floor pots at y=56.4 by the lower chest"
+   },
+   {
+    "ootr": [
+     "Shadow Temple Falling Spikes Upper Pot 1",
+     "Shadow Temple Falling Spikes Upper Pot 2"
+    ],
+    "hashes": [
+     "15223760367968746914",
+     "15785610174252975907"
+    ],
+    "why": "room 11, upper-level pots at y=62.9 beside the switch (key) chest at y=63.5"
+   },
+   {
+    "ootr": [
+     "Shadow Temple After Wind Pot 1",
+     "Shadow Temple After Wind Pot 2"
+    ],
+    "hashes": [
+     "5186468140174045596",
+     "9711710493526840537"
+    ],
+    "why": "room 16 = after wind (reconcile OoT 20 -> 16; enemy chest, bombable hidden key chest); its 2 pots"
+   },
+   {
+    "ootr": [
+     "Shadow Temple After Wind Flying Pot 1",
+     "Shadow Temple After Wind Flying Pot 2"
+    ],
+    "hashes": [
+     "13367491346939660535",
+     "3296148488970241946"
+    ],
+    "why": "room 16, its 2 flying pots by the 4th locked door"
+   },
+   {
+    "ootr": [
+     "Shadow Temple After Boat Pot 1",
+     "Shadow Temple After Boat Pot 2"
+    ],
+    "hashes": [
+     "1269682677594157588",
+     "9913774638860555567"
+    ],
+    "why": "room 17 boat room, west landing after the ride (x=-119, y=42, east of the falling statue pillar)"
+   },
+   {
+    "ootr": [
+     "Shadow Temple Invisible Floormaster Pot 1",
+     "Shadow Temple Invisible Floormaster Pot 2"
+    ],
+    "hashes": [
+     "14320599047535591653",
+     "10622992497710988818"
+    ],
+    "why": "room 21 = invisible Floormaster room (Floormaster_Truth, chest anchor); its 2 pots"
+   }
+  ],
+  "absent": {
+   "Shadow Temple Invisible Blades Recovery Heart 1": "no placed hearts in the remake temple; invisible blades room 10 holds 10 pots instead",
+   "Shadow Temple Invisible Blades Recovery Heart 2": "no placed hearts in the remake temple; invisible blades room 10 holds 10 pots instead",
+   "Shadow Temple Spike Walls Pot": "spike walls room 19 (boss key + left chest, ReDeads, spike boards) has no pots",
+   "Shadow Temple Before Boat Recovery Heart 1": "no placed hearts; the east scarecrow ledge holds 2 pots",
+   "Shadow Temple Before Boat Recovery Heart 2": "no placed hearts; the east scarecrow ledge holds 2 pots",
+   "Shadow Temple After Boat Upper Recovery Heart 1": "no placed hearts; the west scarecrow ledge holds 4 pots (rupees/fairy)",
+   "Shadow Temple After Boat Upper Recovery Heart 2": "no placed hearts; the west scarecrow ledge holds 4 pots (rupees/fairy)",
+   "Shadow Temple After Boat Lower Recovery Heart": "no placed hearts in the remake temple",
+   "Shadow Temple 3 Spinning Pots Rupee 1": "room 20's three giant skull pots (Obj_ShadowTemple_SkullPot_A_01) declare no Drop__DropActor and the remake places no rupees there",
+   "Shadow Temple 3 Spinning Pots Rupee 2": "room 20's three giant skull pots (Obj_ShadowTemple_SkullPot_A_01) declare no Drop__DropActor and the remake places no rupees there",
+   "Shadow Temple 3 Spinning Pots Rupee 3": "room 20's three giant skull pots (Obj_ShadowTemple_SkullPot_A_01) declare no Drop__DropActor and the remake places no rupees there",
+   "Shadow Temple 3 Spinning Pots Rupee 4": "room 20's three giant skull pots (Obj_ShadowTemple_SkullPot_A_01) declare no Drop__DropActor and the remake places no rupees there",
+   "Shadow Temple 3 Spinning Pots Rupee 5": "room 20's three giant skull pots (Obj_ShadowTemple_SkullPot_A_01) declare no Drop__DropActor and the remake places no rupees there",
+   "Shadow Temple 3 Spinning Pots Rupee 6": "room 20's three giant skull pots (Obj_ShadowTemple_SkullPot_A_01) declare no Drop__DropActor and the remake places no rupees there",
+   "Shadow Temple 3 Spinning Pots Rupee 7": "room 20's three giant skull pots (Obj_ShadowTemple_SkullPot_A_01) declare no Drop__DropActor and the remake places no rupees there",
+   "Shadow Temple 3 Spinning Pots Rupee 8": "room 20's three giant skull pots (Obj_ShadowTemple_SkullPot_A_01) declare no Drop__DropActor and the remake places no rupees there",
+   "Shadow Temple 3 Spinning Pots Rupee 9": "room 20's three giant skull pots (Obj_ShadowTemple_SkullPot_A_01) declare no Drop__DropActor and the remake places no rupees there",
+   "Shadow Temple Near Boss Pot 1": "the Before Boss area (room 22, statue bridge + boss door) has no pots; the remake's 3 near-boss pots stand past the boss door (room 23) and are kept as new locations with the boss-door rule",
+   "Shadow Temple Near Boss Pot 2": "the Before Boss area (room 22, statue bridge + boss door) has no pots; the remake's 3 near-boss pots stand past the boss door (room 23) and are kept as new locations with the boss-door rule"
+  },
+  "excluded": {}
+ },
+ "SpiritTemple": {
+  "rooms": {
+   "0": "Spirit Temple Lobby",
+   "1": "Child Spirit Before Locked Door",
+   "5": "Child Spirit Before Locked Door",
+   "2": "Child Spirit Temple Beyond Metal Bridges",
+   "3": "Child Spirit Temple Beyond Metal Bridges",
+   "4": "Child Spirit Temple Beyond Metal Bridges",
+   "6": "Child Spirit Temple Climb",
+   "7": "Spirit Temple Central Chamber",
+   "8": "Spirit Temple Central Chamber",
+   "9": "Spirit Temple Central Chamber",
+   "13": "Early Adult Spirit Temple",
+   "14": "Early Adult Spirit Temple",
+   "15": "Spirit Temple Boulder Room",
+   "16": "Spirit Temple Boulder Room",
+   "17": "Adult Spirit Temple Climb",
+   "18": "Adult Spirit Temple Climb",
+   "20": "Spirit Temple Anubis Room",
+   "21": "Spirit Temple Anubis Room",
+   "22": "Spirit Temple Beyond Anubis Room",
+   "23": "Spirit Temple Beyond Anubis Room",
+   "24": "Spirit Temple Beyond Anubis Room",
+   "26": "Spirit Temple Beyond Anubis Room",
+   "27": "Spirit Temple Big Mirror Room",
+   "28": "Spirit Temple Big Mirror Room",
+   "29": "Spirit Temple Big Mirror Room",
+   "30": "Spirit Temple Big Mirror Room",
+   "31": "Spirit Temple Big Mirror Room",
+   "32": "Spirit Temple Before Boss",
+   "33": "Spirit Temple Before Boss"
+  },
+  "objects": {
+   "103563951645462556": {
+    "region": "Spirit Temple Lobby",
+    "rule": "is_child",
+    "confidence": "high",
+    "why": "room 0 lobby pots beside the Armos statues (x=+-12.9); note the lobby holds 4 stacked pairs of pots at identical spots; SpiritTemple_Level_Room_01_Prefab_02b0 Obj_Pot_A_05_0c17: Logic_Create <- Childhood (HoldIsChildhoodOrAdulthood); the other age's pot at the same spot is Spirit Temple Lobby Pot 1. Each of the lobby's four spots holds one pot per age, so both ages see four pots: remake design (age-split pots), the age is the whole rule; now the other-age copy of OoTR's Spirit Temple Lobby Pot 1 (this area's pairs), no longer a location of its own"
+   },
+   "16244368682301461195": {
+    "region": "Spirit Temple Lobby",
+    "rule": "is_child",
+    "confidence": "high",
+    "why": "room 0 lobby pots beside the Armos statues (x=+-12.9); note the lobby holds 4 stacked pairs of pots at identical spots; SpiritTemple_Level_Room_01_Prefab_02b0 Obj_Pot_A_05_2b7f: Logic_Create <- Childhood (HoldIsChildhoodOrAdulthood); the other age's pot at the same spot is Spirit Temple Lobby Pot 6. Each of the lobby's four spots holds one pot per age, so both ages see four pots: remake design (age-split pots), the age is the whole rule"
+   },
+   "17137051788597509779": {
+    "region": "Spirit Temple Lobby",
+    "rule": "is_adult",
+    "confidence": "high",
+    "why": "room 0 lobby pots beside the Armos statues (x=+-12.9); note the lobby holds 4 stacked pairs of pots at identical spots; SpiritTemple_Level_Room_01_Prefab_02b0 Obj_Pot_A_05_42ab: Logic_Create <- Adulthood (HoldIsChildhoodOrAdulthood); the other age's pot at the same spot is Spirit Temple Lobby Pot 3. Each of the lobby's four spots holds one pot per age, so both ages see four pots: remake design (age-split pots), the age is the whole rule"
+   },
+   "5871571106450718234": {
+    "region": "Spirit Temple Lobby",
+    "rule": "is_adult",
+    "confidence": "high",
+    "why": "room 0 lobby pots beside the Armos statues (x=+-12.9); note the lobby holds 4 stacked pairs of pots at identical spots; SpiritTemple_Level_Room_01_Prefab_02b0 Obj_Pot_A_05_4cca: Logic_Create <- Adulthood (HoldIsChildhoodOrAdulthood); the other age's pot at the same spot is Spirit Temple Lobby Pot 2. Each of the lobby's four spots holds one pot per age, so both ages see four pots: remake design (age-split pots), the age is the whole rule; now the other-age copy of OoTR's Spirit Temple Lobby Pot 2 (this area's pairs), no longer a location of its own"
+   },
+   "9856880919248647941": {
+    "region": "Spirit Temple Lobby",
+    "rule": "is_adult",
+    "confidence": "high",
+    "why": "room 0 lobby pots beside the Armos statues (x=+-12.9); note the lobby holds 4 stacked pairs of pots at identical spots; SpiritTemple_Level_Room_01_Prefab_02b0 Obj_Pot_A_05_5502: Logic_Create <- Adulthood (HoldIsChildhoodOrAdulthood); the other age's pot at the same spot is Spirit Temple Lobby Pot 4. Each of the lobby's four spots holds one pot per age, so both ages see four pots: remake design (age-split pots), the age is the whole rule"
+   },
+   "14639467075158265290": {
+    "region": "Spirit Temple Lobby",
+    "rule": "is_child",
+    "confidence": "high",
+    "why": "room 0 lobby pots beside the Armos statues (x=+-12.9); note the lobby holds 4 stacked pairs of pots at identical spots; SpiritTemple_Level_Room_01_Prefab_02b0 Obj_Pot_A_05_9b40: Logic_Create <- Childhood (HoldIsChildhoodOrAdulthood); the other age's pot at the same spot is Spirit Temple Lobby Pot 5. Each of the lobby's four spots holds one pot per age, so both ages see four pots: remake design (age-split pots), the age is the whole rule"
+   },
+   "17681039064778216430": {
+    "region": "Spirit Temple Lobby",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 0 lobby, the other 2 flying pots"
+   },
+   "3921371032252202099": {
+    "region": "Spirit Temple Lobby",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 0 lobby, the other 2 flying pots"
+   },
+   "13333368700054583083": {
+    "region": "Child Spirit Before Locked Door",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 5 = child-only crawl tunnel room (Field_TunnelTooSmall) off the child hub, in front of the first locked door (chain lock at z=-55.3) to the child climb"
+   },
+   "14221521666026319023": {
+    "region": "Child Spirit Before Locked Door",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 5 = child-only crawl tunnel room (Field_TunnelTooSmall) off the child hub, in front of the first locked door (chain lock at z=-55.3) to the child climb"
+   },
+   "4299081678185954776": {
+    "region": "Spirit Temple Before Boss",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 7 top platform at y=135 in front of the boss door (boss chain lock at [0,135,-76.7]) = OoTR Before Boss"
+   },
+   "778407491583679134": {
+    "region": "Spirit Temple Before Boss",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 7 top platform at y=135 in front of the boss door (boss chain lock at [0,135,-76.7]) = OoTR Before Boss"
+   },
+   "14643042271469583596": {
+    "region": "Spirit Temple Central Chamber",
+    "rule": "((Small_Key_Spirit_Temple, 3) or spirit_temple_shortcuts or has_explosives or ((Small_Key_Spirit_Temple, 2) and free_bombchu_drops)) and (Silver_Rupee_Spirit_Temple_Sun_Block, 5)",
+    "confidence": "high",
+    "why": "room 10 = hall after the sun block room (OoT 9). In the remake the sun-block silver-rupee Unlock event opens this hall's shutter (event links the counter and the shutter), so OoTR's hall-pot rule plus the 5 sun-block silver rupees"
+   },
+   "1405280773320432496": {
+    "region": "Spirit Temple Central Chamber",
+    "rule": "((Small_Key_Spirit_Temple, 3) or spirit_temple_shortcuts or has_explosives or ((Small_Key_Spirit_Temple, 2) and free_bombchu_drops)) and (Silver_Rupee_Spirit_Temple_Sun_Block, 5)",
+    "confidence": "high",
+    "why": "room 10 = hall after the sun block room (OoT 9). In the remake the sun-block silver-rupee Unlock event opens this hall's shutter (event links the counter and the shutter), so OoTR's hall-pot rule plus the 5 sun-block silver rupees"
+   },
+   "7796220661333936673": {
+    "region": "Spirit Temple Beyond Anubis Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 22 = four-Armos room after the Anubis room (sun switch opens the Near Four Armos chest room 26), OoTR Beyond Anubis Room"
+   },
+   "2307858130780472122": {
+    "region": "Spirit Temple Beyond Anubis Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 22 = four-Armos room after the Anubis room (sun switch opens the Near Four Armos chest room 26), OoTR Beyond Anubis Room"
+   },
+   "679707632344397059": {
+    "region": "Spirit Temple Beyond Anubis Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 22 = four-Armos room after the Anubis room (sun switch opens the Near Four Armos chest room 26), OoTR Beyond Anubis Room"
+   },
+   "12710212233257432556": {
+    "region": "Spirit Temple Big Mirror Room",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 27 top landing (y=151) of the moving climb wall (OoT shifting wall), by the door to the boss-key/mirror rooms; reaching it is OoTR's Anubis -> Big Mirror Room step"
+   },
+   "5898541057490100836": {
+    "region": "Spirit Temple Big Mirror Room",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 27 top landing (y=151) of the moving climb wall (OoT shifting wall), by the door to the boss-key/mirror rooms; reaching it is OoTR's Anubis -> Big Mirror Room step"
+   },
+   "15856393088785445745": {
+    "region": "Spirit Temple Before Boss",
+    "rule": "Boss_Key_Spirit_Temple",
+    "confidence": "medium",
+    "why": "room 33 antechamber past the boss door and the Iron Knuckle Nabooru room 32, before the Twinrova arena shutter; Before Boss + boss key instead of the boss-room region (boss ER safe)"
+   },
+   "858005297737691317": {
+    "region": "Spirit Temple Before Boss",
+    "rule": "Boss_Key_Spirit_Temple",
+    "confidence": "medium",
+    "why": "room 33 antechamber past the boss door and the Iron Knuckle Nabooru room 32, before the Twinrova arena shutter; Before Boss + boss key instead of the boss-room region (boss ER safe)"
+   },
+   "342314669160649648": {
+    "region": "Spirit Temple Before Boss",
+    "rule": "Boss_Key_Spirit_Temple",
+    "confidence": "medium",
+    "why": "room 33 antechamber past the boss door and the Iron Knuckle Nabooru room 32, before the Twinrova arena shutter; Before Boss + boss key instead of the boss-room region (boss ER safe)"
+   },
+   "10709279745659693627": {
+    "region": "Spirit Temple Before Boss",
+    "rule": "Boss_Key_Spirit_Temple",
+    "confidence": "medium",
+    "why": "room 33 antechamber past the boss door and the Iron Knuckle Nabooru room 32, before the Twinrova arena shutter; Before Boss + boss key instead of the boss-room region (boss ER safe)"
+   }
+  },
+  "pairs": [
+   {
+    "ootr": [
+     "Spirit Temple Lobby Pot 1",
+     "Spirit Temple Lobby Pot 2"
+    ],
+    "hashes": [
+     [
+      "3892291898975768871",
+      "103563951645462556"
+     ],
+     [
+      "3030155917724115111",
+      "5871571106450718234"
+     ]
+    ],
+    "why": "room 0 = lobby (Nabooru, Armos statues); two of its pots (ones without a reset group); each OoTR pot takes both pots at its spot, one per age (SpiritTemple_Level_Room_01_Prefab_02b0 Logic_Create <- Adulthood / Childhood): Pot 1 = adult #3892291898975768871 + child #103563951645462556 at (-12.9,100.25,-3.1), Pot 2 = child #3030155917724115111 + adult #5871571106450718234 at (12.9,100.25,0.1), as DMC Near GC Pot 1-2; so OoTR's True holds for both ages"
+   },
+   {
+    "ootr": [
+     "Spirit Temple Lobby Flying Pot 1",
+     "Spirit Temple Lobby Flying Pot 2"
+    ],
+    "hashes": [
+     "10240421721149013838",
+     "418728388637525878"
+    ],
+    "why": "room 0 lobby, two of its 4 flying pots"
+   },
+   {
+    "ootr": [
+     "Spirit Temple Child Bridge Flying Pot 1",
+     "Spirit Temple Child Bridge Flying Pot 2"
+    ],
+    "hashes": [
+     "5214952873966346016",
+     "17242888119418843110"
+    ],
+    "why": "room 2 = child bridge room (Child Bridge chest anchor, Stalfos_ForChild, bridge switch); the 2 flying pots flank that chest"
+   },
+   {
+    "ootr": [
+     "Spirit Temple Child Anubis Pot 1",
+     "Spirit Temple Child Anubis Pot 2",
+     "Spirit Temple Child Anubis Pot 3",
+     "Spirit Temple Child Anubis Pot 4"
+    ],
+    "hashes": [
+     "4515702891486979263",
+     "10768155177622331490",
+     "5889917625901158911",
+     "17832064472493387916"
+    ],
+    "why": "room 3 = child Anubis room (Anubis, AnubisGimmick fire wall, eye switch) between the bridge room's crawl tunnel and the torch room; 4 pots = OoT room 27's 4"
+   },
+   {
+    "ootr": [
+     "Spirit Temple Central Chamber Pot 1",
+     "Spirit Temple Central Chamber Pot 2"
+    ],
+    "hashes": [
+     "11376619372284527696",
+     "7951190351490769890"
+    ],
+    "why": "room 7 = statue room (reconcile OoT 5 -> 7, map chest anchor), floor pots at y=114.2"
+   },
+   {
+    "ootr": [
+     "Spirit Temple Central Chamber Flying Pot 1"
+    ],
+    "hashes": [
+     "4371345945889970610"
+    ],
+    "why": "room 7 statue room, floor flying pot at the statue's base"
+   },
+   {
+    "ootr": [
+     "Spirit Temple Adult Climb Flying Pot 1",
+     "Spirit Temple Adult Climb Flying Pot 2"
+    ],
+    "hashes": [
+     "15996033407155777420",
+     "16552860015818359893"
+    ],
+    "why": "room 17 = adult climb room behind the adult locked door (Like Like, climb wall to the first mirror room 18); its 2 flying pots"
+   },
+   {
+    "ootr": [
+     "Spirit Temple Beamos Hall Pot"
+    ],
+    "hashes": [
+     "12733538611681391289"
+    ],
+    "why": "room 20 = Beamos hall behind the upper-east locked door, before the Anubis room 21; its single pot"
+   },
+   {
+    "ootr": [
+     "Spirit Temple Big Mirror Flying Pot 1",
+     "Spirit Temple Big Mirror Flying Pot 2",
+     "Spirit Temple Big Mirror Flying Pot 3",
+     "Spirit Temple Big Mirror Flying Pot 4"
+    ],
+    "hashes": [
+     "17150390912473250405",
+     "3626249741709483919",
+     "936538740926387889",
+     "5414501860520810340"
+    ],
+    "why": "room 30 = big mirror room (Obj_SpiritTemple_Mirror_A_01, sun switch); 4 flying pots"
+   }
+  ],
+  "absent": {
+   "Spirit Temple Child Climb Pot": "child climb room 6 (Lizalfos, Skullwalltulas, sun switch) has no pots; the pots of room 5 stand before the locked door",
+   "Spirit Temple Central Chamber Pot 3": "statue room (room 7) floor holds only 2 pots and 1 flying pot (paired)",
+   "Spirit Temple Central Chamber Pot 4": "statue room (room 7) floor holds only 2 pots and 1 flying pot (paired)",
+   "Spirit Temple Central Chamber Pot 5": "statue room (room 7) floor holds only 2 pots and 1 flying pot (paired)",
+   "Spirit Temple Central Chamber Pot 6": "statue room (room 7) floor holds only 2 pots and 1 flying pot (paired)",
+   "Spirit Temple Central Chamber Flying Pot 2": "statue room (room 7) floor holds only 2 pots and 1 flying pot (paired)",
+   "Spirit Temple Hall After Sun Block Room Pot 1": "not paired on purpose: the remake's 2 hall pots (room 10) sit behind a shutter that the sun-block silver rupees open, which OoTR's rule lacks; they are new locations with the stricter rule",
+   "Spirit Temple Hall After Sun Block Room Pot 2": "not paired on purpose: the remake's 2 hall pots (room 10) sit behind a shutter that the sun-block silver rupees open, which OoTR's rule lacks; they are new locations with the stricter rule",
+   "Spirit Temple Big Mirror Flying Pot 5": "big mirror room 30 has only 4 flying pots",
+   "Spirit Temple Big Mirror Flying Pot 6": "big mirror room 30 has only 4 flying pots",
+   "Spirit Temple Shifting Wall Recovery Heart 1": "no placed hearts in the remake temple; the shifting-wall room 27 has 2 pots at its top landing",
+   "Spirit Temple Shifting Wall Recovery Heart 2": "no placed hearts in the remake temple; the shifting-wall room 27 has 2 pots at its top landing",
+   "Spirit Temple Before Child Climb Small Wooden Crate 1": "no crates anywhere in the remake Spirit Temple; child hub rooms 1/5 hold only 2 pots",
+   "Spirit Temple Before Child Climb Small Wooden Crate 2": "no crates anywhere in the remake Spirit Temple; child hub rooms 1/5 hold only 2 pots"
+  },
+  "excluded": {}
+ },
+ "GerudoTrainingGround": {
+  "rooms": {
+   "0": "Gerudo Training Ground Lobby",
+   "1": "Gerudo Training Ground Lobby",
+   "3": "Gerudo Training Ground Heavy Block Room",
+   "4": "Gerudo Training Ground Eye Statue Lower",
+   "5": "Gerudo Training Ground Hammer Room",
+   "7": "Gerudo Training Ground Lobby",
+   "9": "Gerudo Training Ground Water Room",
+   "10": "Gerudo Training Ground Like Like Room"
+  },
+  "objects": {
+   "11630221001536876484": {
+    "region": "Gerudo Training Ground Hammer Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 5 = hammer room (both hammer-room chest anchors); cow-skull decoration 4.7 above the floor where OoTR has the Hammer Room Wonderitem (can_use(Bow)). the cow skull's AI (Obj_Gerudo_CowBoneDecoration_A_01.root, which B_01/B_02 use) drops on QueryDamageCalculatorIsOnDamageType 6 (Arrow) OR 16 (Hookshot), and 4.7 m is within the Hookshot's range 10: the category rule (Bow or Hookshot), as at every other cow skull"
+   },
+   "3373427369268924584": {
+    "region": "Gerudo Training Ground Lobby",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 7 = Beamos room (Beamos chest anchor, OoTR Lobby region); cow-skull decoration 4.1 above the floor where OoTR has the Beamos Wonderitem (can_use(Bow)). the cow skull's AI (Obj_Gerudo_CowBoneDecoration_A_01.root, which B_01/B_02 use) drops on QueryDamageCalculatorIsOnDamageType 6 (Arrow) OR 16 (Hookshot), and 4.1 m is within the Hookshot's range 10: the category rule (Bow or Hookshot), as at every other cow skull"
+   }
+  },
+  "pairs": [],
+  "absent": {
+   "Gerudo Training Ground Beamos Recovery Heart 1": "remake GTG has no placed hearts or rupees; the Beamos room holds a cow-skull decoration (red rupee drop)",
+   "Gerudo Training Ground Beamos Recovery Heart 2": "remake GTG has no placed hearts or rupees; the Beamos room holds a cow-skull decoration (red rupee drop)"
+  },
+  "excluded": {}
+ },
+ "InsideGanonCastle": {
+  "rooms": {
+   "0": "Ganons Castle Lobby",
+   "1": "Ganons Castle Main",
+   "2": "Ganons Castle Forest Trial",
+   "3": "Ganons Castle Forest Trial Wind Room",
+   "4": "Ganons Castle Forest Trial Ending",
+   "5": "Ganons Castle Water Trial",
+   "6": "Ganons Castle Water Trial",
+   "7": "Ganons Castle Water Trial Ending",
+   "8": "Ganons Castle Shadow Trial",
+   "9": "Ganons Castle Shadow Trial Ending",
+   "10": "Ganons Castle Fire Trial",
+   "11": "Ganons Castle Fire Trial Ending",
+   "12": "Ganons Castle Light Trial",
+   "13": "Ganons Castle Light Trial",
+   "14": "Ganons Castle Light Trial Boulder Room",
+   "15": "Ganons Castle Light Trial Ending",
+   "16": "Ganons Castle Spirit Trial",
+   "17": "Ganons Castle Spirit Trial Second Room Front",
+   "18": "Ganons Castle Spirit Trial Ending",
+   "19": "Ganons Castle Tower",
+   "20": "Ganons Castle Tower",
+   "21": "Ganons Castle Tower",
+   "22": "Ganons Castle Tower",
+   "23": "Ganons Castle Tower",
+   "24": "Ganons Castle Tower",
+   "25": "Ganons Castle Tower",
+   "62": "Ganons Castle Tower Below Boss",
+   "63": "Ganons Castle Tower Below Boss"
+  },
+  "objects": {
+   "3224502012561623799": {
+    "region": "Ganons Castle Deku Scrubs",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 1 lower level (y=91.8) by a new fairy fountain (FairyFountain water plane, 8 fairy holes, Great Fairy BGM) under the entrance, below the main floor and the hidden GlassTruth_A_01; it takes the place of OoT's lens-hidden scrub room (no scrubs in the remake), so OoTR's lens-gated scrub region"
+   },
+   "14939864650084270773": {
+    "region": "Ganons Castle Deku Scrubs",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 1 lower level (y=91.8) by a new fairy fountain (FairyFountain water plane, 8 fairy holes, Great Fairy BGM) under the entrance, below the main floor and the hidden GlassTruth_A_01; it takes the place of OoT's lens-hidden scrub room (no scrubs in the remake), so OoTR's lens-gated scrub region"
+   },
+   "15112722761056963440": {
+    "region": "Ganons Castle Deku Scrubs",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 1 lower level (y=91.8) by a new fairy fountain (FairyFountain water plane, 8 fairy holes, Great Fairy BGM) under the entrance, below the main floor and the hidden GlassTruth_A_01; it takes the place of OoT's lens-hidden scrub room (no scrubs in the remake), so OoTR's lens-gated scrub region"
+   },
+   "8906715134377445150": {
+    "region": "Ganons Castle Deku Scrubs",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 1 lower level (y=91.8) by a new fairy fountain (FairyFountain water plane, 8 fairy holes, Great Fairy BGM) under the entrance, below the main floor and the hidden GlassTruth_A_01; it takes the place of OoT's lens-hidden scrub room (no scrubs in the remake), so OoTR's lens-gated scrub region"
+   },
+   "13727300571360846696": {
+    "region": "Ganons Castle Main",
+    "rule": "(skipped_trials[Forest] or 'Forest Trial Clear') and (skipped_trials[Fire] or 'Fire Trial Clear') and (skipped_trials[Water] or 'Water Trial Clear') and (skipped_trials[Shadow] or 'Shadow Trial Clear') and (skipped_trials[Spirit] or 'Spirit Trial Clear') and (skipped_trials[Light] or 'Light Trial Clear')",
+    "confidence": "medium",
+    "why": "room 1 centre dais at y=104.9, ~2.5 from the axis of the trial barrier (Obj_GanonCastle_Barrier_A_01) under the tower elevator: inside the barrier, so OoTR's Main -> Tower trials condition (kept on Main so tower ER can't misplace it)"
+   },
+   "4656702765770784238": {
+    "region": "Ganons Castle Main",
+    "rule": "(skipped_trials[Forest] or 'Forest Trial Clear') and (skipped_trials[Fire] or 'Fire Trial Clear') and (skipped_trials[Water] or 'Water Trial Clear') and (skipped_trials[Shadow] or 'Shadow Trial Clear') and (skipped_trials[Spirit] or 'Spirit Trial Clear') and (skipped_trials[Light] or 'Light Trial Clear')",
+    "confidence": "medium",
+    "why": "room 1 centre dais at y=104.9, ~2.5 from the axis of the trial barrier (Obj_GanonCastle_Barrier_A_01) under the tower elevator: inside the barrier, so OoTR's Main -> Tower trials condition (kept on Main so tower ER can't misplace it)"
+   },
+   "10177407372807102311": {
+    "region": "Ganons Castle Main",
+    "rule": "(skipped_trials[Forest] or 'Forest Trial Clear') and (skipped_trials[Fire] or 'Fire Trial Clear') and (skipped_trials[Water] or 'Water Trial Clear') and (skipped_trials[Shadow] or 'Shadow Trial Clear') and (skipped_trials[Spirit] or 'Spirit Trial Clear') and (skipped_trials[Light] or 'Light Trial Clear')",
+    "confidence": "medium",
+    "why": "room 1 centre dais at y=104.9, ~2.5 from the axis of the trial barrier (Obj_GanonCastle_Barrier_A_01) under the tower elevator: inside the barrier, so OoTR's Main -> Tower trials condition (kept on Main so tower ER can't misplace it)"
+   },
+   "9619715366192254862": {
+    "region": "Ganons Castle Main",
+    "rule": "(skipped_trials[Forest] or 'Forest Trial Clear') and (skipped_trials[Fire] or 'Fire Trial Clear') and (skipped_trials[Water] or 'Water Trial Clear') and (skipped_trials[Shadow] or 'Shadow Trial Clear') and (skipped_trials[Spirit] or 'Spirit Trial Clear') and (skipped_trials[Light] or 'Light Trial Clear')",
+    "confidence": "medium",
+    "why": "room 1 centre dais at y=104.9, ~2.5 from the axis of the trial barrier (Obj_GanonCastle_Barrier_A_01) under the tower elevator: inside the barrier, so OoTR's Main -> Tower trials condition (kept on Main so tower ER can't misplace it)"
+   },
+   "15694138656577583423": {
+    "region": "Ganons Castle Shadow Trial First Gap",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 8, the other two pots of the Like Like group past the first gap"
+   },
+   "11807736569286227819": {
+    "region": "Ganons Castle Shadow Trial First Gap",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 8, the other two pots of the Like Like group past the first gap"
+   },
+   "12580230096078651207": {
+    "region": "Ganons Castle Light Trial Boulder Room",
+    "rule": "(Silver_Rupee_Ganons_Castle_Light_Trial, 5)",
+    "confidence": "medium",
+    "why": "room 15 first part (x=-82): past room 14's silver-rupee shutter but before the GlassTruth_A_02 fake wall (x=-93) and the sage-room tube (x=-100) that OoTR's lens requirement covers"
+   },
+   "2803630097105565514": {
+    "region": "Ganons Castle Light Trial Boulder Room",
+    "rule": "(Silver_Rupee_Ganons_Castle_Light_Trial, 5)",
+    "confidence": "medium",
+    "why": "room 15 first part (x=-82): past room 14's silver-rupee shutter but before the GlassTruth_A_02 fake wall (x=-93) and the sage-room tube (x=-100) that OoTR's lens requirement covers"
+   }
+  },
+  "pairs": [
+   {
+    "ootr": [
+     "Ganons Castle Forest Trial Pot 1",
+     "Ganons Castle Forest Trial Pot 2"
+    ],
+    "hashes": [
+     "14131308900302015809",
+     "16197187735932467308"
+    ],
+    "why": "room 4 = forest trial ending (trial core Core_B_01, behind the wind room's silver-rupee shutter)"
+   },
+   {
+    "ootr": [
+     "Ganons Castle Water Trial Fairy Pot Drop"
+    ],
+    "hashes": [
+     "9187095075410950305"
+    ],
+    "why": "room 6 = water trial push-block room past room 5's red-ice wall (Freezards in room 5); its single pot (same Obj_Pot_A_04 model as the Ice Cavern)"
+   },
+   {
+    "ootr": [
+     "Ganons Castle Water Trial Pot 1",
+     "Ganons Castle Water Trial Pot 2"
+    ],
+    "hashes": [
+     "14558485053640356159",
+     "14427616187459203223"
+    ],
+    "why": "room 7 = water trial ending (Core_D_01)"
+   },
+   {
+    "ootr": [
+     "Ganons Castle Shadow Trial Like Like Pot 1",
+     "Ganons Castle Shadow Trial Like Like Pot 2"
+    ],
+    "hashes": [
+     "1281722240804523266",
+     "3176226373531822041"
+    ],
+    "why": "room 8 shadow trial, the pot group around the Like Like after the first gap (GlassTruth platforms)"
+   },
+   {
+    "ootr": [
+     "Ganons Castle Shadow Trial Pot 1",
+     "Ganons Castle Shadow Trial Pot 2"
+    ],
+    "hashes": [
+     "10882124901681441302",
+     "1589383710068100920"
+    ],
+    "why": "room 9 = shadow trial ending (Core_E_01)"
+   },
+   {
+    "ootr": [
+     "Ganons Castle Fire Trial Pot 1",
+     "Ganons Castle Fire Trial Pot 2"
+    ],
+    "hashes": [
+     "17654863825837636295",
+     "12505442962093959743"
+    ],
+    "why": "room 11 = fire trial ending (Core_C_01)"
+   },
+   {
+    "ootr": [
+     "Ganons Castle Light Trial Boulder Pot"
+    ],
+    "hashes": [
+     "5049143857891510188"
+    ],
+    "why": "room 14 = light trial rolling-boulder room behind the locked door (RollingRock x2, silver rupees)"
+   },
+   {
+    "ootr": [
+     "Ganons Castle Light Trial Pot 1",
+     "Ganons Castle Light Trial Pot 2"
+    ],
+    "hashes": [
+     "6305081860636977403",
+     "16440289444950368085"
+    ],
+    "why": "room 15 sage room (x=-107) beyond the fake wall and tube, by Core_A_01 = light trial ending"
+   },
+   {
+    "ootr": [
+     "Ganons Castle Spirit Trial Pot 1",
+     "Ganons Castle Spirit Trial Pot 2"
+    ],
+    "hashes": [
+     "13127045022912948619",
+     "6946222676302551361"
+    ],
+    "why": "room 18 = spirit trial ending (Core_F_01)"
+   },
+   {
+    "ootr": [
+     "Ganons Tower Pot 1",
+     "Ganons Tower Pot 2",
+     "Ganons Tower Pot 3",
+     "Ganons Tower Pot 4",
+     "Ganons Tower Pot 5",
+     "Ganons Tower Pot 6",
+     "Ganons Tower Pot 7",
+     "Ganons Tower Pot 8",
+     "Ganons Tower Pot 9",
+     "Ganons Tower Pot 10",
+     "Ganons Tower Pot 11",
+     "Ganons Tower Pot 12"
+    ],
+    "hashes": [
+     "17841467755509540953",
+     "16388263394523613039",
+     "1256062463004045470",
+     "17027579458987042843",
+     "12010740629239674066",
+     "7047512893980601783",
+     "5141569671064688651",
+     "8069783618440617703",
+     "1055635021226486472",
+     "6010734382728304229",
+     "7330407673084744120",
+     "1185671408211081309"
+    ],
+    "why": "room 63 floor y=156.6 between the tower shutters A_05 at z=-7.4 and z=-41.7, below Ganondorf's room and before the boss door (y=171) = OoTR Tower Below Boss; 12 remake pots vs 18"
+   }
+  ],
+  "absent": {
+   "Ganons Castle Shadow Trial Recovery Heart 1": "no placed hearts in the remake castle; shadow trial second gap holds the GG chest, step switches and a golden-gauntlet block",
+   "Ganons Castle Shadow Trial Recovery Heart 2": "no placed hearts in the remake castle; shadow trial second gap holds the GG chest, step switches and a golden-gauntlet block",
+   "Ganons Castle Shadow Trial Recovery Heart 3": "no placed hearts in the remake castle; shadow trial second gap holds the GG chest, step switches and a golden-gauntlet block",
+   "Ganons Castle Fire Trial Recovery Heart": "no placed hearts in the remake castle (fire trial room 10: sinking floors, Bubbles, silver rupees)",
+   "Ganons Castle Spirit Trial Recovery Heart": "no placed hearts in the remake castle (spirit trial room 16: Armos, Beamos, silver rupees)",
+   "Ganons Tower Pot 13": "remake tower room 63 has only 12 pots",
+   "Ganons Tower Pot 14": "remake tower room 63 has only 12 pots",
+   "Ganons Tower Pot 15": "remake tower room 63 has only 12 pots",
+   "Ganons Tower Pot 16": "remake tower room 63 has only 12 pots",
+   "Ganons Tower Pot 17": "remake tower room 63 has only 12 pots",
+   "Ganons Tower Pot 18": "remake tower room 63 has only 12 pots"
+  },
+  "excluded": {
+   "7808482170470849591": "Obj_LiftRock_C_01 / C_05 = golden-gauntlet blocks (light-trial door, fire-trial pillar, shadow trial): no save flag (no_flag in drop_objects.csv) and the actor declares no Drop__DropActor, so it cannot hold a one-time item",
+   "6251811700274725607": "Obj_LiftRock_C_01 / C_05 = golden-gauntlet blocks (light-trial door, fire-trial pillar, shadow trial): no save flag (no_flag in drop_objects.csv) and the actor declares no Drop__DropActor, so it cannot hold a one-time item",
+   "3853917559410573871": "Obj_LiftRock_C_01 / C_05 = golden-gauntlet blocks (light-trial door, fire-trial pillar, shadow trial): no save flag (no_flag in drop_objects.csv) and the actor declares no Drop__DropActor, so it cannot hold a one-time item",
+   "8144266723486145695": "Obj_LiftRock_C_01 / C_05 = golden-gauntlet blocks (light-trial door, fire-trial pillar, shadow trial): no save flag (no_flag in drop_objects.csv) and the actor declares no Drop__DropActor, so it cannot hold a one-time item"
+  }
+ }
+}

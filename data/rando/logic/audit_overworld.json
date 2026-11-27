@@ -1,0 +1,176 @@
+{
+ "_about": "Overworld requirements audit (tools/rando/parity/audit_overworld.py). One entry per place where OoTR's rule is looser than the remake. Every rule is OoTR's own rule with the remake's extra condition added (never a weaker one), except grotto entrances whose lid the remake changed: there the lid's real opener replaces OoTR's (storm lid -> can_open_storm_grotto, bomb lid -> can_open_bomb_grotto or here(can_blast_or_smash)), keeping OoTR's Stone of Agony convention. This file sorts first among data/rando/logic/*.json, so a later file that sets the same key would replace it: no key below is set by another logic file (checked against chests, dungeons, drops, shops, songs_trade, story, audit_dungeons, grotto pass included). The reason for each entry is under _why (logic_overrides reads only helpers/regions/new_regions/new_locations). OotrR study (matched against the game-side fixes): entries marked UNPROVEN take the AND of OoTR's rule and OotrR's until an in-game check; 'NOT CHANGED' entries record a study finding the files contradict.",
+ "_why": {
+  "Market Bombchu Bowling | locations | First Prize, Second Prize, Bombchus": "REMOVED: the story plugin now opens the alley at once (MiniGame_BombchuBowling Event137 case 1 -> Event297, OoTR: is_child), so OoTR's own rules apply again. Was: the remake waits for Get_StoneOfFire_IsCompleted_Exp ('Defeat King Dodongo').",
+  "Colossus Great Fairy Fountain | locations | Colossus Great Fairy Reward": "HIGH. Dm_FairyFountain_Nayru FirstTime/VisitedNoAbility: EventQueryHasRuppe Value=300, Pay -300, else DontPay. The starting wallet holds 200 (Pouch_Wallet_Small ExpansionMaxNumActor MaxNum 200); Progressive Wallet 1 = Item_Wallet_Medium, 500.",
+  "OGC Great Fairy Fountain | locations | OGC Great Fairy Reward": "HIGH. Dm_FairyFountain_Courage: HasRuppe 500 / Pay -500; needs Item_Wallet_Medium (500). The other four fairies cost 25 (Din, DMT), 50 (Power, HC), 100 (Frore, ZF), 200 (Wisdom, DMC): all fit the 200 starting wallet.",
+  "Zoras Domain | exits | ZD Shop": "HIGH. Adult Zora's Domain is ZoraDomain_Adult (frozen) until Sequence_IsAlternative_ZoraDomainAdult = adult AND SageOfWater_IsCompleted_Exp. ZoraDomain_Adult_Static places Obj_RedIce_A_03 3208597967490811039 at (-23.2,104.6,14.7) in front of the shop (shopkeeper at -29.5,104.9,20.0): a static actor (ConstPassive, Physical+Airwall bodies, no AI, no reaction), so Blue Fire cannot melt it; the alternative layout has no such ice. Web: 'Zora Shop as adult: opens only after the Water Temple'. OoTR: is_child or Blue_Fire.",
+  "Lon Lon Ranch | events | Epona, Remake Malon Epona Lesson": "HIGH. Ingo's gamble race (Npc_Hylia_Ingo_002_Adult:Talk Event12) only starts when Get_Epona_IsAfter_ReadyForGetEponaSong_Exp (Step_Get_Epona > ReadyForGetEponaSong); the only setter of the next step AfterGetEponaSong is Dm_MelodyGet_Epona Event82, the child's song lesson with Malon (the Song from Malon location, which songs_trade keeps as a scene). So Epona needs the child lesson as well as the song. The lesson event copies OoTR's Song from Malon rule.",
+  "Lon Lon Ranch | events | Links Cow": "HIGH. The Link's house cow (Animal_Cow_LinkHouse, KokiriForest_Adult_Dynamic) appears on MiniGame_HorseRace_IsNewRecord. Malon's race (MiniGame_HorseRace Event136/Event166) runs only once KakarikoVillage_LeaveKakariko_Npc_Hylia_Talon_Adult (Talon woken in Kakariko), and needs the owned horse (NoEponaTalk entry; Dm_SY_Ocarina_EponaSong EventQueryHasOwnedHorse). OoTR: can_play(Eponas_Song) and is_adult and at_day.",
+  "Goron City | events | Stop GC Rolling Goron as Adult": "MEDIUM-HIGH. Npc_Goron_DaruniaJr_Adult LifeParam NpcGoronRolling DamageRates are non-zero only for Hammer (85358548), Bomb (3237216321), Hookshot, Boomerang and type 3429998625; NormalArrow's AttackParam DamageType is 1499870550, absent, so arrows do not stop him. OoTR's Bow branch (and the Din's trick) dropped; Hammer and Hookshot added (both hurt him). Strength stays: bomb flowers are Bomb damage.",
+  "ZR Front / Zora River | locations | ZR GS Tree": "HIGH, now carried by data/rando/logic/drops.json (same move and rule, drops plugin): not repeated here. The remake moved this skulltula into Zora's River's second bean soil (Enemy_Skulltula_Gold 12370559827741970774, ZoraRiver_Child_Static, IsMagicBeanSoil, Presence Gimmick_MagicBeanSoil_ZoraRiver02).",
+  "SFM Entryway | exits | SFM Wolfos Grotto": "HIGH. The remake covers the Wolfos grotto with a Song of Storms lid, not a bombable rock (data/rando/logic/chests.json also adds it to the chest's own rule). OoTR: can_open_bomb_grotto.",
+  "Desert Colossus | locations | Colossus GS Tree": "MEDIUM (guides + files). Of the two night skulltulas (both ages), 11160993739666517210 (-73.9,105.3,-5.7) lies on the Colossus bean platform's route (Obj_SmallFarm_A_03 18132210633493190314 links an Area at (-74.6,105.1,-8.3) and an anchor at (-66.1,106.1,-3.7)): that is OoT's GS Hill. The other, 15057756765324812936 (-170.1,101.8,-47.9), is on the wall by the Spirit Temple; KeenGamer and Gamertag Mythras list it as Longshot. OoTR: Hookshot.",
+  "Gerudo Fortress | locations | GF GS Archery Range": "MEDIUM-LOW (guides). Enemy_Skulltula_Gold 13037049463363052038 (181.7,125.6,-88.6), adult, Nocturnal; no hookshot target placed near it. KeenGamer and Gamertag Mythras: Gerudo card + Longshot. OoTR: Hookshot.",
+  "Zora River | locations | ZR GS Above Bridge": "MEDIUM-LOW (guides + files). Enemy_Skulltula_Gold 9450239379321634455 (76.3,126.8,-46.4), adult, Nocturnal, 29 units from and 11 above the end (74.8,115.7,-17.8) of the bean platform of the Zora's River soil (Obj_SmallFarm_A_03 5472579534592779478). KeenGamer: bean + Hookshot; VGC: bean. The two adult ZR skulltulas share OoTR's rule, so the stricter rule follows this placement, which the drops map pairs with ZR GS Above Bridge (24 units from the bridge by the domain waterfall; the other one is 20 from the raised grotto hole).",
+  "Ganons Castle Grounds | locations | OGC GS": "MEDIUM-LOW (guides). Enemy_Skulltula_Gold 5626064870824758772 (78.4,94.1,328.4), about 9.5 above the fairy-pillar ground (84.6). Guides: 'ruined stone arch, adult, Hookshot'. OoTR: True.",
+  "Goron City | locations | GC GS Center Platform": "MEDIUM (files + guides). Enemy_Skulltula_Gold 18139423190738716302 (0.5,113.4,-1.2) on the hanging centre platform (Obj_Goron_RubyBase_B_01 4.8 units away); two Obj_HookShotTarget_A_01 on it, (0.6,104.3,6.1) and (-5.1,109.3,8.3). Guides: Hookshot. OoTR: is_adult.",
+  "GF Outside Gate | exits | Gerudo Fortress": "HIGH (matters with entrance shuffle; main's lead from SoH/OoT3DR). The desert gate Obj_Gerudo_SwitchShutter_A_01 (-28.3,104.3,-101.4) is driven by Logic/GerudoFortress_Common_305a (ActorLogicGateDoor isOpen = Gerudo_phantomdesert_gate AND adult; the same flag deletes the FldObj_AirWall_Player behind it). Only the gatekeeper Npc_Gerudo_006 (-24.7,105.1,-102.5, inside the gate, PlayerDiscoveredEventName GerudoFortress_GotoPrison) sets that flag, on her first talk (Talk Event62 Dm_Gerudo_0030 -> Event63). Arriving from the wasteland (StartPos GerudoFortress_FromHountedWasteland at -31.3,104.9,-105.1, outside the gate) with the gate never opened leaves the adult outside. OoTR: is_adult or 'GF Gate Open'.",
+  "HF Cow Grotto | locations | HF GS Cow Grotto": "Now carried by data/rando/logic/drops.json: OoTR's HF GS Cow Grotto removed (the remake's cow grotto has no gold skulltula) and the remake's crate skulltula added as 'HF Open Grotto GS 1'. Proposal to the drops plugin: the guides say a child kills a Skulltula in that grotto before the adult can break the crate; add at('HF Open Grotto', is_child and can_child_attack) to its rule unless the files show the crate is there without it.",
+  "Hyrule Field | exits | HF Tektite Grotto": "HIGH. The tektite pool room (Enemy_Tektite_Blue, 11 fish, Obj_WaterPlane, the three drops crates; anchor (-98.0,132.4,17.1), NW Hyrule Field by the castle water gate) is behind Land_Kokiri_HidingHoleCover_A_01 at (-98.0,146.5,17.1) + EventProxyRequestActor (logic HidingHole_Level_Hole_03 -> Gimmick_Ocarina_Appearance_01_7e8b): a Song of Storms lid that bombs do not break. OoTR: can_open_bomb_grotto; now can_open_storm_grotto (OoTR's Stone of Agony convention kept). Grotto lids, from the actor packs: Land_Kokiri_HidingHoleCover_A_01 and Land_Gerudo_HidingHoleCover_A_02 have pack parent Land_HidingHoleCover_DisappearSrom_Base (Obj_Invincible life; only an EventProxyRequestActor event removes them: Song of Storms, Dm_SY_Ocarina melody 5 -> SongOfTheStormSensorActor); Land_HrlField_*, Land_Kakariko_*, Land_SacredForest_* and Land_Zora_* covers have parent Land_HidingHoleCover_BrokenBomb_Base (WallCrack life, CrackStoneObject damage: Bomb 3237216321 and Hammer 85358548 = 100). Entrances followed HidingHole_Entry_01 -> HidingHole_HoleEntrance anchor; covers are NoRespawn with one instance hash in every layout.",
+  "Hyrule Field | exits | HF Open Grotto": "HIGH. OoTR's open generic grotto (gossip stone + fairy; the drops pass's crate GS 'HF Open Grotto GS 1') is under Land_HrlField_HidingHoleCover_A_01 at (39.9,144.7,342.3) (logic HidingHole_Level_Hole_08): a bomb/hammer lid, one hash in both layouts (breaking it once opens it for both ages, as OoTR's here() boulders). OoTR: True; now here(can_blast_or_smash).",
+  "Lon Lon Ranch | exits | LLR Grotto": "HIGH. The three-scrub room (and the LLR Grotto pots) is under a child-layout-only Land_HrlField_HidingHoleCover_A_01 at (-36.4,150.7,290.7) inside the ranch fence (logic HidingHole_Level_Hole_11). OoTR: is_child (an open hole in OoT); a child breaks the lid with explosives: is_child and can_blast_or_smash.",
+  "Zoras Domain | exits | ZD Storms Grotto": "HIGH. The ZD grotto (six blue rupees) is under Land_Zora_HidingHoleCover_A_01 at (17.0,100.2,-18.3), all three layouts (logic HidingHole_Level_Hole_29, no ocarina gimmick, no EventProxyRequestActor): a bomb/hammer lid, not a storm lid. OoTR: can_open_storm_grotto (a player with the song but no explosives or hammer could not get in); now can_open_bomb_grotto.",
+  "Sacred Forest Meadow | exits | SFM Storms Grotto": "HIGH. The grotto by the Minuet plaza (gossip stone and the Song of Time chest 'SFM Storms Grotto Chest') is under Land_SacredForest_HidingHoleCover_A_02 at (1.3,114.4,-85.5) (logic HidingHole_Level_Hole_23): a bomb/hammer lid. The storm lid is on the Wolfos grotto instead (SFM Entryway exit, above). OoTR: can_open_storm_grotto; now can_open_bomb_grotto.",
+  "ZR Front | exits | Zora River": "MEDIUM. Two Obj_BrokenRock_A_01 (bombs or hammer; NoRespawn) stand on the paved path at (-77.8,98.0,6.5) and (-75.7,98.1,5.0) in BOTH ZoraRiver_Child_Static and ZoraRiver_Adult_Static with the same instance hashes, with player air walls along the river below them; nothing differs for the adult. Whether an adult can climb past them is level collision (Havok, unread), so the rule covers the route the placements prove: OoTR's 'is_adult or has_explosives' and here(can_blast_or_smash) (an adult with the hammer, or either age's explosives; broken once, gone for both). The reverse exit (Zora River -> ZR Front, OoTR True) is left as OoTR's: going downstream may pass the rocks by the river, which the placements neither prove nor rule out (uncertainties).",
+  "GF Entrances Behind Crates | exits | GF Storms Grotto": "MEDIUM. Gerudo Fortress' only grotto (adult layout; HidingHole_Entry_01 at (34.5,113.5,-65.4) -> anchor (33.2,112.6,-67.8), inside a tent) has no lid but sits under/among crates (Obj_BrokenBox_A_01 at (35.4,112.6,-67.7) and (35.4,112.6,-66.6), 2.2 units from the hole; the chests pass reads it as under a crate). Its room holds the flying pots and pots the drops pass names GF Storms Grotto and the chest 'GF Crate Grotto Chest' (chests.json: is_adult and can_break_crate). OoTR's exit (Song of Storms, Stone of Agony) is kept and the crate added: is_adult and can_open_storm_grotto and can_break_crate.",
+  "Market Dog Lady House | locations | Market Lost Dog": "HIGH (OotrR study, finding A). Logic/HrlMarket_Child_Dog_Prefab_7574: the three roaming Richards (nodes 0/1/7, Animal_Dog_Richard_01_0b93/b4e2/77c5) get Logic_Create only from AND(Npc_Hylia_Soldier_003_GateOpen, NOT SubEvent_FindRichard_RichardRivival, RandomAppear_01..03) (nodes 3/4/9 -> 31/26/27); the same OR's False output creates a brown or white dog in his place. Npc_Hylia_Soldier_003_GateOpen is OoTR's 'Kakariko Village Gate Open' (story.json: the Kakariko-side letter, or open_kakariko open). OoTR: is_child and at_night. OotrR has the same rule (Discord report).",
+  "Goron City | exits | GC Grotto Platform": "HIGH (finding B). No Obj_SongOfTimeBlock or Obj_SongOfTimeSign in any GoronCity map (the same search finds them in IceCavern_Static and SacredForestMeadow_Adult_Static), so OoTR's Song of Time branch has nothing to stand on. The grotto entrance (-42.2,112.7,29.3) sits between Obj_HookShotTarget_A_03/A_01 at (-40.9,112.7,32.5)/(-40.6,114.7,32.5), both age maps. OotrR (Robophill, in game, Discord 16/11): the two chests past the sign puzzle are only reached with the Hookshot. Rule: OoTR's Hookshot branch alone.",
+  "GC Grotto Platform | exits | Goron City": "HIGH (finding B, same evidence): OoTR's (can_play(Song_of_Time) and can_use(Longshot)) way back needs the Song of Time block the remake's Goron City doesn't have; the damage and Nayru's Love branches stay. Only matters with OHKO / quadruple damage (the default damage keeps the first branch true).",
+  "Lake Hylia | exits | Water Temple Lobby": "MEDIUM-HIGH (finding C). Logic/HyruleField_LakeHylia_Common_Prefab_6a9d: the gate (node 7) opens on HavePlayedEvent.Dm_WaterTemple_0000 OR SageOfWater IsAfter Step05 (strict: Step06, set only by the temple arrival SageOfWater_Arrival_WaterTemple, so circular); the scene is requested when the switch Obj_LakeHrl_SwitchHit_A_01 (-183.8,109.3,497.1, under the water plane at y 112.5) turns on. The switch has a special case for the Iron Boots (node 15 HoldPlayerCheckBoots Boots=1 -> ForceControl; Boots=1 is the Iron Boots, WaterTemple room 14 SwitchPushedHeavyBoots). Its AI (Obj_LakeHrl_SwitchHit_A_01.root) turns on when hit and, under ForceControl, falls back to BootUp (off) when not hit: with the Iron Boots worn it doesn't latch. The vanilla game must open it with the Hookshot and Iron Boots (the Longshot is inside the temple, the Golden Scale optional); OoTR's Golden Scale + Longshot (or hookshot trick) branch is unproven in the remake, so it is dropped until an in-game check. Checked: no plugin writes Dm_WaterTemple_0000, SageOfWater steps, WaterTemple_EmitGatePillar or the 6a9d module (the entrances plugin only moves the arrival scene with the doorway). OoTR: is_adult and Hookshot and (Iron_Boots or ((Longshot or logic_water_hookshot_entry) and (Progressive_Scale, 2))).",
+  "LH Lab | locations | LH Lab Dive": "NOT CHANGED. The OotrR study (finding D) read it as child-only; the files say both ages. The adult map's AiGroup Logic/HyruleField_LakeHylia_Adult_Prefab_117e (depth counter Npc_Hylia_045_DepthOfDiving, bottom area, SinkWithHeavyBoots) drives EventRequestActor 8535654249361687283 (RequestEventName Npc_Hylia_045_AdultDivingChallenge, linked to the adult scientist 4654696001836528482). RSDB EventSetting: that row is Npc_Hylia_045_Child.evfc entry AdultDivingChallenge, which calls DivingChallenge_Common with the adult as starter; its success return (2696799221) leads to Event113, the Obj_Heart_Piece hand-over, with no age test on the way (the child map's 7fd8 / ChildDivingChallenge is the same path). OoTR's (Progressive_Scale, 2) stands for both ages.",
+  "Great Fairies | Dins_Fire (HC, ZF, DMC, Colossus, OGC Great Fairy Reward)": "REMOVED: the story plugin now re-points TriForcePoint Event8 case 1 -> Event26, so every fountain answers the Lullaby whatever Din's Fire (parity/_story_traps.py). OoTR's rules apply again (Colossus and OGC keep the wallet). Was: Dins_Fire on the five fountains other than Din's (DMT), from Event132/Event8 (IsGet.Item_DinFire). The plugin also gives each fairy her own saved 'reward given' flag (RandoGreatFairy_<name>), so finding her vanilla item first no longer loses her reward.",
+  "Kokiri Forest | locations | KF GS Know It All House": "REMOVED: the story plugin sets HyruleField_ArriveEntrance and HavePlayedEvent.Dm_HrlField_0020 on every new file, so the clock runs from the start and the Sun's Song and a night start work before Kaepora's first Hyrule Field talk. OoTR's rule applies again. Was: the Sun's Song and had_night_start branches dropped (OotrR #57, confirmed in game: the time was rewritten to 06:00 every frame until that flag).",
+  "Lake Hylia | locations | LH GS Tree": "REMOVED: the story plugin gives the island tree's FldObj_AirWall_Hookshot (HyruleField_Adult_Dynamic 9829790505452123995) the Presence Sequence_IsChildhood, so it is never on the adult map. OoTR's rule applies again. Was: + 'Remake Water Temple Longshot Chest Opened' (the wall's Presence was NOT WaterTemple_Room07_00, set by the Water Temple Longshot chest).",
+  "Water Temple Dark Link Region | events | Remake Water Temple Longshot Chest Opened": "REMOVED with LH GS Tree's rule, its only user.",
+  "Death Mountain | exits | Dodongos Cavern Beginning": "HIGH (features study item 4; findings F1). Logic/DeathMountainTrail_Child_Prefab_ffa7: the boulder scene (EventRequestActor_6e13) follows OR node 5 over the BombFruit observers; vanilla's Item_Bomb observer (node 20) fed nothing, so Link's bombs didn't break it. The story plugin wires node 20 into node 5 (OotrR's rewire, validated in game), so the Bomb Bag works; bombchus are still not watched (OoTR's has_explosives counts them with free_bombchu_drops). The boulder (Obj_DeathMtTrail_BrokenRock_A_01 -47.6,108.9,-19.7) is in DeathMountainTrail_Child_Static only. A child takes bombs out without the bracelet once the other-randos study's LiftGrade None patch is in (U1, answered in game: vanilla needs the bracelet). OoTR: has_explosives or Progressive_Strength_Upgrade or is_adult.",
+  "Death Mountain | locations | DMT Freestanding PoH": "CONFIRMED from the files (game-files answer): only the adult bean platform reaches the ledge. Heart piece 715147239509454487 (-39.66,122.21,-26.0), both age maps, on a ledge x -42.5..-38, z -29..-24.5. tools/reach.py's movement graph (walk, drop, ledge grab 2.81 adult / 2.01 child, slide) from the upper trail, the lower trail and the trail east of the rock never reaches it for either age, with or without the air walls; every Hover Boots line crosses an air wall or rock; the south curtain FldObj_AirWall_Player is in both age maps (adult 676053932848656287, child 12664807879882405627). Checked again after the heart piece became liftable: no reachable trail floor of either age lies within the Boomerang's 13 m (ExtendRange) with a clear line, so the Boomerang adds no route. OoTR: can_take_damage or can_use(Hover_Boots) or (is_adult and here(can_plant_bean and ...)); the remake walls the ledge off from the trail (level design), so only OoTR's third branch remains. Was: unproven, OotrR's rule (20/11, no source).",
+  "Kak Windmill | locations | Kak Windmill Freestanding PoH": "REMOVED: OoTR's rule is back, can_use(Boomerang) or (logic_windmill_poh and is_adult) or 'Dampes Windmill Access'. The game fix made the heart piece liftable (_story_traps.py HEART_PIECE_LIFT): Obj_Heart_Piece's LiftableRef names Obj_Item_Base's LiftableParam again, so the Boomerang (a lifter, Weapon_Boomerang LifterParam) fetches it as OoT's freestanding items; every plain Obj_Heart_Piece placement and every item look built on it. The adult route stays Dampe's grave: 'Dampes Windmill Access' = can_use(Hookshot) (the Graveyard Dampes Grave entry). Was (stopgap, same day): (logic_windmill_poh and is_adult) or 'Dampes Windmill Access', because the heart piece's LiftableRef was empty.",
+  "Hyrule Field | locations | Big Poe Kill": "REMOVED: settled from the files, OoTR's can_ride_epona and Bow and has_bottle holds (game-files answer): each Enemy_Poe_Big (HyruleField_Adult_Static, PoeBig_IsCleared HyruleField_Defeat_BigPoe_NN) appears when Epona jumps its fence; MaxLife 4 with every damage type at rate 1.0 (nothing Hookshot-only); HookshotStickType Invalid; no Hookshot node in any of its AI files; the soul (Obj_Spirit_Poe_Big) is caught by an Item_Bottle hit, riding included. Was (stopgap, same day): + can_use(Hookshot) from OotrR's 'prudence' (PR #46, no source). The per-poe checks (data/rando/extras_npcs.json big_poes.rule) are back to OoTR's rule too.",
+  "Graveyard | locations | Graveyard Freestanding PoH": "OoTR: (is_adult and can_break_crate and (here(can_plant_bean) or Longshot)) or (logic_graveyard_poh and can_use(Boomerang)). The Longshot branch doesn't exist in the remake: Kaepora saw the Longshot fail and the bean platform work. OoTR's crate isn't there either (drops.json removes 'Graveyard Freestanding PoH Crate'); can_break_crate is kept only so the rule stays at least as strict as OoTR's.",
+  "Root Exits | exits | Requiem of Spirit Warp, Bolero of Fire Warp": "HIGH (other randomizers' study: Barajador, Kaepora seen in game). The remake has no save warp and autosaves on arrival, so a warp song that lands where Link can't walk out strands him for good. Requiem's pad (Desert Colossus): neither age walks back, OoTR's own Wasteland Near Colossus -> Wasteland Near Crate is the logic_reverse_wasteland trick. Bolero's pad (DMC Central Local): the child can't leave the crater's centre (in game; OoTR's DMC Central Local exits are adult-only), the adult leaves with Hover Boots, Hookshot or pre-planted beans (OoTR's DMC Central Local -> DMC Lower/Upper Nearby; a bean planted there needs a child who can't get back). So logic counts these warps only with a way out: that adult route (Bolero) or another warp song whose pad leads home (Minuet: Sacred Forest Meadow; Serenade: Lake Hylia; Nocturne: the graveyard ledge; Prelude: the Temple of Time). With warp_songs (shuffled destinations) the names say nothing about the pads, so OoTR's rule stands and tools/rando/no_savewarp.py decides: it now counts a warp song as a way home only when its pad leads home by walking (before, any playable warp song skipped the check). OoTR: can_play(<song>) and can_leave_forest.",
+  "Graveyard Dampes Grave | exits | Kak Windmill; events | Dampes Windmill Access": "HIGH (Clawshot, played; GyroMK and Kaepora agree). The race's goal room leaves for the windmill only by the Hookshot: Graveyard_Adult_Dynamic Obj_HookShotTarget_A_01 14424380246501499337 (-26.2,92.1,77.6), transition 1143018541481239924 (UnderTheGrave_DampeReset -> KakarikoWindmill_GraveYardSide, the windmill ledge 13 units from its heart piece); no Song of Time block in any Graveyard map. OoTR: is_adult and can_play(Song_of_Time) for both. The way in and back stay OoTR's (Graveyard -> grave: is_adult; grave -> Graveyard: True): parity/_chests_dampe.py exit_ops (every seed, ItZPomme's exit validated in game) makes Dampe's talk after a race send a Link without the Hookshot or Longshot back to Graveyard_Adult, and a Link with one leaves by the windmill. (Clawshot's own grave rules, Hookshot to enter and no way back, are for a game without that fix.)"
+ },
+ "regions": {
+  "Colossus Great Fairy Fountain": {
+   "locations": {
+    "Colossus Great Fairy Reward": "can_play(Zeldas_Lullaby) and Progressive_Wallet"
+   }
+  },
+  "OGC Great Fairy Fountain": {
+   "locations": {
+    "OGC Great Fairy Reward": "can_play(Zeldas_Lullaby) and Progressive_Wallet"
+   }
+  },
+  "Zoras Domain": {
+   "exits": {
+    "ZD Shop": "is_child or (is_adult and 'Defeat Morpha')",
+    "ZD Storms Grotto": "can_open_bomb_grotto"
+   }
+  },
+  "Lon Lon Ranch": {
+   "events": {
+    "Remake Malon Epona Lesson": "is_child and Ocarina and at_day and (skip_child_zelda or at('Hyrule Castle Grounds', is_child and (Weird_Egg or Chicken)))",
+    "Epona": "can_play(Eponas_Song) and is_adult and at_day and 'Remake Malon Epona Lesson'",
+    "Links Cow": "can_play(Eponas_Song) and is_adult and at_day and Epona and 'Wake Up Adult Talon'"
+   },
+   "exits": {
+    "LLR Grotto": "is_child and can_blast_or_smash"
+   }
+  },
+  "Goron City": {
+   "events": {
+    "Stop GC Rolling Goron as Adult": "is_adult and (Progressive_Strength_Upgrade or has_explosives or can_use(Megaton_Hammer) or can_use(Hookshot))"
+   },
+   "locations": {
+    "GC GS Center Platform": "is_adult and can_use(Hookshot)"
+   },
+   "exits": {
+    "GC Grotto Platform": "is_adult and Hookshot and ((damage_multiplier != 'ohko' and Goron_Tunic) or can_use(Nayrus_Love) or (damage_multiplier != 'ohko' and damage_multiplier != 'quadruple' and logic_goron_grotto))"
+   }
+  },
+  "Zora River": {
+   "locations": {
+    "ZR GS Above Bridge": "can_use(Hookshot) and (at_night or gold_skulls_ignore_daytime) and here(can_plant_bean)"
+   }
+  },
+  "SFM Entryway": {
+   "exits": {
+    "SFM Wolfos Grotto": "can_open_storm_grotto"
+   }
+  },
+  "Desert Colossus": {
+   "locations": {
+    "Colossus GS Tree": "can_use(Longshot) and (at_night or gold_skulls_ignore_daytime)"
+   }
+  },
+  "Gerudo Fortress": {
+   "locations": {
+    "GF GS Archery Range": "can_use(Longshot) and Gerudo_Membership_Card and (at_night or gold_skulls_ignore_daytime)"
+   }
+  },
+  "GF Outside Gate": {
+   "exits": {
+    "Gerudo Fortress": "'GF Gate Open'"
+   }
+  },
+  "Ganons Castle Grounds": {
+   "locations": {
+    "OGC GS": "can_use(Hookshot)"
+   }
+  },
+  "Hyrule Field": {
+   "exits": {
+    "HF Tektite Grotto": "can_open_storm_grotto",
+    "HF Open Grotto": "here(can_blast_or_smash)"
+   }
+  },
+  "Sacred Forest Meadow": {
+   "exits": {
+    "SFM Storms Grotto": "can_open_bomb_grotto"
+   }
+  },
+  "ZR Front": {
+   "exits": {
+    "Zora River": "(is_adult or has_explosives) and here(can_blast_or_smash)"
+   }
+  },
+  "GF Entrances Behind Crates": {
+   "exits": {
+    "GF Storms Grotto": "is_adult and can_open_storm_grotto and can_break_crate"
+   }
+  },
+  "Market Dog Lady House": {
+   "locations": {
+    "Market Lost Dog": "is_child and at_night and 'Kakariko Village Gate Open'"
+   }
+  },
+  "GC Grotto Platform": {
+   "exits": {
+    "Goron City": "(damage_multiplier != 'ohko' and (damage_multiplier != 'quadruple' or can_use(Goron_Tunic))) or can_use(Nayrus_Love)"
+   }
+  },
+  "Lake Hylia": {
+   "exits": {
+    "Water Temple Lobby": "is_adult and Hookshot and Iron_Boots"
+   }
+  },
+  "Death Mountain": {
+   "exits": {
+    "Dodongos Cavern Beginning": "is_adult or Progressive_Strength_Upgrade or Bombs"
+   },
+   "locations": {
+    "DMT Freestanding PoH": "is_adult and here(can_plant_bean and (plant_beans or has_explosives or Progressive_Strength_Upgrade))"
+   }
+  },
+  "Graveyard": {
+   "locations": {
+    "Graveyard Freestanding PoH": "(is_adult and can_break_crate and here(can_plant_bean)) or (logic_graveyard_poh and can_use(Boomerang))"
+   }
+  },
+  "Root Exits": {
+   "exits": {
+    "Requiem of Spirit Warp": "can_play(Requiem_of_Spirit) and can_leave_forest and (warp_songs or can_play(Minuet_of_Forest) or can_play(Serenade_of_Water) or can_play(Nocturne_of_Shadow) or can_play(Prelude_of_Light))",
+    "Bolero of Fire Warp": "can_play(Bolero_of_Fire) and can_leave_forest and (warp_songs or (is_adult and (Hover_Boots or Hookshot or plant_beans)) or can_play(Minuet_of_Forest) or can_play(Serenade_of_Water) or can_play(Nocturne_of_Shadow) or can_play(Prelude_of_Light))"
+   }
+  },
+  "Graveyard Dampes Grave": {
+   "exits": {
+    "Kak Windmill": "can_use(Hookshot)"
+   },
+   "events": {
+    "Dampes Windmill Access": "can_use(Hookshot)"
+   }
+  }
+ }
+}

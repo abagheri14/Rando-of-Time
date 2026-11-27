@@ -1,0 +1,6082 @@
+{
+ "_about": "Built by tools/rando/parity/_story_build.py from the game files; read by story.py.",
+ "hooks": {
+  "DoorOfTime": {
+   "flowchart": "DoorOfTime",
+   "steps": {
+    "Event92": {
+     "next": "Event60",
+     "preds": [
+      [
+       "next",
+       "Event27",
+       null
+      ]
+     ],
+     "kind": "action SoundSystemActor.EventSoundRequestDucking",
+     "params": {
+      "DuckingName": "Dm:Bgmミュート(即フェード)",
+      "CommandLife": 1,
+      "DuckingName2": "",
+      "DuckingName3": ""
+     }
+    },
+    "Event60": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event92",
+       null
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryIsGameDataBoolExp",
+     "params": {
+      "GameDataName": "DoorOfTime_IsAfter_Step04_Exp"
+     }
+    },
+    "Event69": {
+     "next": null,
+     "preds": [
+      [
+       "case",
+       "Event60",
+       0
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryIsGameDataBool",
+     "params": {
+      "GameDataName": "Market_Child_TimeTempleDoor_Opened",
+      "Index": -1
+     }
+    },
+    "Event172": {
+     "next": "Event9",
+     "preds": [
+      [
+       "entry",
+       "Check_SpiritStoneBase",
+       null
+      ]
+     ],
+     "kind": "call SignboardWood:CommonFloorSignCamera",
+     "params": {
+      "dist": 3.0,
+      "upwardAngle": 20.0,
+      "ofs": [
+       0.0,
+       1.2999999523162842,
+       0.0
+      ],
+      "tole_XZAngle": 45.0
+     }
+    },
+    "Event38": {
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "DoorOfTime_CheckStoneNum",
+       null
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryIsGameDataBoolExp",
+     "params": {
+      "GameDataName": "Get_StoneOfFire_IsCompleted_Exp"
+     }
+    },
+    "Event22": {
+     "next": null,
+     "preds": [
+      [
+       "case",
+       "Event23",
+       0
+      ]
+     ],
+     "kind": "action EventSystemActor.EventTransition",
+     "params": {
+      "IsWaitEnd": true,
+      "SpecialEventActionType": 1,
+      "FadeInTypeEventEnd": 0,
+      "EventName": "Market_Child_Field_ChildToAdult"
+     }
+    },
+    "Event57": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event145",
+       null
+      ]
+     ],
+     "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+     "params": {
+      "IsIgnoreCompletedChallenge": false,
+      "IsIgnoreChallengeProgressUI": false,
+      "ChallengeName": "DoorOfTime",
+      "IsWaitEnd": true,
+      "StepName": "Step06"
+     }
+    },
+    "Event115": {
+     "next": "Event98",
+     "preds": [
+      [
+       "next",
+       "Event186",
+       null
+      ]
+     ],
+     "kind": "action PouchSystemActor.EventTriggerAddOrRemovePouchContent",
+     "params": {
+      "Num": 1,
+      "IsSetMessageTargetActorName": true,
+      "Actor": "Weapon_Sword_Master",
+      "IsEquipDIrect": true,
+      "IsGetEvent": false
+     }
+    },
+    "Event62": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event7",
+       null
+      ]
+     ],
+     "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+     "params": {
+      "IsIgnoreCompletedChallenge": false,
+      "IsIgnoreChallengeProgressUI": false,
+      "IsWaitEnd": true,
+      "ChallengeName": "Get_StoneOfFire",
+      "StepName": "KakarikoVillageNpc"
+     }
+    },
+    "Event93": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event102",
+       null
+      ]
+     ],
+     "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+     "params": {
+      "IsIgnoreCompletedChallenge": false,
+      "ChallengeName": "DoorOfTime",
+      "IsWaitEnd": true,
+      "StepName": "Complete",
+      "IsIgnoreChallengeProgressUI": false
+     }
+    },
+    "Event14": {
+     "next": "Event171",
+     "preds": [
+      [
+       "next",
+       "Event204",
+       null
+      ]
+     ],
+     "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+     "params": {
+      "IsIgnoreCompletedChallenge": false,
+      "IsIgnoreChallengeProgressUI": false,
+      "ChallengeName": "DoorOfTime",
+      "IsWaitEnd": true,
+      "StepName": "Step05"
+     }
+    }
+   }
+  },
+  "Get_StoneOfFire": {
+   "flowchart": "Get_StoneOfFire",
+   "steps": {
+    "Event39": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event185",
+       null
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryIsGameDataBoolExp",
+     "params": {
+      "GameDataName": "Get_StoneOfFire_IsAfter_SariaMelodyPlay_Exp"
+     }
+    }
+   }
+  },
+  "SubEvent_GetEponaSong": {
+   "flowchart": "SubEvent_GetEponaSong",
+   "steps": {
+    "Event36": {
+     "next": null,
+     "preds": [
+      [
+       "case",
+       "Event38",
+       1
+      ]
+     ],
+     "kind": "action GameDataActor.EventTriggerSetGameDataBool",
+     "params": {
+      "GameDataName": "IsMalonAppear_HyruleCastleSecondTime",
+      "Index": -1,
+      "Value": true
+     }
+    }
+   }
+  },
+  "SageOfFire": {
+   "flowchart": "SageOfFire",
+   "steps": {
+    "Event396": {
+     "next": "Event293",
+     "preds": [
+      [
+       "next",
+       "Event314",
+       null
+      ]
+     ],
+     "kind": "action EventSystemActor.EventWait",
+     "params": {
+      "IsWaitEnd": true,
+      "Frames": 15
+     }
+    }
+   }
+  },
+  "Npc_Goron_DaruniaJr_Adult": {
+   "flowchart": "Npc_Goron_DaruniaJr_Adult",
+   "steps": {
+    "Event99": {
+     "next": "Event28",
+     "preds": [
+      [
+       "entry",
+       "Talk",
+       null
+      ]
+     ],
+     "kind": "call :Mask_All",
+     "params": {}
+    },
+    "Event0": {
+     "next": "Event16",
+     "preds": [
+      [
+       "entry",
+       "SageOfFire_IsCompleted_Exp_Talk",
+       null
+      ]
+     ],
+     "kind": "call InitTalk:InitTalk",
+     "params": {
+      "Arg_Greeting": 4,
+      "Arg_Turn": 4
+     }
+    }
+   }
+  },
+  "AllSage": {
+   "flowchart": "AllSage",
+   "steps": {
+    "Event40": {
+     "next": "Event164",
+     "preds": [
+      [
+       "entry",
+       "Market_Adult_Field_GetArrowLight",
+       null
+      ]
+     ],
+     "kind": "action Player_Event.EventTriggerParticipateEvent",
+     "params": {}
+    },
+    "Event175": {
+     "next": "Event12",
+     "preds": [
+      [
+       "next",
+       "Event165",
+       null
+      ],
+      [
+       "entry",
+       "GetArrowLight_OcarinaBackTimeTemple",
+       null
+      ]
+     ],
+     "kind": "action Player_Event.EventTriggerEquipmentUserRequestCreateStaticEquipment",
+     "params": {
+      "EquipmentActorName": "Weapon_Sword_Master",
+      "DynamicEquipmentState": 2,
+      "IsActive": true
+     }
+    },
+    "Event10": {
+     "next": "Event11",
+     "preds": [
+      [
+       "next",
+       "Event64",
+       null
+      ],
+      [
+       "next",
+       "Event123",
+       null
+      ],
+      [
+       "next",
+       "Event124",
+       null
+      ],
+      [
+       "next",
+       "Event125",
+       null
+      ],
+      [
+       "next",
+       "Event130",
+       null
+      ]
+     ],
+     "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+     "params": {
+      "ChallengeName": "AllSage",
+      "StepName": "Complete",
+      "IsWaitEnd": true,
+      "IsIgnoreCompletedChallenge": false,
+      "IsIgnoreChallengeProgressUI": false
+     }
+    },
+    "Event11": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event10",
+       null
+      ]
+     ],
+     "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+     "params": {
+      "ChallengeName": "Defeat_Ganon",
+      "StepName": "Step01",
+      "IsWaitEnd": true,
+      "IsIgnoreCompletedChallenge": false,
+      "IsIgnoreChallengeProgressUI": false
+     }
+    },
+    "Event34": {
+     "next": "Event75",
+     "preds": [
+      [
+       "next",
+       "Event37",
+       null
+      ]
+     ],
+     "kind": "action ChallengeSystemActor.EventExecuteRollbackChallengeStep",
+     "params": {
+      "ChallengeName": "AllSage",
+      "IsIgnoreCompletedChallenge": false,
+      "IsIgnoreChallengeProgressUI": false,
+      "ChallengeStep": "Step01_01",
+      "IsWaitEnd": true
+     }
+    }
+   }
+  },
+  "Dm_SY_BancChange_EscapeDungeon": {
+   "flowchart": "Dm_SY_BancChange_EscapeDungeon",
+   "steps": {
+    "Event1": {
+     "next": "Event4",
+     "preds": [
+      [
+       "next",
+       "Event138",
+       null
+      ]
+     ],
+     "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+     "params": {
+      "IsWaitEnd": true,
+      "StepName": "Complete",
+      "ChallengeName": "Get_StoneOfForest",
+      "IsIgnoreCompletedChallenge": true,
+      "IsIgnoreChallengeProgressUI": false
+     }
+    },
+    "Event4": {
+     "next": "Event85",
+     "preds": [
+      [
+       "next",
+       "Event1",
+       null
+      ]
+     ],
+     "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+     "params": {
+      "IsWaitEnd": true,
+      "ChallengeName": "Goto_HyruleCastle",
+      "StepName": "Step01",
+      "IsIgnoreCompletedChallenge": true,
+      "IsIgnoreChallengeProgressUI": false
+     }
+    },
+    "Event208": {
+     "next": "Event174",
+     "preds": [
+      [
+       "next",
+       "Event199",
+       null
+      ]
+     ],
+     "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+     "params": {
+      "IsWaitEnd": true,
+      "ChallengeName": "AllSage",
+      "StepName": "Step01_00",
+      "IsIgnoreChallengeProgressUI": true,
+      "IsIgnoreCompletedChallenge": true
+     }
+    }
+   }
+  },
+  "ReplaceEquipmentForEraChange": {
+   "flowchart": "ReplaceEquipmentForEraChange",
+   "steps": {
+    "Event5": {
+     "next": "Event13",
+     "preds": [
+      [
+       "case",
+       "Event10",
+       0
+      ]
+     ],
+     "kind": "action GameDataActor.EventTriggerSetGameDataString64",
+     "params": {
+      "GameDataName": "PlayerStatus.AnotherEraEquipWeapon",
+      "Value": "Weapon_Sword_Master",
+      "Index": -1
+     }
+    },
+    "Event11": {
+     "next": "Event13",
+     "preds": [
+      [
+       "case",
+       "Event10",
+       1
+      ]
+     ],
+     "kind": "action GameDataActor.EventTriggerSetGameDataString64",
+     "params": {
+      "GameDataName": "PlayerStatus.AnotherEraEquipWeapon",
+      "Index": -1,
+      "Value": "Weapon_Sword_Kokiri"
+     }
+    }
+   }
+  },
+  "Market_Child_Field_ChildToAdult": {
+   "flowchart": "Market_Child_Field_ChildToAdult",
+   "steps": {
+    "Event9": {
+     "next": "Event2",
+     "preds": [
+      [
+       "entry",
+       "Market_Child_Field_ChildToAdult",
+       null
+      ]
+     ],
+     "kind": "action GameSystemActor.EventTriggerBancRequestBeforehandLoad",
+     "params": {
+      "BancPath": "Work/Banc/Scene/Market/Market_Adult.bcett.json",
+      "IsTargetRetry": false
+     }
+    }
+   }
+  },
+  "Npc_Gerudo_006": {
+   "flowchart": "Npc_Gerudo_006",
+   "steps": {
+    "Event61": {
+     "next": "Event59",
+     "preds": [
+      [
+       "next",
+       "Event6",
+       null
+      ]
+     ],
+     "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+     "params": {
+      "IsIgnoreCompletedChallenge": true,
+      "IsWaitEnd": true,
+      "IsIgnoreChallengeProgressUI": false,
+      "StepName": "Step02",
+      "ChallengeName": "SageOfSpirit"
+     }
+    }
+   }
+  },
+  "SageOfSpirit": {
+   "flowchart": "SageOfSpirit",
+   "steps": {
+    "Event146": {
+     "next": "Event292",
+     "preds": [
+      [
+       "next",
+       "Event192",
+       null
+      ]
+     ],
+     "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+     "params": {
+      "IsIgnoreCompletedChallenge": true,
+      "IsWaitEnd": true,
+      "IsIgnoreChallengeProgressUI": false,
+      "ChallengeName": "SageOfSpirit",
+      "StepName": "Step02"
+     }
+    },
+    "Event292": {
+     "next": "Event87",
+     "preds": [
+      [
+       "next",
+       "Event146",
+       null
+      ]
+     ],
+     "kind": "action Npc_Gerudo_017.EventAIScheduleWarpToAnchor",
+     "params": {
+      "IsWaitEnd": true,
+      "InstanceName": "",
+      "ForceGetUpDuringSleep": true,
+      "ArrivalState": 1,
+      "AnchorType": 6,
+      "ClothWarpMode": -1
+     }
+    }
+   }
+  },
+  "Dm_MelodyGet_Spilit": {
+   "flowchart": "Dm_MelodyGet_Spilit",
+   "steps": {
+    "Event282": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event262",
+       null
+      ]
+     ],
+     "kind": "call AllSage:MeetSheik_And_Gone",
+     "params": {}
+    }
+   }
+  },
+  "Dm_SY_BancChangeArrive": {
+   "flowchart": "Dm_SY_BancChangeArrive",
+   "steps": {
+    "Event76": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event82",
+       null
+      ]
+     ],
+     "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+     "params": {
+      "IsIgnoreCompletedChallenge": true,
+      "IsWaitEnd": true,
+      "IsIgnoreChallengeProgressUI": false,
+      "ChallengeName": "SageOfSpirit",
+      "StepName": "Step04"
+     }
+    }
+   }
+  },
+  "MiniGame_BombchuBowling": {
+   "flowchart": "MiniGame_BombchuBowling",
+   "steps": {
+    "Event137": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event140",
+       null
+      ],
+      [
+       "case",
+       "Event141",
+       0
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryIsGameDataBoolExp",
+     "params": {
+      "GameDataName": "Get_StoneOfFire_IsCompleted_Exp"
+     }
+    }
+   }
+  },
+  "Npc_Goron_Biggoron_Adult": {
+   "flowchart": "Npc_Goron_Biggoron_Adult",
+   "steps": {
+    "Event82": {
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "SubEvent_GetSwordBigGoron_Talk03",
+       null
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryCheckElapsedTime",
+     "params": {
+      "ElapsedMinute": 0,
+      "ElapsedHour": 72,
+      "GameDataName": "GetSwordBigGoron_ElapsedTime"
+     }
+    },
+    "Event71": {
+     "next": null,
+     "preds": [
+      [
+       "case",
+       "Event54",
+       1
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryCheckElapsedTime",
+     "params": {
+      "ElapsedMinute": 0,
+      "ElapsedHour": 72,
+      "GameDataName": "GetSwordBigGoron_ElapsedTime"
+     }
+    },
+    "Event115": {
+     "next": null,
+     "preds": [
+      [
+       "case",
+       "Event54",
+       0
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryCheckElapsedTime",
+     "params": {
+      "ElapsedMinute": 0,
+      "ElapsedHour": 72,
+      "GameDataName": "GetSwordBigGoron_ElapsedTime"
+     }
+    },
+    "Event116": {
+     "next": null,
+     "preds": [
+      [
+       "case",
+       "Event53",
+       0
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryCheckElapsedTime",
+     "params": {
+      "ElapsedMinute": 0,
+      "ElapsedHour": 72,
+      "GameDataName": "GetSwordBigGoron_ElapsedTime"
+     }
+    }
+   }
+  },
+  "Npc_Hylia_048_BottleShop": {
+   "flowchart": "Npc_Hylia_048_BottleShop",
+   "steps": {
+    "Event2": {
+     "next": null,
+     "preds": [
+      [
+       "case",
+       "Event16",
+       0
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryIsGameDataInt",
+     "params": {
+      "GameDataName": "GhostShop_CouponNum",
+      "Index": -1,
+      "Value": 400
+     }
+    },
+    "Event21": {
+     "next": null,
+     "preds": [
+      [
+       "case",
+       "Event27",
+       0
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryIsGameDataInt",
+     "params": {
+      "GameDataName": "GhostShop_CouponNum",
+      "Index": -1,
+      "Value": 400
+     }
+    },
+    "Event258": {
+     "next": null,
+     "preds": [
+      [
+       "case",
+       "Event61",
+       0
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryIsGameDataInt",
+     "params": {
+      "GameDataName": "GhostShop_CouponNum",
+      "Index": -1,
+      "Value": 400
+     }
+    },
+    "Event259": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event114",
+       null
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryIsGameDataInt",
+     "params": {
+      "GameDataName": "GhostShop_CouponNum",
+      "Index": -1,
+      "Value": 400
+     }
+    },
+    "Event261": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event109",
+       null
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryIsGameDataInt",
+     "params": {
+      "GameDataName": "GhostShop_CouponNum",
+      "Index": -1,
+      "Value": 400
+     }
+    },
+    "Event262": {
+     "next": null,
+     "preds": [
+      [
+       "case",
+       "Event159",
+       1
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryIsGameDataInt",
+     "params": {
+      "GameDataName": "GhostShop_CouponNum",
+      "Index": -1,
+      "Value": 400
+     }
+    },
+    "Event265": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event90",
+       null
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryIsGameDataInt",
+     "params": {
+      "GameDataName": "GhostShop_CouponNum",
+      "Index": -1,
+      "Value": 400
+     }
+    },
+    "Event70": {
+     "next": null,
+     "preds": [
+      [
+       "case",
+       "Event265",
+       2
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryIsGameDataInt",
+     "params": {
+      "GameDataName": "GhostShop_CouponNum",
+      "Index": -1,
+      "Value": 900
+     }
+    }
+   }
+  },
+  "OpeningEvent": {
+   "flowchart": "OpeningEvent",
+   "steps": {
+    "Event9": {
+     "next": "Event16",
+     "preds": [
+      [
+       "next",
+       "Event13",
+       null
+      ]
+     ],
+     "kind": "action EventWorldManagerController.EventTrigger_SetTime",
+     "params": {
+      "TimeMin": 0,
+      "TimeHour": 6
+     }
+    },
+    "Event10": {
+     "next": "Event11",
+     "preds": [
+      [
+       "next",
+       "Event4",
+       null
+      ],
+      [
+       "case",
+       "Event17",
+       1
+      ]
+     ],
+     "kind": "action Npc_Navi.EventTriggerSetHaveTalked",
+     "params": {
+      "value": true,
+      "IsReflectWhenSleep": true
+     }
+    },
+    "Event11": {
+     "next": "Event12",
+     "preds": [
+      [
+       "next",
+       "Event10",
+       null
+      ]
+     ],
+     "kind": "action EventCamera.EventTriggerSendKeepStateMessageToPlayerCamera",
+     "params": {
+      "AfterKeepEndInterpolateCountScale": 1.0,
+      "ChangeToManualModeAfterEvent": false,
+      "KeepManualModeFrame": 120.0,
+      "IsKeepWithRelativePos": false
+     }
+    }
+   }
+  },
+  "Defeat_Ganon": {
+   "flowchart": "Defeat_Ganon",
+   "steps": {
+    "Event42": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event90",
+       null
+      ]
+     ],
+     "kind": "action GameSystemActor.EventReserveBancChange",
+     "params": {
+      "IsWaitEnd": true,
+      "IsStartOnEvent": false,
+      "NextPosition": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "NextBanc": "CrumblingGanonCastle",
+      "NextStartPos": "CrumblingGanonCastle_StartPos",
+      "BootEventName": "CrumblingGanonCastle_Arrive",
+      "EventStarterName": "CrumblingGanonCastle_StartPos",
+      "NextStartRot": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "IsItemWarp": false,
+      "FadePattern": 4
+     }
+    }
+   }
+  },
+  "Dm_SY_Ocarina": {
+   "flowchart": "Dm_SY_Ocarina",
+   "steps": {
+    "Event19": {
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "EntryPoint0",
+       null
+      ]
+     ],
+     "kind": "call :PlayOcarinaFree",
+     "params": {
+      "MelodyType": 0,
+      "HasRecommendedMelody": false
+     }
+    },
+    "Event135": {
+     "next": null,
+     "preds": [
+      [
+       "case",
+       "Event137",
+       12
+      ]
+     ],
+     "kind": "query GameSystemActor.EventQueryCheckContactAreaCanCallPierre",
+     "params": {}
+    }
+   }
+  },
+  "MiniGame_DampeRace": {
+   "flowchart": "MiniGame_DampeRace",
+   "steps": {
+    "Event31": {
+     "next": "Event442",
+     "preds": [
+      [
+       "entry",
+       "Finish_Npc_Hylia_Dampe_002_StepStart",
+       null
+      ]
+     ],
+     "kind": "action ChallengeSystemActor.EventTriggerMiniGameTimerStop",
+     "params": {}
+    },
+    "Event442": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event31",
+       null
+      ]
+     ],
+     "kind": "query PouchSystemActor.EventQueryIsExistInPouch",
+     "params": {
+      "Actor": "Item_Hookshot",
+      "Num": 1
+     }
+    },
+    "Event379": {
+     "next": "Event33",
+     "preds": [
+      [
+       "case",
+       "Event442",
+       0
+      ]
+     ],
+     "kind": "call :MiniGame_DampeRace_Clear",
+     "params": {}
+    },
+    "Event33": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event379",
+       null
+      ],
+      [
+       "case",
+       "Event442",
+       1
+      ]
+     ],
+     "kind": "query GameDataActor.EventQueryIsGameDataBool",
+     "params": {
+      "Index": -1,
+      "GameDataName": "UnderTheGrave_DampeRace_SecondRace_More"
+     }
+    },
+    "Event132": {
+     "next": "Event187",
+     "preds": [
+      [
+       "next",
+       "Event130",
+       null
+      ]
+     ],
+     "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+     "params": {
+      "IsWaitEnd": true,
+      "IsIgnoreCompletedChallenge": false,
+      "ChallengeName": "SageOfForest",
+      "StepName": "Step03",
+      "IsIgnoreChallengeProgressUI": true
+     }
+    },
+    "Event187": {
+     "next": "Event224",
+     "preds": [
+      [
+       "next",
+       "Event132",
+       null
+      ]
+     ],
+     "kind": "action GameDataActor.EventTriggerSetGameDataBool",
+     "params": {
+      "Index": -1,
+      "GameDataName": "HaveTalked_Special.MiniGame_DampeRace_HookShot_Event63",
+      "Value": false
+     }
+    },
+    "Event224": {
+     "next": null,
+     "preds": [
+      [
+       "next",
+       "Event187",
+       null
+      ]
+     ],
+     "kind": "action ChallengeSystemActor.EventTriggerMiniGameTimerStart",
+     "params": {}
+    }
+   }
+  },
+  "SageOfSpirit_RescueCarpenter": {
+   "flowchart": "SageOfSpirit_RescueCarpenter",
+   "steps": {
+    "Event119": {
+     "next": "Event118",
+     "preds": [
+      [
+       "entry",
+       "GerudoFortress_DoDoor_AnotherKey_Hylia013",
+       null
+      ]
+     ],
+     "kind": "action Player_Event.EventTriggerParticipateEvent",
+     "params": {}
+    },
+    "Event113": {
+     "next": "Event112",
+     "preds": [
+      [
+       "entry",
+       "GerudoFortress_DoDoor_AnotherKey_Hylia014",
+       null
+      ]
+     ],
+     "kind": "action Player_Event.EventTriggerParticipateEvent",
+     "params": {}
+    },
+    "Event116": {
+     "next": "Event115",
+     "preds": [
+      [
+       "entry",
+       "GerudoFortress_DoDoor_AnotherKey_Hylia015",
+       null
+      ]
+     ],
+     "kind": "action Player_Event.EventTriggerParticipateEvent",
+     "params": {}
+    },
+    "Event204": {
+     "next": "Event165",
+     "preds": [
+      [
+       "entry",
+       "GerudoFortress_DoDoor_AnotherKey_Hylia016",
+       null
+      ]
+     ],
+     "kind": "action Player_Event.EventTriggerParticipateEvent",
+     "params": {}
+    }
+   }
+  }
+ },
+ "entries": {
+  "DoorOfTime": {
+   "Check_SpiritStoneBase": "Event172",
+   "DoorOfTime_CheckStoneNum": "Event38",
+   "DoorOfTime_OpenDoor": "Event18"
+  },
+  "AllSage": {
+   "Market_Adult_Field_GetArrowLight": "Event40",
+   "GetArrowLight_OcarinaBackTimeTemple": "Event175"
+  },
+  "Dm_SY_Ocarina": {
+   "EntryPoint0": "Event19",
+   "AppearPierreEventTransition": "Event109"
+  }
+ },
+ "guards": {
+  "Goto_HyruleCastle": [
+   {
+    "next": "Event141",
+    "preds": [
+     [
+      "next",
+      "Event69",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "Goto_HyruleCastle",
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": true,
+     "IsWaitEnd": true,
+     "StepName": "Step04"
+    },
+    "file": "Dm_HrlCastle_0020",
+    "flowchart": "Dm_HrlCastle_0020",
+    "event": "Event121",
+    "step": "Step04",
+    "versions": [
+     "Dm_HrlCastle_0020.110.bfevfl.zs",
+     "Dm_HrlCastle_0020.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event85",
+    "preds": [
+     [
+      "next",
+      "Event1",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Goto_HyruleCastle",
+     "StepName": "Step01",
+     "IsIgnoreCompletedChallenge": true,
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "Dm_SY_BancChange_EscapeDungeon",
+    "flowchart": "Dm_SY_BancChange_EscapeDungeon",
+    "event": "Event4",
+    "step": "Step01",
+    "versions": [
+     "Dm_SY_BancChange_EscapeDungeon.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event154",
+    "preds": [
+     [
+      "next",
+      "Event205",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "Goto_HyruleCastle",
+     "StepName": "Step02",
+     "IsIgnoreCompletedChallenge": false,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": true
+    },
+    "file": "Goto_HyruleCastle",
+    "flowchart": "Goto_HyruleCastle",
+    "event": "Event14",
+    "step": "Step02",
+    "versions": [
+     "Goto_HyruleCastle.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event176",
+    "preds": [
+     [
+      "next",
+      "Event36",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "Goto_HyruleCastle",
+     "IsIgnoreCompletedChallenge": false,
+     "StepName": "Step03",
+     "IsIgnoreChallengeProgressUI": true,
+     "IsWaitEnd": true
+    },
+    "file": "Goto_HyruleCastle",
+    "flowchart": "Goto_HyruleCastle",
+    "event": "Event46",
+    "step": "Step03",
+    "versions": [
+     "Goto_HyruleCastle.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event201",
+    "preds": [
+     [
+      "entry",
+      "Goto_HyruleCastle_EntryMarket",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "Goto_HyruleCastle",
+     "IsIgnoreCompletedChallenge": false,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": true,
+     "StepName": "Step02_01"
+    },
+    "file": "Goto_HyruleCastle",
+    "flowchart": "Goto_HyruleCastle",
+    "event": "Event51",
+    "step": "Step02_01",
+    "versions": [
+     "Goto_HyruleCastle.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event79",
+      null
+     ],
+     [
+      "next",
+      "Event86",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "Goto_HyruleCastle",
+     "IsIgnoreCompletedChallenge": false,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": true,
+     "StepName": "Step03_02"
+    },
+    "file": "Goto_HyruleCastle",
+    "flowchart": "Goto_HyruleCastle",
+    "event": "Event88",
+    "step": "Step03_02",
+    "versions": [
+     "Goto_HyruleCastle.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   }
+  ],
+  "Get_StoneOfWater": [
+   {
+    "next": "Event551",
+    "preds": [
+     [
+      "case",
+      "Event46",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfWater",
+     "StepName": "Step03",
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": true
+    },
+    "file": "Dm_SY_BancChangeArrive",
+    "flowchart": "Dm_SY_BancChangeArrive",
+    "event": "Event44",
+    "step": "Step03",
+    "versions": [
+     "Dm_SY_BancChangeArrive.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event551",
+    "preds": [
+     [
+      "case",
+      "Event46",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfWater",
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": true,
+     "StepName": "Step03_Impa"
+    },
+    "file": "Dm_SY_BancChangeArrive",
+    "flowchart": "Dm_SY_BancChangeArrive",
+    "event": "Event45",
+    "step": "Step03_Impa",
+    "versions": [
+     "Dm_SY_BancChangeArrive.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event107",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfWater",
+     "StepName": "Step04",
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": false
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event59",
+    "step": "Step04",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event205",
+    "preds": [
+     [
+      "case",
+      "Event289",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfWater",
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step05_01",
+     "IsIgnoreCompletedChallenge": true
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event67",
+    "step": "Step05_01",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event218",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "ChallengeName": "Get_StoneOfWater",
+     "StepName": "Step02",
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event80",
+    "step": "Step02",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event297",
+    "preds": [
+     [
+      "next",
+      "Event199",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "ChallengeName": "Get_StoneOfWater",
+     "StepName": "Step01",
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event64",
+    "step": "Step01",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event471",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfWater",
+     "StepName": "Step05",
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": true
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event45",
+    "step": "Step05",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event31",
+    "preds": [
+     [
+      "case",
+      "Event290",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfWater",
+     "StepName": "Step06",
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": true
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event112",
+    "step": "Step06",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event72",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfWater",
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": true,
+     "StepName": "Step05"
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event296",
+    "step": "Step05",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event85",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfWater",
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": true,
+     "StepName": "Step05_01"
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event71",
+    "step": "Step05_01",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event85",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfWater",
+     "StepName": "Step06",
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": true
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event109",
+    "step": "Step06",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   }
+  ],
+  "DoorOfTime": [
+   {
+    "next": "Event202",
+    "preds": [
+     [
+      "next",
+      "Event30",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "DoorOfTime",
+     "StepName": "Step01",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": true
+    },
+    "file": "Goto_HyruleCastle",
+    "flowchart": "Goto_HyruleCastle",
+    "event": "Event32",
+    "step": "Step01",
+    "versions": [
+     "Goto_HyruleCastle.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   }
+  ],
+  "SageOfSpirit": [
+   {
+    "next": "Event150",
+    "preds": [
+     [
+      "next",
+      "Event103",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "SageOfSpirit",
+     "StepName": "Step01"
+    },
+    "file": "Npc_Hylia_012_Adult",
+    "flowchart": "Npc_Hylia_012_Adult",
+    "event": "Event121",
+    "step": "Step01",
+    "versions": [
+     "Npc_Hylia_012_Adult.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   }
+  ],
+  "SubEvent_MaskSalesman": [
+   {
+    "next": "Event7",
+    "preds": [
+     [
+      "next",
+      "Event330",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "IsIgnoreCompletedChallenge": true,
+     "StepName": "UntilRentMaskOfBunny"
+    },
+    "file": "Npc_Hylia_023_Shop_Child",
+    "flowchart": "Npc_Hylia_023_Shop_Child",
+    "event": "Event58",
+    "step": "UntilRentMaskOfBunny",
+    "versions": [
+     "Npc_Hylia_023_Shop_Child.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event7",
+    "preds": [
+     [
+      "next",
+      "Event329",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "IsIgnoreCompletedChallenge": true,
+     "StepName": "UntilRentMaskOfSpooky"
+    },
+    "file": "Npc_Hylia_023_Shop_Child",
+    "flowchart": "Npc_Hylia_023_Shop_Child",
+    "event": "Event59",
+    "step": "UntilRentMaskOfSpooky",
+    "versions": [
+     "Npc_Hylia_023_Shop_Child.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event7",
+    "preds": [
+     [
+      "next",
+      "Event180",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "IsIgnoreCompletedChallenge": true,
+     "StepName": "UntilRentMaskOfSkull"
+    },
+    "file": "Npc_Hylia_023_Shop_Child",
+    "flowchart": "Npc_Hylia_023_Shop_Child",
+    "event": "Event60",
+    "step": "UntilRentMaskOfSkull",
+    "versions": [
+     "Npc_Hylia_023_Shop_Child.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event262",
+    "preds": [
+     [
+      "next",
+      "Event57",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "IsIgnoreCompletedChallenge": true,
+     "StepName": "UntilRentMaskOfKeaton"
+    },
+    "file": "Npc_Hylia_023_Shop_Child",
+    "flowchart": "Npc_Hylia_023_Shop_Child",
+    "event": "Event86",
+    "step": "UntilRentMaskOfKeaton",
+    "versions": [
+     "Npc_Hylia_023_Shop_Child.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event59",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step06"
+    },
+    "file": "Npc_Hylia_030_Child",
+    "flowchart": "Npc_Hylia_030_Child",
+    "event": "Event230",
+    "step": "Step06",
+    "versions": [
+     "Npc_Hylia_030_Child.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event67",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step06"
+    },
+    "file": "Npc_Hylia_030_Child",
+    "flowchart": "Npc_Hylia_030_Child",
+    "event": "Event276",
+    "step": "Step06",
+    "versions": [
+     "Npc_Hylia_030_Child.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event263",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step06"
+    },
+    "file": "Npc_Hylia_030_Child",
+    "flowchart": "Npc_Hylia_030_Child",
+    "event": "Event278",
+    "step": "Step06",
+    "versions": [
+     "Npc_Hylia_030_Child.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event80",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "IsIgnoreCompletedChallenge": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step01",
+     "IsWaitEnd": true
+    },
+    "file": "Npc_Hylia_042_Child",
+    "flowchart": "Npc_Hylia_042_Child",
+    "event": "Event132",
+    "step": "Step01",
+    "versions": [
+     "Npc_Hylia_042_Child.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event81",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": true,
+     "StepName": "Step03"
+    },
+    "file": "Npc_Hylia_042_Child",
+    "flowchart": "Npc_Hylia_042_Child",
+    "event": "Event133",
+    "step": "Step03",
+    "versions": [
+     "Npc_Hylia_042_Child.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event82",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": true,
+     "StepName": "Step05"
+    },
+    "file": "Npc_Hylia_042_Child",
+    "flowchart": "Npc_Hylia_042_Child",
+    "event": "Event134",
+    "step": "Step05",
+    "versions": [
+     "Npc_Hylia_042_Child.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event83",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": true,
+     "StepName": "Step07"
+    },
+    "file": "Npc_Hylia_042_Child",
+    "flowchart": "Npc_Hylia_042_Child",
+    "event": "Event135",
+    "step": "Step07",
+    "versions": [
+     "Npc_Hylia_042_Child.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event141",
+    "preds": [
+     [
+      "next",
+      "Event119",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step08"
+    },
+    "file": "SubEvent_MaskSalesman",
+    "flowchart": "SubEvent_MaskSalesman",
+    "event": "Event121",
+    "step": "Step08",
+    "versions": [
+     "SubEvent_MaskSalesman.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event25",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "StepName": "Step02",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "SubEvent_MaskSalesman",
+    "flowchart": "SubEvent_MaskSalesman",
+    "event": "Event27",
+    "step": "Step02",
+    "versions": [
+     "SubEvent_MaskSalesman.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event97",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "StepName": "Step02",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "SubEvent_MaskSalesman",
+    "flowchart": "SubEvent_MaskSalesman",
+    "event": "Event84",
+    "step": "Step02",
+    "versions": [
+     "SubEvent_MaskSalesman.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event109",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "StepName": "Step02",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "SubEvent_MaskSalesman",
+    "flowchart": "SubEvent_MaskSalesman",
+    "event": "Event86",
+    "step": "Step02",
+    "versions": [
+     "SubEvent_MaskSalesman.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event360",
+    "preds": [
+     [
+      "next",
+      "Event64",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step04"
+    },
+    "file": "SubEvent_MaskSalesman",
+    "flowchart": "SubEvent_MaskSalesman",
+    "event": "Event89",
+    "step": "Step04",
+    "versions": [
+     "SubEvent_MaskSalesman.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event360",
+    "preds": [
+     [
+      "next",
+      "Event344",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step04"
+    },
+    "file": "SubEvent_MaskSalesman",
+    "flowchart": "SubEvent_MaskSalesman",
+    "event": "Event98",
+    "step": "Step04",
+    "versions": [
+     "SubEvent_MaskSalesman.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event304",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step04"
+    },
+    "file": "SubEvent_MaskSalesman",
+    "flowchart": "SubEvent_MaskSalesman",
+    "event": "Event100",
+    "step": "Step04",
+    "versions": [
+     "SubEvent_MaskSalesman.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event145",
+    "preds": [
+     [
+      "next",
+      "Event359",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SubEvent_MaskSalesman",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step08"
+    },
+    "file": "SubEvent_MaskSalesman",
+    "flowchart": "SubEvent_MaskSalesman",
+    "event": "Event156",
+    "step": "Step08",
+    "versions": [
+     "SubEvent_MaskSalesman.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   }
+  ]
+ },
+ "enums": {
+  "AllSage": [
+   "NotReady",
+   "Ready",
+   "Step01",
+   "Step01_00",
+   "Step01_00_01",
+   "Step01_00_02",
+   "Step01_00_03",
+   "Step01_01",
+   "Step01_02",
+   "Step02",
+   "Complete"
+  ],
+  "Defeat_Ganon": [
+   "NotReady",
+   "Ready",
+   "Step01",
+   "Step02",
+   "Step03",
+   "Step04",
+   "Step05",
+   "Step06",
+   "Step07",
+   "Step08",
+   "Step09",
+   "Complete"
+  ],
+  "DoorOfTime": [
+   "NotReady",
+   "Ready",
+   "Step01",
+   "Step02",
+   "Step2_1",
+   "Srep2_1_1",
+   "Step2_2",
+   "Step03",
+   "Step04",
+   "Step05",
+   "Step06",
+   "Complete"
+  ],
+  "Get_Epona": [
+   "NotReady",
+   "Ready",
+   "GuideToLonLonRanch",
+   "GuideToLonLonRanchAdult",
+   "ReadyForGetEponaSong",
+   "AfterGetEponaSong",
+   "ReadyForGambleRace",
+   "AfterTalkMalon",
+   "GambleRacePlaying",
+   "AfterWonGambleRace",
+   "Complete"
+  ],
+  "Get_StoneOfFire": [
+   "NotReady",
+   "Ready",
+   "KakarikoVillageNpc",
+   "KakarikoVillageLetter",
+   "DeathMtTrailIn",
+   "DeathMtTrailNpc",
+   "GoronCityIn",
+   "GoronCityDarniaroomNpcTalk01",
+   "GoronCityDarniaroomOpen",
+   "GoronCityDarniaTalk",
+   "DarniaRoomKokiriTalk",
+   "KokiriForestNPCTalk",
+   "KokiriForestFire",
+   "KokiriForestIn",
+   "SariaMelodyGet",
+   "SariaMelodyPlay",
+   "DodongoCavernOpne",
+   "DungeonStart",
+   "BossBattle",
+   "EscapeDungeon",
+   "Complete"
+  ],
+  "Get_StoneOfWater": [
+   "NotReady",
+   "Ready",
+   "Step01",
+   "Step02",
+   "Step03",
+   "Step03_Impa",
+   "Step04",
+   "Step05",
+   "Step05_01",
+   "Step06",
+   "Step07",
+   "Step08",
+   "Step09",
+   "Step10",
+   "Step11",
+   "Step12",
+   "Step13",
+   "Step13_01",
+   "Step14",
+   "Complete"
+  ],
+  "Goto_HyruleCastle": [
+   "NotReady",
+   "Ready",
+   "Step01",
+   "Step02",
+   "Step02_01",
+   "Step03",
+   "Step03_01",
+   "Step03_02",
+   "Step04",
+   "Complete"
+  ],
+  "Meet_DekuTree": [
+   "NotReady",
+   "Ready",
+   "Step01",
+   "Step02",
+   "Step03",
+   "Complete"
+  ],
+  "SageOfFire": [
+   "NotReady",
+   "Ready",
+   "StopDaruniaJr",
+   "TalkDaruniaJr",
+   "MoveStatue",
+   "EnterCrater",
+   "MeetSheik",
+   "EnterTemple",
+   "MeetDarunia",
+   "GetBossKey",
+   "MeetBoss",
+   "DefeatBoss",
+   "GoToWarpPoint",
+   "Complete"
+  ],
+  "SageOfForest": [
+   "NotReady",
+   "Ready",
+   "Step01",
+   "Step02",
+   "Step03",
+   "Step04",
+   "Step05",
+   "Step06",
+   "Step06_1_0",
+   "Step06_1_1",
+   "Step06_1_2",
+   "Step06_2",
+   "Step07",
+   "Step08",
+   "Step09",
+   "Complete"
+  ],
+  "SageOfShadow": [
+   "NotReady",
+   "Ready",
+   "GoToDungeon",
+   "GotGlassTruth",
+   "GetGlassTruth",
+   "MeetBoss",
+   "BattleOnShip",
+   "BeforeBossRoom",
+   "DefeatBoss",
+   "GoToWarpPoint",
+   "Complete"
+  ],
+  "SageOfSpirit": [
+   "NotReady",
+   "Ready",
+   "Step01",
+   "Step02",
+   "Step03",
+   "Step04",
+   "Step05",
+   "Step05_01",
+   "Step05_02",
+   "Step05_03",
+   "Step06",
+   "Step07",
+   "Step07_pre00",
+   "Step07_00",
+   "Step08",
+   "Step08_01",
+   "Step09",
+   "Step09_01",
+   "Step10",
+   "Complete"
+  ],
+  "SageOfWater": [
+   "NotReady",
+   "Ready",
+   "Step00",
+   "Step01",
+   "Step03",
+   "Step04",
+   "Step05",
+   "Step06",
+   "Step07",
+   "Step07_00",
+   "Step07_1",
+   "Step07_1_Safety",
+   "Step07_2",
+   "Step08",
+   "Complete"
+  ],
+  "SubEvent_MaskSalesman": [
+   "NotReady",
+   "Ready",
+   "UntilRentMaskOfKeaton",
+   "Step01_Hint",
+   "Step01",
+   "Step02",
+   "UntilRentMaskOfSkull",
+   "Step03_Hint",
+   "Step03",
+   "Step04",
+   "UntilRentMaskOfSpooky",
+   "Step05_Hint",
+   "Step05",
+   "Step06",
+   "UntilRentMaskOfBunny",
+   "Step07_Hint",
+   "Step07",
+   "Step08",
+   "Complete"
+  ]
+ },
+ "actors": {
+  "DoorOfTime": [
+   "EventSystemActor",
+   "GameSystemActor",
+   "ChallengeSystemActor",
+   "GameDataActor",
+   "Player_Event",
+   "EventProxyRequestActor",
+   "EventCamera",
+   "UISystemActor",
+   "EventWorldManagerController",
+   "Npc_Navi",
+   "PouchSystemActor",
+   "Npc_Hylia_Impa_Child",
+   "SignBoard_EventStarter",
+   "SoundSystemActor",
+   "EventRequestActor",
+   "PostProcessingActor"
+  ],
+  "Get_StoneOfFire": [
+   "Npc_Goron_Darunia_Child",
+   "EventSystemActor",
+   "ChallengeSystemActor",
+   "GameDataActor",
+   "Player_Event",
+   "Enemy_DungeonBoss_Dodongo",
+   "GameSystemActor",
+   "SoundSystemActor",
+   "EventCamera",
+   "UISystemActor",
+   "Npc_EventStarter",
+   "Npc_Navi",
+   "EventProxyRequestActor",
+   "EventSystemActor",
+   "EventWorldManagerController"
+  ],
+  "SubEvent_GetEponaSong": [
+   "EventSystemActor",
+   "Player_Event",
+   "GameSystemActor",
+   "Npc_Hylia_Malon_Child",
+   "GameDataActor",
+   "Npc_EventStarter",
+   "EventWorldManagerController",
+   "UISystemActor",
+   "Npc_Hylia_Talon_Child_SecondTime",
+   "EventCamera"
+  ],
+  "SageOfFire": [
+   "EventSystemActor",
+   "ChallengeSystemActor",
+   "Npc_EventStarter",
+   "GameSystemActor",
+   "GameDataActor",
+   "Npc_Goron_DaruniaJr_Adult",
+   "Player_Event",
+   "EventCamera",
+   "Enemy_DungeonBoss_Volvagia",
+   "Npc_Navi",
+   "SoundSystemActor",
+   "PouchSystemActor",
+   "UISystemActor",
+   "Npc_Goron_DaruniaJr_Adult",
+   "Npc_Goron_DaruniaJr_Adult",
+   "EventEffectEmitter",
+   "TerrainSystemActor",
+   "DoorShutter_EventStarter",
+   "PostProcessingActor",
+   "Npc_Goron_DaruniaJr_Adult",
+   "Npc_Goron_DaruniaJr_Adult",
+   "Npc_Goron_DaruniaJr_Adult",
+   "Npc_Goron_DaruniaJr_Adult",
+   "Npc_Goron_DaruniaJr_Adult",
+   "Npc_Goron_DaruniaJr_Adult"
+  ],
+  "Npc_Goron_DaruniaJr_Adult": [
+   "Npc_EventStarter",
+   "GameDataActor",
+   "GameSystemActor",
+   "Npc_Goron_DaruniaJr_Adult",
+   "Player_Event",
+   "EventSystemActor"
+  ],
+  "AllSage": [
+   "ChallengeSystemActor",
+   "EventSystemActor",
+   "GameDataActor",
+   "Player_Event",
+   "Npc_Navi",
+   "SoundSystemActor",
+   "EventCamera",
+   "UISystemActor",
+   "Npc_Hylia_Sheik_Adult",
+   "GameSystemActor"
+  ],
+  "Dm_SY_BancChange_EscapeDungeon": [
+   "EventSystemActor",
+   "ChallengeSystemActor",
+   "GameDataActor",
+   "Player_Event",
+   "GameSystemActor",
+   "EventCamera",
+   "UISystemActor",
+   "Npc_Navi",
+   "Npc_Kokiri_Mido_Child",
+   "EventWorldManagerController",
+   "DevelopEventSystemActor",
+   "SoundSystemActor",
+   "Npc_Zora_Ruto_Child_002",
+   "Npc_JabuJabu",
+   "Land_Kokiri_DekuTree_A_04"
+  ],
+  "ReplaceEquipmentForEraChange": [
+   "GameDataActor",
+   "EventSystemActor",
+   "Player_Event",
+   "PouchSystemActor"
+  ],
+  "Market_Child_Field_ChildToAdult": [
+   "GameDataActor",
+   "EventSystemActor",
+   "GameSystemActor",
+   "PouchSystemActor",
+   "Player_Event"
+  ],
+  "Npc_Gerudo_006": [
+   "Npc_EventStarter",
+   "GameDataActor",
+   "EventSystemActor",
+   "Player_Event",
+   "ChallengeSystemActor",
+   "Npc_Gerudo_006",
+   "EventCamera",
+   "UISystemActor",
+   "Animal_Epona_Adult",
+   "GameSystemActor"
+  ],
+  "SageOfSpirit": [
+   "EventSystemActor",
+   "ChallengeSystemActor",
+   "GameDataActor",
+   "Npc_EventStarter",
+   "GameSystemActor",
+   "SoundSystemActor",
+   "EventCamera",
+   "Player_Event",
+   "Npc_Gerudo_001",
+   "UISystemActor",
+   "Enemy_DungeonBoss_Twinrova",
+   "Npc_Navi",
+   "Enemy_MiddleBoss_IronKnuckle_Nabooru",
+   "Npc_Gerudo_Nabooru_Child",
+   "Enemy_DungeonBoss_Kotake",
+   "Enemy_DungeonBoss_Koume",
+   "Npc_Gerudo_017",
+   "Obj_Gerudo_SwitchShutter_A_08",
+   "Npc_Gerudo_015",
+   "Npc_Gerudo_014",
+   "Npc_Gerudo_018",
+   "Npc_Gerudo_011",
+   "Npc_Gerudo_001",
+   "DoorShutter_EventStarter",
+   "Dm_Npc_Kotake",
+   "Dm_Npc_Koume",
+   "Enemy_MiddleBoss_GerudoThief",
+   "EventSystemActor",
+   "GameSystemActor",
+   "Npc_Gerudo_HideOutGuard"
+  ],
+  "Dm_MelodyGet_Spilit": [
+   "GameSystemActor",
+   "EventSystemActor",
+   "Npc_Hylia_Sheik_Adult",
+   "EventCamera",
+   "Npc_Navi",
+   "PostProcessingActor",
+   "Player_Event",
+   "GameDataActor",
+   "Npc_Kaepora",
+   "Dm_Locator",
+   "Dm_Item_Sheik_Harp",
+   "DevelopEventSystemActor",
+   "SoundSystemActor",
+   "EventWorldManagerController",
+   "Item_Ocarina_Time",
+   "EventSystemActor",
+   "Dm_Locator",
+   "EventSystemActor",
+   "Dm_Locator"
+  ],
+  "Dm_SY_BancChangeArrive": [
+   "UISystemActor",
+   "GameSystemActor",
+   "EventCamera",
+   "Player_Event",
+   "Dm_Locator",
+   "EventSystemActor",
+   "GameDataActor",
+   "ChallengeSystemActor",
+   "Npc_Navi",
+   "PouchSystemActor",
+   "SoundSystemActor",
+   "Npc_Hylia_007_Adult",
+   "Npc_Hylia_010_Adult",
+   "PostProcessingActor",
+   "Animal_Epona_Adult"
+  ],
+  "MiniGame_BombchuBowling": [
+   "Npc_EventStarter",
+   "GameSystemActor",
+   "ChallengeSystemActor",
+   "EventSystemActor",
+   "GameDataActor",
+   "UISystemActor",
+   "Player_Event",
+   "Obj_HrlCity_Shop_HitTarget_A_01",
+   "Obj_HrlCity_Shop_HitTarget_A_01",
+   "Npc_Hylia_067_Shop_Child",
+   "PouchSystemActor",
+   "EventCamera",
+   "Obj_HrlCity_Shop_Target_A_02",
+   "Obj_HrlCity_Shop_Target_A_03",
+   "Obj_HrlCity_Shop_Target_A_01",
+   "Obj_HrlCity_Shop_Target_A_04",
+   "Obj_HrlCity_Shop_Target_A_05",
+   "Obj_Door_ShopBombBoring",
+   "SoundSystemActor",
+   "Dm_Locator",
+   "Npc_Navi"
+  ],
+  "Npc_Goron_Biggoron_Adult": [
+   "Npc_Goron_Biggoron_Adult",
+   "EventCamera",
+   "GameDataActor",
+   "GameSystemActor",
+   "EventSystemActor",
+   "Player_Event",
+   "PouchSystemActor",
+   "ChallengeSystemActor",
+   "Npc_EventStarter",
+   "Npc_Navi",
+   "Item_Sword_Biggoron",
+   "Item_Sword_BrokenGiant",
+   "Item_Sword_Giant",
+   "Dm_Locator"
+  ],
+  "Npc_Hylia_048_BottleShop": [
+   "Npc_EventStarter",
+   "PouchSystemActor",
+   "GameDataActor",
+   "GameSystemActor",
+   "EventSystemActor",
+   "ChallengeSystemActor",
+   "UISystemActor",
+   "Npc_Hylia_048_BottleShop",
+   "Player_Event",
+   "EventCamera"
+  ],
+  "OpeningEvent": [
+   "EventSystemActor",
+   "ChallengeSystemActor",
+   "EventWorldManagerController",
+   "Npc_Navi",
+   "EventCamera",
+   "GameSystemActor",
+   "Player_Event",
+   "SoundSystemActor",
+   "UISystemActor",
+   "TerrainSystemActor"
+  ],
+  "Defeat_Ganon": [
+   "ChallengeSystemActor",
+   "EventSystemActor",
+   "Player_Event",
+   "GameDataActor",
+   "GameSystemActor",
+   "UISystemActor",
+   "PouchSystemActor",
+   "EventCamera",
+   "Enemy_DungeonBoss_Ganondorf",
+   "Enemy_DungeonBoss_Ganon_SecondHalfBattle",
+   "Enemy_DungeonBoss_Ganon",
+   "Npc_Navi",
+   "EventWorldManagerController",
+   "EventRequestActor",
+   "WorldMgrThunderMgr",
+   "SoundSystemActor",
+   "Npc_Hylia_Zelda_Adult",
+   "Enemy_Floormaster",
+   "Enemy_Floormaster",
+   "Enemy_Floormaster",
+   "Enemy_Floormaster",
+   "Enemy_Floormaster",
+   "Enemy_Floormaster",
+   "Enemy_Floormaster",
+   "Enemy_Floormaster",
+   "Enemy_Wallmaster",
+   "Enemy_Wallmaster",
+   "Enemy_Wallmaster",
+   "Enemy_Floormaster",
+   "EventProxyRequestActor",
+   "PostProcessingActor",
+   "Obj_InsideGanonCastle_SageSymbol_A_01",
+   "Obj_InsideGanonCastle_SageSymbol_A_02",
+   "Obj_InsideGanonCastle_SageSymbol_A_03",
+   "Obj_InsideGanonCastle_SageSymbol_A_04",
+   "Obj_InsideGanonCastle_SageSymbol_A_05",
+   "Obj_InsideGanonCastle_SageSymbol_A_06"
+  ],
+  "Dm_SY_Ocarina": [
+   "EventSystemActor",
+   "GameSystemActor",
+   "Player_Event",
+   "EventCamera",
+   "SystemTextNPC",
+   "UISystemActor",
+   "PouchSystemActor",
+   "GameDataActor",
+   "PostProcessingActor",
+   "Dm_Locator",
+   "Npc_Navi",
+   "SoundSystemActor",
+   "PostProcessingActor",
+   "EventWorldManagerController",
+   "PostProcessingActor",
+   "ChallengeSystemActor"
+  ],
+  "MiniGame_DampeRace": [
+   "Npc_EventStarter",
+   "GameSystemActor",
+   "ChallengeSystemActor",
+   "GameDataActor",
+   "EventSystemActor",
+   "Npc_Hylia_Dampe_002",
+   "PouchSystemActor",
+   "EventCamera",
+   "Player_Event",
+   "UISystemActor",
+   "MiniGame_Supporter",
+   "Npc_Navi",
+   "PostProcessingActor",
+   "SoundSystemActor"
+  ],
+  "SageOfSpirit_RescueCarpenter": [
+   "EventSystemActor",
+   "GameDataActor",
+   "Npc_EventStarter",
+   "GameSystemActor",
+   "SoundSystemActor",
+   "EventCamera",
+   "Player_Event",
+   "UISystemActor",
+   "Npc_Hylia_016_Adult",
+   "Npc_Hylia_015_Adult",
+   "Npc_Hylia_014_Adult",
+   "Npc_Hylia_013_Adult",
+   "Enemy_MiddleBoss_GerudoThief_04",
+   "Enemy_MiddleBoss_GerudoThief",
+   "Enemy_MiddleBoss_GerudoThief_02",
+   "Enemy_MiddleBoss_GerudoThief_03",
+   "Npc_Navi",
+   "Obj_Dungeon_SmallKey_GerudoFortress_01",
+   "Obj_Dungeon_SmallKey_GerudoFortress_02",
+   "Obj_Dungeon_SmallKey_GerudoFortress_03",
+   "Obj_Dungeon_SmallKey_GerudoFortress_04",
+   "Dm_Locator",
+   "Dm_Locator",
+   "Dm_Locator",
+   "Dm_Locator",
+   "Dm_Locator",
+   "Dm_Locator",
+   "Dm_Locator",
+   "Dm_Locator",
+   "Dm_Locator",
+   "Dm_Locator",
+   "Dm_Locator",
+   "Dm_Locator",
+   "Npc_Gerudo_017",
+   "Npc_Invisible_GerudoThief",
+   "Enemy_MiddleBoss_GerudoThief",
+   "Enemy_MiddleBoss_GerudoThief_04",
+   "Npc_Hylia_016_Adult",
+   "Dm_Locator",
+   "Obj_Dungeon_SmallKey",
+   "Enemy_MiddleBoss_GerudoThief",
+   "Dm_Locator",
+   "Enemy_MiddleBoss_GerudoThief",
+   "Dm_Locator",
+   "Npc_Hylia_016_Adult",
+   "Enemy_MiddleBoss_GerudoThief_04",
+   "Npc_Hylia_016_Adult",
+   "Dm_Locator",
+   "Enemy_MiddleBoss_GerudoThief",
+   "Enemy_MiddleBoss_GerudoThief",
+   "Enemy_MiddleBoss_GerudoThief",
+   "Enemy_MiddleBoss_GerudoThief"
+  ]
+ },
+ "requests": {
+  "AllSage": [
+   {
+    "next": "Event11",
+    "preds": [
+     [
+      "next",
+      "Event64",
+      null
+     ],
+     [
+      "next",
+      "Event123",
+      null
+     ],
+     [
+      "next",
+      "Event124",
+      null
+     ],
+     [
+      "next",
+      "Event125",
+      null
+     ],
+     [
+      "next",
+      "Event130",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "AllSage",
+     "StepName": "Complete",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "AllSage",
+    "flowchart": "AllSage",
+    "event": "Event10",
+    "step": "Complete",
+    "versions": [
+     "AllSage.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event19",
+    "preds": [
+     [
+      "next",
+      "Event1",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "AllSage",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step01"
+    },
+    "file": "AllSage",
+    "flowchart": "AllSage",
+    "event": "Event18",
+    "step": "Step01",
+    "versions": [
+     "AllSage.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event8",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "AllSage",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step02"
+    },
+    "file": "AllSage",
+    "flowchart": "AllSage",
+    "event": "Event20",
+    "step": "Step02",
+    "versions": [
+     "AllSage.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event174",
+    "preds": [
+     [
+      "next",
+      "Event199",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "AllSage",
+     "StepName": "Step01_00",
+     "IsIgnoreChallengeProgressUI": true,
+     "IsIgnoreCompletedChallenge": true
+    },
+    "file": "Dm_SY_BancChange_EscapeDungeon",
+    "flowchart": "Dm_SY_BancChange_EscapeDungeon",
+    "event": "Event208",
+    "step": "Step01_00",
+    "versions": [
+     "Dm_SY_BancChange_EscapeDungeon.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event292",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "AllSage",
+     "IsIgnoreChallengeProgressUI": true,
+     "IsIgnoreCompletedChallenge": true,
+     "StepName": "Step01_00_01"
+    },
+    "file": "Dm_SY_BancChange_EscapeDungeon",
+    "flowchart": "Dm_SY_BancChange_EscapeDungeon",
+    "event": "Event306",
+    "step": "Step01_00_01",
+    "versions": [
+     "Dm_SY_BancChange_EscapeDungeon.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event291",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "AllSage",
+     "IsIgnoreChallengeProgressUI": true,
+     "IsIgnoreCompletedChallenge": true,
+     "StepName": "Step01_00_02"
+    },
+    "file": "Dm_SY_BancChange_EscapeDungeon",
+    "flowchart": "Dm_SY_BancChange_EscapeDungeon",
+    "event": "Event307",
+    "step": "Step01_00_02",
+    "versions": [
+     "Dm_SY_BancChange_EscapeDungeon.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event292",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "AllSage",
+     "IsIgnoreChallengeProgressUI": true,
+     "IsIgnoreCompletedChallenge": true,
+     "StepName": "Step01_00_02"
+    },
+    "file": "Dm_SY_BancChange_EscapeDungeon",
+    "flowchart": "Dm_SY_BancChange_EscapeDungeon",
+    "event": "Event308",
+    "step": "Step01_00_02",
+    "versions": [
+     "Dm_SY_BancChange_EscapeDungeon.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event291",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "AllSage",
+     "IsIgnoreChallengeProgressUI": true,
+     "IsIgnoreCompletedChallenge": true,
+     "StepName": "Step01_00_01"
+    },
+    "file": "Dm_SY_BancChange_EscapeDungeon",
+    "flowchart": "Dm_SY_BancChange_EscapeDungeon",
+    "event": "Event311",
+    "step": "Step01_00_01",
+    "versions": [
+     "Dm_SY_BancChange_EscapeDungeon.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event55",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "AllSage",
+     "IsIgnoreChallengeProgressUI": true,
+     "IsIgnoreCompletedChallenge": true,
+     "StepName": "Step01_00_03"
+    },
+    "file": "Dm_SY_BancChange_EscapeDungeon",
+    "flowchart": "Dm_SY_BancChange_EscapeDungeon",
+    "event": "Event314",
+    "step": "Step01_00_03",
+    "versions": [
+     "Dm_SY_BancChange_EscapeDungeon.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   }
+  ],
+  "SageOfForest": [
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event18",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "SageOfForest",
+     "StepName": "Step01"
+    },
+    "file": "AllSage",
+    "flowchart": "AllSage",
+    "event": "Event19",
+    "step": "Step01",
+    "versions": [
+     "AllSage.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event8",
+    "preds": [
+     [
+      "next",
+      "Event4",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfForest",
+     "StepName": "Step05",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "Dm_ForestTemple_0000",
+    "flowchart": "Dm_ForestTemple_0000",
+    "event": "Event10",
+    "step": "Step05",
+    "versions": [
+     "Dm_ForestTemple_0000.bfevfl.zs"
+    ],
+    "has_gamedata": false
+   },
+   {
+    "next": "Event306",
+    "preds": [
+     [
+      "next",
+      "Event45",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfForest",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step06"
+    },
+    "file": "Dm_ForestTemple_0010",
+    "flowchart": "Dm_ForestTemple_0010",
+    "event": "Event2",
+    "step": "Step06",
+    "versions": [
+     "Dm_ForestTemple_0010.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event8",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfForest",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": true,
+     "StepName": "Step06_1_1"
+    },
+    "file": "Dm_ForestTemple_0015",
+    "flowchart": "Dm_ForestTemple_0015",
+    "event": "Event14",
+    "step": "Step06_1_1",
+    "versions": [
+     "Dm_ForestTemple_0015.bfevfl.zs"
+    ],
+    "has_gamedata": false
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event34",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfForest",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "StepName": "Step06_1_0",
+     "IsIgnoreChallengeProgressUI": true
+    },
+    "file": "Dm_ForestTemple_0017",
+    "flowchart": "Dm_ForestTemple_0017",
+    "event": "Event45",
+    "step": "Step06_1_0",
+    "versions": [
+     "Dm_ForestTemple_0017.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event208",
+    "preds": [
+     [
+      "next",
+      "Event251",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfForest",
+     "StepName": "Complete",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "Dm_SY_BancChange_EscapeDungeon",
+    "flowchart": "Dm_SY_BancChange_EscapeDungeon",
+    "event": "Event199",
+    "step": "Complete",
+    "versions": [
+     "Dm_SY_BancChange_EscapeDungeon.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event11",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfForest",
+     "StepName": "Step02",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "MiniGame_DampeRace",
+    "flowchart": "MiniGame_DampeRace",
+    "event": "Event12",
+    "step": "Step02",
+    "versions": [
+     "MiniGame_DampeRace.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event156",
+    "preds": [
+     [
+      "next",
+      "Event136",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "StepName": "Step02",
+     "ChallengeName": "SageOfForest",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "MiniGame_DampeRace",
+    "flowchart": "MiniGame_DampeRace",
+    "event": "Event97",
+    "step": "Step02",
+    "versions": [
+     "MiniGame_DampeRace.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event187",
+    "preds": [
+     [
+      "next",
+      "Event130",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "ChallengeName": "SageOfForest",
+     "StepName": "Step03",
+     "IsIgnoreChallengeProgressUI": true
+    },
+    "file": "MiniGame_DampeRace",
+    "flowchart": "MiniGame_DampeRace",
+    "event": "Event132",
+    "step": "Step03",
+    "versions": [
+     "MiniGame_DampeRace.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event0",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfForest",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step06_2"
+    },
+    "file": "SageOfForest",
+    "flowchart": "SageOfForest",
+    "event": "Event5",
+    "step": "Step06_2",
+    "versions": [
+     "SageOfForest.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event24",
+    "preds": [
+     [
+      "next",
+      "Event64",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfForest",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step09"
+    },
+    "file": "SageOfForest",
+    "flowchart": "SageOfForest",
+    "event": "Event8",
+    "step": "Step09",
+    "versions": [
+     "SageOfForest.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event102",
+    "preds": [
+     [
+      "case",
+      "Event6",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfForest",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step08"
+    },
+    "file": "SageOfForest",
+    "flowchart": "SageOfForest",
+    "event": "Event59",
+    "step": "Step08",
+    "versions": [
+     "SageOfForest.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   }
+  ],
+  "SageOfSpirit": [
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event78",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "SageOfSpirit",
+     "StepName": "Step05_01"
+    },
+    "file": "AllSage",
+    "flowchart": "AllSage",
+    "event": "Event76",
+    "step": "Step05_01",
+    "versions": [
+     "AllSage.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event83",
+    "preds": [
+     [
+      "next",
+      "Event80",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "ChallengeName": "SageOfSpirit",
+     "StepName": "Step05_03",
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "AllSage",
+    "flowchart": "AllSage",
+    "event": "Event79",
+    "step": "Step05_03",
+    "versions": [
+     "AllSage.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event82",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "SageOfSpirit",
+     "StepName": "Step04"
+    },
+    "file": "Dm_SY_BancChangeArrive",
+    "flowchart": "Dm_SY_BancChangeArrive",
+    "event": "Event76",
+    "step": "Step04",
+    "versions": [
+     "Dm_SY_BancChangeArrive.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event94",
+    "preds": [
+     [
+      "case",
+      "Event95",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfSpirit",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step07_00"
+    },
+    "file": "Dm_SY_BancChangeArrive",
+    "flowchart": "Dm_SY_BancChangeArrive",
+    "event": "Event97",
+    "step": "Step07_00",
+    "versions": [
+     "Dm_SY_BancChangeArrive.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event106",
+    "preds": [
+     [
+      "case",
+      "Event100",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "SageOfSpirit",
+     "StepName": "Step03"
+    },
+    "file": "Dm_SY_BancChangeArrive",
+    "flowchart": "Dm_SY_BancChangeArrive",
+    "event": "Event104",
+    "step": "Step03",
+    "versions": [
+     "Dm_SY_BancChangeArrive.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event177",
+    "preds": [
+     [
+      "next",
+      "Event143",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfSpirit",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Complete"
+    },
+    "file": "Dm_SY_BancChange_EscapeDungeon",
+    "flowchart": "Dm_SY_BancChange_EscapeDungeon",
+    "event": "Event141",
+    "step": "Complete",
+    "versions": [
+     "Dm_SY_BancChange_EscapeDungeon.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event14",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "SageOfSpirit",
+     "StepName": "Step05_02"
+    },
+    "file": "NaviTips",
+    "flowchart": "NaviTips",
+    "event": "Event12",
+    "step": "Step05_02",
+    "versions": [
+     "NaviTips.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event19",
+    "preds": [
+     [
+      "next",
+      "Event16",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "ChallengeName": "SageOfSpirit",
+     "StepName": "Step05_03",
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "NaviTips",
+    "flowchart": "NaviTips",
+    "event": "Event15",
+    "step": "Step05_03",
+    "versions": [
+     "NaviTips.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event59",
+    "preds": [
+     [
+      "next",
+      "Event6",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step02",
+     "ChallengeName": "SageOfSpirit"
+    },
+    "file": "Npc_Gerudo_006",
+    "flowchart": "Npc_Gerudo_006",
+    "event": "Event61",
+    "step": "Step02",
+    "versions": [
+     "Npc_Gerudo_006.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event150",
+    "preds": [
+     [
+      "next",
+      "Event103",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "SageOfSpirit",
+     "StepName": "Step01"
+    },
+    "file": "Npc_Hylia_012_Adult",
+    "flowchart": "Npc_Hylia_012_Adult",
+    "event": "Event121",
+    "step": "Step01",
+    "versions": [
+     "Npc_Hylia_012_Adult.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event90",
+    "preds": [
+     [
+      "next",
+      "Event411",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "SageOfSpirit",
+     "StepName": "Step06"
+    },
+    "file": "SageOfSpirit",
+    "flowchart": "SageOfSpirit",
+    "event": "Event2",
+    "step": "Step06",
+    "versions": [
+     "SageOfSpirit.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event89",
+    "preds": [
+     [
+      "next",
+      "Event164",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfSpirit",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step07"
+    },
+    "file": "SageOfSpirit",
+    "flowchart": "SageOfSpirit",
+    "event": "Event21",
+    "step": "Step07",
+    "versions": [
+     "SageOfSpirit.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event358",
+    "preds": [
+     [
+      "next",
+      "Event27",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfSpirit",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step10"
+    },
+    "file": "SageOfSpirit",
+    "flowchart": "SageOfSpirit",
+    "event": "Event24",
+    "step": "Step10",
+    "versions": [
+     "SageOfSpirit.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event412",
+    "preds": [
+     [
+      "next",
+      "Event86",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfSpirit",
+     "IsIgnoreCompletedChallenge": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step08",
+     "IsWaitEnd": true
+    },
+    "file": "SageOfSpirit",
+    "flowchart": "SageOfSpirit",
+    "event": "Event121",
+    "step": "Step08",
+    "versions": [
+     "SageOfSpirit.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event292",
+    "preds": [
+     [
+      "next",
+      "Event192",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "SageOfSpirit",
+     "StepName": "Step02"
+    },
+    "file": "SageOfSpirit",
+    "flowchart": "SageOfSpirit",
+    "event": "Event146",
+    "step": "Step02",
+    "versions": [
+     "SageOfSpirit.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event414",
+    "preds": [
+     [
+      "case",
+      "Event172",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfSpirit",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step09_01"
+    },
+    "file": "SageOfSpirit",
+    "flowchart": "SageOfSpirit",
+    "event": "Event183",
+    "step": "Step09_01",
+    "versions": [
+     "SageOfSpirit.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event79",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfSpirit",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step07_pre00"
+    },
+    "file": "SageOfSpirit",
+    "flowchart": "SageOfSpirit",
+    "event": "Event402",
+    "step": "Step07_pre00",
+    "versions": [
+     "SageOfSpirit.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event413",
+    "preds": [
+     [
+      "next",
+      "Event333",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfSpirit",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step08_01"
+    },
+    "file": "SageOfSpirit",
+    "flowchart": "SageOfSpirit",
+    "event": "Event22",
+    "step": "Step08_01",
+    "versions": [
+     "SageOfSpirit.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   }
+  ],
+  "Get_StoneOfFire": [
+   {
+    "next": "Event128",
+    "preds": [
+     [
+      "next",
+      "Event130",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "Get_StoneOfFire",
+     "StepName": "DodongoCavernOpne"
+    },
+    "file": "Dm_Goron_0030",
+    "flowchart": "Dm_Goron_0030",
+    "event": "Event121",
+    "step": "DodongoCavernOpne",
+    "versions": [
+     "Dm_Goron_0030.bfevfl.zs"
+    ],
+    "has_gamedata": false
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event160",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "Get_StoneOfFire",
+     "StepName": "SariaMelodyGet"
+    },
+    "file": "Dm_SY_BancChangeArrive",
+    "flowchart": "Dm_SY_BancChangeArrive",
+    "event": "Event158",
+    "step": "SariaMelodyGet",
+    "versions": [
+     "Dm_SY_BancChangeArrive.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event51",
+    "preds": [
+     [
+      "case",
+      "Event164",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "Get_StoneOfFire",
+     "StepName": "SariaMelodyGet",
+     "IsIgnoreCompletedChallenge": true
+    },
+    "file": "Dm_SY_BancChangeArrive",
+    "flowchart": "Dm_SY_BancChangeArrive",
+    "event": "Event163",
+    "step": "SariaMelodyGet",
+    "versions": [
+     "Dm_SY_BancChangeArrive.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event49",
+    "preds": [
+     [
+      "next",
+      "Event70",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "Get_StoneOfFire",
+     "StepName": "Complete"
+    },
+    "file": "Dm_SY_BancChange_EscapeDungeon",
+    "flowchart": "Dm_SY_BancChange_EscapeDungeon",
+    "event": "Event46",
+    "step": "Complete",
+    "versions": [
+     "Dm_SY_BancChange_EscapeDungeon.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event7",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfFire",
+     "StepName": "KakarikoVillageNpc"
+    },
+    "file": "DoorOfTime",
+    "flowchart": "DoorOfTime",
+    "event": "Event62",
+    "step": "KakarikoVillageNpc",
+    "versions": [
+     "DoorOfTime.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event221",
+    "preds": [
+     [
+      "case",
+      "Event91",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "Get_StoneOfFire",
+     "StepName": "BossBattle"
+    },
+    "file": "Get_StoneOfFire",
+    "flowchart": "Get_StoneOfFire",
+    "event": "Event4",
+    "step": "BossBattle",
+    "versions": [
+     "Get_StoneOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event69",
+    "preds": [
+     [
+      "next",
+      "Event128",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "Get_StoneOfFire",
+     "StepName": "EscapeDungeon"
+    },
+    "file": "Get_StoneOfFire",
+    "flowchart": "Get_StoneOfFire",
+    "event": "Event8",
+    "step": "EscapeDungeon",
+    "versions": [
+     "Get_StoneOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event38",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "Get_StoneOfFire",
+     "StepName": "GoronCityIn"
+    },
+    "file": "Get_StoneOfFire",
+    "flowchart": "Get_StoneOfFire",
+    "event": "Event47",
+    "step": "GoronCityIn",
+    "versions": [
+     "Get_StoneOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event48",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "Get_StoneOfFire",
+     "StepName": "KakarikoVillageLetter"
+    },
+    "file": "Get_StoneOfFire",
+    "flowchart": "Get_StoneOfFire",
+    "event": "Event49",
+    "step": "KakarikoVillageLetter",
+    "versions": [
+     "Get_StoneOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event62",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "Get_StoneOfFire",
+     "StepName": "GoronCityDarniaroomNpcTalk01"
+    },
+    "file": "Get_StoneOfFire",
+    "flowchart": "Get_StoneOfFire",
+    "event": "Event51",
+    "step": "GoronCityDarniaroomNpcTalk01",
+    "versions": [
+     "Get_StoneOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event54",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "Get_StoneOfFire",
+     "StepName": "GoronCityDarniaroomOpen"
+    },
+    "file": "Get_StoneOfFire",
+    "flowchart": "Get_StoneOfFire",
+    "event": "Event56",
+    "step": "GoronCityDarniaroomOpen",
+    "versions": [
+     "Get_StoneOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event43",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "Get_StoneOfFire",
+     "StepName": "KokiriForestNPCTalk"
+    },
+    "file": "Get_StoneOfFire",
+    "flowchart": "Get_StoneOfFire",
+    "event": "Event59",
+    "step": "KokiriForestNPCTalk",
+    "versions": [
+     "Get_StoneOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event44",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "Get_StoneOfFire",
+     "StepName": "GoronCityDarniaTalk"
+    },
+    "file": "Get_StoneOfFire",
+    "flowchart": "Get_StoneOfFire",
+    "event": "Event57",
+    "step": "GoronCityDarniaTalk",
+    "versions": [
+     "Get_StoneOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event127",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "Get_StoneOfFire",
+     "StepName": "KokiriForestFire"
+    },
+    "file": "Get_StoneOfFire",
+    "flowchart": "Get_StoneOfFire",
+    "event": "Event67",
+    "step": "KokiriForestFire",
+    "versions": [
+     "Get_StoneOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event83",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "Get_StoneOfFire",
+     "StepName": "SariaMelodyPlay"
+    },
+    "file": "Get_StoneOfFire",
+    "flowchart": "Get_StoneOfFire",
+    "event": "Event86",
+    "step": "SariaMelodyPlay",
+    "versions": [
+     "Get_StoneOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event88",
+    "preds": [
+     [
+      "entry",
+      "Get_StoneOfFire_KakarikoVillageLetter",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "Get_StoneOfFire",
+     "StepName": "DeathMtTrailIn"
+    },
+    "file": "Get_StoneOfFire",
+    "flowchart": "Get_StoneOfFire",
+    "event": "Event152",
+    "step": "DeathMtTrailIn",
+    "versions": [
+     "Get_StoneOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "entry",
+      "Get_StoneOfFire_DeathMtTrailIn",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "Get_StoneOfFire",
+     "StepName": "DeathMtTrailNpc"
+    },
+    "file": "Get_StoneOfFire",
+    "flowchart": "Get_StoneOfFire",
+    "event": "Event156",
+    "step": "DeathMtTrailNpc",
+    "versions": [
+     "Get_StoneOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event146",
+    "preds": [
+     [
+      "next",
+      "Event141",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "Get_StoneOfFire",
+     "StepName": "DarniaRoomKokiriTalk"
+    },
+    "file": "Get_StoneOfFire",
+    "flowchart": "Get_StoneOfFire",
+    "event": "Event169",
+    "step": "DarniaRoomKokiriTalk",
+    "versions": [
+     "Get_StoneOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   }
+  ],
+  "Get_Epona": [
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event93",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "Get_Epona",
+     "IsIgnoreChallengeProgressUI": true,
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "StepName": "AfterWonGambleRace"
+    },
+    "file": "Dm_LonLon_0040",
+    "flowchart": "Dm_LonLon_0040",
+    "event": "Event108",
+    "step": "AfterWonGambleRace",
+    "versions": [
+     "Dm_LonLon_0040.bfevfl.zs"
+    ],
+    "has_gamedata": false
+   },
+   {
+    "next": "Event120",
+    "preds": [
+     [
+      "next",
+      "Event81",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "Get_Epona",
+     "StepName": "AfterGetEponaSong"
+    },
+    "file": "Dm_MelodyGet_Epona",
+    "flowchart": "Dm_MelodyGet_Epona",
+    "event": "Event82",
+    "step": "AfterGetEponaSong",
+    "versions": [
+     "Dm_MelodyGet_Epona.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event610",
+    "preds": [
+     [
+      "next",
+      "Event169",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "Get_Epona",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "StepName": "Complete",
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "Get_Epona",
+    "flowchart": "Get_Epona",
+    "event": "Event200",
+    "step": "Complete",
+    "versions": [
+     "Get_Epona.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event344",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "StepName": "GuideToLonLonRanch",
+     "ChallengeName": "Get_Epona"
+    },
+    "file": "Get_Epona",
+    "flowchart": "Get_Epona",
+    "event": "Event345",
+    "step": "GuideToLonLonRanch",
+    "versions": [
+     "Get_Epona.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "entry",
+      "Get_Epona_ReadyForGetEponaSong",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_Epona",
+     "StepName": "ReadyForGetEponaSong"
+    },
+    "file": "Get_Epona",
+    "flowchart": "Get_Epona",
+    "event": "Event346",
+    "step": "ReadyForGetEponaSong",
+    "versions": [
+     "Get_Epona.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event423",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "StepName": "GuideToLonLonRanch",
+     "ChallengeName": "Get_Epona"
+    },
+    "file": "Get_Epona",
+    "flowchart": "Get_Epona",
+    "event": "Event424",
+    "step": "GuideToLonLonRanch",
+    "versions": [
+     "Get_Epona.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event0",
+    "preds": [
+     [
+      "case",
+      "Event14",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "Get_Epona",
+     "StepName": "ReadyForGambleRace",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "Npc_Hylia_Ingo_002_Adult",
+    "flowchart": "Npc_Hylia_Ingo_002_Adult",
+    "event": "Event90",
+    "step": "ReadyForGambleRace",
+    "versions": [
+     "Npc_Hylia_Ingo_002_Adult.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event108",
+    "preds": [
+     [
+      "case",
+      "Event178",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "Get_Epona",
+     "IsIgnoreChallengeProgressUI": true,
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "StepName": "AfterTalkMalon"
+    },
+    "file": "Npc_Hylia_Malon_Adult",
+    "flowchart": "Npc_Hylia_Malon_Adult",
+    "event": "Event86",
+    "step": "AfterTalkMalon",
+    "versions": [
+     "Npc_Hylia_Malon_Adult.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event179",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "Get_Epona",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "StepName": "GuideToLonLonRanchAdult",
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "Npc_Hylia_Malon_Adult",
+    "flowchart": "Npc_Hylia_Malon_Adult",
+    "event": "Event177",
+    "step": "GuideToLonLonRanchAdult",
+    "versions": [
+     "Npc_Hylia_Malon_Adult.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   }
+  ],
+  "Get_StoneOfWater": [
+   {
+    "next": "Event551",
+    "preds": [
+     [
+      "case",
+      "Event46",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfWater",
+     "StepName": "Step03",
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": true
+    },
+    "file": "Dm_SY_BancChangeArrive",
+    "flowchart": "Dm_SY_BancChangeArrive",
+    "event": "Event44",
+    "step": "Step03",
+    "versions": [
+     "Dm_SY_BancChangeArrive.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event551",
+    "preds": [
+     [
+      "case",
+      "Event46",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfWater",
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": true,
+     "StepName": "Step03_Impa"
+    },
+    "file": "Dm_SY_BancChangeArrive",
+    "flowchart": "Dm_SY_BancChangeArrive",
+    "event": "Event45",
+    "step": "Step03_Impa",
+    "versions": [
+     "Dm_SY_BancChangeArrive.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event171",
+    "preds": [
+     [
+      "next",
+      "Event75",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "StepName": "Complete",
+     "ChallengeName": "Get_StoneOfWater"
+    },
+    "file": "Dm_SY_BancChange_EscapeDungeon",
+    "flowchart": "Dm_SY_BancChange_EscapeDungeon",
+    "event": "Event77",
+    "step": "Complete",
+    "versions": [
+     "Dm_SY_BancChange_EscapeDungeon.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event152",
+    "preds": [
+     [
+      "next",
+      "Event283",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "Get_StoneOfWater",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "StepName": "Step11",
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event9",
+    "step": "Step11",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event43",
+    "preds": [
+     [
+      "next",
+      "Event15",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "Get_StoneOfWater",
+     "IsWaitEnd": true,
+     "StepName": "Step09",
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": true
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event14",
+    "step": "Step09",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event252",
+    "preds": [
+     [
+      "next",
+      "Event153",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "Get_StoneOfWater",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "StepName": "Step10",
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event27",
+    "step": "Step10",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event107",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfWater",
+     "StepName": "Step04",
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": false
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event59",
+    "step": "Step04",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event151",
+    "preds": [
+     [
+      "next",
+      "Event231",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "ChallengeName": "Get_StoneOfWater",
+     "StepName": "Step07",
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event65",
+    "step": "Step07",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event205",
+    "preds": [
+     [
+      "case",
+      "Event289",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfWater",
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step05_01",
+     "IsIgnoreCompletedChallenge": true
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event67",
+    "step": "Step05_01",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event218",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "ChallengeName": "Get_StoneOfWater",
+     "StepName": "Step02",
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event80",
+    "step": "Step02",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event297",
+    "preds": [
+     [
+      "next",
+      "Event199",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "ChallengeName": "Get_StoneOfWater",
+     "StepName": "Step01",
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event64",
+    "step": "Step01",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event471",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfWater",
+     "StepName": "Step05",
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": true
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event45",
+    "step": "Step05",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event58",
+    "preds": [
+     [
+      "next",
+      "Event54",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "Get_StoneOfWater",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "StepName": "Step12",
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event77",
+    "step": "Step12",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event432",
+    "preds": [
+     [
+      "next",
+      "Event311",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "Get_StoneOfWater",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "StepName": "Step14",
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event89",
+    "step": "Step14",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event31",
+    "preds": [
+     [
+      "case",
+      "Event290",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfWater",
+     "StepName": "Step06",
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": true
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event112",
+    "step": "Step06",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event410",
+    "preds": [
+     [
+      "next",
+      "Event149",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "Get_StoneOfWater",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step13_01"
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event17",
+    "step": "Step13_01",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event72",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfWater",
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": true,
+     "StepName": "Step05"
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event296",
+    "step": "Step05",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event85",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfWater",
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": true,
+     "StepName": "Step05_01"
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event71",
+    "step": "Step05_01",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event85",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "ChallengeName": "Get_StoneOfWater",
+     "StepName": "Step06",
+     "IsIgnoreChallengeProgressUI": false,
+     "IsIgnoreCompletedChallenge": true
+    },
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "event": "Event109",
+    "step": "Step06",
+    "versions": [
+     "Get_StoneOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   }
+  ],
+  "SageOfWater": [
+   {
+    "next": "Event47",
+    "preds": [
+     [
+      "case",
+      "Event127",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "ChallengeName": "SageOfWater",
+     "IsIgnoreCompletedChallenge": false,
+     "StepName": "Step03"
+    },
+    "file": "Dm_SY_BancChangeArrive",
+    "flowchart": "Dm_SY_BancChangeArrive",
+    "event": "Event126",
+    "step": "Step03",
+    "versions": [
+     "Dm_SY_BancChangeArrive.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event467",
+      1
+     ],
+     [
+      "case",
+      "Event465",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "ChallengeName": "SageOfWater",
+     "StepName": "Step06"
+    },
+    "file": "Dm_SY_BancChangeArrive",
+    "flowchart": "Dm_SY_BancChangeArrive",
+    "event": "Event129",
+    "step": "Step06",
+    "versions": [
+     "Dm_SY_BancChangeArrive.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event175",
+    "preds": [
+     [
+      "next",
+      "Event252",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "StepName": "Complete",
+     "ChallengeName": "SageOfWater"
+    },
+    "file": "Dm_SY_BancChange_EscapeDungeon",
+    "flowchart": "Dm_SY_BancChange_EscapeDungeon",
+    "event": "Event41",
+    "step": "Complete",
+    "versions": [
+     "Dm_SY_BancChange_EscapeDungeon.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event50",
+    "preds": [
+     [
+      "next",
+      "Event7",
+      null
+     ],
+     [
+      "next",
+      "Event20",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfWater",
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Step00"
+    },
+    "file": "Npc_Zora_010_Adult",
+    "flowchart": "Npc_Zora_010_Adult",
+    "event": "Event46",
+    "step": "Step00",
+    "versions": [
+     "Npc_Zora_010_Adult.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event62",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "ChallengeName": "SageOfWater",
+     "StepName": "Step07"
+    },
+    "file": "SageOfWater",
+    "flowchart": "SageOfWater",
+    "event": "Event6",
+    "step": "Step07",
+    "versions": [
+     "SageOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event115",
+    "preds": [
+     [
+      "next",
+      "Event244",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "ChallengeName": "SageOfWater",
+     "StepName": "Step08"
+    },
+    "file": "SageOfWater",
+    "flowchart": "SageOfWater",
+    "event": "Event19",
+    "step": "Step08",
+    "versions": [
+     "SageOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event66",
+    "preds": [
+     [
+      "case",
+      "Event265",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "ChallengeName": "SageOfWater",
+     "IsIgnoreCompletedChallenge": false,
+     "StepName": "Step05"
+    },
+    "file": "SageOfWater",
+    "flowchart": "SageOfWater",
+    "event": "Event39",
+    "step": "Step05",
+    "versions": [
+     "SageOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event4",
+    "preds": [
+     [
+      "next",
+      "Event249",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "ChallengeName": "SageOfWater",
+     "StepName": "Step07_2"
+    },
+    "file": "SageOfWater",
+    "flowchart": "SageOfWater",
+    "event": "Event35",
+    "step": "Step07_2",
+    "versions": [
+     "SageOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event285",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "ChallengeName": "SageOfWater",
+     "IsIgnoreCompletedChallenge": false,
+     "StepName": "Step05"
+    },
+    "file": "SageOfWater",
+    "flowchart": "SageOfWater",
+    "event": "Event280",
+    "step": "Step05",
+    "versions": [
+     "SageOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event284",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "ChallengeName": "SageOfWater",
+     "IsIgnoreCompletedChallenge": false,
+     "StepName": "Step04"
+    },
+    "file": "SageOfWater",
+    "flowchart": "SageOfWater",
+    "event": "Event282",
+    "step": "Step04",
+    "versions": [
+     "SageOfWater.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   }
+  ],
+  "SageOfShadow": [
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event309",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "SageOfShadow",
+     "StepName": "MeetBoss",
+     "IsIgnoreCompletedChallenge": true
+    },
+    "file": "Dm_SY_BancChangeArrive",
+    "flowchart": "Dm_SY_BancChangeArrive",
+    "event": "Event137",
+    "step": "MeetBoss",
+    "versions": [
+     "Dm_SY_BancChangeArrive.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event304",
+    "preds": [
+     [
+      "case",
+      "Event79",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "SageOfShadow",
+     "StepName": "GoToDungeon",
+     "IsIgnoreCompletedChallenge": false
+    },
+    "file": "Dm_SY_BancChangeArrive",
+    "flowchart": "Dm_SY_BancChangeArrive",
+    "event": "Event49",
+    "step": "GoToDungeon",
+    "versions": [
+     "Dm_SY_BancChangeArrive.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event304",
+    "preds": [
+     [
+      "case",
+      "Event79",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "SageOfShadow",
+     "IsIgnoreCompletedChallenge": false,
+     "StepName": "GotGlassTruth"
+    },
+    "file": "Dm_SY_BancChangeArrive",
+    "flowchart": "Dm_SY_BancChangeArrive",
+    "event": "Event176",
+    "step": "GotGlassTruth",
+    "versions": [
+     "Dm_SY_BancChangeArrive.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event55",
+    "preds": [
+     [
+      "next",
+      "Event94",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "Complete",
+     "ChallengeName": "SageOfShadow",
+     "IsIgnoreCompletedChallenge": false
+    },
+    "file": "Dm_SY_BancChange_EscapeDungeon",
+    "flowchart": "Dm_SY_BancChange_EscapeDungeon",
+    "event": "Event73",
+    "step": "Complete",
+    "versions": [
+     "Dm_SY_BancChange_EscapeDungeon.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event59",
+    "preds": [
+     [
+      "next",
+      "Event11",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "GoToWarpPoint",
+     "ChallengeName": "SageOfShadow",
+     "IsIgnoreCompletedChallenge": false
+    },
+    "file": "SageOfShadow",
+    "flowchart": "SageOfShadow",
+    "event": "Event2",
+    "step": "GoToWarpPoint",
+    "versions": [
+     "SageOfShadow.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event36",
+    "preds": [
+     [
+      "next",
+      "Event55",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "DefeatBoss",
+     "ChallengeName": "SageOfShadow",
+     "IsIgnoreCompletedChallenge": false
+    },
+    "file": "SageOfShadow",
+    "flowchart": "SageOfShadow",
+    "event": "Event7",
+    "step": "DefeatBoss",
+    "versions": [
+     "SageOfShadow.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   }
+  ],
+  "SageOfFire": [
+   {
+    "next": "Event173",
+    "preds": [
+     [
+      "case",
+      "Event39",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfFire",
+     "IsIgnoreCompletedChallenge": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "StepName": "Complete"
+    },
+    "file": "Dm_SY_BancChange_EscapeDungeon",
+    "flowchart": "Dm_SY_BancChange_EscapeDungeon",
+    "event": "Event40",
+    "step": "Complete",
+    "versions": [
+     "Dm_SY_BancChange_EscapeDungeon.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event436",
+    "preds": [
+     [
+      "next",
+      "Event93",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfFire",
+     "IsIgnoreCompletedChallenge": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "StepName": "TalkDaruniaJr"
+    },
+    "file": "SageOfFire",
+    "flowchart": "SageOfFire",
+    "event": "Event9",
+    "step": "TalkDaruniaJr",
+    "versions": [
+     "SageOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event39",
+    "preds": [
+     [
+      "next",
+      "Event31",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfFire",
+     "IsIgnoreCompletedChallenge": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "StepName": "MoveStatue"
+    },
+    "file": "SageOfFire",
+    "flowchart": "SageOfFire",
+    "event": "Event13",
+    "step": "MoveStatue",
+    "versions": [
+     "SageOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event103",
+    "preds": [
+     [
+      "next",
+      "Event3",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfFire",
+     "IsIgnoreCompletedChallenge": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "StepName": "GetBossKey"
+    },
+    "file": "SageOfFire",
+    "flowchart": "SageOfFire",
+    "event": "Event32",
+    "step": "GetBossKey",
+    "versions": [
+     "SageOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event180",
+    "preds": [
+     [
+      "next",
+      "Event186",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "SageOfFire",
+     "StepName": "GoToWarpPoint"
+    },
+    "file": "SageOfFire",
+    "flowchart": "SageOfFire",
+    "event": "Event100",
+    "step": "GoToWarpPoint",
+    "versions": [
+     "SageOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "entry",
+      "SageOfFire_MeetBoss",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfFire",
+     "IsIgnoreCompletedChallenge": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "IsWaitEnd": true,
+     "StepName": "MeetBoss"
+    },
+    "file": "SageOfFire",
+    "flowchart": "SageOfFire",
+    "event": "Event390",
+    "step": "MeetBoss",
+    "versions": [
+     "SageOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event329",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "SageOfFire",
+     "IsIgnoreCompletedChallenge": true,
+     "IsIgnoreChallengeProgressUI": false,
+     "StepName": "StopDaruniaJr",
+     "IsWaitEnd": true
+    },
+    "file": "SageOfFire",
+    "flowchart": "SageOfFire",
+    "event": "Event4",
+    "step": "StopDaruniaJr",
+    "versions": [
+     "SageOfFire.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   }
+  ],
+  "DoorOfTime": [
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event173",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "DoorOfTime",
+     "IsIgnoreChallengeProgressUI": true,
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "StepName": "Srep2_1_1"
+    },
+    "file": "Dm_SY_Ocarina_SariaSong",
+    "flowchart": "Dm_SY_Ocarina_SariaSong",
+    "event": "Event172",
+    "step": "Srep2_1_1",
+    "versions": [
+     "Dm_SY_Ocarina_SariaSong.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event62",
+    "preds": [
+     [
+      "next",
+      "Event91",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "DoorOfTime",
+     "StepName": "Step02",
+     "IsWaitEnd": true
+    },
+    "file": "DoorOfTime",
+    "flowchart": "DoorOfTime",
+    "event": "Event7",
+    "step": "Step02",
+    "versions": [
+     "DoorOfTime.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event140",
+    "preds": [
+     [
+      "next",
+      "Event90",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "DoorOfTime",
+     "IsWaitEnd": true,
+     "StepName": "Step04"
+    },
+    "file": "DoorOfTime",
+    "flowchart": "DoorOfTime",
+    "event": "Event12",
+    "step": "Step04",
+    "versions": [
+     "DoorOfTime.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event171",
+    "preds": [
+     [
+      "next",
+      "Event204",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "DoorOfTime",
+     "IsWaitEnd": true,
+     "StepName": "Step05"
+    },
+    "file": "DoorOfTime",
+    "flowchart": "DoorOfTime",
+    "event": "Event14",
+    "step": "Step05",
+    "versions": [
+     "DoorOfTime.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event77",
+    "preds": [
+     [
+      "case",
+      "Event39",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "DoorOfTime",
+     "IsWaitEnd": true,
+     "StepName": "Step03"
+    },
+    "file": "DoorOfTime",
+    "flowchart": "DoorOfTime",
+    "event": "Event37",
+    "step": "Step03",
+    "versions": [
+     "DoorOfTime.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event145",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "DoorOfTime",
+     "IsWaitEnd": true,
+     "StepName": "Step06"
+    },
+    "file": "DoorOfTime",
+    "flowchart": "DoorOfTime",
+    "event": "Event57",
+    "step": "Step06",
+    "versions": [
+     "DoorOfTime.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event102",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsIgnoreCompletedChallenge": false,
+     "ChallengeName": "DoorOfTime",
+     "IsWaitEnd": true,
+     "StepName": "Complete",
+     "IsIgnoreChallengeProgressUI": false
+    },
+    "file": "DoorOfTime",
+    "flowchart": "DoorOfTime",
+    "event": "Event93",
+    "step": "Complete",
+    "versions": [
+     "DoorOfTime.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event5",
+    "preds": [
+     [
+      "case",
+      "Event39",
+      1
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "DoorOfTime",
+     "StepName": "Step2_1"
+    },
+    "file": "DoorOfTime",
+    "flowchart": "DoorOfTime",
+    "event": "Event147",
+    "step": "Step2_1",
+    "versions": [
+     "DoorOfTime.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event5",
+    "preds": [
+     [
+      "case",
+      "Event56",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "IsIgnoreChallengeProgressUI": false,
+     "ChallengeName": "DoorOfTime",
+     "StepName": "Step2_2"
+    },
+    "file": "DoorOfTime",
+    "flowchart": "DoorOfTime",
+    "event": "Event148",
+    "step": "Step2_2",
+    "versions": [
+     "DoorOfTime.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": "Event202",
+    "preds": [
+     [
+      "next",
+      "Event30",
+      null
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "DoorOfTime",
+     "StepName": "Step01",
+     "IsIgnoreCompletedChallenge": true,
+     "IsWaitEnd": true,
+     "IsIgnoreChallengeProgressUI": true
+    },
+    "file": "Goto_HyruleCastle",
+    "flowchart": "Goto_HyruleCastle",
+    "event": "Event32",
+    "step": "Step01",
+    "versions": [
+     "Goto_HyruleCastle.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   },
+   {
+    "next": null,
+    "preds": [
+     [
+      "case",
+      "Event43",
+      0
+     ]
+    ],
+    "kind": "action ChallengeSystemActor.EventExecuteProgressChallengeStep",
+    "params": {
+     "ChallengeName": "DoorOfTime",
+     "IsIgnoreChallengeProgressUI": true,
+     "IsWaitEnd": true,
+     "IsIgnoreCompletedChallenge": false,
+     "StepName": "Srep2_1_1"
+    },
+    "file": "Npc_Hylia_Zelda_Child",
+    "flowchart": "Npc_Hylia_Zelda_Child",
+    "event": "Event42",
+    "step": "Srep2_1_1",
+    "versions": [
+     "Npc_Hylia_Zelda_Child.bfevfl.zs"
+    ],
+    "has_gamedata": true
+   }
+  ]
+ },
+ "after_exp": {
+  "Get_StoneOfFire": [
+   "Ready",
+   "KakarikoVillageNpc",
+   "KakarikoVillageLetter",
+   "DeathMtTrailIn",
+   "DeathMtTrailNpc",
+   "GoronCityIn",
+   "GoronCityDarniaroomNpcTalk01",
+   "GoronCityDarniaroomOpen",
+   "GoronCityDarniaTalk",
+   "DarniaRoomKokiriTalk",
+   "KokiriForestNPCTalk",
+   "KokiriForestFire",
+   "KokiriForestIn",
+   "SariaMelodyGet",
+   "SariaMelodyPlay",
+   "DodongoCavernOpne",
+   "DungeonStart",
+   "BossBattle",
+   "EscapeDungeon"
+  ],
+  "DoorOfTime": [
+   "Ready",
+   "Step01",
+   "Step02",
+   "Step2_1",
+   "Srep2_1_1",
+   "Step2_2",
+   "Step03",
+   "Step04",
+   "Step05",
+   "Step06"
+  ],
+  "Get_StoneOfWater": [
+   "Ready",
+   "Step01",
+   "Step02",
+   "Step03",
+   "Step03_Impa",
+   "Step04",
+   "Step05",
+   "Step05_01",
+   "Step06",
+   "Step07",
+   "Step08",
+   "Step09",
+   "Step10",
+   "Step11",
+   "Step12",
+   "Step13",
+   "Step13_01",
+   "Step14"
+  ],
+  "SageOfWater": [
+   "Ready",
+   "Step00",
+   "Step01",
+   "Step03",
+   "Step04",
+   "Step05",
+   "Step06",
+   "Step07_00",
+   "Step07_1",
+   "Step07_2",
+   "Step08"
+  ],
+  "SageOfFire": [
+   "NotReady",
+   "Ready",
+   "StopDaruniaJr",
+   "TalkDaruniaJr",
+   "MoveStatue",
+   "EnterCrater",
+   "MeetSheik",
+   "EnterTemple",
+   "MeetDarunia",
+   "GetBossKey",
+   "MeetBoss",
+   "DefeatBoss",
+   "GoToWarpPoint"
+  ],
+  "SageOfSpirit": [
+   "Ready",
+   "Step01",
+   "Step02",
+   "Step03",
+   "Step04",
+   "Step05",
+   "Step05_01",
+   "Step05_02",
+   "Step05_03",
+   "Step06",
+   "Step07",
+   "Step07_pre00",
+   "Step07_00",
+   "Step08",
+   "Step08_01",
+   "Step09",
+   "Step09_01",
+   "Step10"
+  ],
+  "Get_Epona": [
+   "Ready",
+   "ReadyForGetEponaSong",
+   "AfterGetEponaSong",
+   "ReadyForGambleRace",
+   "AfterTalkMalon",
+   "GambleRacePlaying",
+   "AfterWonGambleRace"
+  ],
+  "SageOfShadow": [
+   "NotReady",
+   "Ready",
+   "GoToDungeon",
+   "GotGlassTruth",
+   "GetGlassTruth",
+   "MeetBoss",
+   "BattleOnShip",
+   "BeforeBossRoom",
+   "DefeatBoss",
+   "GoToWarpPoint"
+  ],
+  "AllSage": [
+   "Ready",
+   "Step01",
+   "Step01_00",
+   "Step01_00_01",
+   "Step01_00_02",
+   "Step01_00_03",
+   "Step01_01",
+   "Step01_02",
+   "Step02"
+  ],
+  "SageOfForest": [
+   "NotReady",
+   "Ready",
+   "Step01",
+   "Step02",
+   "Step03",
+   "Step04",
+   "Step05",
+   "Step06",
+   "Step06_1_0",
+   "Step06_1_1",
+   "Step06_1_2",
+   "Step06_2",
+   "Step07",
+   "Step08",
+   "Step09"
+  ]
+ }
+}

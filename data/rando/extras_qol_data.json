@@ -1,0 +1,3060 @@
+{
+ "_about": "Built by tools/rando/parity/_extras_qol_build.py from the game files; read by extras_qol.py.",
+ "talon": {
+  "flowchart": "Goto_HyruleCastle",
+  "steps": {
+   "Event14": {
+    "next": "Event154",
+    "preds": [
+     [
+      "next",
+      "Event205",
+      null
+     ]
+    ],
+    "step": "Step02"
+   },
+   "Event51": {
+    "next": "Event201",
+    "preds": [
+     [
+      "entry",
+      "Goto_HyruleCastle_EntryMarket",
+      null
+     ]
+    ],
+    "step": "Step02_01"
+   },
+   "Event46": {
+    "next": "Event176",
+    "preds": [
+     [
+      "next",
+      "Event36",
+      null
+     ]
+    ],
+    "step": "Step03"
+   },
+   "Event88": {
+    "next": null,
+    "preds": [
+     [
+      "next",
+      "Event79",
+      null
+     ],
+     [
+      "next",
+      "Event86",
+      null
+     ]
+    ],
+    "step": "Step03_02"
+   }
+  }
+ },
+ "frogs": {
+  "flowchart": "MiniGame_FrogTenors",
+  "steps": {
+   "Event147": {
+    "PlayableSeconds": 0.8999999761581421,
+    "FirstPlayableSeconds": 1.7999999523162842,
+    "Num": 14,
+    "IsRandom": true
+   },
+   "Event17": {
+    "PlayableSeconds": 1.0,
+    "FirstPlayableSeconds": 2.0,
+    "Num": 14,
+    "IsRandom": false
+   },
+   "Event247": {
+    "PlayableSeconds": 0.699999988079071,
+    "FirstPlayableSeconds": 1.399999976158142,
+    "Num": 18,
+    "IsRandom": true
+   },
+   "Event248": {
+    "PlayableSeconds": 0.699999988079071,
+    "FirstPlayableSeconds": 1.399999976158142,
+    "Num": 14,
+    "IsRandom": true
+   },
+   "Event250": {
+    "PlayableSeconds": 0.699999988079071,
+    "FirstPlayableSeconds": 1.399999976158142,
+    "Num": 18,
+    "IsRandom": true
+   }
+  }
+ },
+ "replays": {
+  "flowchart": "Dm_SY_Ocarina",
+  "calls": {
+   "Event74": {
+    "next": "Event129",
+    "waits": [
+     "Event90",
+     "Event434",
+     "Event435",
+     "Event436",
+     "Event437",
+     "Event439",
+     "Event441",
+     "Event448",
+     "Event449",
+     "Event450",
+     "Event451",
+     "Event452"
+    ]
+   },
+   "Event12": {
+    "next": "Event137",
+    "waits": [
+     "Event51",
+     "Event72",
+     "Event93",
+     "Event103",
+     "Event106",
+     "Event107",
+     "Event441",
+     "Event448",
+     "Event449",
+     "Event450",
+     "Event451",
+     "Event452"
+    ]
+   },
+   "Event246": {
+    "next": "Event519",
+    "waits": [
+     "Event248",
+     "Event262",
+     "Event520",
+     "Event521",
+     "Event522",
+     "Event523",
+     "Event524",
+     "Event525"
+    ]
+   }
+  },
+  "waits": {
+   "Event452": 180,
+   "Event448": 360,
+   "Event451": 150,
+   "Event450": 210,
+   "Event449": 285,
+   "Event441": 360,
+   "Event435": 180,
+   "Event439": 360,
+   "Event434": 150,
+   "Event437": 250,
+   "Event90": 210,
+   "Event436": 180,
+   "Event106": 180,
+   "Event107": 120,
+   "Event51": 150,
+   "Event93": 250,
+   "Event103": 120,
+   "Event72": 180,
+   "Event520": 150,
+   "Event262": 120,
+   "Event248": 90,
+   "Event524": 180,
+   "Event525": 270,
+   "Event522": 250,
+   "Event523": 210,
+   "Event521": 180
+  }
+ },
+ "packs": {
+  "wallets": [
+   {
+    "pack": "Pack/Actor/Pouch_Wallet_Small.pack.zs",
+    "file": "GameParameter/ExpansionMaxNumActor/Item_Wallet_Small.game__actor__ExpansionMaxNumActor.bgyml",
+    "MaxNum": 200
+   },
+   {
+    "pack": "Pack/Actor/Item_Wallet_Medium.pack.zs",
+    "file": "GameParameter/ExpansionMaxNumActor/Item_Wallet_Medium.game__actor__ExpansionMaxNumActor.bgyml",
+    "MaxNum": 500
+   },
+   {
+    "pack": "Pack/Actor/Pouch_Wallet_Medium.pack.zs",
+    "file": "GameParameter/ExpansionMaxNumActor/Item_Wallet_Medium.game__actor__ExpansionMaxNumActor.bgyml",
+    "MaxNum": 500
+   },
+   {
+    "pack": "Pack/Actor/Item_Wallet_Large.pack.zs",
+    "file": "GameParameter/ExpansionMaxNumActor/Item_Wallet_Large.game__actor__ExpansionMaxNumActor.bgyml",
+    "MaxNum": 1000
+   },
+   {
+    "pack": "Pack/Actor/Pouch_Wallet_Large.pack.zs",
+    "file": "GameParameter/ExpansionMaxNumActor/Item_Wallet_Large.game__actor__ExpansionMaxNumActor.bgyml",
+    "MaxNum": 1000
+   }
+  ],
+  "beehive": {
+   "pack": "Pack/Actor/Obj_Kokiri_Beehive_A_01.pack.zs",
+   "file": "Life/DamageParameters/Obj_Beehive.game__life__DamageParameters.bgyml",
+   "key": "2054188199"
+  },
+  "player": [
+   {
+    "pack": "Pack/Actor/Player_Base.pack.zs",
+    "file": "Life/DamageParameters/Player.game__life__DamageParameters.bgyml",
+    "rates": {
+     "85358548": 1.0,
+     "388620384": 1.0,
+     "988705286": 1.0,
+     "1305706849": 1.0,
+     "1499870550": 1.0,
+     "1804308776": 1.0,
+     "2054188199": 1.0,
+     "2587815097": 1.0,
+     "2872354806": 1.0,
+     "3010012571": 1.0,
+     "3237216321": 1.0,
+     "3333229237": 1.0,
+     "3429998625": 1.0,
+     "3518489183": 1.0,
+     "3520794636": 1.0,
+     "3531729256": 1.0,
+     "3797638382": 1.0,
+     "3810451446": 1.0,
+     "4190899072": 1.0
+    },
+    "internal": {
+     "InternalDamageParameters.BurnDamageParameters.BurnContinuousDamage": 1,
+     "InternalDamageParameters.BurnDamageParameters.IgnitionDamage": 0,
+     "InternalDamageParameters.ElectricShockDamageParameters.Damage": 0,
+     "InternalDamageParameters.FallDamageParameters.FallDamageHighPerMeter": 0.20000000298023224,
+     "InternalDamageParameters.FallDamageParameters.FallDamageMin": 2,
+     "InternalDamageParameters.FallDamageParameters.FallDamagePerMeter": 0.20000000298023224,
+     "InternalDamageParameters.FrozenDamageParameters.ContinuousDamage": 1,
+     "InternalDamageParameters.FrozenDamageParameters.Damage": 0,
+     "InternalDamageParameters.LavaDamageParameters.ContinuousDamage": 0,
+     "InternalDamageParameters.LavaDamageParameters.Damage": 1,
+     "InternalDamageParameters.PoisonBogDamageParameters.ContinuousDamage": 0,
+     "InternalDamageParameters.PoisonBogDamageParameters.Damage": 1,
+     "InternalDamageParameters.ScorchingEnvDamageParameters.Damage": 1,
+     "InternalDamageParameters.UnderwaterDamageParameters.ContinuousDamage": 0,
+     "InternalDamageParameters.UnderwaterDamageParameters.Damage": 1
+    }
+   },
+   {
+    "pack": "Pack/Actor/Player_Child.pack.zs",
+    "file": "Life/DamageParameters/Player.game__life__DamageParameters.bgyml",
+    "rates": {
+     "85358548": 1.0,
+     "388620384": 1.0,
+     "988705286": 1.0,
+     "1305706849": 1.0,
+     "1499870550": 1.0,
+     "1804308776": 1.0,
+     "2054188199": 1.0,
+     "2587815097": 1.0,
+     "2872354806": 1.0,
+     "3010012571": 1.0,
+     "3237216321": 1.0,
+     "3333229237": 1.0,
+     "3429998625": 1.0,
+     "3518489183": 1.0,
+     "3520794636": 1.0,
+     "3531729256": 1.0,
+     "3797638382": 1.0,
+     "3810451446": 1.0,
+     "4190899072": 1.0
+    },
+    "internal": {
+     "InternalDamageParameters.BurnDamageParameters.BurnContinuousDamage": 1,
+     "InternalDamageParameters.BurnDamageParameters.IgnitionDamage": 0,
+     "InternalDamageParameters.ElectricShockDamageParameters.Damage": 0,
+     "InternalDamageParameters.FallDamageParameters.FallDamageHighPerMeter": 0.20000000298023224,
+     "InternalDamageParameters.FallDamageParameters.FallDamageMin": 2,
+     "InternalDamageParameters.FallDamageParameters.FallDamagePerMeter": 0.20000000298023224,
+     "InternalDamageParameters.FrozenDamageParameters.ContinuousDamage": 1,
+     "InternalDamageParameters.FrozenDamageParameters.Damage": 0,
+     "InternalDamageParameters.LavaDamageParameters.ContinuousDamage": 0,
+     "InternalDamageParameters.LavaDamageParameters.Damage": 1,
+     "InternalDamageParameters.PoisonBogDamageParameters.ContinuousDamage": 0,
+     "InternalDamageParameters.PoisonBogDamageParameters.Damage": 1,
+     "InternalDamageParameters.ScorchingEnvDamageParameters.Damage": 1,
+     "InternalDamageParameters.UnderwaterDamageParameters.ContinuousDamage": 0,
+     "InternalDamageParameters.UnderwaterDamageParameters.Damage": 1
+    }
+   },
+   {
+    "pack": "Pack/Actor/Player_Adult.pack.zs",
+    "file": "Life/DamageParameters/Player.game__life__DamageParameters.bgyml",
+    "rates": {
+     "85358548": 1.0,
+     "388620384": 1.0,
+     "988705286": 1.0,
+     "1305706849": 1.0,
+     "1499870550": 1.0,
+     "1804308776": 1.0,
+     "2054188199": 1.0,
+     "2587815097": 1.0,
+     "2872354806": 1.0,
+     "3010012571": 1.0,
+     "3237216321": 1.0,
+     "3333229237": 1.0,
+     "3429998625": 1.0,
+     "3518489183": 1.0,
+     "3520794636": 1.0,
+     "3531729256": 1.0,
+     "3797638382": 1.0,
+     "3810451446": 1.0,
+     "4190899072": 1.0
+    },
+    "internal": {
+     "InternalDamageParameters.BurnDamageParameters.BurnContinuousDamage": 1,
+     "InternalDamageParameters.BurnDamageParameters.IgnitionDamage": 0,
+     "InternalDamageParameters.ElectricShockDamageParameters.Damage": 0,
+     "InternalDamageParameters.FallDamageParameters.FallDamageHighPerMeter": 0.20000000298023224,
+     "InternalDamageParameters.FallDamageParameters.FallDamageMin": 2,
+     "InternalDamageParameters.FallDamageParameters.FallDamagePerMeter": 0.20000000298023224,
+     "InternalDamageParameters.FrozenDamageParameters.ContinuousDamage": 1,
+     "InternalDamageParameters.FrozenDamageParameters.Damage": 0,
+     "InternalDamageParameters.LavaDamageParameters.ContinuousDamage": 0,
+     "InternalDamageParameters.LavaDamageParameters.Damage": 1,
+     "InternalDamageParameters.PoisonBogDamageParameters.ContinuousDamage": 0,
+     "InternalDamageParameters.PoisonBogDamageParameters.Damage": 1,
+     "InternalDamageParameters.ScorchingEnvDamageParameters.Damage": 1,
+     "InternalDamageParameters.UnderwaterDamageParameters.ContinuousDamage": 0,
+     "InternalDamageParameters.UnderwaterDamageParameters.Damage": 1
+    }
+   }
+  ]
+ },
+ "gamedata": {
+  "Step_Goto_HyruleCastle": {
+   "type": "Enum",
+   "values": [
+    "NotReady",
+    "Ready",
+    "Step01",
+    "Step02",
+    "Step02_01",
+    "Step03",
+    "Step03_01",
+    "Step03_02",
+    "Step04",
+    "Complete"
+   ]
+  },
+  "Talon_AfterWakeUp": {
+   "type": "Bool"
+  },
+  "HavePlayedEvent.Dm_HrlCastle_0020": {
+   "type": "Bool"
+  },
+  "Goto_HyruleCastle_IsAfter_Step03_02_Exp": {
+   "type": "BoolExp"
+  },
+  "PlayerStatus.CurrentRupee": {
+   "type": "Int"
+  }
+ },
+ "pickup_text": {
+  "flags": [
+   "HavePlayedGetEvent.Obj_Rupee_Green",
+   "HavePlayedGetEvent.Obj_Rupee_Blue",
+   "HavePlayedGetEvent.Obj_Rupee_Red",
+   "HavePlayedGetEvent.Obj_Rupee_Purple",
+   "HavePlayedGetEvent.Obj_Rupee_Gold",
+   "HavePlayedGetEvent.Obj_Heart",
+   "HavePlayedGetEvent.Obj_MagicJar_Small",
+   "HavePlayedGetEvent.Obj_MagicJar_Large",
+   "HavePlayedGetEvent.Obj_ArrowBundle_Small",
+   "HavePlayedGetEvent.Obj_ArrowBundle_Medium",
+   "HavePlayedGetEvent.Obj_ArrowBundle_Large",
+   "HavePlayedGetEvent.Obj_DekuSeed",
+   "HavePlayedGetEvent.Item_DekuSeed",
+   "HavePlayedGetEvent.Item_DekuNut",
+   "HavePlayedGetEvent.Item_DekuStick",
+   "HavePlayedGetEvent.Item_Bomb",
+   "HavePlayedGetEvent.Item_Bombchu"
+  ],
+  "bags": [
+   {
+    "item": "Item_DekuNut",
+    "bag": "Item_NutBag_Small",
+    "kind": "DekuNut",
+    "max": 20,
+    "rows": [
+     "IsGet.Item_NutBag_Small",
+     "PouchData.Item_NutBag_Small.StockNum",
+     "PouchContentMaxNum.DekuNut",
+     "CurrentExpansionActor_DekuNut"
+    ]
+   },
+   {
+    "item": "Item_DekuStick",
+    "bag": "Item_StickBag_Small",
+    "kind": "DekuStick",
+    "max": 10,
+    "rows": [
+     "IsGet.Item_StickBag_Small",
+     "PouchData.Item_StickBag_Small.StockNum",
+     "PouchContentMaxNum.DekuStick",
+     "CurrentExpansionActor_DekuStick"
+    ]
+   }
+  ]
+ },
+ "blocks": [
+  {
+   "file": "GameParameter/GrabMoveActorParam/Obj_MovableBox_A_01.game__object__GrabMoveActorParam.bgyml",
+   "packs": [
+    "Pack/Actor/Enemy_Amos.pack.zs",
+    "Pack/Actor/Enemy_Amos_AlwaysRespawn.pack.zs",
+    "Pack/Actor/ForestTemple_MovableBox_Puzzle_Manager.pack.zs",
+    "Pack/Actor/Obj_AmosStatue_A_01.pack.zs",
+    "Pack/Actor/Obj_FireTemple_MovableBox_A_01.pack.zs",
+    "Pack/Actor/Obj_FireTemple_MovableBox_A_02.pack.zs",
+    "Pack/Actor/Obj_ForestTemple_MovableBox_A_01.pack.zs",
+    "Pack/Actor/Obj_ForestTemple_MovableBox_A_02.pack.zs",
+    "Pack/Actor/Obj_ForestTemple_MovableBox_A_03.pack.zs",
+    "Pack/Actor/Obj_ForestTemple_MovableBox_A_04.pack.zs",
+    "Pack/Actor/Obj_ForestTemple_MovableBox_A_05.pack.zs",
+    "Pack/Actor/Obj_Goron_Statue_A_01.pack.zs",
+    "Pack/Actor/Obj_LonLonRanch_MovableBox_A_01.pack.zs",
+    "Pack/Actor/Obj_MovableBox_A_01.pack.zs",
+    "Pack/Actor/Obj_MovableBox_A_04.pack.zs",
+    "Pack/Actor/Obj_MovableBox_A_05.pack.zs",
+    "Pack/Actor/Obj_SpiritTemple_MovableBox_A_01.pack.zs",
+    "Pack/Actor/Obj_Tombstone_A_01.pack.zs",
+    "Pack/Actor/Obj_Tombstone_A_02.pack.zs",
+    "Pack/Actor/Obj_Tombstone_A_03.pack.zs"
+   ],
+   "MoveSpeed": {
+    "MaxX": 44.0,
+    "Type": "Hermit2DSplit",
+    "Data": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     8.0,
+     0.0,
+     0.0,
+     0.0,
+     18.0,
+     0.05999999865889549,
+     0.007597883231937885,
+     0.007597883231937885,
+     35.0,
+     0.550000011920929,
+     0.04975903034210205,
+     0.04975903034210205,
+     43.0,
+     1.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "file": "GameParameter/GrabMoveActorParam/Obj_MovableBox_A_04.game__object__GrabMoveActorParam.bgyml",
+   "packs": [
+    "Pack/Actor/Obj_MovableBox_A_04.pack.zs"
+   ],
+   "MoveSpeed": {
+    "MaxX": 50.0,
+    "Type": "Hermit2DSplit",
+    "Data": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     10.0,
+     0.0,
+     0.0,
+     0.0,
+     20.003374099731445,
+     0.15566037595272064,
+     0.031961843371391296,
+     0.031961843371391296,
+     29.92580223083496,
+     0.7122641801834106,
+     0.05000000074505806,
+     0.05000000074505806,
+     44.0,
+     1.0,
+     0.0,
+     0.0,
+     50.0,
+     1.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "file": "GameParameter/GrabMoveActorParam/Obj_MovableBox_A_05.game__object__GrabMoveActorParam.bgyml",
+   "packs": [
+    "Pack/Actor/Obj_FireTemple_MovableBox_A_01.pack.zs",
+    "Pack/Actor/Obj_FireTemple_MovableBox_A_02.pack.zs",
+    "Pack/Actor/Obj_Goron_Statue_A_01.pack.zs",
+    "Pack/Actor/Obj_MovableBox_A_05.pack.zs"
+   ],
+   "MoveSpeed": {
+    "MaxX": 53.0,
+    "Type": "Hermit2DSplit",
+    "Data": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     13.0,
+     0.0,
+     0.0,
+     0.0,
+     42.0,
+     0.550000011920929,
+     0.05481554940342903,
+     0.05481554940342903,
+     53.0,
+     1.0,
+     0.004999999888241291,
+     0.004999999888241291
+    ]
+   }
+  }
+ ],
+ "dpad": {
+  "file": "Sequence/UpdateShortCutOpenHoldFrameCounter.module.ainb",
+  "counter": "Sequence_ShortCutOpenHoldCounter",
+  "nodes": {
+   "hold": 1,
+   "trig": 13,
+   "hook": 32,
+   "reset": 24,
+   "counter": 19,
+   "step": 25,
+   "dummy": 23,
+   "bool_sel": 3,
+   "f32_sel": 20,
+   "sim": 10,
+   "set_bool": 16,
+   "get_bool": 30,
+   "hash": 5,
+   "set_enum": 9,
+   "closing": 33
+  },
+  "outputs": [
+   "HoldUp",
+   "HoldDown",
+   "TrigUp",
+   "TrigDown",
+   "HoldR",
+   "HoldLeft",
+   "TrigLeft"
+  ],
+  "sources": {
+   "get_s64": {
+    "file": "Sequence/AfterChangeBanc.module.ainb",
+    "node": 17
+   },
+   "str_sel": {
+    "file": "Sequence/AfterChangeBanc.module.ainb",
+    "node": 16
+   },
+   "set_s64": {
+    "file": "Sequence/AfterEvent.module.ainb",
+    "node": 12
+   },
+   "get_exp": {
+    "file": "Sequence/Ocarina.module.ainb",
+    "node": 71
+   },
+   "sync": {
+    "file": "Sequence/LoadBancImpl.module.ainb",
+    "node": 69
+   },
+   "index": {
+    "file": "Sequence/AfterLoadSaveData.module.ainb",
+    "node": 0
+   },
+   "push": {
+    "file": "Sequence/SetPouchAndStatusForGameStart.module.ainb",
+    "node": 7
+   }
+  },
+  "slots": {
+   "head": "PlayerStatus.EquipHeadArmor",
+   "boots": "PlayerStatus.EquipBoot"
+  },
+  "gear": {
+   "head": [
+    {
+     "actor": "Armor_GlassTruth",
+     "button": "Pa_HeadEquip_01",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Truth",
+     "button": "Pa_HeadEquip_02",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Goron",
+     "button": "Pa_HeadEquip_02",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Zora",
+     "button": "Pa_HeadEquip_02",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Gerudo",
+     "button": "Pa_HeadEquip_02",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Bunny",
+     "button": "Pa_HeadEquip_02",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Spooky",
+     "button": "Pa_HeadEquip_02",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Skull",
+     "button": "Pa_HeadEquip_02",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Keaton",
+     "button": "Pa_HeadEquip_02",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Amiibo0",
+     "button": "Pa_HeadEquip_03",
+     "child": true,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Child_Mask_Amiibo1",
+     "button": "Pa_HeadEquip_03",
+     "child": true,
+     "adult": true
+    }
+   ],
+   "boots": [
+    {
+     "actor": "Armor_Adult_HoverBoot",
+     "button": "Pa_FootEquip_00",
+     "child": false,
+     "adult": true
+    },
+    {
+     "actor": "Armor_Adult_HeavyBoot",
+     "button": "Pa_FootEquip_01",
+     "child": false,
+     "adult": true
+    }
+   ]
+  },
+  "wheel": {
+   "file": "Sequence/ShortCut.module.ainb",
+   "nodes": {
+    "hold": 3,
+    "end": 5,
+    "held": 6,
+    "force": 16,
+    "set_category": 17,
+    "close_flag": 32,
+    "get_bool": 51,
+    "hold_r": 59,
+    "dummy": 7
+   }
+  },
+  "kinds": {
+   "Armor_GlassTruth": "GlassTruth",
+   "Armor_Child_Mask_Truth": "TruthMask",
+   "Armor_Child_Mask_Goron": "GoronMask",
+   "Armor_Child_Mask_Zora": "ZoraMask",
+   "Armor_Child_Mask_Gerudo": "GerudoMask",
+   "Armor_Child_Mask_Bunny": "BunnyMask",
+   "Armor_Child_Mask_Spooky": "SpookyMask",
+   "Armor_Child_Mask_Skull": "SkullMask",
+   "Armor_Child_Mask_Keaton": "KeatonMask",
+   "Armor_Child_Mask_Amiibo0": "Lure",
+   "Armor_Child_Mask_Amiibo1": "Lure",
+   "Armor_Adult_HoverBoot": "HoverBoot",
+   "Armor_Adult_HeavyBoot": "HeavyBoot"
+  },
+  "tunics": [
+   {
+    "actor": "Armor_Adult_Zora",
+    "button": "Pa_Epuipment_06",
+    "child": false,
+    "adult": true,
+    "default": false
+   },
+   {
+    "actor": "Armor_Adult_Goron",
+    "button": "Pa_Epuipment_07",
+    "child": false,
+    "adult": true,
+    "default": false
+   },
+   {
+    "actor": "Armor_Adult_Normal",
+    "button": "Pa_Epuipment_08",
+    "child": false,
+    "adult": true,
+    "default": true
+   }
+  ],
+  "tunic_slot": "PlayerStatus.EquipArmor",
+  "tunic_kinds": {
+   "Armor_Adult_Zora": "SheikahWarp",
+   "Armor_Adult_Goron": "SheikahWarp",
+   "Armor_Adult_Normal": "SheikahWarp"
+  }
+ },
+ "difficulty": {
+  "life": [
+   {
+    "file": "Life/LifeParameters/Enemy_Amos.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Amos.pack.zs",
+     "Pack/Actor/Enemy_Amos_AlwaysRespawn.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Anubis.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Anubis.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_BabyDodongo.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_BabyDodongo.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Dodongo_SpawnBabyDodongo.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Bari.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Bari.pack.zs"
+    ],
+    "MaxLife": 2
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Beamos.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Beamos.pack.zs",
+     "Pack/Actor/Enemy_Beamos_For_High_Place.pack.zs"
+    ],
+    "MaxLife": 2
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Biri.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Biri.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_BubbleBase.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Bubble_Blue.pack.zs",
+     "Pack/Actor/Enemy_Bubble_Green.pack.zs",
+     "Pack/Actor/Enemy_Bubble_Green_Big.pack.zs",
+     "Pack/Actor/Enemy_Bubble_Red.pack.zs",
+     "Pack/Actor/Enemy_Bubble_White.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Bubble_Green.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Bubble_Green.pack.zs",
+     "Pack/Actor/Enemy_Bubble_Green_Big.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Bubble_Green_Big.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Bubble_Green_Big.pack.zs"
+    ],
+    "MaxLife": 8
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Bubble_Red.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Bubble_Red.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_DeadHand.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DeadHand.pack.zs"
+    ],
+    "MaxLife": 18
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_DeadHand_Hand.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DeadHand_Hand.pack.zs"
+    ],
+    "MaxLife": 3
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Dekubaba.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Dekubaba.pack.zs",
+     "Pack/Actor/Enemy_Dekubaba_Withered.pack.zs"
+    ],
+    "MaxLife": 2
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Dekubaba_Withered.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Dekubaba_Withered.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Dinolfos.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Dinolfos.pack.zs"
+    ],
+    "MaxLife": 18
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Dodongo.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Dodongo.pack.zs"
+    ],
+    "MaxLife": 6
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_DungeonBoss_Barinade.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Barinade.pack.zs"
+    ],
+    "MaxLife": 15
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_DungeonBoss_Barinade_Jellyfish.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Barinade_Jellyfish.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_DungeonBoss_BongoBongo.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_BongoBongo.pack.zs"
+    ],
+    "MaxLife": 56
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_DungeonBoss_Dodongo.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Dodongo.pack.zs"
+    ],
+    "MaxLife": 24
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_DungeonBoss_Ganon.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Ganon.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Ganon_SecondHalfBattle.pack.zs"
+    ],
+    "MaxLife": 36
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_DungeonBoss_Ganon_SecondHalfBattle.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Ganon_SecondHalfBattle.pack.zs"
+    ],
+    "MaxLife": 18
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_DungeonBoss_Ganondorf.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Ganondorf.pack.zs"
+    ],
+    "MaxLife": 70
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_DungeonBoss_Gohma.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Gohma.pack.zs"
+    ],
+    "MaxLife": 21
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_DungeonBoss_Kotake.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Kotake.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Koume.pack.zs"
+    ],
+    "MaxLife": 12
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_DungeonBoss_Morpha.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Morpha.pack.zs"
+    ],
+    "MaxLife": 48
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_DungeonBoss_Morpha_Tentacle.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Morpha_Tentacle.pack.zs"
+    ],
+    "MaxLife": 100
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_DungeonBoss_PhantomGanon.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_PhantomGanon.pack.zs"
+    ],
+    "MaxLife": 42
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_DungeonBoss_Twinrova.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Twinrova.pack.zs"
+    ],
+    "MaxLife": 48
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_DungeonBoss_Volvagia.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Dm_Enemy_DungeonBoss_Volvagia.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Volvagia.pack.zs"
+    ],
+    "MaxLife": 60
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Floormaster.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Floormaster.pack.zs",
+     "Pack/Actor/Enemy_Floormaster_Truth.pack.zs"
+    ],
+    "MaxLife": 4
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Floormaster_Little.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Floormaster_Little.pack.zs",
+     "Pack/Actor/Enemy_Floormaster_Little_Truth.pack.zs"
+    ],
+    "MaxLife": 2
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_FlyingPot.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_CrazyFloorTile.pack.zs",
+     "Pack/Actor/Enemy_FlyingPot.pack.zs",
+     "Pack/Actor/Enemy_FlyingPot_IceCavern.pack.zs",
+     "Pack/Actor/Enemy_FlyingPot_ShadowTemple.pack.zs",
+     "Pack/Actor/Enemy_FlyingPot_SpiritTemple.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Freezard.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Freezard.pack.zs",
+     "Pack/Actor/Enemy_Freezard_Fixed.pack.zs"
+    ],
+    "MaxLife": 6
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Gohma_Egg.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Gohma_Egg.pack.zs",
+     "Pack/Actor/Enemy_Gohma_Egg.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Gohma_Larva.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Gohma_Larva.pack.zs"
+    ],
+    "MaxLife": 2
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_IronKnuckle.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_IronKnuckle_Black.pack.zs",
+     "Pack/Actor/Enemy_IronKnuckle_Silver.pack.zs",
+     "Pack/Actor/Enemy_IronKnuckle_White.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_IronKnuckle_Nabooru.pack.zs"
+    ],
+    "MaxLife": 34
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Leever.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Leever.pack.zs",
+     "Pack/Actor/Enemy_Leever_Big.pack.zs",
+     "Pack/Actor/Enemy_Leever_Fixed.pack.zs"
+    ],
+    "MaxLife": 2
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Leever_Big.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Leever_Big.pack.zs"
+    ],
+    "MaxLife": 8
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_LikeLike.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_LikeLike.pack.zs"
+    ],
+    "MaxLife": 12
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Lizalfos.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Dinolfos.pack.zs",
+     "Pack/Actor/Enemy_Lizalfos.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_Lizalfos.pack.zs"
+    ],
+    "MaxLife": 9
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_MiddleBoss_BigOcto.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_MiddleBoss_BigOcto.pack.zs"
+    ],
+    "MaxLife": 9
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_MiddleBoss_DarkLink.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_MiddleBoss_DarkLink.pack.zs"
+    ],
+    "MaxLife": 12
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_MiddleBoss_FlareDancer.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_MiddleBoss_FlareDancer.pack.zs"
+    ],
+    "MaxLife": 42
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_MiddleBoss_FlareDancer_FireBody.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_MiddleBoss_FlareDancer_FireBody.pack.zs"
+    ],
+    "MaxLife": 5
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_MiddleBoss_GerudoThief.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_MiddleBoss_GerudoThief.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_GerudoThief_02.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_GerudoThief_03.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_GerudoThief_04.pack.zs"
+    ],
+    "MaxLife": 18
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_MiddleBoss_IronKnuckle_Nabooru.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_MiddleBoss_IronKnuckle_Nabooru.pack.zs"
+    ],
+    "MaxLife": 40
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_MiddleBoss_Poe_Meg.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_MiddleBoss_Poe_Meg.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_Poe_Meg_Dummy.pack.zs"
+    ],
+    "MaxLife": 24
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_MiddleBoss_Poe_Meg_Dummy.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_MiddleBoss_Poe_Meg_Dummy.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Moblin.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Moblin.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Moblin_Club.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Moblin_Club.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Octorok.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Octorok.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Peahat.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Peahat.pack.zs",
+     "Pack/Actor/Enemy_Peahat_AircraftCarrier.pack.zs"
+    ],
+    "MaxLife": 6
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Peahat_Larva.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Peahat_Larva.pack.zs",
+     "Pack/Actor/Enemy_Peahat_Larva_Independent.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Poe.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_MiddleBoss_Poe_Meg.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_Poe_Meg_Dummy.pack.zs",
+     "Pack/Actor/Enemy_Poe.pack.zs",
+     "Pack/Actor/Enemy_Poe_Amy.pack.zs",
+     "Pack/Actor/Enemy_Poe_Base.pack.zs",
+     "Pack/Actor/Enemy_Poe_Beth.pack.zs",
+     "Pack/Actor/Enemy_Poe_Flat.pack.zs",
+     "Pack/Actor/Enemy_Poe_Joelle.pack.zs",
+     "Pack/Actor/Enemy_Poe_Sharp.pack.zs",
+     "Pack/Actor/Enemy_Poe_SistersBase.pack.zs"
+    ],
+    "MaxLife": 3
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Poe_Hyrule.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Poe_Big.pack.zs",
+     "Pack/Actor/Enemy_Poe_Hyrule.pack.zs"
+    ],
+    "MaxLife": 4
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Poe_Sharp.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Poe_Flat.pack.zs",
+     "Pack/Actor/Enemy_Poe_Sharp.pack.zs"
+    ],
+    "MaxLife": 3
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Poe_Sisters.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Poe_Amy.pack.zs",
+     "Pack/Actor/Enemy_Poe_Beth.pack.zs",
+     "Pack/Actor/Enemy_Poe_Joelle.pack.zs",
+     "Pack/Actor/Enemy_Poe_SistersBase.pack.zs"
+    ],
+    "MaxLife": 12
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_ReDead.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Gibdo.pack.zs",
+     "Pack/Actor/Enemy_ReDead.pack.zs",
+     "Pack/Actor/Enemy_ReDead_AlwaysRespawn.pack.zs",
+     "Pack/Actor/Enemy_ReDead_ClimaxOnly.pack.zs"
+    ],
+    "MaxLife": 12
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_ReDead_ClimaxOnly.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_ReDead_ClimaxOnly.pack.zs"
+    ],
+    "MaxLife": 4
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Scrub_Deku.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Scrub_Business.pack.zs",
+     "Pack/Actor/Enemy_Scrub_Business_Seed.pack.zs",
+     "Pack/Actor/Enemy_Scrub_Deku.pack.zs",
+     "Pack/Actor/Enemy_Scrub_Deku_Brothers.pack.zs"
+    ],
+    "MaxLife": 100
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Scrub_Mad.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Scrub_Mad.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Shabom.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Shabom.pack.zs",
+     "Pack/Actor/Enemy_Shabom_AlwaysRespawn.pack.zs",
+     "Pack/Actor/Enemy_Shabom_BigOctoChild.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_ShellBlade.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_ShellBlade.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_SkullKid.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_SkullKid.pack.zs"
+    ],
+    "MaxLife": 10
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Skulltula.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Skulltula.pack.zs",
+     "Pack/Actor/Enemy_Skulltula_Truth.pack.zs"
+    ],
+    "MaxLife": 2
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Skulltula_Gold.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Skulltula_Gold.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Skullwalltula.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Skulltula_Gold.pack.zs",
+     "Pack/Actor/Enemy_Skullwalltula.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Spike.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Spike.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Stalchild.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Stalchild.pack.zs",
+     "Pack/Actor/Enemy_Stalchild_Big.pack.zs"
+    ],
+    "MaxLife": 2
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Stalchild_Big.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Stalchild_Big.pack.zs"
+    ],
+    "MaxLife": 9
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Stalfos.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Stalfos.pack.zs",
+     "Pack/Actor/Enemy_Stalfos_AlwaysRespawn.pack.zs",
+     "Pack/Actor/Enemy_Stalfos_ForChild.pack.zs",
+     "Pack/Actor/Enemy_Stalfos_Weak.pack.zs"
+    ],
+    "MaxLife": 18
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Stinger.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Stinger.pack.zs",
+     "Pack/Actor/Enemy_Stinger_UnderWater.pack.zs"
+    ],
+    "MaxLife": 2
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Tailpasaran.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Tailpasaran.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Tektite_Blue.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Tektite_Blue.pack.zs"
+    ],
+    "MaxLife": 3
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Tektite_Red.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Tektite_Blue.pack.zs",
+     "Pack/Actor/Enemy_Tektite_Red.pack.zs"
+    ],
+    "MaxLife": 2
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Tentacle_Blue.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Tentacle_Blue.pack.zs"
+    ],
+    "MaxLife": 4
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Tentacle_Green.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Tentacle_Green.pack.zs"
+    ],
+    "MaxLife": 5
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Tentacle_Red.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Tentacle_Red.pack.zs"
+    ],
+    "MaxLife": 3
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_TorchSlug.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_TorchSlug.pack.zs"
+    ],
+    "MaxLife": 8
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_TrickyDoor.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_TrickyDoor.pack.zs",
+     "Pack/Actor/Enemy_TrickyDoor_SpiritTemple.pack.zs"
+    ],
+    "MaxLife": 1
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Wallmaster.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Wallmaster.pack.zs"
+    ],
+    "MaxLife": 4
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Wolfos.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Wolfos.pack.zs",
+     "Pack/Actor/Enemy_Wolfos_White.pack.zs"
+    ],
+    "MaxLife": 9
+   },
+   {
+    "file": "Life/LifeParameters/Enemy_Wolfos_White.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Wolfos_White.pack.zs"
+    ],
+    "MaxLife": 18
+   },
+   {
+    "file": "Life/LifeParameters/Keese.game__life__LifeParameters.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Guay.pack.zs",
+     "Pack/Actor/Enemy_Guay_Boss.pack.zs",
+     "Pack/Actor/Enemy_Guay_Fixed.pack.zs",
+     "Pack/Actor/Enemy_Guay_Flock.pack.zs",
+     "Pack/Actor/Enemy_Keese.pack.zs",
+     "Pack/Actor/Enemy_Keese_Fire.pack.zs",
+     "Pack/Actor/Enemy_Keese_Ice.pack.zs",
+     "Pack/Actor/Enemy_Keese_Truth.pack.zs"
+    ],
+    "MaxLife": 1
+   }
+  ],
+  "grabs": [
+   {
+    "file": "GameParameter/RestraintParam/Enemy_DeadHand_Hand.game__enemy__RestraintParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DeadHand_Hand.pack.zs"
+    ],
+    "value": 1
+   },
+   {
+    "file": "GameParameter/RestraintParam/Enemy_DungeonBoss_BongoBongo_RightHand.game__enemy__RestraintParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_BongoBongo_LeftHand.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_BongoBongo_RightHand.pack.zs"
+    ],
+    "value": null
+   },
+   {
+    "file": "GameParameter/RestraintParam/Enemy_DungeonBoss_Morpha_Tentacle.game__enemy__RestraintParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Morpha_Tentacle.pack.zs"
+    ],
+    "value": null
+   },
+   {
+    "file": "GameParameter/RestraintParam/Enemy_Floormaster_Little.game__enemy__RestraintParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Floormaster_Little.pack.zs",
+     "Pack/Actor/Enemy_Floormaster_Little_Truth.pack.zs"
+    ],
+    "value": 1
+   },
+   {
+    "file": "GameParameter/RestraintParam/Enemy_LikeLike.game__enemy__RestraintParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_LikeLike.pack.zs"
+    ],
+    "value": null
+   },
+   {
+    "file": "GameParameter/RestraintParam/Enemy_ReDead.game__enemy__RestraintParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Gibdo.pack.zs",
+     "Pack/Actor/Enemy_ReDead.pack.zs",
+     "Pack/Actor/Enemy_ReDead_AlwaysRespawn.pack.zs",
+     "Pack/Actor/Enemy_ReDead_ClimaxOnly.pack.zs"
+    ],
+    "value": null
+   },
+   {
+    "file": "GameParameter/RestraintParam/Enemy_Wallmaster.game__enemy__RestraintParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Wallmaster.pack.zs"
+    ],
+    "value": 0
+   }
+  ],
+  "attacks": [
+   {
+    "file": "GameBalance/AttackParam/BeamosBeam.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/BeamosBeam.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Bubble_Green_Bullet_Aura.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Bubble_Green_Bullet_Aura.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Dodongo_Bullet_Fire.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Dodongo_Bullet_Fire.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/DungeonBossDodongo_Bullet_Fire.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/DungeonBossDodongo_Bullet_Fire.pack.zs",
+     "Pack/Actor/DungeonBossDodongo_Bullet_StrongFire.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/DungeonBossGanon_Bullet_ShockWave.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/DungeonBossGanon_Bullet_ShockWave.pack.zs"
+    ],
+    "BaseAttackPower": 8,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/DungeonBossGanondrof_Bullet_ChargeLightBall.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/DungeonBossGanondrof_Bullet_ChargeLightBall.pack.zs"
+    ],
+    "BaseAttackPower": 12,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/DungeonBossGanondrof_Bullet_LightBall.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/DungeonBossGanondrof_Bullet_LightBall.pack.zs",
+     "Pack/Actor/DungeonBossPhantomGanon_Bullet_LightBall.pack.zs"
+    ],
+    "BaseAttackPower": 12,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/DungeonBossGanondrof_Bullet_ShockWave.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/DungeonBossGanondrof_Bullet_ShockWave.pack.zs",
+     "Pack/Actor/DungeonBossGanondrof_Bullet_StrongShockWave.pack.zs"
+    ],
+    "BaseAttackPower": 8,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/DungeonBossGanondrof_Bullet_StrongShockWave.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/DungeonBossGanondrof_Bullet_StrongShockWave.pack.zs"
+    ],
+    "BaseAttackPower": 8,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/DungeonBossPhantomGanon_Bullet_LightBall.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/DungeonBossPhantomGanon_Bullet_LightBall.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/DungeonBossVolvagia_Appear_Sign.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/DungeonBossVolvagia_Appear_Sign.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/DungeonBossVolvagia_FireBreath.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/DungeonBossVolvagia_FireBreath.pack.zs"
+    ],
+    "BaseAttackPower": 12,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/DungeonBossVolvagia_FireBreathField.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/DungeonBossVolvagia_FireBreathField.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Amos.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Amos.pack.zs",
+     "Pack/Actor/Enemy_Amos_AlwaysRespawn.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Anubis_MagicField.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Anubis_MagicField.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_BabyDodongo.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_BabyDodongo.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Dodongo_SpawnBabyDodongo.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Bari.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Bari.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Beamos.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Beamos.pack.zs",
+     "Pack/Actor/Enemy_Beamos_For_High_Place.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Biri.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Biri.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_BubbleBase.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Bubble_Blue.pack.zs",
+     "Pack/Actor/Enemy_Bubble_Green.pack.zs",
+     "Pack/Actor/Enemy_Bubble_Green_Big.pack.zs",
+     "Pack/Actor/Enemy_Bubble_Red.pack.zs",
+     "Pack/Actor/Enemy_Bubble_White.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     0.5,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Bubble_Blue.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Bubble_Blue.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     0.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Bubble_Green.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Bubble_Green.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     0.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Bubble_Green_Big.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Bubble_Green_Big.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     0.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Bubble_Red.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Bubble_Red.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     0.5,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_CrazyFloorTile.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_CrazyFloorTile.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_DeadHand.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DeadHand.pack.zs"
+    ],
+    "BaseAttackPower": 8,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_DeadHand_Hand.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DeadHand_Hand.pack.zs"
+    ],
+    "BaseAttackPower": 0,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Dekubaba.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Dekubaba.pack.zs",
+     "Pack/Actor/Enemy_Dekubaba_Withered.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Dekubaba_Withered.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Dekubaba_Withered.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Dinolfos.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Dinolfos.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     2.0,
+     2.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Dodongo.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Dodongo.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_DungeonBoss_Barinade.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Barinade.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_DungeonBoss_Barinade_Beam.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Barinade_Beam.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_DungeonBoss_Barinade_Jellyfish.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Barinade_Jellyfish.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_DungeonBoss_BongoBongo.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_BongoBongo.pack.zs"
+    ],
+    "BaseAttackPower": 12,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_DungeonBoss_BongoBongo_RightHand.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_BongoBongo_LeftHand.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_BongoBongo_RightHand.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     0.0,
+     2.0,
+     1.0,
+     2.0,
+     2.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_DungeonBoss_Dodongo.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Dodongo.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_DungeonBoss_Ganon.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Ganon.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Ganon_SecondHalfBattle.pack.zs"
+    ],
+    "BaseAttackPower": 16,
+    "multipliers": [
+     0.75,
+     0.75,
+     0.75,
+     0.75,
+     1.0,
+     1.0,
+     1.0,
+     0.5,
+     0.5,
+     0.5,
+     0.75,
+     0.75,
+     0.75,
+     0.0,
+     0.0,
+     0.5,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_DungeonBoss_Ganondorf.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Ganondorf.pack.zs"
+    ],
+    "BaseAttackPower": 0,
+    "multipliers": [
+     0.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_DungeonBoss_Gohma.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Gohma.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_DungeonBoss_Morpha.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Morpha.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0,
+     2.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_DungeonBoss_Morpha_Tentacle.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Morpha_Tentacle.pack.zs"
+    ],
+    "BaseAttackPower": 8,
+    "multipliers": [
+     1.0,
+     0.0,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_DungeonBoss_PhantomGanon.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_PhantomGanon.pack.zs"
+    ],
+    "BaseAttackPower": 12,
+    "multipliers": [
+     1.0,
+     0.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_DungeonBoss_Twinrova.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Twinrova.pack.zs"
+    ],
+    "BaseAttackPower": 8,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_DungeonBoss_Volvagia.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Dm_Enemy_DungeonBoss_Volvagia.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Volvagia.pack.zs"
+    ],
+    "BaseAttackPower": 8,
+    "multipliers": [
+     1.0,
+     0.5,
+     0.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Floormaster.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Floormaster.pack.zs",
+     "Pack/Actor/Enemy_Floormaster_Truth.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Floormaster_Little.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Floormaster_Little.pack.zs",
+     "Pack/Actor/Enemy_Floormaster_Little_Truth.pack.zs"
+    ],
+    "BaseAttackPower": 0,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_FlyingPot.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_CrazyFloorTile.pack.zs",
+     "Pack/Actor/Enemy_FlyingPot.pack.zs",
+     "Pack/Actor/Enemy_FlyingPot_IceCavern.pack.zs",
+     "Pack/Actor/Enemy_FlyingPot_ShadowTemple.pack.zs",
+     "Pack/Actor/Enemy_FlyingPot_SpiritTemple.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Freezard.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Freezard.pack.zs",
+     "Pack/Actor/Enemy_Freezard_Fixed.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     0.5
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Gohma_Egg.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Gohma_Egg.pack.zs",
+     "Pack/Actor/Enemy_Gohma_Egg.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Gohma_Larva.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Gohma_Larva.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Guay.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Guay.pack.zs",
+     "Pack/Actor/Enemy_Guay_Boss.pack.zs",
+     "Pack/Actor/Enemy_Guay_Fixed.pack.zs",
+     "Pack/Actor/Enemy_Guay_Flock.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_IronKnuckle.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_IronKnuckle_Black.pack.zs",
+     "Pack/Actor/Enemy_IronKnuckle_Silver.pack.zs",
+     "Pack/Actor/Enemy_IronKnuckle_White.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_IronKnuckle_Nabooru.pack.zs"
+    ],
+    "BaseAttackPower": 12,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Leever.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Leever.pack.zs",
+     "Pack/Actor/Enemy_Leever_Big.pack.zs",
+     "Pack/Actor/Enemy_Leever_Fixed.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Leever_Big.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Leever_Big.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_LikeLike.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_LikeLike.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Lizalfos.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Lizalfos.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_Lizalfos.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_MiddleBoss_BigOcto.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_MiddleBoss_BigOcto.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_MiddleBoss_DarkLink.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_MiddleBoss_DarkLink.pack.zs"
+    ],
+    "BaseAttackPower": 0,
+    "multipliers": [
+     2.0,
+     2.0,
+     2.0,
+     1.0,
+     1.0,
+     1.0,
+     4.0,
+     2.0,
+     2.0,
+     2.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     2.0,
+     1.0,
+     1.0,
+     2.0,
+     1.0,
+     2.0,
+     2.0,
+     1.0,
+     2.0,
+     1.0,
+     0.0,
+     2.0,
+     0.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_MiddleBoss_FlareDancer.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_MiddleBoss_FlareDancer.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_MiddleBoss_FlareDancer_FireBody.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_MiddleBoss_FlareDancer_FireBody.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_MiddleBoss_GerudoThief.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_MiddleBoss_GerudoThief.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_GerudoThief_02.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_GerudoThief_03.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_GerudoThief_04.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0,
+     2.0,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Moblin.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Moblin.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_MoblinClub_ShockWave.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_MoblinClub_ShockWave.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Moblin_Club.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Moblin_Club.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0,
+     0.5,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Octorok.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Octorok.pack.zs"
+    ],
+    "BaseAttackPower": 1,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Peahat.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Peahat.pack.zs",
+     "Pack/Actor/Enemy_Peahat_AircraftCarrier.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Peahat_Larva.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Peahat_Larva.pack.zs",
+     "Pack/Actor/Enemy_Peahat_Larva_Independent.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Poe.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Poe.pack.zs",
+     "Pack/Actor/Enemy_Poe_Base.pack.zs",
+     "Pack/Actor/Enemy_Poe_Flat.pack.zs",
+     "Pack/Actor/Enemy_Poe_Sharp.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Poe_SistersBase.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_MiddleBoss_Poe_Meg.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_Poe_Meg_Dummy.pack.zs",
+     "Pack/Actor/Enemy_Poe_Amy.pack.zs",
+     "Pack/Actor/Enemy_Poe_Beth.pack.zs",
+     "Pack/Actor/Enemy_Poe_Joelle.pack.zs",
+     "Pack/Actor/Enemy_Poe_SistersBase.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_ReDead.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Gibdo.pack.zs",
+     "Pack/Actor/Enemy_ReDead.pack.zs",
+     "Pack/Actor/Enemy_ReDead_AlwaysRespawn.pack.zs",
+     "Pack/Actor/Enemy_ReDead_ClimaxOnly.pack.zs"
+    ],
+    "BaseAttackPower": 0,
+    "multipliers": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Shabom.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Shabom.pack.zs",
+     "Pack/Actor/Enemy_Shabom_AlwaysRespawn.pack.zs",
+     "Pack/Actor/Enemy_Shabom_BigOctoChild.pack.zs"
+    ],
+    "BaseAttackPower": 1,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_ShellBlade.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_ShellBlade.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Skulltula.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Skulltula.pack.zs",
+     "Pack/Actor/Enemy_Skulltula_Truth.pack.zs",
+     "Pack/Actor/Npc_Hylia_MSP_Default.pack.zs",
+     "Pack/Actor/Npc_SkullChild_001.pack.zs",
+     "Pack/Actor/Npc_SkullChild_002.pack.zs",
+     "Pack/Actor/Npc_SkullChild_003.pack.zs",
+     "Pack/Actor/Npc_SkullChild_004.pack.zs",
+     "Pack/Actor/Npc_SkullChild_005.pack.zs",
+     "Pack/Actor/Npc_SkullDad.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Skulltula_Gold.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Skulltula_Gold.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Skullwalltula.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Skulltula_Gold.pack.zs",
+     "Pack/Actor/Enemy_Skullwalltula.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Spike.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Spike.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Stalchild.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Stalchild.pack.zs",
+     "Pack/Actor/Enemy_Stalchild_Big.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Stalchild_Big.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Stalchild_Big.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Stalfos.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Stalfos.pack.zs",
+     "Pack/Actor/Enemy_Stalfos_AlwaysRespawn.pack.zs",
+     "Pack/Actor/Enemy_Stalfos_ForChild.pack.zs",
+     "Pack/Actor/Enemy_Stalfos_Weak.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     4.0,
+     2.0,
+     2.0,
+     2.0,
+     4.0,
+     4.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Stalfos_Weak.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Stalfos_Weak.pack.zs"
+    ],
+    "BaseAttackPower": 1,
+    "multipliers": [
+     4.0,
+     2.0,
+     2.0,
+     2.0,
+     4.0,
+     4.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Stinger.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Stinger.pack.zs",
+     "Pack/Actor/Enemy_Stinger_UnderWater.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Tailpasaran.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Tailpasaran.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Tektite_Red.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Tektite_Blue.pack.zs",
+     "Pack/Actor/Enemy_Tektite_Red.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Tentacle_Red.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Tentacle_Blue.pack.zs",
+     "Pack/Actor/Enemy_Tentacle_Green.pack.zs",
+     "Pack/Actor/Enemy_Tentacle_Red.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_TorchSlug.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_TorchSlug.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0,
+     0.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_TrickyDoor.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_TrickyDoor.pack.zs",
+     "Pack/Actor/Enemy_TrickyDoor_SpiritTemple.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Wallmaster.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Wallmaster.pack.zs"
+    ],
+    "BaseAttackPower": 0,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Wolfos.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Wolfos.pack.zs",
+     "Pack/Actor/Enemy_Wolfos_White.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Enemy_Wolfos_White.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Wolfos_White.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/FlareDancer_Bullet_FireBall.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/FlareDancer_Bullet_FireBall.pack.zs",
+     "Pack/Actor/FlareDancer_Bullet_FireDanceBall.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Ganon_Bullet_ShockSquirt.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Ganon_Bullet_ShockSquirt.pack.zs",
+     "Pack/Actor/Ganon_Bullet_ShockSquirt_Weak.pack.zs",
+     "Pack/Actor/Ganon_Bullet_StrongShockSquirt.pack.zs"
+    ],
+    "BaseAttackPower": 8,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Ganon_Bullet_Thunder.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Ganon_Bullet_Thunder.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Ganondorf_Bullet_Thunder_Shockwave.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Ganondorf_Bullet_Thunder_Shockwave.pack.zs",
+     "Pack/Actor/PhantomGanon_Bullet_Thunder_Shockwave.pack.zs"
+    ],
+    "BaseAttackPower": 16,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Keese.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Guay.pack.zs",
+     "Pack/Actor/Enemy_Guay_Boss.pack.zs",
+     "Pack/Actor/Enemy_Guay_Fixed.pack.zs",
+     "Pack/Actor/Enemy_Guay_Flock.pack.zs",
+     "Pack/Actor/Enemy_Keese.pack.zs",
+     "Pack/Actor/Enemy_Keese_Fire.pack.zs",
+     "Pack/Actor/Enemy_Keese_Ice.pack.zs",
+     "Pack/Actor/Enemy_Keese_Truth.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0,
+     1.0,
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/KotakeKoumeTwinrova_Bullet_GuardBreakFire.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/KotakeKoumeTwinrova_Bullet_GuardBreakFire.pack.zs",
+     "Pack/Actor/KotakeKoumeTwinrova_Bullet_GuardBreakIce.pack.zs",
+     "Pack/Actor/Twinrova_Bullet_GuardBreakFire.pack.zs",
+     "Pack/Actor/Twinrova_Bullet_GuardBreakIce.pack.zs"
+    ],
+    "BaseAttackPower": 8,
+    "multipliers": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/KotakeKoumeTwinrova_Bullet_GuardBreakIce.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/KotakeKoumeTwinrova_Bullet_GuardBreakIce.pack.zs"
+    ],
+    "BaseAttackPower": 8,
+    "multipliers": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/PhantomGanon_Bullet_Thunder.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/PhantomGanon_Bullet_Thunder.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/PhantomGanon_Bullet_Thunder_Shockwave.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/PhantomGanon_Bullet_Thunder_Shockwave.pack.zs"
+    ],
+    "BaseAttackPower": 4,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/PoeHyrule_Bullet_FireBall.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/PoeHyrule_Bullet_FireBall.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/ScrubDeku_DekuNut.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Octorok_Bullet.pack.zs",
+     "Pack/Actor/ScrubDeku_DekuNut.pack.zs",
+     "Pack/Actor/ScrubForestStage_DekuNut.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/SkullKid_Bullet.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/SkullKid_Bullet.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Twinrova_Bullet_FireBeam.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Twinrova_Bullet_FireBeam.pack.zs",
+     "Pack/Actor/Twinrova_Bullet_IceBeam.pack.zs"
+    ],
+    "BaseAttackPower": 8,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Twinrova_Bullet_FireBullet.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Twinrova_Bullet_FireBullet.pack.zs",
+     "Pack/Actor/Twinrova_Bullet_IceBullet.pack.zs"
+    ],
+    "BaseAttackPower": 12,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Twinrova_Bullet_FireField.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Twinrova_Bullet_FireField.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Twinrova_Bullet_GuardBreakFire.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Twinrova_Bullet_GuardBreakFire.pack.zs",
+     "Pack/Actor/Twinrova_Bullet_GuardBreakIce.pack.zs"
+    ],
+    "BaseAttackPower": 12,
+    "multipliers": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Twinrova_Bullet_GuardBreakIce.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Twinrova_Bullet_GuardBreakIce.pack.zs"
+    ],
+    "BaseAttackPower": 12,
+    "multipliers": [
+     1.0,
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Twinrova_Bullet_IceBeam.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Twinrova_Bullet_IceBeam.pack.zs"
+    ],
+    "BaseAttackPower": 8,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Twinrova_Bullet_IceBullet.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Twinrova_Bullet_IceBullet.pack.zs"
+    ],
+    "BaseAttackPower": 12,
+    "multipliers": [
+     1.0
+    ]
+   },
+   {
+    "file": "GameBalance/AttackParam/Twinrova_Bullet_IceField.game__gamebalance__AttackParam.bgyml",
+    "packs": [
+     "Pack/Actor/Twinrova_Bullet_IceField.pack.zs"
+    ],
+    "BaseAttackPower": 2,
+    "multipliers": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   }
+  ],
+  "lock_on": [
+   {
+    "file": "Attention/ClientParam/DungeonBossGohma_LockOn.game__attention__ClientParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Gohma.pack.zs"
+    ]
+   },
+   {
+    "file": "Attention/ClientParam/EnemyCommon_LockOn.game__attention__ClientParam.bgyml",
+    "packs": [
+     "Pack/Actor/Dm_Enemy_DungeonBoss_Volvagia.pack.zs",
+     "Pack/Actor/Enemy_Amos.pack.zs",
+     "Pack/Actor/Enemy_Amos_AlwaysRespawn.pack.zs",
+     "Pack/Actor/Enemy_Anubis.pack.zs",
+     "Pack/Actor/Enemy_BabyDodongo.pack.zs",
+     "Pack/Actor/Enemy_Bari.pack.zs",
+     "Pack/Actor/Enemy_Beamos.pack.zs",
+     "Pack/Actor/Enemy_Beamos_For_High_Place.pack.zs",
+     "Pack/Actor/Enemy_Biri.pack.zs",
+     "Pack/Actor/Enemy_Bubble_Blue.pack.zs",
+     "Pack/Actor/Enemy_Bubble_Green.pack.zs",
+     "Pack/Actor/Enemy_Bubble_Green_Big.pack.zs",
+     "Pack/Actor/Enemy_Bubble_Red.pack.zs",
+     "Pack/Actor/Enemy_Bubble_White.pack.zs",
+     "Pack/Actor/Enemy_CrazyFloorTile.pack.zs",
+     "Pack/Actor/Enemy_DeadHand.pack.zs",
+     "Pack/Actor/Enemy_Dekubaba.pack.zs",
+     "Pack/Actor/Enemy_Dekubaba_Withered.pack.zs",
+     "Pack/Actor/Enemy_Dinolfos.pack.zs",
+     "Pack/Actor/Enemy_Dodongo.pack.zs",
+     "Pack/Actor/Enemy_Dodongo_Attention.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Barinade_Arm.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Barinade_Attention.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Barinade_Jellyfish.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_BongoBongo.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_BongoBongo_LeftHand.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_BongoBongo_RightHand.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Dodongo.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Dodongo_Attention.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Dodongo_Attention_RollingCenter.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Dodongo_SpawnBabyDodongo.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Ganondorf.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Gohma.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Gohma_Egg.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Morpha.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Morpha_Attention.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Morpha_Attention_Spin.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_PhantomGanon.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Twinrova.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Volvagia.pack.zs",
+     "Pack/Actor/Enemy_Floormaster.pack.zs",
+     "Pack/Actor/Enemy_Floormaster_Little.pack.zs",
+     "Pack/Actor/Enemy_Floormaster_Little_Truth.pack.zs",
+     "Pack/Actor/Enemy_Floormaster_Truth.pack.zs",
+     "Pack/Actor/Enemy_FlyingPot.pack.zs",
+     "Pack/Actor/Enemy_FlyingPot_IceCavern.pack.zs",
+     "Pack/Actor/Enemy_FlyingPot_ShadowTemple.pack.zs",
+     "Pack/Actor/Enemy_FlyingPot_SpiritTemple.pack.zs",
+     "Pack/Actor/Enemy_Freezard.pack.zs",
+     "Pack/Actor/Enemy_Freezard_Fixed.pack.zs",
+     "Pack/Actor/Enemy_Gibdo.pack.zs",
+     "Pack/Actor/Enemy_Gohma_Egg.pack.zs",
+     "Pack/Actor/Enemy_Gohma_Larva.pack.zs",
+     "Pack/Actor/Enemy_Guay.pack.zs",
+     "Pack/Actor/Enemy_Guay_Boss.pack.zs",
+     "Pack/Actor/Enemy_Guay_Fixed.pack.zs",
+     "Pack/Actor/Enemy_Guay_Flock.pack.zs",
+     "Pack/Actor/Enemy_IronKnuckle_Black.pack.zs",
+     "Pack/Actor/Enemy_IronKnuckle_Silver.pack.zs",
+     "Pack/Actor/Enemy_IronKnuckle_White.pack.zs",
+     "Pack/Actor/Enemy_Keese.pack.zs",
+     "Pack/Actor/Enemy_Keese_Fire.pack.zs",
+     "Pack/Actor/Enemy_Keese_Ice.pack.zs",
+     "Pack/Actor/Enemy_Keese_Truth.pack.zs",
+     "Pack/Actor/Enemy_Leever.pack.zs",
+     "Pack/Actor/Enemy_Leever_Big.pack.zs",
+     "Pack/Actor/Enemy_Leever_Fixed.pack.zs",
+     "Pack/Actor/Enemy_LikeLike.pack.zs",
+     "Pack/Actor/Enemy_Lizalfos.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_BigOcto.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_BigOcto_Attention.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_DarkLink.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_FlareDancer.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_FlareDancer_FireBody.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_GerudoThief.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_GerudoThief_02.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_GerudoThief_03.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_GerudoThief_04.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_IronKnuckle_Nabooru.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_Lizalfos.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_Poe_Meg.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_Poe_Meg_Dummy.pack.zs",
+     "Pack/Actor/Enemy_Moblin.pack.zs",
+     "Pack/Actor/Enemy_Moblin_Club.pack.zs",
+     "Pack/Actor/Enemy_Octorok.pack.zs",
+     "Pack/Actor/Enemy_Peahat.pack.zs",
+     "Pack/Actor/Enemy_Peahat_AircraftCarrier.pack.zs",
+     "Pack/Actor/Enemy_Peahat_Larva.pack.zs",
+     "Pack/Actor/Enemy_Peahat_Larva_Independent.pack.zs",
+     "Pack/Actor/Enemy_Poe.pack.zs",
+     "Pack/Actor/Enemy_Poe_Amy.pack.zs",
+     "Pack/Actor/Enemy_Poe_Base.pack.zs",
+     "Pack/Actor/Enemy_Poe_Beth.pack.zs",
+     "Pack/Actor/Enemy_Poe_Big.pack.zs",
+     "Pack/Actor/Enemy_Poe_Flat.pack.zs",
+     "Pack/Actor/Enemy_Poe_Hyrule.pack.zs",
+     "Pack/Actor/Enemy_Poe_Joelle.pack.zs",
+     "Pack/Actor/Enemy_Poe_Sharp.pack.zs",
+     "Pack/Actor/Enemy_Poe_SistersBase.pack.zs",
+     "Pack/Actor/Enemy_ReDead.pack.zs",
+     "Pack/Actor/Enemy_ReDead_AlwaysRespawn.pack.zs",
+     "Pack/Actor/Enemy_ReDead_ClimaxOnly.pack.zs",
+     "Pack/Actor/Enemy_Scrub_Business.pack.zs",
+     "Pack/Actor/Enemy_Scrub_Deku.pack.zs",
+     "Pack/Actor/Enemy_Scrub_Deku_Brothers.pack.zs",
+     "Pack/Actor/Enemy_Scrub_Mad.pack.zs",
+     "Pack/Actor/Enemy_Shabom.pack.zs",
+     "Pack/Actor/Enemy_Shabom_AlwaysRespawn.pack.zs",
+     "Pack/Actor/Enemy_Shabom_BigOctoChild.pack.zs",
+     "Pack/Actor/Enemy_ShellBlade.pack.zs",
+     "Pack/Actor/Enemy_SkullKid.pack.zs",
+     "Pack/Actor/Enemy_Skulltula.pack.zs",
+     "Pack/Actor/Enemy_Skulltula_Truth.pack.zs",
+     "Pack/Actor/Enemy_Skullwalltula.pack.zs",
+     "Pack/Actor/Enemy_Spike.pack.zs",
+     "Pack/Actor/Enemy_Stalchild.pack.zs",
+     "Pack/Actor/Enemy_Stalchild_Big.pack.zs",
+     "Pack/Actor/Enemy_Stalfos.pack.zs",
+     "Pack/Actor/Enemy_Stalfos_AlwaysRespawn.pack.zs",
+     "Pack/Actor/Enemy_Stalfos_ForChild.pack.zs",
+     "Pack/Actor/Enemy_Stalfos_Weak.pack.zs",
+     "Pack/Actor/Enemy_Stinger.pack.zs",
+     "Pack/Actor/Enemy_Stinger_UnderWater.pack.zs",
+     "Pack/Actor/Enemy_Tailpasaran.pack.zs",
+     "Pack/Actor/Enemy_Tailpasaran_Attention.pack.zs",
+     "Pack/Actor/Enemy_Tektite_Blue.pack.zs",
+     "Pack/Actor/Enemy_Tektite_Red.pack.zs",
+     "Pack/Actor/Enemy_Tentacle_Blue.pack.zs",
+     "Pack/Actor/Enemy_Tentacle_Green.pack.zs",
+     "Pack/Actor/Enemy_Tentacle_Red.pack.zs",
+     "Pack/Actor/Enemy_TorchSlug.pack.zs",
+     "Pack/Actor/Enemy_Wallmaster.pack.zs",
+     "Pack/Actor/Enemy_Wolfos.pack.zs",
+     "Pack/Actor/Enemy_Wolfos_White.pack.zs",
+     "Pack/Actor/Obj_AttentionRock_A_01.pack.zs",
+     "Pack/Actor/Obj_AttentionRock_A_02.pack.zs",
+     "Pack/Actor/Obj_AttentionRock_A_03.pack.zs"
+    ]
+   },
+   {
+    "file": "Attention/ClientParam/Enemy_Anubis_LockOn.game__attention__ClientParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Anubis.pack.zs"
+    ]
+   },
+   {
+    "file": "Attention/ClientParam/Enemy_DeadHand_Hand_LockOn.game__attention__ClientParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DeadHand_Hand.pack.zs"
+    ]
+   },
+   {
+    "file": "Attention/ClientParam/Enemy_DungeonBoss_BongoBongo_RightHand_LockOn.game__attention__ClientParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_BongoBongo_LeftHand.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_BongoBongo_RightHand.pack.zs"
+    ]
+   },
+   {
+    "file": "Attention/ClientParam/Enemy_DungeonBoss_Ganon_Attention_LockOn.game__attention__ClientParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Ganon_Attention.pack.zs"
+    ]
+   },
+   {
+    "file": "Attention/ClientParam/Enemy_DungeonBoss_Ganon_LegAttention_LockOn.game__attention__ClientParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Ganon_LegAttention.pack.zs"
+    ]
+   },
+   {
+    "file": "Attention/ClientParam/Enemy_DungeonBoss_Kotake_LockOn.game__attention__ClientParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Kotake.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Koume.pack.zs"
+    ]
+   },
+   {
+    "file": "Attention/ClientParam/Enemy_DungeonBoss_Twinrova.game__attention__ClientParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Twinrova.pack.zs"
+    ]
+   },
+   {
+    "file": "Attention/ClientParam/Enemy_Gohma_Egg_LockOn.game__attention__ClientParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Gohma_Egg.pack.zs",
+     "Pack/Actor/Enemy_Gohma_Egg.pack.zs"
+    ]
+   },
+   {
+    "file": "Attention/ClientParam/Enemy_MiddleBoss_GerudoThief_LockOn.game__attention__ClientParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_MiddleBoss_GerudoThief.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_GerudoThief_02.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_GerudoThief_03.pack.zs",
+     "Pack/Actor/Enemy_MiddleBoss_GerudoThief_04.pack.zs"
+    ]
+   },
+   {
+    "file": "Attention/ClientParam/Enemy_Moblin_Club_LockOn.game__attention__ClientParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Moblin_Club.pack.zs"
+    ]
+   },
+   {
+    "file": "Attention/ClientParam/Enemy_Moblin_LockOn.game__attention__ClientParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Moblin.pack.zs"
+    ]
+   },
+   {
+    "file": "Attention/ClientParam/Enemy_Peahat_AircraftCarrier_LockOn.game__attention__ClientParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Peahat_AircraftCarrier.pack.zs"
+    ]
+   },
+   {
+    "file": "Attention/ClientParam/Enemy_Peahat_LockOn.game__attention__ClientParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Peahat.pack.zs"
+    ]
+   },
+   {
+    "file": "Attention/ClientParam/Enemy_Tentacle_Red_LockOn.game__attention__ClientParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_Tentacle_Blue.pack.zs",
+     "Pack/Actor/Enemy_Tentacle_Green.pack.zs",
+     "Pack/Actor/Enemy_Tentacle_Red.pack.zs"
+    ]
+   },
+   {
+    "file": "Attention/ClientParam/Ganon_LockOn.game__attention__ClientParam.bgyml",
+    "packs": [
+     "Pack/Actor/Enemy_DungeonBoss_Ganon.pack.zs",
+     "Pack/Actor/Enemy_DungeonBoss_Ganon_SecondHalfBattle.pack.zs"
+    ]
+   }
+  ]
+ }
+}

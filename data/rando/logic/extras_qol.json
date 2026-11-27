@@ -1,0 +1,23 @@
+{
+ "_about": "Logic of the extras_qol plugin (tools/rando/parity/extras_qol.py). Every option here is a remake setting that is off by default, so nothing in this file is a plain OoTR override (no 'helpers' / 'regions' sections: world_settings.py applies none of it). The plugin rewrites rules through OoTR's logic reader only when the option is on, and stops the seed if a rewrite finds no rule (must_hit). remake_skip_talon: Talon starts awake at the ranch, so the castle-grounds condition OoTR puts on Malon's song, Talon's cuccos and the castle garden (at('Hyrule Castle Grounds', is_child and (Weird_Egg or Chicken)), or the plain 'Weird_Egg or Chicken' exit) becomes True, and Malon's castle egg is skipped (she has left the castle: False). remake_early_grannys_shop: Granny's shuffled item needs only the wallet her price needs (the remake's merchant scene sells it at her first talk). remake_slingshot_beehives: the Slingshot breaks hives (Obj_Beehive SlingshotBullet damage rate set to 1). remake_damage_multiplier x8 / x16: OoTR's \"damage_multiplier != 'ohko'\" tests read False (the logic treats both as one-hit KO). remake_limited_ammo: OoTR's nut and stick pot events read False where the remake's pots no longer drop them (the options entry lists the three that stay), and bombs, arrows and seeds need a shop that sells them.",
+ "options": {
+  "remake_skip_talon=true": {
+   "set": {"HC Malon Egg": "False"},
+   "egg_or_chicken": "Weird_Egg or Chicken",
+   "must_hit": ["HC Malon Egg", "HC Garden", "Song from Malon", "LLR Talons Chickens"]
+  },
+  "remake_early_grannys_shop=true": {
+   "set": {"Kak Granny Buy Blue Potion": "Progressive_Wallet"}
+  },
+  "remake_slingshot_beehives=true": {
+   "or_helpers": {"can_break_lower_beehive": "can_use(Slingshot)", "can_break_upper_beehive": "can_use(Slingshot)"}
+  },
+  "remake_limited_ammo=true": {
+   "_why": "OoTR counts Deku Nuts and Sticks from pots and a crate (its 'Nut Pot', 'Stick Pot' and 'Nut Crate' events, ORed into the Nuts / Sticks helpers). With remake_limited_ammo those drops are green rupees, except the game's own supplies (parity/_difficulty.py KEEP_AMMO). Of OoTR's 13 such events only these still hold: the stick pots in child Goron City and child Zora's Domain (their placements name DropTable_Obj_DekuStick) and Jabu-Jabu's pots past Big Octo (Drop_ResourceSupply_BeforeBoss_PotChild*, nuts and sticks). Every other one reads False. The Deku Babas' sticks and nuts stay, and so do shops. Bombs, arrows and Deku Seeds: OoTR treats a Bomb Bag, a Bow or a Slingshot as endless ammo. Here a refill only comes from a shop or a Deku Scrub, so each needs one of their buys too, the way OoTR does it for bombchus (can_refill_bombchus) and nuts and sticks: those buys count as progression (OoTR's own wallet and shop rules apply, and shopsanity places them by the logic). The game's local supplies (before bosses, the boss and Poe fights) aren't counted, so this is the stricter side.",
+   "events": ["Nut Pot", "Stick Pot", "Nut Crate"],
+   "keep": [["Goron City", "Stick Pot"], ["Zoras Domain", "Stick Pot"], ["Jabu Jabus Belly Past Big Octo", "Nut Pot"]],
+   "must_turn_off": 10,
+   "buys": {"Bombs": {"rule": "Bomb_Bag and ({})", "items": ["Buy Bombs (5) for 25 Rupees", "Buy Bombs (5) for 35 Rupees", "Buy Bombs (10)", "Buy Bombs (20)", "Buy Bombs (30)"], "was": "Bomb_Bag"}, "Bow": {"rule": "'Bow' and ({})", "items": ["Buy Arrows (10)", "Buy Arrows (30)", "Buy Arrows (50)"], "was": null}, "Slingshot": {"rule": "'Slingshot' and ({})", "items": ["Buy Deku Seeds (30)"], "was": null}}
+  }
+ }
+}

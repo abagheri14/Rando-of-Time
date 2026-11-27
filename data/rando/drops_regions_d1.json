@@ -1,0 +1,1244 @@
+{
+ "InsideTheDekuTree": {
+  "rooms": {
+   "0": "Deku Tree Lobby",
+   "2": "Deku Tree Slingshot Room",
+   "3": "Deku Tree Lobby",
+   "4": "Deku Tree Basement",
+   "6": "Deku Tree Basement Back Room",
+   "7": "Deku Tree Basement Back Room",
+   "8": "Deku Tree Basement Back Room",
+   "9": "Deku Tree Before Boss",
+   "10": "Queen Gohma Boss Room",
+   "11": "Deku Tree Basement Back Room"
+  },
+  "objects": {
+   "16355617740219907263": {
+    "region": "Deku Tree Lobby",
+    "rule": "is_adult or can_child_attack or Nuts",
+    "confidence": "medium",
+    "why": "room 0 (lobby, Map chest anchor); one of 3 hearts on the 3F ring at y=121 directly under the hanging Skulltula (-3.3,126.9,-9.8); OoTR's Upper Lobby heart rule (get past/stun the Skulltula) reused"
+   },
+   "16164791133086825945": {
+    "region": "Deku Tree Lobby",
+    "rule": "is_adult or can_child_attack or Nuts",
+    "confidence": "medium",
+    "why": "room 0 (lobby, Map chest anchor); one of 3 hearts on the 3F ring at y=121 directly under the hanging Skulltula (-3.3,126.9,-9.8); OoTR's Upper Lobby heart rule (get past/stun the Skulltula) reused"
+   },
+   "1922216023914752593": {
+    "region": "Deku Tree Lobby",
+    "rule": "is_adult or can_child_attack or Nuts",
+    "confidence": "medium",
+    "why": "room 0 (lobby, Map chest anchor); one of 3 hearts on the 3F ring at y=121 directly under the hanging Skulltula (-3.3,126.9,-9.8); OoTR's Upper Lobby heart rule (get past/stun the Skulltula) reused"
+   },
+   "16002722698574188382": {
+    "region": "Deku Tree Lobby",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 0 lobby 1F floor (y=100) beside the Deku Babas, off the central web"
+   },
+   "10336513835630620955": {
+    "region": "Deku Tree Lobby",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 0 lobby 1F floor (y=100) beside the Deku Babas, off the central web"
+   },
+   "3341493256150380219": {
+    "region": "Deku Tree Lobby",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 0 lobby 1F floor (y=100) beside the Deku Babas, off the central web"
+   },
+   "9391308054738304433": {
+    "region": "Deku Tree Slingshot Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 1 = the 2F scrub antechamber; Presence flag Enemy_Scrub_Deku_ItemDrop_01 = drop of the Deku Scrub that bars the Slingshot Room, so it needs the scrub beaten = OoTR's here(has_shield) into Slingshot Room"
+   },
+   "8632533875205065781": {
+    "region": "Deku Tree Slingshot Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 1 = the 2F scrub antechamber; Presence flag Enemy_Scrub_Deku_ItemDrop_01 = drop of the Deku Scrub that bars the Slingshot Room, so it needs the scrub beaten = OoTR's here(has_shield) into Slingshot Room"
+   },
+   "3473330859120899719": {
+    "region": "Deku Tree Slingshot Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 2 (Slingshot + side chest anchors); grass in the pit under the falling floor at y=104.9, inside the room past the scrub shutter"
+   },
+   "317932415623775006": {
+    "region": "Deku Tree Slingshot Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 2 (Slingshot + side chest anchors); grass in the pit under the falling floor at y=104.9, inside the room past the scrub shutter"
+   },
+   "12690895733615844950": {
+    "region": "Deku Tree Slingshot Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 2 (Slingshot + side chest anchors); grass in the pit under the falling floor at y=104.9, inside the room past the scrub shutter"
+   },
+   "1816878459590690022": {
+    "region": "Deku Tree Lobby",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 3 = compass room (Compass chest anchor, Lobby region); grass beside the Compass chest in front of the crawl hole"
+   },
+   "1977371275298064713": {
+    "region": "Deku Tree Lobby",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 3 = compass room (Compass chest anchor, Lobby region); grass beside the Compass chest in front of the crawl hole"
+   },
+   "6108036589892819583": {
+    "region": "Deku Tree Basement",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 4 = B1 main room (Basement chest, GS Gate/Vines anchors); grass on the B1 floor in front of the web-covered door"
+   },
+   "4077483205678899114": {
+    "region": "Deku Tree Basement",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 4 = B1 main room (Basement chest, GS Gate/Vines anchors); grass on the B1 floor in front of the web-covered door"
+   },
+   "10420058391592786882": {
+    "region": "Deku Tree Basement",
+    "rule": "has_fire_source_with_torch and has_shield",
+    "confidence": "medium",
+    "why": "Room 5 drop of Enemy_Scrub_Deku #3943643131248682445 (Presence Enemy_Scrub_Deku_ItemDrop_02; its Talk_Deku_02_Attacked flow ends with Disappear giving ScrubDekuHeart_02/ScrubDekuRupee_02). Room 5 is behind web #7764351583151535917, the generic Gimmick_Spiderweb (needs fire). The only fire in room 4 is switch candle #876478605270402086, lit by the step switch (no item): a child lights a stick there (has_fire_source_with_torch). Dropped OoTR's can_use(Bow) branch: a burning arrow would have to be shot through that candle, 25 away in a straight line from the chest alcove; not shown possible. Shield reflect kept (guides); the projectile kill is an alternative."
+   },
+   "5920725837809443985": {
+    "region": "Deku Tree Basement",
+    "rule": "has_fire_source_with_torch and has_shield",
+    "confidence": "medium",
+    "why": "Room 5 drop of Enemy_Scrub_Deku #3943643131248682445 (Presence Enemy_Scrub_Deku_ItemDrop_02; its Talk_Deku_02_Attacked flow ends with Disappear giving ScrubDekuHeart_02/ScrubDekuRupee_02). Room 5 is behind web #7764351583151535917, the generic Gimmick_Spiderweb (needs fire). The only fire in room 4 is switch candle #876478605270402086, lit by the step switch (no item): a child lights a stick there (has_fire_source_with_torch). Dropped OoTR's can_use(Bow) branch: a burning arrow would have to be shot through that candle, 25 away in a straight line from the chest alcove; not shown possible. Shield reflect kept (guides); the projectile kill is an alternative."
+   },
+   "12259396602144487886": {
+    "region": "Deku Tree Basement",
+    "rule": "has_fire_source_with_torch",
+    "confidence": "medium",
+    "why": "Room 5 grass by the far (eye-switch) door, behind fire web #7764351583151535917; Bow branch dropped as for the scrub drops (the drops plugin adds can_cut_shrubs)."
+   },
+   "10930275110907912056": {
+    "region": "Deku Tree Basement",
+    "rule": "has_fire_source_with_torch",
+    "confidence": "medium",
+    "why": "Room 5 grass by the far (eye-switch) door, behind fire web #7764351583151535917; Bow branch dropped as for the scrub drops (the drops plugin adds can_cut_shrubs)."
+   },
+   "16523077681389688437": {
+    "region": "Deku Tree Basement Back Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 7 = torch room (3 timed torches + push block) past the eye-switch water room = OoTR Basement Back Room; grass by the entrance"
+   },
+   "6421784517512490450": {
+    "region": "Deku Tree Basement Back Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 8 = Gohma larva room (eggs, webs) = Basement Back Room; grass in the open middle, not behind either web"
+   },
+   "4622654469035644255": {
+    "region": "Deku Tree Basement Back Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 8 = Gohma larva room (eggs, webs) = Basement Back Room; grass in the open middle, not behind either web"
+   },
+   "7457705918063319421": {
+    "region": "Deku Tree Before Boss",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 9 = B2 before Gohma (Basement Recovery Hearts 1-3 anchors); grass beside the scrub brothers"
+   },
+   "9991051747036366069": {
+    "region": "Deku Tree Before Boss",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 9 = B2 before Gohma (Basement Recovery Hearts 1-3 anchors); grass beside the scrub brothers"
+   },
+   "13873141578313882881": {
+    "region": "Deku Tree Before Boss",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 9 = B2 before Gohma (Basement Recovery Hearts 1-3 anchors); grass beside the scrub brothers"
+   },
+   "9056903661273588275": {
+    "region": "Deku Tree Before Boss",
+    "rule": "has_shield",
+    "confidence": "high",
+    "why": "room 9 B2; Presence flag Enemy_Scrub_Deku_ItemDrop_03 = drop of one of the 3 scrub brothers, beaten by reflecting nuts (OoTR uses has_shield for the same scrubs on Before Boss -> Queen Gohma)"
+   },
+   "160199974268797383": {
+    "region": "Deku Tree Before Boss",
+    "rule": "has_shield",
+    "confidence": "high",
+    "why": "room 9 B2; Presence flag Enemy_Scrub_Deku_ItemDrop_03 = drop of one of the 3 scrub brothers, beaten by reflecting nuts (OoTR uses has_shield for the same scrubs on Before Boss -> Queen Gohma)"
+   }
+  },
+  "pairs": [
+   {
+    "ootr": [
+     "Deku Tree Lower Lobby Recovery Heart",
+     "Deku Tree Upper Lobby Recovery Heart"
+    ],
+    "hashes": [
+     "16355617740219907263",
+     "16164791133086825945"
+    ],
+    "why": "OoT room 0 = remake room 0 (lobby). The remake lobby has no heart on the lower floors, only 3 hearts at one 3F spot under the Skulltula; both OoTR lobby hearts pair with two of them as a group (Upper's stricter rule then applies to both). The third heart stays a new location."
+   }
+  ],
+  "absent": {},
+  "excluded": {}
+ },
+ "DodongoCavern": {
+  "rooms": {
+   "0": "Dodongos Cavern Beginning",
+   "1": "Dodongos Cavern Lobby",
+   "2": "Dodongos Cavern Lower Right Side",
+   "4": "Dodongos Cavern Lower Right Side",
+   "5": "Dodongos Cavern Lower Right Side",
+   "8": "Dodongos Cavern Torch Room",
+   "10": "Dodongos Cavern Staircase Room",
+   "11": "Dodongos Cavern Staircase Room",
+   "13": "Dodongos Cavern Climb",
+   "14": "Dodongos Cavern Before Upper Lizalfos",
+   "15": "Dodongos Cavern Upper Lizalfos",
+   "16": "Dodongos Cavern Upper Lizalfos",
+   "17": "Dodongos Cavern Far Bridge",
+   "19": "Dodongos Cavern Before Boss",
+   "20": "Dodongos Cavern Mouth",
+   "21": "Dodongos Cavern Before Boss",
+   "22": "King Dodongo Boss Room"
+  },
+  "objects": {
+   "9774921074194675290": {
+    "region": "Dodongos Cavern Lower Right Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 2 = east hall behind the lobby's east wall crack (Baby Dodongos, Amos statues) = OoT 'right side' room 1"
+   },
+   "1876671093443800633": {
+    "region": "Dodongos Cavern Lower Right Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 2 = east hall behind the lobby's east wall crack (Baby Dodongos, Amos statues) = OoT 'right side' room 1"
+   },
+   "3363281587750304043": {
+    "region": "Dodongos Cavern Lower Right Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 4 = short hall between room 2 and the lower Lizalfos room (part of OoT's right side)"
+   },
+   "12085163799643476292": {
+    "region": "Dodongos Cavern Lower Right Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 4 = short hall between room 2 and the lower Lizalfos room (part of OoT's right side)"
+   },
+   "10150009467744191252": {
+    "region": "Dodongos Cavern Lower Right Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 5 = lower Lizalfos room (Lower Lizalfos chest anchor); floor pots y=100.5 (reset group)"
+   },
+   "9712419871941282477": {
+    "region": "Dodongos Cavern Lower Right Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 5 = lower Lizalfos room (Lower Lizalfos chest anchor); floor pots y=100.5 (reset group)"
+   },
+   "6325371574169243820": {
+    "region": "Dodongos Cavern Lower Right Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 5 = lower Lizalfos room (Lower Lizalfos chest anchor); floor pots y=100.5 (reset group)"
+   },
+   "1382943444627893523": {
+    "region": "Dodongos Cavern Lower Right Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 5 = lower Lizalfos room (Lower Lizalfos chest anchor); floor pots y=100.5 (reset group)"
+   },
+   "11133209227870230642": {
+    "region": "Dodongos Cavern Lower Right Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 5 = lower Lizalfos room; 3 extra pots (fairy, blue rupees) in the NE corner on the floor (y=100.5) by a decorative lava fall"
+   },
+   "10493525405478862270": {
+    "region": "Dodongos Cavern Lower Right Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 5 = lower Lizalfos room; 3 extra pots (fairy, blue rupees) in the NE corner on the floor (y=100.5) by a decorative lava fall"
+   },
+   "2045413023280716382": {
+    "region": "Dodongos Cavern Lower Right Side",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 5 = lower Lizalfos room; 3 extra pots (fairy, blue rupees) in the NE corner on the floor (y=100.5) by a decorative lava fall"
+   },
+   "1997644872224400101": {
+    "region": "Dodongos Cavern Torch Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 8 = Dodongo room with the timed torches = OoTR Torch Room (OoT room 4); floor pots"
+   },
+   "3975080901614021966": {
+    "region": "Dodongos Cavern Torch Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 8 = Dodongo room with the timed torches = OoTR Torch Room (OoT room 4); floor pots"
+   },
+   "15912316170670317256": {
+    "region": "Dodongos Cavern Torch Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 8 = Dodongo room with the timed torches = OoTR Torch Room (OoT room 4); floor pots"
+   },
+   "9597464827066038162": {
+    "region": "Dodongos Cavern Climb",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = staircase room (bomb-flower staircase, Bomb Flower Platform chest = Climb); pots at y=110.5 up the lowered staircase = OoT Staircase Pots (room 2)"
+   },
+   "12200381569168299500": {
+    "region": "Dodongos Cavern Climb",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = staircase room (bomb-flower staircase, Bomb Flower Platform chest = Climb); pots at y=110.5 up the lowered staircase = OoT Staircase Pots (room 2)"
+   },
+   "1095569754766380995": {
+    "region": "Dodongos Cavern Climb",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = staircase room (bomb-flower staircase, Bomb Flower Platform chest = Climb); pots at y=110.5 up the lowered staircase = OoT Staircase Pots (room 2)"
+   },
+   "1786052373103713076": {
+    "region": "Dodongos Cavern Climb",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 10 = staircase room (bomb-flower staircase, Bomb Flower Platform chest = Climb); pots at y=110.5 up the lowered staircase = OoT Staircase Pots (room 2)"
+   },
+   "13297656785343605627": {
+    "region": "Dodongos Cavern Climb",
+    "rule": "can_use(Boomerang) or at('Dodongos Cavern Far Bridge', True)",
+    "confidence": "high",
+    "why": "room 13 = blade room (2 blade traps, push block) whose upper ledge holds the Bomb Bag chest (Far Bridge); pots on that ledge y=116.6 = OoT Blade Room Pots"
+   },
+   "4234933260265093025": {
+    "region": "Dodongos Cavern Climb",
+    "rule": "can_use(Boomerang) or at('Dodongos Cavern Far Bridge', True)",
+    "confidence": "high",
+    "why": "room 13 = blade room (2 blade traps, push block) whose upper ledge holds the Bomb Bag chest (Far Bridge); pots on that ledge y=116.6 = OoT Blade Room Pots"
+   },
+   "3941834049759865192": {
+    "region": "Dodongos Cavern Climb",
+    "rule": "can_use(Boomerang) or at('Dodongos Cavern Far Bridge', True)",
+    "confidence": "medium",
+    "why": "room 13 blade room; pot at y=112.3 on the cliff slope between the floor (110.8) and the Bomb Bag ledge (116); level unclear, so the stricter Blade Room pot rule is used"
+   },
+   "10636680471375736003": {
+    "region": "Dodongos Cavern Climb",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 13 blade room floor; pot directly behind the push block (51.5,110.8,-2.0) = spot of OoT's Blade Room Behind Block heart (rule True, the block needs no item)"
+   },
+   "14182867811396955150": {
+    "region": "Dodongos Cavern Before Upper Lizalfos",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 14 = single eye switch room (1 eye switch + fire wall); pots between the bombable entry crack (x=56.8) and the fire wall (x=73.8)"
+   },
+   "2530082567273905838": {
+    "region": "Dodongos Cavern Before Upper Lizalfos",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 14 = single eye switch room (1 eye switch + fire wall); pots between the bombable entry crack (x=56.8) and the fire wall (x=73.8)"
+   },
+   "558580124832874594": {
+    "region": "Dodongos Cavern Before Upper Lizalfos",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 14 = single eye switch room (1 eye switch + fire wall); pots between the bombable entry crack (x=56.8) and the fire wall (x=73.8)"
+   },
+   "12436656290806750367": {
+    "region": "Dodongos Cavern Upper Lizalfos",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 16 = upper Lizalfos room (2 Lizalfos, Upper Lizalfos chest pedestal); pots beside the pedestal at y=114.8"
+   },
+   "6763794341906819086": {
+    "region": "Dodongos Cavern Upper Lizalfos",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 16 = upper Lizalfos room (2 Lizalfos, Upper Lizalfos chest pedestal); pots beside the pedestal at y=114.8"
+   },
+   "8997212367184665421": {
+    "region": "Dodongos Cavern Far Bridge",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 17 = double eye switch room (2 eye switches + 2 fire walls); pots on the east side entered from the upper Lizalfos room = OoT Double Eye Switch Room Pots"
+   },
+   "3215221221211819661": {
+    "region": "Dodongos Cavern Far Bridge",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 17 = double eye switch room (2 eye switches + 2 fire walls); pots on the east side entered from the upper Lizalfos room = OoT Double Eye Switch Room Pots"
+   },
+   "1011984139792114332": {
+    "region": "Dodongos Cavern Before Boss",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 19 = block-push rooms behind the Dodongo mouth (back-room GS crack, step switch) = OoTR Before Boss"
+   },
+   "15723367373502201973": {
+    "region": "Dodongos Cavern Before Boss",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 19 = block-push rooms behind the Dodongo mouth (back-room GS crack, step switch) = OoTR Before Boss"
+   },
+   "11604995372981625598": {
+    "region": "Dodongos Cavern Before Boss",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 19 = block-push rooms behind the Dodongo mouth (back-room GS crack, step switch) = OoTR Before Boss"
+   },
+   "11918955770754578074": {
+    "region": "Dodongos Cavern Before Boss",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 19 = block-push rooms behind the Dodongo mouth (back-room GS crack, step switch) = OoTR Before Boss"
+   },
+   "7019968549718875208": {
+    "region": "Dodongos Cavern Before Boss",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 19 = block-push rooms behind the Dodongo mouth (back-room GS crack, step switch) = OoTR Before Boss"
+   },
+   "8698939491446015433": {
+    "region": "Dodongos Cavern Before Boss",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 21 = last room before King Dodongo (bombable floor down to the boss)"
+   },
+   "8895256479077874219": {
+    "region": "Dodongos Cavern Before Boss",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 21 = last room before King Dodongo (bombable floor down to the boss)"
+   },
+   "17221132504973124786": {
+    "region": "Dodongos Cavern Before Boss",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 21 = last room before King Dodongo (bombable floor down to the boss)"
+   }
+  },
+  "pairs": [
+   {
+    "ootr": [
+     "Dodongos Cavern Right Side Pot 1",
+     "Dodongos Cavern Right Side Pot 2",
+     "Dodongos Cavern Right Side Pot 3",
+     "Dodongos Cavern Right Side Pot 4"
+    ],
+    "hashes": [
+     "9774921074194675290",
+     "1876671093443800633",
+     "3363281587750304043",
+     "12085163799643476292"
+    ],
+    "why": "OoT room 1 east hall = remake rooms 2+4 (4 pots); OoT has 6"
+   },
+   {
+    "ootr": [
+     "Dodongos Cavern Lower Lizalfos Pot 1",
+     "Dodongos Cavern Lower Lizalfos Pot 2",
+     "Dodongos Cavern Lower Lizalfos Pot 3",
+     "Dodongos Cavern Lower Lizalfos Pot 4"
+    ],
+    "hashes": [
+     "10150009467744191252",
+     "9712419871941282477",
+     "6325371574169243820",
+     "1382943444627893523"
+    ],
+    "why": "lower Lizalfos room (OoT room 3, lower part) = remake room 5; the 4 static reset-group pots"
+   },
+   {
+    "ootr": [
+     "Dodongos Cavern Torch Room Pot 1",
+     "Dodongos Cavern Torch Room Pot 2",
+     "Dodongos Cavern Torch Room Pot 3"
+    ],
+    "hashes": [
+     "1997644872224400101",
+     "3975080901614021966",
+     "15912316170670317256"
+    ],
+    "why": "Torch Room (OoT room 4, Dodongos + torches) = remake room 8, 3 pots"
+   },
+   {
+    "ootr": [
+     "Dodongos Cavern Staircase Pot 1",
+     "Dodongos Cavern Staircase Pot 2",
+     "Dodongos Cavern Staircase Pot 3",
+     "Dodongos Cavern Staircase Pot 4"
+    ],
+    "hashes": [
+     "9597464827066038162",
+     "12200381569168299500",
+     "1095569754766380995",
+     "1786052373103713076"
+    ],
+    "why": "staircase room (OoT room 2) = remake room 10, 4 pots up the staircase"
+   },
+   {
+    "ootr": [
+     "Dodongos Cavern Blade Room Pot 1",
+     "Dodongos Cavern Blade Room Pot 2"
+    ],
+    "hashes": [
+     "13297656785343605627",
+     "4234933260265093025"
+    ],
+    "why": "blade room (OoT room 9) = remake room 13; the 2 pots on the Bomb Bag ledge"
+   },
+   {
+    "ootr": [
+     "Dodongos Cavern Single Eye Switch Room Pot 1",
+     "Dodongos Cavern Single Eye Switch Room Pot 2"
+    ],
+    "hashes": [
+     "14182867811396955150",
+     "2530082567273905838"
+    ],
+    "why": "single eye switch room (OoT room 10) = remake room 14 (3 pots, the adjacent pair used)"
+   },
+   {
+    "ootr": [
+     "Dodongos Cavern Double Eye Switch Room Pot 1",
+     "Dodongos Cavern Double Eye Switch Room Pot 2"
+    ],
+    "hashes": [
+     "8997212367184665421",
+     "3215221221211819661"
+    ],
+    "why": "double eye switch room (OoT room 12) = remake room 17, 2 pots"
+   },
+   {
+    "ootr": [
+     "Dodongos Cavern Last Block Pot 1",
+     "Dodongos Cavern Last Block Pot 2",
+     "Dodongos Cavern Last Block Pot 3",
+     "Dodongos Cavern Last Block Pot 4"
+    ],
+    "hashes": [
+     "15723367373502201973",
+     "11604995372981625598",
+     "8698939491446015433",
+     "8895256479077874219"
+    ],
+    "why": "OoT rooms 7/8 behind the mouth = remake rooms 19 (2 static pots) and 21 (2 pots); all Before Boss with rule True, so the order is immaterial"
+   }
+  ],
+  "absent": {
+   "Dodongos Cavern Right Side Pot 5": "remake east hall (rooms 2+4) has only 4 pots",
+   "Dodongos Cavern Right Side Pot 6": "remake east hall (rooms 2+4) has only 4 pots",
+   "Dodongos Cavern Torch Room Pot 4": "remake torch room (room 8) has only 3 pots",
+   "Dodongos Cavern Blade Room Behind Block Recovery Heart": "no Obj_Heart anywhere in the remake cavern; the spot behind the blade-room block (room 13) holds a pot instead",
+   "Dodongos Cavern Lower Lizalfos Hidden Recovery Heart": "no Obj_Heart in the remake cavern; the lower Lizalfos room (room 5) has only pots",
+   "Dodongos Cavern Lizalfos Upper Recovery Heart 1": "no Obj_Heart in the remake cavern; the upper Lizalfos room (room 16) has 2 pots by the chest instead",
+   "Dodongos Cavern Lizalfos Upper Recovery Heart 2": "no Obj_Heart in the remake cavern; the upper Lizalfos room (room 16) has 2 pots by the chest instead"
+  },
+  "excluded": {}
+ },
+ "InsideJabuJabuBelly": {
+  "rooms": {
+   "3": "Jabu Jabus Belly Main",
+   "5": "Jabu Jabus Belly Before Boss",
+   "6": "Jabu Jabus Belly Past Big Octo",
+   "9": "Jabu Jabus Belly Main",
+   "12": "Jabu Jabus Belly Depths",
+   "15": "Barinade Boss Room"
+  },
+  "objects": {
+   "13522941381613826313": {
+    "region": "Jabu Jabus Belly Before Boss",
+    "rule": "can_use(Boomerang) or (logic_jabu_near_boss_ranged and (can_use(Hookshot) or can_use(Bow) or can_use(Slingshot))) or (logic_jabu_near_boss_explosives and (has_bombchus or (Bombs and can_use(Hover_Boots))))",
+    "confidence": "high",
+    "why": "room 16 = antechamber between room 5 (GS Near Boss, the high switch SwitchHit_A_02) and Barinade's door, behind the shutter that switch opens: OoTR's Before Boss -> Barinade Boss Room rule (not the boss region itself, which boss shuffle can reach from elsewhere)"
+   },
+   "8440112383775285250": {
+    "region": "Jabu Jabus Belly Before Boss",
+    "rule": "can_use(Boomerang) or (logic_jabu_near_boss_ranged and (can_use(Hookshot) or can_use(Bow) or can_use(Slingshot))) or (logic_jabu_near_boss_explosives and (has_bombchus or (Bombs and can_use(Hover_Boots))))",
+    "confidence": "high",
+    "why": "room 16 = antechamber between room 5 (GS Near Boss, the high switch SwitchHit_A_02) and Barinade's door, behind the shutter that switch opens: OoTR's Before Boss -> Barinade Boss Room rule (not the boss region itself, which boss shuffle can reach from elsewhere)"
+   },
+   "1886228517829174646": {
+    "region": "Jabu Jabus Belly Before Boss",
+    "rule": "can_use(Boomerang) or (logic_jabu_near_boss_ranged and (can_use(Hookshot) or can_use(Bow) or can_use(Slingshot))) or (logic_jabu_near_boss_explosives and (has_bombchus or (Bombs and can_use(Hover_Boots))))",
+    "confidence": "high",
+    "why": "room 16 = antechamber between room 5 (GS Near Boss, the high switch SwitchHit_A_02) and Barinade's door, behind the shutter that switch opens: OoTR's Before Boss -> Barinade Boss Room rule (not the boss region itself, which boss shuffle can reach from elsewhere)"
+   }
+  },
+  "pairs": [],
+  "absent": {
+   "Jabu Jabus Belly Basement 2 Octoroks Pot 5": "remake room 13 (two-Octorok basement) has only 4 pots, already paired with Pots 1-4"
+  },
+  "excluded": {}
+ },
+ "ForestTemple": {
+  "rooms": {
+   "0": "Forest Temple Lobby",
+   "2": "Forest Temple Central Area",
+   "3": "Forest Temple Central Area",
+   "4": "Forest Temple Central Area",
+   "5": "Forest Temple Block Push Room",
+   "6": "Forest Temple Block Push Room",
+   "8": "Forest Temple Block Push Room",
+   "14": "Forest Temple NE Outdoors",
+   "15": "Forest Temple Outdoors High Balconies",
+   "16": "Forest Temple Bow Region",
+   "17": "Forest Temple Bow Region",
+   "18": "Forest Temple Bow Region",
+   "22": "Forest Temple Outside Upper Ledge",
+   "23": "Forest Temple Frozen Eye Switch Room",
+   "24": "Forest Temple Falling Room",
+   "25": "Forest Temple Falling Room",
+   "27": "Forest Temple Basement",
+   "29": "Phantom Ganon Boss Room"
+  },
+  "objects": {
+   "8740962919121236974": {
+    "region": "Forest Temple Central Area",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 4 = lower Stalfos room (First Stalfos chest anchor, 2 Stalfos), the lower half of OoT room 6"
+   },
+   "2723241463527082223": {
+    "region": "Forest Temple Central Area",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 4 = lower Stalfos room (First Stalfos chest anchor, 2 Stalfos), the lower half of OoT room 6"
+   },
+   "11701653450964348630": {
+    "region": "Forest Temple Bow Region",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 17 = upper Stalfos room (Bow chest anchor, 3 Stalfos), the upper half of OoT room 6"
+   },
+   "2110020506516121812": {
+    "region": "Forest Temple Bow Region",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 17 = upper Stalfos room (Bow chest anchor, 3 Stalfos), the upper half of OoT room 6"
+   },
+   "6298504646306157744": {
+    "region": "Forest Temple Bow Region",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 17 = upper Stalfos room (Bow chest anchor, 3 Stalfos), the upper half of OoT room 6"
+   },
+   "13098892055243633233": {
+    "region": "Forest Temple Bow Region",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 17 = upper Stalfos room (Bow chest anchor, 3 Stalfos), the upper half of OoT room 6"
+   },
+   "4243968346728704417": {
+    "region": "Forest Temple Bow Region",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 18 = Blue Poe (Beth) room (Blue Poe chest anchor) = OoT room 13"
+   },
+   "12084337161955511012": {
+    "region": "Forest Temple Bow Region",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 18 = Blue Poe (Beth) room (Blue Poe chest anchor) = OoT room 13"
+   },
+   "14344239269960841819": {
+    "region": "Forest Temple Bow Region",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 18 = Blue Poe (Beth) room (Blue Poe chest anchor) = OoT room 13"
+   },
+   "10045766070541814618": {
+    "region": "Forest Temple Frozen Eye Switch Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 23 = frozen eye switch room (EyeSwitch_A_07 + Obj_Ice) behind the locked door after room 20 = OoT room 14"
+   },
+   "14386060266040640728": {
+    "region": "Forest Temple Frozen Eye Switch Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 23 = frozen eye switch room (EyeSwitch_A_07 + Obj_Ice) behind the locked door after room 20 = OoT room 14"
+   },
+   "204034068196251074": {
+    "region": "Forest Temple Falling Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 25 = Green Poe (Amy) block-puzzle room after the falling-ceiling room = OoT room 16"
+   },
+   "16313270500968203353": {
+    "region": "Forest Temple Falling Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 25 = Green Poe (Amy) block-puzzle room after the falling-ceiling room = OoT room 16"
+   },
+   "3947004986900705772": {
+    "region": "Forest Temple Block Push Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 6 = first room past the key-1 door (room 5 corridor with the chain lock) on the west: Blue Bubble, lift up to the block puzzle (rooms 7-9, Eye Switch chest anchor)"
+   },
+   "5080915951880062416": {
+    "region": "Forest Temple Block Push Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 6 = first room past the key-1 door (room 5 corridor with the chain lock) on the west: Blue Bubble, lift up to the block puzzle (rooms 7-9, Eye Switch chest anchor)"
+   },
+   "14169869109292081997": {
+    "region": "Forest Temple Block Push Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 6 = first room past the key-1 door (room 5 corridor with the chain lock) on the west: Blue Bubble, lift up to the block puzzle (rooms 7-9, Eye Switch chest anchor)"
+   },
+   "9611679337718327541": {
+    "region": "Forest Temple Outdoors High Balconies",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 15 = bottom of the drained well (Well chest anchor, Outdoors High Balconies); y=88 beside the chest, where OoT has the 2 Well hearts"
+   },
+   "6916546705775293667": {
+    "region": "Forest Temple Outdoors High Balconies",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 15 = bottom of the drained well (Well chest anchor, Outdoors High Balconies); y=88 beside the chest, where OoT has the 2 Well hearts"
+   },
+   "15881257994982213730": {
+    "region": "Forest Temple Basement",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 27 = basement with the rotating walls (Basement chest anchor); pots on the same floor y=60.7"
+   },
+   "17869964928823963066": {
+    "region": "Forest Temple Basement",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 27 = basement with the rotating walls (Basement chest anchor); pots on the same floor y=60.7"
+   },
+   "8451893348143348779": {
+    "region": "Forest Temple Basement",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 27 = basement with the rotating walls (Basement chest anchor); pots on the same floor y=60.7"
+   },
+   "845052341770025044": {
+    "region": "Forest Temple Basement",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 27 = basement with the rotating walls (Basement chest anchor); pots on the same floor y=60.7"
+   }
+  },
+  "pairs": [
+   {
+    "ootr": [
+     "Forest Temple Lower Stalfos Pot 1",
+     "Forest Temple Lower Stalfos Pot 2"
+    ],
+    "hashes": [
+     "8740962919121236974",
+     "2723241463527082223"
+    ],
+    "why": "OoT room 6 lower half = remake room 4 (reconcile: stalfos room 6 split into 4 and 17)"
+   },
+   {
+    "ootr": [
+     "Forest Temple Upper Stalfos Pot 1",
+     "Forest Temple Upper Stalfos Pot 2",
+     "Forest Temple Upper Stalfos Pot 3",
+     "Forest Temple Upper Stalfos Pot 4"
+    ],
+    "hashes": [
+     "11701653450964348630",
+     "2110020506516121812",
+     "6298504646306157744",
+     "13098892055243633233"
+    ],
+    "why": "OoT room 6 upper half = remake room 17"
+   },
+   {
+    "ootr": [
+     "Forest Temple Blue Poe Room Pot 1",
+     "Forest Temple Blue Poe Room Pot 2",
+     "Forest Temple Blue Poe Room Pot 3"
+    ],
+    "hashes": [
+     "4243968346728704417",
+     "12084337161955511012",
+     "14344239269960841819"
+    ],
+    "why": "Blue Poe room (OoT 13) = remake room 18"
+   },
+   {
+    "ootr": [
+     "Forest Temple Frozen Eye Switch Room Pot 1",
+     "Forest Temple Frozen Eye Switch Room Pot 2"
+    ],
+    "hashes": [
+     "10045766070541814618",
+     "14386060266040640728"
+    ],
+    "why": "frozen eye switch room (OoT 14) = remake room 23"
+   },
+   {
+    "ootr": [
+     "Forest Temple Green Poe Room Pot 1",
+     "Forest Temple Green Poe Room Pot 2"
+    ],
+    "hashes": [
+     "204034068196251074",
+     "16313270500968203353"
+    ],
+    "why": "Green Poe room (OoT 16) = remake room 25"
+   }
+  ],
+  "absent": {
+   "Forest Temple Well Recovery Heart 1": "no Obj_Heart in the remake temple; the well bottom (room 15) holds 2 pots instead",
+   "Forest Temple Well Recovery Heart 2": "no Obj_Heart in the remake temple; the well bottom (room 15) holds 2 pots instead",
+   "Forest Temple Courtyard Recovery Heart 1": "no Obj_Heart anywhere in the remake temple (the courtyards have none)",
+   "Forest Temple Courtyard Recovery Heart 2": "no Obj_Heart anywhere in the remake temple (the courtyards have none)"
+  },
+  "excluded": {}
+ },
+ "FireTemple": {
+  "rooms": {
+   "0": "Fire Temple Lower",
+   "1": "Fire Temple Big Lava Room",
+   "2": "Fire Temple Near Boss",
+   "3": "Fire Temple Lower Locked Door",
+   "4": "Fire Temple Boulder Maze Upper",
+   "6": "Fire Temple Narrow Path Room",
+   "11": "Fire Temple Upper",
+   "13": "Fire Temple Upper",
+   "14": "Fire Temple Upper",
+   "15": "Fire Temple Lower Locked Door",
+   "16": "Fire Temple Boulder Maze Upper",
+   "17": "Fire Temple Lower Locked Door",
+   "18": "Fire Temple Lower Locked Door",
+   "19": "Fire Temple Big Lava Room",
+   "21": "Fire Temple Elevator Room",
+   "22": "Fire Temple Big Lava Room",
+   "24": "Fire Temple Upper",
+   "25": "Fire Temple Upper"
+  },
+  "objects": {
+   "14488990020963596026": {
+    "region": "Fire Temple Narrow Path Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 6 = OoT room 6 (Narrow Path Room; Fire room numbers match OoT): small room behind the boulder maze's locked door with the eye switch that opens the Map chest shutter; the remake has 3 pots where OoT has 3 hearts"
+   },
+   "15901054600830633268": {
+    "region": "Fire Temple Narrow Path Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 6 = OoT room 6 (Narrow Path Room; Fire room numbers match OoT): small room behind the boulder maze's locked door with the eye switch that opens the Map chest shutter; the remake has 3 pots where OoT has 3 hearts"
+   },
+   "17365727223434160995": {
+    "region": "Fire Temple Narrow Path Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 6 = OoT room 6 (Narrow Path Room; Fire room numbers match OoT): small room behind the boulder maze's locked door with the eye switch that opens the Map chest shutter; the remake has 3 pots where OoT has 3 hearts"
+   },
+   "11945600822575070219": {
+    "region": "Fire Temple Boulder Maze Upper",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 16 = OoT moving-fire room (Moving Fire Room hearts 1-2 already paired here = Boulder Maze Upper); pot at the far south end, side of the caged Map chest unknown, so the stricter Boulder Maze Upper (Narrow Path + 6 keys) rather than Narrow Path with Bow"
+   },
+   "12809751476932043688": {
+    "region": "Fire Temple Flame Maze",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 10 = flame maze; south-west section (z=+20) on the near side: the middle room's (room 11) locked door faces south and guides send you to the SW section to reach it = OoT Flame Maze left side (walking in westward, left = +z)"
+   },
+   "1299294558999405209": {
+    "region": "Fire Temple Flame Maze",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 10 = flame maze; south-west section (z=+20) on the near side: the middle room's (room 11) locked door faces south and guides send you to the SW section to reach it = OoT Flame Maze left side (walking in westward, left = +z)"
+   },
+   "3049694327750200002": {
+    "region": "Fire Temple Upper",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 10 = flame maze, north half = far side past the middle room (key 8) or the flame-wall skip = OoTR Fire Temple Upper (Right Side pots); two on the NW raised platform by the west flame wall and door, one among the north fire walls (bomb drop like OoT's right-side bomb pots)"
+   },
+   "17781326666964833523": {
+    "region": "Fire Temple Upper",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 10 = flame maze, north half = far side past the middle room (key 8) or the flame-wall skip = OoTR Fire Temple Upper (Right Side pots); two on the NW raised platform by the west flame wall and door, one among the north fire walls (bomb drop like OoT's right-side bomb pots)"
+   },
+   "18015303210027196984": {
+    "region": "Fire Temple Upper",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 10 = flame maze, north half = far side past the middle room (key 8) or the flame-wall skip = OoTR Fire Temple Upper (Right Side pots); two on the NW raised platform by the west flame wall and door, one among the north fire walls (bomb drop like OoT's right-side bomb pots)"
+   },
+   "6542764537258522428": {
+    "region": "Fire Temple Upper",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 10 flame maze, north half (far side, past key 8 or the flame-wall skip): the small crates used on the switch that drops the west flame wall (one sits on Stepswitch_A_03); guides place these blocks in the northern half"
+   },
+   "15851182856759542692": {
+    "region": "Fire Temple Upper",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 10 flame maze, north half (far side, past key 8 or the flame-wall skip): the small crates used on the switch that drops the west flame wall (one sits on Stepswitch_A_03); guides place these blocks in the northern half"
+   },
+   "1454416379990914625": {
+    "region": "Fire Temple Upper",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 10 flame maze, north half (far side, past key 8 or the flame-wall skip): the small crates used on the switch that drops the west flame wall (one sits on Stepswitch_A_03); guides place these blocks in the northern half"
+   },
+   "4199675919137048754": {
+    "region": "Fire Temple Upper",
+    "rule": "True",
+    "confidence": "medium",
+    "why": "room 10 flame maze, north half (far side, past key 8 or the flame-wall skip): the small crates used on the switch that drops the west flame wall (one sits on Stepswitch_A_03); guides place these blocks in the northern half"
+   },
+   "7276364588106931231": {
+    "region": "Fire Temple Elevator Room",
+    "rule": "(Small_Key_Fire_Temple, 4) and (Progressive_Strength_Upgrade or logic_fire_strength) and (has_explosives or Bow or Hookshot)",
+    "confidence": "medium",
+    "why": "TOO LOOSE today (the rule lacks the key). The pots (92.5,116.75,9.7-11.3) are on room 21's balcony level (y116.6-116.8: curbs and candles at x111-117), 8.75 above the walkway (y108); room 21 has no ladder, vine or hookshot target. The balcony and the block #16866 (y115.55) are reached only through D3 #90487 (both chain locks labelled room 21: an internal door from the walkway up to the balcony; walls at x116.5-117 behind it). So the pots need D3 = OoTR's 4th-key count (Elevator Room -> Boulder Maze Lower). With dungeon keys or keysanity the fill can put the key that opens D3 in these pots; with vanilla keys a player with the Bow but no bombs is expected to reach them, while D3's key is the Blocked Door chest (bombs). Region kept (boss ER safe); rule = OoTR's full climb rule."
+   },
+   "1614774357493893481": {
+    "region": "Fire Temple Elevator Room",
+    "rule": "(Small_Key_Fire_Temple, 4) and (Progressive_Strength_Upgrade or logic_fire_strength) and (has_explosives or Bow or Hookshot)",
+    "confidence": "medium",
+    "why": "TOO LOOSE today (the rule lacks the key). The pots (92.5,116.75,9.7-11.3) are on room 21's balcony level (y116.6-116.8: curbs and candles at x111-117), 8.75 above the walkway (y108); room 21 has no ladder, vine or hookshot target. The balcony and the block #16866 (y115.55) are reached only through D3 #90487 (both chain locks labelled room 21: an internal door from the walkway up to the balcony; walls at x116.5-117 behind it). So the pots need D3 = OoTR's 4th-key count (Elevator Room -> Boulder Maze Lower). With dungeon keys or keysanity the fill can put the key that opens D3 in these pots; with vanilla keys a player with the Bow but no bombs is expected to reach them, while D3's key is the Blocked Door chest (bombs). Region kept (boss ER safe); rule = OoTR's full climb rule."
+   },
+   "10887294463827394248": {
+    "region": "Fire Temple Lower Locked Door",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 18 = flying-tile + Like Like room of the boss-key loop, between room 15 (behind the lobby's locked door) and rooms 3 (Flare Dancer) / 17 (BK chest) = OoTR Lower Locked Door; bomb rock in front of the GS (rock rule added by caller)"
+   },
+   "18166761150827896849": {
+    "region": "Fire Temple Upper",
+    "rule": "Megaton_Hammer and can_use(Hookshot) and (can_play(Song_of_Time) or has_explosives)",
+    "confidence": "medium",
+    "why": "Obj_BrokenRock_A_02 (hammer only) in room 25 (y152.5) between the hammer-drop floor #...30285 and room 11's upper floor. Room 25 is reached by hammering room 9's floor, which lies past the room-24 Flare Dancer (Hookshot only); the room-11 upper-floor side (Song of Time block) is not shown to connect without it. Strict: add the Hookshot."
+   },
+   "9487554220373337506": {
+    "region": "Fire Temple Upper",
+    "rule": "Megaton_Hammer and can_use(Hookshot) and (can_play(Song_of_Time) or has_explosives)",
+    "confidence": "medium",
+    "why": "Obj_BrokenRock_A_02 (hammer only) in room 25 (y152.5) between the hammer-drop floor #...30285 and room 11's upper floor. Room 25 is reached by hammering room 9's floor, which lies past the room-24 Flare Dancer (Hookshot only); the room-11 upper-floor side (Song of Time block) is not shown to connect without it. Strict: add the Hookshot."
+   }
+  },
+  "pairs": [
+   {
+    "ootr": [
+     "Fire Temple Flame Maze Left Side Pot 1",
+     "Fire Temple Flame Maze Left Side Pot 2"
+    ],
+    "hashes": [
+     "12809751476932043688",
+     "1299294558999405209"
+    ],
+    "why": "OoT room 10 left (south, near) side = remake room 10 SW pots"
+   },
+   {
+    "ootr": [
+     "Fire Temple Flame Maze Right Side Pot 1",
+     "Fire Temple Flame Maze Right Side Pot 2",
+     "Fire Temple Flame Maze Right Side Pot 3"
+    ],
+    "hashes": [
+     "3049694327750200002",
+     "18015303210027196984",
+     "17781326666964833523"
+    ],
+    "why": "OoT room 10 right (north, far) side, Upper region = remake room 10 north-half pots (bomb pot first, like OoT Pot 1)"
+   }
+  ],
+  "absent": {
+   "Fire Temple Narrow Path Room Recovery Heart 1": "remake room 6 (OoT 6) has 3 pots and no hearts",
+   "Fire Temple Narrow Path Room Recovery Heart 2": "remake room 6 (OoT 6) has 3 pots and no hearts",
+   "Fire Temple Narrow Path Room Recovery Heart 3": "remake room 6 (OoT 6) has 3 pots and no hearts",
+   "Fire Temple Moving Fire Room Recovery Heart 3": "remake room 16 (OoT 16) has 2 hearts (paired with 1-2) and a pot",
+   "Fire Temple Flame Maze Left Side Pot 3": "remake room 10 has only 2 pots on the near (south) side",
+   "Fire Temple Flame Maze Left Side Pot 4": "remake room 10 has only 2 pots on the near (south) side",
+   "Fire Temple Flame Maze Right Side Pot 4": "remake room 10 has only 3 pots on the far (north) side",
+   "Fire Temple Hammer Staircase Small Wooden Crate 1": "remake room 14 (hammer staircase) has no crates; the area's 4 small crates are in room 10",
+   "Fire Temple Hammer Staircase Small Wooden Crate 2": "remake room 14 (hammer staircase) has no crates; the area's 4 small crates are in room 10",
+   "Fire Temple Elevator Room Recovery Heart 1": "remake room 21 (OoT 21) has 2 pots and no hearts",
+   "Fire Temple Elevator Room Recovery Heart 2": "remake room 21 (OoT 21) has 2 pots and no hearts",
+   "Fire Temple Elevator Room Recovery Heart 3": "remake room 21 (OoT 21) has 2 pots and no hearts"
+  },
+  "excluded": {}
+ },
+ "WaterTemple": {
+  "rooms": {
+   "0": "Water Temple Lobby",
+   "2": "Water Temple Middle Water Level",
+   "3": "Water Temple South Basement",
+   "4": "Water Temple Dive",
+   "6": "Water Temple Dark Link Region",
+   "7": "Water Temple Dark Link Region",
+   "8": "Water Temple Dragon Statue",
+   "14": "Water Temple North Basement",
+   "15": "Water Temple Boss Key Chest Room",
+   "17": "Water Temple Dive",
+   "18": "Water Temple Lowered Water Levels",
+   "20": "Water Temple Central Bow Target",
+   "21": "Water Temple River",
+   "22": "Water Temple Dark Link Region",
+   "23": "Morpha Boss Room",
+   "25": "Water Temple Cracked Wall"
+  },
+  "objects": {
+   "4025608826386451139": {
+    "region": "Water Temple Lobby",
+    "rule": "at('Water Temple Lowered Water Levels', True) or can_use(Boomerang) or ((can_use(Iron_Boots) or (Progressive_Scale, 2)) and (can_use(Bow) or can_use(Hookshot) or can_use(Slingshot)) and (can_use(Zora_Tunic) or logic_fewer_tunic_requirements))",
+    "confidence": "high",
+    "why": "room 0 main room, east L2 ledge (y=111.5, stairs at L2) in front of the L2 cracked wall; under water at the starting high level (float floors at 119.5): OoTR's Main Room L2 pot rule (lowered water, boomerang, or dive + projectile) reused"
+   },
+   "1279554567131519582": {
+    "region": "Water Temple Lobby",
+    "rule": "at('Water Temple Lowered Water Levels', True) or can_use(Boomerang) or ((can_use(Iron_Boots) or (Progressive_Scale, 2)) and (can_use(Bow) or can_use(Hookshot) or can_use(Slingshot)) and (can_use(Zora_Tunic) or logic_fewer_tunic_requirements))",
+    "confidence": "high",
+    "why": "room 0 main room, east L2 ledge (y=111.5, stairs at L2) in front of the L2 cracked wall; under water at the starting high level (float floors at 119.5): OoTR's Main Room L2 pot rule (lowered water, boomerang, or dive + projectile) reused"
+   },
+   "3585686260179499649": {
+    "region": "Water Temple Before Boss",
+    "rule": "can_use(Longshot)",
+    "confidence": "high",
+    "why": "room 0 top level (y=124.8) on the north platform before the boss shutter (-4.5,124.8,-38.8) = OoT Near Boss pots (room 0); above every water level"
+   },
+   "9614156843162683069": {
+    "region": "Water Temple Before Boss",
+    "rule": "can_use(Longshot)",
+    "confidence": "high",
+    "why": "room 0 top level (y=124.8) on the north platform before the boss shutter (-4.5,124.8,-38.8) = OoT Near Boss pots (room 0); above every water level"
+   },
+   "5848096526143037248": {
+    "region": "Water Temple Before Boss",
+    "rule": "can_use(Longshot)",
+    "confidence": "high",
+    "why": "room 0 top level (y=124.8) on the north platform before the boss shutter (-4.5,124.8,-38.8) = OoT Near Boss pots (room 0); above every water level"
+   },
+   "7397402781751080416": {
+    "region": "Water Temple Before Boss",
+    "rule": "can_use(Longshot)",
+    "confidence": "high",
+    "why": "room 0 top level (y=124.8) on the north platform before the boss shutter (-4.5,124.8,-38.8) = OoT Near Boss pots (room 0); above every water level"
+   },
+   "116284582719887989": {
+    "region": "Water Temple Middle Water Level",
+    "rule": "((Small_Key_Water_Temple, 5) or Bow or can_use(Dins_Fire)) and Iron_Boots and Zora_Tunic and Hookshot",
+    "confidence": "high",
+    "why": "room 2 = flooded bottom of the central pillar, beside the Central Pillar chest (12,92.7,-4.5) behind the same switch gate (crystal switch x=2, gate x=6.2, pots x=11): under water, so the chest's full rule (Iron Boots, Zora Tunic, Hookshot) is reused"
+   },
+   "2730270174636576878": {
+    "region": "Water Temple Middle Water Level",
+    "rule": "((Small_Key_Water_Temple, 5) or Bow or can_use(Dins_Fire)) and Iron_Boots and Zora_Tunic and Hookshot",
+    "confidence": "high",
+    "why": "room 2 = flooded bottom of the central pillar, beside the Central Pillar chest (12,92.7,-4.5) behind the same switch gate (crystal switch x=2, gate x=6.2, pots x=11): under water, so the chest's full rule (Iron Boots, Zora Tunic, Hookshot) is reused"
+   },
+   "5604234566446979847": {
+    "region": "Water Temple Middle Water Level",
+    "rule": "((Small_Key_Water_Temple, 5) or Bow or can_use(Dins_Fire)) and Iron_Boots and Zora_Tunic and Hookshot",
+    "confidence": "high",
+    "why": "room 2 = flooded bottom of the central pillar, beside the Central Pillar chest (12,92.7,-4.5) behind the same switch gate (crystal switch x=2, gate x=6.2, pots x=11): under water, so the chest's full rule (Iron Boots, Zora Tunic, Hookshot) is reused"
+   },
+   "16356631288008319500": {
+    "region": "Water Temple Middle Water Level",
+    "rule": "((Small_Key_Water_Temple, 5) or Bow or can_use(Dins_Fire)) and Iron_Boots and Zora_Tunic and Hookshot",
+    "confidence": "high",
+    "why": "room 2 = flooded bottom of the central pillar, beside the Central Pillar chest (12,92.7,-4.5) behind the same switch gate (crystal switch x=2, gate x=6.2, pots x=11): under water, so the chest's full rule (Iron Boots, Zora Tunic, Hookshot) is reused"
+   },
+   "4630615646721664618": {
+    "region": "Water Temple South Basement",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 3 = OoT room 3 behind the gate (South Basement); pots at the far west end y=104.3 beside the chest, above the room's own water (101.8)"
+   },
+   "4495046968780299020": {
+    "region": "Water Temple South Basement",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 3 = OoT room 3 behind the gate (South Basement); pots at the far west end y=104.3 beside the chest, above the room's own water (101.8)"
+   },
+   "7321227760391395251": {
+    "region": "Water Temple Dark Link Region",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 6 = OoT room 6 (Like Like pots room) before Dark Link (room 22); pots at y=125.5 above the water by the north shutter"
+   },
+   "7249585227432273089": {
+    "region": "Water Temple Dark Link Region",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 6 = OoT room 6 (Like Like pots room) before Dark Link (room 22); pots at y=125.5 above the water by the north shutter"
+   },
+   "7331502814510362649": {
+    "region": "Water Temple Dark Link Region",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 6 = OoT room 6 (Like Like pots room) before Dark Link (room 22); pots at y=125.5 above the water by the north shutter"
+   },
+   "13892637748591133371": {
+    "region": "Water Temple Dark Link Region",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 6 = OoT room 6 (Like Like pots room) before Dark Link (room 22); pots at y=125.5 above the water by the north shutter"
+   },
+   "12146339761792216385": {
+    "region": "Water Temple Dive",
+    "rule": "(Iron_Boots and Hookshot) or can_play(Zeldas_Lullaby)",
+    "confidence": "high",
+    "why": "room 17 = OoT room 17 east tower, bottom floor y=100 beside the two timed torches (under water unless lowered) = OoT L1 Torch pots; rule reused"
+   },
+   "18317670516128277611": {
+    "region": "Water Temple Dive",
+    "rule": "(Iron_Boots and Hookshot) or can_play(Zeldas_Lullaby)",
+    "confidence": "high",
+    "why": "room 17 = OoT room 17 east tower, bottom floor y=100 beside the two timed torches (under water unless lowered) = OoT L1 Torch pots; rule reused"
+   },
+   "6304980196399281219": {
+    "region": "Water Temple River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 21 = OoT room 21 river (RiverRail, whirlpools, eye switch at the end); pots on the banks at y=110.5 before the eye-switch shutter"
+   },
+   "16885214594534747225": {
+    "region": "Water Temple River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 21 = OoT room 21 river (RiverRail, whirlpools, eye switch at the end); pots on the banks at y=110.5 before the eye-switch shutter"
+   },
+   "7934783801419233385": {
+    "region": "Water Temple River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 21 = OoT room 21 river (RiverRail, whirlpools, eye switch at the end); pots on the banks at y=110.5 before the eye-switch shutter"
+   },
+   "7109345210051555604": {
+    "region": "Water Temple River",
+    "rule": "True",
+    "confidence": "high",
+    "why": "room 21 = OoT room 21 river (RiverRail, whirlpools, eye switch at the end); pots on the banks at y=110.5 before the eye-switch shutter"
+   },
+   "3591228656871093720": {
+    "region": "Water Temple Cracked Wall",
+    "rule": "has_explosives",
+    "confidence": "medium",
+    "why": "room 25 = remake room behind room 17's L2 cracked wall (34.7,111.5,-4.5) (reconcile: the cracked wall leads to room 25). The wall sits at the middle water level like OoT's Cracked Wall, so OoTR's Cracked Wall region plus the bombing rule"
+   },
+   "12534845042709325315": {
+    "region": "Water Temple Cracked Wall",
+    "rule": "has_explosives",
+    "confidence": "medium",
+    "why": "room 25 = remake room behind room 17's L2 cracked wall (34.7,111.5,-4.5) (reconcile: the cracked wall leads to room 25). The wall sits at the middle water level like OoT's Cracked Wall, so OoTR's Cracked Wall region plus the bombing rule"
+   }
+  },
+  "pairs": [
+   {
+    "ootr": [
+     "Water Temple Main Room L2 Pot 1",
+     "Water Temple Main Room L2 Pot 2"
+    ],
+    "hashes": [
+     "4025608826386451139",
+     "1279554567131519582"
+    ],
+    "why": "OoT room 0 L2 = remake room 0 L2 ledge (y=111.5)"
+   },
+   {
+    "ootr": [
+     "Water Temple Near Boss Pot 1",
+     "Water Temple Near Boss Pot 2"
+    ],
+    "hashes": [
+     "3585686260179499649",
+     "5848096526143037248"
+    ],
+    "why": "OoT room 0 boss-door platform = remake room 0 y=124.8 platform (4 pots; one from each side)"
+   },
+   {
+    "ootr": [
+     "Water Temple Behind Gate Pot 1",
+     "Water Temple Behind Gate Pot 2"
+    ],
+    "hashes": [
+     "4630615646721664618",
+     "4495046968780299020"
+    ],
+    "why": "OoT room 3 = remake room 3 (2 pots)"
+   },
+   {
+    "ootr": [
+     "Water Temple Like Like Pot 1",
+     "Water Temple Like Like Pot 2"
+    ],
+    "hashes": [
+     "7321227760391395251",
+     "7331502814510362649"
+    ],
+    "why": "OoT room 6 = remake room 6 (4 pots)"
+   },
+   {
+    "ootr": [
+     "Water Temple L1 Torch Pot 1",
+     "Water Temple L1 Torch Pot 2"
+    ],
+    "hashes": [
+     "12146339761792216385",
+     "18317670516128277611"
+    ],
+    "why": "OoT room 17 torches = remake room 17 bottom torches"
+   },
+   {
+    "ootr": [
+     "Water Temple River Pot 1",
+     "Water Temple River Pot 2"
+    ],
+    "hashes": [
+     "6304980196399281219",
+     "16885214594534747225"
+    ],
+    "why": "OoT room 21 = remake room 21; River Pot 2 is OoT's fairy pot and 16885214594534747225 drops a fairy"
+   }
+  ],
+  "absent": {
+   "Water Temple Near Compass Pot 1": "remake room 4 (OoT compass room 4) has no pots",
+   "Water Temple Near Compass Pot 2": "remake room 4 (OoT compass room 4) has no pots",
+   "Water Temple Near Compass Pot 3": "remake room 4 (OoT compass room 4) has no pots",
+   "Water Temple Boss Key Pot 1": "remake room 15 (OoT 15+16 merged, BK chest) has no pots",
+   "Water Temple Boss Key Pot 2": "remake room 15 (OoT 15+16 merged, BK chest) has no pots",
+   "Water Temple Central Bow Target Pot 1": "remake room 20 (Central Bow Target chest) has no pots",
+   "Water Temple Central Bow Target Pot 2": "remake room 20 (Central Bow Target chest) has no pots",
+   "Water Temple North Basement Block Puzzle Pot 1": "remake room 14 (block puzzle, 3 cracked walls) has no pots",
+   "Water Temple North Basement Block Puzzle Pot 2": "remake room 14 (block puzzle, 3 cracked walls) has no pots",
+   "Water Temple Behind Gate Pot 3": "remake room 3 has only 2 pots",
+   "Water Temple Behind Gate Pot 4": "remake room 3 has only 2 pots",
+   "Water Temple River Recovery Heart 1": "no Obj_Heart in the remake temple; river room 21 has pots only",
+   "Water Temple River Recovery Heart 2": "no Obj_Heart in the remake temple; river room 21 has pots only",
+   "Water Temple River Recovery Heart 3": "no Obj_Heart in the remake temple; river room 21 has pots only",
+   "Water Temple River Recovery Heart 4": "no Obj_Heart in the remake temple; river room 21 has pots only"
+  },
+  "excluded": {}
+ }
+}

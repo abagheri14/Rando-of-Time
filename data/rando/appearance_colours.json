@@ -1,0 +1,11 @@
+{
+ "_about": "Colours tools/rando/parity/appearance.py gives item holders (crates, lift rocks, chest pedestals) per placement, as the three per-placement colour multipliers GameModelController_GeneralInstanceParam0..2 (red, green, blue) the object's material multiplies its albedo by. 1.0 1.0 1.0 is the plain look; vanilla uses up to 1.82 on rocks, 1.75 on crates and 3.0 on candle sticks (data/rando/appearance_objects.json vanilla_tints). OoTR's categories: 'unchecked' is textures_unchecked's golden look; the rest are textures_content / chest textures (major = OoTR's gilded chest, bosskeys = its boss-key chest, keys = silver key chest, tokens = skull/web chest, hearts = heart chest). Not seen in-game yet: tune after the first test.",
+ "unchecked": [2.6, 1.9, 0.5],
+ "categories": {
+  "major": [2.6, 1.9, 0.5],
+  "bosskeys": [1.9, 0.55, 2.3],
+  "keys": [1.4, 1.7, 2.6],
+  "tokens": [0.9, 2.3, 0.8],
+  "hearts": [2.6, 0.7, 0.9]
+ }
+}

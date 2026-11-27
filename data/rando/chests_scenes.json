@@ -1,0 +1,787 @@
+{
+ "_about": "Ice-trap chest scenes (helper of tools/rando/parity/chests.py). (made by tools/rando/parity/_chests_scenes.py)",
+ "stand_in": "TBox_Rupee_Blue",
+ "files": {
+  "small": "Dm_SY_TreasureboxSmall",
+  "big": "Dm_SY_Treasurebox",
+  "host": "Dm_SY_GetInEvent",
+  "scrub": "Enemy_Scrub_Business_Common",
+  "shop": "SimpleShop"
+ },
+ "entry": {
+  "small": "Rando_IceTrap_small",
+  "big": "Rando_IceTrap_big"
+ },
+ "graphs": {
+  "small": [
+   [
+    "Rando_IceTrap_Freeze",
+    {
+     "sensor": {
+      "actor": "GameSystemActor",
+      "action": "EventTriggerRequestCreateConditionSensor",
+      "params": {
+       "ActorName": "ConditionSensorActor"
+      },
+      "next": "fool"
+     },
+     "fool": {
+      "call": "GetPouchContent:Rando_IceTrapFool",
+      "next": null
+     }
+    },
+    "sensor"
+   ],
+   [
+    "Rando_IceTrap_small",
+    {
+     "face": {
+      "actor": "TreasureBox_EventStarter",
+      "query": "EventQueryIsFaceToFace",
+      "params": {
+       "ActorName": "Player_Event"
+      },
+      "cases": {
+       "0": "front",
+       "1": "kick"
+      }
+     },
+     "front": {
+      "fork": [
+       "pose_front",
+       "lid_front",
+       "rumble_front"
+      ],
+      "join": "opened_front"
+     },
+     "pose_front": {
+      "actor": "Player_Event",
+      "action": "EventPlayerPlayASForFlowchart",
+      "params": {
+       "UseAnmDriven": true,
+       "IsAllSlot": true,
+       "KeepOneTimeAnm": false,
+       "ForceFadeFrame": -1.0,
+       "ASCommand": "DemoOpenTreasureBoxFront",
+       "IsWaitEnd": true,
+       "ClothWarpMode": 0
+      },
+      "next": null
+     },
+     "lid_front": {
+      "call": ":TresureboxSmall_Animation",
+      "next": null
+     },
+     "rumble_front": {
+      "call": ":FrontVibration",
+      "next": null
+     },
+     "opened_front": {
+      "join": true,
+      "next": "freeze"
+     },
+     "kick": {
+      "fork": [
+       "pose_kick",
+       "lid_kick",
+       "rumble_kick"
+      ],
+      "join": "opened_kick"
+     },
+     "pose_kick": {
+      "actor": "Player_Event",
+      "action": "EventPlayerPlayASForFlowchart",
+      "params": {
+       "UseAnmDriven": true,
+       "IsAllSlot": true,
+       "KeepOneTimeAnm": false,
+       "ForceFadeFrame": -1.0,
+       "ASCommand": "DemoOpenTreasureBoxWithKick",
+       "IsWaitEnd": true,
+       "ClothWarpMode": 0
+      },
+      "next": null
+     },
+     "lid_kick": {
+      "call": ":TresureboxSmall_Animation",
+      "next": null
+     },
+     "rumble_kick": {
+      "call": ":KickVibration",
+      "next": null
+     },
+     "opened_kick": {
+      "join": true,
+      "next": "freeze"
+     },
+     "freeze": {
+      "call": ":Rando_IceTrap_Freeze",
+      "next": "wait1"
+     },
+     "wait1": {
+      "actor": "GameSystemActor",
+      "action": "EventWait",
+      "params": {
+       "Frames": 1,
+       "IsWaitEnd": true
+      },
+      "next": "markopened"
+     },
+     "markopened": {
+      "actor": "TreasureBox_EventStarter",
+      "action": "EventTriggerTreasureBoxOpened",
+      "next": "unpause"
+     },
+     "unpause": {
+      "actor": "TreasureBox_EventStarter",
+      "action": "EventTriggerTBoxErasePauseMask",
+      "next": "save"
+     },
+     "save": {
+      "actor": "GameSystemActor",
+      "action": "EventTriggerRequestAutoSave",
+      "next": null
+     }
+    },
+    "face"
+   ]
+  ],
+  "big": [
+   [
+    "Rando_IceTrap_Freeze",
+    {
+     "sensor": {
+      "actor": "GameSystemActor",
+      "action": "EventTriggerRequestCreateConditionSensor",
+      "params": {
+       "ActorName": "ConditionSensorActor"
+      },
+      "next": "fool"
+     },
+     "fool": {
+      "call": "GetPouchContent:Rando_IceTrapFool",
+      "next": null
+     }
+    },
+    "sensor"
+   ],
+   [
+    "Rando_IceTrap_big_perform0",
+    {
+     "pp0_Event37": {
+      "copy": "Event37",
+      "cases": {
+       "0": "pp0_Event42",
+       "1": "pp0_Event48"
+      }
+     },
+     "pp0_Event42": {
+      "copy": "Event42",
+      "fork": [
+       "pp0_Event39",
+       "pp0_Event44",
+       "p0_Event14",
+       "pp0_Event97"
+      ],
+      "join": "pp0_Event43"
+     },
+     "pp0_Event48": {
+      "copy": "Event48",
+      "fork": [
+       "pp0_Event87",
+       "pp0_Event50",
+       "p0_Event14",
+       "pp0_Event100"
+      ],
+      "join": "pp0_Event49"
+     },
+     "pp0_Event39": {
+      "copy": "Event39",
+      "cases": {
+       "0": "pp0_Event58",
+       "1": "pp0_Event41"
+      }
+     },
+     "pp0_Event44": {
+      "copy": "Event44",
+      "next": "pp0_Event40"
+     },
+     "pp0_Event97": {
+      "copy": "Event97",
+      "next": "pp0_Event35"
+     },
+     "pp0_Event43": {
+      "copy": "Event43",
+      "next": null
+     },
+     "pp0_Event87": {
+      "copy": "Event87",
+      "cases": {
+       "0": "pp0_Event77",
+       "1": "pp0_Event77",
+       "2": "pp0_Event78",
+       "3": "pp0_Event78",
+       "4": "pp0_Event78",
+       "5": "pp0_Event78",
+       "6": "pp0_Event78",
+       "7": "pp0_Event78",
+       "8": "pp0_Event78",
+       "99": "pp0_Event78"
+      }
+     },
+     "pp0_Event50": {
+      "copy": "Event50",
+      "next": "pp0_Event33"
+     },
+     "pp0_Event100": {
+      "copy": "Event100",
+      "next": "pp0_Event80"
+     },
+     "pp0_Event49": {
+      "copy": "Event49",
+      "next": null
+     },
+     "pp0_Event58": {
+      "copy": "Event58",
+      "cases": {
+       "0": "pp0_Event61",
+       "1": "pp0_Event55"
+      }
+     },
+     "pp0_Event41": {
+      "copy": "Event41",
+      "next": null
+     },
+     "pp0_Event40": {
+      "copy": "Event40",
+      "next": null
+     },
+     "pp0_Event35": {
+      "copy": "Event35",
+      "next": "pp0_Event65"
+     },
+     "pp0_Event77": {
+      "copy": "Event77",
+      "next": null
+     },
+     "pp0_Event78": {
+      "copy": "Event78",
+      "cases": {
+       "0": "pp0_Event79",
+       "1": "pp0_Event47"
+      }
+     },
+     "pp0_Event33": {
+      "copy": "Event33",
+      "next": null
+     },
+     "pp0_Event80": {
+      "copy": "Event80",
+      "next": "pp0_Event103"
+     },
+     "pp0_Event61": {
+      "copy": "Event61",
+      "next": null
+     },
+     "pp0_Event55": {
+      "copy": "Event55",
+      "next": null
+     },
+     "pp0_Event65": {
+      "copy": "Event65",
+      "next": "pp0_Event51"
+     },
+     "pp0_Event79": {
+      "copy": "Event79",
+      "cases": {
+       "0": "pp0_Event123",
+       "1": "pp0_Event120"
+      }
+     },
+     "pp0_Event47": {
+      "copy": "Event47",
+      "next": null
+     },
+     "pp0_Event103": {
+      "copy": "Event103",
+      "next": "pp0_Event102"
+     },
+     "pp0_Event51": {
+      "copy": "Event51",
+      "next": "pp0_Event105"
+     },
+     "pp0_Event123": {
+      "copy": "Event123",
+      "next": null
+     },
+     "pp0_Event120": {
+      "copy": "Event120",
+      "next": null
+     },
+     "pp0_Event102": {
+      "copy": "Event102",
+      "next": null
+     },
+     "pp0_Event105": {
+      "copy": "Event105",
+      "next": "pp0_Event104"
+     },
+     "pp0_Event104": {
+      "copy": "Event104",
+      "next": "pp0_Event107"
+     },
+     "pp0_Event107": {
+      "copy": "Event107",
+      "next": "pp0_Event106"
+     },
+     "pp0_Event106": {
+      "copy": "Event106",
+      "next": null
+     },
+     "p0_Event14": {
+      "copy": "Event14",
+      "fork": [
+       "p0_Event52",
+       "p0_Event20",
+       "p0_Event70"
+      ],
+      "join": "p0_Event36"
+     },
+     "p0_Event52": {
+      "copy": "Event52",
+      "next": "p0_Event54"
+     },
+     "p0_Event20": {
+      "copy": "Event20",
+      "next": null
+     },
+     "p0_Event70": {
+      "copy": "Event70",
+      "cases": {
+       "0": "p0_Event92",
+       "1": "p0_Event84"
+      }
+     },
+     "p0_Event36": {
+      "copy": "Event36",
+      "next": null
+     },
+     "p0_Event54": {
+      "copy": "Event54",
+      "next": "show"
+     },
+     "p0_Event92": {
+      "copy": "Event92",
+      "next": "p0_Event113"
+     },
+     "p0_Event84": {
+      "copy": "Event84",
+      "next": "p0_Event91"
+     },
+     "p0_Event113": {
+      "copy": "Event113",
+      "next": null
+     },
+     "p0_Event91": {
+      "copy": "Event91",
+      "next": null
+     },
+     "show": {
+      "call": ":Rando_IceTrap_Freeze",
+      "next": null
+     }
+    },
+    "pp0_Event37"
+   ],
+   [
+    "Rando_IceTrap_big",
+    {
+     "fanfare0": {
+      "actor": "SoundSystemActor",
+      "action": "EventTriggerSoundStartFanfare",
+      "params": {
+       "IsEnableIntro": true,
+       "GameDataName": "",
+       "ActorName": "TBox_Rupee_Blue"
+      },
+      "next": "perform0"
+     },
+     "perform0": {
+      "call": ":Rando_IceTrap_big_perform0",
+      "params": {
+       "ContentName": {
+        "arg": "ContentName"
+       }
+      },
+      "next": "wait90_0"
+     },
+     "wait90_0": {
+      "copy": "Event45",
+      "next": "wait1"
+     },
+     "wait1": {
+      "actor": "GameSystemActor",
+      "action": "EventWait",
+      "params": {
+       "Frames": 1,
+       "IsWaitEnd": true
+      },
+      "next": "markopened"
+     },
+     "markopened": {
+      "actor": "TreasureBox_EventStarter",
+      "action": "EventTriggerTreasureBoxOpened",
+      "next": "unpause"
+     },
+     "unpause": {
+      "actor": "TreasureBox_EventStarter",
+      "action": "EventTriggerTBoxErasePauseMask",
+      "next": "save"
+     },
+     "save": {
+      "actor": "GameSystemActor",
+      "action": "EventTriggerRequestAutoSave",
+      "next": "glowoff"
+     },
+     "glowoff": {
+      "actor": "EventEffectEmitter",
+      "action": "EventEffectStopGetItem",
+      "next": null
+     }
+    },
+    "fanfare0"
+   ]
+  ],
+  "host": [
+   [
+    "Rando_IceTrap",
+    {
+     "sensor": {
+      "actor": "GameSystemActor",
+      "action": "EventTriggerRequestCreateConditionSensor",
+      "params": {
+       "ActorName": "ConditionSensorActor"
+      },
+      "next": "fool"
+     },
+     "fool": {
+      "call": "GetPouchContent:Rando_IceTrapFool",
+      "next": null
+     }
+    },
+    "sensor"
+   ],
+   [
+    "Rando_IceTrap_Pay",
+    {
+     "pay": {
+      "actor": "PouchSystemActor",
+      "action": "EventTriggerAddGameDataIntToRupee",
+      "params": {
+       "IsSignInverse": true,
+       "GameDataName": "SimpleShop_Price"
+      },
+      "next": "stable"
+     },
+     "stable": {
+      "actor": "UISystemActor",
+      "action": "EventWaitStableNumDisplay",
+      "params": {
+       "IsWaitEnd": true
+      },
+      "next": "freeze"
+     },
+     "freeze": {
+      "call": ":Rando_IceTrap",
+      "next": null
+     }
+    },
+    "pay"
+   ]
+  ],
+  "scrub": [
+   [
+    "Rando_IceTrap_ScrubSale",
+    {
+     "s_Event300": {
+      "copy": "Event300",
+      "next": "s_Event687"
+     },
+     "s_Event687": {
+      "copy": "Event687",
+      "next": "s_Event289"
+     },
+     "s_Event289": {
+      "copy": "Event289",
+      "next": "s_Event147"
+     },
+     "s_Event147": {
+      "copy": "Event147",
+      "cases": {
+       "0": "s_Event20",
+       "1": "s_Event158"
+      }
+     },
+     "s_Event20": {
+      "copy": "Event20",
+      "next": "s_Event288"
+     },
+     "s_Event158": {
+      "copy": "Event158",
+      "next": "s_Event291"
+     },
+     "s_Event288": {
+      "copy": "Event288",
+      "cases": {
+       "0": "rando_replaced",
+       "1": "s_Event296"
+      }
+     },
+     "s_Event291": {
+      "copy": "Event291",
+      "next": "s_Event39"
+     },
+     "s_Event296": {
+      "copy": "Event296",
+      "next": "s_Event291"
+     },
+     "s_Event39": {
+      "copy": "Event39",
+      "cases": {
+       "0": "s_Event414",
+       "1": "s_Event277"
+      }
+     },
+     "s_Event414": {
+      "copy": "Event414",
+      "cases": {
+       "0": "s_Event277"
+      }
+     },
+     "s_Event277": {
+      "copy": "Event277",
+      "next": "s_Event308"
+     },
+     "s_Event308": {
+      "copy": "Event308",
+      "next": "s_Event397"
+     },
+     "s_Event397": {
+      "copy": "Event397",
+      "next": "s_Event276"
+     },
+     "s_Event276": {
+      "copy": "Event276",
+      "next": "s_Event275"
+     },
+     "s_Event275": {
+      "copy": "Event275",
+      "next": "s_Event294"
+     },
+     "s_Event294": {
+      "copy": "Event294",
+      "next": null
+     },
+     "s_Event406": {
+      "copy": "Event406",
+      "next": "s_Event298"
+     },
+     "s_Event298": {
+      "copy": "Event298",
+      "next": "s_Event38"
+     },
+     "s_Event38": {
+      "copy": "Event38",
+      "cases": {
+       "0": "s_Event320",
+       "1": "s_Event292"
+      }
+     },
+     "s_Event320": {
+      "copy": "Event320",
+      "cases": {
+       "0": "s_Event292"
+      }
+     },
+     "s_Event292": {
+      "copy": "Event292",
+      "next": "s_Event302"
+     },
+     "s_Event302": {
+      "copy": "Event302",
+      "next": "s_Event303"
+     },
+     "s_Event303": {
+      "copy": "Event303",
+      "next": "s_Event396"
+     },
+     "s_Event396": {
+      "copy": "Event396",
+      "next": "s_Event36"
+     },
+     "s_Event36": {
+      "copy": "Event36",
+      "next": "s_Event424"
+     },
+     "s_Event424": {
+      "copy": "Event424",
+      "cases": {
+       "0": "s_Event434",
+       "1": "s_Event301"
+      }
+     },
+     "s_Event434": {
+      "copy": "Event434",
+      "next": "s_Event427"
+     },
+     "s_Event301": {
+      "copy": "Event301",
+      "next": "s_Event305"
+     },
+     "s_Event427": {
+      "copy": "Event427",
+      "next": "s_Event433"
+     },
+     "s_Event305": {
+      "copy": "Event305",
+      "next": "s_Event662"
+     },
+     "s_Event433": {
+      "copy": "Event433",
+      "next": null
+     },
+     "s_Event662": {
+      "copy": "Event662",
+      "next": "s_Event663"
+     },
+     "s_Event663": {
+      "copy": "Event663",
+      "next": null
+     },
+     "rando_replaced": {
+      "call": "Dm_SY_GetInEvent:Rando_IceTrap_Pay",
+      "next": "s_Event406"
+     }
+    },
+    "s_Event300"
+   ]
+  ],
+  "shop": [
+   [
+    "Rando_IceTrap_SimpleShop_Buy",
+    {
+     "b_Event160": {
+      "copy": "Event160",
+      "fork": [
+       "b_Event159",
+       "b_Event165"
+      ],
+      "join": "b_Event161"
+     },
+     "b_Event159": {
+      "copy": "Event159",
+      "next": "b_Event166"
+     },
+     "b_Event165": {
+      "copy": "Event165",
+      "next": null
+     },
+     "b_Event161": {
+      "copy": "Event161",
+      "next": "b_Event162"
+     },
+     "b_Event166": {
+      "copy": "Event166",
+      "next": "b_Event167"
+     },
+     "b_Event162": {
+      "copy": "Event162",
+      "fork": [
+       "b_Event133",
+       "b_Event153"
+      ],
+      "join": "b_Event164"
+     },
+     "b_Event167": {
+      "copy": "Event167",
+      "next": null
+     },
+     "b_Event133": {
+      "copy": "Event133",
+      "next": null
+     },
+     "b_Event153": {
+      "copy": "Event153",
+      "next": null
+     },
+     "b_Event164": {
+      "copy": "Event164",
+      "next": "b_Event156"
+     },
+     "b_Event156": {
+      "copy": "Event156",
+      "next": "rando_replaced"
+     },
+     "b_Event155": {
+      "copy": "Event155",
+      "next": "b_Event222"
+     },
+     "b_Event222": {
+      "copy": "Event222",
+      "next": "b_Event135"
+     },
+     "b_Event135": {
+      "copy": "Event135",
+      "next": null
+     },
+     "rando_replaced": {
+      "call": "Dm_SY_GetInEvent:Rando_IceTrap",
+      "next": "b_Event155"
+     }
+    },
+    "b_Event160"
+   ],
+   [
+    "Rando_IceTrap_SimpleShopRoot",
+    {
+     "r_Event18": {
+      "copy": "Event18",
+      "cases": {
+       "0": "r_Event132",
+       "1": "r_Event148"
+      }
+     },
+     "r_Event132": {
+      "copy": "Event132",
+      "next": "r_Event19"
+     },
+     "r_Event148": {
+      "copy": "Event148",
+      "next": "r_Event26"
+     },
+     "r_Event19": {
+      "copy": "Event19",
+      "cases": {
+       "0": "rando_replaced",
+       "1": "r_Event28"
+      }
+     },
+     "r_Event26": {
+      "copy": "Event26",
+      "next": null
+     },
+     "r_Event28": {
+      "copy": "Event28",
+      "next": null
+     },
+     "rando_replaced": {
+      "copy": "Event124",
+      "call": ":Rando_IceTrap_SimpleShop_Buy",
+      "next": null
+     }
+    },
+    "r_Event18"
+   ]
+  ]
+ }
+}

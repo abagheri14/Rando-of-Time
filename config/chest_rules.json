@@ -1,0 +1,28 @@
+{
+  "_about": "How the patcher treats a chest whose item changes. Tune after in-game tests.",
+
+  "get_events": {
+    "_about": "A chest's GetEventName is a scene. 'location' scenes belong to the spot (story, minigames, Navi) and always stay. Every other scene is an item scene scripted at its vanilla spot: it is removed when the chest's item changes and is never moved with an item (moving Get_StoneOfForest_GetSword teleported Link back to the vanilla sword chest).",
+    "location": [
+      "^MiniGame_",
+      "MelodyGet",
+      "NaboorIsTakenAway",
+      "TreasureBoxWithRuto",
+      "NaviChatOff",
+      "FocusOnGimmick"
+    ]
+  },
+
+  "chest_size": {
+    "_about": "OFF by default (plan option chest_size: keep). I tested it in game: a converted chest keeps the other type's opening scene and plays no animation, and the chest should decide the animation anyway. With chest_size: match_contents, standard chests switch style to match their new item, like vanilla: big chest for equipment, maps, compasses and heart pieces; boss-key chest for boss keys; small chest for rupees, ammo, small keys and other junk. Chests not listed in 'styles' (invisible Lens chests, treasure-game chests, the A_04/A_06 variants) keep their look.",
+    "styles": {
+      "Obj_TBox_A_01": "small", "Obj_TBox_A_02": "big", "Obj_TBox_A_03": "boss_key",
+      "Obj_TBox_A_01_NoBake": "small", "Obj_TBox_A_02_NoBake": "big", "Obj_TBox_A_03_NoBake": "boss_key"
+    },
+    "actor_for": {
+      "small": "Obj_TBox_A_01", "big": "Obj_TBox_A_02", "boss_key": "Obj_TBox_A_03"
+    },
+    "boss_key_items": "^Item_Dungeon_BossKey$",
+    "small_items": "^(TBox_|Tbox_|Obj_Rupee_|Obj_Heart$|Item_Dungeon_SmallKey$|Obj_MiniGame_SmallKey$|Obj_Dungeon_SmallKey|Item_BombBundle_|Item_BombchuBundle_|Item_DekuStickBundle_|Item_DekuNut$|Item_DekuSeed$|Item_DekuStick$|Item_Bomb$|Item_Bombchu$|Item_Arrow_Normal$|Item_ScrubBusinessSeed$|Obj_DekuNut$|Obj_DekuSeed$|Obj_DekuStick$|Obj_MagicJar)"
+  }
+}

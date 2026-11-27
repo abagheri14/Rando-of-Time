@@ -1,0 +1,35 @@
+{
+ "_about": "Logic of the extras_story plugin (tools/rando/parity/extras_story.py). Every option here is a remake setting that is off by default, so nothing in this file is a plain OoTR override (no 'helpers' / 'regions' sections: world_settings.py applies none of it). The plugin applies an option's rules to the built world, before the fill, only when the option is on. 'set': the exit's rule becomes this rule. 'replace': [old token, new token] inside the exit's rule (the rule must contain the token). 'and_into': every exit into the named region also needs this rule. Item names count the items themselves (Forest_Medallion is the medallion, not the boss defeat world_settings.py reads into OoTR's own stone and medallion rules), because the game checks the items (IsGet.Item_Medal_* / IsGet.Item_Stone_*, PouchData.Item_Token_Gold.StockNum, PlayerStatus.MaxLife), the same counts the story plugin's bridge uses.",
+ "options": {
+  "remake_sleeping_waterfall=open": {
+   "_why": "Zorariver_TheWaterfallsplits is the only input of the waterfall door (Logic/ZoraRiver_Common_39bb, ActorLogicGateDoor isOpen), and it's true on a new file. Both ages share it and nothing ever sets it back, so the way behind the waterfall is open for both ages from the start.",
+   "set": {"Zora River -> ZR Behind Waterfall": "True"}
+  },
+  "remake_jabu_mouth=open": {
+   "_why": "Jabu-Jabu opens his mouth for any child who gets to him. In Logic/ZoraFountain_Child_Prefab_41c4 the open-mouth areas exist from Get_StoneOfWater Step08, which is set when the child first reaches him. The first time through, the mouth's doorway plays the first-arrival scene. No fish needed. Adults never meet Jabu-Jabu because the adult fountain is frozen, same as OoTR.",
+   "replace": {"Zoras Fountain -> Jabu Jabus Belly Beginning": ["Fish", "True"]}
+  },
+  "remake_medallion_trials=true": {
+   "_why": "The door into each trial's barrier room only opens if you have that trial's medallion (IsGet.Item_Medal_*). That's the room OoTR calls the trial's Ending, with its two pots and the barrier, where you clear the trial.",
+   "and_into": {
+    "Ganons Castle Forest Trial Ending": "Forest_Medallion",
+    "Ganons Castle Fire Trial Ending": "Fire_Medallion",
+    "Ganons Castle Water Trial Ending": "Water_Medallion",
+    "Ganons Castle Shadow Trial Ending": "Shadow_Medallion",
+    "Ganons Castle Spirit Trial Ending": "Spirit_Medallion",
+    "Ganons Castle Light Trial Ending": "Light_Medallion"
+   }
+  },
+  "remake_ganons_soul": {
+   "_why": "The boss-key door to Ganondorf only opens once you have the count, and its scene is what starts the fight. It checks the same items OoTR counts.",
+   "and_into": {"Ganondorf Boss Room": "{condition}"},
+   "conditions": {
+    "stones": "has_stones({n})",
+    "medallions": "has_medallions({n})",
+    "dungeons": "has_dungeon_rewards({n})",
+    "tokens": "(Gold_Skulltula_Token, {n})",
+    "hearts": "has_hearts({n})"
+   }
+  }
+ }
+}

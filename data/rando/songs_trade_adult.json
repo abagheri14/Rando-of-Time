@@ -1,0 +1,771 @@
+{
+ "_about": "Build data/rando/songs_trade_adult.json: the scene steps, save data and AI nodes the adult trade module",
+ "gives": {
+  "LW Trade Cojiro": {
+   "file": "Npc_Hylia_017_Adult",
+   "gives": [
+    {
+     "event": "Event100",
+     "reward_id": "event/Npc_Hylia_017_Adult/Npc_Hylia_017_Adult/Event100/ReveiveItem",
+     "item": "Item_OddMushroom"
+    },
+    {
+     "event": "Event116",
+     "reward_id": "event/Npc_Hylia_017_Adult/Npc_Hylia_017_Adult/Event116/ReveiveItem",
+     "item": "Item_OddMushroom"
+    }
+   ]
+  },
+  "Kak Granny Trade Odd Mushroom": {
+   "file": "Npc_Hylia_053_Adult",
+   "gives": [
+    {
+     "event": "Event167",
+     "reward_id": "event/Npc_Hylia_053_Adult/Npc_Hylia_053_Adult/Event167/ReveiveItem",
+     "item": "Item_OddPowder"
+    }
+   ]
+  },
+  "LW Trade Odd Potion": {
+   "file": "Npc_Kokiri_Fado_Adult",
+   "gives": [
+    {
+     "event": "Event123",
+     "reward_id": "event/Npc_Kokiri_Fado_Adult/Npc_Kokiri_Fado_Adult/Event123/ActorName",
+     "item": "Item_PoacherSaw"
+    }
+   ]
+  },
+  "GV Trade Poachers Saw": {
+   "file": "Npc_Hylia_012_Adult",
+   "gives": [
+    {
+     "event": "Event58",
+     "reward_id": "event/Npc_Hylia_012_Adult/Npc_Hylia_012_Adult/Event58/ReveiveItem",
+     "item": "Item_BrokenSword"
+    }
+   ]
+  },
+  "DMT Trade Broken Sword": {
+   "file": "Npc_Goron_Biggoron_Adult",
+   "gives": [
+    {
+     "event": "Event232",
+     "reward_id": "event/Npc_Goron_Biggoron_Adult/Npc_Goron_Biggoron_Adult/Event232/ActorName",
+     "item": "Item_Prescription"
+    }
+   ]
+  },
+  "ZD Trade Prescription": {
+   "file": "Npc_Zora_KingZora_adult",
+   "gives": [
+    {
+     "event": "Event131",
+     "reward_id": "event/Npc_Zora_KingZora_adult/Npc_Zora_KingZora_adult/Event131/ActorName",
+     "item": "Item_EyeballFrog"
+    },
+    {
+     "event": "Event87",
+     "reward_id": "event/Npc_Zora_KingZora_adult/Npc_Zora_KingZora_adult/Event87/ActorName",
+     "item": "Item_EyeballFrog"
+    }
+   ]
+  },
+  "LH Trade Eyeball Frog": {
+   "file": "Npc_Hylia_045_Adult",
+   "gives": [
+    {
+     "event": "Event26",
+     "reward_id": "event/Npc_Hylia_045_Adult/Npc_Hylia_045_Adult/Event26/ReveiveItem",
+     "item": "Item_EyeDrop"
+    },
+    {
+     "event": "Event27",
+     "reward_id": "event/Npc_Hylia_045_Adult/Npc_Hylia_045_Adult/Event27/ReveiveItem",
+     "item": "Item_EyeDrop"
+    },
+    {
+     "event": "Event45",
+     "reward_id": "event/Npc_Hylia_045_Adult/Npc_Hylia_045_Adult/Event45/ReveiveItem",
+     "item": "Item_EyeDrop"
+    }
+   ]
+  },
+  "Kak Anju Trade Pocket Cucco": {
+   "file": "Npc_Hylia_049_Adult",
+   "gives": [
+    {
+     "event": "Event234",
+     "reward_id": "event/Npc_Hylia_049_Adult/Npc_Hylia_049_Adult/Event234/ReveiveItem",
+     "item": "Item_CojiroCucco"
+    }
+   ]
+  }
+ },
+ "progress": [
+  {
+   "event": "Event57",
+   "next": "Event59",
+   "preds": [
+    [
+     "next",
+     "Event63",
+     null
+    ]
+   ],
+   "file": "Dm_DeathMtTrail_0050",
+   "step": "Step11",
+   "wait_actor": "EventSystemActor"
+  },
+  {
+   "event": "Event27",
+   "next": "Event233",
+   "preds": [
+    [
+     "next",
+     "Event74",
+     null
+    ]
+   ],
+   "file": "Npc_Goron_Biggoron_Adult",
+   "step": "Step08",
+   "wait_actor": "GameSystemActor"
+  },
+  {
+   "event": "Event89",
+   "next": "Event139",
+   "preds": [
+    [
+     "next",
+     "Event112",
+     null
+    ]
+   ],
+   "file": "Npc_Goron_Biggoron_Adult",
+   "step": "Complete",
+   "wait_actor": "GameSystemActor"
+  },
+  {
+   "event": "Event54",
+   "next": "Event182",
+   "preds": [
+    [
+     "next",
+     "Event53",
+     null
+    ]
+   ],
+   "file": "Npc_Hylia_012_Adult",
+   "step": "Step07",
+   "wait_actor": "EventSystemActor"
+  },
+  {
+   "event": "Event163",
+   "next": "Event209",
+   "preds": [
+    [
+     "next",
+     "Event52",
+     null
+    ]
+   ],
+   "file": "Npc_Hylia_012_Adult",
+   "step": "Step06_03",
+   "wait_actor": "EventSystemActor"
+  },
+  {
+   "event": "Event164",
+   "next": "Event176",
+   "preds": [
+    [
+     "next",
+     "Event115",
+     null
+    ]
+   ],
+   "file": "Npc_Hylia_012_Adult",
+   "step": "Step03_02",
+   "wait_actor": "EventSystemActor"
+  },
+  {
+   "event": "Event10",
+   "next": "Event29",
+   "preds": [
+    [
+     "next",
+     "Event126",
+     null
+    ]
+   ],
+   "file": "Npc_Hylia_017_Adult",
+   "step": "Step04",
+   "wait_actor": "GameSystemActor"
+  },
+  {
+   "event": "Event81",
+   "next": "Event105",
+   "preds": [
+    [
+     "next",
+     "Event57",
+     null
+    ]
+   ],
+   "file": "Npc_Hylia_017_Adult",
+   "step": "Step03_03",
+   "wait_actor": "GameSystemActor"
+  },
+  {
+   "event": "Event86",
+   "next": "Event133",
+   "preds": [
+    [
+     "next",
+     "Event79",
+     null
+    ]
+   ],
+   "file": "Npc_Hylia_017_Adult",
+   "step": "Step04",
+   "wait_actor": "GameSystemActor"
+  },
+  {
+   "event": "Event20",
+   "next": "Event150",
+   "preds": [
+    [
+     "next",
+     "Event1",
+     null
+    ]
+   ],
+   "file": "Npc_Hylia_045_Adult",
+   "step": "Step10",
+   "wait_actor": "EventSystemActor"
+  },
+  {
+   "event": "Event184",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event123",
+     null
+    ]
+   ],
+   "file": "Npc_Hylia_045_Adult",
+   "step": "Step09_01",
+   "wait_actor": "EventSystemActor"
+  },
+  {
+   "event": "Event185",
+   "next": "Event180",
+   "preds": [
+    [
+     "next",
+     "Event25",
+     null
+    ]
+   ],
+   "file": "Npc_Hylia_045_Adult",
+   "step": "Step10",
+   "wait_actor": "EventSystemActor"
+  },
+  {
+   "event": "Event122",
+   "next": null,
+   "preds": [
+    [
+     "case",
+     "Event228",
+     0
+    ]
+   ],
+   "file": "Npc_Hylia_049_Adult",
+   "step": "Step06_02",
+   "wait_actor": "GameSystemActor"
+  },
+  {
+   "event": "Event53",
+   "next": "Event140",
+   "preds": [
+    [
+     "next",
+     "Event52",
+     null
+    ]
+   ],
+   "file": "Npc_Hylia_053_Adult",
+   "step": "Step05",
+   "wait_actor": "EventSystemActor"
+  },
+  {
+   "event": "Event121",
+   "next": null,
+   "preds": [
+    [
+     "case",
+     "Event118",
+     0
+    ]
+   ],
+   "file": "Npc_Hylia_053_Adult",
+   "step": "Step06_01",
+   "wait_actor": "EventSystemActor"
+  },
+  {
+   "event": "Event94",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event172",
+     null
+    ]
+   ],
+   "file": "Npc_Hylia_053_Adult",
+   "step": "Step03_01",
+   "wait_actor": "EventSystemActor"
+  },
+  {
+   "event": "Event18",
+   "next": "Event81",
+   "preds": [
+    [
+     "next",
+     "Event112",
+     null
+    ]
+   ],
+   "file": "Npc_Kokiri_Fado_Adult",
+   "step": "Step06",
+   "wait_actor": "GameSystemActor"
+  },
+  {
+   "event": "Event53",
+   "next": "Event118",
+   "preds": [
+    [
+     "next",
+     "Event111",
+     null
+    ]
+   ],
+   "file": "Npc_Kokiri_Fado_Adult",
+   "step": "Step05_01",
+   "wait_actor": "GameSystemActor"
+  },
+  {
+   "event": "Event54",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event6",
+     null
+    ],
+    [
+     "next",
+     "Event16",
+     null
+    ]
+   ],
+   "file": "Npc_Kokiri_Fado_Adult",
+   "step": "Step05_01",
+   "wait_actor": "GameSystemActor"
+  },
+  {
+   "event": "Event79",
+   "next": "Event71",
+   "preds": [
+    [
+     "next",
+     "Event137",
+     null
+    ]
+   ],
+   "file": "Npc_Zora_KingZora_adult",
+   "step": "Step09",
+   "wait_actor": "EventSystemActor"
+  },
+  {
+   "event": "Event91",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event56",
+     null
+    ]
+   ],
+   "file": "Npc_Zora_KingZora_adult",
+   "step": "Step08_01",
+   "wait_actor": "EventSystemActor"
+  },
+  {
+   "event": "Event92",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event2",
+     null
+    ]
+   ],
+   "file": "Npc_Zora_KingZora_adult",
+   "step": "Step09",
+   "wait_actor": "EventSystemActor"
+  },
+  {
+   "event": "Event62",
+   "next": null,
+   "preds": [
+    [
+     "case",
+     "Event23",
+     0
+    ]
+   ],
+   "file": "SubEvent_GetSwordBigGoron",
+   "step": "Step03_03",
+   "wait_actor": "GameSystemActor"
+  },
+  {
+   "event": "Event72",
+   "next": null,
+   "preds": [
+    [
+     "case",
+     "Event71",
+     0
+    ]
+   ],
+   "file": "SubEvent_GetSwordBigGoron",
+   "step": "Step09_01",
+   "wait_actor": "GameSystemActor"
+  },
+  {
+   "event": "Event65",
+   "next": null,
+   "preds": [
+    [
+     "case",
+     "Event64",
+     0
+    ]
+   ],
+   "file": "SubEvent_GetSwordBigGoron",
+   "step": "Step08_01",
+   "wait_actor": "GameSystemActor"
+  },
+  {
+   "event": "Event20",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event24",
+     null
+    ]
+   ],
+   "file": "Npc_Hylia_Talon_Adult_Kakariko",
+   "step": "Step02",
+   "wait_actor": "EventSystemActor"
+  },
+  {
+   "event": "Event23",
+   "next": "Event60",
+   "preds": [
+    [
+     "next",
+     "Event8",
+     null
+    ]
+   ],
+   "file": "Npc_Hylia_Talon_Adult_Kakariko",
+   "step": "Step01",
+   "wait_actor": "EventSystemActor"
+  },
+  {
+   "event": "Event32",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event39",
+     null
+    ],
+    [
+     "next",
+     "Event55",
+     null
+    ]
+   ],
+   "file": "Npc_Hylia_Talon_Adult_Kakariko",
+   "step": "Step01_01",
+   "wait_actor": "EventSystemActor"
+  }
+ ],
+ "timers": {
+  "file": "SubEvent_GetSwordBigGoron",
+  "timers": {
+   "BigGoronTimer_Step04": {
+    "event": "Event24",
+    "next": "Event89",
+    "preds": [
+     [
+      "entry",
+      "BigGoronTimer_Step04",
+      null
+     ]
+    ]
+   },
+   "BigGoronTimer_Step09": {
+    "event": "Event30",
+    "next": "Event90",
+    "preds": [
+     [
+      "entry",
+      "BigGoronTimer_Step09",
+      null
+     ]
+    ]
+   },
+   "BigGoronTimer_Step10": {
+    "event": "Event38",
+    "next": "Event91",
+    "preds": [
+     [
+      "entry",
+      "BigGoronTimer_Step10",
+      null
+     ]
+    ]
+   }
+  },
+  "hatch_start": {
+   "event": "Event114",
+   "next": null,
+   "preds": [
+    [
+     "entry",
+     "EggHatch_PocketEgg",
+     null
+    ]
+   ]
+  },
+  "egg_removal": {
+   "event": "Event5",
+   "next": "Event113",
+   "preds": [
+    [
+     "next",
+     "Event170",
+     null
+    ],
+    [
+     "next",
+     "Event172",
+     null
+    ],
+    [
+     "next",
+     "Event174",
+     null
+    ],
+    [
+     "next",
+     "Event152",
+     null
+    ],
+    [
+     "next",
+     "Event117",
+     null
+    ]
+   ]
+  },
+  "wait_actor": "GameSystemActor"
+ },
+ "npc": {
+  "son_remove_cojiro": {
+   "event": "Event25",
+   "next": "Event123",
+   "preds": [
+    [
+     "next",
+     "Event100",
+     null
+    ]
+   ]
+  },
+  "son_talk_gate": {
+   "event": "Event95",
+   "next": "Event14",
+   "preds": [
+    [
+     "case",
+     "Event30",
+     0
+    ]
+   ]
+  },
+  "son_idle": "Event23",
+  "anju_remove_cucco": {
+   "event": "Event77",
+   "next": "Event78",
+   "preds": [
+    [
+     "next",
+     "Event234",
+     null
+    ]
+   ]
+  },
+  "biggoron_done_check": {
+   "event": "Event49",
+   "next": null,
+   "preds": [
+    [
+     "next",
+     "Event138",
+     null
+    ]
+   ]
+  },
+  "biggoron_no_knife": "Event71"
+ },
+ "expressions": {
+  "SubEvent_GetSwordBigGoron_TimerCountingStep": [
+   [
+    1,
+    648208412
+   ],
+   [
+    2,
+    670458110
+   ],
+   [
+    18,
+    132005487
+   ],
+   [
+    16,
+    1
+   ],
+   [
+    5
+   ],
+   [
+    3
+   ],
+   [
+    1,
+    648208412
+   ],
+   [
+    2,
+    1571736152
+   ],
+   [
+    18,
+    2443092772
+   ],
+   [
+    16,
+    1
+   ],
+   [
+    5
+   ],
+   [
+    3
+   ],
+   [
+    1,
+    648208412
+   ],
+   [
+    2,
+    199661577
+   ],
+   [
+    18,
+    1547806385
+   ],
+   [
+    16,
+    1
+   ],
+   [
+    5
+   ],
+   [
+    3
+   ],
+   [
+    4
+   ],
+   [
+    4
+   ]
+  ],
+  "SubEvent_GetSwordBigGoron_IsAfter_Step04_Exp": [
+   [
+    12,
+    648208412
+   ],
+   [
+    2,
+    670458110
+   ]
+  ],
+  "SubEvent_GetSwordBigGoron_IsAfter_Step01_01_Exp": [
+   [
+    12,
+    648208412
+   ],
+   [
+    2,
+    2481051607
+   ]
+  ],
+  "SubEvent_GetSwordBigGoron_IsCompleted_Exp": [
+   [
+    1,
+    648208412
+   ],
+   [
+    2,
+    1275749364
+   ]
+  ],
+  "SubEvent_GetSwordBigGoron_IsAfter_WaitEggHatch_Exp": [
+   [
+    12,
+    648208412
+   ],
+   [
+    2,
+    2004787596
+   ]
+  ],
+  "SubEvent_GetSwordBigGoron_IsAfter_Ready_Exp": [
+   [
+    12,
+    648208412
+   ],
+   [
+    2,
+    398436934
+   ]
+  ]
+ },
+ "lw_logic": {
+  "file": "Logic/LostWood_Adult_Prefab_b5e7.logic.module.ainb",
+  "son": 4,
+  "fado": 0,
+  "skullkid": 2,
+  "anchor": 11
+ }
+}

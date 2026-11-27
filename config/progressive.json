@@ -1,0 +1,169 @@
+{
+  "_about": "OoT Randomizer's progressive items (names from reference/ootr/raw/ItemList.py) and the remake item for each tier, in the order they are given. Like OoTR, the tier is decided when the item is picked up: the first one found is tier 1, the next tier 2, and so on, whatever the location. Given by scene logic (tools/progressive.py: a shared 'give the right tier' scene per item and chest type, and tier checks in scene rewards), tested in game. The chest upgrade check (Obj_TBox_A_06) broke Kokiri Forest when I tried it, so it isn't used.",
+  "_extras_about": "The items below come from the remake settings of the extras_items plugin (tools/rando/parity/extras_items.py), and they only exist in seeds that turn those settings on. 'owned' lists pouch actors that mean a tier is owned even though they don't carry the tier's name. Swords sit in the pouch as Weapon_*, and a broken Giant's Knife still counts as the knife. 'give' is for a tier the usual give routines can't hand over by name, with the scene entry that gives it and the pouch actor it adds. 'Progressive Kokiri Wallet' is OoTR's Progressive Wallet in seeds that shuffle the child's wallet (remake_shuffle_child_wallet). The plan uses this name so the first copy gives the Kokiri Wallet. For the base bow and slingshot, vanilla scenes check the bow as Weapon_Range_Bow (MiniGame_HitTarget, Minigame_HorsebackArchery, Npc_Gerudo_004/009), the same way swords sit as Weapon_*. Both names count and either one is enough.",
+  "items": {
+    "Progressive Hookshot": {
+      "tiers": [
+        "Item_Hookshot",
+        "Item_Longshot"
+      ]
+    },
+    "Progressive Scale": {
+      "tiers": [
+        "Item_Scale_Silver",
+        "Item_Scale_Gold"
+      ]
+    },
+    "Ocarina": {
+      "_about": "The ocarina packs have no Item_EventObject_Base, ASInfo/Item_GetDemo or AnimationParam: Link's item-get pose with one never ends (crash in OotrR #15, freeze in NX2-ZOOTR, both in game). 'pose': false = the tier is never held up itself: every give goes through Dm_SY_GetInEvent:Rando_GiveOcarina {ActorName, ShowName}, the hold-up with its display actor (ShowName, config/hold_up.json 'show' and 'displays': the Ocarina's own model on a holdable display of ours; the pouch menu's Pouch_Ocarina_* crashed in game, test_guardroom; window, add, fanfare and glow name the ocarina), then 'after' (Rando_OcarinaAfter: Link's equipment synced with the pouch, so it plays at once (NX2-ZOOTR in game), then the ocarina's action guide (its only vanilla caller is the first Hyrule Field arrival; without it an ocarina found elsewhere can't be played)). A give that never poses (the get window in the air or water) keeps the window, then 'after'.",
+      "tiers": [
+        "Item_Ocarina_Fairy",
+        "Item_Ocarina_Time"
+      ],
+      "give": {
+        "Item_Ocarina_Fairy": {
+          "call": "Dm_SY_GetInEvent:Rando_GiveOcarina",
+          "params": {"ActorName": "Item_Ocarina_Fairy", "ShowName": "Rando_Show_OcarinaFairy"},
+          "add": "Item_Ocarina_Fairy",
+          "pose": false,
+          "after": "Dm_SY_GetInEvent:Rando_OcarinaAfter"
+        },
+        "Item_Ocarina_Time": {
+          "call": "Dm_SY_GetInEvent:Rando_GiveOcarina",
+          "params": {"ActorName": "Item_Ocarina_Time", "ShowName": "Rando_Show_OcarinaTime"},
+          "add": "Item_Ocarina_Time",
+          "pose": false,
+          "after": "Dm_SY_GetInEvent:Rando_OcarinaAfter"
+        }
+      }
+    },
+    "Magic Meter": {
+      "tiers": [
+        "Item_FairyBless_MP",
+        "Item_FairyBless_MPDouble"
+      ]
+    },
+    "Progressive Wallet": {
+      "tiers": [
+        "Item_Wallet_Medium",
+        "Item_Wallet_Large"
+      ]
+    },
+    "Deku Nut Capacity": {
+      "tiers": [
+        "Item_NutBag_Medium",
+        "Item_NutBag_Large"
+      ]
+    },
+    "Deku Stick Capacity": {
+      "tiers": [
+        "Item_StickBag_Medium",
+        "Item_StickBag_Large"
+      ]
+    },
+    "Progressive Strength Upgrade": {
+      "tiers": [
+        "Item_Gauntlet_Goron",
+        "Item_Gauntlet_Silver",
+        "Item_Gauntlet_Gold"
+      ]
+    },
+    "Bomb Bag": {
+      "tiers": [
+        "Item_BombBag_Small",
+        "Item_BombBag_Medium",
+        "Item_BombBag_Large"
+      ]
+    },
+    "Bow": {
+      "tiers": [
+        "Item_Range_Bow",
+        "Item_Quiver_Medium",
+        "Item_Quiver_Large"
+      ],
+      "owned": {
+        "Item_Range_Bow": ["Weapon_Range_Bow", "Item_Range_Bow"]
+      }
+    },
+    "Slingshot": {
+      "tiers": [
+        "Item_Range_SlingShot",
+        "Item_BulletBag_Medium",
+        "Item_BulletBag_Large"
+      ],
+      "owned": {
+        "Item_Range_SlingShot": ["Weapon_Range_SlingShot", "Item_Range_SlingShot"]
+      }
+    },
+    "Progressive Goron Sword": {
+      "tiers": [
+        "Item_Sword_Giant",
+        "Item_Sword_Biggoron"
+      ],
+      "owned": {
+        "Item_Sword_Giant": [
+          "Weapon_Sword_Giant",
+          "Weapon_Sword_BrokenGiant"
+        ],
+        "Item_Sword_Biggoron": [
+          "Weapon_Sword_Biggoron"
+        ]
+      }
+    },
+    "Progressive Sword": {
+      "tiers": [
+        "Item_Sword_Kokiri",
+        "Weapon_Sword_Master",
+        "Item_Sword_Giant",
+        "Item_Sword_Biggoron"
+      ],
+      "owned": {
+        "Item_Sword_Kokiri": [
+          "Weapon_Sword_Kokiri"
+        ],
+        "Weapon_Sword_Master": [
+          "Weapon_Sword_Master"
+        ],
+        "Item_Sword_Giant": [
+          "Weapon_Sword_Giant",
+          "Weapon_Sword_BrokenGiant"
+        ],
+        "Item_Sword_Biggoron": [
+          "Weapon_Sword_Biggoron"
+        ]
+      }
+    },
+    "Deku Stick Bag": {
+      "tiers": [
+        "Item_StickBag_Small",
+        "Item_StickBag_Medium",
+        "Item_StickBag_Large"
+      ]
+    },
+    "Deku Nut Bag": {
+      "tiers": [
+        "Item_NutBag_Small",
+        "Item_NutBag_Medium",
+        "Item_NutBag_Large"
+      ]
+    },
+    "Progressive Kokiri Wallet": {
+      "tiers": [
+        "Pouch_Wallet_Small",
+        "Item_Wallet_Medium",
+        "Item_Wallet_Large"
+      ],
+      "owned": {
+        "Pouch_Wallet_Small": [
+          "Item_Wallet_Small"
+        ]
+      },
+      "give": {
+        "Pouch_Wallet_Small": {
+          "call": "Dm_SY_GetInEvent:Rando_GetWalletSmall",
+          "add": "Item_Wallet_Small"
+        }
+      }
+    }
+  }
+}

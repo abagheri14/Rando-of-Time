@@ -1,0 +1,29 @@
+{
+  "_about": "Scene IDs (RSDB/EventSetting rows) the patcher may rewrite for its own scenes, in the order it uses them. The scene table can't grow (adding a row aborts the game at startup), so new scenes reuse rows. These are chest item scenes: each plays only when its vanilla chest is opened, so when a row is reused, that chest keeps its item but plays the normal opening (the patcher removes its scene ID). Rows a plan uses itself are skipped. Late-game and duplicate-purpose rows first; maps and compasses last.",
+  "rows": [
+    "InsideGanonCastle_Get_Gauntlet_Gold",
+    "SageOfShdawo_GetHoverBoots",
+    "SageOfSpirit_GetShield",
+    "SubEvent_GetIceArrow_OpenTBox",
+    "FireTemple_GetHammer",
+    "BottomOfTheWell_GetGlassTruth",
+    "ForestTemple_GetBow",
+    "Get_StoneOfFire_GetBombBag",
+    "InsideTheDekuTree_GetSlingShot",
+    "ForesetTemple_GetBossKey",
+    "WaterTemple_GetMap",
+    "WaterTemple_GetCompass",
+    "SpiritTemple_GetCompass",
+    "ShadowTemple_GetMap",
+    "ShadowTemple_GetCompass",
+    "FireTemple_GetMap",
+    "FireTemple_GetCompass",
+    "ForesetTemple_GetMap",
+    "ForesetTemple_GetCompass",
+    "DodongoCavern_GetMap",
+    "DodongoCavern_GetCompass",
+    "BottomOfTheWell_GetCompass",
+    "InsideTheDekuTree_GetMap",
+    "InsideTheDekuTree_GetCompass"
+  ]
+}

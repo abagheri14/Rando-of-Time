@@ -1,0 +1,1379 @@
+{
+ "_about": "Write data/rando/drops_regions_x2.json: OoTR regions for the icicles and red ice (Ship of Harkinian's Shuffle Written by tools/rando/_regions_ice_build.py.",
+ "IceCavern": {
+  "objects": {
+   "10036345510171334973": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 2 (IceCavern_Static)"
+   },
+   "10073385060874221124": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (IceCavern_Dynamic)"
+   },
+   "10082889536804479604": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 2 (IceCavern_Dynamic)"
+   },
+   "10157333998339271487": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "1033547665913161613": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (IceCavern_Dynamic)"
+   },
+   "10337275552197949691": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "10444888827965175438": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "1046750468166414563": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 2 (IceCavern_Static)"
+   },
+   "10485883698284393202": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 6 (IceCavern_Static)"
+   },
+   "10717980523000027768": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Static)"
+   },
+   "10748925299093269257": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (IceCavern_Dynamic)"
+   },
+   "10756653041648810024": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "10856112040922903683": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 3 (IceCavern_Static)"
+   },
+   "1093266828048779870": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "11002319084098110663": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "1117872134977372319": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 8 (IceCavern_Dynamic)"
+   },
+   "11214466807514581984": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 2 (IceCavern_Static)"
+   },
+   "11235136533018711639": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "1143619610775748229": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "11746272392892802235": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "11779212638503583499": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "11834116694864372269": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Static)"
+   },
+   "11834825470400057740": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "red ice: encases a pot (room 1)"
+   },
+   "1185578543902860054": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (IceCavern_Dynamic)"
+   },
+   "11902048708488434631": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (IceCavern_Dynamic)"
+   },
+   "11995609930109369336": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 2 (IceCavern_Dynamic)"
+   },
+   "12004174380041787253": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "12053513595332407839": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "12137917672759923875": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "12153144952635432432": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "red ice: by the push-block room silver rupee"
+   },
+   "12186909882694874088": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 6 (IceCavern_Static)"
+   },
+   "12196095805855726357": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 4 (IceCavern_Static)"
+   },
+   "12214319674592646459": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "red ice: wall, hub -> push-block room"
+   },
+   "12279133282734645865": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "12386638078748893260": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "12412002809965675553": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "12447624799512252131": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "12581669068849400903": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 4 (IceCavern_Static)"
+   },
+   "12871686957274662137": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "12937537806186836737": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "12989490724736996864": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 0 (IceCavern_Static)"
+   },
+   "13052503331412036804": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 9 (IceCavern_Dynamic)"
+   },
+   "13092048708059497877": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "13198009118954074500": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 2 (IceCavern_Static)"
+   },
+   "13225717517056621259": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 3 (IceCavern_Static)"
+   },
+   "13321537296350001066": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 2 (IceCavern_Static)"
+   },
+   "13343412858765425619": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 2 (IceCavern_Dynamic)"
+   },
+   "13347739217376945456": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 3 (IceCavern_Static)"
+   },
+   "13497099969867096046": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "13549983465417932642": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "13764582594278502453": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "13778182931169230196": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "13806481250297119584": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 2 (IceCavern_Dynamic)"
+   },
+   "1386172327237987514": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "13927907947670847364": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "13951655330112660589": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 9 (IceCavern_Dynamic)"
+   },
+   "14194940105543573860": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "14253337296082374911": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 2 (IceCavern_Static)"
+   },
+   "14269658948326112711": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 9 (IceCavern_Dynamic)"
+   },
+   "1428945053135656991": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 4 (IceCavern_Static)"
+   },
+   "14329780805626125448": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "14368071009809299359": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 4 (IceCavern_Static)"
+   },
+   "14373931602705784704": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "14647737365927700334": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 2 (IceCavern_Static)"
+   },
+   "14851444719287605631": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "14896531813095348884": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 2 (IceCavern_Static)"
+   },
+   "15051692772826192598": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "15055098066917266998": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 2 (IceCavern_Dynamic)"
+   },
+   "15342348904381290060": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 8 (IceCavern_Dynamic)"
+   },
+   "15376233358778239416": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 3 (IceCavern_Static)"
+   },
+   "15385443856643814272": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 3 (IceCavern_Static)"
+   },
+   "15401880887894219807": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 2 (IceCavern_Dynamic)"
+   },
+   "15713318912434280436": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "1580348776127595032": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "15833416661599990895": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 4 (IceCavern_Static)"
+   },
+   "15876394073918759366": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 7 (IceCavern_Static)"
+   },
+   "16070629725559895045": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "16134962554615344128": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "red ice: wall to the White Wolfos room"
+   },
+   "16243451399402928811": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 9 (IceCavern_Static)"
+   },
+   "16270988135000380413": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "16274147084430480383": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "1640445864853155252": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 7 (IceCavern_Static)"
+   },
+   "16527379073774744567": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "16644044579805868641": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 9 (IceCavern_Static)"
+   },
+   "16734799387157936926": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "16881742735927570972": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "16919949776496418098": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "red ice: encases a pot (room 0)"
+   },
+   "17065207243038802240": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 2 (IceCavern_Dynamic)"
+   },
+   "1721731558749458034": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "17327701572609334596": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "17532724766258883307": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 2 (IceCavern_Static)"
+   },
+   "17662408880587541087": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "17721754160783635763": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "18134416336625172393": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "18245481014045483495": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 2 (IceCavern_Dynamic)"
+   },
+   "1831621353832305989": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 9 (IceCavern_Static)"
+   },
+   "18423594634676389637": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (IceCavern_Dynamic)"
+   },
+   "18436075513759442065": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 2 (IceCavern_Dynamic)"
+   },
+   "215005051740773846": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "2191342184550551887": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 8 (IceCavern_Dynamic)"
+   },
+   "2325076621401821286": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 11 (IceCavern_Dynamic)"
+   },
+   "2381129564221305959": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "2438171390718060251": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "2454206860848842300": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (IceCavern_Dynamic)"
+   },
+   "2780943551868295924": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 11 (IceCavern_Dynamic)"
+   },
+   "2781865107940036577": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 9 (IceCavern_Static)"
+   },
+   "2782711613906015701": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 3 (IceCavern_Dynamic)"
+   },
+   "2869024881731647230": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "2920097812020802384": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "2944356977248851936": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "3138853771372965862": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 2 (IceCavern_Static)"
+   },
+   "3170189873209325644": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "3200723622177405753": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "red ice: encases the Map chest"
+   },
+   "3210481444329220850": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "3230383072759541341": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "3235319205193634666": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (IceCavern_Dynamic)"
+   },
+   "330512059634959441": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 2 (IceCavern_Static)"
+   },
+   "3350672862276661096": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 9 (IceCavern_Dynamic)"
+   },
+   "3419920384771882625": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "3445624710783972472": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "3477860405817413460": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 9 (IceCavern_Static)"
+   },
+   "3529475570079968231": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "356535054361428377": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 2 (IceCavern_Dynamic)"
+   },
+   "3592625056719654640": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "3667597220892091717": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "3713063084766909770": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "3749664631715994365": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "3875736741705051799": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "3972365762764282907": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Static)"
+   },
+   "3998750774773305736": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 4 (IceCavern_Static)"
+   },
+   "4053977610318978454": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 11 (IceCavern_Dynamic)"
+   },
+   "4075359128391195167": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 9 (IceCavern_Dynamic)"
+   },
+   "4170340469262595147": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 7 (IceCavern_Static)"
+   },
+   "4318527322514554733": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 9 (IceCavern_Dynamic)"
+   },
+   "4422905687063924240": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (IceCavern_Dynamic)"
+   },
+   "4466114351986683199": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 0 (IceCavern_Static)"
+   },
+   "452164071302916314": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 9 (IceCavern_Dynamic)"
+   },
+   "4754616389129136886": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "4895084081999526202": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Static)"
+   },
+   "4904995031040075858": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 9 (IceCavern_Dynamic)"
+   },
+   "5123163983533574945": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 9 (IceCavern_Static)"
+   },
+   "5239167285434626493": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 2 (IceCavern_Static)"
+   },
+   "530516419104408396": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (IceCavern_Dynamic)"
+   },
+   "5314962535340366389": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 2 (IceCavern_Dynamic)"
+   },
+   "5351871131739263685": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (IceCavern_Dynamic)"
+   },
+   "5433114121836823129": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (IceCavern_Dynamic)"
+   },
+   "5437346709423027969": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "5729166512095125470": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 2 (IceCavern_Dynamic)"
+   },
+   "5895420525779841004": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "5951335904143951173": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "5972024651160115312": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "5982607659326270053": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "red ice: encases two pots (compass room)"
+   },
+   "6119255539369167287": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 2 (IceCavern_Dynamic)"
+   },
+   "6173039315960243630": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (IceCavern_Dynamic)"
+   },
+   "6175918975201289910": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 2 (IceCavern_Dynamic)"
+   },
+   "6188311488374461733": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "red ice: wall, hub -> compass room (melted from the hub)"
+   },
+   "6700614180232247638": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Static)"
+   },
+   "6701681840690338518": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 2 (IceCavern_Static)"
+   },
+   "6768917453344093312": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "red ice: encases a pot (room 1)"
+   },
+   "6824936629381952866": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "6839466417440035906": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (IceCavern_Dynamic)"
+   },
+   "6939031311200684824": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "7005256429862164518": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 2 (IceCavern_Static)"
+   },
+   "7033718032941804682": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "7038413869877657485": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 4 (IceCavern_Static)"
+   },
+   "7043328711415065323": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "7065918455368714750": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 9 (IceCavern_Static)"
+   },
+   "7102567739755975276": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "7141369089765912376": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "7159693031590111453": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "726022167757098036": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 3 (IceCavern_Static)"
+   },
+   "7283656878307921107": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "7337742145497477837": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 11 (IceCavern_Dynamic)"
+   },
+   "7409983092586182730": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "7754940778057670101": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Static)"
+   },
+   "7829487233894889505": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "7833631755248196141": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "7883930213443440881": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 9 (IceCavern_Static)"
+   },
+   "8385475400342931531": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 3 (IceCavern_Dynamic)"
+   },
+   "8410467577066282318": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "8441134663175252181": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "8455825898678675056": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "red ice: encases the Frozen Pot"
+   },
+   "8549542045885912620": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 9 (IceCavern_Dynamic)"
+   },
+   "8587552386136538885": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 9 (IceCavern_Dynamic)"
+   },
+   "8754774435562467572": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 4 (IceCavern_Dynamic)"
+   },
+   "8784877565858464887": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 7 (IceCavern_Dynamic)"
+   },
+   "8840717552687900086": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "8951323866522037213": {
+    "region": "Ice Cavern Beginning",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 0 (IceCavern_Dynamic)"
+   },
+   "8995951771733827813": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 9 (IceCavern_Dynamic)"
+   },
+   "9169613556907287516": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 11 (IceCavern_Dynamic)"
+   },
+   "9210445307482204523": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 3 (IceCavern_Static)"
+   },
+   "9236258918509145699": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 7 (IceCavern_Static)"
+   },
+   "926948822559436133": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 2 (IceCavern_Static)"
+   },
+   "9403526117285877344": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 6 (IceCavern_Dynamic)"
+   },
+   "9491974632471447697": {
+    "region": "Ice Cavern End",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 9 (IceCavern_Dynamic)"
+   },
+   "9732426134749889631": {
+    "region": "Ice Cavern Map Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (IceCavern_Dynamic)"
+   },
+   "9785011882542280206": {
+    "region": "Ice Cavern Behind Ice Walls",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 4 (IceCavern_Static)"
+   },
+   "9837217465592391714": {
+    "region": "Ice Cavern Spinning Scythe Room",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 2 (IceCavern_Dynamic)"
+   }
+  }
+ },
+ "InsideGanonCastle": {
+  "objects": {
+   "10142173645608601287": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "11193391832596447117": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "red ice: water-trial wall, room 5 -> 6"
+   },
+   "1123769432504624923": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "1213300558375533299": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "12278591126399399192": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "12450253298973984249": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "12922371213013730535": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 5 (InsideGanonCastle_Static)"
+   },
+   "13397742755928288959": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "13806934846140901329": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "15265456019606077022": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 5 (InsideGanonCastle_Static)"
+   },
+   "15606619528078582320": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "15670031101854170654": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "15906853905413539997": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "1717690613499159506": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "17922973339515153218": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 5 (InsideGanonCastle_Static)"
+   },
+   "17958162639046597337": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 5 (InsideGanonCastle_Static)"
+   },
+   "18306173704485685806": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "3376157940642952520": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "3634579951880248250": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "5300967126624954361": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "5592929323455584189": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "red ice: over the rusty hammer switch"
+   },
+   "5688402764980646811": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "5738584499912277946": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "5872713962374722329": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "6186206822570895636": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "7200722851127655396": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "8134166020541784589": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 5 (InsideGanonCastle_Static)"
+   },
+   "8781906287777373060": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalactite in room 5 (InsideGanonCastle_Static)"
+   },
+   "8962766142888325072": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   },
+   "9841639012355337593": {
+    "region": "Ganons Castle Water Trial",
+    "rule": "True",
+    "confidence": "high",
+    "why": "stalagmite in room 5 (InsideGanonCastle_Dynamic)"
+   }
+  }
+ }
+}

@@ -1,0 +1,724 @@
+{
+ "_about": "Built by tools/rando/parity/_extras_souls_build.py from the game files; read by extras_souls.py.",
+ "bosses": {
+  "gohma": {
+   "boss": "Queen Gohma",
+   "row": "InsideTheDekuTree_BossArea_ShutIn",
+   "hook": {
+    "file": "Get_StoneOfForest",
+    "flowchart": "Get_StoneOfForest",
+    "entry": "BossArea_ShutIn",
+    "step": "Event236",
+    "info": {
+     "next": "Event342",
+     "preds": [
+      [
+       "entry",
+       "BossArea_ShutIn",
+       null
+      ]
+     ],
+     "kind": "action Player_Event.EventTriggerPlayerEventStartWithDrawn",
+     "params": {}
+    }
+   },
+   "eject": true,
+   "entrance": {
+    "level": "InsideTheDekuTree",
+    "start": "Entrance",
+    "air": "",
+    "boot": "Dm_SY_BancChangeArrive_InsideTheDekuTree_01"
+   }
+  },
+  "king_dodongo": {
+   "boss": "King Dodongo",
+   "row": "Get_StoneOfFire_AppearBoss",
+   "hook": {
+    "file": "Get_StoneOfFire",
+    "flowchart": "Get_StoneOfFire",
+    "entry": "Get_StoneOfFire_AppearBoss",
+    "step": "Event220",
+    "info": {
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "Get_StoneOfFire_AppearBoss",
+       null
+      ]
+     ],
+     "kind": "query GameSystemActor.EventQueryIsDreamWorld",
+     "params": {}
+    }
+   },
+   "eject": true,
+   "entrance": {
+    "level": "DodongoCavern",
+    "start": "DodongoCavern_MountainTrailSide",
+    "air": "",
+    "boot": "Dm_SY_BancChangeArrive"
+   }
+  },
+  "barinade": {
+   "boss": "Barinade",
+   "row": "Get_StoneOfWater_BossAppear",
+   "hook": {
+    "file": "Get_StoneOfWater",
+    "flowchart": "Get_StoneOfWater",
+    "entry": "StoneOfWater_BossAppear",
+    "step": "Event84",
+    "info": {
+     "next": "Event217",
+     "preds": [
+      [
+       "entry",
+       "StoneOfWater_BossAppear",
+       null
+      ]
+     ],
+     "kind": "action Player_Event.EventTriggerParticipateEvent",
+     "params": {}
+    }
+   },
+   "eject": false,
+   "entrance": {
+    "level": "InsideJabuJabuBelly",
+    "start": "InsideJabuJabuBelly_FromZoraFountain",
+    "air": "",
+    "boot": "Dm_SY_BancChangeArrive"
+   }
+  },
+  "phantom_ganon": {
+   "boss": "Phantom Ganon",
+   "row": "ForestTemple_SageOfForest_PhantomGanonAppearance",
+   "hook": {
+    "file": "SageOfForest",
+    "flowchart": "SageOfForest",
+    "entry": "ForestTemple_SageOfForest_PhantomGanonAppearance",
+    "step": "Event11",
+    "info": {
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "ForestTemple_SageOfForest_PhantomGanonAppearance",
+       null
+      ]
+     ],
+     "kind": "query GameSystemActor.EventQueryIsDreamWorld",
+     "params": {}
+    }
+   },
+   "eject": true,
+   "entrance": {
+    "level": "ForestTemple",
+    "start": "ForestTemple",
+    "air": "",
+    "boot": "Dm_SY_BancChangeArrive"
+   }
+  },
+  "volvagia": {
+   "boss": "Volvagia",
+   "row": "SageOfFire_BossAppear",
+   "hook": {
+    "file": "SageOfFire",
+    "flowchart": "SageOfFire",
+    "entry": "SageOfFire_BossAppear",
+    "step": "Event299",
+    "info": {
+     "next": "Event181",
+     "preds": [
+      [
+       "entry",
+       "SageOfFire_BossAppear",
+       null
+      ]
+     ],
+     "kind": "action Player_Event.EventTriggerParticipateEvent",
+     "params": {}
+    }
+   },
+   "eject": true,
+   "entrance": {
+    "level": "FireTemple",
+    "start": "FireTemple",
+    "air": "",
+    "boot": "Dm_SY_BancChangeArrive"
+   }
+  },
+  "morpha": {
+   "boss": "Morpha",
+   "row": "Demo_SageOfWater_BossAppears",
+   "hook": {
+    "file": "SageOfWater",
+    "flowchart": "SageOfWater",
+    "entry": "SageOfWater_BossAppears",
+    "step": "Event20",
+    "info": {
+     "next": "Event254",
+     "preds": [
+      [
+       "entry",
+       "SageOfWater_BossAppears",
+       null
+      ]
+     ],
+     "kind": "action Player_Event.EventTriggerParticipateEvent",
+     "params": {}
+    }
+   },
+   "eject": true,
+   "entrance": {
+    "level": "WaterTemple",
+    "start": "WaterTemple_FromLakeHylia",
+    "air": "WaterTemple_FromLakeHylia_Air",
+    "boot": "SageOfWater_Arrival_WaterTemple"
+   }
+  },
+  "bongo_bongo": {
+   "boss": "Bongo Bongo",
+   "row": "ShadowTemple_BossAppear",
+   "hook": {
+    "file": "SageOfShadow",
+    "flowchart": "SageOfShadow",
+    "entry": "Boss_Appear",
+    "step": "Event95",
+    "info": {
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "Boss_Appear",
+       null
+      ]
+     ],
+     "kind": "query GameSystemActor.EventQueryIsDreamWorld",
+     "params": {}
+    }
+   },
+   "eject": true,
+   "entrance": {
+    "level": "ShadowTemple",
+    "start": "Entrance",
+    "air": "",
+    "boot": "ShadowTemple_Arrive"
+   }
+  },
+  "twinrova": {
+   "boss": "Twinrova",
+   "row": "SageOfSpirit_BossStart",
+   "hook": {
+    "file": "SageOfSpirit",
+    "flowchart": "SageOfSpirit",
+    "entry": "SageOfSpirit_BossStart",
+    "step": "Event29",
+    "info": {
+     "next": null,
+     "preds": [
+      [
+       "entry",
+       "SageOfSpirit_BossStart",
+       null
+      ]
+     ],
+     "kind": "query GameSystemActor.EventQueryIsDreamWorld",
+     "params": {}
+    }
+   },
+   "eject": true,
+   "entrance": {
+    "level": "SpiritTemple",
+    "start": "SpiritTemple_Entrance",
+    "air": "",
+    "boot": "FromColossus_ArriveSpiritTemple"
+   }
+  }
+ },
+ "ganondorf": {
+  "file": "Common_Dungeon_OpenShutterMove",
+  "flowchart": "Common_Dungeon_OpenShutterMove",
+  "entry": "UnlockGanonBossRoomMoveTo0",
+  "step": "Event307",
+  "info": {
+   "next": "Event304",
+   "preds": [
+    [
+     "entry",
+     "UnlockGanonBossRoomMoveTo0",
+     null
+    ]
+   ],
+   "kind": "action Player_Event.EventPlayerMove",
+   "params": {
+    "IsWaitEnd": true,
+    "MoveSpeed": 1.0,
+    "DecSpeedDistance": 1.0,
+    "WorldPosX": 0.0,
+    "WorldPosY": 0.0,
+    "WorldPosZ": 0.0,
+    "RidableDesiredGear": 0,
+    "RidableHasToDecelerateNearGoal": false,
+    "IsSheathed": false,
+    "IsInertiaMove": false,
+    "ApplySlowMove": false,
+    "IsContinueMoveAnimeAfterFinish": false,
+    "WorldPos": "<arg PreOpenPos>"
+   }
+  }
+ },
+ "beans": [
+  {
+   "index": 0,
+   "fairy_locations": [
+    "KF Bean Plant Fairy 1",
+    "KF Bean Plant Fairy 2",
+    "KF Bean Plant Fairy 3"
+   ],
+   "soils": [
+    {
+     "file": "Banc/KokiriForest/KokiriForest_Adult_Static.bcett.byml.zs",
+     "hash": "6092667454768667954",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    },
+    {
+     "file": "Banc/KokiriForest/KokiriForest_Child_Static.bcett.byml.zs",
+     "hash": "6092667454768667954",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    }
+   ],
+   "platforms": [
+    {
+     "file": "Banc/KokiriForest/KokiriForest_Adult_Static.bcett.byml.zs",
+     "hash": "9056685805267501527",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": true
+     },
+     "distance": 0.0
+    }
+   ]
+  },
+  {
+   "index": 1,
+   "fairy_locations": [
+    "LW Bridge Bean Plant Fairy 1",
+    "LW Bridge Bean Plant Fairy 2",
+    "LW Bridge Bean Plant Fairy 3"
+   ],
+   "soils": [
+    {
+     "file": "Banc/LostWood/LostWood_Adult_Static.bcett.byml.zs",
+     "hash": "5234955674857122897",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    },
+    {
+     "file": "Banc/LostWood/LostWood_Child_Static.bcett.byml.zs",
+     "hash": "5234955674857122897",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    }
+   ],
+   "platforms": [
+    {
+     "file": "Banc/LostWood/LostWood_Adult_Static.bcett.byml.zs",
+     "hash": "8765528183303847440",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": true
+     },
+     "distance": 0.0
+    }
+   ]
+  },
+  {
+   "index": 2,
+   "fairy_locations": [
+    "LW Theater Bean Plant Fairy 1",
+    "LW Theater Bean Plant Fairy 2",
+    "LW Theater Bean Plant Fairy 3"
+   ],
+   "soils": [
+    {
+     "file": "Banc/LostWood/LostWood_Adult_Static.bcett.byml.zs",
+     "hash": "176409868210268833",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    },
+    {
+     "file": "Banc/LostWood/LostWood_Child_Static.bcett.byml.zs",
+     "hash": "176409868210268833",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    }
+   ],
+   "platforms": [
+    {
+     "file": "Banc/LostWood/LostWood_Adult_Static.bcett.byml.zs",
+     "hash": "13782027303849793342",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": true
+     },
+     "distance": 0.0
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "fairy_locations": [
+    "ZR Bean Plant Fairy 1",
+    "ZR Bean Plant Fairy 2",
+    "ZR Bean Plant Fairy 3"
+   ],
+   "soils": [
+    {
+     "file": "Banc/ZoraRiver/ZoraRiver_Adult_Static.bcett.byml.zs",
+     "hash": "17092212646454540992",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    },
+    {
+     "file": "Banc/ZoraRiver/ZoraRiver_Child_Static.bcett.byml.zs",
+     "hash": "17092212646454540992",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    }
+   ],
+   "platforms": [
+    {
+     "file": "Banc/ZoraRiver/ZoraRiver_Adult_Static.bcett.byml.zs",
+     "hash": "5472579534592779478",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": true
+     },
+     "distance": 0.0
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "fairy_locations": [
+    "LH Bean Plant Fairy 1",
+    "LH Bean Plant Fairy 2",
+    "LH Bean Plant Fairy 3"
+   ],
+   "soils": [
+    {
+     "file": "Banc/HyruleField/HyruleField_Adult_Static.bcett.byml.zs",
+     "hash": "6833516270248855649",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    },
+    {
+     "file": "Banc/HyruleField/HyruleField_Child_Static.bcett.byml.zs",
+     "hash": "6833516270248855649",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    }
+   ],
+   "platforms": [
+    {
+     "file": "Banc/HyruleField/HyruleField_Adult_Static.bcett.byml.zs",
+     "hash": "1002272875333363456",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": true
+     },
+     "distance": 0.0
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "fairy_locations": [
+    "GV Bean Plant Fairy 1",
+    "GV Bean Plant Fairy 2",
+    "GV Bean Plant Fairy 3"
+   ],
+   "soils": [
+    {
+     "file": "Banc/GerudoValley/GerudoValley_Adult_Static.bcett.byml.zs",
+     "hash": "10857724324414230743",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    },
+    {
+     "file": "Banc/GerudoValley/GerudoValley_Child_Static.bcett.byml.zs",
+     "hash": "10857724324414230743",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    }
+   ],
+   "platforms": [
+    {
+     "file": "Banc/GerudoValley/GerudoValley_Adult_Static.bcett.byml.zs",
+     "hash": "4300442340330768010",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": true
+     },
+     "distance": 0.0
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "fairy_locations": [
+    "Colossus Bean Plant Fairy 1",
+    "Colossus Bean Plant Fairy 2",
+    "Colossus Bean Plant Fairy 3"
+   ],
+   "soils": [
+    {
+     "file": "Banc/DesertColossus/DesertColossus_Adult_Static.bcett.byml.zs",
+     "hash": "14429198438059673734",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    },
+    {
+     "file": "Banc/DesertColossus/DesertColossus_Child_Static.bcett.byml.zs",
+     "hash": "14429198438059673734",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    }
+   ],
+   "platforms": [
+    {
+     "file": "Banc/DesertColossus/DesertColossus_Adult_Static.bcett.byml.zs",
+     "hash": "18132210633493190314",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": true
+     },
+     "distance": 0.0
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "fairy_locations": [
+    "Graveyard Bean Plant Fairy 1",
+    "Graveyard Bean Plant Fairy 2",
+    "Graveyard Bean Plant Fairy 3"
+   ],
+   "soils": [
+    {
+     "file": "Banc/Graveyard/Graveyard_Adult_Static.bcett.byml.zs",
+     "hash": "17500344509500247365",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    },
+    {
+     "file": "Banc/Graveyard/Graveyard_Child_Static.bcett.byml.zs",
+     "hash": "17500344509500247365",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    }
+   ],
+   "platforms": [
+    {
+     "file": "Banc/Graveyard/Graveyard_Adult_Static.bcett.byml.zs",
+     "hash": "15942608435809377510",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": true
+     },
+     "distance": 0.0
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "fairy_locations": [
+    "DMT Bean Plant Fairy 1",
+    "DMT Bean Plant Fairy 2",
+    "DMT Bean Plant Fairy 3"
+   ],
+   "soils": [
+    {
+     "file": "Banc/DeathMountainTrail/DeathMountainTrail_Adult_Static.bcett.byml.zs",
+     "hash": "18350441421271687772",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    },
+    {
+     "file": "Banc/DeathMountainTrail/DeathMountainTrail_Child_Static.bcett.byml.zs",
+     "hash": "18350441421271687772",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    }
+   ],
+   "platforms": [
+    {
+     "file": "Banc/DeathMountainTrail/DeathMountainTrail_Adult_Static.bcett.byml.zs",
+     "hash": "14786437737796557996",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": true
+     },
+     "distance": 0.0
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "fairy_locations": [
+    "DMC Bean Plant Fairy 1",
+    "DMC Bean Plant Fairy 2",
+    "DMC Bean Plant Fairy 3"
+   ],
+   "soils": [
+    {
+     "file": "Banc/DeathMountainCrater/DeathMountainCrater_Adult_Static.bcett.byml.zs",
+     "hash": "12044463103654268862",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    },
+    {
+     "file": "Banc/DeathMountainCrater/DeathMountainCrater_Child_Static.bcett.byml.zs",
+     "hash": "12044463103654268862",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": false
+     }
+    }
+   ],
+   "platforms": [
+    {
+     "file": "Banc/DeathMountainCrater/DeathMountainCrater_Adult_Static.bcett.byml.zs",
+     "hash": "1344034613986367661",
+     "presence": {
+      "FlagName": "Sequence_IsChildhood",
+      "IsCheckLazy": false,
+      "IsNegation": true
+     },
+     "distance": 0.0
+    }
+   ]
+  }
+ ],
+ "gamedata": {
+  "Sequence_IsChildhood": {
+   "type": "Bool",
+   "default": true
+  }
+ },
+ "text": {
+  "file": "EventFlowMsg/Item_Event.msbt",
+  "languages": [
+   "CNzh",
+   "EUde",
+   "EUen",
+   "EUes",
+   "EUfr",
+   "EUit",
+   "EUnl",
+   "EUpl",
+   "EUru",
+   "JPja",
+   "KRko",
+   "TWzh",
+   "USen",
+   "USes",
+   "USfr",
+   "USpt"
+  ]
+ },
+ "flags_claimed": [
+  "HavePlayedNaviBalloonMessage.type194",
+  "HavePlayedNaviBalloonMessage.type193",
+  "HavePlayedNaviBalloonMessage.type192",
+  "HavePlayedNaviBalloonMessage.type191",
+  "HavePlayedNaviBalloonMessage.type190",
+  "HavePlayedNaviBalloonMessage.type189",
+  "HavePlayedNaviBalloonMessage.type188",
+  "HavePlayedNaviBalloonMessage.type187",
+  "HavePlayedNaviBalloonMessage.type184",
+  "HavePlayedNaviBalloonMessage.type183",
+  "HavePlayedNaviBalloonMessage.type179",
+  "HavePlayedNaviBalloonMessage.type178",
+  "HavePlayedNaviBalloonMessage.type177",
+  "HavePlayedNaviBalloonMessage.type176",
+  "HavePlayedNaviBalloonMessage.type171",
+  "HavePlayedNaviBalloonMessage.type170",
+  "HavePlayedNaviBalloonMessage.type168",
+  "HavePlayedNaviBalloonMessage.type167",
+  "HavePlayedNaviBalloonMessage.type166"
+ ],
+ "message": {
+  "file": "GetPouchContent",
+  "flowchart": "GetPouchContent",
+  "step": "Event23"
+ }
+}

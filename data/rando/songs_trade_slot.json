@@ -1,0 +1,260 @@
+{
+ "_about": "Built by tools/rando/parity/_songs_trade_slot_build.py from the game files; used by tools/trade_slot.py (the trade button's picker and owned record, D3). Other plugins must not use flags_claimed.",
+ "child": [
+  "Item_AlarmCucco",
+  "Item_WeirdEgg",
+  "Item_ZeldaLetter"
+ ],
+ "enum_name": {
+  "Item_AlarmCucco": "AlarmCucco",
+  "Item_BrokenSword": "BrokenSword",
+  "Item_ClaimCheck": "ClaimCheck",
+  "Item_CojiroCucco": "CojiroCucco",
+  "Item_EyeDrop": "EyeDrop",
+  "Item_EyeballFrog": "EyeballFrog",
+  "Item_OddMushroom": "OddMushroom",
+  "Item_OddPowder": "OddPowder",
+  "Item_PoacherSaw": "PoacherSaw",
+  "Item_PocketCucco": "PocketCucco",
+  "Item_PocketEgg": "PocketEgg",
+  "Item_Prescription": "Prescription",
+  "Item_WeirdEgg": "WeirdEgg",
+  "Item_ZeldaLetter": "ZeldaLetter"
+ },
+ "enum": {
+  "Item_AlarmCucco": 32,
+  "Item_BrokenSword": 40,
+  "Item_ClaimCheck": 44,
+  "Item_CojiroCucco": 36,
+  "Item_EyeDrop": 43,
+  "Item_EyeballFrog": 42,
+  "Item_OddMushroom": 37,
+  "Item_OddPowder": 38,
+  "Item_PoacherSaw": 39,
+  "Item_PocketCucco": 35,
+  "Item_PocketEgg": 34,
+  "Item_Prescription": 41,
+  "Item_WeirdEgg": 31,
+  "Item_ZeldaLetter": 33
+ },
+ "timed": [
+  "Item_EyeDrop",
+  "Item_EyeballFrog",
+  "Item_OddMushroom"
+ ],
+ "showitem": {
+  "file": "ShowItem",
+  "entry": "EntryPoint0",
+  "hook": "Event47",
+  "talk": "Event4"
+ },
+ "claim_check": {
+  "file": "Npc_Goron_Biggoron_Adult",
+  "give": "Event123",
+  "before": "Event113",
+  "item": "Item_ClaimCheck",
+  "entry": "SubEvent_GetSwordBigGoron_Step11"
+ },
+ "files": [
+  "Dm_DeathMtTrail_0006",
+  "Dm_DeathMtTrail_0007",
+  "Dm_DeathMtTrail_0050",
+  "Dm_HrlCastle_0020",
+  "Goto_HyruleCastle",
+  "LinkSleepInBed",
+  "Npc_Goron_Biggoron_Adult",
+  "Npc_Hylia_012_Adult",
+  "Npc_Hylia_017_Adult",
+  "Npc_Hylia_045_Adult",
+  "Npc_Hylia_049_Adult",
+  "Npc_Hylia_053_Adult",
+  "Npc_Hylia_Soldier_003",
+  "Npc_Kokiri_Fado_Adult",
+  "Npc_Zora_KingZora_adult",
+  "ShowItem",
+  "SubEvent_GetSwordBigGoron"
+ ],
+ "timed_files": [
+  "LinkSleepInBed",
+  "SubEvent_GetSwordBigGoron"
+ ],
+ "site_counts": {
+  "query": 20,
+  "take": 18,
+  "timed": 6
+ },
+ "acceptances": [
+  {
+   "pack": "Pack/Actor/Npc_Goron_Biggoron_Adult.pack.zs",
+   "param": "GameParameter/ShowItemReplaceEventParam/Npc_Goron_Biggoron_Adult.game__event__ShowItemReplaceEventParam.bgyml",
+   "item": "Item_BrokenSword",
+   "setting": "SubEvent_GetSwordBigGoron_Step07",
+   "flow": "Npc_Goron_Biggoron_Adult",
+   "entry": "SubEvent_GetSwordBigGoron_Step07",
+   "conditions": {}
+  },
+  {
+   "pack": "Pack/Actor/Npc_Goron_Biggoron_Adult.pack.zs",
+   "param": "GameParameter/ShowItemReplaceEventParam/Npc_Goron_Biggoron_Adult.game__event__ShowItemReplaceEventParam.bgyml",
+   "item": "Item_EyeDrop",
+   "setting": "SubEvent_GetSwordBigGoron_Step10",
+   "flow": "Npc_Goron_Biggoron_Adult",
+   "entry": "SubEvent_GetSwordBigGoron_Step10",
+   "conditions": {}
+  },
+  {
+   "pack": "Pack/Actor/Npc_Goron_Biggoron_Adult.pack.zs",
+   "param": "GameParameter/ShowItemReplaceEventParam/Npc_Goron_Biggoron_Adult.game__event__ShowItemReplaceEventParam.bgyml",
+   "item": "Item_ClaimCheck",
+   "setting": "SubEvent_GetSwordBigGoron_Step11",
+   "flow": "Npc_Goron_Biggoron_Adult",
+   "entry": "SubEvent_GetSwordBigGoron_Step11",
+   "conditions": {}
+  },
+  {
+   "pack": "Pack/Actor/Npc_Hylia_012_Adult.pack.zs",
+   "param": "GameParameter/ShowItemReplaceEventParam/Npc_Hylia_012_Adult.game__event__ShowItemReplaceEventParam.bgyml",
+   "item": "Item_PoacherSaw",
+   "setting": "SubEvent_GetSwordBigGoron_Step06",
+   "flow": "Npc_Hylia_012_Adult",
+   "entry": "SubEvent_GetSwordBigGoron_Step06",
+   "conditions": {
+    "InvalidGameData": "GetSwordBigGoron_Oyakata_Adult_UnreactCojiro",
+    "InvalidGameDataHash": 204172999,
+    "UseInvalidCondition": true
+   }
+  },
+  {
+   "pack": "Pack/Actor/Npc_Hylia_017_Adult.pack.zs",
+   "param": "GameParameter/ShowItemReplaceEventParam/Npc_Hylia_017_Adult.game__event__ShowItemReplaceEventParam.bgyml",
+   "item": "Item_CojiroCucco",
+   "setting": "SubEvent_GetSwordBigGoron_Step03",
+   "flow": "Npc_Hylia_017_Adult",
+   "entry": "SubEvent_GetSwordBigGoron_Step03",
+   "conditions": {
+    "BeforehandLoadGameData": "",
+    "BeforehandLoadGameDataHash": 0,
+    "UseBeforehandLoadCondition": false
+   }
+  },
+  {
+   "pack": "Pack/Actor/Npc_Hylia_045_Adult.pack.zs",
+   "param": "GameParameter/ShowItemReplaceEventParam/Npc_Hylia_045_Adult.game__event__ShowItemReplaceEventParam.bgyml",
+   "item": "Item_EyeballFrog",
+   "setting": "SubEvent_GetSwordBigGoron_Step09",
+   "flow": "Npc_Hylia_045_Adult",
+   "entry": "SubEvent_GetSwordBigGoron_Step09",
+   "conditions": {}
+  },
+  {
+   "pack": "Pack/Actor/Npc_Hylia_049_Adult.pack.zs",
+   "param": "GameParameter/ShowItemReplaceEventParam/Npc_Hylia_049_Adult.game__event__ShowItemReplaceEventParam.bgyml",
+   "item": "Item_PocketCucco",
+   "setting": "Npc_Hylia_049_Adult_ShowPocketCucco",
+   "flow": "Npc_Hylia_049_Adult",
+   "entry": "Npc_Hylia_049_Adult_ShowPocketCucco",
+   "conditions": {
+    "BeforehandLoadGameData": "Npc_Hylia_049_Adult_ShowItemReplace_PocketCucco",
+    "BeforehandLoadGameDataHash": 4265939674,
+    "UseBeforehandLoadCondition": true
+   }
+  },
+  {
+   "pack": "Pack/Actor/Npc_Hylia_053_Adult.pack.zs",
+   "param": "GameParameter/ShowItemReplaceEventParam/Npc_Hylia_053_Adult.game__event__ShowItemReplaceEventParam.bgyml",
+   "item": "Item_OddMushroom",
+   "setting": "SubEvent_GetSwordBigGoron_Step04",
+   "flow": "Npc_Hylia_053_Adult",
+   "entry": "SubEvent_GetSwordBigGoron_Step04",
+   "conditions": {}
+  },
+  {
+   "pack": "Pack/Actor/Npc_Hylia_Soldier_003.pack.zs",
+   "param": "GameParameter/ShowItemReplaceEventParam/Npc_Hylia_Soldier_003.game__event__ShowItemReplaceEventParam.bgyml",
+   "item": "Item_ZeldaLetter",
+   "setting": "ShowItem_ZeldaLetter",
+   "flow": "Npc_Hylia_Soldier_003",
+   "entry": "ShowItem_ZeldaLetter",
+   "conditions": {
+    "InvalidGameData": "Npc_Hylia_Soldier_003_GateOpen",
+    "InvalidGameDataHash": 428444948,
+    "UseInvalidCondition": true
+   }
+  },
+  {
+   "pack": "Pack/Actor/Npc_Hylia_Talon_Adult.pack.zs",
+   "param": "GameParameter/ShowItemReplaceEventParam/Npc_Hylia_Talon_Child.game__event__ShowItemReplaceEventParam.bgyml",
+   "item": "Item_AlarmCucco",
+   "setting": "HyruleCastle_Taron_WakeUp",
+   "flow": "Goto_HyruleCastle",
+   "entry": "Goto_HyruleCastle_AfterWakeUpTalon",
+   "conditions": {}
+  },
+  {
+   "pack": "Pack/Actor/Npc_Hylia_Talon_Adult_Kakariko.pack.zs",
+   "param": "GameParameter/ShowItemReplaceEventParam/Npc_Hylia_Talon_Child.game__event__ShowItemReplaceEventParam.bgyml",
+   "item": "Item_AlarmCucco",
+   "setting": "HyruleCastle_Taron_WakeUp",
+   "flow": "Goto_HyruleCastle",
+   "entry": "Goto_HyruleCastle_AfterWakeUpTalon",
+   "conditions": {}
+  },
+  {
+   "pack": "Pack/Actor/Npc_Hylia_Talon_Child.pack.zs",
+   "param": "GameParameter/ShowItemReplaceEventParam/Npc_Hylia_Talon_Child.game__event__ShowItemReplaceEventParam.bgyml",
+   "item": "Item_AlarmCucco",
+   "setting": "HyruleCastle_Taron_WakeUp",
+   "flow": "Goto_HyruleCastle",
+   "entry": "Goto_HyruleCastle_AfterWakeUpTalon",
+   "conditions": {}
+  },
+  {
+   "pack": "Pack/Actor/Npc_Hylia_Talon_Child_SecondTime.pack.zs",
+   "param": "GameParameter/ShowItemReplaceEventParam/Npc_Hylia_Talon_Child.game__event__ShowItemReplaceEventParam.bgyml",
+   "item": "Item_AlarmCucco",
+   "setting": "HyruleCastle_Taron_WakeUp",
+   "flow": "Goto_HyruleCastle",
+   "entry": "Goto_HyruleCastle_AfterWakeUpTalon",
+   "conditions": {}
+  },
+  {
+   "pack": "Pack/Actor/Npc_Kokiri_Fado_Adult.pack.zs",
+   "param": "GameParameter/ShowItemReplaceEventParam/Npc_Kokiri_Fado_Adult.game__event__ShowItemReplaceEventParam.bgyml",
+   "item": "Item_OddPowder",
+   "setting": "SubEvent_GetSwordBigGoron_Step05",
+   "flow": "Npc_Kokiri_Fado_Adult",
+   "entry": "SubEvent_GetSwordBigGoron_Step05",
+   "conditions": {}
+  },
+  {
+   "pack": "Pack/Actor/Npc_Zora_KingZora_adult.pack.zs",
+   "param": "GameParameter/ShowItemReplaceEventParam/Npc_Zora_KingZora_adult.game__event__ShowItemReplaceEventParam.bgyml",
+   "item": "Item_Prescription",
+   "setting": "SubEvent_GetSwordBigGoron_Step08",
+   "flow": "Npc_Zora_KingZora_adult",
+   "entry": "SubEvent_GetSwordBigGoron_Step08",
+   "conditions": {
+    "InvalidGameData": "SageOfWater_IsAfter_Step04_Exp",
+    "InvalidGameDataHash": 2725204290,
+    "UseInvalidCondition": false
+   }
+  }
+ ],
+ "flags_claimed": {
+  "Item_AlarmCucco": "HavePlayedNaviBalloonMessage.type266",
+  "Item_BrokenSword": "HavePlayedNaviBalloonMessage.type267",
+  "Item_ClaimCheck": "HavePlayedNaviBalloonMessage.type268",
+  "Item_CojiroCucco": "HavePlayedNaviBalloonMessage.type270",
+  "Item_EyeDrop": "HavePlayedNaviBalloonMessage.type271",
+  "Item_EyeballFrog": "HavePlayedNaviBalloonMessage.type272",
+  "Item_OddMushroom": "HavePlayedNaviBalloonMessage.type273",
+  "Item_OddPowder": "HavePlayedNaviBalloonMessage.type274",
+  "Item_PoacherSaw": "HavePlayedNaviBalloonMessage.type275",
+  "Item_PocketCucco": "HavePlayedNaviBalloonMessage.type276",
+  "Item_PocketEgg": "HavePlayedNaviBalloonMessage.type277",
+  "Item_Prescription": "HavePlayedNaviBalloonMessage.type278",
+  "Item_WeirdEgg": "HavePlayedNaviBalloonMessage.type279",
+  "Item_ZeldaLetter": "HavePlayedNaviBalloonMessage.type280",
+  "picker_scratch": "HavePlayedNaviBalloonMessage.type281"
+ }
+}

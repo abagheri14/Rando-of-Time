@@ -1,0 +1,30 @@
+{
+  "_about": "Parity plugins (tools/rando/parity/<name>.py) and their logic files (data/rando/logic/<name>.json) that seeds use. A plugin joins this list once it has been reviewed and its seeds build. To try others: set RANDO_PLUGINS to a comma list (replaces this list), '+name' entries (adds to it), or 'all'.",
+  "enabled": [
+    "appearance",
+    "archipelago",
+    "audit_dungeons",
+    "audit_overworld",
+    "chests",
+    "cosmetics",
+    "drops",
+    "dungeons",
+    "enemizer",
+    "entrances",
+    "extras_hints",
+    "extras_items",
+    "extras_npcs",
+    "extras_pool",
+    "extras_prices",
+    "extras_qol",
+    "extras_souls",
+    "extras_story",
+    "fairies",
+    "glitches",
+    "gs_positions",
+    "hints",
+    "shops",
+    "songs_trade",
+    "story"
+  ]
+}
